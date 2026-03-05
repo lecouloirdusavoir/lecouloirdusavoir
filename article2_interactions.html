@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Le rôle prédictif des interactions informelles — Le Couloir du Savoir</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#1A2E4A;--teal:#0E6B7C;--gold:#C9970A;--sand:#F5EED8;--cream:#FDFAF3;--rust:#B85533;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--sand)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 44px;height:62px;background:rgba(26,46,74,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,151,10,0.22)}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--gold);text-decoration:none}
+.nav-brand span{color:var(--white);font-weight:400;font-style:italic}
+.nav-back{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;display:flex;align-items:center;gap:7px;transition:color 0.2s}
+.nav-back:hover{color:var(--gold)}
+
+/* HERO */
+.article-hero{background:var(--navy);padding:130px 44px 70px;position:relative;overflow:hidden}
+.article-hero::before{content:'';position:absolute;bottom:-120px;right:-120px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(201,151,10,0.08);pointer-events:none}
+.article-hero::after{content:'';position:absolute;top:-80px;left:-80px;width:260px;height:260px;border-radius:50%;border:1px solid rgba(14,107,124,0.1);pointer-events:none}
+.hero-inner{max-width:820px;margin:0 auto}
+.art-cat{font-family:'DM Sans',sans-serif;font-size:0.69rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:block}
+.art-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.8vw,3rem);font-weight:900;color:var(--white);line-height:1.12;margin-bottom:6px}
+.art-title em{color:#7DE0EE;font-style:italic}
+.art-line{width:54px;height:3px;background:var(--gold);margin:22px 0}
+.art-meta{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.5);display:flex;gap:20px;flex-wrap:wrap;margin-bottom:32px}
+.art-resume{background:rgba(255,255,255,0.05);border-left:4px solid var(--gold);padding:24px 28px;font-size:0.96rem;line-height:1.85;color:rgba(255,255,255,0.75);font-style:italic}
+.art-resume strong{color:var(--gold);font-style:normal}
+.art-keywords{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
+.kw{padding:4px 12px;background:rgba(14,107,124,0.3);border:1px solid rgba(14,107,124,0.5);font-family:'DM Sans',sans-serif;font-size:0.7rem;color:rgba(255,255,255,0.65);letter-spacing:0.06em}
+
+/* LIEN ARTICLE PRÉCÉDENT */
+.prev-art{background:rgba(201,151,10,0.12);border:1px solid rgba(201,151,10,0.3);padding:14px 24px;margin-top:28px;display:flex;align-items:center;gap:12px;text-decoration:none;transition:background 0.2s;max-width:fit-content}
+.prev-art:hover{background:rgba(201,151,10,0.2)}
+.prev-art span{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(255,255,255,0.6)}
+.prev-art strong{font-family:'DM Sans',sans-serif;font-size:0.82rem;color:var(--gold)}
+
+/* CORPS */
+.article-body{max-width:820px;margin:0 auto;padding:72px 44px 80px}
+.section-heading{font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin:52px 0 18px;padding-bottom:10px;border-bottom:2px solid var(--sand)}
+.section-heading span{color:var(--teal)}
+.sub-heading{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--rust);margin:32px 0 12px}
+
+p{font-size:1.02rem;line-height:1.95;color:#3C3C3C;margin-bottom:18px;text-align:justify;text-indent:2em}
+p.no-indent{text-indent:0}
+
+.item-list{list-style:none;margin:16px 0 24px;padding:0;display:flex;flex-direction:column;gap:12px}
+.item-list li{display:flex;gap:14px;align-items:flex-start;padding:14px 18px;background:var(--white);border-left:3px solid var(--teal);font-size:0.97rem;line-height:1.75;color:#3C3C3C}
+.item-list li strong{color:var(--navy)}
+.item-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:8px}
+
+.blockquote{background:var(--sand);border-left:5px solid var(--teal);padding:28px 32px;margin:36px 0;position:relative}
+.blockquote::before{content:'\201C';font-family:'Playfair Display',serif;font-size:5rem;color:rgba(14,107,124,0.12);position:absolute;top:-20px;left:16px;line-height:1}
+.blockquote p{font-family:'Playfair Display',serif;font-size:1.12rem;font-style:italic;color:var(--navy);line-height:1.75;text-indent:0;margin-bottom:10px}
+.blockquote cite{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase}
+
+.encadre{background:var(--white);border:1px solid #E8E0D0;border-top:4px solid var(--teal);padding:28px 32px;margin:36px 0}
+.encadre-title{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+.encadre p{text-indent:0;font-size:0.95rem}
+
+.num-list{list-style:none;margin:16px 0 24px;padding:0;display:flex;flex-direction:column;gap:10px}
+.num-list li{display:flex;gap:14px;align-items:flex-start;font-size:0.97rem;line-height:1.75;color:#3C3C3C}
+.num{width:28px;height:28px;border-radius:50%;background:var(--teal);color:var(--white);font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+
+/* TABLEAU */
+.tableau{width:100%;border-collapse:collapse;margin:28px 0;font-size:0.92rem}
+.tableau th{background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:12px 16px;text-align:left}
+.tableau td{padding:12px 16px;border-bottom:1px solid #E8E0D0;color:#3C3C3C;line-height:1.6}
+.tableau tr:nth-child(even) td{background:var(--white)}
+.tableau tr:hover td{background:rgba(14,107,124,0.05)}
+
+/* SCHEMA */
+.schema{background:var(--navy);padding:40px;margin:36px 0;text-align:center}
+.schema-title{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
+.schema-flow{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap}
+.schema-box{background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);padding:18px 22px;text-align:center;min-width:140px}
+.schema-box-title{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;color:var(--gold);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.06em}
+.schema-box-desc{font-size:0.78rem;color:rgba(255,255,255,0.55);line-height:1.5}
+.schema-arrow{color:var(--gold);font-size:1.5rem;padding:0 8px;flex-shrink:0}
+
+.sep{width:60px;height:3px;background:var(--gold);margin:52px auto}
+
+/* REFS */
+.refs{background:var(--navy);padding:40px 44px;margin-top:0}
+.refs-inner{max-width:820px;margin:0 auto}
+.refs-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--gold);margin-bottom:22px}
+.refs ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.refs li{font-size:0.88rem;line-height:1.65;color:rgba(255,255,255,0.55);padding-left:20px;position:relative}
+.refs li::before{content:'—';position:absolute;left:0;color:var(--gold)}
+
+/* NAVIGATION ARTICLES */
+.nav-articles{background:var(--sand);padding:40px 44px}
+.nav-articles-inner{max-width:820px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.nav-art-card{padding:22px;background:var(--white);border:1px solid #E8E0D0;text-decoration:none;transition:all 0.2s}
+.nav-art-card:hover{box-shadow:0 8px 24px rgba(26,46,74,0.1);transform:translateY(-2px)}
+.nav-art-label{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.nav-art-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--navy);line-height:1.4}
+.nav-art-arrow{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--teal);font-weight:600;margin-top:10px;display:block}
+
+/* SIGNATURE */
+.signature{background:var(--teal);padding:44px;text-align:center}
+.sig-inner{max-width:820px;margin:0 auto}
+.sig-name{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--gold);margin-bottom:8px}
+.sig-title{font-family:'DM Sans',sans-serif;font-size:0.88rem;color:rgba(255,255,255,0.75);letter-spacing:0.08em;margin-bottom:6px}
+.sig-site{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.45);letter-spacing:0.06em}
+
+/* FOOTER */
+footer{background:var(--navy);padding:28px 44px;display:flex;justify-content:space-between;align-items:center;border-top:3px solid var(--gold)}
+.foot-brand{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;color:var(--gold)}
+.foot-brand span{color:var(--white);font-weight:400}
+.foot-copy{font-family:'DM Sans',sans-serif;font-size:0.72rem;color:rgba(255,255,255,0.3)}
+.sn-flag{display:flex;gap:3px}
+.sn-flag span{width:12px;height:12px;border-radius:2px}
+
+@media(max-width:700px){
+  nav{padding:0 18px}
+  .article-hero{padding:110px 22px 50px}
+  .article-body{padding:48px 22px 60px}
+  .refs,.nav-articles{padding:32px 22px}
+  .nav-articles-inner{grid-template-columns:1fr}
+  footer{padding:22px;flex-direction:column;gap:12px;text-align:center}
+  .schema-flow{flex-direction:column}
+  .schema-arrow{transform:rotate(90deg)}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="https://lecouloirdusavoir.netlify.app">Le Couloir <span>du Savoir</span></a>
+  <a class="nav-back" href="https://lecouloirdusavoir.netlify.app">← Retour au site</a>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="hero-inner">
+    <span class="art-cat">Concepts originaux · Article N°2 · 2024</span>
+    <h1 class="art-title">Le rôle prédictif des interactions informelles<br/>sur le <em>développement professionnel</em></h1>
+    <div class="art-line"></div>
+    <div class="art-meta">
+      <span>✍️ M.B.M</span>
+      <span>📚 Le Couloir du Savoir</span>
+      <span>🌍 Formation · Afrique</span>
+      <span>⏱️ Lecture&nbsp;: 9 min</span>
+    </div>
+    <div class="art-resume">
+      <strong>Résumé&nbsp;:</strong> Les interactions informelles entre apprenants adultes ne sont pas de simples bavardages. Elles constituent un puissant prédicteur du développement des compétences professionnelles. Cet article explore comment et pourquoi ces échanges spontanés, libres de toute contrainte institutionnelle, façonnent en profondeur l'identité et les compétences du professionnel en devenir, en particulier dans le contexte de la formation des inspecteurs de l'éducation en Afrique.
+    </div>
+    <div class="art-keywords">
+      <span class="kw">Interactions informelles</span><span class="kw">Développement professionnel</span><span class="kw">Prédictivité</span><span class="kw">Compétences</span><span class="kw">Formation initiale</span><span class="kw">Inspecteurs</span><span class="kw">Afrique</span>
+    </div>
+    <a class="prev-art" href="article1.html">
+      <span>Article précédent →</span>
+      <strong>La Stivation&nbsp;: quand la stimulation rencontre la motivation</strong>
+    </a>
+  </div>
+</div>
+
+<!-- CORPS -->
+<div class="article-body">
+
+  <!-- I -->
+  <h2 class="section-heading"><span>I.</span> Introduction&nbsp;: une question qui dérange</h2>
+  <p>Quelle est la part des cours magistraux, des séminaires officiels et des évaluations formelles dans le développement professionnel réel d'un inspecteur de l'éducation&nbsp;? Et quelle est la part des conversations de couloir, des débats informels entre pairs, des échanges spontanés qui se produisent en dehors de tout cadre institutionnel&nbsp;?</p>
+  <p>La réponse que notre recherche de terrain a produite est à la fois simple et dérangeante&nbsp;: les interactions informelles prédisent le développement professionnel mieux que les dispositifs formels. Non pas qu'ils soient inutiles, mais parce que quelque chose d'essentiel se passe dans les espaces libres que le cadre formel ne peut ni provoquer ni reproduire.</p>
+  <p>C'est cette thèse que cet article se propose de démontrer, en s'appuyant sur la recherche originale menée à la FASTEF de l'Université Cheikh Anta Diop de Dakar, auprès d'élèves inspecteurs en formation initiale.</p>
+
+  <div class="blockquote">
+    <p>«&nbsp;À travers les interactions sociales entre élèves inspecteurs en situation de formation, on entre dans une logique de construction sociale de compétences professionnelles et de développement de relations interpersonnelles positives.&nbsp;»</p>
+    <cite>M.B.M — Mémoire CAIEE, FASTEF/UCAD, 2010</cite>
+  </div>
+
+  <!-- II -->
+  <h2 class="section-heading"><span>II.</span> Qu'est-ce qu'une interaction informelle&nbsp;?</h2>
+  <p class="no-indent">Avant d'aborder le rôle prédictif des interactions informelles, il convient d'en préciser la définition et les caractéristiques distinctives.</p>
+
+  <h3 class="sub-heading">2.1. Définition</h3>
+  <p>Une interaction informelle est un échange entre deux ou plusieurs personnes qui se produit en dehors de tout cadre institutionnel prescrit. Elle n'est ni planifiée, ni évaluée, ni encadrée par un formateur. Elle naît spontanément, portée par la curiosité, le besoin de comprendre, le désir de partager ou simplement le plaisir d'échanger.</p>
+  <p>Dans un contexte de formation professionnelle, ces interactions prennent des formes variées&nbsp;: discussions dans les couloirs entre deux cours, échanges autour d'un repas, débats informels dans les chambres d'internat, entraide spontanée lors de la préparation d'un exposé.</p>
+
+  <h3 class="sub-heading">2.2. Ce qui distingue l'informel du formel</h3>
+  <table class="tableau">
+    <thead>
+      <tr><th>Dimension</th><th>Interaction formelle</th><th>Interaction informelle</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>Origine</strong></td><td>Prescrite par l'institution</td><td>Spontanée, volontaire</td></tr>
+      <tr><td><strong>Objectif</strong></td><td>Défini à l'avance</td><td>Émergent, imprévu</td></tr>
+      <tr><td><strong>Évaluation</strong></td><td>Notée ou observée</td><td>Aucune évaluation</td></tr>
+      <tr><td><strong>Cadre</strong></td><td>Salle de cours, séminaire</td><td>Couloir, repas, chambre</td></tr>
+      <tr><td><strong>Motivation</strong></td><td>Souvent extrinsèque</td><td>Intrinsèque, naturelle</td></tr>
+      <tr><td><strong>Profondeur</strong></td><td>Variable</td><td>Souvent très profonde</td></tr>
+    </tbody>
+  </table>
+
+  <!-- III -->
+  <h2 class="section-heading"><span>III.</span> Le mécanisme prédictif&nbsp;: comment ça fonctionne&nbsp;?</h2>
+  <p class="no-indent">Pour comprendre pourquoi les interactions informelles prédisent le développement professionnel, il faut examiner les mécanismes par lesquels elles opèrent.</p>
+
+  <h3 class="sub-heading">3.1. La construction sociale des compétences</h3>
+  <p>Les compétences professionnelles ne se transmettent pas comme des informations. Elles se construisent dans et par l'action, la réflexion et l'interaction. Vygotski l'a montré&nbsp;: le développement cognitif est d'abord interpsychique avant de devenir intrapsychique. Ce que l'on construit avec les autres, on finit par l'intégrer en soi.</p>
+  <p>Dans les interactions informelles, les élèves inspecteurs confrontent leurs représentations, partagent leurs expériences, s'interrogent mutuellement sur des cas pratiques, co-construisent des solutions à des problèmes professionnels réels. Ce faisant, ils développent des compétences que nul cours magistral ne peut produire seul.</p>
+
+  <h3 class="sub-heading">3.2. Le rôle du sentiment d'entraide</h3>
+  <p>Notre recherche a mis en évidence un facteur particulièrement puissant&nbsp;: le sentiment d'entraide perçu entre pairs. Lorsqu'un apprenant ressent fortement que ses pairs sont disponibles, solidaires et engagés dans un projet commun de développement professionnel, sa participation active aux interactions informelles augmente considérablement.</p>
+  <p>Ce sentiment d'entraide crée un environnement psychologique sécurisant qui libère la prise de risque intellectuelle. On ose questionner, contredire, proposer des idées non finies, exposer ses doutes, précisément parce qu'on sait que les pairs ne jugeront pas mais contribueront.</p>
+
+  <div class="encadre">
+    <div class="encadre-title">Résultat clé de la recherche</div>
+    <p>La recherche originale menée à la FASTEF a démontré que le niveau d'engagement dans les interactions informelles, combiné au sentiment d'entraide perçu entre pairs, constitue un prédicteur significatif du développement des compétences professionnelles de base chez les élèves inspecteurs en formation initiale.</p>
+  </div>
+
+  <h3 class="sub-heading">3.3. Le schéma du mécanisme prédictif</h3>
+
+  <div class="schema">
+    <div class="schema-title">Mécanisme prédictif des interactions informelles</div>
+    <div class="schema-flow">
+      <div class="schema-box">
+        <div class="schema-box-title">Espace libre</div>
+        <div class="schema-box-desc">Couloir, repas, chambre — hors cadre institutionnel</div>
+      </div>
+      <div class="schema-arrow">→</div>
+      <div class="schema-box">
+        <div class="schema-box-title">Stivation</div>
+        <div class="schema-box-desc">Stimulation + motivation simultanées</div>
+      </div>
+      <div class="schema-arrow">→</div>
+      <div class="schema-box">
+        <div class="schema-box-title">Interactions</div>
+        <div class="schema-box-desc">Échanges spontanés entre pairs</div>
+      </div>
+      <div class="schema-arrow">→</div>
+      <div class="schema-box">
+        <div class="schema-box-title">Compétences</div>
+        <div class="schema-box-desc">Développement professionnel réel et durable</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- IV -->
+  <h2 class="section-heading"><span>IV.</span> Les compétences développées par les interactions informelles</h2>
+  <p class="no-indent">Quelles compétences professionnelles les interactions informelles contribuent-elles à développer concrètement&nbsp;? Notre recherche en a identifié cinq catégories principales.</p>
+
+  <ul class="item-list">
+    <li><div class="item-dot"></div><div><strong>Les compétences relationnelles&nbsp;:</strong> savoir écouter, argumenter, convaincre, gérer des désaccords de manière constructive. Ces aptitudes, essentielles pour un inspecteur, se développent naturellement dans les échanges informels.</div></li>
+    <li><div class="item-dot"></div><div><strong>Les compétences réflexives&nbsp;:</strong> la capacité à prendre du recul sur sa propre pratique, à s'autoévaluer, à identifier ses points forts et ses lacunes. L'autre est un miroir précieux.</div></li>
+    <li><div class="item-dot"></div><div><strong>Les compétences analytiques&nbsp;:</strong> la confrontation d'idées oblige à justifier ses positions, à chercher des arguments, à structurer sa pensée. C'est un exercice intellectuel exigeant et formateur.</div></li>
+    <li><div class="item-dot"></div><div><strong>Les compétences identitaires&nbsp;:</strong> les échanges entre pairs permettent de construire une identité professionnelle collective, un sentiment d'appartenance à un corps, une vision partagée du métier d'inspecteur.</div></li>
+    <li><div class="item-dot"></div><div><strong>Les compétences de leadership&nbsp;:</strong> dans les groupes informels, des leaders naturels émergent. Ces dynamiques de leadership spontané préfigurent souvent les postures professionnelles futures.</div></li>
+  </ul>
+
+  <!-- V -->
+  <h2 class="section-heading"><span>V.</span> Implications pour la formation en Afrique</h2>
+  <p>Si les interactions informelles prédisent le développement professionnel, alors les formateurs et responsables éducatifs africains ont tout intérêt à repenser l'architecture de leurs dispositifs de formation. Il ne s'agit pas de supprimer les cours formels, mais de leur accorder une place plus juste et d'investir délibérément dans la création de conditions favorables aux échanges informels.</p>
+
+  <ol class="num-list">
+    <li><div class="num">1</div><div><strong>Concevoir des espaces physiques propices aux échanges&nbsp;:</strong> des salles de détente, des espaces de discussion, des lieux de rencontre informels au sein des centres de formation.</div></li>
+    <li><div class="num">2</div><div><strong>Aménager des temps libres structurés&nbsp;:</strong> des plages horaires sans objectif prescrit, dédiées aux échanges entre pairs, sans formateur, sans évaluation.</div></li>
+    <li><div class="num">3</div><div><strong>Valoriser l'entraide comme compétence&nbsp;:</strong> reconnaître et encourager les comportements d'entraide entre stagiaires, car ils sont le substrat des interactions informelles les plus fructueuses.</div></li>
+    <li><div class="num">4</div><div><strong>Former les formateurs à l'observation non intrusive&nbsp;:</strong> apprendre à lire les dynamiques informelles sans les perturber, pour mieux comprendre le développement professionnel réel des stagiaires.</div></li>
+    <li><div class="num">5</div><div><strong>Intégrer les pairs-formateurs dans le dispositif&nbsp;:</strong> les stagiaires les plus avancés peuvent jouer un rôle de médiateurs des interactions informelles, c'est précisément le fondement du dispositif CREAQ.</div></li>
+  </ol>
+
+  <!-- VI -->
+  <h2 class="section-heading"><span>VI.</span> Conclusion</h2>
+  <p>Les interactions informelles ne sont pas le reste ou le déchet de la formation. Elles en sont, souvent, le cœur battant. Reconnaître leur rôle prédictif, c'est reconnaître que le développement professionnel est d'abord un processus humain, social et relationnel, avant d'être un processus institutionnel et formel.</p>
+  <p>Pour les systèmes éducatifs africains qui font face à des contraintes de ressources considérables, cette découverte est une formidable opportunité. Les interactions informelles ne coûtent rien. Elles existent déjà. Il suffit de leur faire de la place.</p>
+  <p><em>C'est là toute la leçon du couloir.</em></p>
+
+  <div class="sep"></div>
+
+</div>
+
+<!-- RÉFÉRENCES -->
+<div class="refs">
+  <div class="refs-inner">
+    <div class="refs-title">Références bibliographiques</div>
+    <ul>
+      <li>Doise, W. & Mugny, G. (1981). <em>Le développement social de l'intelligence.</em> InterEditions.</li>
+      <li>Lave, J. & Wenger, E. (1991). <em>Situated Learning&nbsp;: Legitimate Peripheral Participation.</em> Cambridge University Press.</li>
+      <li>Mbaye, M.B. (2010). <em>Interactions entre élèves inspecteurs lors des activités collaboratives et coopératives en formation initiale.</em> Mémoire CAIEE, FASTEF/UCAD, Dakar.</li>
+      <li>Pernias, J.C. (2003). <em>Devenir cadre&nbsp;: reconstruction identitaire et professionnelle.</em> L'Harmattan.</li>
+      <li>Vygotski, L.S. (1978). <em>Mind in Society&nbsp;: The Development of Higher Psychological Processes.</em> Harvard University Press.</li>
+      <li>Wenger, E. (1998). <em>Communities of Practice&nbsp;: Learning, Meaning, and Identity.</em> Cambridge University Press.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- NAVIGATION ARTICLES -->
+<div class="nav-articles">
+  <div class="nav-articles-inner">
+    <a class="nav-art-card" href="article1.html">
+      <div class="nav-art-label">← Article précédent</div>
+      <div class="nav-art-title">La Stivation&nbsp;: quand la stimulation rencontre la motivation</div>
+      <span class="nav-art-arrow">Lire l'article →</span>
+    </a>
+    <a class="nav-art-card" href="https://lecouloirdusavoir.netlify.app">
+      <div class="nav-art-label">Prochain article →</div>
+      <div class="nav-art-title">Le sentiment d'entraide entre pairs comme moteur de performance</div>
+      <span class="nav-art-arrow">Bientôt disponible →</span>
+    </a>
+  </div>
+</div>
+
+<!-- SIGNATURE -->
+<div class="signature">
+  <div class="sig-inner">
+    <div class="sig-name">M.B.M</div>
+    <div class="sig-title">Chercheur · Concepteur · Spécialiste en Éducation</div>
+    <div class="sig-site">lecouloirdusavoir.netlify.app · Éducation & Psychologie · Afrique</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-brand">Le Couloir <span>du Savoir</span></div>
+  <div class="foot-copy">© 2025 M.B.M · Auteur anonyme · Afrique</div>
+  <div class="sn-flag">
+    <span style="background:#00853F"></span>
+    <span style="background:#FDEF42"></span>
+    <span style="background:#E31B23"></span>
+  </div>
+</footer>
+
+</body>
+</html>

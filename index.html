@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Le Couloir du Savoir · Éducation & Psychologie</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --navy:  #1A2E4A;
+  --teal:  #0E6B7C;
+  --gold:  #C9970A;
+  --sand:  #F5EED8;
+  --cream: #FDFAF3;
+  --rust:  #B85533;
+  --sage:  #4A7C6F;
+  --plum:  #6B3F6E;
+  --text:  #2A2A2A;
+  --muted: #6B7280;
+  --white: #FFFFFF;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--sand)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:62px;background:rgba(26,46,74,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,151,10,0.22)}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--gold);text-decoration:none;letter-spacing:0.02em}
+.nav-brand span{color:var(--white);font-weight:400;font-style:italic}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold)}
+
+/* ── HERO ── */
+.hero{min-height:100vh;display:grid;grid-template-columns:1.1fr 0.9fr;position:relative;overflow:hidden}
+.hero-left{background:var(--navy);padding:140px 60px 80px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.hero-left::before{content:'';position:absolute;bottom:-150px;left:-150px;width:440px;height:440px;border-radius:50%;border:1px solid rgba(201,151,10,0.09);pointer-events:none}
+.hero-left::after{content:'';position:absolute;bottom:-75px;left:-75px;width:260px;height:260px;border-radius:50%;border:1px solid rgba(201,151,10,0.16);pointer-events:none}
+.hero-tag{font-family:'DM Sans',sans-serif;font-size:0.69rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;opacity:0;animation:fadeUp 0.8s 0.2s forwards}
+.hero-name{font-family:'Playfair Display',serif;font-size:clamp(2rem,3.8vw,3.1rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:8px;opacity:0;animation:fadeUp 0.8s 0.4s forwards}
+.hero-line{width:54px;height:3px;background:var(--gold);margin:20px 0;opacity:0;animation:fadeUp 0.8s 0.5s forwards}
+.hero-subtitle{font-size:0.98rem;font-style:italic;color:rgba(255,255,255,0.62);line-height:1.78;margin-bottom:32px;opacity:0;animation:fadeUp 0.8s 0.6s forwards}
+.hero-pillars{display:flex;flex-direction:column;gap:9px;opacity:0;animation:fadeUp 0.8s 0.75s forwards}
+.hero-pillar{display:flex;align-items:center;gap:11px;font-family:'DM Sans',sans-serif;font-size:0.85rem;color:rgba(255,255,255,0.82)}
+.hero-pillar::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.hero-cta{margin-top:40px;display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:fadeUp 0.8s 0.95s forwards}
+.btn-p{padding:12px 28px;background:var(--gold);color:var(--navy);font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;transition:all 0.2s;border:none;cursor:pointer}
+.btn-p:hover{background:#e0a800;transform:translateY(-2px)}
+.btn-o{padding:12px 28px;border:1px solid rgba(255,255,255,0.27);color:var(--white);font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;transition:all 0.2s}
+.btn-o:hover{border-color:var(--gold);color:var(--gold)}
+.hero-right{background:var(--sand);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.hero-right-bg{position:absolute;inset:0;background:radial-gradient(ellipse 65% 60% at 65% 40%,rgba(14,107,124,0.13) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 25% 75%,rgba(201,151,10,0.09) 0%,transparent 60%)}
+.hero-visual{position:relative;z-index:2;padding:80px 44px;text-align:center;animation:fadeIn 1.2s 0.7s both}
+.qmark{font-family:'Playfair Display',serif;font-size:9rem;line-height:0.8;color:rgba(14,107,124,0.1);display:block;margin-bottom:-24px}
+.hero-quote{font-family:'Playfair Display',serif;font-size:1.22rem;font-style:italic;color:var(--navy);line-height:1.75;max-width:360px;margin:0 auto 24px}
+.hero-quote strong{font-weight:700;color:var(--teal);font-style:normal}
+.hero-qattr{font-family:'DM Sans',sans-serif;font-size:0.73rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold)}
+
+/* ── STATS ── */
+.stats{background:var(--teal);display:grid;grid-template-columns:repeat(6,1fr)}
+.stat{padding:24px 12px;text-align:center;border-right:1px solid rgba(255,255,255,0.11);transition:background 0.25s;cursor:default}
+.stat:last-child{border-right:none}
+.stat:hover{background:rgba(255,255,255,0.07)}
+.stat-n{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:900;color:var(--gold);display:block;line-height:1}
+.stat-l{font-family:'DM Sans',sans-serif;font-size:0.67rem;color:rgba(255,255,255,0.72);letter-spacing:0.04em;margin-top:5px;display:block;line-height:1.3}
+
+/* ── GENERIC ── */
+section{padding:84px 0}
+.container{max-width:1080px;margin:0 auto;padding:0 44px}
+.eyebrow{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.65rem,2.7vw,2.3rem);font-weight:700;color:var(--navy);line-height:1.22;margin-bottom:16px}
+.sec-title em{color:var(--teal);font-style:italic}
+.sec-intro{font-size:0.98rem;color:var(--muted);line-height:1.85;max-width:580px;margin-bottom:48px}
+
+/* ── ABOUT ── */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1.65fr;gap:68px;align-items:start}
+.portrait-frame{background:var(--navy);aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.portrait-frame::after{content:'';position:absolute;bottom:0;left:0;right:0;height:35%;background:linear-gradient(to top,rgba(201,151,10,0.22),transparent)}
+.portrait-symbol{font-size:5.5rem;opacity:0.1;color:var(--white);font-family:'Playfair Display',serif;font-style:italic}
+.portrait-badge{position:absolute;bottom:-16px;right:-16px;background:var(--gold);color:var(--navy);padding:13px 16px;font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;text-align:center;line-height:1.5;box-shadow:0 6px 18px rgba(0,0,0,0.13)}
+.about-text p{font-size:0.96rem;line-height:1.92;color:#3C3C3C;margin-bottom:16px}
+.about-text p strong{color:var(--navy)}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}
+.value-box{padding:18px 14px;background:var(--cream);border-left:3px solid var(--teal);transition:transform 0.2s}
+.value-box:hover{transform:translateY(-2px)}
+.value-icon{font-size:1.4rem;margin-bottom:7px}
+.value-title{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;color:var(--navy);margin-bottom:3px}
+.value-desc{font-size:0.8rem;line-height:1.55;color:var(--muted)}
+
+/* ── THEMES ── */
+.themes{background:var(--navy);position:relative;overflow:hidden}
+.themes::before{content:'';position:absolute;top:-180px;right:-180px;width:560px;height:560px;border-radius:50%;border:1px solid rgba(201,151,10,0.06);pointer-events:none}
+.themes .eyebrow{color:rgba(201,151,10,0.9)}
+.themes .sec-title{color:var(--white)}
+.themes .sec-title em{color:#7DE0EE}
+.themes .sec-intro{color:rgba(255,255,255,0.52)}
+.themes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.theme-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);padding:28px 22px;transition:all 0.3s;position:relative;overflow:hidden}
+.theme-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;transform:scaleX(0);transform-origin:left;transition:transform 0.3s}
+.theme-card:nth-child(1)::before{background:var(--gold)}
+.theme-card:nth-child(2)::before{background:#7DE0EE}
+.theme-card:nth-child(3)::before{background:var(--rust)}
+.theme-card:nth-child(4)::before{background:#A8D8A8}
+.theme-card:nth-child(5)::before{background:#DDA0DD}
+.theme-card:nth-child(6)::before{background:#FFB347}
+.theme-card:nth-child(7)::before{background:#87CEEB}
+.theme-card:nth-child(8)::before{background:#F0E68C}
+.theme-card:hover{background:rgba(255,255,255,0.08);border-color:rgba(201,151,10,0.22);transform:translateY(-3px)}
+.theme-card:hover::before{transform:scaleX(1)}
+.theme-icon{font-size:1.8rem;margin-bottom:13px;display:block}
+.theme-name{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--gold);margin-bottom:9px}
+.theme-desc{font-size:0.85rem;line-height:1.68;color:rgba(255,255,255,0.58)}
+.theme-tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:5px}
+.theme-tag{padding:2px 9px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);font-family:'DM Sans',sans-serif;font-size:0.65rem;color:rgba(255,255,255,0.45);letter-spacing:0.05em}
+
+/* ── PSYCHO ── */
+.psycho{background:var(--cream)}
+.psycho-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.psycho-diagram{position:relative;width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;max-width:360px;margin:0 auto}
+.diag-ring{position:absolute;border-radius:50%;border:1px dashed rgba(26,46,74,0.18)}
+.ring1{width:200px;height:200px;top:50%;left:50%;margin:-100px 0 0 -100px;animation:spin 22s linear infinite}
+.ring2{width:310px;height:310px;top:50%;left:50%;margin:-155px 0 0 -155px;animation:spin 36s linear infinite reverse}
+.diag-center{position:relative;z-index:5;width:120px;height:120px;border-radius:50%;background:var(--navy);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 10px rgba(26,46,74,0.08)}
+.diag-center-txt{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:700;color:var(--gold);text-align:center;line-height:1.4;text-transform:uppercase;letter-spacing:0.05em}
+.dnode{position:absolute;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:600;text-align:center;line-height:1.3;color:var(--white);z-index:4;box-shadow:0 4px 14px rgba(0,0,0,0.18)}
+.psycho-list{display:flex;flex-direction:column;gap:16px}
+.psycho-item{display:flex;gap:16px;align-items:flex-start;padding:18px;background:var(--white);border-left:3px solid transparent;transition:border-color 0.2s,box-shadow 0.2s}
+.psycho-item:hover{border-left-color:var(--teal);box-shadow:0 4px 16px rgba(0,0,0,0.06)}
+.p-icon{font-size:1.5rem;flex-shrink:0;margin-top:2px}
+.p-title{font-family:'DM Sans',sans-serif;font-size:0.87rem;font-weight:700;color:var(--navy);margin-bottom:4px}
+.p-text{font-size:0.86rem;line-height:1.65;color:var(--muted)}
+
+/* ── MOTIVATION ── */
+.motivation{background:var(--white)}
+.motiv-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-bottom:56px}
+.motiv-text p{font-size:0.96rem;line-height:1.9;color:#3C3C3C;margin-bottom:14px}
+.motiv-pyramid{display:flex;flex-direction:column;align-items:center;gap:4px}
+.pyramid-level{display:flex;align-items:center;justify-content:center;gap:12px;border-radius:2px;transition:transform 0.2s;cursor:default}
+.pyramid-level:hover{transform:scaleX(1.03)}
+.pyr-label{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;color:var(--white);text-align:center;line-height:1.3;padding:14px 0;letter-spacing:0.03em}
+.pyr-icon{font-size:1.2rem}
+.motiv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.motiv-card{padding:28px 22px;border:1px solid #E8E0D0;background:var(--cream);position:relative;overflow:hidden;transition:all 0.3s}
+.motiv-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(26,46,74,0.09)}
+.motiv-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px}
+.motiv-card:nth-child(1)::after{background:var(--teal)}
+.motiv-card:nth-child(2)::after{background:var(--gold)}
+.motiv-card:nth-child(3)::after{background:var(--rust)}
+.motiv-card:nth-child(4)::after{background:var(--sage)}
+.motiv-card:nth-child(5)::after{background:var(--plum)}
+.motiv-card:nth-child(6)::after{background:#E07A30}
+.motiv-icon{font-size:2rem;margin-bottom:14px}
+.motiv-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:9px}
+.motiv-desc{font-size:0.87rem;line-height:1.7;color:var(--muted)}
+
+/* ── INTERACTIONS ── */
+.interactions{background:var(--sand);position:relative;overflow:hidden}
+.inter-big-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:48px}
+.inter-card{background:var(--white);padding:32px;border:1px solid #E8E0D0;transition:all 0.3s;position:relative}
+.inter-card:hover{box-shadow:0 12px 36px rgba(26,46,74,0.1);transform:translateY(-3px)}
+.inter-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px}
+.inter-card:nth-child(1)::before{background:var(--teal)}
+.inter-card:nth-child(2)::before{background:var(--gold)}
+.inter-card:nth-child(3)::before{background:var(--rust)}
+.inter-card:nth-child(4)::before{background:var(--sage)}
+.inter-card:nth-child(5)::before{background:var(--plum)}
+.inter-card:nth-child(6)::before{background:#E07A30}
+.inter-header{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.inter-icon-box{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.inter-title{font-family:'Playfair Display',serif;font-size:1.08rem;font-weight:700;color:var(--navy)}
+.inter-subtitle{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase}
+.inter-desc{font-size:0.88rem;line-height:1.75;color:var(--muted)}
+.inter-tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
+.itag{padding:3px 10px;background:var(--cream);font-family:'DM Sans',sans-serif;font-size:0.68rem;color:var(--navy);letter-spacing:0.05em;border:1px solid #E8E0D0}
+
+/* ── CONCEPTS ── */
+.concepts{background:var(--navy);position:relative;overflow:hidden}
+.concepts .eyebrow{color:rgba(201,151,10,0.9)}
+.concepts .sec-title{color:var(--white)}
+.concepts .sec-title em{color:#7DE0EE}
+.concepts .sec-intro{color:rgba(255,255,255,0.52)}
+.concepts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.concept-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.09);padding:32px 26px;transition:all 0.3s;position:relative;overflow:hidden}
+.concept-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;transform:scaleX(0);transform-origin:left;transition:transform 0.3s}
+.concept-card:nth-child(1)::after{background:var(--gold)}
+.concept-card:nth-child(2)::after{background:#7DE0EE}
+.concept-card:nth-child(3)::after{background:var(--rust)}
+.concept-card:hover{background:rgba(255,255,255,0.09);transform:translateY(-4px)}
+.concept-card:hover::after{transform:scaleX(1)}
+.concept-num{font-family:'Playfair Display',serif;font-size:3.2rem;font-weight:900;color:rgba(255,255,255,0.05);line-height:1;margin-bottom:-10px}
+.concept-name{font-family:'Playfair Display',serif;font-size:1.22rem;font-weight:700;color:var(--gold);margin-bottom:10px}
+.concept-def{font-size:0.88rem;line-height:1.78;color:rgba(255,255,255,0.6)}
+.concept-pill{display:inline-block;margin-top:16px;padding:4px 12px;background:rgba(14,107,124,0.25);color:#7DE0EE;font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:600;letter-spacing:0.08em;border:1px solid rgba(14,107,124,0.4)}
+
+/* ── PUBLICATIONS ── */
+.publications{background:var(--cream)}
+.pub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.pub-card{background:var(--white);border:1px solid #E8E0D0;padding:26px;display:flex;flex-direction:column;gap:12px;transition:all 0.3s}
+.pub-card:hover{box-shadow:0 10px 32px rgba(26,46,74,0.09);transform:translateY(-2px)}
+.pub-cat{font-family:'DM Sans',sans-serif;font-size:0.67rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:3px 10px;display:inline-block;align-self:flex-start}
+.cat-r{background:rgba(14,107,124,0.1);color:var(--teal)}
+.cat-p{background:rgba(184,85,51,0.1);color:var(--rust)}
+.cat-rf{background:rgba(201,151,10,0.1);color:#9A7200}
+.cat-ps{background:rgba(74,124,111,0.12);color:var(--sage)}
+.cat-mo{background:rgba(107,63,110,0.1);color:var(--plum)}
+.cat-a{background:rgba(26,46,74,0.08);color:var(--navy)}
+.pub-title{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--navy);line-height:1.4}
+.pub-excerpt{font-size:0.88rem;line-height:1.75;color:var(--muted);flex-grow:1}
+.pub-meta{display:flex;align-items:center;justify-content:space-between;font-family:'DM Sans',sans-serif;font-size:0.73rem;color:var(--muted);border-top:1px solid #E8E0D0;padding-top:12px;margin-top:auto}
+.pub-read{color:var(--teal);font-weight:600;text-decoration:none;display:flex;align-items:center;gap:5px;transition:gap 0.2s}
+.pub-read:hover{gap:9px}
+.pub-card.feat{grid-column:span 2;flex-direction:row;gap:28px;background:var(--navy);border-color:transparent}
+.pub-card.feat .pub-title{color:var(--white);font-size:1.25rem}
+.pub-card.feat .pub-excerpt{color:rgba(255,255,255,0.58)}
+.pub-card.feat .pub-meta{border-top-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.38)}
+.pub-card.feat .pub-read{color:var(--gold)}
+.feat-bar{width:4px;background:var(--gold);flex-shrink:0;border-radius:2px}
+
+/* ── GRANDE CITATION ── */
+.bigquote{background:var(--teal);padding:68px 0;position:relative;overflow:hidden}
+.bigquote::before{content:'\201C';position:absolute;top:-90px;left:28px;font-family:'Playfair Display',serif;font-size:18rem;color:rgba(255,255,255,0.04);line-height:1;pointer-events:none}
+.bq-inner{max-width:760px;margin:0 auto;padding:0 44px;text-align:center}
+.bq-text{font-family:'Playfair Display',serif;font-size:clamp(1.15rem,2.1vw,1.65rem);font-style:italic;color:var(--white);line-height:1.72;margin-bottom:24px}
+.bq-text strong{font-style:normal;color:var(--gold)}
+.bq-attr{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.5)}
+
+/* ── CONTACT ── */
+.contact{background:var(--white)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:start}
+.contact-item{display:flex;gap:16px;align-items:flex-start;margin-bottom:22px}
+.c-icon{width:40px;height:40px;background:var(--navy);display:flex;align-items:center;justify-content:center;font-size:1.05rem;flex-shrink:0}
+.c-lbl{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.c-val{font-size:0.93rem;color:var(--text)}
+.form{display:flex;flex-direction:column;gap:13px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.fg{display:flex;flex-direction:column;gap:6px}
+.flbl{font-family:'DM Sans',sans-serif;font-size:0.73rem;font-weight:600;letter-spacing:0.05em;color:var(--navy)}
+.finput,.ftextarea{padding:11px 14px;border:1px solid #DDD5C0;background:var(--cream);font-family:'Source Serif 4',serif;font-size:0.91rem;color:var(--text);outline:none;transition:border-color 0.2s;resize:none}
+.finput:focus,.ftextarea:focus{border-color:var(--teal);background:var(--white)}
+.ftextarea{min-height:108px}
+.fsubmit{padding:13px 28px;background:var(--navy);color:var(--white);font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;border:none;cursor:pointer;align-self:flex-start;transition:all 0.2s}
+.fsubmit:hover{background:var(--teal);transform:translateY(-2px)}
+
+/* ── FOOTER ── */
+footer{background:var(--navy);padding:44px 0 26px;border-top:3px solid var(--gold)}
+.footer-inner{max-width:1080px;margin:0 auto;padding:0 44px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:44px;margin-bottom:36px}
+.fbrand{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--gold);margin-bottom:12px}
+.fbrand span{color:var(--white);font-weight:400}
+.fabout{font-size:0.84rem;line-height:1.72;color:rgba(255,255,255,0.42)}
+.fcol-title{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.flinks{list-style:none;display:flex;flex-direction:column;gap:8px}
+.flinks a{font-size:0.84rem;color:rgba(255,255,255,0.48);text-decoration:none;transition:color 0.2s}
+.flinks a:hover{color:var(--white)}
+.footer-bottom{max-width:1080px;margin:0 auto;padding:20px 44px 0;border-top:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between;align-items:center;font-family:'DM Sans',sans-serif;font-size:0.73rem;color:rgba(255,255,255,0.26)}
+.sn-flag{display:flex;gap:3px}
+.sn-flag span{width:13px;height:13px;border-radius:2px}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.rd1{transition-delay:0.1s}.rd2{transition-delay:0.2s}.rd3{transition-delay:0.3s}.rd4{transition-delay:0.4s}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  nav{padding:0 22px}.nav-links{display:none}
+  .hero{grid-template-columns:1fr}.hero-right{display:none}
+  .hero-left{padding:108px 26px 56px}
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .about-grid,.contact-grid,.psycho-grid,.motiv-intro-grid{grid-template-columns:1fr;gap:36px}
+  .themes-grid,.motiv-grid{grid-template-columns:repeat(2,1fr)}
+  .concepts-grid,.inter-big-grid{grid-template-columns:1fr}
+  .pub-grid{grid-template-columns:1fr}
+  .pub-card.feat{grid-column:span 1;flex-direction:column}
+  .values-grid{grid-template-columns:1fr 1fr}
+  .footer-inner{grid-template-columns:1fr;gap:26px}
+  .container{padding:0 22px}
+  section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="#">Le Couloir du Savoir <span>· Éducation & Psychologie</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">Le Site</a></li>
+    <li><a href="#themes">Thèmes</a></li>
+    <li><a href="#psycho">Psychologie</a></li>
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#interactions">Interactions</a></li>
+    <li><a href="#concepts">Concepts</a></li>
+    <li><a href="#publications">Écrits</a></li>
+    <li><a href="#actualites">Actualités</a></li>
+    <li><a href="#contributions">Contributions</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="hero-tag">Éducation · Psychologie · Recherche · Motivation · Interactions · Afrique</p>
+    <h1 class="hero-name">Le Couloir<br/>du Savoir</h1>
+    <div class="hero-line"></div>
+    <p class="hero-subtitle">Un espace de réflexion né dans les couloirs informels où l'on apprend vraiment — loin des cadres figés, au plus près de l'humain.</p>
+    <div class="hero-pillars">
+      <div class="hero-pillar">Sciences de l'éducation &amp; recherche-action</div>
+      <div class="hero-pillar">Psychologie de l'apprentissage &amp; cognition</div>
+      <div class="hero-pillar">Motivation intrinsèque &amp; engagement apprenant</div>
+      <div class="hero-pillar">Interactions sociales &amp; dynamiques de groupe</div>
+      <div class="hero-pillar">Innovation pédagogique en Afrique subsaharienne</div>
+      <div class="hero-pillar">Formation continue &amp; accompagnement par les pairs</div>
+    </div>
+    <div class="hero-cta">
+      <a href="#publications" class="btn-p">Lire les écrits</a>
+      <a href="#themes" class="btn-o">Explorer les thèmes</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-bg"></div>
+    <div class="hero-visual">
+      <span class="qmark">"</span>
+      <p class="hero-quote">Dans les couloirs, on apprend ce que la salle de classe ne peut enseigner — la <strong>liberté de penser</strong>, la <strong>force du collectif</strong>.</p>
+      <p class="hero-qattr">M.B.M · Le Couloir du Savoir</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat reveal"><span class="stat-n">6</span><span class="stat-l">Grandes thématiques</span></div>
+  <div class="stat reveal rd1"><span class="stat-n">3</span><span class="stat-l">Concepts originaux</span></div>
+  <div class="stat reveal rd2"><span class="stat-n">∞</span><span class="stat-l">Interactions étudiées</span></div>
+  <div class="stat reveal rd3"><span class="stat-n">15+</span><span class="stat-l">Années de terrain</span></div>
+  <div class="stat reveal rd4"><span class="stat-n">🧠</span><span class="stat-l">Psychologie appliquée</span></div>
+  <div class="stat reveal rd4"><span class="stat-n">🌍</span><span class="stat-l">Afrique subsaharienne</span></div>
+</div>
+
+<!-- À PROPOS -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal" style="position:relative">
+        <div class="portrait-frame"><span class="portrait-symbol">?</span></div>
+        <div class="portrait-badge">M.B.M<br/>Auteur<br/>Afrique</div>
+      </div>
+      <div class="about-text">
+        <p class="eyebrow reveal">À propos du site</p>
+        <h2 class="sec-title reveal">Un espace <em>libre et anonyme</em><br/>de pensée éducative</h2>
+        <div class="reveal">
+          <p><strong>Le Couloir du Savoir</strong> est un espace de réflexion indépendant consacré à l'éducation, à la psychologie de l'apprentissage, à la motivation et aux interactions humaines, en contexte africain.</p>
+          <p>L'auteur, praticien de terrain depuis plus de quinze ans, a choisi l'anonymat pour préserver la liberté totale de sa pensée. Ce qui compte ici, ce sont <strong>les idées</strong>, pas le nom qui les porte.</p>
+          <p>Ce site est né d'une conviction : <em>les espaces informels — les couloirs, les échanges spontanés — sont souvent plus formateurs que les cadres officiels.</em> C'est cette liberté que ce site veut incarner.</p>
+        </div>
+        <div class="values-grid reveal">
+          <div class="value-box"><div class="value-icon">🔬</div><div class="value-title">Rigueur</div><div class="value-desc">Des idées ancrées dans la recherche et l'observation</div></div>
+          <div class="value-box"><div class="value-icon">🌱</div><div class="value-title">Terrain</div><div class="value-desc">Une pensée née de la pratique, pas des livres seuls</div></div>
+          <div class="value-box"><div class="value-icon">🤝</div><div class="value-title">Partage</div><div class="value-desc">Des savoirs construits collectivement et librement</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THÈMES -->
+<section class="themes" id="themes">
+  <div class="container">
+    <p class="eyebrow reveal">Thèmes explorés</p>
+    <h2 class="sec-title reveal">Huit territoires <em>de pensée</em></h2>
+    <p class="sec-intro reveal">Des domaines interconnectés explorés depuis le terrain africain avec les outils de la recherche, de la psychologie et de la pédagogie.</p>
+    <div class="themes-grid">
+      <div class="theme-card reveal">
+        <span class="theme-icon">⚡</span>
+        <div class="theme-name">Stivation</div>
+        <p class="theme-desc">Comment stimulation et motivation s'articulent dans les espaces informels pour produire un apprentissage profond et durable.</p>
+        <div class="theme-tags"><span class="theme-tag">Stivation</span><span class="theme-tag">Adidactique</span></div>
+      </div>
+      <div class="theme-card reveal rd1">
+        <span class="theme-icon">🧠</span>
+        <div class="theme-name">Psychologie cognitive</div>
+        <p class="theme-desc">Les mécanismes mentaux de l'apprentissage — mémoire, attention, représentation, conflit cognitif — revisités par le terrain africain.</p>
+        <div class="theme-tags"><span class="theme-tag">Cognition</span><span class="theme-tag">Métacognition</span></div>
+      </div>
+      <div class="theme-card reveal rd2">
+        <span class="theme-icon">🎯</span>
+        <div class="theme-name">Motivation</div>
+        <p class="theme-desc">Pourquoi certains apprenants s'investissent totalement. Les déclencheurs internes et externes, les inhibiteurs, les leviers à activer.</p>
+        <div class="theme-tags"><span class="theme-tag">Intrinsèque</span><span class="theme-tag">Flow</span><span class="theme-tag">Engagement</span></div>
+      </div>
+      <div class="theme-card reveal rd3">
+        <span class="theme-icon">🔺</span>
+        <div class="theme-name">Interactions sociales</div>
+        <p class="theme-desc">L'intersubjectivité comme moteur d'apprentissage. Comment les échanges entre pairs élèvent collectivement un système éducatif entier.</p>
+        <div class="theme-tags"><span class="theme-tag">TDI</span><span class="theme-tag">Pairs</span><span class="theme-tag">Collectif</span></div>
+      </div>
+      <div class="theme-card reveal">
+        <span class="theme-icon">🏛️</span>
+        <div class="theme-name">Innovation pédagogique</div>
+        <p class="theme-desc">Le CREAQ et d'autres dispositifs nés du terrain. La recherche-action comme méthode de changement systémique et durable.</p>
+        <div class="theme-tags"><span class="theme-tag">CREAQ</span><span class="theme-tag">Recherche-action</span></div>
+      </div>
+      <div class="theme-card reveal rd1">
+        <span class="theme-icon">🔗</span>
+        <div class="theme-name">Socioconstructivisme</div>
+        <p class="theme-desc">Vygotski, Piaget, Wenger — les grands théoriciens de l'apprentissage social revisités à la lumière des réalités africaines.</p>
+        <div class="theme-tags"><span class="theme-tag">ZPD</span><span class="theme-tag">Conflit cognitif</span></div>
+      </div>
+      <div class="theme-card reveal rd2">
+        <span class="theme-icon">💡</span>
+        <div class="theme-name">Créativité &amp; Pensée critique</div>
+        <p class="theme-desc">Développer la capacité à questionner, innover et résoudre des problèmes complexes dans des contextes éducatifs contraints.</p>
+        <div class="theme-tags"><span class="theme-tag">Pensée critique</span><span class="theme-tag">Créativité</span></div>
+      </div>
+      <div class="theme-card reveal rd3">
+        <span class="theme-icon">🌍</span>
+        <div class="theme-name">Éducation en Afrique</div>
+        <p class="theme-desc">Les défis spécifiques du système éducatif africain et les innovations remarquables qui émergent du terrain, souvent ignorées.</p>
+        <div class="theme-tags"><span class="theme-tag">Afrique</span><span class="theme-tag">Équité</span><span class="theme-tag">Terrain</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PSYCHOLOGIE -->
+<section class="psycho" id="psycho">
+  <div class="container">
+    <p class="eyebrow reveal">Psychologie de l'apprentissage</p>
+    <h2 class="sec-title reveal">Comprendre <em>comment l'humain apprend</em></h2>
+    <p class="sec-intro reveal">Les grands mécanismes psychologiques qui expliquent pourquoi certains apprennent mieux que d'autres, et comment créer les conditions optimales d'apprentissage.</p>
+    <div class="psycho-grid">
+      <div class="reveal">
+        <div class="psycho-diagram">
+          <div class="diag-ring ring1"></div>
+          <div class="diag-ring ring2"></div>
+          <div class="diag-center"><div class="diag-center-txt">Apprendre<br/>ensemble</div></div>
+          <div class="dnode" style="top:4%;left:50%;margin-left:-35px;background:#0E6B7C">Stimu-<br/>lation</div>
+          <div class="dnode" style="bottom:4%;left:50%;margin-left:-35px;background:#C9970A;color:#1A2E4A">Motiva-<br/>tion</div>
+          <div class="dnode" style="top:50%;left:1%;margin-top:-35px;background:#B85533">Inter-<br/>action</div>
+          <div class="dnode" style="top:50%;right:1%;margin-top:-35px;background:#4A7C6F">Collabo-<br/>ration</div>
+          <div class="dnode" style="top:18%;left:10%;background:#6B3F6E">Conflit<br/>cognitif</div>
+          <div class="dnode" style="top:18%;right:10%;background:#1A2E4A">Zone<br/>ZPD</div>
+        </div>
+      </div>
+      <div class="psycho-list">
+        <div class="psycho-item reveal"><div class="p-icon">🧩</div><div><div class="p-title">Le conflit sociocognitif (Piaget)</div><div class="p-text">La confrontation d'idées différentes crée un déséquilibre cognitif productif — moteur puissant de progression intellectuelle collective.</div></div></div>
+        <div class="psycho-item reveal rd1"><div class="p-icon">🔗</div><div><div class="p-title">La zone proximale de développement (Vygotski)</div><div class="p-text">On apprend davantage avec quelqu'un de légèrement plus avancé. La distance entre ce qu'on sait et ce qu'on peut apprendre avec aide est le terrain le plus fertile.</div></div></div>
+        <div class="psycho-item reveal rd2"><div class="p-icon">🏘️</div><div><div class="p-title">Les communautés de pratique (Wenger)</div><div class="p-text">L'apprentissage émerge de l'engagement dans des pratiques sociales partagées. Appartenir à une communauté qui fait et réfléchit ensemble est décisif.</div></div></div>
+        <div class="psycho-item reveal rd3"><div class="p-icon">🔥</div><div><div class="p-title">La stivation — concept original</div><div class="p-text">Quand stimulation et motivation se combinent dans un espace libre de contraintes institutionnelles, l'apprentissage atteint une profondeur que le cadre formel produit rarement.</div></div></div>
+        <div class="psycho-item reveal rd4"><div class="p-icon">🪞</div><div><div class="p-title">La métacognition</div><div class="p-text">Apprendre à connaître son propre fonctionnement cognitif — comment on mémorise, comment on résout des problèmes — pour devenir un apprenant plus efficace et autonome.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GRANDE CITATION -->
+<div class="bigquote">
+  <div class="bq-inner">
+    <p class="bq-text">« S'inscrivant dans une logique <strong>constructiviste, sociale et interactionniste</strong>, la stivation se particularise du fait de son caractère <strong>non formalisé et adidactique</strong> — là où la motivation rencontre la stimulation dans la liberté. »</p>
+    <p class="bq-attr">M.B.M · Le Couloir du Savoir · Concept fondateur</p>
+  </div>
+</div>
+
+<!-- MOTIVATION -->
+<section class="motivation" id="motivation">
+  <div class="container">
+    <p class="eyebrow reveal">Motivation &amp; Engagement</p>
+    <h2 class="sec-title reveal">Pourquoi certains apprennent <em>sans qu'on le leur demande</em></h2>
+    <div class="motiv-intro-grid">
+      <div class="motiv-text reveal">
+        <p>La motivation est au cœur de tout apprentissage. Sans elle, les meilleurs dispositifs pédagogiques restent stériles. Avec elle, l'apprenant surmonte tous les obstacles.</p>
+        <p>Ce site explore les <strong>mécanismes profonds de la motivation</strong> — intrinsèque et extrinsèque — et leur articulation avec les processus cognitifs, les dynamiques sociales et les contextes culturels africains.</p>
+        <p>La <strong>stivation</strong> est elle-même une théorie de la motivation : elle explique comment un espace informel, libéré de toute contrainte, peut déclencher chez l'apprenant une énergie intellectuelle que le cours magistral ne parvient pas à produire.</p>
+      </div>
+      <div class="motiv-pyramid reveal">
+        <div class="pyramid-level" style="width:90%;background:var(--navy)">
+          <span class="pyr-icon">🌟</span><span class="pyr-label">Réalisation de soi · Devenir ce qu'on peut être</span>
+        </div>
+        <div class="pyramid-level" style="width:78%;background:var(--teal)">
+          <span class="pyr-icon">🏆</span><span class="pyr-label">Estime · Reconnaissance &amp; compétence</span>
+        </div>
+        <div class="pyramid-level" style="width:66%;background:var(--sage)">
+          <span class="pyr-icon">🤝</span><span class="pyr-label">Appartenance · Interactions &amp; communauté</span>
+        </div>
+        <div class="pyramid-level" style="width:54%;background:var(--gold)">
+          <span class="pyr-icon">🔒</span><span class="pyr-label" style="color:var(--navy)">Sécurité · Cadre stable &amp; prévisible</span>
+        </div>
+        <div class="pyramid-level" style="width:42%;background:var(--rust)">
+          <span class="pyr-icon">🌱</span><span class="pyr-label">Besoins de base · Survie &amp; physiologie</span>
+        </div>
+        <p style="font-family:'DM Sans',sans-serif;font-size:0.7rem;color:var(--muted);margin-top:12px;text-align:center;letter-spacing:0.08em;text-transform:uppercase">Pyramide de Maslow revisitée</p>
+      </div>
+    </div>
+    <div class="motiv-grid">
+      <div class="motiv-card reveal"><div class="motiv-icon">🔥</div><div class="motiv-title">Motivation intrinsèque</div><p class="motiv-desc">Apprendre pour le plaisir d'apprendre, par curiosité pure. La source la plus puissante et la plus durable — celle que le Couloir du Savoir cherche à éveiller.</p></div>
+      <div class="motiv-card reveal rd1"><div class="motiv-icon">🏅</div><div class="motiv-title">Motivation extrinsèque</div><p class="motiv-desc">Apprendre pour une récompense extérieure — notes, diplômes, reconnaissance. Utile à court terme, mais risque d'étouffer la curiosité naturelle si elle domine.</p></div>
+      <div class="motiv-card reveal rd2"><div class="motiv-icon">🌊</div><div class="motiv-title">L'état de Flow (Csikszentmihalyi)</div><p class="motiv-desc">Cet état d'absorption totale où l'activité devient si engageante qu'on perd la notion du temps. L'objectif ultime de tout dispositif pédagogique bien conçu.</p></div>
+      <div class="motiv-card reveal"><div class="motiv-icon">🧭</div><div class="motiv-title">Le sentiment d'autonomie</div><p class="motiv-desc">Quand l'apprenant se sent auteur de ses choix, sa motivation explose. La théorie de l'autodétermination (Deci &amp; Ryan) explique pourquoi le contrôle tue l'envie.</p></div>
+      <div class="motiv-card reveal rd1"><div class="motiv-icon">💪</div><div class="motiv-title">Le sentiment de compétence</div><p class="motiv-desc">Croire qu'on est capable d'accomplir une tâche. Le rôle crucial du feedback positif, des petites victoires et de l'encouragement dans le développement de la confiance.</p></div>
+      <div class="motiv-card reveal rd2"><div class="motiv-icon">👥</div><div class="motiv-title">L'émulation par les pairs</div><p class="motiv-desc">Voir quelqu'un de proche réussir donne envie d'en faire autant. La dynamique de groupe comme moteur de motivation collective — au cœur du modèle CREAQ.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIONS -->
+<section class="interactions" id="interactions">
+  <div class="container">
+    <p class="eyebrow reveal">Interactions &amp; Dynamiques humaines</p>
+    <h2 class="sec-title reveal">Six dimensions <em>de l'interaction apprenante</em></h2>
+    <p class="sec-intro reveal">Les interactions ne sont pas accessoires à l'apprentissage — elles en sont le moteur central. Voici comment elles opèrent à différents niveaux.</p>
+    <div class="inter-big-grid">
+      <div class="inter-card reveal">
+        <div class="inter-header">
+          <div class="inter-icon-box" style="background:rgba(14,107,124,0.1)">💬</div>
+          <div><div class="inter-title">Interaction verbale</div><div class="inter-subtitle">La parole comme outil de pensée</div></div>
+        </div>
+        <p class="inter-desc">Débattre, expliquer, questionner — ces actes de langage ne transmettent pas seulement des informations, ils construisent le sens. Parler d'un concept, c'est déjà le comprendre mieux. L'oral est le premier outil de la pensée.</p>
+        <div class="inter-tags"><span class="itag">Débat</span><span class="itag">Questionnement</span><span class="itag">Explication mutuelle</span></div>
+      </div>
+      <div class="inter-card reveal rd1">
+        <div class="inter-header">
+          <div class="inter-icon-box" style="background:rgba(201,151,10,0.1)">👁️</div>
+          <div><div class="inter-title">Interaction non verbale</div><div class="inter-subtitle">Ce que les mots ne disent pas</div></div>
+        </div>
+        <p class="inter-desc">Les regards, les postures, les silences, les expressions faciales — tout cela communique en permanence dans un groupe apprenant. Les enseignants les plus efficaces lisent autant la salle qu'ils ne la parlent.</p>
+        <div class="inter-tags"><span class="itag">Posture</span><span class="itag">Regard</span><span class="itag">Silence</span></div>
+      </div>
+      <div class="inter-card reveal">
+        <div class="inter-header">
+          <div class="inter-icon-box" style="background:rgba(184,85,51,0.1)">🤝</div>
+          <div><div class="inter-title">Interaction entre pairs</div><div class="inter-subtitle">L'intelligence du collectif</div></div>
+        </div>
+        <p class="inter-desc">Le groupe apprend différemment d'un individu. La solidarité intellectuelle, l'émulation, la co-construction du savoir — autant de processus que seule l'interaction entre pairs peut déclencher. Fondement du CREAQ.</p>
+        <div class="inter-tags"><span class="itag">Pairs</span><span class="itag">Co-construction</span><span class="itag">CREAQ</span></div>
+      </div>
+      <div class="inter-card reveal rd1">
+        <div class="inter-header">
+          <div class="inter-icon-box" style="background:rgba(74,124,111,0.1)">🔄</div>
+          <div><div class="inter-title">Interaction réflexive</div><div class="inter-subtitle">Apprendre à apprendre</div></div>
+        </div>
+        <p class="inter-desc">L'interaction avec soi-même — la métacognition, le regard critique sur ses propres pratiques. Se demander "Comment j'apprends ? Qu'est-ce qui m'a bloqué ?" est une compétence rare et précieuse à développer.</p>
+        <div class="inter-tags"><span class="itag">Métacognition</span><span class="itag">Auto-évaluation</span><span class="itag">Réflexivité</span></div>
+      </div>
+      <div class="inter-card reveal">
+        <div class="inter-header">
+          <div class="inter-icon-box" style="background:rgba(107,63,110,0.1)">🏛️</div>
+          <div><div class="inter-title">Interaction institutionnelle</div><div class="inter-subtitle">Le cadre qui libère ou contraint</div></div>
+        </div>
+        <p class="inter-desc">Comment l'institution — école, administration, normes sociales — influence les interactions et donc les apprentissages. Comprendre ces contraintes pour mieux les contourner ou les transformer de l'intérieur.</p>
+        <div class="inter-tags"><span class="itag">Institution</span><span class="itag">Contraintes</span><span class="itag">Transformation</span></div>
+      </div>
+      <div class="inter-card reveal rd1">
+        <div class="inter-header">
+          <div class="inter-icon-box" style="background:rgba(224,122,48,0.1)">🌐</div>
+          <div><div class="inter-title">Interaction culturelle</div><div class="inter-subtitle">Apprendre dans sa propre langue de cœur</div></div>
+        </div>
+        <p class="inter-desc">En Afrique, la langue d'enseignement n'est souvent pas la langue de pensée. Cette fracture culturelle est un frein invisible mais massif à l'apprentissage. Les interactions en langue maternelle transforment radicalement l'engagement.</p>
+        <div class="inter-tags"><span class="itag">Langues</span><span class="itag">Culture</span><span class="itag">Identité</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONCEPTS -->
+<section class="concepts" id="concepts">
+  <div class="container">
+    <p class="eyebrow reveal">Concepts originaux</p>
+    <h2 class="sec-title reveal">Trois outils <em>pour penser l'éducation</em></h2>
+    <p class="sec-intro reveal">Des concepts forgés dans l'observation du réel, théorisés avec rigueur, mis au service de la pratique pédagogique en Afrique.</p>
+    <div class="concepts-grid">
+      <div class="concept-card reveal">
+        <div class="concept-num">01</div>
+        <div class="concept-name">La Stivation</div>
+        <p class="concept-def">Néologisme construit sur <em>stimulation</em> et <em>motivation</em>. Processus par lequel des interactions informelles entre apprenants génèrent simultanément une déstabilisation cognitive et une dynamique collective d'apprentissage profond, hors de tout cadre institutionnel.</p>
+        <span class="concept-pill">Concept original · 2010</span>
+      </div>
+      <div class="concept-card reveal rd1">
+        <div class="concept-num">02</div>
+        <div class="concept-name">Le CREAQ</div>
+        <p class="concept-def">Cadre de Réflexion et d'Encadrement pour un Apprentissage de Qualité. Dispositif de formation continue par les pairs permettant de démultiplier l'accompagnement pédagogique là où les ressources humaines sont limitées. Un multiplicateur d'impact.</p>
+        <span class="concept-pill">Dispositif opérationnel · 2015</span>
+      </div>
+      <div class="concept-card reveal rd2">
+        <div class="concept-num">03</div>
+        <div class="concept-name">La TDI</div>
+        <p class="concept-def">Triade Dynamique Intersubjective. Architecture relationnelle à trois pôles interdépendants. Chaque acteur apprend de l'autre dans un environnement pédago-didactique vivant et auto-renforçant, créant une dynamique de progrès collectif continu.</p>
+        <span class="concept-pill">Modèle systémique · 2019</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="publications" id="publications">
+  <div class="container">
+    <p class="eyebrow reveal">Écrits &amp; Publications</p>
+    <h2 class="sec-title reveal">La pensée mise <em>en mots</em></h2>
+    <p class="sec-intro reveal">Articles de recherche, réflexions personnelles, analyses psychologiques et documents pédagogiques sur l'éducation, la motivation et les interactions humaines.</p>
+    <div class="pub-grid">
+      <div class="pub-card feat reveal">
+        <div class="feat-bar"></div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:12px">
+          <span class="pub-cat cat-r">Mémoire original · À la une · Publié en ligne ✅</span>
+          <h3 class="pub-title">Interactions entre élèves inspecteurs lors des activités collaboratives et coopératives en formation initiale</h3>
+          <p class="pub-excerpt">Mémoire CAIEE — FASTEF, Université Cheikh Anta DIOP de Dakar, 2010. Le texte fondateur du concept de la <strong>Stivation</strong>, publié sur Mémoire Online et indexé par Google. Source originale accessible à tous.</p>
+          <div class="pub-meta"><span>FASTEF · UCAD · 2010</span><a href="https://www.memoireonline.com/07/11/4627/" target="_blank" class="pub-read">Lire le mémoire original →</a></div>
+        </div>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-cat cat-mo">Motivation</span>
+        <h3 class="pub-title">La motivation intrinsèque : pourquoi certains apprennent sans qu'on le leur demande</h3>
+        <p class="pub-excerpt">Analyse des mécanismes psychologiques profonds qui déclenchent l'envie d'apprendre — curiosité, sentiment de compétence, autonomie — et comment les activer en contexte éducatif africain.</p>
+        <div class="pub-meta"><span>Psychologie · 2023</span><a href="#" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd1">
+        <span class="pub-cat cat-ps">Psychologie</span>
+        <h3 class="pub-title">Vygotski en Afrique : la zone proximale de développement revisitée</h3>
+        <p class="pub-excerpt">Comment la théorie de Vygotski s'applique et se transforme au contact des réalités éducatives africaines. Une lecture critique et constructive d'un concept universel mis à l'épreuve du terrain.</p>
+        <div class="pub-meta"><span>Recherche · 2021</span><a href="#" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-cat cat-rf">Réflexion</span>
+        <h3 class="pub-title">Le couloir comme salle de classe : ce que l'informel nous apprend</h3>
+        <p class="pub-excerpt">Pourquoi les espaces non institutionnels — couloirs, discussions spontanées, repas partagés — produisent parfois plus d'apprentissage que les meilleurs dispositifs formels.</p>
+        <div class="pub-meta"><span>Essai · 2022</span><a href="#" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd1">
+        <span class="pub-cat cat-mo">Motivation</span>
+        <h3 class="pub-title">L'état de Flow dans l'apprentissage : quand on perd la notion du temps</h3>
+        <p class="pub-excerpt">Exploration du concept de Flow de Csikszentmihalyi appliqué à l'éducation. Comment créer les conditions pour que les apprenants atteignent cet état d'absorption totale.</p>
+        <div class="pub-meta"><span>Psychologie · 2023</span><a href="#" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd2">
+        <span class="pub-cat cat-p">Pédagogie</span>
+        <h3 class="pub-title">Guide pratique : créer une dynamique de formation entre pairs</h3>
+        <p class="pub-excerpt">Six étapes concrètes pour mettre en place un dispositif de formation continue par les pairs dans n'importe quel établissement, sans ressources exceptionnelles.</p>
+        <div class="pub-meta"><span>Guide · 2021</span><a href="#" class="pub-read">Télécharger →</a></div>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-cat cat-ps">Psychologie</span>
+        <h3 class="pub-title">La confiance en soi et l'apprentissage : le rôle du regard des autres</h3>
+        <p class="pub-excerpt">Comment l'estime de soi académique — ce que l'apprenant croit pouvoir accomplir — est construite par les interactions sociales, les feedbacks reçus et les modèles observés.</p>
+        <div class="pub-meta"><span>Psychologie sociale · 2024</span><a href="#" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd1">
+        <span class="pub-cat cat-a">Actualité</span>
+        <h3 class="pub-title">L'éducation en Afrique subsaharienne : défis et lueurs d'espoir</h3>
+        <p class="pub-excerpt">Un regard lucide sur l'état de l'éducation africaine — les contraintes structurelles, mais aussi les innovations remarquables qui émergent du terrain.</p>
+        <div class="pub-meta"><span>Analyse · 2024</span><a href="#" class="pub-read">Lire →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ACTUALITÉS ÉDUCATION -->
+<section style="background:var(--sand);padding:84px 0" id="actualites">
+  <div class="container">
+    <p class="eyebrow reveal">Actualités de l'Éducation</p>
+    <h2 class="sec-title reveal">L'éducation africaine <em>en mouvement</em></h2>
+    <p class="sec-intro reveal">Les dernières tendances, réformes et débats qui façonnent l'éducation en Afrique subsaharienne et dans le monde francophone.</p>
+    <div class="pub-grid">
+      <div class="pub-card reveal">
+        <span class="pub-cat cat-a">Actualité</span>
+        <h3 class="pub-title">Les réformes curriculaires en Afrique de l'Ouest : où en sommes-nous ?</h3>
+        <p class="pub-excerpt">Un tour d'horizon des grandes réformes des programmes scolaires en cours au Sénégal, au Mali, en Côte d'Ivoire et au Burkina Faso. Ce qui change, ce qui résiste, ce qui inspire.</p>
+        <div class="pub-meta"><span>Analyse · 2024</span><a href="#" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd1">
+        <span class="pub-cat cat-a">Actualité</span>
+        <h3 class="pub-title">Le numérique à l'école africaine : promesse ou illusion ?</h3>
+        <p class="pub-excerpt">Les tablettes, les plateformes en ligne, l'intelligence artificielle dans les classes africaines — entre enthousiasme des décideurs et réalités du terrain, un regard lucide et nuancé.</p>
+        <div class="pub-meta"><span>Débat · 2024</span><a href="#" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-cat cat-a">Actualité</span>
+        <h3 class="pub-title">Formation des enseignants en Afrique : les nouveaux modèles qui émergent</h3>
+        <p class="pub-excerpt">Au-delà des formations classiques, de nouveaux dispositifs innovants apparaissent partout en Afrique. Revue des expériences les plus prometteuses, dont le modèle CREAQ.</p>
+        <div class="pub-meta"><span>Tendances · 2024</span><a href="#" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd1">
+        <span class="pub-cat cat-a">Actualité</span>
+        <h3 class="pub-title">L'école en langue maternelle : le grand débat africain</h3>
+        <p class="pub-excerpt">Faut-il enseigner en français ou en langues nationales ? Les expériences menées au Sénégal, au Mali et en Guinée donnent des résultats surprenants sur la motivation et les apprentissages.</p>
+        <div class="pub-meta"><span>Débat · 2023</span><a href="#" class="pub-read">Lire →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTRIBUTIONS -->
+<section style="background:var(--navy);padding:84px 0" id="contributions">
+  <div class="container">
+    <p class="eyebrow reveal" style="color:rgba(201,151,10,0.9)">Contributions</p>
+    <h2 class="sec-title reveal" style="color:var(--white)">Participez au <em style="color:#7DE0EE">Couloir du Savoir</em></h2>
+    <p class="sec-intro reveal" style="color:rgba(255,255,255,0.52)">Ce site est un espace collectif. Vous avez une réflexion, une expérience de terrain, une recherche à partager ? Le Couloir du Savoir vous est ouvert.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px">
+      <div class="theme-card reveal">
+        <span class="theme-icon">✍️</span>
+        <div class="theme-name">Soumettre un article</div>
+        <p class="theme-desc">Vous êtes enseignant, chercheur, inspecteur ou praticien de l'éducation ? Partagez votre expérience et vos réflexions. Tous les textes sérieux sont les bienvenus.</p>
+      </div>
+      <div class="theme-card reveal rd1">
+        <span class="theme-icon">💬</span>
+        <div class="theme-name">Témoigner du terrain</div>
+        <p class="theme-desc">Une observation, une anecdote significative, une pratique innovante dans votre classe ou votre école ? Le terrain est la source de toute théorie valable.</p>
+      </div>
+      <div class="theme-card reveal rd2">
+        <span class="theme-icon">🔬</span>
+        <div class="theme-name">Partager une recherche</div>
+        <p class="theme-desc">Vous avez mené une recherche-action, un mémoire, une étude sur l'éducation en Afrique ? Publiez-la ici pour qu'elle profite à tous.</p>
+      </div>
+    </div>
+    <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:40px;max-width:700px;margin:0 auto" class="reveal">
+      <h3 style="font-family:Playfair Display,serif;color:var(--gold);font-size:1.3rem;margin-bottom:20px;text-align:center">Soumettre une contribution</h3>
+      <div class="form">
+        <div class="form-row">
+          <div class="fg"><label class="flbl" style="color:rgba(255,255,255,0.7)">Prénom</label><input class="finput" type="text" placeholder="Votre prénom"/></div>
+          <div class="fg"><label class="flbl" style="color:rgba(255,255,255,0.7)">Email</label><input class="finput" type="email" placeholder="votre@email.com"/></div>
+        </div>
+        <div class="fg"><label class="flbl" style="color:rgba(255,255,255,0.7)">Type de contribution</label>
+          <select class="finput" style="cursor:pointer">
+            <option>Article de réflexion</option>
+            <option>Témoignage de terrain</option>
+            <option>Recherche ou mémoire</option>
+            <option>Actualité éducative</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="fg"><label class="flbl" style="color:rgba(255,255,255,0.7)">Titre de votre contribution</label><input class="finput" type="text" placeholder="Titre de votre texte"/></div>
+        <div class="fg"><label class="flbl" style="color:rgba(255,255,255,0.7)">Votre texte ou résumé</label><textarea class="ftextarea" style="min-height:140px" placeholder="Collez votre texte ou résumé ici…"></textarea></div>
+        <button class="fsubmit" style="align-self:center;background:var(--gold);color:var(--navy)" id="contrib-btn">Soumettre ma contribution</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="sec-title reveal">Entrons en <em>conversation</em></h2>
+        <p class="sec-intro reveal" style="margin-bottom:32px">Pour tout échange académique, collaboration ou contribution. L'auteur reste anonyme mais les idées, elles, circulent librement.</p>
+        <div class="contact-item reveal"><div class="c-icon">🌍</div><div><p class="c-lbl">Zone géographique</p><p class="c-val">Afrique subsaharienne · Sénégal</p></div></div>
+        <div class="contact-item reveal"><div class="c-icon">📚</div><div><p class="c-lbl">Domaines</p><p class="c-val">Éducation · Psychologie · Motivation · Interactions · Recherche-action</p></div></div>
+        <div class="contact-item reveal"><div class="c-icon">✍️</div><div><p class="c-lbl">Contributions</p><p class="c-val">Vous pouvez proposer un article, un témoignage ou une réflexion</p></div></div>
+      </div>
+      <div class="form reveal">
+        <div class="form-row">
+          <div class="fg"><label class="flbl">Votre prénom</label><input class="finput" type="text" placeholder="Prénom"/></div>
+          <div class="fg"><label class="flbl">Email</label><input class="finput" type="email" placeholder="votre@email.com"/></div>
+        </div>
+        <div class="fg"><label class="flbl">Objet</label><input class="finput" type="text" placeholder="Sujet de votre message"/></div>
+        <div class="fg"><label class="flbl">Message</label><textarea class="ftextarea" placeholder="Votre message, question ou contribution…"></textarea></div>
+        <button class="fsubmit">Envoyer</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="fbrand">Le Couloir du Savoir <span>· Éducation & Psychologie</span></div>
+      <p class="fabout">Un espace anonyme et libre · Éducation &amp; Psychologie · consacré à l'éducation, la psychologie de l'apprentissage, la motivation et les interactions humaines en Afrique. Né dans les couloirs informels où l'on apprend vraiment.</p>
+    </div>
+    <div>
+      <p class="fcol-title">Navigation</p>
+      <ul class="flinks">
+        <li><a href="#about">Le Site</a></li>
+        <li><a href="#themes">Thèmes</a></li>
+        <li><a href="#psycho">Psychologie</a></li>
+        <li><a href="#motivation">Motivation</a></li>
+        <li><a href="#interactions">Interactions</a></li>
+        <li><a href="#concepts">Concepts</a></li>
+        <li><a href="#publications">Écrits</a></li>
+        <li><a href="#actualites">Actualités</a></li>
+        <li><a href="#contributions">Contributions</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="fcol-title">Concepts clés</p>
+      <ul class="flinks">
+        <li><a href="#concepts">La Stivation</a></li>
+        <li><a href="#concepts">Le CREAQ</a></li>
+        <li><a href="#concepts">La TDI</a></li>
+        <li><a href="#psycho">Zone proximale (ZPD)</a></li>
+        <li><a href="#motivation">Le Flow</a></li>
+        <li><a href="#motivation">Autodétermination</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 <strong style="color:var(--gold);letter-spacing:0.12em">M.B.M</strong> · Le Couloir du Savoir · Éducation &amp; Psychologie · Afrique</span>
+    <div class="sn-flag">
+      <span style="background:#00853F"></span>
+      <span style="background:#FDEF42"></span>
+      <span style="background:#E31B23"></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+const secs = document.querySelectorAll('section[id]');
+const links = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  secs.forEach(s => { if(window.scrollY >= s.offsetTop - 100) cur = s.id; });
+  links.forEach(a => { a.style.color = a.getAttribute('href') === '#'+cur ? 'var(--gold)' : 'rgba(255,255,255,0.7)'; });
+});
+
+document.getElementById('contrib-btn').addEventListener('click', function(){
+  this.textContent = '✓ Contribution reçue !';
+  this.style.background = 'var(--teal)';
+  this.style.color = 'var(--white)';
+  setTimeout(() => { this.textContent = 'Soumettre ma contribution'; this.style.background = 'var(--gold)'; this.style.color = 'var(--navy)'; }, 3000);
+});
+
+document.querySelector('.fsubmit').addEventListener('click', function(){
+  this.textContent = '✓ Message envoyé !';
+  this.style.background = 'var(--teal)';
+  setTimeout(() => { this.textContent = 'Envoyer'; this.style.background = 'var(--navy)'; }, 3000);
+});
+</script>
+</body>
+</html>

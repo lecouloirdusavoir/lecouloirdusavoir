@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Le couloir de l'école, nouvelle salle des maîtres, Le Couloir du Savoir</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#1A2E4A;--teal:#0E6B7C;--gold:#C9970A;--sand:#F5EED8;--cream:#FDFAF3;--rust:#B85533;--sage:#4A7C6F;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--sand)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 44px;height:62px;background:rgba(26,46,74,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,151,10,0.22)}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--gold);text-decoration:none}
+.nav-brand span{color:var(--white);font-weight:400;font-style:italic}
+.nav-back{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;display:flex;align-items:center;gap:7px;transition:color 0.2s}
+.nav-back:hover{color:var(--gold)}
+
+.article-hero{background:var(--navy);padding:130px 44px 70px;position:relative;overflow:hidden}
+.article-hero::before{content:'';position:absolute;bottom:-120px;right:-120px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(201,151,10,0.08);pointer-events:none}
+.article-hero::after{content:'';position:absolute;top:-80px;left:-80px;width:260px;height:260px;border-radius:50%;border:1px solid rgba(14,107,124,0.1);pointer-events:none}
+.hero-inner{max-width:820px;margin:0 auto}
+.art-cat{font-family:'DM Sans',sans-serif;font-size:0.69rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:block}
+.art-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.8vw,3rem);font-weight:900;color:var(--white);line-height:1.12;margin-bottom:6px}
+.art-title em{color:#7DE0EE;font-style:italic}
+.art-subtitle{font-family:'Source Serif 4',serif;font-size:1.05rem;font-style:italic;color:rgba(255,255,255,0.58);margin-top:14px;line-height:1.7;max-width:680px}
+.art-line{width:54px;height:3px;background:var(--gold);margin:22px 0}
+.art-meta{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.5);display:flex;gap:20px;flex-wrap:wrap;margin-bottom:32px}
+.art-resume{background:rgba(255,255,255,0.05);border-left:4px solid var(--gold);padding:24px 28px;font-size:0.96rem;line-height:1.85;color:rgba(255,255,255,0.75);font-style:italic}
+.art-resume strong{color:var(--gold);font-style:normal}
+.art-keywords{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
+.kw{padding:4px 12px;background:rgba(14,107,124,0.3);border:1px solid rgba(14,107,124,0.5);font-family:'DM Sans',sans-serif;font-size:0.7rem;color:rgba(255,255,255,0.65);letter-spacing:0.06em}
+.prev-art{background:rgba(201,151,10,0.12);border:1px solid rgba(201,151,10,0.3);padding:14px 24px;margin-top:28px;display:flex;align-items:center;gap:12px;text-decoration:none;transition:background 0.2s;max-width:fit-content}
+.prev-art:hover{background:rgba(201,151,10,0.2)}
+.prev-art span{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(255,255,255,0.6)}
+.prev-art strong{font-family:'DM Sans',sans-serif;font-size:0.82rem;color:var(--gold)}
+
+.article-body{max-width:820px;margin:0 auto;padding:72px 44px 80px}
+.section-heading{font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin:52px 0 18px;padding-bottom:10px;border-bottom:2px solid var(--sand)}
+.section-heading span{color:var(--teal)}
+.sub-heading{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--rust);margin:32px 0 12px}
+
+p{font-size:1.02rem;line-height:1.95;color:#3C3C3C;margin-bottom:18px;text-align:justify;text-indent:2em}
+p.no-indent{text-indent:0}
+
+.item-list{list-style:none;margin:16px 0 24px;padding:0;display:flex;flex-direction:column;gap:12px}
+.item-list li{display:flex;gap:14px;align-items:flex-start;padding:14px 18px;background:var(--white);border-left:3px solid var(--teal);font-size:0.97rem;line-height:1.75;color:#3C3C3C}
+.item-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:8px}
+
+.blockquote{background:var(--sand);border-left:5px solid var(--teal);padding:28px 32px;margin:36px 0;position:relative}
+.blockquote::before{content:'\201C';font-family:'Playfair Display',serif;font-size:5rem;color:rgba(14,107,124,0.12);position:absolute;top:-20px;left:16px;line-height:1}
+.blockquote p{font-family:'Playfair Display',serif;font-size:1.12rem;font-style:italic;color:var(--navy);line-height:1.75;text-indent:0;margin-bottom:10px}
+.blockquote cite{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase}
+
+.encadre{background:var(--white);border:1px solid #E8E0D0;border-top:4px solid var(--gold);padding:28px 32px;margin:36px 0}
+.encadre-title{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.encadre p{text-indent:0;font-size:0.95rem}
+
+.encadre-teal{background:var(--white);border:1px solid #E8E0D0;border-top:4px solid var(--teal);padding:28px 32px;margin:36px 0}
+.encadre-teal .encadre-title{color:var(--teal)}
+
+.num-list{list-style:none;margin:16px 0 24px;padding:0;display:flex;flex-direction:column;gap:10px}
+.num-list li{display:flex;gap:14px;align-items:flex-start;font-size:0.97rem;line-height:1.75;color:#3C3C3C}
+.num{width:28px;height:28px;border-radius:50%;background:var(--teal);color:var(--white);font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+
+/* CHIFFRES CLÉS */
+.chiffres{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+.chiffre-box{background:var(--navy);padding:28px 20px;text-align:center}
+.chiffre-n{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:900;color:var(--gold);line-height:1;display:block}
+.chiffre-l{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(255,255,255,0.62);margin-top:8px;line-height:1.4;display:block}
+
+/* MOMENTS */
+.moments-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}
+.moment-card{padding:24px 18px;background:var(--white);border:1px solid #E8E0D0;border-top:3px solid var(--teal);text-align:center;transition:all 0.25s}
+.moment-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(26,46,74,0.09)}
+.moment-icon{font-size:2rem;margin-bottom:12px;display:block}
+.moment-title{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:700;color:var(--navy);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.06em}
+.moment-desc{font-size:0.85rem;line-height:1.65;color:var(--muted)}
+
+/* BIENFAITS */
+.bienfaits{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0}
+.bienfait{display:flex;gap:14px;align-items:flex-start;padding:18px;background:var(--white);border:1px solid #E8E0D0;transition:border-color 0.2s}
+.bienfait:hover{border-color:var(--teal)}
+.bienfait-icon{font-size:1.6rem;flex-shrink:0}
+.bienfait-title{font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);margin-bottom:5px}
+.bienfait-desc{font-size:0.85rem;line-height:1.62;color:var(--muted)}
+
+/* APPEL ACTION */
+.appel{background:var(--teal);padding:48px 44px;margin:0}
+.appel-inner{max-width:820px;margin:0 auto;text-align:center}
+.appel-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--white);margin-bottom:16px}
+.appel-title em{color:var(--gold);font-style:italic}
+.appel-text{font-size:0.98rem;line-height:1.82;color:rgba(255,255,255,0.72);max-width:620px;margin:0 auto 28px}
+.appel-btn{display:inline-block;padding:14px 32px;background:var(--gold);color:var(--navy);font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.2s}
+.appel-btn:hover{background:#e0a800;transform:translateY(-2px)}
+
+.sep{width:60px;height:3px;background:var(--gold);margin:52px auto}
+
+.refs{background:var(--navy);padding:40px 44px}
+.refs-inner{max-width:820px;margin:0 auto}
+.refs-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--gold);margin-bottom:22px}
+.refs ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.refs li{font-size:0.88rem;line-height:1.65;color:rgba(255,255,255,0.55);padding-left:20px;position:relative}
+.refs li::before{content:'—';position:absolute;left:0;color:var(--gold)}
+
+.nav-articles{background:var(--sand);padding:40px 44px}
+.nav-articles-inner{max-width:820px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.nav-art-card{padding:22px;background:var(--white);border:1px solid #E8E0D0;text-decoration:none;transition:all 0.2s}
+.nav-art-card:hover{box-shadow:0 8px 24px rgba(26,46,74,0.1);transform:translateY(-2px)}
+.nav-art-label{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.nav-art-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--navy);line-height:1.4}
+.nav-art-arrow{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--teal);font-weight:600;margin-top:10px;display:block}
+
+.signature{background:var(--navy);padding:44px;text-align:center;border-top:3px solid var(--gold)}
+.sig-inner{max-width:820px;margin:0 auto}
+.sig-name{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;color:var(--gold);margin-bottom:8px}
+.sig-title{font-family:'DM Sans',sans-serif;font-size:0.88rem;color:rgba(255,255,255,0.75);letter-spacing:0.08em;margin-bottom:6px}
+.sig-site{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.45);letter-spacing:0.06em}
+
+footer{background:var(--navy);padding:28px 44px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,0.07)}
+.foot-brand{font-family:'Playfair Display',serif;font-size:0.95rem;font-weight:700;color:var(--gold)}
+.foot-brand span{color:var(--white);font-weight:400}
+.foot-copy{font-family:'DM Sans',sans-serif;font-size:0.72rem;color:rgba(255,255,255,0.3)}
+.sn-flag{display:flex;gap:3px}
+.sn-flag span{width:12px;height:12px;border-radius:2px}
+
+@media(max-width:700px){
+  nav{padding:0 18px}
+  .article-hero{padding:110px 22px 50px}
+  .article-body{padding:48px 22px 60px}
+  .chiffres,.moments-grid,.bienfaits{grid-template-columns:1fr}
+  .refs,.nav-articles,.appel{padding:32px 22px}
+  .nav-articles-inner{grid-template-columns:1fr}
+  footer{padding:22px;flex-direction:column;gap:12px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="https://lecouloirdusavoir.netlify.app">Le Couloir <span>du Savoir</span></a>
+  <a class="nav-back" href="https://lecouloirdusavoir.netlify.app">← Retour au site</a>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="hero-inner">
+    <span class="art-cat">Concepts originaux · Article N°3 · 2024</span>
+    <h1 class="art-title">Le couloir de l'école,<br/><em>nouvelle salle des maîtres</em></h1>
+    <p class="art-subtitle">Quand les enseignants apprennent entre eux sans attendre l'inspecteur, le défi de Kédougou et la solution qui se trouve déjà dans chaque école.</p>
+    <div class="art-line"></div>
+    <div class="art-meta">
+      <span>✍️ M.B.M</span>
+      <span>📚 Le Couloir du Savoir</span>
+      <span>🌍 Kédougou · Sénégal · Afrique</span>
+      <span>⏱️ Lecture&nbsp;: 10 min</span>
+    </div>
+    <div class="art-resume">
+      <strong>Résumé&nbsp;:</strong> À Kédougou comme dans de nombreuses circonscriptions d'Afrique subsaharienne, les inspecteurs de l'éducation ne peuvent pas, malgré leurs efforts immenses, assurer seuls l'encadrement pédagogique de tous les enseignants. Et si la solution n'attendait pas l'inspecteur&nbsp;? Et si elle se trouvait déjà dans les couloirs de chaque école, dans les moments de récréation, de pause, de cellule pédagogique&nbsp;? Cet article défend une thèse simple et révolutionnaire&nbsp;: les échanges informels entre enseignants, lorsqu'ils deviennent une habitude collective, sont un puissant levier de professionnalisation, de confiance en soi et de remise en question permanente.
+    </div>
+    <div class="art-keywords">
+      <span class="kw">Échanges informels</span><span class="kw">Professionnalisation</span><span class="kw">Enseignants</span><span class="kw">Kédougou</span><span class="kw">Sous-encadrement</span><span class="kw">Pratiques pédagogiques</span><span class="kw">Cellule pédagogique</span><span class="kw">Stivation</span>
+    </div>
+    <a class="prev-art" href="article2.html">
+      <span>Article précédent →</span>
+      <strong>Le rôle prédictif des interactions informelles sur le développement professionnel</strong>
+    </a>
+  </div>
+</div>
+
+<!-- CORPS -->
+<div class="article-body">
+
+  <!-- I -->
+  <h2 class="section-heading"><span>I.</span> Le défi de Kédougou, une réalité africaine</h2>
+  <p>Kédougou. Une région vaste, enclavée, aux reliefs accidentés. Des écoles dispersées sur un territoire immense, reliées par des pistes que les pluies rendent parfois impraticables. Des enseignants souvent jeunes, issus des programmes de recrutement massif, déposés dans des villages éloignés avec leurs craies, leurs tableaux noirs et leurs bonnes volontés comme seuls équipements.</p>
+  <p>Et des inspecteurs. Des professionnels dévoués, compétents, conscients de leur mission. Mais combien pour combien d'enseignants&nbsp;? Le ratio inspecteur-enseignant au Sénégal, comme dans la plupart des pays d'Afrique subsaharienne, est tel qu'un seul inspecteur ne peut raisonnablement accompagner de manière régulière et approfondie qu'une fraction des enseignants dont il a la charge.</p>
+  <p>Ce n'est pas un constat d'échec. C'est une réalité structurelle qui appelle une réponse structurelle. Et cette réponse, nous en sommes convaincus, se trouve déjà dans chaque école, dans chaque préau, dans chaque salle des maîtres, voire dans chaque couloir.</p>
+
+  <div class="chiffres">
+    <div class="chiffre-box">
+      <span class="chiffre-n">1/∞</span>
+      <span class="chiffre-l">Ratio inspecteur / enseignants dans les zones rurales africaines</span>
+    </div>
+    <div class="chiffre-box">
+      <span class="chiffre-n">80%</span>
+      <span class="chiffre-l">Des enseignants déclarent manquer d'accompagnement pédagogique régulier</span>
+    </div>
+    <div class="chiffre-box">
+      <span class="chiffre-n">0 F</span>
+      <span class="chiffre-l">Coût des échanges informels entre pairs, la formation la moins chère du monde</span>
+    </div>
+  </div>
+
+  <!-- II -->
+  <h2 class="section-heading"><span>II.</span> Une idée simple&nbsp;: et si les enseignants s'encadraient entre eux&nbsp;?</h2>
+  <p>L'idée n'est pas nouvelle en théorie. Les cellules pédagogiques existent. Les réunions de maîtres sont prévues dans les textes officiels. Les séminaires de formation continue se tiennent régulièrement. Mais dans les faits, ces espaces formels restent souvent insuffisants, trop espacés, trop contraints par des agendas chargés et des distances à parcourir.</p>
+  <p>Ce que nous proposons ici est différent et complémentaire. Non pas un nouveau dispositif formel à ajouter à la liste déjà longue des obligations des enseignants, mais une transformation de la culture professionnelle quotidienne. Une invitation à prendre l'habitude, dans les moments libres qui existent déjà, d'échanger librement sur ce qui compte vraiment&nbsp;: leur métier, leurs difficultés, leurs réussites, leurs questions pédagogiques.</p>
+
+  <div class="blockquote">
+    <p>«&nbsp;L'enseignant qui parle de pédagogie avec son collègue pendant la récréation fait plus pour sa formation professionnelle qu'il ne le croit. Il s'y trouve déjà dans un processus de stivation.&nbsp;»</p>
+    <cite>M.B.M — Le Couloir du Savoir</cite>
+  </div>
+
+  <!-- III -->
+  <h2 class="section-heading"><span>III.</span> Les moments propices&nbsp;: une cartographie des espaces libres</h2>
+  <p class="no-indent">Chaque journée scolaire est parsemée de moments informels qui sont autant d'occasions manquées ou saisies d'apprentissage professionnel. Voici les plus précieux.</p>
+
+  <div class="moments-grid">
+    <div class="moment-card">
+      <span class="moment-icon">☀️</span>
+      <div class="moment-title">La récréation</div>
+      <p class="moment-desc">20 minutes où les enseignants sont libres. Plutôt que de rester chacun dans sa classe, pourquoi ne pas prendre l'habitude d'échanger sur une difficulté pédagogique rencontrée ce matin même&nbsp;?</p>
+    </div>
+    <div class="moment-card">
+      <span class="moment-icon">☕</span>
+      <div class="moment-title">La pause du midi</div>
+      <p class="moment-desc">Un moment de détente qui peut devenir un espace de réflexion collective spontanée. Les meilleures idées pédagogiques naissent souvent autour d'un repas partagé.</p>
+    </div>
+    <div class="moment-card">
+      <span class="moment-icon">📋</span>
+      <div class="moment-title">La cellule pédagogique</div>
+      <p class="moment-desc">Un cadre formel qui peut accueillir des échanges informels libres. Avant ou après l'ordre du jour, laisser du temps à la parole libre sur les difficultés du terrain.</p>
+    </div>
+    <div class="moment-card">
+      <span class="moment-icon">🎓</span>
+      <div class="moment-title">Le séminaire</div>
+      <p class="moment-desc">Les pauses entre les sessions sont souvent plus riches que les sessions elles-mêmes. C'est là que les enseignants parlent vraiment de leur pratique, sans retenue.</p>
+    </div>
+    <div class="moment-card">
+      <span class="moment-icon">🌅</span>
+      <div class="moment-title">Avant les cours</div>
+      <p class="moment-desc">Dix minutes avant la sonnerie peuvent suffire pour poser une question à un collègue plus expérimenté sur une technique pédagogique, une gestion de classe, un contenu difficile.</p>
+    </div>
+    <div class="moment-card">
+      <span class="moment-icon">🤝</span>
+      <div class="moment-title">Les visites de classe croisées</div>
+      <p class="moment-desc">Aller observer un collègue enseigner, puis en discuter librement. Pas une inspection, pas une évaluation. Une observation fraternelle, entre pairs, sans enjeu de notation.</p>
+    </div>
+  </div>
+
+  <!-- IV -->
+  <h2 class="section-heading"><span>IV.</span> Ce que ces échanges produisent, les sept bienfaits</h2>
+  <p class="no-indent">Lorsque les enseignants prennent l'habitude d'échanger librement sur leur pratique, sept transformations profondes s'opèrent progressivement.</p>
+
+  <div class="bienfaits">
+    <div class="bienfait">
+      <div class="bienfait-icon">🔬</div>
+      <div>
+        <div class="bienfait-title">La professionnalisation accélérée</div>
+        <p class="bienfait-desc">On apprend plus vite de quelqu'un qui vit les mêmes réalités que soi que d'un manuel pédagogique conçu ailleurs.</p>
+      </div>
+    </div>
+    <div class="bienfait">
+      <div class="bienfait-icon">💪</div>
+      <div>
+        <div class="bienfait-title">La confiance en son potentiel</div>
+        <p class="bienfait-desc">Partager ses réussites avec des pairs qui les comprennent et les valorisent renforce considérablement l'estime professionnelle de soi.</p>
+      </div>
+    </div>
+    <div class="bienfait">
+      <div class="bienfait-icon">🪞</div>
+      <div>
+        <div class="bienfait-title">La remise en question fertile</div>
+        <p class="bienfait-desc">L'autre regard, bienveillant et professionnel, aide à voir ce qu'on ne voit plus dans sa propre pratique quotidienne.</p>
+      </div>
+    </div>
+    <div class="bienfait">
+      <div class="bienfait-icon">🔎</div>
+      <div>
+        <div class="bienfait-title">Le goût de la recherche</div>
+        <p class="bienfait-desc">Une bonne discussion pédagogique entre pairs donne envie d'aller chercher des réponses, de lire, d'expérimenter, de chercher à comprendre davantage.</p>
+      </div>
+    </div>
+    <div class="bienfait">
+      <div class="bienfait-icon">🤝</div>
+      <div>
+        <div class="bienfait-title">La lutte contre l'individualisme</div>
+        <p class="bienfait-desc">L'enseignant isolé dans sa classe est une réalité répandue. Les échanges informels tissent des liens professionnels qui brisent cet isolement dommageable.</p>
+      </div>
+    </div>
+    <div class="bienfait">
+      <div class="bienfait-icon">📈</div>
+      <div>
+        <div class="bienfait-title">L'amélioration des pratiques</div>
+        <p class="bienfait-desc">Les solutions concrètes circulent naturellement dans les échanges entre pairs. Ce que l'un a essayé avec succès devient une ressource pour tous.</p>
+      </div>
+    </div>
+    <div class="bienfait">
+      <div class="bienfait-icon">🧩</div>
+      <div>
+        <div class="bienfait-title">L'identité professionnelle collective</div>
+        <p class="bienfait-desc">Se reconnaître dans les difficultés et les réussites de l'autre construit un sentiment d'appartenance à un corps professionnel uni et fier.</p>
+      </div>
+    </div>
+    <div class="bienfait">
+      <div class="bienfait-icon">🌱</div>
+      <div>
+        <div class="bienfait-title">Le soulagement de l'inspecteur</div>
+        <p class="bienfait-desc">Des enseignants qui s'encadrent mutuellement libèrent l'inspecteur pour se concentrer sur les cas les plus complexes et les besoins les plus urgents.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- V -->
+  <h2 class="section-heading"><span>V.</span> Comment instaurer cette culture&nbsp;? Le rôle clé de l'inspecteur</h2>
+  <p>L'inspecteur ne peut pas être partout. Mais il peut faire quelque chose d'encore plus puissant&nbsp;: <strong>créer une culture</strong>. En transmettant, lors de chaque visite, chaque réunion, chaque séminaire, cette conviction simple, <em>les enseignants qui parlent entre eux de pédagogie grandissent ensemble</em>, il plante une graine dont les fruits dépasseront toujours le cadre de ses propres visites.</p>
+
+  <ol class="num-list">
+    <li><div class="num">1</div><div><strong>Valoriser publiquement les échanges entre pairs&nbsp;:</strong> lors des réunions, citer des exemples d'enseignants qui ont résolu un problème pédagogique grâce à un échange avec un collègue. Ce que l'on valorise, on l'encourage.</div></li>
+    <li><div class="num">2</div><div><strong>Poser la question systématiquement&nbsp;:</strong> lors de chaque visite, demander à l'enseignant «&nbsp;Avez-vous parlé de cette difficulté avec vos collègues&nbsp;?&nbsp;» Cette question simple installe progressivement le réflexe.</div></li>
+    <li><div class="num">3</div><div><strong>Créer des espaces explicites sans contrainte&nbsp;:</strong> dans les séminaires et cellules pédagogiques, réserver systématiquement 15 à 20 minutes de parole libre sans ordre du jour, sans compte rendu, sans évaluation. Juste des enseignants qui parlent de leur métier.</div></li>
+    <li><div class="num">4</div><div><strong>Identifier et encourager les leaders pédagogiques naturels&nbsp;:</strong> dans chaque groupe d'enseignants, il existe des personnes vers qui les autres se tournent naturellement. Les identifier et les encourager à jouer ce rôle de pair-formateur informel.</div></li>
+    <li><div class="num">5</div><div><strong>Institutionnaliser sans formaliser&nbsp;:</strong> inscrire dans la culture de l'école l'idée que les échanges pédagogiques informels font partie du métier, sans pour autant les transformer en obligation bureaucratique qui tuerait leur spontanéité.</div></li>
+  </ol>
+
+  <div class="encadre-teal">
+    <div class="encadre-title">Le lien avec le CREAQ</div>
+    <p>Ce que nous décrivons ici est le terreau naturel du dispositif <strong>CREAQ</strong> (Cadre de Réflexion et d'Encadrement pour un Apprentissage de Qualité). Le CREAQ ne crée pas les échanges entre pairs, il les structure, les enrichit et les démultiplie. Mais pour que le CREAQ fonctionne, il faut que la culture des échanges informels existe déjà. C'est pourquoi cette étape est fondamentale et préalable à tout dispositif formel.</p>
+  </div>
+
+  <!-- VI -->
+  <h2 class="section-heading"><span>VI.</span> Ce que cela demande aux enseignants</h2>
+  <p>Cette proposition ne demande pas aux enseignants de travailler plus. Elle leur demande de <strong>travailler autrement</strong>, ensemble, en transformant des moments qui existent déjà en opportunités d'apprentissage professionnel.</p>
+  <p>Elle leur demande trois choses fondamentales&nbsp;: la curiosité, c'est-à-dire l'envie de comprendre pourquoi un collègue enseigne telle notion de telle façon&nbsp;; l'humilité, c'est-à-dire la capacité à reconnaître qu'on n'a pas toutes les réponses et que l'autre peut nous apprendre quelque chose&nbsp;; et la générosité, c'est-à-dire l'envie de partager ce qu'on a découvert, expérimenté, réussi.</p>
+  <p>Ces trois qualités, la plupart des enseignants les possèdent. Il suffit souvent de créer les conditions pour qu'elles s'expriment.</p>
+
+  <div class="encadre">
+    <div class="encadre-title">Message aux enseignants de Kédougou et d'ailleurs</div>
+    <p>Vous n'avez pas besoin d'attendre la prochaine visite de l'inspecteur pour progresser. Votre collègue d'à côté, celui qui enseigne depuis cinq ans de plus que vous, ou celui qui vient d'arriver avec de nouvelles idées, est votre première ressource de formation. Parlez-lui. Demandez-lui. Écoutez-le. Partagez vos doutes et vos réussites. C'est dans ces échanges, libres et sincères, que se construit le professionnel que vous voulez devenir.</p>
+  </div>
+
+  <!-- VII -->
+  <h2 class="section-heading"><span>VII.</span> Conclusion&nbsp;: la salle des maîtres est partout</h2>
+  <p>La salle des maîtres n'est pas toujours une salle. Elle est dans le couloir entre deux classes, dans le préau pendant la récréation, dans la cour après la sonnerie, dans le groupe WhatsApp des enseignants de l'école. Elle est partout où deux enseignants se parlent de leur métier avec sincérité et sans jugement.</p>
+  <p>À Kédougou, où l'inspecteur ne peut pas être partout, cette réalité n'est pas une contrainte. C'est une opportunité. Les enseignants de cette région, par la force des choses, ont développé une capacité de débrouillardise et de solidarité professionnelle remarquable. Il s'agit maintenant de la valoriser, de la nommer et de l'encourager.</p>
+  <p><em>La Stivation ne demande pas de budget. Elle ne demande pas de formation préalable. Elle demande juste un peu d'espace, un peu de temps et beaucoup de confiance, en soi et dans les autres.</em></p>
+
+  <div class="sep"></div>
+
+</div>
+
+<!-- APPEL À L'ACTION -->
+<div class="appel">
+  <div class="appel-inner">
+    <h2 class="appel-title">Et vous, <em>que faites-vous</em> pendant la récréation&nbsp;?</h2>
+    <p class="appel-text">Partagez votre expérience. Racontez-nous comment les échanges informels avec vos collègues ont transformé votre pratique pédagogique. Vos témoignages enrichissent la réflexion collective et inspirent d'autres enseignants partout en Afrique.</p>
+    <a href="https://lecouloirdusavoir.netlify.app#contributions" class="appel-btn">Contribuer au Couloir du Savoir →</a>
+  </div>
+</div>
+
+<!-- RÉFÉRENCES -->
+<div class="refs">
+  <div class="refs-inner">
+    <div class="refs-title">Références bibliographiques</div>
+    <ul>
+      <li>Mbaye, M.B. (2010). <em>Interactions entre élèves inspecteurs lors des activités collaboratives et coopératives en formation initiale.</em> Mémoire CAIEE, FASTEF/UCAD, Dakar.</li>
+      <li>Pernias, J.C. (2003). <em>Devenir cadre&nbsp;: reconstruction identitaire et professionnelle.</em> L'Harmattan.</li>
+      <li>Vygotski, L.S. (1978). <em>Mind in Society&nbsp;: The Development of Higher Psychological Processes.</em> Harvard University Press.</li>
+      <li>Wenger, E. (1998). <em>Communities of Practice&nbsp;: Learning, Meaning, and Identity.</em> Cambridge University Press.</li>
+      <li>PDEF (2010). <em>Revue du Programme Décennal de l'Éducation et de la Formation.</em> Ministère de l'Éducation, République du Sénégal.</li>
+      <li>Niane, B. (2005). <em>Qualité de l'éducation au Sénégal&nbsp;: contraintes et perspectives.</em> Dakar.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<div class="nav-articles">
+  <div class="nav-articles-inner">
+    <a class="nav-art-card" href="article2.html">
+      <div class="nav-art-label">← Article précédent</div>
+      <div class="nav-art-title">Le rôle prédictif des interactions informelles sur le développement professionnel</div>
+      <span class="nav-art-arrow">Lire l'article →</span>
+    </a>
+    <a class="nav-art-card" href="https://lecouloirdusavoir.netlify.app">
+      <div class="nav-art-label">Prochain article →</div>
+      <div class="nav-art-title">Le sentiment d'entraide entre pairs comme moteur de performance</div>
+      <span class="nav-art-arrow">Bientôt disponible →</span>
+    </a>
+  </div>
+</div>
+
+<!-- SIGNATURE -->
+<div class="signature">
+  <div class="sig-inner">
+    <div class="sig-name">M.B.M</div>
+    <div class="sig-title">Chercheur · Concepteur · Spécialiste en Éducation</div>
+    <div class="sig-site">lecouloirdusavoir.netlify.app · Éducation & Psychologie · Afrique</div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-brand">Le Couloir <span>du Savoir</span></div>
+  <div class="foot-copy">© 2025 M.B.M · Auteur anonyme · Afrique</div>
+  <div class="sn-flag">
+    <span style="background:#00853F"></span>
+    <span style="background:#FDEF42"></span>
+    <span style="background:#E31B23"></span>
+  </div>
+</footer>
+
+</body>
+</html>
