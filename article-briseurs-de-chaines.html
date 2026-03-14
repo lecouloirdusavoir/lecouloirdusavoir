@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Les Briseurs de Chaînes · Le Couloir du Savoir</title>
+<meta name="description" content="De nouvelles structures narratives dans le discours oral des Sénégalais : analyse du phénomène des briseurs de chaîne en psycholinguistique."/>
+<meta name="keywords" content="briseurs de chaîne, discours oral, psycholinguistique, Sénégal, tics langagiers, communication"/>
+<meta name="author" content="MOBAM"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#1A2E4A;--teal:#0E6B7C;--gold:#C9970A;--sand:#F5EED8;--cream:#FDFAF3;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--sand)}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:62px;background:rgba(26,46,74,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,151,10,0.22)}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--gold);text-decoration:none}.nav-brand span{color:var(--white);font-weight:400;font-style:italic}
+.nav-back{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}.nav-back:hover{color:var(--gold)}
+.article-hero{margin-top:62px;background:var(--navy);padding:70px 40px 50px;text-align:center}
+.article-category{display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,0.4);padding:4px 14px;border-radius:20px;margin-bottom:24px}
+.article-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1.25;max-width:800px;margin:0 auto 16px}
+.sous-titre{font-family:'Source Serif 4',serif;font-size:1rem;font-style:italic;color:rgba(255,255,255,0.6);max-width:650px;margin:0 auto 24px;line-height:1.6}
+.article-meta{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.article-container{max-width:740px;margin:0 auto;padding:60px 30px 100px}
+.article-intro{font-size:1.05rem;font-style:italic;color:var(--navy);line-height:1.85;margin-bottom:40px;padding:28px 32px;background:var(--sand);border-left:4px solid var(--gold);border-radius:0 8px 8px 0}
+.article-body h2{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:var(--navy);margin:44px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--sand)}
+.article-body p{font-size:1rem;line-height:1.9;color:var(--text);margin-bottom:20px}
+.article-body strong{color:var(--navy);font-weight:600}
+.encadre{background:rgba(14,107,124,0.06);border:1px solid rgba(14,107,124,0.2);border-radius:10px;padding:24px 28px;margin:36px 0}
+.encadre h4{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);margin-bottom:14px}
+.encadre ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.encadre ul li{font-family:'DM Sans',sans-serif;font-size:0.85rem;background:var(--sand);color:var(--navy);padding:4px 12px;border-radius:20px;border:1px solid rgba(201,151,10,0.3)}
+.notes{background:var(--sand);border-radius:10px;padding:28px 32px;margin-top:40px}
+.notes h2{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);margin-bottom:16px}
+.notes ol{padding-left:20px}
+.notes li{font-size:0.9rem;line-height:1.7;color:var(--text);margin-bottom:8px}
+.article-tags{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0 0}
+.tag{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:500;color:var(--navy);background:var(--sand);padding:5px 12px;border-radius:20px}
+.signature{text-align:center;margin:50px 0 0;padding-top:30px;border-top:1px solid var(--sand);font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--muted)}
+footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:30px;font-family:'DM Sans',sans-serif;font-size:0.8rem}
+footer a{color:var(--gold);text-decoration:none}
+@media(max-width:600px){nav{padding:0 20px}.article-hero{padding:50px 20px 40px}.article-container{padding:40px 20px 80px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Le Couloir <span>du Savoir</span></a>
+  <a href="index.html" class="nav-back">← Retour au site</a>
+</nav>
+
+<div class="article-hero">
+  <div class="article-category">Psycholinguistique · Discours oral</div>
+  <h1>Les Briseurs de Chaînes</h1>
+  <p class="sous-titre">De nouvelles structures narratives dans le discours oral des Sénégalais</p>
+  <div class="article-meta">
+    <span>✍️ MOBAM</span>
+    <span>·</span>
+    <span>📚 Chercheur en psycholinguistique et discours oral</span>
+  </div>
+</div>
+
+<div class="article-container">
+  <p class="article-intro">Le discours oral des cadres, journalistes et enseignants sénégalais est traversé par un phénomène linguistique peu étudié : la répétition compulsive de certains mots et expressions qui interrompent la continuité de l'énonciation. Cet article propose de nommer ces occurrences les « briseurs de chaîne », d'en cerner les formes et les mécanismes, et d'interroger leurs effets sur la réception du discours. Entre tic langagier inconscient et stratégie d'embrayage, ces structures narratives émergentes appellent une attention scientifique que les psycholinguistes sénégalais gagneraient à prendre en charge.</p>
+
+  <div class="article-body">
+    <h2>1. Un phénomène qui s'impose à l'observation</h2>
+    <p>Quiconque prête attention au discours oral des cadres et des journalistes sénégalais finit par remarquer quelque chose d'insistant. Certains mots reviennent, toujours les mêmes, hors de toute nécessité argumentative. Ils s'intercalent, se glissent entre les phrases, parfois au milieu d'une proposition. Ils ne portent pas le sens. Ils font du bruit.</p>
+    <p>Ce phénomène mérite un nom. On pourrait l'appeler les <strong>« briseurs de chaîne »</strong> : ces petits mots et expressions répétés qui polluent l'énonciation du discours oral, interrompant la progression logique de la pensée sans jamais vraiment l'enrichir.</p>
+    <p>La psycholinguistique s'est peu penchée sur ce type de répétition. Les rares travaux existants ont plutôt porté sur les « scories » et les « ratés » de l'oral : amorces de mots, faux départs, auto-corrections. Les briseurs de chaîne sont d'une autre nature. Ils ne relèvent pas de l'accident. Ils s'installent, durent, se propagent.</p>
+
+    <h2>2. Deux visages d'une même répétition</h2>
+    <p>Toutes les répétitions ne se valent pas. Une distinction s'impose d'emblée entre deux formes que recouvre le phénomène.</p>
+    <p>La première est <strong>intentionnelle</strong>. Le locuteur perd le fil de sa pensée et recourt au briseur de chaîne pour embrayer, c'est-à-dire pour reprendre le fil du discours sans silence embarrassant. C'est une stratégie, consciente ou semi-consciente, de gestion du temps et de la parole en public. Elle peut même passer inaperçue, si elle reste discrète.</p>
+    <p>La seconde est <strong>inconsciente</strong>. Elle n'est pas cherchée. Elle résulte d'une mauvaise habitude, un tic langagier absorbé dans la polyphonie des discours ambiants, transmis par imitation et interactions répétées. C'est probablement la forme la plus répandue. On ne se rend pas compte qu'on dit « effectivement » toutes les trente secondes. Les autres, eux, l'ont compté.</p>
+
+    <h2>3. Un inventaire partiel d'expressions récurrentes</h2>
+    <p>On les reconnaît immédiatement dès qu'on commence à les entendre. Parmi les plus fréquents dans les discours oraux sénégalais :</p>
+    <div class="encadre">
+      <h4>Expressions les plus fréquentes</h4>
+      <ul>
+        <li>donc</li><li>également</li><li>véritablement</li><li>justement</li>
+        <li>effectivement</li><li>disons</li><li>alors</li><li>tout à fait</li>
+        <li>n'est-ce pas</li><li>en réalité</li><li>en fait</li><li>au fait</li>
+        <li>je crois que</li><li>je pense que</li><li>de ce point de vue</li>
+      </ul>
+    </div>
+    <p>La liste est évidemment ouverte. Ces mots et expressions partagent une caractéristique commune : ils peuvent tous être retirés d'un énoncé sans que le sens en souffre. C'est précisément ce qui les distingue d'une transition argumentative légitime. Ils occupent de l'espace sans remplir de fonction.</p>
+    <p>Il faut cependant nuancer. Employés avec modération, certains de ces termes relèvent d'un style oral naturel, voire littéraire. Un « en effet » bien placé peut ponctuer une démonstration. Un « je pense que » peut signaler l'engagement personnel du locuteur. La question n'est pas leur existence, mais leur fréquence.</p>
+
+    <h2>4. Quand la répétition neutralise le message</h2>
+    <p>Tout discours oral a besoin de récepteurs. Cette évidence pédagogique rappelle que parler n'a de sens que si l'on est entendu, suivi, compris. Or les briseurs de chaîne, lorsqu'ils prolifèrent, menacent précisément cette réception.</p>
+    <p>Un emploi modéré passe inaperçu. Mais quand la répétition devient obsessionnelle, quelque chose bascule dans l'écoute. L'auditeur cesse de se concentrer sur le fond. Il commence à compter. Combien de fois ce mot ? Combien de secondes entre deux « effectivement » ? Le message se vide de sa substance pendant que la forme occupe tout le terrain.</p>
+    <p>C'est un mécanisme cognitif bien connu : la répétition attire l'attention sur elle-même et détourne des contenus. Le discours le plus argumenté peut perdre toute sa force si un tic langagier s'y installe comme un bruit de fond devenu insupportable.</p>
+
+    <h2>5. Un champ de recherche à défricher</h2>
+    <p>Ce que l'on sait des briseurs de chaîne reste mince. On peut les observer, les lister, distinguer leurs formes. Mais leurs mécanismes profonds, leur genèse, leur diffusion dans les sphères professionnelles sénégalaises, restent largement inexplorés.</p>
+    <p>Pourquoi ces mots-là plutôt que d'autres ? Comment se propagent-ils d'un locuteur à l'autre dans la polyphonie du discours social ? Existe-t-il des différences selon les milieux professionnels, les générations, les niveaux de formation ? Ce sont des questions légitimes que les psycholinguistes sénégalais seraient bien inspirés de prendre à bras le corps.</p>
+    <p>Car si le phénomène peut sembler anecdotique, il ne l'est pas. Il touche des locuteurs qui exercent une influence sur l'opinion : journalistes, enseignants, cadres de l'administration, responsables politiques. La qualité de leur expression orale n'est pas sans conséquence sur la façon dont les idées circulent et dont l'autorité se construit dans l'espace public.</p>
+
+    <h2>Conclusion</h2>
+    <p>Les briseurs de chaîne ne sont pas une curiosité de linguiste. Ils disent quelque chose de la relation entre pensée et parole, entre préparation et improvisation, entre habitude individuelle et norme collective. Leur étude, si elle était menée sérieusement, éclaircirait aussi bien les mécanismes de la planification du discours oral que les processus d'imitation langagière dans les milieux professionnels.</p>
+    <p>La présente réflexion n'est qu'une invitation. Une ouverture sur un terrain que la recherche sénégalaise en psycholinguistique gagnerait à explorer avec la rigueur qu'il mérite.</p>
+  </div>
+
+  <div class="notes">
+    <h2>Notes</h2>
+    <ol>
+      <li><strong>Amorce</strong> : phénomène qui introduit une rupture syntaxique dans l'énoncé.</li>
+      <li><strong>Embrayer</strong> : reprendre le fil du discours après une hésitation ou une interruption.</li>
+    </ol>
+  </div>
+
+  <div class="article-tags">
+    <span class="tag">Psycholinguistique</span>
+    <span class="tag">Discours oral</span>
+    <span class="tag">Sénégal</span>
+    <span class="tag">Communication</span>
+    <span class="tag">Tics langagiers</span>
+  </div>
+  <div class="signature"><strong>MOBAM</strong> · Le Couloir du Savoir · Psycholinguistique et discours oral</div>
+</div>
+
+<footer>
+  <p>© 2025 <strong style="color:var(--gold)">M.B.M</strong> · <a href="index.html">Le Couloir du Savoir</a> · Éducation &amp; Psychologie · Afrique</p>
+</footer>
+</body>
+</html>

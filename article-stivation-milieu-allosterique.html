@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>La Stivation comme Milieu Allostérique · Le Couloir du Savoir</title>
+<meta name="description" content="Quand les styles cognitifs des pairs deviennent des leviers d'apprentissage informel : articulation entre le modèle allostérique de Giordan, les styles cognitifs de Perraudeau et le modèle de la Stivation."/>
+<meta name="keywords" content="Stivation, milieu allostérique, styles cognitifs, Giordan, Perraudeau, CREAQ, TDI, apprentissage informel, formation enseignants, Afrique subsaharienne"/>
+<meta name="author" content="Mouhamadou Bamba MBAYE"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#1A2E4A;--teal:#0E6B7C;--gold:#C9970A;--sand:#F5EED8;--cream:#FDFAF3;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF;--rust:#B85533}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--sand)}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:62px;background:rgba(26,46,74,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,151,10,0.22)}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--gold);text-decoration:none}.nav-brand span{color:var(--white);font-weight:400;font-style:italic}
+.nav-back{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}.nav-back:hover{color:var(--gold)}
+.article-hero{margin-top:62px;background:var(--navy);padding:70px 40px 50px;text-align:center}
+.article-category{display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,0.4);padding:4px 14px;border-radius:20px;margin-bottom:24px}
+.article-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.8rem);font-weight:700;color:var(--white);line-height:1.25;max-width:820px;margin:0 auto 16px}
+.sous-titre{font-family:'Source Serif 4',serif;font-size:1rem;font-style:italic;color:rgba(255,255,255,0.6);max-width:680px;margin:0 auto 24px;line-height:1.6}
+.article-meta{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.article-container{max-width:740px;margin:0 auto;padding:60px 30px 100px}
+.article-intro{font-size:1.05rem;font-style:italic;color:var(--navy);line-height:1.85;margin-bottom:40px;padding:28px 32px;background:var(--sand);border-left:4px solid var(--gold);border-radius:0 8px 8px 0}
+.article-body h2{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:var(--navy);margin:44px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--sand)}
+.article-body h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--teal);margin:28px 0 12px}
+.article-body p{font-size:1rem;line-height:1.9;color:var(--text);margin-bottom:20px}
+.article-body strong{color:var(--navy);font-weight:600}
+.article-body em{color:var(--teal)}
+.concept-box{background:var(--navy);color:var(--white);border-radius:12px;padding:28px 32px;margin:36px 0;text-align:center}
+.concept-box h4{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.concept-box p{font-family:'Playfair Display',serif;font-size:1.1rem;font-style:italic;color:var(--white);line-height:1.7;margin:0}
+.citation{background:rgba(14,107,124,0.06);border-left:4px solid var(--teal);padding:22px 28px;margin:36px 0;border-radius:0 8px 8px 0}
+.citation p{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:var(--navy);margin:0 0 8px}
+.citation cite{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--muted);font-style:normal}
+.resultats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0}
+.resultat{background:var(--sand);border-radius:10px;padding:20px;text-align:center;border-top:3px solid var(--gold)}
+.resultat .lieu{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--teal);margin-bottom:6px}
+.resultat .chiffre{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:4px}
+.resultat .detail{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--muted)}
+.encadre{background:rgba(14,107,124,0.06);border:1px solid rgba(14,107,124,0.2);border-radius:10px;padding:24px 28px;margin:36px 0}
+.encadre h4{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);margin-bottom:12px}
+.encadre p{font-size:0.95rem;line-height:1.75;margin:0}
+.declaration{background:var(--sand);border-radius:10px;padding:24px 28px;margin-top:40px}
+.declaration h4{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.declaration p{font-size:0.9rem;line-height:1.7;color:var(--text);margin-bottom:10px}
+.declaration p:last-child{margin:0}
+.bibliographie{background:var(--sand);border-radius:10px;padding:32px 36px;margin-top:30px}
+.bibliographie h2{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:20px;border-bottom:1px solid rgba(201,151,10,0.3);padding-bottom:12px}
+.bibliographie ul{list-style:none;padding:0}
+.bibliographie li{font-size:0.9rem;line-height:1.7;color:var(--text);margin-bottom:10px;padding-left:16px;border-left:2px solid var(--gold)}
+.article-tags{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0 0}
+.tag{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:500;color:var(--navy);background:var(--sand);padding:5px 12px;border-radius:20px}
+.signature{text-align:center;margin:50px 0 0;padding-top:30px;border-top:1px solid var(--sand);font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--muted)}
+footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:30px;font-family:'DM Sans',sans-serif;font-size:0.8rem}
+footer a{color:var(--gold);text-decoration:none}
+@media(max-width:600px){nav{padding:0 20px}.article-hero{padding:50px 20px 40px}.article-container{padding:40px 20px 80px}.resultats{grid-template-columns:1fr}.bibliographie{padding:24px 20px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">Le Couloir <span>du Savoir</span></a>
+  <a href="index.html" class="nav-back">← Retour au site</a>
+</nav>
+
+<div class="article-hero">
+  <div class="article-category">Concept original · Stivation · CREAQ</div>
+  <h1>La Stivation comme Milieu Allostérique</h1>
+  <p class="sous-titre">Quand les styles cognitifs des pairs deviennent des leviers d'apprentissage informel</p>
+  <div class="article-meta">
+    <span>✍️ Mouhamadou Bamba MBAYE</span>
+    <span>·</span>
+    <span>📚 Inspecteur de l'Éducation et de la Formation</span>
+    <span>·</span>
+    <span>🗓 2025</span>
+  </div>
+</div>
+
+<div class="article-container">
+  <p class="article-intro">Giordan (1995) a posé une question que l'école ne peut plus éluder : pourquoi certains élèves n'apprennent-ils pas, alors même qu'ils semblent écouter, prendre des notes et répéter ce qu'on leur a dit ? Perraudeau (1996) a posé une question complémentaire : pourquoi, face à la même situation d'apprentissage, certains élèves foncent-ils quand d'autres hésitent ? La thèse de cet article est la suivante : lorsque des apprenants aux styles cognitifs contrastés interagissent librement, hors du cadre formel, ils se constituent mutuellement en environnement allostérique. Leurs conceptions heurtent celles de l'autre. Cette collision, vécue sans enjeu évaluatif, produit une déstabilisation stimulante. C'est la Stivation.</p>
+
+  <div class="article-body">
+
+    <h2>Introduction</h2>
+    <p>Giordan (1995) a posé une question que l'école ne peut plus éluder : pourquoi certains élèves n'apprennent-ils pas, alors même qu'ils semblent écouter, prendre des notes et répéter ce qu'on leur a dit ? Sa réponse tient en quelques mots : parce que leurs conceptions préalables résistent. Parce que la connaissance ne s'ajoute pas ; elle transforme, ou elle n'entre pas.</p>
+    <p>Perraudeau (1996) a posé une question complémentaire, que les enseignants reconnaissent immédiatement : pourquoi, face à la même situation d'apprentissage, certains élèves foncent-ils quand d'autres hésitent, certains reformulent quand d'autres restituent mot pour mot ? Sa réponse : parce que les apprenants ne traitent pas l'information de la même façon. Leurs styles cognitifs diffèrent. Et ces différences sont stables.</p>
+    <p>Les deux modèles ont enrichi la pédagogie. Mais ils partagent une même limite : ils pensent l'apprentissage dans le cadre d'une relation verticale, entre un enseignant et ses élèves. Ce qui se passe entre pairs, dans les espaces informels, hors de toute intention pédagogique institutionnelle, reste dans leur angle mort. C'est précisément cet angle mort que le modèle de la Stivation (Mbaye, 2010) occupe.</p>
+
+    <h2>1. Ce que Giordan n'a pas dit : l'environnement didactique peut être un pair</h2>
+
+    <h3>1.1 Le modèle allostérique et la déstabilisation conceptuelle</h3>
+    <p>Le modèle allostérique de Giordan emprunte sa métaphore à la biologie. Une protéine allostérique modifie complètement sa structure sous l'action d'un facteur extérieur. L'apprentissage fonctionne de la même manière : la connaissance ne s'ajoute pas au stock existant ; elle transforme la structure conceptuelle de l'apprenant. Et c'est cette transformation qui constitue l'apprentissage réussi.</p>
+    <p>Pour que cette transformation se produise, Giordan insiste sur le rôle de l'environnement didactique. Celui-ci doit introduire des dissonances qui perturbent le réseau conceptuel de l'élève. Documentations, expérimentations, argumentations : c'est au cours de ces confrontations que l'apprenant prend conscience de l'inadéquation de ses conceptions. L'enseignant retrouve ici une place centrale. Il ne transmet plus mécaniquement. Il met en place des situations d'interaction, apporte les outils adéquats, confronte l'élève à des formalismes variés.</p>
+    <p>Ce cadre est précieux. Mais il repose sur une architecture implicite : c'est l'enseignant qui conçoit l'environnement. C'est lui qui introduit la dissonance. L'apprenant, lui, réagit. La relation reste asymétrique, même quand elle est bienveillante.</p>
+
+    <h3>1.2 La lacune : qui peut aussi être l'environnement ?</h3>
+    <p>Giordan ne ferme pas la porte à d'autres sources de déstabilisation. Il évoque les argumentations entre élèves, les confrontations de représentations. Mais il ne théorise pas cette dimension. L'environnement didactique reste, dans son modèle, essentiellement un dispositif conçu par l'institution.</p>
+    <p>Or le terrain sénégalais, et plus largement toute salle de formation où des adultes se retrouvent, dit autre chose. Les déstabilisations les plus profondes ne viennent pas toujours du formateur. Elles naissent souvent d'un pair qui formule autrement, qui comprend à l'envers, qui résout par un chemin inattendu. L'environnement allostérique peut être humain. Il peut être informel. Il peut surgir dans un couloir. C'est cette possibilité que le modèle allostérique laisse ouverte sans l'explorer. La Stivation y entre.</p>
+
+    <h2>2. Ce que Perraudeau n'a pas vu : la rencontre des styles comme moteur autonome</h2>
+
+    <h3>2.1 Les styles cognitifs : une cartographie utile</h3>
+    <p>Perraudeau (1996) offre une synthèse remarquable de travaux issus de plusieurs traditions de recherche. Trois polarités méritent d'être rappelées ici, pour ce qu'elles éclairent sur ce qui se passe entre pairs.</p>
+    <p>Witkin a distingué l'apprenant indépendant du champ, qui restructure les données à sa façon et n'attend pas l'aval de l'enseignant, de l'apprenant dépendant du champ, qui a besoin d'être sécurisé, qui restitue fidèlement, qui accorde une grande importance à la relation. Kagan a décrit l'impulsif, dont la main se lève avant même que la question soit terminée, et le réflexif, qui construit lentement et silencieusement avant de livrer sa réponse. Ausubel a posé la distinction entre l'accentuateur, qui apprend par contraste et différence, et l'égalisateur, qui apprend par analogie et ressemblance.</p>
+    <p>Ces profils sont observables en classe. Tout enseignant les reconnaît. La question que Perraudeau pose est celle de la prise en charge pédagogique de cette diversité.</p>
+
+    <h3>2.2 La lacune : que se passe-t-il quand les styles se rencontrent sans enseignant ?</h3>
+    <p>Perraudeau pense la diversité des styles comme un problème à gérer. L'enseignant doit l'accommoder, la compenser, l'utiliser. Le regard reste celui du praticien face à sa classe.</p>
+    <p>Ce que Perraudeau ne théorise pas, c'est ce qui se passe quand un impulsif et un réflexif travaillent ensemble, librement, sans consigne institutionnelle. Quand un accentuateur explique quelque chose à un égalisateur. Quand un indépendant du champ partage sa solution avec un dépendant. Ces rencontres ne sont pas neutres. Elles produisent quelque chose. Quelque chose que ni l'un ni l'autre n'aurait produit seul. Ce quelque chose, c'est une déstabilisation cognitive involontaire, vécue dans un espace sécurisant, entre pairs. C'est le mécanisme même de la Stivation.</p>
+
+    <h2>3. La Stivation comme milieu allostérique informel</h2>
+
+    <h3>3.1 Rappel du modèle de la Stivation</h3>
+
+    <div class="concept-box">
+      <h4>Définition · Stivation (Mbaye, 2010)</h4>
+      <p>Processus par lequel des interactions adidactiques entre apprenants adultes génèrent simultanément une déstabilisation cognitive stimulante et une dynamique motivationnelle collective propice à la construction de compétences professionnelles.</p>
+    </div>
+
+    <p>Le terme <strong>Stivation</strong> est un néologisme forgé par l'auteur à partir de <em>STI</em>mulation, <em>moti</em>VATION et inter<em>ACTION</em>. La notion d'interaction adidactique est empruntée à Brousseau (1998), que l'auteur étend aux espaces entièrement hors-classe. Ce caractère hors-institution est décisif. En l'absence de formateur, d'évaluation et d'enjeu institutionnel, les inhibiteurs habituels de l'apprentissage formel sont neutralisés : la peur de l'évaluation, l'angoisse de performance, le stress lié à l'asymétrie de la relation pédagogique. Cette neutralisation libère une capacité d'expression authentique que le cadre formel comprime.</p>
+
+    <h3>3.2 Le croisement des styles cognitifs comme condition allostérique</h3>
+    <p>La thèse centrale de cet article peut maintenant être formulée précisément. Lorsque des apprenants aux styles cognitifs contrastés interagissent dans un espace adidactique, leurs conceptions préalables — au sens de Giordan — entrent en contact. L'impulsif expose une solution que le réflexif n'aurait jamais formulée aussi vite. L'accentuateur creuse une différence que l'égalisateur ne percevait pas. L'indépendant du champ restructure à voix haute ce que le dépendant pensait avoir compris.</p>
+    <p>Chacun de ces échanges produit une dissonance. Une conception est déstabilisée. Elle doit se réorganiser. C'est exactement le processus allostérique décrit par Giordan. Mais ici, l'environnement didactique n'est pas une documentation ou une expérimentation conçue par un enseignant. C'est un pair. Un pair différent.</p>
+    <p>La diversité cognitive des apprenants n'est pas seulement un problème pédagogique à gérer, comme le pensait Perraudeau. Elle est une <strong>ressource d'apprentissage autonome</strong>, à condition que les conditions de la rencontre soient réunies. La Stivation nomme ces conditions et théorise leur effet.</p>
+
+    <h3>3.3 La boucle vertueuse : stimulation, motivation, compétence</h3>
+    <p>Le modèle de la Stivation décrit une dynamique circulaire. Les interactions adidactiques entre styles cognitifs différents produisent une déstabilisation qui active simultanément la stimulation intellectuelle et la motivation collective. Ces deux forces, en synergie, génèrent la construction de compétences professionnelles. Et ces compétences nouvellement construites enrichissent à leur tour les interactions ultérieures.</p>
+    <p>Ce cercle vertueux n'est pas théorique. Il a été observé sur dix-neuf années de terrain, dans des contextes aussi différents qu'un district semi-urbain de Tivaouane, des zones rurales profondes de Saraya et les espaces géographiquement contraints de Kédougou. C'est cette robustesse contextuelle qui distingue le modèle d'une construction purement spéculative.</p>
+
+    <h2>4. Le CREAQ : institutionnaliser le milieu allostérique informel</h2>
+
+    <h3>4.1 Architecture du dispositif</h3>
+    <p>Le <strong>CREAQ</strong> — Cadre de Réflexion et d'Encadrement pour un Apprentissage de Qualité — est la traduction opérationnelle du modèle de la Stivation dans le contexte de la formation continue des enseignants. Il réunit un groupe restreint d'enseignants qualifiés et reconnus par leurs pairs, chargés d'encadrer les candidats aux examens professionnels et d'accompagner les enseignants en difficulté.</p>
+    <p>Sa logique est celle d'une formation entre pairs par les pairs. Mais au-delà de cette formule, c'est son architecture relationnelle qui mérite l'attention. Le CREAQ ne rassemble pas des enseignants homogènes. Il réunit des praticiens aux profils variés : certains analytiques et méthodiques, d'autres intuitifs et inventifs. Cette diversité n'est pas un hasard. Elle est la condition de l'effet allostérique.</p>
+
+    <h3>4.2 La Triade Dynamique Intersubjective</h3>
+    <p>L'expérimentation du CREAQ a conduit à identifier une architecture relationnelle plus large : la <strong>Triade Dynamique Intersubjective (TDI)</strong>. Trois catégories d'acteurs y interagissent : les Inspecteurs de l'Éducation et de la Formation, les enseignants pairs-formateurs membres du CREAQ, et les enseignants en exercice — désignés sous le terme de Maîtres Craie en Main, pour marquer leur présence quotidienne dans la pratique de classe.</p>
+    <p>Ces trois acteurs n'ont pas les mêmes styles cognitifs. Leurs expériences divergent, leurs représentations de la pratique pédagogique diffèrent, leurs manières de résoudre un problème professionnel s'opposent parfois. C'est précisément cette hétérogénéité qui fait fonctionner la triade. Chaque interaction entre niveaux introduit une dissonance productive. La TDI est, structurellement, un milieu allostérique.</p>
+
+    <h3>4.3 Résultats de terrain</h3>
+
+    <div class="resultats">
+      <div class="resultat">
+        <div class="lieu">Tivaouane</div>
+        <div class="chiffre">97,8 %</div>
+        <div class="detail">585 enseignants encadrés<br/>2015 – 2019</div>
+      </div>
+      <div class="resultat">
+        <div class="lieu">Saraya</div>
+        <div class="chiffre">3 districts</div>
+        <div class="detail">198 enseignants<br/>2021 – 2024</div>
+      </div>
+      <div class="resultat">
+        <div class="lieu">Kédougou</div>
+        <div class="chiffre">98,45 %</div>
+        <div class="detail">289 enseignants encadrés<br/>2024 – 2026</div>
+      </div>
+    </div>
+
+    <p>Ces chiffres ne prouvent pas à eux seuls la validité du modèle. L'absence de groupes de contrôle reste une limite méthodologique réelle. Mais ils indiquent une direction. Un dispositif qui mobilise l'intelligence collective des praticiens, sans ressources exceptionnelles, dans des contextes aussi contraints que ceux de l'Afrique subsaharienne, et qui obtient ces résultats sur dix années : c'est un fait qui mérite d'être pris au sérieux.</p>
+
+    <h2>5. Implications pour la formation professionnelle des enseignants</h2>
+
+    <h3>5.1 Repenser l'environnement d'apprentissage</h3>
+    <p>La mise en dialogue des trois modèles invite à repenser ce qu'est un environnement d'apprentissage. Giordan avait raison : il ne suffit pas de présenter un savoir pour qu'il soit appris. Il faut créer les conditions d'une déstabilisation productive. Perraudeau avait raison : les apprenants ne fonctionnent pas de la même façon, et ignorer cette réalité est pédagogiquement coûteux.</p>
+    <p>Mais ni l'un ni l'autre n'avait pleinement mesuré que l'environnement allostérique le plus efficace peut être constitué par les apprenants eux-mêmes, à condition qu'ils soient suffisamment différents et suffisamment libres.</p>
+
+    <h3>5.2 Une réponse aux contraintes structurelles africaines</h3>
+    <p>Dans les systèmes éducatifs d'Afrique subsaharienne, les contraintes sont connues : ratios inspecteur/enseignant défavorables, ressources limitées, géographie difficile. Ces contraintes découragent les modèles de formation qui requièrent des infrastructures ou des financements extérieurs.</p>
+    <p>Le modèle de la Stivation répond autrement. Il part de ce qui existe déjà : la diversité cognitive des enseignants, leur intelligence collective, leur capacité à apprendre les uns des autres quand on leur en donne l'occasion. Il ne demande pas de ressources supplémentaires. Il demande une organisation différente des ressources existantes. Le CREAQ en est la preuve : il a fonctionné à Saraya, dans une ruralité profonde, sans infrastructure exceptionnelle.</p>
+
+    <h3>5.3 Vers une ingénierie de la diversité cognitive</h3>
+    <p>Une implication pratique s'impose : la composition des groupes d'apprentissage informels mérite d'être pensée. Ni le hasard ni l'affinité ne sont de bons critères. Constituer des groupes délibérément hétérogènes sur le plan des styles cognitifs, c'est créer les conditions d'une déstabilisation productive. C'est concevoir l'environnement allostérique à partir de la diversité humaine plutôt qu'à partir de ressources didactiques.</p>
+
+    <h2>6. Discussion : limites et perspectives</h2>
+    <p>Le croisement proposé dans cet article entre trois modèles théoriques distincts comporte des risques qu'il faut nommer. Le premier est celui du syncrétisme : mettre en dialogue des cadres théoriques élaborés dans des traditions différentes peut conduire à forcer des rapprochements qui ne résistent pas à l'examen. Le modèle allostérique est issu des sciences de l'éducation françaises ; les styles cognitifs viennent de la psychologie expérimentale anglo-saxonne ; la Stivation est née d'une observation de terrain africaine. Ces trois registres ne sont pas spontanément compatibles.</p>
+    <p>La thèse de cet article n'est pas qu'ils disent la même chose. Elle est qu'ils éclairent chacun un aspect d'un même phénomène que leur isolement théorique laissait dans l'ombre. C'est une lecture complémentariste, non fusionnelle.</p>
+    <p>Le second risque est empirique. Le lien entre diversité des styles cognitifs et efficacité de la Stivation reste à documenter rigoureusement. Une recherche quasi-expérimentale, avec des groupes composés de façon délibérément homogène ou hétérogène sur le plan cognitif, permettrait de tester cette hypothèse. C'est la perspective de recherche que cet article ouvre.</p>
+
+    <h2>Conclusion</h2>
+    <p>Giordan avait montré que l'apprentissage est une transformation, non une accumulation. Perraudeau avait montré que les apprenants ne se ressemblent pas dans leur façon de traiter l'information. Ce que cet article ajoute, c'est que la rencontre de ces différences, dans un espace libéré des inhibiteurs institutionnels, constitue elle-même un environnement allostérique.</p>
+    <p>La Stivation n'est pas un modèle qui contredit les deux autres. Elle les complète. Elle occupe l'angle mort qu'ils partageaient : l'espace informel entre pairs, où l'apprentissage se produit sans formateur, sans évaluation, sans intention pédagogique déclarée. C'est là, précisément, que les styles cognitifs différents heurtent et transforment les conceptions préalables.</p>
+
+    <div class="citation">
+      <p>« S'inscrivant dans une logique constructiviste, sociale et interactionniste de l'apprentissage stimulée par une forte motivation, le modèle de la stivation se particularise du fait de son caractère non formalisé et adidactique. »</p>
+      <cite>— Mbaye, 2010, p. 98</cite>
+    </div>
+
+    <p>C'est peut-être cela, le message le plus durable de ce travail : les ressources de l'apprentissage ne sont pas toujours là où on les cherche. Parfois, elles sont dans la différence du voisin.</p>
+
+  </div>
+
+  <div class="declaration">
+    <h4>Déclaration de conflits d'intérêts</h4>
+    <p>L'auteur déclare n'avoir aucun conflit d'intérêts en lien avec cet article.</p>
+    <h4 style="margin-top:16px">Financement</h4>
+    <p>Cette recherche n'a bénéficié d'aucun financement externe. Elle a été conduite dans le cadre des fonctions professionnelles de l'auteur au sein du Ministère de l'Éducation Nationale de la République du Sénégal.</p>
+  </div>
+
+  <div class="bibliographie">
+    <h2>Références bibliographiques</h2>
+    <ul>
+      <li>Ausubel, D. P. (1968). <em>Educational Psychology : A Cognitive View.</em> New York : Holt, Rinehart and Winston.</li>
+      <li>Biggs, J. B. &amp; Moore, P. J. (1993). <em>The Process of Learning.</em> New York : Prentice Hall.</li>
+      <li>Bourgeois, E. (2000). Les styles d'apprentissage en formation : enjeux théoriques, épistémologiques et pratiques. <em>Savoirs,</em> 2(2), 29-41.</li>
+      <li>Brousseau, G. (1998). <em>Théorie des situations didactiques.</em> Grenoble : La Pensée Sauvage.</li>
+      <li>Chartier, D. (2003). Les styles d'apprentissage : entre flou conceptuel et intérêt pratique. <em>Savoirs,</em> 2(2), 7-28.</li>
+      <li>Desautels, J. (1983). <em>Les conceptions des élèves et les sciences de la nature.</em> Québec : Université Laval.</li>
+      <li>Giordan, A. (1995). De nouveaux modèles pour faire comprendre et prévoir l'apprendre. <em>Perspectives,</em> vol. XXV, n° 1, mars 1995.</li>
+      <li>Giordan, A. &amp; de Vecchi, G. (1987). <em>Les origines du savoir.</em> Neuchâtel : Delachaux et Niestlé.</li>
+      <li>Huteau, M. &amp; Olry-Louis, I. (2000). Évaluations et styles d'apprentissage. <em>Revue française de pédagogie,</em> vol. XXVIII, n° 1.</li>
+      <li>Kagan, J. (1966). Reflection-impulsivity : The generality and dynamics of conceptual tempo. <em>Journal of Abnormal Psychology,</em> 71(1), 17-24.</li>
+      <li>Keefe, J. W. (1982). Assessing student learning styles. In <em>Student Learning Styles and Brain Behavior.</em> Reston VA : NASSP.</li>
+      <li>Larochelle, M. &amp; Desautels, J. (1992). <em>Autour de l'idée de science.</em> Bruxelles : De Boeck.</li>
+      <li>Mbaye, M. B. (2010). Interactions entre élèves-inspecteurs lors des activités collaboratives et coopératives en formation initiale. Mémoire CAIEE. FASTEF — Université Cheikh Anta Diop de Dakar.</li>
+      <li>Mbaye, M. B. (2019). Réussir le pilotage des districts : le modèle de la Stivation, mère du CREAQ. Communication présentée au Séminaire Bilan de la DEE, Dakar, Sénégal.</li>
+      <li>Perraudeau, M. (1996). <em>Les méthodes cognitives : apprendre autrement à l'école.</em> Paris : Armand Colin.</li>
+      <li>Piaget, J. (1970). Piaget's theory. In P. H. Mussen (dir.), <em>Carmichael's Manual of Child Psychology</em> (vol. 1). New York : Wiley.</li>
+      <li>Reuchlin, M. (1978). Processus vicariants et différences individuelles. <em>Journal de psychologie,</em> 75(2), 133-145.</li>
+      <li>Vygotski, L. S. (1978). <em>Mind in Society : The Development of Higher Psychological Processes.</em> Cambridge : Harvard University Press.</li>
+      <li>Wenger, E. (1998). <em>Communities of Practice : Learning, Meaning, and Identity.</em> Cambridge : Cambridge University Press.</li>
+      <li>Witkin, H. A. et al. (1977). Field-dependent and field-independent cognitive styles and their educational implications. <em>Review of Educational Research,</em> 47(1), 1-64.</li>
+    </ul>
+  </div>
+
+  <div class="article-tags">
+    <span class="tag">Stivation</span>
+    <span class="tag">Milieu allostérique</span>
+    <span class="tag">Styles cognitifs</span>
+    <span class="tag">CREAQ</span>
+    <span class="tag">TDI</span>
+    <span class="tag">Apprentissage informel</span>
+    <span class="tag">Formation enseignants</span>
+    <span class="tag">Afrique subsaharienne</span>
+  </div>
+  <div class="signature"><strong>Mouhamadou Bamba MBAYE</strong> · Inspecteur de l'Éducation et de la Formation · Le Couloir du Savoir · 2025</div>
+</div>
+
+<footer>
+  <p>© 2025 <strong style="color:var(--gold)">M.B.M</strong> · <a href="index.html">Le Couloir du Savoir</a> · Éducation &amp; Psychologie · Afrique</p>
+</footer>
+</body>
+</html>
