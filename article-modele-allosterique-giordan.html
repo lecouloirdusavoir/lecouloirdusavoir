@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>De nouveaux modèles pour faire comprendre et prévoir l'apprendre · Le Couloir du Savoir</title>
+<meta name="description" content="Analyse critique du modèle allostérique d'André Giordan : conceptions préalables, environnement didactique et dépassement du constructivisme en psychologie de l'apprentissage."/>
+<meta name="keywords" content="modèle allostérique, Giordan, conceptions, apprentissage, constructivisme, psychologie de l'éducation, didactique, Afrique"/>
+<meta name="author" content="Mouhamadou Bamba MBAYE"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --navy:  #1A2E4A;
+  --teal:  #0E6B7C;
+  --gold:  #C9970A;
+  --sand:  #F5EED8;
+  --cream: #FDFAF3;
+  --text:  #2A2A2A;
+  --muted: #6B7280;
+  --white: #FFFFFF;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--sand)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:62px;background:rgba(26,46,74,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,151,10,0.22)}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--gold);text-decoration:none}
+.nav-brand span{color:var(--white);font-weight:400;font-style:italic}
+.nav-back{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}
+.nav-back:hover{color:var(--gold)}
+
+/* HERO */
+.article-hero{margin-top:62px;background:var(--navy);padding:70px 40px 50px;text-align:center}
+.article-category{display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,0.4);padding:4px 14px;border-radius:20px;margin-bottom:24px}
+.article-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;color:var(--white);line-height:1.25;max-width:800px;margin:0 auto 16px}
+.article-hero .sous-titre{font-family:'Source Serif 4',serif;font-size:1rem;font-style:italic;color:rgba(255,255,255,0.6);max-width:650px;margin:0 auto 24px;line-height:1.6}
+.article-meta{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+
+/* CONTENU */
+.article-container{max-width:740px;margin:0 auto;padding:60px 30px 100px}
+
+.article-intro{font-size:1.05rem;font-style:italic;color:var(--navy);line-height:1.85;margin-bottom:40px;padding:28px 32px;background:var(--sand);border-left:4px solid var(--gold);border-radius:0 8px 8px 0}
+
+.article-body h2{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;color:var(--navy);margin:44px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--sand)}
+.article-body p{font-size:1rem;line-height:1.9;color:var(--text);margin-bottom:20px}
+.article-body strong{color:var(--navy);font-weight:600}
+.article-body em{color:var(--teal)}
+
+/* CITATION */
+.citation{background:rgba(14,107,124,0.06);border-left:4px solid var(--teal);padding:22px 28px;margin:36px 0;border-radius:0 8px 8px 0}
+.citation p{font-family:'Playfair Display',serif;font-size:1.05rem;font-style:italic;color:var(--navy);margin:0 0 10px}
+.citation cite{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--muted);font-style:normal}
+
+/* BIBLIOGRAPHIE */
+.bibliographie{background:var(--sand);border-radius:10px;padding:32px 36px;margin-top:50px}
+.bibliographie h2{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:20px;border-bottom:1px solid rgba(201,151,10,0.3);padding-bottom:12px}
+.bibliographie ul{list-style:none;padding:0}
+.bibliographie li{font-size:0.9rem;line-height:1.7;color:var(--text);margin-bottom:10px;padding-left:16px;border-left:2px solid var(--gold)}
+
+/* SIGNATURE */
+.signature{text-align:center;margin:50px 0 0;padding-top:30px;border-top:1px solid var(--sand);font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--muted)}
+.signature strong{color:var(--navy)}
+
+/* TAGS */
+.article-tags{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0 0}
+.tag{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:500;color:var(--navy);background:var(--sand);padding:5px 12px;border-radius:20px;letter-spacing:0.05em}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:30px;font-family:'DM Sans',sans-serif;font-size:0.8rem}
+footer a{color:var(--gold);text-decoration:none}
+
+@media(max-width:600px){
+  nav{padding:0 20px}
+  .article-hero{padding:50px 20px 40px}
+  .article-container{padding:40px 20px 80px}
+  .bibliographie{padding:24px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Le Couloir <span>du Savoir</span></a>
+  <a href="index.html" class="nav-back">← Retour au site</a>
+</nav>
+
+<div class="article-hero">
+  <div class="article-category">Psychologie de l'apprentissage · Analyse critique</div>
+  <h1>De nouveaux modèles pour faire comprendre et prévoir l'apprendre</h1>
+  <p class="sous-titre">Analyse de l'article d'André Giordan, <em>Perspectives</em>, vol. XXV, n° 1, mars 1995</p>
+  <div class="article-meta">
+    <span>✍️ Mouhamadou Bamba MBAYE</span>
+    <span>·</span>
+    <span>📚 Chercheur en psychologie sociale</span>
+    <span>·</span>
+    <span>🗓 2025</span>
+  </div>
+</div>
+
+<div class="article-container">
+
+  <p class="article-intro">
+    L'article d'André Giordan propose un modèle d'apprentissage dit allostérique, qui cherche à dépasser les limites de l'empirisme, du béhaviorisme et du constructivisme. Plutôt que d'ajouter un modèle à la liste, Giordan recentre la réflexion sur ce qui se passe réellement quand un élève apprend : comment ses conceptions préalables résistent, s'adaptent ou se transforment au contact d'un environnement didactique bien conçu. Cet article en fait l'analyse, en discute les apports et en interroge les limites, à la lumière du tournant que connaissent aujourd'hui les théories de l'apprentissage.
+  </p>
+
+  <div class="article-body">
+
+    <h2>1. Pourquoi les modèles existants ne suffisent plus</h2>
+    <p>Depuis des décennies, trois grands modèles pédagogiques se partagent le terrain. Chacun renvoie à une théorie psychologique distincte. Chacun a été, à son heure, tenu pour une avancée décisive. Et chacun, finalement, s'est révélé insuffisant pour rendre compte de ce qui se passe vraiment dans la tête d'un élève qui apprend.</p>
+    <p>Le modèle empiriste considérait l'apprenant comme une <em>tabula rasa</em>, une cire vierge sur laquelle la connaissance s'imprimerait par imprégnation et mémorisation. Le modèle béhavioriste postulait que l'on ne peut pas accéder aux états mentaux car ils sont inobservables : seuls comptent les comportements, induits par des stimuli positifs ou négatifs. Le modèle constructiviste, plus récent et plus nuancé, voyait dans l'apprendre le résultat d'une construction progressive du savoir par étapes. Piaget y occupait une place centrale, mais Gagné, Ausubel et Bachelard lui apportaient des variantes qui compliquaient autant qu'elles enrichissaient le tableau.</p>
+    <p>Giordan ne condamne aucun de ces modèles. Il reconnaît à chacun un domaine d'application légitime. Mais il pointe une faiblesse commune : ils peinent tous à faire comprendre et à prévoir l'apprendre dans sa complexité réelle. C'est cette lacune que le modèle allostérique entend combler.</p>
+
+    <h2>2. Le modèle allostérique : l'apprenant face à ses propres conceptions</h2>
+    <p>Le terme allostérique vient de la biologie. Il désigne des protéines qui modifient complètement leur structure sous l'action d'un facteur extérieur. Giordan l'emprunte pour décrire un processus analogue dans l'apprentissage : la connaissance ne s'ajoute pas, elle transforme. Et ce qu'elle transforme en premier lieu, ce sont les conceptions déjà présentes chez l'apprenant.</p>
+    <p>Giordan préfère le terme de <strong>conception</strong> à celui de représentation. Ce n'est pas un choix anodin. Les conceptions forment le modèle explicatif que l'élève a élaboré du monde. Elles interviennent dans l'identification des situations, dans la sélection des informations pertinentes, dans leur traitement et dans la production de sens. Savoirs scientifiques, croyances, dimensions émotionnelles, affectives, esthétiques : tout cela s'y mêle, dans un ensemble dont la genèse est à la fois individuelle et sociale.</p>
+    <p>Desautels (1983) avait montré que les enfants n'attendent pas d'aller à l'école pour forger des explications aux phénomènes qu'ils observent. Ces conceptions sont des produits et des outils de la pensée. Surtout, elles sont tenaces. Elles résistent. Un élève a rarement conscience de ses propres conceptions, surtout quand elles lui semblent aller de soi. Il les utilise de façon routinière, sans les questionner.</p>
+
+    <div class="citation">
+      <p>« Faire avec pour aller contre. »</p>
+      <cite>— André Giordan, principe fondateur du modèle allostérique</cite>
+    </div>
+
+    <p>C'est pourquoi Giordan préconise de <strong>« faire avec pour aller contre »</strong>. Un savoir nouveau ne détruit pas le modèle préexistant. Il l'oblige à s'adapter, à intégrer la connaissance supplémentaire dans une structure qui doit alors se réorganiser. C'est précisément cela, un apprentissage réussi : non pas un stockage d'informations, mais une élaboration, une construction de savoirs et de savoir-faire par corrections et rectifications successives.</p>
+
+    <h2>3. L'environnement didactique : créer les conditions de la transformation</h2>
+    <p>Seul l'élève peut construire son savoir. Mais il ne peut pas le faire seul. C'est la tension centrale du modèle allostérique, et c'est pourquoi la notion d'environnement didactique y joue un rôle capital.</p>
+    <p>Cet environnement n'est pas un décor. Il est un opérateur. Il introduit des dissonances qui perturbent le réseau conceptuel de l'élève, en le confrontant à des éléments significatifs : documentations, expérimentations, argumentations. C'est au cours de ces confrontations que l'élève prend conscience de la pauvreté ou de l'inadéquation de ses conceptions. Et c'est aussi par ces confrontations que de nouvelles données entrent en jeu.</p>
+    <p>L'enseignant retrouve ici une place centrale que certaines versions du constructivisme lui avaient confisquée. Il ne transmet plus mécaniquement. Il met en place des situations d'interaction nécessaires, apporte ou fait construire les outils les plus adéquats, et confronte l'élève à des formalismes variés : symboles, graphes, schémas, modèles. Il l'aide aussi à mettre en œuvre un savoir sur le savoir, car certaines difficultés tiennent à l'image que l'élève se fait des mécanismes de production de la connaissance elle-même.</p>
+
+    <h2>4. Ce que le modèle apporte à l'enseignant</h2>
+    <p>L'apport pratique du modèle allostérique est considérable, à condition qu'on accepte d'en prendre la mesure. Connaître les conceptions de ses élèves, c'est se donner les moyens d'adapter ses finalités et son projet éducatif. C'est définir des objectifs adéquats plutôt que génériques. C'est éviter de tenir un discours complètement décalé par rapport à ce que les élèves savent déjà, ou croient savoir.</p>
+    <p>Ce travail d'exploration préalable conduit aussi à se modérer sur la quantité de matière à faire acquérir. Un enseignant qui sait où en est l'élève ne cherche pas à tout couvrir. Il cherche à créer les conditions d'une véritable réorganisation conceptuelle. C'est un changement de posture profond, et difficile, surtout dans des systèmes éducatifs où les programmes restent très chargés.</p>
+    <p>Le modèle aide aussi à adapter le rythme du cours et à déterminer le choix des processus didactiques. Non pas en prescrivant une méthode unique, mais en fournissant un cadre de lecture qui permet de mieux identifier pourquoi certains élèves restent bloqués et ce qu'il faudrait faire pour débloquer l'apprentissage.</p>
+
+    <h2>5. Les limites du modèle : un dépassement qui reste à prouver</h2>
+    <p>Le modèle de Giordan jouit d'une bonne presse. Il serait injuste de ne pas le reconnaître. Mais une lecture critique s'impose.</p>
+    <p>La première critique, souvent formulée contre les modèles de changement conceptuel en général, est qu'ils déprécient, aux yeux mêmes des apprenants, des conceptions qui jusqu'alors leur avaient été utiles. Larochelle et Desautels (1992) l'ont bien dit : les connaissances du savoir commun et celles du savoir scientifique appartiennent à deux jeux différents. Ce serait une erreur pédagogique grave que de juger l'un à l'aune des règles de l'autre. Un savoir commun peut être pleinement cohérent dans son registre. L'enjeu n'est pas de le détruire, mais d'aider l'élève à comprendre quand il s'applique et quand il ne s'applique plus.</p>
+    <p>La seconde critique est plus fondamentale. Giordan affirme vouloir dépasser le constructivisme. Mais à y regarder de près, son modèle reste très proche des théories constructivistes interactionnistes. L'apprenant est toujours un sujet actif qui construit de nouveaux concepts à partir de ce qu'il sait déjà. Il sélectionne, transforme, formule des hypothèses, relie et organise. Ce sont là les gestes mêmes du constructivisme classique. Le modèle allostérique en est peut-être une version plus fine, mieux articulée, plus attentive aux dimensions émotionnelles et métacognitives. Mais la rupture épistémologique annoncée ne saute pas aux yeux.</p>
+    <p>Bertrand (1998) rappelle en outre que les conclusions de Giordan sur les conceptions ne font pas l'unanimité. L'idée que les représentations préalables constituent systématiquement un obstacle à l'apprentissage est discutée. Ce n'est pas toujours vrai. Parfois, elles servent de tremplin.</p>
+
+    <h2>6. Le déplacement des débats : vers des questions plus situées</h2>
+    <p>Il y a un fait que Bourgeois et Chapelle (2006) ont bien identifié : après les grandes batailles entre paradigmes opposés, un désintérêt progressif s'est installé pour les modèles généraux et unifiés de l'apprentissage. Les chercheurs en psychologie ne se reconnaissent plus guère dans des étiquettes comme béhavioriste, constructiviste ou cognitiviste. Ces grands blocs ont éclaté.</p>
+    <p>Ce qui intéresse désormais les psychologues de l'éducation, c'est l'apprentissage spécifique : celui des mathématiques, d'une langue étrangère, d'un concept scientifique particulier. Ce sont les différentes formes d'intelligence, les styles cognitifs, les contextes qui conditionnent l'apprendre dans sa singularité. Le débat s'est déplacé. Il n'est plus sur les postulats de base, mais sur les processus concrets, situés, observables.</p>
+    <p>Le modèle allostérique, en insistant sur le contexte pédagogique, sur les dimensions émotionnelles et métacognitives de l'apprentissage, et sur la place de l'environnement didactique, s'inscrit partiellement dans ce mouvement. C'est peut-être là sa contribution la plus durable.</p>
+
+    <h2>Conclusion</h2>
+    <p>Giordan a le mérite de présenter un modèle pédagogique qui cherche à éluder les obstacles qui freinent l'intégration d'une perspective constructiviste à l'enseignement. Son apport principal est d'avoir mis la conception de l'apprenant au centre, d'avoir pris au sérieux la ténacité des savoirs préalables, et d'avoir restitué à l'enseignant un rôle actif dans la création des conditions de l'apprentissage.</p>
+    <p>Mais le dépassement du constructivisme reste largement revendiqué plutôt que véritablement accompli. L'ambition du modèle est peut-être davantage dans sa sensibilité aux nuances que dans sa rupture avec ce qui précède. Ce n'est pas une critique mince. C'est une invitation à continuer le travail.</p>
+
+  </div>
+
+  <div class="bibliographie">
+    <h2>Bibliographie</h2>
+    <ul>
+      <li>Bertrand, Y. (1998). <em>Théories contemporaines de l'éducation.</em> Montréal : Éditions Nouvelles.</li>
+      <li>Bourgeois, E. &amp; Chapelle, G. (dir.) (2006). <em>Apprendre et faire apprendre.</em> Paris : Presses Universitaires de France.</li>
+      <li>Desautels, J. (1983). <em>Les conceptions des élèves et les sciences de la nature.</em> Québec : Université Laval.</li>
+      <li>Giordan, A. &amp; de Vecchi, G. (1987). <em>Les origines du savoir.</em> Neuchâtel : Delachaux et Niestlé.</li>
+      <li>Giordan, A. (1989). <em>De nouveaux modèles pour l'apprendre.</em> Berne : Peter Lang.</li>
+      <li>Giordan, A. (1995). De nouveaux modèles pour faire comprendre et prévoir l'apprendre. <em>Perspectives,</em> vol. XXV, n° 1, mars 1995.</li>
+      <li>Larochelle, M. &amp; Desautels, J. (1992). <em>Autour de l'idée de science.</em> Bruxelles : De Boeck.</li>
+    </ul>
+  </div>
+
+  <div class="article-tags">
+    <span class="tag">Modèle allostérique</span>
+    <span class="tag">Giordan</span>
+    <span class="tag">Constructivisme</span>
+    <span class="tag">Conceptions</span>
+    <span class="tag">Didactique</span>
+    <span class="tag">Psychologie</span>
+    <span class="tag">Apprentissage</span>
+  </div>
+
+  <div class="signature">
+    <strong>M.B.M</strong> · Le Couloir du Savoir · Psychologie de l'apprentissage · 2025
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 <strong style="color:var(--gold)">M.B.M</strong> · <a href="index.html">Le Couloir du Savoir</a> · Éducation & Psychologie · Afrique</p>
+</footer>
+
+</body>
+</html>
