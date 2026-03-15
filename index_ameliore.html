@@ -409,44 +409,70 @@ footer{background:var(--navy);padding:56px 0 28px}
     <div class="about-grid">
       <div class="reveal" style="position:relative">
         <div class="portrait-frame">
-          <!-- Illustration SVG auteur anonyme -->
           <svg viewBox="0 0 260 300" xmlns="http://www.w3.org/2000/svg" width="260" height="300">
             <rect width="260" height="300" fill="#F5EED8"/>
-            <!-- Fond géométrique africain -->
             <pattern id="pat" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
               <path d="M0 10 L10 0 L20 10 L10 20Z" fill="none" stroke="rgba(201,151,10,0.12)" stroke-width="0.8"/>
             </pattern>
             <rect width="260" height="300" fill="url(#pat)"/>
-            <!-- Silhouette penseur -->
-            <circle cx="130" cy="90" r="42" fill="#1A2E4A" opacity="0.85"/>
-            <rect x="100" y="132" width="60" height="90" rx="8" fill="#1A2E4A" opacity="0.8"/>
-            <rect x="78" y="150" width="30" height="60" rx="6" fill="#1A2E4A" opacity="0.7"/>
-            <rect x="152" y="150" width="30" height="60" rx="6" fill="#1A2E4A" opacity="0.7"/>
-            <rect x="105" y="222" width="22" height="55" rx="4" fill="#1A2E4A" opacity="0.8"/>
-            <rect x="133" y="222" width="22" height="55" rx="4" fill="#1A2E4A" opacity="0.8"/>
-            <!-- Livre dans main -->
-            <rect x="155" y="170" width="30" height="22" rx="2" fill="#C9970A" opacity="0.9"/>
-            <line x1="170" y1="170" x2="170" y2="192" stroke="#F5EED8" stroke-width="1"/>
-            <!-- Point d'interrogation (anonymat) -->
-            <text x="130" y="100" text-anchor="middle" font-family="Georgia,serif" font-size="36" fill="#C9970A" font-weight="900">?</text>
-            <!-- Texte bas -->
-            <text x="130" y="292" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6B7280" letter-spacing="2">M.B.M · AFRIQUE</text>
+            <!-- Groupe de silhouettes symbolisant le collectif -->
+            <!-- Personnage central grand -->
+            <circle cx="130" cy="72" r="28" fill="#1A2E4A" opacity="0.9"/>
+            <path d="M104 130 Q130 112 156 130 L160 200 L100 200 Z" fill="#1A2E4A" opacity="0.85"/>
+            <path d="M118 108 L130 128 L142 108" fill="#F5EED8" opacity="0.9"/>
+            <path d="M127 112 L130 150 L133 112" fill="#C9970A" opacity="0.8"/>
+            <!-- Personnage gauche -->
+            <circle cx="68" cy="100" r="20" fill="#0E6B7C" opacity="0.75"/>
+            <path d="M50 148 Q68 134 86 148 L89 195 L47 195 Z" fill="#0E6B7C" opacity="0.7"/>
+            <!-- Personnage droite -->
+            <circle cx="192" cy="100" r="20" fill="#4A7C6F" opacity="0.75"/>
+            <path d="M174 148 Q192 134 210 148 L213 195 L171 195 Z" fill="#4A7C6F" opacity="0.7"/>
+            <!-- Flèches interactions -->
+            <path d="M92 120 Q110 108 108 115" fill="none" stroke="#C9970A" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+            <path d="M168 120 Q150 108 152 115" fill="none" stroke="#C9970A" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.6"/>
+            <!-- Livre MBM -->
+            <rect x="50" y="160" width="28" height="20" rx="2" fill="#C9970A" opacity="0.9"/>
+            <line x1="64" y1="160" x2="64" y2="180" stroke="#F5EED8" stroke-width="1"/>
+            <!-- Badge IEF -->
+            <circle cx="150" cy="148" r="8" fill="#C9970A" opacity="0.7"/>
+            <text x="150" y="152" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#1A2E4A" font-weight="700">MBM</text>
+            <!-- Sol et texte -->
+            <line x1="30" y1="200" x2="230" y2="200" stroke="rgba(26,46,74,0.15)" stroke-width="1"/>
+            <text x="130" y="220" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#1A2E4A" font-weight="600" letter-spacing="2">LE COULOIR DU SAVOIR</text>
+            <text x="130" y="236" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#6B7280" letter-spacing="1">Éducation · Interactions · Afrique</text>
+            <!-- Petites personnes supplémentaires bas -->
+            <circle cx="80" cy="255" r="10" fill="#B85533" opacity="0.6"/>
+            <rect x="73" y="265" width="14" height="22" rx="3" fill="#B85533" opacity="0.55"/>
+            <circle cx="110" cy="250" r="10" fill="#6B3F6E" opacity="0.6"/>
+            <rect x="103" y="260" width="14" height="22" rx="3" fill="#6B3F6E" opacity="0.55"/>
+            <circle cx="150" cy="255" r="10" fill="#C9970A" opacity="0.6"/>
+            <rect x="143" y="265" width="14" height="22" rx="3" fill="#C9970A" opacity="0.55"/>
+            <circle cx="180" cy="250" r="10" fill="#0E6B7C" opacity="0.6"/>
+            <rect x="173" y="260" width="14" height="22" rx="3" fill="#0E6B7C" opacity="0.55"/>
           </svg>
         </div>
-        <div class="portrait-badge">Auteur<br/>Praticien de terrain<br/>Sénégal</div>
+        <div class="portrait-badge">Un laboratoire ouvert<br/>Éducation &amp; Interactions<br/>Afrique subsaharienne</div>
       </div>
       <div class="about-text">
         <p class="eyebrow reveal">À propos du site</p>
-        <h2 class="sec-title reveal">Un espace <em>libre et anonyme</em><br/>de pensée éducative</h2>
+        <h2 class="sec-title reveal">Un creuset <em>ouvert</em> au service<br/>de l'éducation africaine</h2>
         <div class="reveal">
-          <p><strong>Le Couloir du Savoir</strong> est un espace de réflexion indépendant consacré à l'éducation, à la psychologie de l'apprentissage, à la motivation et aux interactions humaines, en contexte africain.</p>
-          <p>L'auteur, praticien de terrain depuis plus de quinze ans, a choisi l'anonymat pour préserver la liberté totale de sa pensée. Ce qui compte ici, ce sont <strong>les idées</strong>, pas le nom qui les porte.</p>
-          <p>Ce site est né d'une conviction : <em>les espaces informels — les couloirs, les échanges spontanés — sont souvent plus formateurs que les cadres officiels.</em> C'est cette liberté que ce site veut incarner.</p>
+          <p><strong>Le Couloir du Savoir</strong> se veut bien plus qu'un site personnel. C'est un laboratoire vivant, un espace de réflexion collective ouvert à toutes les contributions, où enseignants, inspecteurs, chercheurs, formateurs et acteurs de l'éducation peuvent échanger, partager et construire ensemble des savoirs utiles à la pratique de terrain.</p>
+          <p>Ici, les idées circulent librement. Les expériences de classe, les résultats de recherche, les innovations pédagogiques nées du quotidien africain méritent d'être documentées, discutées et diffusées. Ce site est le lieu de ces échanges. Un couloir, au sens propre : un espace de passage et de rencontre, entre la salle de classe et le monde, entre la théorie et la pratique, entre l'Afrique et la recherche internationale.</p>
+          <p>Toute contribution — article, réflexion, témoignage, retour d'expérience — est la bienvenue. La qualité de ce laboratoire dépend de la richesse des interactions entre ses membres.</p>
         </div>
-        <div class="values-grid reveal">
-          <div class="value-box"><div class="value-icon">🔬</div><div class="value-title">Rigueur</div><div class="value-desc">Des idées ancrées dans la recherche et l'observation de terrain</div></div>
-          <div class="value-box"><div class="value-icon">🌱</div><div class="value-title">Terrain</div><div class="value-desc">Une pensée née de la pratique, pas des livres seuls</div></div>
-          <div class="value-box"><div class="value-icon">🤝</div><div class="value-title">Partage</div><div class="value-desc">Des savoirs construits collectivement et librement</div></div>
+
+        <!-- Encadré initiateur -->
+        <div class="reveal" style="margin-top:28px;background:var(--sand);border-left:4px solid var(--gold);border-radius:0 8px 8px 0;padding:24px 24px">
+          <p style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px">L'initiateur</p>
+          <p style="font-size:0.97rem;line-height:1.82;margin-bottom:14px;color:var(--text)"><strong>MBM</strong>, l'initiateur de ce site, est riche d'une expérience de plus de trente ans dans le système éducatif sénégalais, dont plus de quinze ans exercés en qualité de cadre et d'expert. Membre de l'équipe technique d'une direction centrale du Ministère de l'Éducation Nationale pendant plus de cinq ans, il a participé à la conception et à l'animation de nombreuses formations à destination des enseignants et des inspecteurs à l'échelle nationale.</p>
+          <p style="font-size:0.97rem;line-height:1.82;margin-bottom:0;color:var(--text)">Conférencier et consultant sur les questions d'éducation, il est aussi l'auteur de trois concepts originaux nés du terrain africain : la <strong>Stivation</strong>, le <strong>CREAQ</strong> et la <strong>TDI</strong>. Ces cadres théoriques, construits sur plus de quinze ans d'observation dans les inspections de Tivaouane, Saraya et Kédougou, constituent le socle scientifique de ce laboratoire.</p>
+        </div>
+
+        <div class="values-grid reveal" style="margin-top:24px">
+          <div class="value-box"><div class="value-icon">🧪</div><div class="value-title">Laboratoire</div><div class="value-desc">Un espace de production et de test d'idées, ancré dans la réalité du terrain africain</div></div>
+          <div class="value-box"><div class="value-icon">🔁</div><div class="value-title">Interactions</div><div class="value-desc">Ouvert aux contributions de tous les acteurs de l'éducation, sans frontières disciplinaires</div></div>
+          <div class="value-box"><div class="value-icon">🌍</div><div class="value-title">Rayonnement</div><div class="value-desc">Des savoirs construits en Afrique, pour l'Afrique et partagés avec le monde</div></div>
         </div>
       </div>
     </div>
@@ -482,7 +508,7 @@ footer{background:var(--navy);padding:56px 0 28px}
         <rect x="130" y="185" width="28" height="14" rx="2" fill="rgba(201,151,10,0.4)"/>
         <rect x="175" y="185" width="28" height="14" rx="2" fill="rgba(201,151,10,0.4)"/>
       </svg>
-      <p>Apprentissage informel sous l'arbre</p>
+      <p>Enseignants en formation — apprentissage informel entre pairs</p>
     </div>
     <!-- Illustration 2 : Échange entre pairs -->
     <div class="illus-item reveal rd1">
@@ -571,8 +597,8 @@ footer{background:var(--navy);padding:56px 0 28px}
     <div class="illus-afrique-text reveal">
       <p class="eyebrow" style="color:var(--teal)">L'éducation en Afrique subsaharienne</p>
       <h2 class="sec-title">Des couloirs <em>où naît</em><br/>la vraie connaissance</h2>
-      <p>En Afrique subsaharienne, les espaces informels d'apprentissage — la cour de récréation, les couloirs entre les cours, les discussions sous les arbres — produisent parfois plus de savoirs durables que les dispositifs formels les mieux conçus.</p>
-      <p>C'est cette réalité que le concept de <strong>Stivation</strong> cherche à théoriser et à valoriser. Non pour rejeter l'école, mais pour comprendre ce qui se passe quand les inhibiteurs institutionnels disparaissent et que les apprenants interagissent librement.</p>
+      <p>En Afrique subsaharienne, les espaces informels d'apprentissage entre enseignants en situation de formation — les échanges dans les couloirs entre deux séances, les discussions spontanées entre pairs après une activité — produisent parfois plus de savoirs durables et de transformations de pratiques que les dispositifs formels les mieux conçus.</p>
+      <p>C'est cette réalité que le concept de <strong>Stivation</strong> cherche à théoriser et à valoriser. Non pour rejeter la formation formelle, mais pour comprendre ce qui se passe quand les contraintes institutionnelles s'allègent et que les enseignants échangent librement entre pairs.</p>
       <p>Quinze années de terrain au Sénégal ont permis de documenter ce phénomène dans trois contextes distincts : Tivaouane, Saraya et Kédougou.</p>
     </div>
     <!-- Grande illustration SVG : carte Afrique + points de terrain -->
@@ -628,7 +654,7 @@ footer{background:var(--navy);padding:56px 0 28px}
 <div class="bigquote">
   <div class="bq-inner">
     <p class="bq-text">« S'inscrivant dans une logique <strong>constructiviste, sociale et interactionniste</strong>, la stivation se particularise du fait de son caractère <strong>non formalisé et adidactique</strong> — là où la motivation rencontre la stimulation dans la liberté. »</p>
-    <p class="bq-attr">M.B.M · Le Couloir du Savoir · Concept fondateur · 2010</p>
+    <p class="bq-attr">Mouhamadou Bamba MBAYE · Le Couloir du Savoir · Concept fondateur · 2010</p>
   </div>
 </div>
 
@@ -681,31 +707,31 @@ footer{background:var(--navy);padding:56px 0 28px}
         <span class="pub-cat cat-ps">Psychologie de l'apprentissage</span>
         <h3 class="pub-title">De nouveaux modèles pour faire comprendre et prévoir l'apprendre</h3>
         <p class="pub-excerpt">Analyse critique du modèle allostérique d'André Giordan : conceptions préalables, environnement didactique et dépassement du constructivisme.</p>
-        <div class="pub-meta"><span>Giordan · Analyse critique · 2025</span><a href="article-modele-allosterique-giordan.html" class="pub-read">Lire →</a></div>
+        <div class="pub-meta"><span>Giordan · Analyse critique</span><a href="article-modele-allosterique-giordan.html" class="pub-read">Lire →</a></div>
       </div>
       <div class="pub-card reveal rd1">
         <span class="pub-cat cat-ps">Psychologie cognitive</span>
         <h3 class="pub-title">Le Style d'Apprentissage des Élèves : une Réalité dans nos Écoles ?</h3>
         <p class="pub-excerpt">Analyse des styles cognitifs selon Perraudeau, Witkin, Kagan et Ausubel. Implications pédagogiques concrètes pour l'enseignant.</p>
-        <div class="pub-meta"><span>Styles cognitifs · Pédagogie · 2025</span><a href="article-styles-apprentissage.html" class="pub-read">Lire →</a></div>
+        <div class="pub-meta"><span>Styles cognitifs · Pédagogie</span><a href="article-styles-apprentissage.html" class="pub-read">Lire →</a></div>
       </div>
       <div class="pub-card reveal">
         <span class="pub-cat cat-r">Didactique des langues</span>
         <h3 class="pub-title">Les Interactions Sociales en Classe de Langue Seconde</h3>
         <p class="pub-excerpt">Compte rendu critique de l'article de Claude Germain. Hypothèse de Krashen, interaction didactique et négociation du sens.</p>
-        <div class="pub-meta"><span>Krashen · Germain · 2025</span><a href="article-interactions-sociales-L2.html" class="pub-read">Lire →</a></div>
+        <div class="pub-meta"><span>Krashen · Germain</span><a href="article-interactions-sociales-L2.html" class="pub-read">Lire →</a></div>
       </div>
       <div class="pub-card reveal rd1">
         <span class="pub-cat cat-p">Gouvernance éducative</span>
         <h3 class="pub-title">Décentralisation et Déconcentration : deux concepts ménechmes ?</h3>
         <p class="pub-excerpt">Clarification des contours conceptuels et juridiques dans le cadre du PAQUET-EF et de la gouvernance éducative sénégalaise.</p>
-        <div class="pub-meta"><span>PAQUET-EF · Sénégal · 2025</span><a href="article-decentralisation-deconcentration.html" class="pub-read">Lire →</a></div>
+        <div class="pub-meta"><span>PAQUET-EF · Sénégal</span><a href="article-decentralisation-deconcentration.html" class="pub-read">Lire →</a></div>
       </div>
       <div class="pub-card reveal rd2">
         <span class="pub-cat cat-mo">Psycholinguistique</span>
         <h3 class="pub-title">Les Briseurs de Chaînes</h3>
         <p class="pub-excerpt">De nouvelles structures narratives dans le discours oral des Sénégalais. Analyse des tics langagiers chez les cadres et enseignants.</p>
-        <div class="pub-meta"><span>Discours oral · Sénégal · 2025</span><a href="article-briseurs-de-chaines.html" class="pub-read">Lire →</a></div>
+        <div class="pub-meta"><span>Discours oral · Sénégal</span><a href="article-briseurs-de-chaines.html" class="pub-read">Lire →</a></div>
       </div>
       <div class="pub-card feat reveal">
         <div class="feat-bar"></div>
@@ -715,6 +741,70 @@ footer{background:var(--navy);padding:56px 0 28px}
           <p class="pub-excerpt">Mémoire CAIEE — FASTEF, Université Cheikh Anta DIOP de Dakar, 2010. Le texte fondateur du concept de la <strong>Stivation</strong>, publié sur Mémoire Online et indexé par Google.</p>
           <div class="pub-meta"><span>FASTEF · UCAD · 2010</span><a href="https://www.memoireonline.com/07/11/4627/" target="_blank" class="pub-read">Lire le mémoire original →</a></div>
         </div>
+      </div>
+
+      <!-- ── NOUVEAUX ARTICLES MOTIVATION ── -->
+      <div class="pub-card feat reveal">
+        <div class="feat-bar" style="background:var(--teal)"></div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:12px">
+          <span class="pub-cat cat-mo">Motivation</span>
+          <h3 class="pub-title">La motivation intrinsèque : pourquoi certains apprennent sans qu'on le leur demande</h3>
+          <p class="pub-excerpt">Les mécanismes psychologiques profonds qui déclenchent l'envie d'apprendre : curiosité, sentiment de compétence, autonomie. Deci et Ryan en contexte africain. Ce que quinze ans de terrain révèlent.</p>
+          <div class="pub-meta"><span>Deci &amp; Ryan · Autonomie · Terrain Sénégal</span><a href="article-motivation-intrinseque.html" class="pub-read">Lire →</a></div>
+        </div>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-cat cat-mo">Motivation</span>
+        <h3 class="pub-title">La motivation extrinsèque : entre nécessité et piège</h3>
+        <p class="pub-excerpt">Notes, classements, récompenses. Ces leviers fonctionnent à court terme. Mais à quel prix sur la durée ? Ce que la recherche dit. Ce que le terrain confirme.</p>
+        <div class="pub-meta"><span>Deci &amp; Ryan · Récompense · Engagement</span><a href="article-motivation-extrinseque.html" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd1">
+        <span class="pub-cat cat-mo">Motivation</span>
+        <h3 class="pub-title">L'état de Flow dans l'apprentissage : quand on perd la notion du temps</h3>
+        <p class="pub-excerpt">Le concept de Flow de Csikszentmihalyi appliqué à la formation des enseignants. Comment créer les conditions d'un engagement total. Expériences de terrain à Tivaouane.</p>
+        <div class="pub-meta"><span>Csikszentmihalyi · Flow · Engagement</span><a href="article-flow-apprentissage.html" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd2">
+        <span class="pub-cat cat-mo">Motivation · CREAQ</span>
+        <h3 class="pub-title">L'émulation entre pairs : quand le groupe devient moteur d'apprentissage</h3>
+        <p class="pub-excerpt">Pourquoi le progrès d'un pair tire tout le groupe vers le haut. Bandura, modélisation sociale. Le CREAQ comme formalisation de ce principe dans la formation continue.</p>
+        <div class="pub-meta"><span>Bandura · CREAQ · Pairs</span><a href="article-emulation-pairs.html" class="pub-read">Lire →</a></div>
+      </div>
+
+      <!-- ── NOUVEAUX ARTICLES PSYCHOLOGIE ── -->
+      <div class="pub-card feat reveal">
+        <div class="feat-bar" style="background:var(--plum)"></div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:12px">
+          <span class="pub-cat cat-ps">Psychologie</span>
+          <h3 class="pub-title">Mémoire et apprentissage : ce que l'enseignant africain doit savoir</h3>
+          <p class="pub-excerpt">La courbe de l'oubli d'Ebbinghaus. Les trois phases de la mémorisation. La pratique espacée. Ce que cela change concrètement pour la formation des enseignants et la pratique de classe.</p>
+          <div class="pub-meta"><span>Ebbinghaus · Mémoire · Pratique espacée</span><a href="article-memoire-apprentissage.html" class="pub-read">Lire →</a></div>
+        </div>
+      </div>
+      <div class="pub-card reveal">
+        <span class="pub-cat cat-ps">Psychologie</span>
+        <h3 class="pub-title">Le conflit cognitif : pourquoi apprendre c'est d'abord être déstabilisé</h3>
+        <p class="pub-excerpt">Piaget, déséquilibre cognitif. Doise et Mugny, conflit sociocognitif. Ce que cela change pour la formation des enseignants. Lien direct avec la Stivation et le CREAQ.</p>
+        <div class="pub-meta"><span>Piaget · Doise · Stivation</span><a href="article-conflit-cognitif.html" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd1">
+        <span class="pub-cat cat-ps">Psychologie</span>
+        <h3 class="pub-title">La confiance en soi et l'apprentissage : le sentiment d'efficacité personnelle</h3>
+        <p class="pub-excerpt">Le concept de self-efficacy de Bandura relu à la lumière des réalités scolaires africaines. Comment la confiance en soi influence les apprentissages et les pratiques professionnelles.</p>
+        <div class="pub-meta"><span>Bandura · Self-efficacy · Afrique</span><a href="article-confiance-soi-apprentissage.html" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd2">
+        <span class="pub-cat cat-ps">Psychologie · Socioconstructivisme</span>
+        <h3 class="pub-title">Vygotski en Afrique : la zone proximale de développement revisitée</h3>
+        <p class="pub-excerpt">La ZPD de Vygotski relue à la lumière des réalités éducatives africaines. Ce que quinze ans de terrain au Sénégal ont appris sur l'apprentissage médiatisé entre pairs.</p>
+        <div class="pub-meta"><span>Vygotski · ZPD · Pairs · Sénégal</span><a href="article-vygotski-afrique.html" class="pub-read">Lire →</a></div>
+      </div>
+      <div class="pub-card reveal rd3">
+        <span class="pub-cat cat-r">Stivation · Éducation</span>
+        <h3 class="pub-title">Le couloir comme salle de classe : les espaces informels d'apprentissage</h3>
+        <p class="pub-excerpt">Pourquoi les échanges informels entre enseignants en formation produisent des apprentissages durables. Fondement empirique du concept de Stivation.</p>
+        <div class="pub-meta"><span>Stivation · Informel · Formation</span><a href="article-couloir-salle-classe.html" class="pub-read">Lire →</a></div>
       </div>
     </div>
   </div>
@@ -727,7 +817,7 @@ footer{background:var(--navy);padding:56px 0 28px}
       <div>
         <p class="eyebrow reveal">Contact</p>
         <h2 class="sec-title reveal">Entrons en <em>conversation</em></h2>
-        <p class="sec-intro reveal" style="margin-bottom:32px">Pour tout échange académique, collaboration ou contribution. L'auteur reste anonyme mais les idées, elles, circulent librement.</p>
+        <p class="sec-intro reveal" style="margin-bottom:32px">Pour contribuer au laboratoire, proposer un article, partager une expérience de terrain, ou contacter l'équipe pour une collaboration, une formation ou une mission de conseil.</p>
         <div class="contact-item reveal"><div class="c-icon">🌍</div><div><p class="c-lbl">Zone géographique</p><p class="c-val">Afrique subsaharienne · Sénégal</p></div></div>
         <div class="contact-item reveal"><div class="c-icon">📚</div><div><p class="c-lbl">Domaines</p><p class="c-val">Éducation · Psychologie · Motivation · Interactions · Recherche-action</p></div></div>
         <div class="contact-item reveal"><div class="c-icon">✍️</div><div><p class="c-lbl">Contributions</p><p class="c-val">Vous pouvez proposer un article, un témoignage ou une réflexion</p></div></div>
@@ -750,7 +840,7 @@ footer{background:var(--navy);padding:56px 0 28px}
   <div class="footer-inner">
     <div>
       <div class="fbrand">Le Couloir du Savoir <span>· Éducation &amp; Psychologie</span></div>
-      <p class="fabout">Un espace anonyme et libre consacré à l'éducation, la psychologie de l'apprentissage, la motivation et les interactions humaines en Afrique. Né dans les couloirs informels où l'on apprend vraiment.</p>
+      <p class="fabout">Espace de réflexion de Mouhamadou Bamba MBAYE, Inspecteur de l'Enseignement Élémentaire, expert et consultant en éducation au Sénégal. Plus de trente ans de terrain, trois concepts originaux : Stivation, CREAQ, TDI.</p>
     </div>
     <div>
       <p class="fcol-title">Navigation</p>
