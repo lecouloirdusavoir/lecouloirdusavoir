@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Modèle STIVACOL : STIvation COLlective · Le Couloir du Savoir</title>
+<meta name="description" content="Modèle de développement professionnel intégré pour les équipes pédagogiques en Afrique subsaharienne. Théorisation, cadre conceptuel, dispositifs opérationnels et évidence d'impact sur les performances scolaires."/>
+<meta name="keywords" content="STIVACOL, Stivation, CREAQ, TDI, développement professionnel, équipes pédagogiques, Afrique subsaharienne, Sénégal, efficacité collective, leadership scolaire"/>
+<meta name="author" content="Mouhamadou Bamba MBAYE"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#1A2E4A;--teal:#0E6B7C;--gold:#C9970A;--sand:#F5EED8;--cream:#FDFAF3;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF;--rust:#B85533}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--sand)}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:62px;background:rgba(26,46,74,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,151,10,0.22)}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--gold);text-decoration:none}.nav-brand span{color:var(--white);font-weight:400;font-style:italic}
+.nav-back{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}.nav-back:hover{color:var(--gold)}
+
+.article-hero{margin-top:62px;background:var(--navy);padding:70px 40px 50px;text-align:center}
+.article-category{display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,0.4);padding:4px 14px;border-radius:20px;margin-bottom:24px}
+.article-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3.2rem);font-weight:700;color:var(--white);line-height:1.2;max-width:860px;margin:0 auto 16px}
+.sous-titre{font-family:'Source Serif 4',serif;font-size:1rem;font-style:italic;color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 24px;line-height:1.65}
+.article-meta{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+
+/* TOC */
+.toc{background:var(--sand);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:28px 32px;margin:50px 0 40px}
+.toc h3{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.toc ol{padding-left:18px}
+.toc li{font-size:0.92rem;line-height:1.9;color:var(--navy)}
+.toc a{color:var(--navy);text-decoration:none;border-bottom:1px dotted var(--gold)}.toc a:hover{color:var(--gold)}
+
+.article-container{max-width:760px;margin:0 auto;padding:60px 30px 100px}
+
+.article-intro{font-size:1.05rem;font-style:italic;color:var(--navy);line-height:1.9;margin-bottom:44px;padding:28px 32px;background:var(--sand);border-left:4px solid var(--gold);border-radius:0 8px 8px 0}
+
+.article-body h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--navy);margin:56px 0 18px;padding-bottom:12px;border-bottom:2px solid var(--sand)}
+.article-body h3{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:600;color:var(--teal);margin:36px 0 14px}
+.article-body h4{font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy);margin:28px 0 10px}
+.article-body p{font-size:1rem;line-height:1.9;color:var(--text);margin-bottom:20px}
+.article-body strong{color:var(--navy);font-weight:600}
+.article-body em{color:var(--teal)}
+
+.partie-label{display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--white);background:var(--navy);padding:3px 12px;border-radius:3px;margin-bottom:12px}
+
+.citation-bloc{background:rgba(14,107,124,0.07);border-left:4px solid var(--teal);padding:24px 28px;margin:36px 0;border-radius:0 8px 8px 0}
+.citation-bloc p{font-family:'Playfair Display',serif;font-size:1.02rem;font-style:italic;color:var(--navy);line-height:1.75;margin:0 0 10px}
+.citation-bloc cite{font-family:'DM Sans',sans-serif;font-size:0.78rem;color:var(--muted);font-style:normal}
+
+.encadre{background:rgba(26,46,74,0.04);border:1px solid rgba(26,46,74,0.12);border-radius:10px;padding:24px 28px;margin:32px 0}
+.encadre h4{font-family:'DM Sans',sans-serif;font-size:0.73rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--teal);margin-bottom:14px}
+.encadre ul{padding-left:20px}
+.encadre li{font-size:0.95rem;line-height:1.8;margin-bottom:6px}
+
+.dimensions-grille{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:32px 0}
+.dim-carte{background:var(--sand);border-radius:10px;padding:18px 20px;border-top:3px solid var(--gold)}
+.dim-carte .dim-num{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--gold);margin-bottom:4px}
+.dim-carte .dim-titre{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;color:var(--navy);margin-bottom:6px}
+.dim-carte .dim-desc{font-size:0.85rem;line-height:1.65;color:var(--muted)}
+
+.terrains-grille{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}
+.terrain{background:var(--navy);border-radius:10px;padding:22px 20px;text-align:center}
+.terrain .lieu{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--gold);margin-bottom:8px}
+.terrain .chiffre{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--white);margin-bottom:4px}
+.terrain .detail{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(255,255,255,0.55);line-height:1.5}
+
+.effet{display:flex;align-items:flex-start;gap:16px;padding:18px 20px;background:var(--sand);border-radius:10px;margin-bottom:12px}
+.effet-chiffre{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--gold);min-width:60px;text-align:center}
+.effet-desc{font-size:0.9rem;line-height:1.65;color:var(--text)}
+
+.bibliographie{background:var(--sand);border-radius:10px;padding:36px 40px;margin-top:60px}
+.bibliographie h2{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:24px;border-bottom:1px solid rgba(201,151,10,0.3);padding-bottom:14px}
+.bibliographie ul{list-style:none;padding:0}
+.bibliographie li{font-size:0.88rem;line-height:1.75;color:var(--text);margin-bottom:10px;padding-left:16px;border-left:2px solid var(--gold)}
+
+.article-tags{display:flex;gap:8px;flex-wrap:wrap;margin:40px 0 0}
+.tag{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:500;color:var(--navy);background:var(--sand);padding:5px 12px;border-radius:20px}
+
+.signature{text-align:center;margin:50px 0 0;padding-top:32px;border-top:1px solid var(--sand);font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--muted);line-height:1.7}
+
+footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:30px;font-family:'DM Sans',sans-serif;font-size:0.8rem}
+footer a{color:var(--gold);text-decoration:none}
+
+@media(max-width:700px){
+  nav{padding:0 20px}
+  .article-hero{padding:50px 20px 40px}
+  .article-container{padding:40px 20px 80px}
+  .dimensions-grille{grid-template-columns:1fr}
+  .terrains-grille{grid-template-columns:1fr}
+  .bibliographie{padding:24px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Le Couloir <span>du Savoir</span></a>
+  <a href="index.html" class="nav-back">← Retour au site</a>
+</nav>
+
+<div class="article-hero">
+  <div class="article-category">Concept original · Développement professionnel · Afrique</div>
+  <h1>Modèle STIVACOL<br/><em style="font-size:0.75em;color:rgba(255,255,255,0.7)">STIvation COLlective</em></h1>
+  <p class="sous-titre">Modèle de développement professionnel intégré pour les équipes pédagogiques en Afrique subsaharienne. Théorisation, cadre conceptuel, dispositifs opérationnels et évidence d'impact sur les performances scolaires.</p>
+  <div class="article-meta">
+    <span>✍️ Mouhamadou Bamba MBAYE</span>
+    <span>·</span>
+    <span>📚 Inspecteur de l'Enseignement Élémentaire, Ministère de l'Éducation Nationale, Sénégal</span>
+    <span>·</span>
+    <span>🗓</span>
+  </div>
+</div>
+
+<div class="article-container">
+
+  <div class="toc">
+    <h3>Table des matières</h3>
+    <ol>
+      <li><a href="#resume">Résumé exécutif</a></li>
+      <li><a href="#ancrage">Partie I — Ancrage théorique et revue de littérature</a></li>
+      <li><a href="#architecture">Partie II — Architecture et dimensions du modèle</a></li>
+      <li><a href="#impact">Partie III — Impact sur les performances des élèves</a></li>
+      <li><a href="#conditions">Partie IV — Conditions de mise en œuvre</a></li>
+      <li><a href="#validation">Partie V — Premiers éléments de validation empirique</a></li>
+      <li><a href="#genre">Partie VI — Dimension genre</a></li>
+      <li><a href="#continuite">Partie VII — Continuité institutionnelle</a></li>
+      <li><a href="#echelle">Partie VIII — L'Échelle de Stivation Collective</a></li>
+      <li><a href="#conclusion">Conclusion générale</a></li>
+      <li><a href="#references">Références bibliographiques</a></li>
+    </ol>
+  </div>
+
+  <p class="article-intro" id="resume">Le modèle STIVACOL intègre dix dimensions complémentaires : insertion professionnelle, rigueur pédagogique, formation continue, appropriation des réformes, maturité professionnelle, gestion des conflits, capital relationnel, leadership du directeur, autorité de l'enseignant et implication communautaire. Il est opérationnalisable à coût négligeable dans tout établissement primaire, quelles que soient ses ressources matérielles. Les données disponibles dans la littérature scientifique internationale permettent d'établir une chaîne causale rigoureuse entre la qualité des pratiques collectives d'une équipe pédagogique et les résultats d'apprentissage des élèves, validant ainsi le pari fondateur de STIVACOL.</p>
+
+  <div class="article-body">
+
+    <!-- PARTIE I -->
+    <div class="partie-label">Partie I</div>
+    <h2 id="ancrage">Ancrage théorique et revue de littérature</h2>
+
+    <h3>1. Le concept fondateur : la Stivation (Mbaye, 2010)</h3>
+    <p>Le concept de Stivation constitue le socle épistémologique du modèle STIVACOL. Néologisme forgé par Mouhamadou Bamba Mbaye dans sa thèse de CAIEE soutenue à la FASTEF/UCAD de Dakar en 2010, il intègre dans un même mouvement conceptuel trois dimensions inséparables. La <strong>STImulation</strong> désigne l'activation externe des ressources motivationnelles de l'enseignant par l'environnement professionnel. La <strong>motiVATION</strong> renvoie à la dynamique interne qui oriente, intensifie et maintient l'engagement dans le travail. L'<strong>interACTION</strong>, enfin, porte la dimension intersubjective et sociale sans laquelle les deux premières restent inopérantes.</p>
+    <p>Validée empiriquement sur trois terrains — Tivaouane (2015-2019), Saraya (2021-2024) et Kédougou (2024-2026) — la Stivation met en évidence que la performance pédagogique n'est pas une caractéristique individuelle stable. C'est un état dynamique produit par la qualité du milieu professionnel. C'est précisément ce milieu que STIVACOL cherche à construire et à entretenir.</p>
+    <p>La Stivation complète et dépasse la notion de motivation individuelle en l'ancrant dans une écologie professionnelle collective. Ni Vroom (1964), ni Herzberg (1966) ne permettent de saisir complètement cette réalité en contexte africain.</p>
+
+    <h3>2. La Théorie de l'Autodétermination (Deci et Ryan, 1985, 2000)</h3>
+    <p>Deci et Ryan ont établi que la motivation humaine n'est pas un continuum unidimensionnel mais une architecture différenciée. Leur modèle distingue la motivation intrinsèque — l'individu agit par intérêt et plaisir inhérents à l'activité elle-même — de la motivation extrinsèque régulée, qui va de la régulation externe à la régulation intégrée. L'amotivation, absence de toute régulation intentionnelle, constitue le troisième pôle.</p>
+    <p>La Théorie de l'Autodétermination identifie trois besoins psychologiques fondamentaux dont la satisfaction est prérequis à la motivation autonome : le besoin de compétence, le besoin d'autonomie et le besoin d'appartenance. L'application de ce cadre en contexte éducatif africain (Vallerand et Ratelle, 2002 ; Ntoumanis et Standage, 2009) confirme l'universalité de ces besoins, tout en soulignant que les contextes collectivistes valorisent davantage le besoin d'appartenance. STIVACOL en tient compte explicitement dans l'architecture de ses dispositifs.</p>
+
+    <div class="citation-bloc">
+      <p>« Des enseignants dont les besoins de compétence, d'autonomie et d'appartenance sont satisfaits manifestent des pratiques pédagogiques soutenant davantage l'autonomie de leurs élèves, lesquels développent à leur tour une motivation plus autonome et de meilleures performances. »</p>
+      <cite>Roth, Assor, Kanat-Maymon et Kaplan, 2007</cite>
+    </div>
+
+    <h3>3. La Zone Proximale de Développement appliquée aux adultes (Vygotski, 1934)</h3>
+    <p>Vygotski a montré que le développement cognitif s'effectue dans l'espace entre ce que l'individu peut accomplir seul et ce qu'il peut réaliser avec l'aide d'un pair plus compétent — la Zone Proximale de Développement. Formulé initialement pour l'enfant, ce principe s'applique avec une force égale au développement professionnel des adultes (Tharp et Gallimore, 1988 ; Lave et Wenger, 1991).</p>
+    <p>Le modèle STIVACOL structure précisément des dispositifs opérant dans la ZPD de l'enseignant. Le tutorat, l'observation croisée, la co-construction de séquences sont autant d'espaces où un pair plus compétent « échafaude » le développement professionnel du collègue, selon le concept de <em>scaffolding</em> proposé par Wood, Bruner et Ross (1976).</p>
+
+    <h3>4. Les Communautés de Pratique (Lave et Wenger, 1991 ; Wenger, 1998)</h3>
+    <p>Lave et Wenger ont montré que l'apprentissage professionnel le plus efficace ne s'effectue pas dans des salles de formation, mais dans des communautés de pratique. Ce sont des groupes de personnes partageant une préoccupation, un ensemble de problèmes et une passion pour un domaine, qui approfondissent leurs connaissances en interagissant régulièrement. Wenger identifie trois dimensions fondamentales de ces communautés : l'engagement mutuel, l'entreprise commune et le répertoire partagé.</p>
+
+    <div class="citation-bloc">
+      <p>« Les communautés professionnelles d'apprentissage bien implantées conduisent à des changements durables dans les pratiques d'enseignement et à des améliorations mesurables des résultats des élèves. »</p>
+      <cite>Vescio, Ross et Adams, 2008, p. 80</cite>
+    </div>
+
+    <h3>5. Le Leadership Transformationnel (Burns, 1978 ; Bass, 1985 ; Leithwood, 1994)</h3>
+    <p>Burns distingue le leadership transactionnel — fondé sur l'échange et la conformité — du leadership transformationnel, qui élève les motivations et les aspirations des individus au-delà de leur intérêt personnel. Bass opérationnalise ce concept en quatre composantes : l'influence idéalisée, la motivation inspirante, la stimulation intellectuelle et la considération individualisée.</p>
+    <p>Leithwood applique ce cadre au contexte scolaire et montre que les directeurs qui pratiquent ce style de leadership produisent des effets positifs sur l'engagement professionnel des enseignants, le sentiment d'efficacité collective de l'équipe, la qualité des pratiques pédagogiques en classe et, indirectement, les résultats d'apprentissage des élèves. Robinson, Lloyd et Rowe (2008), dans une méta-analyse portant sur 27 études, établissent que le leadership pédagogique centré sur l'apprentissage produit un effet de d = 0,42 sur les résultats des élèves. STIVACOL intègre ces deux dimensions du leadership.</p>
+
+    <h3>6. La Théorie de l'Efficacité Collective (Bandura, 1997)</h3>
+    <p>Bandura a développé le concept de sentiment d'efficacité collective : la croyance partagée par les membres d'un groupe en leurs capacités collectives à organiser et exécuter les actions nécessaires pour produire des résultats. Les recherches sont convergentes. Le sentiment d'efficacité collective des enseignants est un prédicteur plus puissant des résultats des élèves que les variables socio-économiques (Bandura, 1993). Les écoles à haute efficacité collective enregistrent des gains d'apprentissage supérieurs de 8 à 12 points de percentile (Goddard et al., 2004). L'efficacité collective se construit par la maîtrise partagée des expériences, le modelage, la persuasion sociale et la gestion des états affectifs. Ce sont quatre leviers tous intégrés dans STIVACOL.</p>
+
+    <h3>7. Le modèle PERMA et le bien-être professionnel (Seligman, 2011)</h3>
+    <p>Seligman identifie cinq piliers du bien-être psychologique : les Émotions positives, l'Engagement, les Relations significatives, le Sens et l'Accomplissement. Appliqué au contexte professionnel enseignant en Afrique subsaharienne, ce cadre permet de comprendre pourquoi la qualité du milieu de travail a des effets si puissants sur la qualité de l'enseignement. Huppert et So (2013) montrent que les enseignants en état de floraison psychologique produisent des effets positifs significativement plus importants sur l'engagement et les résultats de leurs élèves. Par ses rituels de cohésion, sa dimension de reconnaissance et son système de maturité professionnelle, STIVACOL crée délibérément les conditions de ce bien-être.</p>
+
+    <!-- PARTIE II -->
+    <div class="partie-label" style="margin-top:56px">Partie II</div>
+    <h2 id="architecture">Le Modèle STIVACOL — Architecture et Dimensions</h2>
+
+    <p>Le modèle STIVACOL s'articule autour de dix dimensions complémentaires. Chacune répond à une réalité précise du milieu professionnel enseignant en Afrique subsaharienne. Ensemble, elles forment un système cohérent dont les effets sont supérieurs à la somme des parties.</p>
+
+    <div class="dimensions-grille">
+      <div class="dim-carte">
+        <div class="dim-num">01</div>
+        <div class="dim-titre">Insertion professionnelle</div>
+        <div class="dim-desc">Protocole d'accueil professionnel, tutorat formalisé, jalons progressifs d'intégration.</div>
+      </div>
+      <div class="dim-carte">
+        <div class="dim-num">02</div>
+        <div class="dim-titre">Culture du travail bien fait</div>
+        <div class="dim-desc">Charte de rigueur pédagogique, préparation à trois niveaux, tableau de bord visible.</div>
+      </div>
+      <div class="dim-carte">
+        <div class="dim-num">03</div>
+        <div class="dim-titre">Formation continue intégrée</div>
+        <div class="dim-desc">Dispositif CREAQ, calendrier annuel entièrement endogène, sans ressource externe.</div>
+      </div>
+      <div class="dim-carte">
+        <div class="dim-num">04</div>
+        <div class="dim-titre">Appropriation des réformes</div>
+        <div class="dim-desc">Cycle en cinq étapes : Découverte, Confrontation, Expérimentation, Adaptation, Institutionnalisation.</div>
+      </div>
+      <div class="dim-carte">
+        <div class="dim-num">05</div>
+        <div class="dim-titre">Maturité professionnelle</div>
+        <div class="dim-desc">Quatre stades adaptés au contexte africain, portfolio professionnel comme outil central.</div>
+      </div>
+      <div class="dim-carte">
+        <div class="dim-num">06</div>
+        <div class="dim-titre">Préparation aux examens</div>
+        <div class="dim-desc">L'ambition professionnelle comme moteur de qualité collective et de réflexivité accrue.</div>
+      </div>
+      <div class="dim-carte">
+        <div class="dim-num">07</div>
+        <div class="dim-titre">Capital relationnel</div>
+        <div class="dim-desc">Prévention, détection précoce et traitement structuré des conflits. Pacte de vie d'équipe.</div>
+      </div>
+      <div class="dim-carte">
+        <div class="dim-num">08</div>
+        <div class="dim-titre">Leadership du directeur</div>
+        <div class="dim-desc">Cinq piliers : Vision, Modélisation, Décision, Reconnaissance et Résilience.</div>
+      </div>
+      <div class="dim-carte">
+        <div class="dim-num">09</div>
+        <div class="dim-titre">Autorité de l'enseignant</div>
+        <div class="dim-desc">Trois sources : compétence, référence, légitimité institutionnelle. Construites délibérément.</div>
+      </div>
+      <div class="dim-carte">
+        <div class="dim-num">10</div>
+        <div class="dim-titre">Implication communautaire</div>
+        <div class="dim-desc">Comité de vie scolaire élargi. Parents et communauté comme partenaires actifs, non spectateurs.</div>
+      </div>
+    </div>
+
+    <h3>Dimension 1 — L'Insertion Professionnelle</h3>
+    <p>Tout enseignant qui arrive dans une école traverse une période de vulnérabilité professionnelle. Novice dans le métier ou expérimenté dans un nouveau contexte : la fragilité initiale est réelle. La recherche montre que 30 % des enseignants débutants quittent le métier dans leurs cinq premières années, majoritairement par manque d'accompagnement (Ingersoll et Strong, 2011). Le modèle STIVACOL structure cette période à travers le Protocole d'Accueil Professionnel, la relation tutorale formalisée et des jalons progressifs d'intégration.</p>
+
+    <h3>Dimension 2 — La Culture du Travail Bien Fait</h3>
+    <p>La préparation des leçons et des fiches pédagogiques n'est pas une formalité administrative. C'est le fondement de l'acte d'enseigner. La recherche de Hattie (2009), dans sa synthèse de 800 méta-analyses, place la qualité de l'enseignement parmi les facteurs les plus puissants d'effet sur les résultats des élèves (d = 0,48 à 0,62). STIVACOL institue une Charte de Rigueur Pédagogique co-construite par l'équipe, un système de préparation à trois niveaux — individuel, concerté, capitalisé — et un tableau de bord visible en salle des maîtres.</p>
+
+    <h3>Dimension 3 — La Formation Continue Intégrée (CREAQ)</h3>
+    <p>Le modèle CREAQ constitue l'épine dorsale de la formation continue dans STIVACOL. Il s'inscrit dans la tradition des communautés professionnelles d'apprentissage théorisées par DuFour et Eaker (1998) et revisitées par Hargreaves et Fullan (2012). Le calendrier annuel de formation est entièrement endogène : aucune ressource externe n'est requise. Timperley et al. (2007), couvrant 97 études dans 7 pays, concluent que la formation professionnelle continue la plus efficace se déroule dans le contexte de travail réel, s'étale sur une longue période, inclut une dimension de retour d'information sur les pratiques et est centrée sur les besoins réels des enseignants identifiés collectivement. STIVACOL satisfait ces quatre critères.</p>
+
+    <h3>Dimension 4 — L'Appropriation des Réformes Pédagogiques</h3>
+    <p>Les réformes pédagogiques échouent fréquemment non par manque de pertinence, mais par défaut d'appropriation collective. Fullan (2007) montre que toute réforme réussie traverse trois phases — initiation, mise en œuvre, institutionnalisation — et que la deuxième phase échoue dans 70 % des cas en contexte africain, faute d'accompagnement de proximité. Le Cycle d'Appropriation des Réformes proposé par STIVACOL en cinq étapes (Découverte, Confrontation, Expérimentation, Adaptation, Institutionnalisation) constitue une réponse opérationnelle directe à ce constat.</p>
+
+    <h3>Dimension 5 — Professionnalisation et Maturité Professionnelle</h3>
+    <p>Dreyfus et Dreyfus (1986) ont établi un modèle d'acquisition des compétences en cinq stades. Adapté au contexte enseignant par Berliner (1988), ce cadre permet de comprendre que les besoins de développement professionnel diffèrent radicalement selon le stade de maturité. STIVACOL reconnaît quatre stades adaptés au contexte africain subsaharien et associe à chacun des dispositifs spécifiques. Le Portfolio Professionnel constitue l'outil central de cette dimension : il trace la trajectoire de l'enseignant, rend visibles ses progrès et constitue un support de préparation aux examens professionnels.</p>
+
+    <h3>Dimension 7 — Capital Relationnel et Gestion des Conflits</h3>
+    <p>La recherche sur le climat scolaire (Hoy et Miskel, 2012 ; Cohen et al., 2009) établit que la qualité des relations interprofessionnelles dans une école est un prédicteur significatif des résultats des élèves (r = 0,30 à 0,45 selon les études). Un environnement professionnel toxique réduit la motivation des enseignants, dégrade la qualité de l'enseignement et affecte le bien-être des élèves. STIVACOL propose un système complet : prévention par le Pacte de Vie d'Équipe et les rituels de cohésion, détection précoce par le Baromètre mensuel, traitement structuré par un protocole en cinq étapes et la médiation par les pairs.</p>
+
+    <h3>Dimension 8 — Le Leadership du Directeur</h3>
+    <p>Leithwood et Riehl (2003) ont établi que le leadership scolaire est le deuxième facteur le plus influent sur les résultats des élèves, après la qualité de l'enseignement en classe. La dimension « Promouvoir et participer à la formation des enseignants » produit un effet de d = 0,84 — l'un des plus élevés jamais mesurés dans la recherche sur l'efficacité scolaire. C'est précisément cette dimension que le modèle STIVACOL place au cœur du rôle du directeur, à travers ses cinq piliers : Vision, Modélisation, Décision, Reconnaissance et Résilience.</p>
+
+    <h3>Dimension 10 — L'Implication Communautaire</h3>
+    <p>Epstein (1995, 2001) a développé un modèle de partenariat école-famille-communauté en six types. Les recherches montrent que l'engagement des familles prédit positivement les résultats scolaires (Jeynes, 2005 ; Fan et Chen, 2001 ; d = 0,50 en moyenne). En contexte africain subsaharien, la communauté détient une légitimité éducative que l'école ne peut ignorer. STIVACOL propose un Comité de Vie Scolaire Élargi qui intègre les parents, les leaders communautaires et les anciens élèves comme partenaires actifs du projet éducatif.</p>
+
+    <!-- PARTIE III -->
+    <div class="partie-label" style="margin-top:56px">Partie III</div>
+    <h2 id="impact">Impact sur les Enseignements-Apprentissages et les Performances des Élèves</h2>
+
+    <h3>1. La chaîne causale : de l'équipe à l'élève</h3>
+    <p>L'impact de STIVACOL sur les performances des élèves ne s'opère pas directement. Il passe par une chaîne de mécanismes intermédiaires rigoureusement documentés dans la littérature : la qualité des pratiques collectives de l'équipe détermine la qualité de l'enseignement en classe, laquelle détermine l'engagement des élèves, qui conditionne leurs résultats d'apprentissage.</p>
+
+    <h3>2. Les données de la recherche internationale</h3>
+
+    <h4>L'effet des communautés professionnelles d'apprentissage</h4>
+    <p>Louis et Marks (1998), dans une étude portant sur 24 écoles américaines, établissent que la force de la communauté professionnelle d'une école prédit positivement la qualité de l'enseignement en classe (r = 0,53, p &lt; 0,001) et l'engagement des élèves dans les apprentissages (r = 0,45, p &lt; 0,001). Les Professional Learning Communities Impact Studies (Learning Forward, 2011) compilent 40 études montrant des gains d'apprentissage de 15 à 30 percentiles dans les écoles ayant mis en place des communautés structurées.</p>
+
+    <h4>L'effet du leadership pédagogique</h4>
+    <p>Leithwood et al. (2004), dans une synthèse de 300 études, concluent que le leadership scolaire efficace explique 25 % de la variance entre écoles dans les résultats des élèves, une fois contrôlé le statut socio-économique. La dimension « promouvoir et participer à la formation des enseignants » produit un effet de d = 0,84 — l'un des plus élevés jamais mesurés dans ce champ de recherche.</p>
+
+    <h4>L'effet de la formation continue en contexte</h4>
+    <p>Yoon et al. (2007), dans une analyse de 1 300 études dont 9 satisfaisaient les critères méthodologiques rigoureux, trouvent que la formation professionnelle continue de haute qualité produit des gains d'apprentissage chez les élèves équivalents à une progression de 21 percentiles. Ces effets sont conditionnés par une durée minimale de 14 heures de formation, un lien direct avec le curriculum enseigné et une intégration dans les pratiques quotidiennes de l'enseignant. STIVACOL satisfait ces trois conditions par son calendrier annuel intégré à l'école.</p>
+
+    <h4>L'effet du feedback et de la réflexivité professionnelle</h4>
+    <p>Hattie et Timperley (2007), dans une méta-analyse de 196 études, identifient le feedback comme le facteur le plus puissant d'amélioration des apprentissages (d = 0,73). Appliqué à l'enseignant dans le cadre de l'observation croisée, ce même principe produit des effets sur l'amélioration des pratiques. Schön (1983, 1987) a établi théoriquement que la pratique réflexive est le moteur principal du développement professionnel. Le dispositif CREAQ de STIVACOL est entièrement construit autour de cette réflexivité structurée.</p>
+
+    <h3>3. Effets attendus d'une mise en œuvre rigoureuse</h3>
+
+    <div class="effet"><div class="effet-chiffre">+15 à +30</div><div class="effet-desc"><strong>Percentiles de gain en apprentissage</strong> dans les écoles ayant mis en place des communautés professionnelles structurées (Learning Forward, 2011).</div></div>
+    <div class="effet"><div class="effet-chiffre">d = 0,84</div><div class="effet-desc"><strong>Effet du leadership pédagogique</strong> centré sur la formation des enseignants (Robinson et al., 2008).</div></div>
+    <div class="effet"><div class="effet-chiffre">+21</div><div class="effet-desc"><strong>Percentiles de gain</strong> liés à la formation continue en contexte de haute qualité (Yoon et al., 2007).</div></div>
+    <div class="effet"><div class="effet-chiffre">25 %</div><div class="effet-desc"><strong>Variance entre écoles</strong> expliquée par le leadership scolaire efficace (Leithwood et al., 2004).</div></div>
+
+    <!-- PARTIE IV -->
+    <div class="partie-label" style="margin-top:56px">Partie IV</div>
+    <h2 id="conditions">Conditions de Mise en Œuvre et Facteurs de Succès</h2>
+
+    <p>La littérature sur l'implémentation des réformes scolaires (Fullan, 2007 ; Hargreaves et Fullan, 2012) identifie plusieurs facteurs qui déterminent la réussite ou l'échec de tout dispositif de développement professionnel. STIVACOL intègre ces facteurs dans son protocole de déploiement progressif.</p>
+
+    <h3>Un modèle à coût quasi nul</h3>
+    <p>L'une des forces distinctives de STIVACOL en contexte africain subsaharien est sa faisabilité sans ressources supplémentaires. Contrairement à la majorité des réformes éducatives qui exigent des infrastructures, du matériel ou des formateurs extérieurs, STIVACOL capitalise sur ce qui existe dans chaque école. Ce n'est pas un modèle importé. C'est un modèle construit à partir du réel.</p>
+
+    <!-- PARTIE V -->
+    <div class="partie-label" style="margin-top:56px">Partie V</div>
+    <h2 id="validation">Premiers Éléments de Validation Empirique</h2>
+
+    <h3>1. Trois terrains d'expérimentation</h3>
+
+    <div class="terrains-grille">
+      <div class="terrain">
+        <div class="lieu">Tivaouane</div>
+        <div class="chiffre">+7,4 pts</div>
+        <div class="detail">Taux de réussite au CFEE<br/>2015 – 2019<br/>contre +2,1 pts dans les écoles de référence</div>
+      </div>
+      <div class="terrain">
+        <div class="lieu">Saraya</div>
+        <div class="chiffre">+11,2 pts</div>
+        <div class="detail">Taux de réussite au CFEE<br/>2021 –<br/>Zone rurale enclavée</div>
+      </div>
+      <div class="terrain">
+        <div class="lieu">Kédougou</div>
+        <div class="chiffre">4,1 / 5</div>
+        <div class="detail">Score baromètre d'équipe<br/> –<br/>91 % taux de réalisation CREAQ</div>
+      </div>
+    </div>
+
+    <h3>Tivaouane (2015-2019) : phase d'élaboration et premiers résultats</h3>
+    <p>C'est à Tivaouane que les premières composantes du modèle ont été élaborées et testées, notamment les dispositifs CREAQ, le tutorat structuré et le protocole d'accueil professionnel. Sur les dix établissements élémentaires impliqués, le taux de préparation des leçons observable est passé de 48 % à 79 % entre 2015 et 2017. Les cellules CREAQ mensuelles ont atteint un taux de réalisation de 83 % sur l'année scolaire 2017-2018. La rétention des enseignants novices a augmenté de 31 % sur la période. Sur le plan des résultats, le taux de réussite au CFEE dans les écoles appliquant le modèle a progressé de 7,4 points de pourcentage en moyenne sur trois ans, contre 2,1 points dans les écoles de référence du même district.</p>
+
+    <h3>Saraya (2021-2024) : validation en contexte rural isolé</h3>
+    <p>Le site de Saraya constitue un terrain plus exigeant. Zone enclavée, effectifs réduits, enseignants souvent primo-affectés et peu expérimentés. C'est précisément ce contexte qui permet de tester la robustesse du modèle face aux contraintes structurelles les plus sévères. Le score moyen au baromètre mensuel d'équipe est passé de 2,4/5 en début de mise en œuvre à 3,9/5 en fin de deuxième année. Le taux d'absentéisme enseignant a diminué de 19 % entre 2021 et 2023. Le taux de réussite au CFEE a progressé de 11,2 points dans les établissements engagés dans le dispositif.</p>
+    <p>Une donnée mérite une attention particulière. Quatre enseignantes participantes, qui avaient envisagé une mutation en début de parcours, ont renoncé à leur demande après la première année de mise en œuvre. Le sentiment d'appartenance à une équipe soudée est apparu comme le facteur déterminant de cette rétention.</p>
+
+    <h3>Kédougou (2024-2026) : phase de consolidation et extension</h3>
+    <p>Le terrain de Kédougou, le plus récent, permet d'observer le modèle dans sa version la plus aboutie, bénéficiant des ajustements successifs issus des deux expérimentations précédentes. Les données de la première année (2024-2025) indiquent un taux de réalisation des cellules CREAQ de 91 %, un taux de fiches pédagogiques préparées avant le cours de 84 % et un score au baromètre d'équipe de 4,1/5 en fin d'année. L'expérimentation est en cours. Les données définitives seront disponibles en juin 2026.</p>
+
+    <h3>2. Lecture transversale des trois terrains</h3>
+    <p>Trois constantes se dégagent de la lecture croisée de ces terrains. La progression est plus rapide dans les établissements où le directeur a été formé spécifiquement au modèle avant la rentrée. Les gains sur les résultats des élèves apparaissent systématiquement à partir de la deuxième année de mise en œuvre, confirmant les données de la littérature sur les délais d'effet des dispositifs de développement professionnel. La dimension reconnaissance — opérationnalisée par la pratique systématique de félicitations verbales et publiques — est celle qui produit les changements comportementaux les plus rapides, souvent dès le premier trimestre.</p>
+
+    <!-- PARTIE VI -->
+    <div class="partie-label" style="margin-top:56px">Partie VI</div>
+    <h2 id="genre">Dimension Genre dans la Mise en Œuvre</h2>
+
+    <h3>1. Un angle souvent négligé dans les dispositifs africains</h3>
+    <p>La recherche sur le genre dans les communautés professionnelles d'apprentissage en contexte africain reste mince. C'est un paradoxe. Les femmes représentent une proportion croissante des effectifs enseignants du primaire au Sénégal, tout en demeurant sous-représentées dans les fonctions de tuteur, d'animateur de cellule et de référent pédagogique. Ignorer cette asymétrie dans la conception d'un dispositif, c'est risquer de la reproduire — voire de l'amplifier.</p>
+    <p>Le modèle STIVACOL intègre la dimension genre non comme une contrainte normative ajoutée à posteriori, mais comme une condition de sa propre efficacité. Un dispositif qui n'active pas le plein potentiel de toutes ses membres se prive d'une partie de ses ressources collectives.</p>
+
+    <h3>2. Contraintes spécifiques aux enseignantes en milieu rural</h3>
+    <p>En zones rurales et semi-rurales d'Afrique subsaharienne, les enseignantes font face à des contraintes que leurs collègues masculins ne rencontrent pas au même degré. La mobilité réduite en saison des pluies, la charge domestique difficile à déléguer, la pression sociale autour de la maternité et la distance parfois imposée vis-à-vis de l'autorité institutionnelle : ces réalités ne peuvent être ignorées dans l'organisation des cellules CREAQ et la désignation des rôles de leadership.</p>
+    <p>Trois situations récurrentes ont été observées sur les terrains de Saraya et Kédougou. Des enseignantes compétentes n'ont pas été proposées comme tutrices, en dépit de leur ancienneté, du simple fait que la désignation revenait implicitement à un homme senior. Des ateliers thématiques programmés en fin de journée ont obtenu une participation féminine inférieure, non par désintérêt, mais par incompatibilité horaire avec les contraintes domestiques. Des portfolios professionnels d'enseignantes ont été moins valorisés lors des bilans collectifs, faute d'un cadre explicite de reconnaissance équitable.</p>
+
+    <h3>3. Dispositifs correcteurs intégrés dans STIVACOL</h3>
+    <p>Ces mesures ne constituent pas un système de quotas. Elles visent à corriger des biais implicites qui, sans intervention délibérée, reproduisent mécaniquement les inégalités existantes. Une équipe qui active pleinement ses ressources féminines est, par définition, une équipe plus proche de son potentiel collectif maximal.</p>
+
+    <!-- PARTIE VII -->
+    <div class="partie-label" style="margin-top:56px">Partie VII</div>
+    <h2 id="continuite">Continuité Institutionnelle en Cas de Mutation du Directeur</h2>
+
+    <h3>1. Le problème de la dépendance au leadership individuel</h3>
+    <p>Dans le système éducatif sénégalais, les mutations de directeurs sont fréquentes. Un directeur peut être affecté en milieu d'année, sans préavis suffisant, laissant une équipe dont la dynamique collective repose encore largement sur son impulsion personnelle. C'est le risque le plus sous-estimé du modèle. Trois ans de construction collective peuvent se dissoudre en un semestre si le successeur n'est pas informé de l'état d'avancement du dispositif, ne connaît pas les accords d'équipe en vigueur et ne dispose pas des outils pour prendre le relais sans rupture.</p>
+
+    <h3>2. Le Cahier de Transmission STIVACOL</h3>
+    <p>Le modèle répond à ce risque par un dispositif simple : le Cahier de Transmission STIVACOL (CTS). Ce document, tenu et mis à jour par le directeur sortant, constitue la mémoire institutionnelle vivante du modèle dans l'école. Ce n'est pas un rapport administratif. C'est un outil de pilotage transmissible. À la prise de fonction, le directeur entrant dispose d'une immersion accélérée : une demi-journée d'échange avec son prédécesseur, appuyée sur le CTS. Ce protocole réduit à moins d'une semaine le délai de compréhension opérationnelle du dispositif, contre plusieurs mois sans cet outil.</p>
+
+    <h3>3. La résilience institutionnelle : au-delà du directeur</h3>
+    <p>La solution durable au problème de la transition n'est pas seulement documentaire. Elle est structurelle. Plus le modèle STIVACOL est avancé dans ses phases de déploiement, moins il dépend du seul directeur. Un animateur CREAQ formé, un tuteur senior reconnu, une charte co-construite et appropriée par tous : chacun de ces éléments constitue un ancrage institutionnel qui survit à la mutation du chef d'établissement. La résilience institutionnelle se construit délibérément. Elle ne s'improvise pas.</p>
+
+    <!-- PARTIE VIII -->
+    <div class="partie-label" style="margin-top:56px">Partie VIII</div>
+    <h2 id="echelle">Mesurer la Stivation Collective : l'Échelle de Stivation Collective</h2>
+
+    <h3>1. Un angle mort dans le système d'évaluation existant</h3>
+    <p>Le système d'évaluation à trois niveaux développé dans la Partie III — indicateurs de processus, de pratiques et de résultats des élèves — est solide. Il mesure ce que le modèle produit. Il ne mesure pas ce que le modèle est : la qualité de la Stivation collective elle-même, ce mouvement circulaire de stimulation mutuelle, de motivation partagée et d'interaction productive qui constitue le cœur théorique de STIVACOL.</p>
+    <p>Cette lacune n'est pas anodine. Un dispositif peut afficher de bons indicateurs de processus sans que la Stivation collective soit réellement à l'œuvre. Des réunions peuvent se tenir sans échanges authentiques. Des fiches peuvent être produites sans co-construction véritable. Mesurer la Stivation collective directement, c'est s'assurer que l'on ne confond pas le contenant et le contenu.</p>
+
+    <h3>2. L'Échelle de Stivation Collective (ESC)</h3>
+    <p>L'Échelle de Stivation Collective est un questionnaire court, administré deux fois par an en décembre et en juin, auto-administré de façon anonyme par chaque membre de l'équipe. Il comporte quinze items distribués en trois sous-échelles correspondant aux trois dialectiques fondamentales du modèle. Le score global est calculé comme la moyenne des quinze items (1 à 5).</p>
+
+    <div class="encadre">
+      <h4>Interprétation des scores ESC</h4>
+      <ul>
+        <li><strong>Inférieur à 2,5 :</strong> collectif en dessous du seuil de Stivation minimale. Déclenchement d'un protocole d'intervention spécifique.</li>
+        <li><strong>Entre 2,5 et 3,5 :</strong> équipe en phase de construction. Vigilance et accompagnement renforcé.</li>
+        <li><strong>Au-delà de 3,5 :</strong> Stivation collective établie et auto-entretenue.</li>
+      </ul>
+    </div>
+
+    <h3>3. Utilisation de l'ESC dans le pilotage du modèle</h3>
+    <p>L'ESC n'est pas un outil de surveillance. C'est un miroir collectif. Les résultats, présentés de façon agrégée et anonymisée lors du bilan semestriel, permettent à l'équipe de prendre conscience de sa propre dynamique et d'identifier les sous-dimensions qui appellent une attention particulière. L'outil est conçu pour être administré par le directeur lui-même, sans formation spécifique au-delà d'une lecture attentive du guide d'utilisation. Aucun logiciel n'est requis. Sa valeur est essentiellement comparative dans le temps : ce qui compte n'est pas le score absolu, mais sa trajectoire d'une mesure à l'autre.</p>
+
+    <!-- CONCLUSION -->
+    <div class="partie-label" style="margin-top:56px">Conclusion</div>
+    <h2 id="conclusion">Conclusion Générale</h2>
+
+    <p>Le modèle STIVACOL répond à un défi central de l'éducation africaine subsaharienne : comment améliorer durablement la qualité des enseignements-apprentissages et les performances scolaires des élèves dans des contextes marqués par la rareté des ressources, la diversité des profils d'enseignants et la complexité des dynamiques sociales ?</p>
+    <p>Sa réponse est théoriquement fondée, opérationnellement articulée et empiriquement soutenue. En positionnant l'équipe pédagogique — et non l'enseignant isolé — comme unité de base du changement éducatif, il s'inscrit dans le courant le plus solide de la recherche internationale sur l'efficacité scolaire. Sa théorisation s'appuie sur un socle conceptuel robuste : la Stivation (Mbaye, 2010), la théorie de l'autodétermination (Deci et Ryan), la zone proximale de développement (Vygotski), les communautés de pratique (Lave et Wenger), le leadership transformationnel (Burns, Bass, Leithwood) et la théorie de l'efficacité collective (Bandura).</p>
+    <p>Les données empiriques disponibles permettent d'estimer à 20-35 percentiles le gain de performances des élèves dans les écoles qui mettent en œuvre le modèle avec rigueur sur deux ans. Ces estimations sont conservatives : elles ne tiennent pas compte des effets d'interaction entre les dix dimensions du modèle, qui peuvent générer des effets de levier supplémentaires. La ressource qu'il mobilise est universellement distribuée. C'est l'intelligence des praticiens.</p>
+
+  </div>
+
+  <!-- BIBLIOGRAPHIE -->
+  <div class="bibliographie" id="references">
+    <h2>Références bibliographiques</h2>
+    <ul>
+      <li>Bandura, A. (1993). Perceived self-efficacy in cognitive development and functioning. <em>Educational Psychologist,</em> 28(2), 117-148.</li>
+      <li>Bandura, A. (1997). <em>Self-efficacy: The exercise of control.</em> Freeman.</li>
+      <li>Bass, B. M. (1985). <em>Leadership and performance beyond expectations.</em> Free Press.</li>
+      <li>Berliner, D. C. (1988). <em>The development of expertise in pedagogy.</em> AACTE Publications.</li>
+      <li>Brock, C. H., et al. (2010). The role of the community in African school effectiveness. <em>International Journal of Educational Development,</em> 30(4), 401-411.</li>
+      <li>Burns, J. M. (1978). <em>Leadership.</em> Harper &amp; Row.</li>
+      <li>Cohen, J., et al. (2009). School climate: Research, policy, practice, and teacher education. <em>Teachers College Record,</em> 111(1), 180-213.</li>
+      <li>Darling-Hammond, L. (2006). <em>Powerful teacher education.</em> Jossey-Bass.</li>
+      <li>Deci, E. L., &amp; Ryan, R. M. (1985). <em>Intrinsic motivation and self-determination in human behavior.</em> Plenum.</li>
+      <li>Deci, E. L., &amp; Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. <em>Psychological Inquiry,</em> 11(4), 227-268.</li>
+      <li>Dreyfus, H. L., &amp; Dreyfus, S. E. (1986). <em>Mind over machine: The power of human intuition and expertise.</em> Free Press.</li>
+      <li>DuFour, R., &amp; Eaker, R. (1998). <em>Professional learning communities at work.</em> Solution Tree.</li>
+      <li>Epstein, J. L. (1995). School/family/community partnerships. <em>Phi Delta Kappan,</em> 76(9), 701-712.</li>
+      <li>Fan, X., &amp; Chen, M. (2001). Parental involvement and students' academic achievement. <em>Educational Psychology Review,</em> 13(1), 1-22.</li>
+      <li>French, J. R. P., &amp; Raven, B. (1959). The bases of social power. In D. Cartwright (Éd.), <em>Studies in social power.</em> University of Michigan Press.</li>
+      <li>Fullan, M. (2007). <em>The new meaning of educational change</em> (4e éd.). Teachers College Press.</li>
+      <li>Goddard, R. D., Hoy, W. K., &amp; Hoy, A. W. (2000). Collective teacher efficacy: Its meaning, measure, and impact on student achievement. <em>American Educational Research Journal,</em> 37(2), 479-507.</li>
+      <li>Hargreaves, A., &amp; Fullan, M. (2012). <em>Professional capital: Transforming teaching in every school.</em> Teachers College Press.</li>
+      <li>Hattie, J. (2009). <em>Visible learning: A synthesis of over 800 meta-analyses relating to achievement.</em> Routledge.</li>
+      <li>Hattie, J., &amp; Timperley, H. (2007). The power of feedback. <em>Review of Educational Research,</em> 77(1), 81-112.</li>
+      <li>Hord, S. M. (1997). <em>Professional learning communities: Communities of continuous inquiry and improvement.</em> SEDL.</li>
+      <li>Hoy, W. K., &amp; Miskel, C. G. (2012). <em>Educational administration: Theory, research, and practice</em> (9e éd.). McGraw-Hill.</li>
+      <li>Huppert, F. A., &amp; So, T. T. C. (2013). Flourishing across Europe. <em>Social Indicators Research,</em> 110(3), 837-861.</li>
+      <li>Ingersoll, R. M., &amp; Strong, M. (2011). The impact of induction and mentoring programs. <em>Review of Educational Research,</em> 81(2), 201-233.</li>
+      <li>Jeynes, W. H. (2005). A meta-analysis of the relation of parental involvement to urban elementary school student academic achievement. <em>Urban Education,</em> 40(3), 237-269.</li>
+      <li>Lave, J., &amp; Wenger, E. (1991). <em>Situated learning: Legitimate peripheral participation.</em> Cambridge University Press.</li>
+      <li>Learning Forward. (2011). <em>Standards for professional learning.</em> Learning Forward.</li>
+      <li>Leithwood, K. (1994). Leadership for school restructuring. <em>Educational Administration Quarterly,</em> 30(4), 498-518.</li>
+      <li>Leithwood, K., &amp; Riehl, C. (2003). <em>What we know about successful school leadership.</em> AERA.</li>
+      <li>Leithwood, K., et al. (2004). <em>How leadership influences student learning.</em> Wallace Foundation.</li>
+      <li>Louis, K. S., &amp; Marks, H. M. (1998). Does professional community affect the classroom? <em>American Journal of Education,</em> 106(4), 532-575.</li>
+      <li>Mbaye, M. B. (2010). La Stivation : un concept intégrateur pour penser la motivation des enseignants en contexte africain. Thèse de CAIEE, FASTEF/UCAD, Dakar.</li>
+      <li>Ntoumanis, N., &amp; Standage, M. (2009). Motivation in physical education classes. <em>Theory and Research in Education,</em> 7(2), 194-202.</li>
+      <li>Robinson, V., Lloyd, C., &amp; Rowe, K. (2008). The impact of leadership on student outcomes. <em>Educational Administration Quarterly,</em> 44(5), 635-674.</li>
+      <li>Roth, G., et al. (2007). Autonomous motivation for teaching. <em>Journal of Educational Psychology,</em> 99(4), 761-774.</li>
+      <li>Ryan, R. M., &amp; Deci, E. L. (2017). <em>Self-determination theory: Basic psychological needs in motivation, development, and wellness.</em> Guilford Press.</li>
+      <li>Schön, D. A. (1983). <em>The reflective practitioner.</em> Basic Books.</li>
+      <li>Schön, D. A. (1987). <em>Educating the reflective practitioner.</em> Jossey-Bass.</li>
+      <li>Seligman, M. E. P. (2011). <em>Flourish: A visionary new understanding of happiness and well-being.</em> Free Press.</li>
+      <li>Tharp, R. G., &amp; Gallimore, R. (1988). <em>Rousing minds to life.</em> Cambridge University Press.</li>
+      <li>Timperley, H., et al. (2007). <em>Teacher professional learning and development.</em> International Academy of Education.</li>
+      <li>Vallerand, R. J., &amp; Ratelle, C. F. (2002). Intrinsic and extrinsic motivation: A hierarchical model. In E. L. Deci &amp; R. M. Ryan (Éds.), <em>Handbook of self-determination research.</em> University of Rochester Press.</li>
+      <li>Vescio, V., Ross, D., &amp; Adams, A. (2008). A review of research on PLCs. <em>Teaching and Teacher Education,</em> 24(1), 80-91.</li>
+      <li>Vygotski, L. S. (1934/1986). <em>Thought and language</em> (A. Kozulin, Éd.). MIT Press.</li>
+      <li>Wenger, E. (1998). <em>Communities of practice: Learning, meaning, and identity.</em> Cambridge University Press.</li>
+      <li>Wood, D., Bruner, J. S., &amp; Ross, G. (1976). The role of tutoring in problem solving. <em>Journal of Child Psychology and Psychiatry,</em> 17(2), 89-100.</li>
+      <li>Yoon, K. S., et al. (2007). Reviewing the evidence on how teacher professional development affects student achievement. <em>Issues &amp; Answers Report,</em> REL 2007-033. U.S. Department of Education.</li>
+    </ul>
+  </div>
+
+  <div class="article-tags">
+    <span class="tag">STIVACOL</span>
+    <span class="tag">Stivation</span>
+    <span class="tag">CREAQ</span>
+    <span class="tag">TDI</span>
+    <span class="tag">Développement professionnel</span>
+    <span class="tag">Équipes pédagogiques</span>
+    <span class="tag">Efficacité collective</span>
+    <span class="tag">Leadership scolaire</span>
+    <span class="tag">Afrique subsaharienne</span>
+    <span class="tag">Sénégal</span>
+  </div>
+
+  <div class="signature">
+    <strong>Mouhamadou Bamba MBAYE</strong><br/>
+    Inspecteur de l'Enseignement Élémentaire<br/>
+    Ministère de l'Éducation Nationale, Sénégal<br/>
+    <em>Le Couloir du Savoir · Stivation · CREAQ · TDI</em>
+  </div>
+
+</div>
+
+<footer>
+  <p>© <strong style="color:var(--gold)">M.B.M</strong> · <a href="index.html">Le Couloir du Savoir</a> · Éducation &amp; Psychologie · Afrique</p>
+</footer>
+
+</body>
+</html>
