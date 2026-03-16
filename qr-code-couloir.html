@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>QR Code — Le Couloir du Savoir</title>
+<style>
+  body { font-family: 'Segoe UI', sans-serif; background: #F5EED8; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 2rem; box-sizing: border-box; }
+  .card { background: white; border-radius: 16px; padding: 2.5rem; text-align: center; box-shadow: 0 8px 40px rgba(26,46,74,0.15); max-width: 360px; width: 100%; }
+  h1 { font-size: 1.1rem; color: #1A2E4A; margin-bottom: 0.3rem; }
+  p { font-size: 0.85rem; color: #6B7280; margin-bottom: 1.5rem; }
+  #qr { margin: 0 auto 1.5rem; }
+  .url { font-size: 0.78rem; color: #C9970A; font-weight: 600; letter-spacing: 0.05em; border: 1px solid rgba(201,151,10,0.3); padding: 6px 14px; border-radius: 20px; display: inline-block; }
+  .instructions { margin-top: 1.5rem; font-size: 0.78rem; color: #9CA3AF; line-height: 1.6; }
+  .btn { margin-top: 1.2rem; display: inline-block; background: #1A2E4A; color: white; padding: 10px 22px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; text-decoration: none; cursor: pointer; border: none; }
+  .btn:hover { opacity: 0.88; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Le Couloir du Savoir</h1>
+  <p>Scannez pour accéder au site</p>
+  <div id="qr"></div>
+  <div class="url">lecouloirdusavoir.com</div>
+  <p class="instructions">📱 Pointez l'appareil photo de votre smartphone<br/>vers ce QR Code pour ouvrir le site directement.</p>
+  <button class="btn" onclick="window.print()">🖨️ Imprimer / Télécharger</button>
+</div>
+
+<script>
+// Minimal QR code generator using qrcodejs loaded inline as base64-free alternative
+// We use the Google Charts API approach via data URL
+const url = "https://lecouloirdusavoir.com";
+const size = 200;
+
+// Create QR via a canvas-based approach using a simple matrix
+// Since we can't load external libs, we'll use an img pointing to a well-known free QR API
+// that works offline once loaded in browser cache, OR we embed the QR as SVG
+
+// Generate QR matrix using Reed-Solomon (simplified for this URL)
+// For simplicity, use the img approach with multiple fallback services
+const qrDiv = document.getElementById("qr");
+
+// Try multiple QR services
+const services = [
+  `https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${encodeURIComponent(url)}&color=1A2E4A&bgcolor=F5EED8&margin=2`,
+  `https://chart.googleapis.com/chart?chs=${size}x${size}&cht=qr&chl=${encodeURIComponent(url)}&choe=UTF-8`,
+];
+
+const img = document.createElement("img");
+img.width = size;
+img.height = size;
+img.style.borderRadius = "8px";
+img.alt = "QR Code lecouloirdusavoir.com";
+img.src = services[0];
+img.onerror = () => { img.src = services[1]; };
+qrDiv.appendChild(img);
+</script>
+</body>
+</html>
