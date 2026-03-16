@@ -272,12 +272,14 @@ footer{background:var(--navy);padding:56px 0 28px}
   <ul class="nav-links">
     <li><a href="#about">Le Site</a></li>
     <li><a href="#themes">Thèmes</a></li>
+    <li><a href="#publications">Psychologie</a></li>
+    <li><a href="#publications">Motivation</a></li>
+    <li><a href="#publications">Interactions</a></li>
     <li><a href="#concepts">Concepts</a></li>
     <li><a href="#publications">Écrits</a></li>
     <li><a href="#temoignages">Témoignages</a></li>
     <li><a href="#chroniques">Chroniques</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="espace-inspecteurs.html" style="color:var(--gold);border:1px solid rgba(201,151,10,0.4);padding:4px 10px;border-radius:20px">🏛️ Inspecteurs</a></li>
   </ul>
   <div class="nav-toggle" onclick="toggleNav()">
     <span></span><span></span><span></span>
@@ -839,20 +841,122 @@ footer{background:var(--navy);padding:56px 0 28px}
     <h2 class="sec-title reveal">La Stivation <em>vécue</em> par les praticiens</h2>
     <p class="sec-intro reveal">Ce laboratoire est né des échanges entre pairs. Il vit de ces mêmes échanges. Vos témoignages — moments où une discussion informelle a transformé votre pratique professionnelle — sont la matière première de ce site.</p>
 
-    <!-- Témoignages à venir -->
-    <div class="reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px">
-      <div style="background:var(--sand);padding:28px 24px;border-radius:8px;border:1px dashed rgba(26,46,74,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:180px">
-        <span style="font-size:2rem;margin-bottom:12px;opacity:0.3">💬</span>
-        <p style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:var(--muted)">En attente du témoignage<br/>d'un inspecteur</p>
+    <!-- Témoignages CREAQ — IEF Kédougou -->
+    <style>
+    .tem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px}
+    .tem-card{background:var(--sand);padding:26px 22px;border-radius:8px;border:1px solid rgba(26,46,74,0.1);border-top:3px solid var(--gold);display:flex;flex-direction:column;gap:14px;transition:transform 0.2s,box-shadow 0.2s}
+    .tem-card:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(26,46,74,0.1)}
+    .tem-header{display:flex;align-items:flex-start;gap:12px}
+    .tem-avatar{width:44px;height:44px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;color:var(--gold);flex-shrink:0}
+    .tem-name{font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;color:var(--navy);line-height:1.3}
+    .tem-role{font-family:'DM Sans',sans-serif;font-size:0.72rem;color:var(--teal);font-weight:500;letter-spacing:0.04em;text-transform:uppercase}
+    .tem-body{font-size:0.92rem;color:var(--text);line-height:1.8;flex:1}
+    .tem-quote{font-size:1.8rem;color:var(--gold);opacity:0.4;line-height:1;margin-bottom:-8px}
+    @media(max-width:900px){.tem-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.tem-grid{grid-template-columns:1fr}}
+    </style>
+
+    <div class="tem-grid reveal">
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">YM</div>
+          <div><div class="tem-name">Youssouf Minthe</div><div class="tem-role">Directeur d'école — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Depuis sa mise en place par M. Mouhamadou Bamba Mbaye, le CREAQ a permis à beaucoup d'enseignants de bénéficier d'un encadrement par leurs pairs et de surmonter les difficultés rencontrées dans leur pratique de classe. Ces encadrements améliorent sensiblement la qualité des enseignements-apprentissages. Nous remercions l'inspecteur et souhaitons que ce cadre soit pérennisé chaque année.</p>
       </div>
-      <div style="background:var(--sand);padding:28px 24px;border-radius:8px;border:1px dashed rgba(26,46,74,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:180px">
-        <span style="font-size:2rem;margin-bottom:12px;opacity:0.3">💬</span>
-        <p style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:var(--muted)">En attente du témoignage<br/>d'un formateur</p>
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">DB</div>
+          <div><div class="tem-name">Dembo Bayo</div><div class="tem-role">Directeur d'école et CODEC — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Nous sommes très ravis de cet encadrement, qui est très profitable aux nouveaux enseignants, car la formation initiale est trop insuffisante pour réaliser les enseignements-apprentissages dans de bonnes conditions. Ce dispositif répond à un besoin réel du terrain.</p>
       </div>
-      <div style="background:var(--sand);padding:28px 24px;border-radius:8px;border:1px dashed rgba(26,46,74,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:180px">
-        <span style="font-size:2rem;margin-bottom:12px;opacity:0.3">💬</span>
-        <p style="font-family:'DM Sans',sans-serif;font-size:0.78rem;color:var(--muted)">En attente du témoignage<br/>d'un enseignant</p>
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">AN</div>
+          <div><div class="tem-name">Aminata Niang</div><div class="tem-role">Directrice d'école — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Le CREAQ, cadre créé par l'inspecteur pour la formation continue des enseignants, constitue un apport positif dans la pratique de classe. La majorité des enseignants encadrés sont mieux outillés : beaucoup ont réussi le CAP haut la main, car les blocages et problèmes pédagogiques ont trouvé des solutions concrètes, pour le bien des élèves et de l'école.</p>
       </div>
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">MD</div>
+          <div><div class="tem-name">Mamba Diakhaby</div><div class="tem-role">Directeur d'école — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Sur le terrain, nous actualisons nos connaissances et partageons beaucoup sur la pédagogie. Nous découvrons les réalités du milieu et les enseignants n'ont pas de complexes, car ils voient des collègues directeurs venir dans leur école. Beaucoup d'enseignants se sont améliorés suite aux remarques et recommandations des visiteurs. Le CREAQ est vraiment une bonne initiative.</p>
+      </div>
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">AD</div>
+          <div><div class="tem-name">Abdoulaye Diallo</div><div class="tem-role">Directeur d'école et CODEC — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Avec le CREAQ, nous constatons une avancée importante des enseignants, tant dans les examens professionnels que dans les résultats au CFEE. Je salue cette initiative de l'IEF depuis son arrivée à Kédougou et encourage à continuer sur cette lancée. Personnellement, je suis satisfait.</p>
+      </div>
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">IB</div>
+          <div><div class="tem-name">Idrissa Ba</div><div class="tem-role">Directeur d'école COCODEC — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Je suis heureux de faire équipe avec certains de mes collègues membres du CREAQ. Cela m'a permis de mutualiser mon expérience et de partager nos pratiques de classe pour le grand bénéfice de nos collègues en situation. Un grand merci à l'IEF Mbaye pour la création de ce cadre et pour le soutien apporté aux collègues.</p>
+      </div>
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">OD</div>
+          <div><div class="tem-name">Ousmane Diallo</div><div class="tem-role">Directeur d'école CODED — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Les activités du CREAQ sont importantes, surtout pour les enseignants débutants. Elles favorisent l'échange mutuel dans la formation continue et concourent toujours à l'amélioration de la pratique de classe.</p>
+      </div>
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">ML</div>
+          <div><div class="tem-name">Mouhamadou Lamine Ba</div><div class="tem-role">Directeur d'école CODEC — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Je suis fier de participer à cette belle initiative de la formation entre pairs. Le CREAQ m'a permis de me renforcer et de partager mes connaissances pédagogiques avec les nouveaux enseignants, en relevant leur niveau dans le déroulement des enseignements-apprentissages et dans le bon fonctionnement de l'école.</p>
+      </div>
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">KD</div>
+          <div><div class="tem-name">Koliba Danfakha</div><div class="tem-role">Directeur d'école CODEC — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Le CREAQ est une excellente expérience que nous vivons, aussi bénéfique pour nous, membres du CREAQ, que pour les enseignants encadrés. Il y a un apprentissage mutuel et une complicité de formation continue. Les enseignants sont fiers de partager leur expérience avec leurs collègues. C'est une initiative salutaire qu'il faut pérenniser.</p>
+      </div>
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">MC</div>
+          <div><div class="tem-name">Mamoudou Cissokho</div><div class="tem-role">Directeur d'école CODED — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Nous avons toujours pratiqué l'encadrement informellement. Mais le fait de le formaliser ainsi est une première. Nous avons salué l'initiative et commençons à en mesurer les avantages. L'encadrement en binôme nous permet également de progresser en expérience.</p>
+      </div>
+
+      <div class="tem-card">
+        <div class="tem-quote">&#8220;</div>
+        <div class="tem-header">
+          <div class="tem-avatar">LK</div>
+          <div><div class="tem-name">Lassana Kaba</div><div class="tem-role">Directeur d'école CODEC — IEF Kédougou</div></div>
+        </div>
+        <p class="tem-body">Je me sens doublement honoré : d'une part, d'avoir été choisi parmi tant de pairs expérimentés ; d'autre part, pour l'opportunité d'apporter ma contribution à la formation continue de mes collègues. Le travail en binôme sur le terrain m'a montré que l'accompagnement pédagogique basé sur la solidarité et le partage est l'un des leviers les plus efficaces. Ce dispositif tisse des liens de confiance et renforce la culture de l'excellence dans notre circonscription.</p>
+      </div>
+
     </div>
 
     <!-- Appel à contribution -->
