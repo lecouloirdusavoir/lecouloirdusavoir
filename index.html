@@ -19,11 +19,14 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    html {
+      overflow-x: hidden;
+    }
     body {
       font-family: 'Source Serif 4', Georgia, serif;
       background: var(--cream);
       color: var(--text);
-      overflow-x: hidden;
+      position: relative;
     }
 
     /* ── HERO ── */
@@ -206,7 +209,9 @@
 
     /* ── LIGHTBOX ── */
     .lightbox {
-      display: none;
+      display: flex;
+      visibility: hidden;
+      pointer-events: none;
       position: fixed;
       inset: 0;
       background: rgba(0,0,0,0.94);
@@ -214,8 +219,14 @@
       align-items: center;
       justify-content: center;
       padding: 20px;
+      opacity: 0;
+      transition: opacity 0.2s;
     }
-    .lightbox.open { display: flex; }
+    .lightbox.open {
+      visibility: visible;
+      pointer-events: all;
+      opacity: 1;
+    }
     .lightbox img {
       max-width: 90vw;
       max-height: 85vh;
@@ -876,11 +887,11 @@
     lbImg.src = item.querySelector('img').src;
     lbCap.textContent = item.querySelector('.caption').textContent.trim();
     lb.classList.add('open');
-    document.body.style.overflow = 'hidden';
+    // no overflow lock on mobile
   }
   function closeLb() {
     lb.classList.remove('open');
-    document.body.style.overflow = '';
+    // no overflow lock on mobile
   }
   function navLb(dir) {
     current = (current + dir + items.length) % items.length;
