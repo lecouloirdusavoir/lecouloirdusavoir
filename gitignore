@@ -1,0 +1,4 @@
+.git/
+*.pack
+*.idx
+node_modules/
