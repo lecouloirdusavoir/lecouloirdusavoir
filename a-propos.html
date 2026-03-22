@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos — Le Couloir du Savoir</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Georgia, serif; background: #faf8f3; color: #1a2a3a; }
+nav { background: #003366; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #CC9900; }
+nav .logo { color: #fff; font-style: italic; font-size: 1rem; }
+nav .logo span { color: #CC9900; }
+nav a { color: rgba(255,255,255,0.7); font-size: 0.85rem; text-decoration: none; }
+.hero { background: #0d1b2e; padding: 60px 20px 50px; text-align: center; }
+.badge { display: inline-block; color: #CC9900; border: 1px solid rgba(204,153,0,0.4); padding: 5px 16px; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 20px; }
+.hero h1 { color: #fff; font-size: clamp(1.6rem,5vw,2.6rem); margin-bottom: 10px; line-height: 1.3; }
+.hero h1 em { color: #CC9900; font-style: italic; }
+.hero p { color: rgba(255,255,255,0.55); font-size: 0.9rem; font-style: italic; }
+.sep { height: 4px; background: linear-gradient(90deg, #003366, #CC9900, #003366); }
+.content { max-width: 820px; margin: 0 auto; padding: 60px 20px; }
+.section { margin-bottom: 48px; }
+.eyebrow { font-family: sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: #CC9900; margin-bottom: 10px; }
+h2 { font-family: Georgia, serif; font-size: 1.4rem; color: #003366; margin-bottom: 16px; line-height: 1.3; }
+p { font-size: 0.92rem; line-height: 1.85; color: #2a3a4a; margin-bottom: 14px; }
+.concept-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin: 24px 0; }
+@media(max-width:600px){ .concept-grid { grid-template-columns: 1fr; } }
+.concept-card { background: #fff; border-radius: 8px; padding: 22px; border-top: 3px solid #CC9900; box-shadow: 0 2px 8px rgba(0,51,102,0.07); }
+.concept-card h3 { font-family: Georgia, serif; font-size: 1rem; color: #003366; margin-bottom: 8px; }
+.concept-card p { font-size: 0.83rem; color: #4a5a6a; margin: 0; }
+.timeline { border-left: 2px solid rgba(204,153,0,0.3); padding-left: 24px; margin: 24px 0; }
+.t-item { margin-bottom: 20px; position: relative; }
+.t-item::before { content: ''; position: absolute; left: -31px; top: 6px; width: 10px; height: 10px; background: #CC9900; border-radius: 50%; }
+.t-year { font-family: sans-serif; font-size: 0.72rem; font-weight: 700; color: #CC9900; letter-spacing: 0.1em; margin-bottom: 4px; }
+.t-text { font-size: 0.88rem; color: #2a3a4a; line-height: 1.7; }
+.contact-box { background: #003366; border-radius: 8px; padding: 32px; text-align: center; }
+.contact-box h3 { font-family: Georgia, serif; font-size: 1.1rem; color: #fff; margin-bottom: 10px; }
+.contact-box p { font-size: 0.88rem; color: rgba(255,255,255,0.6); margin-bottom: 20px; font-style: italic; }
+.contact-box a { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: #fff; font-family: sans-serif; font-size: 0.82rem; font-weight: 600; padding: 13px 26px; border-radius: 4px; text-decoration: none; }
+footer { background: #003366; padding: 22px; text-align: center; }
+footer p { color: rgba(255,255,255,0.6); font-size: 0.8rem; font-style: italic; }
+footer strong { color: #CC9900; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Le Couloir du <span>Savoir</span></div>
+  <a href="index.html">&#8592; Accueil</a>
+</nav>
+
+<div class="hero">
+  <div class="badge">&#192; propos du site</div>
+  <h1>Le Couloir du Savoir<br><em>Qui sommes-nous ?</em></h1>
+  <p>Un laboratoire ouvert sur l&#8217;&#233;ducation en Afrique subsaharienne</p>
+</div>
+
+<div class="sep"></div>
+
+<div class="content">
+
+  <div class="section">
+    <p class="eyebrow">Notre mission</p>
+    <h2>Mettre la recherche p&#233;dagogique au service du terrain africain</h2>
+    <p>Le Couloir du Savoir est une plateforme d&#233;di&#233;e &#224; l&#8217;&#233;ducation et &#224; la formation en Afrique subsaharienne. Notre mission est simple : rendre accessibles des concepts, des recherches et des outils p&#233;dagogiques qui restent souvent confin&#233;s dans les biblioth&#232;ques universitaires.</p>
+    <p>Nous nous adressons aux enseignants, aux directeurs d&#8217;&#233;cole et aux inspecteurs de l&#8217;&#233;ducation qui cherchent des r&#233;ponses concrètes aux d&#233;fis quotidiens de leur m&#233;tier. Pas de jargon inutile. Pas de th&#233;orie sans lien avec la classe. Des id&#233;es utiles, v&#233;rifi&#233;es, applicables.</p>
+  </div>
+
+  <div class="section">
+    <p class="eyebrow">Nos concepts originaux</p>
+    <h2>Trois concepts n&#233;s du terrain s&#233;n&#233;galais</h2>
+    <div class="concept-grid">
+      <div class="concept-card">
+        <h3>La Stivation</h3>
+        <p>Un n&#233;ologisme qui d&#233;crit l&#8217;apprentissage informel entre pairs adultes : STImulation + motiVATION + interACTION. N&#233; d&#8217;une th&#232;se de terrain en 2010.</p>
+      </div>
+      <div class="concept-card">
+        <h3>Le CREAQ</h3>
+        <p>Cadre de R&#233;flexion pour des Enseignements-Apprentissages de Qualit&#233;. Un dispositif d&#8217;encadrement par les pairs op&#233;rationnel depuis 2015 sur trois sites.</p>
+      </div>
+      <div class="concept-card">
+        <h3>La TDI</h3>
+        <p>Triade Dynamique Intersubjective. Le mod&#232;le th&#233;orique qui explique la dynamique entre encadreur, encadr&#233; et groupe dans le CREAQ.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="eyebrow">Notre histoire</p>
+    <h2>15 ans de terrain, trois sites, 25 t&#233;moignages</h2>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-year">2010</div>
+        <div class="t-text">Th&#232;se de CAIEE &#224; la FASTEF / Universit&#233; Cheikh Anta Diop de Dakar. Premier &#233;nonc&#233; du concept de Stivation.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2015</div>
+        <div class="t-text">Lancement du CREAQ &#224; l&#8217;IEF de Tivaouane. Premi&#232;re exp&#233;rimentation terrain avec les directeurs d&#8217;&#233;cole des communes de Tivaouane, Pire Gourey et Ch&#233;rif Lo.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2021</div>
+        <div class="t-text">D&#233;ploiement du CREAQ &#224; l&#8217;IEF de Saraya. Validation du mod&#232;le en contexte rural isol&#233;.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2024</div>
+        <div class="t-text">Troisi&#232;me site : IEF de K&#233;dougou. 25 membres actifs. 189 bulletins d&#8217;encadrement en premi&#232;re ann&#233;e.</div>
+      </div>
+      <div class="t-item">
+        <div class="t-year">2025</div>
+        <div class="t-text">Lancement de lecouloirdusavoir.com. Article scientifique sur la Stivation soumis &#224; une revue internationale.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="eyebrow">Ce que vous trouvez ici</p>
+    <h2>Un contenu s&#233;lectionn&#233; pour les professionnels de l&#8217;&#233;ducation</h2>
+    <p>Le site propose quatre espaces distincts. Les <strong>Chroniques du Terrain</strong> rassemblent 25 t&#233;moignages de directeurs et d&#8217;enseignants ayant particip&#233; au CREAQ. La rubrique <strong>Lu pour Vous</strong> pr&#233;sente chaque semaine un auteur ou un concept de psychologie de l&#8217;&#233;ducation rendu accessible et utile. L&#8217;espace <strong>Ressources</strong> rassemble des documents officiels et des actualit&#233;s &#233;ducatives nationales et internationales. L&#8217;<strong>Espace Inspecteurs</strong> d&#233;crit le fonctionnement complet du CREAQ pour les cadres de l&#8217;&#233;ducation.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Vous avez une question ou une suggestion ?</h3>
+    <p>Contactez-nous directement. Nous r&#233;pondons &#224; chaque message.</p>
+    <a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20Le%20Couloir%20du%20Savoir." target="_blank">
+      &#128232; Contacter sur WhatsApp
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p><strong>Le Couloir du Savoir</strong> &nbsp;&middot;&nbsp; Laboratoire de la Stivation &nbsp;&middot;&nbsp; Afrique subsaharienne</p>
+  <div style="margin-top:14px">
+    <a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20Le%20Couloir%20du%20Savoir." target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-family:sans-serif;font-size:0.78rem;font-weight:600;padding:10px 20px;border-radius:4px;text-decoration:none">
+      &#128232; Contacter sur WhatsApp
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
