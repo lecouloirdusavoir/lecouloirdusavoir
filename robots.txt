@@ -1,4 +1,12 @@
+# Le Couloir du Savoir — robots.txt
+# https://lecouloirdusavoir.com
+
 User-agent: *
 Allow: /
 
+# Bloquer les fichiers inutiles au référencement
+Disallow: /assets/
+Disallow: /*.pdf$
+
+# Sitemap pour Google, Bing et autres moteurs
 Sitemap: https://lecouloirdusavoir.com/sitemap.xml
