@@ -14,6 +14,8 @@
 <meta property="og:title" content="Le Couloir du Savoir · Éducation &amp; Psychologie en Afrique"/>
 <meta property="og:description" content="Laboratoire de la Stivation — réflexion, recherche et outils pédagogiques pour les enseignants, directeurs et inspecteurs d'Afrique subsaharienne."/>
 <meta property="og:image" content="https://lecouloirdusavoir.com/og-image.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
 <meta property="og:locale" content="fr_SN"/>
 <meta property="og:site_name" content="Le Couloir du Savoir"/>
 <meta name="twitter:card" content="summary_large_image"/>
@@ -21,22 +23,43 @@
 <meta name="twitter:description" content="Laboratoire de la Stivation — réflexion, recherche et outils pédagogiques pour les enseignants, directeurs et inspecteurs d'Afrique subsaharienne."/>
 <meta name="twitter:image" content="https://lecouloirdusavoir.com/og-image.jpg"/>
 
+<!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SDJVY86L2"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9SDJVY86L2');</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9SDJVY86L2');
+</script>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Le Couloir du Savoir","url":"https://lecouloirdusavoir.com","description":"Laboratoire de la Stivation — espace de réflexion sur l'éducation et la psychologie en Afrique subsaharienne.","foundingDate":"2010","areaServed":"Afrique subsaharienne","founder":{"@type":"Person","name":"Mouhamadou Bamba Mbaye","jobTitle":"Inspecteur de l'Éducation et de la Formation","affiliation":{"@type":"EducationalOrganization","name":"FASTEF / UCAD"}},"contactPoint":{"@type":"ContactPoint","contactType":"customer support","telephone":"+221763615562","availableLanguage":"French"}}
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Le Couloir du Savoir","url":"https://lecouloirdusavoir.com","description":"Laboratoire de la Stivation — espace de réflexion sur l'éducation et la psychologie en Afrique subsaharienne.","foundingDate":"2010","areaServed":"Afrique subsaharienne","founder":{"@type":"Person","name":"Mouhamadou Bamba Mbaye","jobTitle":"Inspecteur de l'Éducation et de la Formation","affiliation":{"@type":"EducationalOrganization","name":"FASTEF / UCAD"}},"contactPoint":{"@type":"ContactPoint","contactType":"customer support","telephone":"+221763615562","availableLanguage":"French"},"sameAs":["https://wa.me/221763615562"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Le Couloir du Savoir","url":"https://lecouloirdusavoir.com","description":"Ressources en éducation et psychologie de l'apprentissage pour enseignants et inspecteurs en Afrique subsaharienne.","potentialAction":{"@type":"SearchAction","target":"https://lecouloirdusavoir.com/?q={search_term_string}","query-input":"required name=search_term_string"}}
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
 <style>
-:root{--navy:#1A2E4A;--teal:#0E6B7C;--gold:#C9970A;--sand:#F5EED8;--cream:#FDFAF3;--rust:#B85533;--sage:#4A7C6F;--plum:#6B3F6E;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF}
+:root{
+  --navy:#1A2E4A;
+  --teal:#0E6B7C;
+  --gold:#C9970A;
+  --sand:#F5EED8;
+  --cream:#FDFAF3;
+  --rust:#B85533;
+  --sage:#4A7C6F;
+  --plum:#6B3F6E;
+  --text:#2A2A2A;
+  --muted:#6B7280;
+  --white:#FFFFFF;
+}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden;line-height:1.85}
 
-/* NAV */
+/* ===== NAV ===== */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:66px;background:rgba(26,46,74,0.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,151,10,0.25)}
 .nav-brand{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--gold);text-decoration:none}
 .nav-brand span{color:var(--white);font-weight:400;font-style:italic}
@@ -45,60 +68,62 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-links a:hover{color:var(--gold)}
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .nav-toggle span{width:22px;height:2px;background:var(--gold);border-radius:2px}
+
+/* ===== MOBILE NAV ===== */
 .mobile-nav{display:none;position:fixed;top:66px;left:0;right:0;background:rgba(26,46,74,0.98);z-index:99;padding:24px 24px 32px;flex-direction:column;gap:4px;border-bottom:1px solid rgba(201,151,10,0.2)}
 .mobile-nav.open{display:flex}
-.mobile-nav a{font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.75);text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.mobile-nav a{font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.75);text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);letter-spacing:0.04em}
 .mobile-nav a:hover{color:var(--gold)}
 
-/* HERO */
+/* ===== HERO ===== */
 .hero{min-height:100vh;margin-top:66px;background:var(--navy);display:grid;grid-template-columns:1fr 1fr;align-items:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(14,107,124,0.12) 0%,transparent 70%);pointer-events:none}
-.hero-left{padding:50px 60px 50px 80px;position:relative;z-index:2;display:flex;flex-direction:column}
-.hero-eyebrow{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.2vw,3.2rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:8px}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%, rgba(14,107,124,0.12) 0%, transparent 70%);pointer-events:none}
+.hero-left{padding:48px 60px 48px 80px;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;opacity:0.85}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,4.8vw,3.6rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:10px}
 .hero h1 em{color:var(--gold);font-style:italic}
-.hero-tagline{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(201,151,10,0.75);margin-bottom:12px}
-.hero-desc{font-size:0.92rem;color:rgba(255,255,255,0.62);line-height:1.75;margin-bottom:20px;max-width:480px}
-.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.hero-tagline{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(201,151,10,0.7);margin-bottom:14px}
+.hero-desc{font-size:0.95rem;color:rgba(255,255,255,0.6);line-height:1.75;margin-bottom:24px;max-width:480px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
 .btn-p{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--gold);color:var(--navy);padding:13px 28px;border-radius:4px;text-decoration:none;letter-spacing:0.04em;transition:opacity 0.2s}
 .btn-p:hover{opacity:0.88}
 .btn-o{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:500;color:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.25);padding:12px 26px;border-radius:4px;text-decoration:none;transition:border-color 0.2s,color 0.2s}
 .btn-o:hover{border-color:var(--gold);color:var(--gold)}
+
+/* ===== HERO ARTICLE PREVIEW ===== */
+.hero-articles{display:flex;flex-direction:column;gap:8px}
+.hero-art-label{font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.hero-art-label::before{content:'';flex:1;height:1px;background:rgba(201,151,10,0.25)}
+.hero-art-label::after{content:'';flex:1;height:1px;background:rgba(201,151,10,0.25)}
+.hero-art-card{background:linear-gradient(135deg,rgba(255,255,255,0.06) 0%,rgba(255,255,255,0.02) 100%);border:1px solid rgba(255,255,255,0.1);border-left:3px solid transparent;border-radius:8px;padding:14px 16px;text-decoration:none;display:flex;align-items:center;gap:14px;transition:all 0.25s;position:relative;overflow:hidden}
+.hero-art-card::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(201,151,10,0.06) 0%,transparent 100%);opacity:0;transition:opacity 0.25s}
+.hero-art-card:hover{border-left-color:var(--gold);border-color:rgba(201,151,10,0.35);transform:translateX(4px)}
+.hero-art-card:hover::before{opacity:1}
+.hero-art-num{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:rgba(201,151,10,0.25);flex-shrink:0;width:22px;text-align:center;line-height:1}
+.hero-art-card:hover .hero-art-num{color:rgba(201,151,10,0.6)}
+.hero-art-body{flex:1;display:flex;flex-direction:column;gap:4px}
+.hero-art-cat{font-family:'DM Sans',sans-serif;font-size:0.58rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;width:fit-content;padding:2px 8px;border-radius:20px}
+.cat-psych{background:rgba(107,63,110,0.3);color:#D4A0D7}
+.cat-ped{background:rgba(14,107,124,0.3);color:#7DE0EE}
+.cat-new{background:rgba(201,151,10,0.25);color:#F0BE4A}
+.hero-art-title{font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:700;color:rgba(255,255,255,0.9);line-height:1.3}
+.hero-art-card:hover .hero-art-title{color:#fff}
+.hero-art-arrow{color:var(--gold);font-size:1rem;flex-shrink:0;opacity:0;transform:translateX(-6px);transition:opacity 0.2s,transform 0.2s}
+.hero-art-card:hover .hero-art-arrow{opacity:1;transform:translateX(0)}
+
+/* ===== HERO RIGHT ===== */
 .hero-right{padding:60px;position:relative;z-index:2;display:flex;flex-direction:column;gap:20px}
 
-/* HERO ARTICLES CAROUSEL */
-.hero-art-label{font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:10px}
-.hero-art-label::before,.hero-art-label::after{content:'';flex:1;height:1px;background:rgba(201,151,10,0.3)}
-.hero-articles{display:flex;flex-direction:column;gap:8px;min-height:160px}
-.hero-art-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-left:3px solid transparent;border-radius:8px;padding:12px 16px;text-decoration:none;display:flex;align-items:center;gap:12px;transition:all 0.25s;position:relative;overflow:hidden}
-.hero-art-card:hover{border-left-color:var(--gold);border-color:rgba(201,151,10,0.3);transform:translateX(3px);background:rgba(201,151,10,0.06)}
-.hero-art-num{font-family:'Playfair Display',serif;font-size:1rem;font-weight:900;color:rgba(201,151,10,0.3);flex-shrink:0;width:20px;text-align:center}
-.hero-art-card:hover .hero-art-num{color:rgba(201,151,10,0.7)}
-.hero-art-body{flex:1;display:flex;flex-direction:column;gap:3px}
-.hero-art-cat{font-family:'DM Sans',sans-serif;font-size:0.56rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;width:fit-content;padding:2px 7px;border-radius:20px}
-.cat-new{background:rgba(201,151,10,0.25);color:#F0BE4A}
-.cat-ped{background:rgba(14,107,124,0.3);color:#7DE0EE}
-.cat-psych{background:rgba(107,63,110,0.3);color:#D4A0D7}
-.hero-art-title{font-family:'Playfair Display',serif;font-size:0.86rem;font-weight:700;color:rgba(255,255,255,0.88);line-height:1.3}
-.hero-art-card:hover .hero-art-title{color:#fff}
-.hero-art-arrow{color:var(--gold);font-size:0.9rem;flex-shrink:0;opacity:0;transform:translateX(-4px);transition:all 0.2s}
-.hero-art-card:hover .hero-art-arrow{opacity:1;transform:translateX(0)}
-.hero-dots{display:flex;gap:6px;margin-top:12px}
-.hero-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.2);border:none;cursor:pointer;padding:0;transition:all 0.3s}
-.hero-dot.on{background:var(--gold);width:18px;border-radius:3px}
-@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.anim-in{animation:fadeUp 0.35s ease forwards}
-
-/* STATS */
+/* ===== STATS ===== */
 .stats{background:var(--gold);display:grid;grid-template-columns:repeat(6,1fr)}
 .stat{padding:28px 20px;text-align:center;border-right:1px solid rgba(26,46,74,0.15)}
 .stat:last-child{border-right:none}
 .stat-n{display:block;font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--navy);line-height:1}
 .stat-l{display:block;font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(26,46,74,0.7);margin-top:4px}
 
-/* NEWSLETTER */
+/* ===== NEWSLETTER BANNER (NEW — prominent) ===== */
 .nl-banner{background:linear-gradient(135deg,#0b1f33 0%,#0e3b5c 60%,#0a4a3a 100%);padding:48px 0;border-top:2px solid rgba(201,151,10,0.4);border-bottom:2px solid rgba(201,151,10,0.4)}
-.nl-inner{max-width:760px;margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:40px;flex-wrap:wrap}
+.nl-inner{max-width:720px;margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:40px;flex-wrap:wrap}
 .nl-text{flex:1;min-width:240px}
 .nl-text h2{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--white);margin-bottom:8px}
 .nl-text p{font-size:0.9rem;color:rgba(255,255,255,0.65);line-height:1.6}
@@ -107,12 +132,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nl-form input[type="email"]{flex:1;min-width:180px;padding:12px 18px;border-radius:4px;border:1.5px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.08);color:#fff;font-size:0.92rem;font-family:inherit;outline:none;transition:border-color 0.2s}
 .nl-form input[type="email"]::placeholder{color:rgba(255,255,255,0.4)}
 .nl-form input[type="email"]:focus{border-color:var(--gold)}
-.nl-form button{padding:12px 24px;background:var(--gold);color:var(--navy);border:none;border-radius:4px;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;cursor:pointer;white-space:nowrap}
+.nl-form button{padding:12px 24px;background:var(--gold);color:var(--navy);border:none;border-radius:4px;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;cursor:pointer;transition:opacity 0.2s;white-space:nowrap}
 .nl-form button:hover{opacity:0.88}
 .nl-ok{display:none;color:rgba(255,255,255,0.85);font-size:0.9rem;margin-top:10px}
 .nl-mention{font-size:0.7rem;color:rgba(255,255,255,0.3);margin-top:8px}
 
-/* SECTIONS */
+/* ===== SECTIONS ===== */
 section{padding:88px 0}
 .container{max-width:1180px;margin:0 auto;padding:0 40px}
 .eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
@@ -120,7 +145,7 @@ section{padding:88px 0}
 .sec-title em{color:var(--teal);font-style:italic}
 .sec-intro{font-size:1.05rem;color:var(--muted);line-height:1.85;max-width:640px;margin-bottom:56px}
 
-/* CONCEPTS */
+/* ===== CONCEPTS ===== */
 .concepts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
 .concept-card{background:rgba(255,255,255,0.04);padding:40px 32px}
 .concept-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--gold);opacity:0.5;line-height:1;margin-bottom:16px}
@@ -128,7 +153,7 @@ section{padding:88px 0}
 .concept-def{font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:20px}
 .concept-pill{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,0.4);padding:4px 12px;border-radius:20px}
 
-/* PUBLICATIONS */
+/* ===== PUBLICATIONS ===== */
 .pub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .pub-card{background:var(--white);padding:28px 24px;border-radius:4px;display:flex;flex-direction:column;gap:12px;border-top:3px solid transparent;transition:border-color 0.2s,transform 0.2s}
 .pub-card:hover{border-top-color:var(--gold);transform:translateY(-2px)}
@@ -143,17 +168,19 @@ section{padding:88px 0}
 .pub-meta{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:12px;border-top:1px solid var(--sand)}
 .pub-meta span{font-family:'DM Sans',sans-serif;font-size:0.72rem;color:var(--muted)}
 .pub-read{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;color:var(--gold);text-decoration:none}
+
+/* ===== SHARE BUTTONS ===== */
 .share-row{display:flex;gap:8px;flex-wrap:wrap;padding-top:10px;border-top:1px solid var(--sand)}
 .sh-btn{display:inline-flex;align-items:center;gap:4px;font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;padding:5px 10px;border-radius:4px;text-decoration:none}
 
-/* BIGQUOTE */
+/* ===== BIGQUOTE ===== */
 .bigquote{background:var(--navy);padding:80px 0}
 .bq-inner{max-width:820px;margin:0 auto;padding:0 40px;text-align:center}
 .bq-text{font-family:'Playfair Display',serif;font-size:clamp(1.2rem,2.5vw,1.7rem);font-style:italic;color:var(--white);line-height:1.6;margin-bottom:20px}
 .bq-text strong{color:var(--gold)}
 .bq-attr{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(255,255,255,0.45);letter-spacing:0.12em;text-transform:uppercase}
 
-/* CONTACT */
+/* ===== CONTACT ===== */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
 .form{display:flex;flex-direction:column;gap:16px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -166,7 +193,7 @@ section{padding:88px 0}
 .fsubmit{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--navy);color:var(--white);border:none;padding:13px 28px;border-radius:3px;cursor:pointer;align-self:flex-start;transition:background 0.2s}
 .fsubmit:hover{background:var(--teal)}
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer{background:var(--navy);padding:56px 0 28px}
 .footer-inner{max-width:1180px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:40px}
 .fbrand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:12px}
@@ -177,25 +204,27 @@ footer{background:var(--navy);padding:56px 0 28px}
 .footer-bottom{max-width:1180px;margin:0 auto;padding:24px 40px 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between}
 .footer-bottom span{font-family:'DM Sans',sans-serif;font-size:0.72rem;color:rgba(255,255,255,0.3)}
 
-/* ANIMATIONS */
+/* ===== ANIMATIONS ===== */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity 0.65s ease,transform 0.65s ease}
 .reveal.visible{opacity:1;transform:none}
 .rd1{transition-delay:0.1s}.rd2{transition-delay:0.2s}.rd3{transition-delay:0.3s}.rd4{transition-delay:0.4s}
 
-/* RESPONSIVE */
+/* ===== RESPONSIVE ===== */
 @media(max-width:900px){
   nav{padding:0 20px}
   .nav-links{display:none}
   .nav-toggle{display:flex}
-  .hero{grid-template-columns:1fr;min-height:auto}
-  .hero-left{padding:40px 24px 24px}
-  .hero-right{padding:0 24px 40px}
+  .hero{grid-template-columns:1fr;min-height:auto;padding-bottom:40px}
+  .hero-left{padding:50px 24px 24px}
+  .hero-right{padding:0 24px 40px;gap:12px}
   .stats{grid-template-columns:repeat(3,1fr)}
   .stat{padding:18px 10px}
   .stat-n{font-size:1.4rem}
   .nl-inner{flex-direction:column;gap:24px;padding:0 24px}
-  .nl-text,.nl-form-wrap{min-width:auto;width:100%}
-  .concepts-grid,.pub-grid{grid-template-columns:1fr}
+  .nl-text{min-width:auto}
+  .nl-form-wrap{min-width:auto;width:100%}
+  .concepts-grid{grid-template-columns:1fr}
+  .pub-grid{grid-template-columns:1fr}
   .pub-card.feat{grid-column:span 1;flex-direction:column}
   .contact-grid{grid-template-columns:1fr}
   .footer-inner{grid-template-columns:1fr;gap:32px}
@@ -205,11 +234,13 @@ footer{background:var(--navy);padding:56px 0 28px}
 @media(max-width:480px){
   .stats{grid-template-columns:repeat(2,1fr)}
   .hero-ctas{flex-direction:column}
+  .hero-ctas .btn-p,.hero-ctas .btn-o{text-align:center}
 }
 </style>
 </head>
 <body>
 
+<!-- ===== NAV ===== -->
 <nav>
   <a href="#" class="nav-brand">Le Couloir <span>du Savoir</span></a>
   <ul class="nav-links">
@@ -223,7 +254,9 @@ footer{background:var(--navy);padding:56px 0 28px}
     <li><a href="#contact">Contact</a></li>
     <li><a href="a-propos.html">À propos</a></li>
   </ul>
-  <div class="nav-toggle" onclick="toggleNav()"><span></span><span></span><span></span></div>
+  <div class="nav-toggle" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
 </nav>
 
 <div class="mobile-nav" id="mobileNav">
@@ -232,13 +265,13 @@ footer{background:var(--navy);padding:56px 0 28px}
   <a href="#publications" onclick="closeNav()">Articles</a>
   <a href="creaq.html">CREAQ en Action</a>
   <a href="lu-pour-vous.html">Lu pour Vous</a>
-  <a href="#ressources" onclick="closeNav()">Ressources</a>
-  <a href="espace-inspecteurs.html">Inspecteurs</a>
+  <a href="#ressources" onclick="closeNav()">Ressources Éducatives</a>
+  <a href="espace-inspecteurs.html">Espace Inspecteurs</a>
   <a href="#contact" onclick="closeNav()">Contact</a>
   <a href="a-propos.html">À propos</a>
 </div>
 
-<!-- HERO -->
+<!-- ===== HERO ===== -->
 <section class="hero" id="top">
   <div class="hero-left">
     <p class="hero-eyebrow">Laboratoire de la Stivation · Afrique subsaharienne</p>
@@ -250,30 +283,64 @@ footer{background:var(--navy);padding:56px 0 28px}
       <a href="#publications" class="btn-o">Tous les articles</a>
     </div>
 
-    <!-- ARTICLES HERO — rotation automatique -->
-        <!-- ARTICLES HERO — généré automatiquement par build_hero.py -->
+    <!-- ARTICLES HERO — généré automatiquement par build_hero.py -->
     <p class="hero-art-label">Derniers articles publiés</p>
     <div class="hero-articles">
       <a href="article-constructivisme-afrique.html" class="hero-art-card">
-        <span class="hero-art-cat cat-ped">Pédagogie</span>
-        <span class="hero-art-title">Constructivisme et socioconstructivisme dans nos classes africaines</span>
+        <span class="hero-art-num">01</span>
+        <div class="hero-art-body">
+          <span class="hero-art-cat cat-new">Nouveau</span>
+          <span class="hero-art-title">Constructivisme et socioconstructivisme dans nos classes africaines</span>
+        </div>
         <span class="hero-art-arrow">→</span>
       </a>
-      <a href="article-explicite-constructivisme-senegal.html" class="hero-art-card">
-        <span class="hero-art-cat cat-ped">Pédagogie</span>
-        <span class="hero-art-title">Enseignement explicite ou constructivisme ? Ce que l</span>
+      <a href="interactions-enseignants.html" class="hero-art-card">
+        <span class="hero-art-num">02</span>
+        <div class="hero-art-body">
+          <span class="hero-art-cat cat-ped">Pédagogie</span>
+          <span class="hero-art-title">L'interaction professionnelle : figure de métier de l'enseignant</span>
+        </div>
         <span class="hero-art-arrow">→</span>
       </a>
-      <a href="article-formation-the.html" class="hero-art-card">
-        <span class="hero-art-cat cat-psych">Concept</span>
-        <span class="hero-art-title">La formation autour du thé — Le Couloir du Savoir</span>
+      <a href="article-stivation-milieu-allosterique.html" class="hero-art-card">
+        <span class="hero-art-num">03</span>
+        <div class="hero-art-body">
+          <span class="hero-art-cat cat-psych">Concept</span>
+          <span class="hero-art-title">Pourquoi les inspecteurs apprennent mieux dans les couloirs ?</span>
+        </div>
         <span class="hero-art-arrow">→</span>
       </a>
     </div>
     <!-- FIN ARTICLES HERO -->
+  </div>
+
+  <div class="hero-right">
+    <svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:520px">
+      <rect x="20" y="20" width="480" height="380" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(201,151,10,0.2)" stroke-width="1"/>
+      <rect x="50" y="40" width="300" height="140" rx="4" fill="#0E3B5C"/>
+      <rect x="56" y="46" width="288" height="128" rx="2" fill="#0A2A40"/>
+      <text x="200" y="90" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#C9970A" font-weight="700">STIvation</text>
+      <text x="200" y="114" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">STImulation + motiVATION + interACTION</text>
+      <text x="200" y="150" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">Mbaye, 2010 — FASTEF/UCAD</text>
+      <circle cx="400" cy="70" r="18" fill="#C9970A" opacity="0.9"/>
+      <rect x="388" y="90" width="24" height="50" rx="4" fill="#1A2E4A"/>
+      <rect x="60" y="360" width="310" height="32" rx="4" fill="rgba(201,151,10,0.08)" stroke="rgba(201,151,10,0.15)" stroke-width="1"/>
+      <text x="215" y="380" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="rgba(255,255,255,0.55)" font-style="italic">« Dans les couloirs, on apprend vraiment »</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<div class="stats">
+  <div class="stat reveal"><span class="stat-n">6</span><span class="stat-l">Thématiques</span></div>
+  <div class="stat reveal rd1"><span class="stat-n">3</span><span class="stat-l">Concepts originaux</span></div>
+  <div class="stat reveal rd2"><span class="stat-n">∞</span><span class="stat-l">Interactions étudiées</span></div>
+  <div class="stat reveal rd3"><span class="stat-n">15+</span><span class="stat-l">Années de terrain</span></div>
+  <div class="stat reveal rd4"><span class="stat-n">🧠</span><span class="stat-l">Psychologie appliquée</span></div>
+  <div class="stat reveal rd4"><span class="stat-n">🌍</span><span class="stat-l">Afrique subsaharienne</span></div>
 </div>
 
-<!-- NEWSLETTER -->
+<!-- ===== NEWSLETTER BANNER (PROMINENT) ===== -->
 <div class="nl-banner">
   <div class="nl-inner">
     <div class="nl-text">
@@ -291,7 +358,7 @@ footer{background:var(--navy);padding:56px 0 28px}
   </div>
 </div>
 
-<!-- À PROPOS -->
+<!-- ===== À PROPOS ===== -->
 <section style="background:var(--white)" id="about">
   <div class="container">
     <p class="eyebrow reveal">À propos du site</p>
@@ -303,21 +370,24 @@ footer{background:var(--navy);padding:56px 0 28px}
         « La Stivation n'est pas née dans les manuels, mais dans la pénombre des chambres d'étudiants-inspecteurs et l'écho des couloirs de formation. »
         <footer style="margin-top:10px;font-family:'DM Sans',sans-serif;font-size:0.75rem;font-style:normal;color:var(--muted);font-weight:600">L'équipe du Couloir du Savoir — Genèse de la Stivation
           <div style="margin-top:14px">
-            <a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20Le%20Couloir%20du%20Savoir." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-family:sans-serif;font-size:0.78rem;font-weight:600;padding:10px 20px;border-radius:4px;text-decoration:none">📱 Contacter sur WhatsApp</a>
+            <a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20Le%20Couloir%20du%20Savoir." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-family:sans-serif;font-size:0.78rem;font-weight:600;padding:10px 20px;border-radius:4px;text-decoration:none">
+              📱 Contacter sur WhatsApp
+            </a>
           </div>
         </footer>
       </blockquote>
     </div>
+
     <div class="reveal" style="margin-top:60px;background:var(--navy);padding:60px;border-radius:8px;text-align:center">
       <p style="font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Le Couloir du Savoir</p>
       <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3.5vw,2.4rem);font-style:italic;color:var(--white);line-height:1.3;margin-bottom:20px">« Je suis un Stivateur »</h2>
       <p style="font-size:1rem;color:rgba(255,255,255,0.7);line-height:1.9;max-width:700px;margin:0 auto 24px">Je crois que l'on apprend mieux entre pairs, dans la liberté, hors des cadres rigides. Je crois que la stimulation naît de l'échange, que la motivation se construit dans la reconnaissance mutuelle, et que l'interaction est le moteur de tout apprentissage durable. Je suis un Stivateur.</p>
-      <a href="creaq.html" style="display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--gold);color:var(--navy);padding:14px 32px;border-radius:4px;text-decoration:none">Voir le CREAQ en action →</a>
+      <a href="creaq.html" style="display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--gold);color:var(--navy);padding:14px 32px;border-radius:4px;text-decoration:none;letter-spacing:0.05em">Voir le CREAQ en action →</a>
     </div>
   </div>
 </section>
 
-<!-- BIGQUOTE -->
+<!-- ===== BIGQUOTE ===== -->
 <div class="bigquote">
   <div class="bq-inner">
     <p class="bq-text">« S'inscrivant dans une logique <strong>constructiviste, sociale et interactionniste</strong>, la stivation se particularise du fait de son caractère <strong>non formalisé et adidactique</strong>. »</p>
@@ -325,7 +395,7 @@ footer{background:var(--navy);padding:56px 0 28px}
   </div>
 </div>
 
-<!-- CONCEPTS -->
+<!-- ===== CONCEPTS ===== -->
 <section style="background:var(--navy)" id="concepts">
   <div class="container">
     <p class="eyebrow reveal" style="color:rgba(201,151,10,0.9)">Concepts originaux</p>
@@ -352,19 +422,21 @@ footer{background:var(--navy);padding:56px 0 28px}
     </div>
   </div>
   <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;margin-top:16px;padding:0 20px 20px">
-    <a href="https://wa.me/?text=Stivation%2C%20CREAQ%2C%20TDI%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2F%23concepts" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-family:sans-serif;font-size:0.75rem;font-weight:600;padding:9px 18px;border-radius:4px;text-decoration:none;background:#25D366;color:#fff">📲 WhatsApp</a>
+    <a href="https://wa.me/?text=Stivation%2C%20CREAQ%2C%20TDI%20-%20trois%20concepts%20nes%20du%20terrain%20senegalais%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2F%23concepts" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-family:sans-serif;font-size:0.75rem;font-weight:600;padding:9px 18px;border-radius:4px;text-decoration:none;background:#25D366;color:#fff">📲 WhatsApp</a>
     <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2F%23concepts" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-family:sans-serif;font-size:0.75rem;font-weight:600;padding:9px 18px;border-radius:4px;text-decoration:none;background:#1877F2;color:#fff">👤 Facebook</a>
     <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2F%23concepts" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-family:sans-serif;font-size:0.75rem;font-weight:600;padding:9px 18px;border-radius:4px;text-decoration:none;background:#0A66C2;color:#fff">💼 LinkedIn</a>
   </div>
 </section>
 
-<!-- PUBLICATIONS -->
+<!-- ===== PUBLICATIONS ===== -->
 <section style="background:var(--cream)" id="publications">
   <div class="container">
     <p class="eyebrow reveal">Écrits &amp; Publications</p>
     <h2 class="sec-title reveal">La pensée mise <em>en mots</em></h2>
+
     <div class="pub-grid">
 
+      <!-- FEATURED -->
       <div class="pub-card feat reveal">
         <div style="width:4px;background:var(--gold);border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
@@ -373,197 +445,285 @@ footer{background:var(--navy);padding:56px 0 28px}
           <p class="pub-excerpt">La Stivation n'est pas une théorie de bureau. C'est une théorie de vécu, née dans les couloirs des centres de formation. Quinze ans de terrain pour le prouver.</p>
           <div class="pub-meta"><span>Stivation · CREAQ · TDI · 2025</span><a href="article-stivation-milieu-allosterique.html" class="pub-read">Lire →</a></div>
           <div class="share-row">
-            <a href="https://wa.me/?text=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-stivation-milieu-allosterique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
+            <a href="https://wa.me/?text=Stivation%20CREAQ%20TDI%20-%20Le%20Couloir%20du%20Savoir%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Farticle-stivation-milieu-allosterique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
             <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-stivation-milieu-allosterique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
             <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-stivation-milieu-allosterique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#0A66C2;color:#fff">💼 LinkedIn</a>
           </div>
         </div>
       </div>
 
+      <!-- CONSTRUCTIVISME -->
       <div class="pub-card reveal" style="border-top-color:var(--teal)">
         <span class="pub-cat cat-mo" style="background:rgba(14,107,124,0.1);color:var(--teal)">Pédagogie · <span style="background:var(--teal);color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
         <h3 class="pub-title">Constructivisme et socioconstructivisme dans nos classes africaines</h3>
         <p class="pub-excerpt">Comment reconnaître et pratiquer ces approches au quotidien. Piaget, Vygotski, cinq outils concrets et le lien avec la Stivation.</p>
         <div class="pub-meta"><span>Piaget · Vygotski · Terrain</span><a href="article-constructivisme-afrique.html" class="pub-read">Lire →</a></div>
         <div class="share-row">
-          <a href="https://wa.me/?text=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-constructivisme-afrique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
+          <a href="https://wa.me/?text=Constructivisme%20dans%20nos%20classes%20africaines%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Farticle-constructivisme-afrique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-constructivisme-afrique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
         </div>
       </div>
 
+      <!-- INTERACTIONS ENSEIGNANTS -->
       <div class="pub-card reveal rd1" style="border-top-color:var(--gold)">
         <span class="pub-cat cat-r">Vie professionnelle · <span style="background:var(--gold);color:var(--navy);padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
         <h3 class="pub-title">L'interaction professionnelle : figure de métier de l'enseignant</h3>
-        <p class="pub-excerpt">Partage du savoir, solidarité et respect mutuel entre collègues. Comment les interactions positives accélèrent la maturité professionnelle.</p>
+        <p class="pub-excerpt">Partage du savoir, solidarité et respect mutuel entre collègues. Comment les interactions positives accélèrent la maturité professionnelle — surtout en zones difficiles comme Kédougou.</p>
         <div class="pub-meta"><span>Solidarité · Kédougou · 2026</span><a href="interactions-enseignants.html" class="pub-read">Lire →</a></div>
         <div class="share-row">
-          <a href="https://wa.me/?text=https%3A%2F%2Flecouloirdusavoir.com%2Finteractions-enseignants.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
+          <a href="https://wa.me/?text=Interactions%20professionnelles%20-%20Le%20Couloir%20du%20Savoir%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Finteractions-enseignants.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Finteractions-enseignants.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
         </div>
       </div>
 
+      <!-- FORMATION THE -->
       <div class="pub-card reveal rd2" style="border-top-color:var(--gold)">
         <span class="pub-cat cat-r">Témoignage · FASTEF F2B · <span style="background:var(--gold);color:var(--navy);padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
         <h3 class="pub-title">La formation autour du thé</h3>
         <p class="pub-excerpt">Un élève inspecteur décrit, sans le savoir, la Stivation à l'œuvre dans sa promotion. La preuve que le phénomène traverse les générations.</p>
         <div class="pub-meta"><span>Stivation · FASTEF · 2026</span><a href="article-formation-the.html" class="pub-read">Lire →</a></div>
         <div class="share-row">
-          <a href="https://wa.me/?text=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-formation-the.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
+          <a href="https://wa.me/?text=La%20formation%20autour%20du%20th%C3%A9%20-%20Le%20Couloir%20du%20Savoir%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Farticle-formation-the.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-formation-the.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
         </div>
       </div>
 
+      <!-- MODELE ALLOSTERIQUE -->
       <div class="pub-card reveal">
         <span class="pub-cat cat-ps">Psychologie</span>
         <h3 class="pub-title">Le modèle allostérique de Giordan</h3>
         <p class="pub-excerpt">Analyse critique du modèle allostérique d'André Giordan : conceptions préalables, environnement didactique et dépassement du constructivisme.</p>
         <div class="pub-meta"><span>Giordan · Analyse critique</span><a href="article-modele-allosterique-giordan.html" class="pub-read">Lire →</a></div>
         <div class="share-row">
-          <a href="https://wa.me/?text=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-modele-allosterique-giordan.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
+          <a href="https://wa.me/?text=Mod%C3%A8le%20allost%C3%A9rique%20de%20Giordan%20-%20Le%20Couloir%20du%20Savoir%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Farticle-modele-allosterique-giordan.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-modele-allosterique-giordan.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
         </div>
       </div>
 
+      <!-- STYLES -->
       <div class="pub-card reveal rd1">
         <span class="pub-cat cat-ps">Psychologie cognitive</span>
         <h3 class="pub-title">Les Styles d'Apprentissage des Élèves</h3>
         <p class="pub-excerpt">Analyse des styles cognitifs selon Perraudeau, Witkin, Kagan et Ausubel. Implications pédagogiques concrètes pour l'enseignant.</p>
         <div class="pub-meta"><span>Styles cognitifs · Pédagogie</span><a href="article-styles-apprentissage.html" class="pub-read">Lire →</a></div>
         <div class="share-row">
-          <a href="https://wa.me/?text=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-styles-apprentissage.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
+          <a href="https://wa.me/?text=Styles%20d%27apprentissage%20-%20Le%20Couloir%20du%20Savoir%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Farticle-styles-apprentissage.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-styles-apprentissage.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
         </div>
       </div>
 
+      <!-- MOTIVATION -->
       <div class="pub-card reveal">
         <span class="pub-cat cat-mo">Motivation</span>
         <h3 class="pub-title">La motivation intrinsèque</h3>
         <p class="pub-excerpt">Les mécanismes psychologiques profonds qui déclenchent l'envie d'apprendre : curiosité, sentiment de compétence, autonomie.</p>
         <div class="pub-meta"><span>Deci &amp; Ryan · Autonomie</span><a href="article-motivation-intrinseque.html" class="pub-read">Lire →</a></div>
         <div class="share-row">
-          <a href="https://wa.me/?text=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-motivation-intrinseque.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
+          <a href="https://wa.me/?text=Motivation%20intrins%C3%A8que%20-%20Le%20Couloir%20du%20Savoir%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Farticle-motivation-intrinseque.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-motivation-intrinseque.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
         </div>
       </div>
 
+      <!-- FLOW -->
       <div class="pub-card reveal rd1">
         <span class="pub-cat cat-mo">Motivation</span>
         <h3 class="pub-title">L'état de Flow dans l'apprentissage</h3>
         <p class="pub-excerpt">Le concept de Flow de Csikszentmihalyi appliqué à la formation des enseignants. Comment créer les conditions d'un engagement total.</p>
         <div class="pub-meta"><span>Csikszentmihalyi · Flow</span><a href="article-flow-apprentissage.html" class="pub-read">Lire →</a></div>
         <div class="share-row">
-          <a href="https://wa.me/?text=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-flow-apprentissage.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
+          <a href="https://wa.me/?text=Flow%20et%20apprentissage%20-%20Le%20Couloir%20du%20Savoir%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Farticle-flow-apprentissage.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-flow-apprentissage.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
         </div>
       </div>
 
+      <!-- VYGOTSKI -->
       <div class="pub-card reveal rd2">
         <span class="pub-cat cat-ps">Psychologie</span>
         <h3 class="pub-title">Vygotski en Afrique : la ZPD revisitée</h3>
         <p class="pub-excerpt">La ZPD de Vygotski relue à la lumière des réalités éducatives africaines. Ce que quinze ans de terrain au Sénégal ont appris.</p>
         <div class="pub-meta"><span>Vygotski · ZPD · Sénégal</span><a href="article-vygotski-afrique.html" class="pub-read">Lire →</a></div>
         <div class="share-row">
-          <a href="https://wa.me/?text=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-vygotski-afrique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
+          <a href="https://wa.me/?text=Vygotski%20en%20Afrique%20-%20Le%20Couloir%20du%20Savoir%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Farticle-vygotski-afrique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-vygotski-afrique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
         </div>
       </div>
 
-    </div>
+    </div><!-- /pub-grid -->
   </div>
 </section>
 
-<!-- CREAQ -->
+<!-- ===== CREAQ EN CHIFFRES ===== -->
 <section style="background:var(--white);padding:88px 0">
   <div class="container">
     <p class="eyebrow reveal">Le CREAQ en chiffres</p>
     <h2 class="sec-title reveal">Un dispositif qui <em>prouve son impact</em></h2>
     <p class="sec-intro reveal">Données du rapport du Coordonnateur Amadou Niang — IEF de Kédougou, 2024-2025.</p>
+
     <div class="reveal" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:36px">
-      <div style="background:var(--sand);border-radius:8px;padding:22px 14px;text-align:center;border-top:3px solid var(--gold)"><span style="display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1">189</span><span style="display:block;font-size:0.72rem;color:var(--muted);margin-top:6px;line-height:1.4">Bulletins d'encadrement<br>2024-2025</span></div>
-      <div style="background:var(--sand);border-radius:8px;padding:22px 14px;text-align:center;border-top:3px solid var(--gold)"><span style="display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1">69</span><span style="display:block;font-size:0.72rem;color:var(--muted);margin-top:6px;line-height:1.4">Suivis cellule d'animation<br>2024-2025</span></div>
-      <div style="background:var(--sand);border-radius:8px;padding:22px 14px;text-align:center;border-top:3px solid var(--gold)"><span style="display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1">224</span><span style="display:block;font-size:0.72rem;color:var(--muted);margin-top:6px;line-height:1.4">Bulletins prévus<br>2025-2026</span></div>
-      <div style="background:var(--sand);border-radius:8px;padding:22px 14px;text-align:center;border-top:3px solid var(--gold)"><span style="display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1">25</span><span style="display:block;font-size:0.72rem;color:var(--muted);margin-top:6px;line-height:1.4">Membres encadreurs<br>témoignent</span></div>
+      <div style="background:var(--sand);border-radius:8px;padding:22px 14px;text-align:center;border-top:3px solid var(--gold)">
+        <span style="display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1">189</span>
+        <span style="display:block;font-size:0.72rem;color:var(--muted);margin-top:6px;line-height:1.4">Bulletins d'encadrement<br>2024-2025</span>
+      </div>
+      <div style="background:var(--sand);border-radius:8px;padding:22px 14px;text-align:center;border-top:3px solid var(--gold)">
+        <span style="display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1">69</span>
+        <span style="display:block;font-size:0.72rem;color:var(--muted);margin-top:6px;line-height:1.4">Suivis cellule d'animation<br>2024-2025</span>
+      </div>
+      <div style="background:var(--sand);border-radius:8px;padding:22px 14px;text-align:center;border-top:3px solid var(--gold)">
+        <span style="display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1">224</span>
+        <span style="display:block;font-size:0.72rem;color:var(--muted);margin-top:6px;line-height:1.4">Bulletins prévus<br>2025-2026</span>
+      </div>
+      <div style="background:var(--sand);border-radius:8px;padding:22px 14px;text-align:center;border-top:3px solid var(--gold)">
+        <span style="display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1">25</span>
+        <span style="display:block;font-size:0.72rem;color:var(--muted);margin-top:6px;line-height:1.4">Membres encadreurs<br>témoignent</span>
+      </div>
     </div>
+
+    <div class="reveal" style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:36px">
+      <div style="background:var(--sand);border-radius:8px;padding:20px;border-left:4px solid var(--navy)">
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:4px">2015</div>
+        <div style="font-size:0.85rem;font-weight:600;color:var(--navy);margin-bottom:6px">IEF de Tivaouane</div>
+        <div style="font-size:0.8rem;color:var(--muted);line-height:1.6">Lancement du CREAQ. Communes de Tivaouane, Pire Gourey et Chérif Lo.</div>
+      </div>
+      <div style="background:var(--sand);border-radius:8px;padding:20px;border-left:4px solid var(--navy)">
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:4px">2021</div>
+        <div style="font-size:0.85rem;font-weight:600;color:var(--navy);margin-bottom:6px">IEF de Saraya</div>
+        <div style="font-size:0.8rem;color:var(--muted);line-height:1.6">Déploiement en contexte rural isolé. Validation du modèle.</div>
+      </div>
+      <div style="background:var(--sand);border-radius:8px;padding:20px;border-left:4px solid var(--navy)">
+        <div style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:4px">2024</div>
+        <div style="font-size:0.85rem;font-weight:600;color:var(--navy);margin-bottom:6px">IEF de Kédougou</div>
+        <div style="font-size:0.8rem;color:var(--muted);line-height:1.6">Troisième site. 25 membres actifs. 189 bulletins en première année.</div>
+      </div>
+    </div>
+
     <div style="text-align:center" class="reveal">
-      <a href="creaq.html" style="font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--navy);color:var(--white);padding:14px 28px;border-radius:4px;text-decoration:none">Lire les 25 témoignages complets →</a>
+      <a href="creaq.html" style="font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--navy);color:var(--white);padding:14px 28px;border-radius:4px;text-decoration:none;letter-spacing:0.05em">Lire les 25 témoignages complets →</a>
     </div>
   </div>
 </section>
 
-<!-- INSPECTEURS -->
+<!-- ===== ESPACE INSPECTEURS ===== -->
 <section style="background:var(--sand);padding:72px 0" id="inspecteurs">
   <div class="container">
     <p class="eyebrow reveal">Espace Inspecteurs</p>
     <h2 class="sec-title reveal">Ressources pour les <em>cadres de l'éducation</em></h2>
     <p class="sec-intro reveal" style="margin-bottom:32px">Outils, réflexions et ressources spécialement conçus pour les inspecteurs, directeurs et cadres du système éducatif africain.</p>
     <div style="text-align:center" class="reveal">
-      <a href="espace-inspecteurs.html" style="font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--gold);color:var(--navy);padding:14px 32px;border-radius:4px;text-decoration:none">Accéder à l'espace inspecteurs →</a>
+      <a href="espace-inspecteurs.html" style="font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--gold);color:var(--navy);padding:14px 32px;border-radius:4px;text-decoration:none;letter-spacing:0.05em">Accéder à l'espace inspecteurs →</a>
     </div>
   </div>
 </section>
 
-<!-- RESSOURCES -->
+<!-- ===== RESSOURCES ===== -->
 <section style="background:var(--navy);padding:80px 0" id="ressources">
   <div class="container">
     <p class="eyebrow reveal" style="color:rgba(201,151,10,0.9)">Ressources Éducatives</p>
     <h2 class="sec-title reveal" style="color:var(--white)">Ressources Éducatives — <em style="color:#7DE0EE">réformes, documents et actualités</em></h2>
+    <p class="sec-intro reveal" style="color:rgba(255,255,255,0.5);margin-bottom:32px">Documents utiles, textes officiels, rapports et actualités sur l'éducation en Afrique et dans le monde. Une sélection mise à jour régulièrement par l'équipe du Couloir du Savoir.</p>
+
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px" class="reveal">
       <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.25);border-radius:8px;padding:28px">
         <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Sénégal</p>
-        <p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:6px">Programme d'Amélioration de la Qualité de l'Équité et de la Transparence</p>
-        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:10px">PAQUET-EF — Document de référence du système éducatif sénégalais</p>
-        <a href="https://www.education.gouv.sn" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;color:var(--gold);text-decoration:none">Ministère de l'Éducation →</a>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:16px">
+            <p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:6px">Programme d'Amélioration de la Qualité de l'Équité et de la Transparence</p>
+            <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:10px">PAQUET-EF — Document de référence du système éducatif sénégalais</p>
+            <a href="https://www.education.gouv.sn" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;color:var(--gold);text-decoration:none">Ministère de l'Éducation →</a>
+          </div>
+          <div>
+            <p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:6px">Curriculum de l'éducation de base</p>
+            <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:10px">Les instructions officielles qui guident la pratique de classe au Sénégal</p>
+            <a href="https://www.education.gouv.sn" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;color:var(--gold);text-decoration:none">Consulter →</a>
+          </div>
+        </div>
       </div>
       <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(14,107,124,0.3);border-radius:8px;padding:28px">
         <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#7DE0EE;margin-bottom:16px">International</p>
-        <p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:6px">Rapport mondial de suivi sur l'éducation — UNESCO</p>
-        <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:10px">État de l'éducation dans le monde. Données, tendances et recommandations annuelles.</p>
-        <a href="https://www.unesco.org/gem-report/fr" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;color:#7DE0EE;text-decoration:none">Lire le rapport →</a>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:16px">
+            <p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:6px">Rapport mondial de suivi sur l'éducation — UNESCO</p>
+            <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:10px">État de l'éducation dans le monde. Données, tendances et recommandations annuelles.</p>
+            <a href="https://www.unesco.org/gem-report/fr" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;color:#7DE0EE;text-decoration:none">Lire le rapport →</a>
+          </div>
+          <div>
+            <p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:6px">CONFEMEN — Conférence des Ministres de l'Éducation</p>
+            <p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:10px">Ressources et publications pour l'éducation en Afrique francophone.</p>
+            <a href="https://www.confemen.org" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;color:#7DE0EE;text-decoration:none">Visiter →</a>
+          </div>
+        </div>
       </div>
     </div>
+
     <div style="margin-top:20px;background:rgba(255,255,255,0.04);border-radius:8px;padding:24px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px" class="reveal">
       <div>
         <p style="font-size:0.9rem;font-weight:600;color:var(--white);margin-bottom:4px">Vous avez un document à partager ?</p>
-        <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);font-style:italic">Rapports, guides pédagogiques, textes officiels...</p>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);font-style:italic">Rapports, guides pédagogiques, textes officiels, actualités... Soumettez-le à l'équipe.</p>
       </div>
       <a href="#contact" style="font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:600;background:var(--gold);color:var(--navy);padding:12px 22px;border-radius:4px;text-decoration:none;white-space:nowrap">Proposer une ressource →</a>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" style="background:var(--cream);padding:88px 0">
+<!-- ===== RECHERCHE ===== -->
+<section style="background:var(--navy);padding:80px 0" id="recherche">
+  <div class="container">
+    <p class="eyebrow reveal" style="color:rgba(201,151,10,0.9)">Recherche</p>
+    <h2 class="sec-title reveal" style="color:var(--white)">La Stivation sous <em style="color:#7DE0EE">le regard scientifique</em></h2>
+    <p class="sec-intro reveal" style="color:rgba(255,255,255,0.5);margin-bottom:44px">De la thèse fondatrice de 2010 à l'article soumis en revue internationale, un parcours de recherche de 15 ans ancré dans le terrain africain.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px" class="reveal">
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.3);border-radius:8px;padding:32px 28px">
+        <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Mémoire fondateur · 2010</p>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--white);line-height:1.4;margin-bottom:16px">Interactions entre élèves inspecteurs lors des activités collaboratives en formation initiale</h3>
+        <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);line-height:1.75;margin-bottom:20px">Thèse de CAIEE — FASTEF / Université Cheikh Anta Diop de Dakar, 2010. Texte fondateur du concept de Stivation. Publié sur Mémoire Online et indexé par Google Scholar.</p>
+        <a href="https://www.memoireonline.com/07/11/4627/" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:600;color:var(--gold);text-decoration:none">Lire le mémoire original →</a>
+      </div>
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(14,107,124,0.4);border-radius:8px;padding:32px 28px">
+        <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:#7DE0EE;margin-bottom:16px">Article scientifique · 2025-2026</p>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--white);line-height:1.4;margin-bottom:16px">La Stivation : un modèle andragogique pour la formation continue des enseignants en Afrique subsaharienne</h3>
+        <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);line-height:1.75;margin-bottom:20px">Article soumis à une revue internationale. Ancrage théorique : Deci &amp; Ryan (2000), Vygotski (1978), Bandura (1997), Lave &amp; Wenger (1991).</p>
+        <span style="font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.35);font-style:italic">Publication à venir</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact" style="background:var(--cream);padding:88px 0">
   <div class="container">
     <div class="contact-grid">
       <div>
         <p class="eyebrow reveal">Contact</p>
         <h2 class="sec-title reveal">Entrons en <em>conversation</em></h2>
         <p class="sec-intro reveal" style="margin-bottom:32px">Pour contribuer au laboratoire, proposer un article, partager une expérience de terrain, ou contacter l'équipe pour une collaboration ou une formation.</p>
-        <div class="reveal">
-          <a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20Le%20Couloir%20du%20Savoir." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-family:sans-serif;font-size:0.85rem;font-weight:600;padding:14px 28px;border-radius:4px;text-decoration:none">📱 Contacter sur WhatsApp</a>
+        <div style="margin-top:24px" class="reveal">
+          <a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20Le%20Couloir%20du%20Savoir." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-family:sans-serif;font-size:0.85rem;font-weight:600;padding:14px 28px;border-radius:4px;text-decoration:none">
+            📱 Contacter sur WhatsApp
+          </a>
         </div>
       </div>
       <div class="form reveal">
         <div class="form-row">
-          <div class="fg"><label class="flbl">Prénom</label><input class="finput" type="text" placeholder="Prénom"/></div>
+          <div class="fg"><label class="flbl">Votre prénom</label><input class="finput" type="text" placeholder="Prénom"/></div>
           <div class="fg"><label class="flbl">Email</label><input class="finput" type="email" placeholder="votre@email.com"/></div>
         </div>
         <div class="fg"><label class="flbl">Objet</label><input class="finput" type="text" placeholder="Sujet de votre message"/></div>
         <div class="fg"><label class="flbl">Message</label><textarea class="ftextarea" placeholder="Votre message…"></textarea></div>
-        <button class="fsubmit" onclick="envoyerMessage()">Envoyer</button>
+        <button class="fsubmit" id="send-btn" onclick="envoyerMessage()">Envoyer</button>
         <div id="form-ok" style="display:none;font-size:0.9rem;color:var(--sage);margin-top:8px">✅ Message envoyé. Nous vous répondrons sous 48h.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ===== FOOTER ===== -->
 <footer>
   <div class="footer-inner">
     <div>
       <div class="fbrand">Le Couloir du Savoir <span style="color:rgba(255,255,255,0.4);font-style:italic;font-weight:400">· Laboratoire de la Stivation</span></div>
-      <p style="font-size:0.85rem;color:rgba(255,255,255,0.4);line-height:1.7;margin-bottom:16px">Un laboratoire ouvert dédié à l'éducation et à la formation en Afrique subsaharienne. Trois concepts originaux : Stivation, CREAQ, TDI.</p>
-      <a href="https://wa.me/221763615562" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-family:sans-serif;font-size:0.78rem;font-weight:600;padding:10px 18px;border-radius:4px;text-decoration:none">📱 WhatsApp</a>
+      <p style="font-size:0.85rem;color:rgba(255,255,255,0.4);line-height:1.7;margin-bottom:16px">Un laboratoire ouvert dédié à l'éducation et à la formation en Afrique subsaharienne. Trois concepts originaux : Stivation, CREAQ, TDI. Plus de quinze ans de terrain au Sénégal.</p>
+      <a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20Le%20Couloir%20du%20Savoir." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-family:sans-serif;font-size:0.78rem;font-weight:600;padding:10px 18px;border-radius:4px;text-decoration:none">
+        📱 WhatsApp
+      </a>
     </div>
     <div>
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Navigation</p>
@@ -573,7 +733,7 @@ footer{background:var(--navy);padding:56px 0 28px}
         <li><a href="#publications">Articles</a></li>
         <li><a href="creaq.html">Le CREAQ en Action</a></li>
         <li><a href="lu-pour-vous.html">Lu pour Vous</a></li>
-        <li><a href="#ressources">Ressources</a></li>
+        <li><a href="#ressources">Ressources Éducatives</a></li>
         <li><a href="espace-inspecteurs.html">Inspecteurs</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="a-propos.html">À propos</a></li>
@@ -605,87 +765,58 @@ footer{background:var(--navy);padding:56px 0 28px}
 </footer>
 
 <script>
-// NAV MOBILE
-function toggleNav(){document.getElementById('mobileNav').classList.toggle('open')}
-function closeNav(){document.getElementById('mobileNav').classList.remove('open')}
-document.addEventListener('click',function(e){
-  var nav=document.getElementById('mobileNav');
-  var toggle=document.querySelector('.nav-toggle');
-  if(nav.classList.contains('open')&&!nav.contains(e.target)&&!toggle.contains(e.target))nav.classList.remove('open');
+// ===== NAV MOBILE =====
+function toggleNav(){
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+function closeNav(){
+  document.getElementById('mobileNav').classList.remove('open');
+}
+document.addEventListener('click', function(e){
+  var nav = document.getElementById('mobileNav');
+  var toggle = document.querySelector('.nav-toggle');
+  if(nav.classList.contains('open') && !nav.contains(e.target) && !toggle.contains(e.target)){
+    nav.classList.remove('open');
+  }
 });
 
-// REVEAL
-var obs=new IntersectionObserver(function(entries){
-  entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});
-},{threshold:0.1});
-document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+// ===== REVEAL ON SCROLL =====
+var reveals = document.querySelectorAll('.reveal');
+var observer = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+}, {threshold: 0.1});
+reveals.forEach(function(el){ observer.observe(el); });
 
-// NEWSLETTER
+// ===== NEWSLETTER =====
 function inscrireNL(e){
   e.preventDefault();
-  e.target.querySelector('input').value='';
-  e.target.querySelector('input').style.display='none';
-  e.target.querySelector('button').style.display='none';
-  document.getElementById('nl-ok').style.display='block';
+  var input = e.target.querySelector('input[type="email"]');
+  var ok = document.getElementById('nl-ok');
+  // Ici vous pouvez brancher un service comme Mailchimp, Brevo, etc.
+  // Pour l'instant, confirmation visuelle
+  input.value = '';
+  input.style.display = 'none';
+  e.target.querySelector('button').style.display = 'none';
+  ok.style.display = 'block';
 }
 
-// CONTACT
+// ===== FORMULAIRE CONTACT =====
 function envoyerMessage(){
-  var p=document.querySelector('.finput[placeholder="Prénom"]').value;
-  var em=document.querySelector('.finput[placeholder="votre@email.com"]').value;
-  var s=document.querySelector('.finput[placeholder="Sujet de votre message"]').value;
-  var m=document.querySelector('.ftextarea').value;
-  if(!p||!em||!m)return;
-  window.open('https://wa.me/221763615562?text='+encodeURIComponent('Bonjour depuis Le Couloir du Savoir.\n\nNom: '+p+'\nEmail: '+em+'\nSujet: '+s+'\n\n'+m),'_blank');
-  document.getElementById('form-ok').style.display='block';
+  var prenom = document.querySelector('.finput[placeholder="Prénom"]').value;
+  var email = document.querySelector('.finput[placeholder="votre@email.com"]').value;
+  var sujet = document.querySelector('.finput[placeholder="Sujet de votre message"]').value;
+  var msg = document.querySelector('.ftextarea').value;
+  if(!prenom || !email || !msg){ return; }
+  // Ouvre WhatsApp avec le message pré-rempli
+  var texte = encodeURIComponent('Bonjour, je vous écris depuis Le Couloir du Savoir.\n\nNom : ' + prenom + '\nEmail : ' + email + '\nSujet : ' + sujet + '\n\n' + msg);
+  window.open('https://wa.me/221763615562?text=' + texte, '_blank');
+  document.getElementById('form-ok').style.display = 'block';
 }
-
-// CAROUSEL HERO
-var ARTICLES=[
-  {href:'article-constructivisme-afrique.html',     cat:'Nouveau',     css:'cat-new',   titre:'Constructivisme et socioconstructivisme dans nos classes africaines'},
-  {href:'interactions-enseignants.html',            cat:'Pédagogie',   css:'cat-ped',   titre:'L\'interaction professionnelle : figure de métier de l\'enseignant'},
-  {href:'article-stivation-milieu-allosterique.html',cat:'Concept',    css:'cat-psych', titre:'Pourquoi les inspecteurs apprennent mieux dans les couloirs ?'},
-  {href:'article-formation-the.html',               cat:'Témoignage',  css:'cat-new',   titre:'La formation autour du thé'},
-  {href:'article-modele-allosterique-giordan.html', cat:'Psychologie', css:'cat-psych', titre:'Le modèle allostérique de Giordan'},
-  {href:'article-styles-apprentissage.html',        cat:'Psychologie', css:'cat-psych', titre:'Les Styles d\'Apprentissage des Élèves'},
-  {href:'article-motivation-intrinseque.html',      cat:'Motivation',  css:'cat-ped',   titre:'La motivation intrinsèque'},
-  {href:'article-flow-apprentissage.html',          cat:'Motivation',  css:'cat-ped',   titre:'L\'état de Flow dans l\'apprentissage'},
-  {href:'article-vygotski-afrique.html',            cat:'Psychologie', css:'cat-psych', titre:'Vygotski en Afrique : la ZPD revisitée'},
-];
-var PAR_PAGE=3;
-var page=0;
-var total=Math.ceil(ARTICLES.length/PAR_PAGE);
-var timer=null;
-
-function renderCarousel(p,anim){
-  var box=document.getElementById('heroArticles');
-  var dots=document.getElementById('heroDots');
-  if(!box)return;
-  var slice=ARTICLES.slice(p*PAR_PAGE,(p+1)*PAR_PAGE);
-  box.innerHTML='';
-  slice.forEach(function(art,i){
-    var a=document.createElement('a');
-    a.href=art.href;
-    a.className='hero-art-card'+(anim?' anim-in':'');
-    a.style.animationDelay=(i*0.07)+'s';
-    a.innerHTML='<span class="hero-art-num">0'+(p*PAR_PAGE+i+1)+'</span><div class="hero-art-body"><span class="hero-art-cat '+art.css+'">'+art.cat+'</span><span class="hero-art-title">'+art.titre+'</span></div><span class="hero-art-arrow">→</span>';
-    box.appendChild(a);
-  });
-  dots.innerHTML='';
-  for(var d=0;d<total;d++){
-    var btn=document.createElement('button');
-    btn.className='hero-dot'+(d===p?' on':'');
-    (function(idx){btn.onclick=function(){clearInterval(timer);page=idx;renderCarousel(page,true);startTimer();};})(d);
-    dots.appendChild(btn);
-  }
-}
-
-function startTimer(){timer=setInterval(function(){page=(page+1)%total;renderCarousel(page,true);},5000);}
-document.getElementById('heroArticles').addEventListener('mouseenter',function(){clearInterval(timer);});
-document.getElementById('heroArticles').addEventListener('mouseleave',function(){startTimer();});
-
-renderCarousel(0,false);
-startTimer();
 </script>
+
 </body>
 </html>
