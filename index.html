@@ -24,49 +24,7 @@
 <meta name="twitter:image" content="https://lecouloirdusavoir.com/og-image.jpg"/>
 
 <!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SDJVY86L2">
-// CAROUSEL HERO
-(function(){
-  var ART=[
-    {h:'article-constructivisme-afrique.html',css:'cat-new',cat:'Nouveau',t:'Constructivisme et socioconstructivisme dans nos classes africaines'},
-    {h:'interactions-enseignants.html',css:'cat-ped',cat:'Pédagogie',t:"L'interaction professionnelle : figure de métier de l'enseignant"},
-    {h:'article-stivation-milieu-allosterique.html',css:'cat-psych',cat:'Concept',t:'Pourquoi les inspecteurs apprennent mieux dans les couloirs ?'},
-    {h:'article-formation-the.html',css:'cat-new',cat:'Témoignage',t:'La formation autour du thé'},
-    {h:'article-modele-allosterique-giordan.html',css:'cat-psych',cat:'Psychologie',t:'Le modèle allostérique de Giordan'},
-    {h:'article-styles-apprentissage.html',css:'cat-psych',cat:'Psychologie',t:"Les Styles d'Apprentissage des Élèves"},
-    {h:'article-motivation-intrinseque.html',css:'cat-ped',cat:'Motivation',t:'La motivation intrinsèque'},
-    {h:'article-flow-apprentissage.html',css:'cat-ped',cat:'Motivation',t:"L'état de Flow dans l'apprentissage"},
-    {h:'article-vygotski-afrique.html',css:'cat-psych',cat:'Psychologie',t:'Vygotski en Afrique : la ZPD revisitée'},
-  ];
-  var PP=3,pg=0,tot=Math.ceil(ART.length/PP),tmr=null;
-  function render(p){
-    var b=document.getElementById('heroArt'),d=document.getElementById('heroDots');
-    if(!b||!d)return;
-    b.innerHTML='';
-    ART.slice(p*PP,(p+1)*PP).forEach(function(a){
-      var el=document.createElement('a');
-      el.href=a.h;
-      el.className='hero-art-card';
-      el.innerHTML='<span class="hero-art-cat '+a.css+'">'+a.cat+'</span><span class="hero-art-title">'+a.t+'</span><span class="hero-art-arrow">→</span>';
-      b.appendChild(el);
-    });
-    d.innerHTML='';
-    for(var i=0;i<tot;i++){
-      var btn=document.createElement('button');
-      btn.style.cssText='width:'+(i===p?'16':'6')+'px;height:6px;border-radius:'+(i===p?'3':'50%')+'px;background:'+(i===p?'#C9970A':'rgba(255,255,255,0.25)')+';border:none;cursor:pointer;padding:0;transition:all 0.3s';
-      (function(x){btn.onclick=function(){clearInterval(tmr);pg=x;render(pg);start();};})(i);
-      d.appendChild(btn);
-    }
-  }
-  function start(){tmr=setInterval(function(){pg=(pg+1)%tot;render(pg);},5000);}
-  var box=document.getElementById('heroArt');
-  if(box){
-    box.addEventListener('mouseenter',function(){clearInterval(tmr);});
-    box.addEventListener('mouseleave',function(){start();});
-    render(0);start();
-  }
-})();
-</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SDJVY86L2"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -132,7 +90,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .btn-o{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:500;color:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.25);padding:12px 26px;border-radius:4px;text-decoration:none;transition:border-color 0.2s,color 0.2s}
 .btn-o:hover{border-color:var(--gold);color:var(--gold)}
 
-/* ===== HERO ARTICLE PREVIEW (NEW) ===== */
+/* ===== HERO ARTICLE PREVIEW ===== */
 .hero-articles{display:flex;flex-direction:column;gap:10px}
 .hero-art-label{font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(201,151,10,0.6);margin-bottom:4px}
 .hero-art-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:14px 18px;text-decoration:none;display:flex;align-items:center;gap:14px;transition:background 0.2s,border-color 0.2s;cursor:pointer}
@@ -154,7 +112,16 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .stat-n{display:block;font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--navy);line-height:1}
 .stat-l{display:block;font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(26,46,74,0.7);margin-top:4px}
 
-/* ===== NEWSLETTER BANNER (NEW — prominent) ===== */
+/* ===== ACCES RAPIDE STRIP (NOUVEAU) ===== */
+.acces-rapide{background:var(--cream);border-bottom:1px solid rgba(26,46,74,0.1);padding:18px 0}
+.acces-rapide-inner{max-width:1180px;margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.acces-label{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);flex-shrink:0;margin-right:6px}
+.acces-btn{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;color:var(--navy);background:var(--white);border:1px solid rgba(26,46,74,0.18);border-radius:20px;padding:7px 16px;text-decoration:none;transition:background 0.2s,border-color 0.2s,color 0.2s;white-space:nowrap}
+.acces-btn:hover{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.acces-btn.hot{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.acces-btn.hot:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+
+/* ===== NEWSLETTER BANNER ===== */
 .nl-banner{background:linear-gradient(135deg,#0b1f33 0%,#0e3b5c 60%,#0a4a3a 100%);padding:48px 0;border-top:2px solid rgba(201,151,10,0.4);border-bottom:2px solid rgba(201,151,10,0.4)}
 .nl-inner{max-width:720px;margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:40px;flex-wrap:wrap}
 .nl-text{flex:1;min-width:240px}
@@ -253,6 +220,7 @@ footer{background:var(--navy);padding:56px 0 28px}
   .stats{grid-template-columns:repeat(3,1fr)}
   .stat{padding:18px 10px}
   .stat-n{font-size:1.4rem}
+  .acces-rapide-inner{padding:0 20px}
   .nl-inner{flex-direction:column;gap:24px;padding:0 24px}
   .nl-text{min-width:auto}
   .nl-form-wrap{min-width:auto;width:100%}
@@ -268,6 +236,7 @@ footer{background:var(--navy);padding:56px 0 28px}
   .stats{grid-template-columns:repeat(2,1fr)}
   .hero-ctas{flex-direction:column}
   .hero-ctas .btn-p,.hero-ctas .btn-o{text-align:center}
+  .acces-rapide{display:none}
 }
 </style>
 </head>
@@ -316,13 +285,12 @@ footer{background:var(--navy);padding:56px 0 28px}
       <a href="#publications" class="btn-o">Tous les articles</a>
     </div>
 
-    <!-- ARTICLES HERO — rotation automatique -->
-        <!-- ARTICLES HERO — généré automatiquement par build_hero.py -->
+    <!-- ARTICLES HERO -->
     <p class="hero-art-label">Derniers articles publiés</p>
     <div class="hero-articles">
       <a href="article-explicite-constructivisme-senegal.html" class="hero-art-card">
         <span class="hero-art-cat cat-ped">Pédagogie</span>
-        <span class="hero-art-title">Enseignement explicite ou constructivisme ? Ce que l</span>
+        <span class="hero-art-title">Enseignement explicite ou constructivisme ? Ce que l'enseignant sénégalais doit savoir</span>
         <span class="hero-art-arrow">→</span>
       </a>
       <a href="article-constructivisme-afrique.html" class="hero-art-card">
@@ -332,11 +300,10 @@ footer{background:var(--navy);padding:56px 0 28px}
       </a>
       <a href="article-formation-the.html" class="hero-art-card">
         <span class="hero-art-cat cat-psych">Concept</span>
-        <span class="hero-art-title">La formation autour du thé — Le Couloir du Savoir</span>
+        <span class="hero-art-title">La formation autour du thé — Stivation à l'œuvre</span>
         <span class="hero-art-arrow">→</span>
       </a>
     </div>
-    <!-- FIN ARTICLES HERO -->
   </div>
 
   <div class="hero-right">
@@ -365,7 +332,20 @@ footer{background:var(--navy);padding:56px 0 28px}
   <div class="stat reveal rd4"><span class="stat-n">🌍</span><span class="stat-l">Afrique subsaharienne</span></div>
 </div>
 
-<!-- ===== NEWSLETTER BANNER (PROMINENT) ===== -->
+<!-- ===== ACCÈS RAPIDE (NOUVEAU) ===== -->
+<div class="acces-rapide">
+  <div class="acces-rapide-inner">
+    <span class="acces-label">Lire maintenant :</span>
+    <a href="article-explicite-constructivisme-senegal.html" class="acces-btn hot">Explicite vs constructivisme</a>
+    <a href="article-constructivisme-afrique.html" class="acces-btn">Constructivisme en Afrique</a>
+    <a href="article-stivation-milieu-allosterique.html" class="acces-btn">Pourquoi on apprend dans les couloirs</a>
+    <a href="interactions-enseignants.html" class="acces-btn">Interactions enseignants</a>
+    <a href="creaq.html" class="acces-btn">CREAQ en action</a>
+    <a href="espace-inspecteurs.html" class="acces-btn">Espace Inspecteurs</a>
+  </div>
+</div>
+
+<!-- ===== NEWSLETTER BANNER ===== -->
 <div class="nl-banner">
   <div class="nl-inner">
     <div class="nl-text">
@@ -474,6 +454,18 @@ footer{background:var(--navy);padding:56px 0 28px}
             <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-stivation-milieu-allosterique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
             <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-stivation-milieu-allosterique.html" target="_blank" rel="noopener" class="sh-btn" style="background:#0A66C2;color:#fff">💼 LinkedIn</a>
           </div>
+        </div>
+      </div>
+
+      <!-- EXPLICITE vs CONSTRUCTIVISME (AJOUT — article le plus lu) -->
+      <div class="pub-card reveal" style="border-top-color:var(--gold)">
+        <span class="pub-cat cat-r">Pédagogie · <span style="background:var(--gold);color:var(--navy);padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Plus lu</span></span>
+        <h3 class="pub-title">Enseignement explicite ou constructivisme ? Ce que l'enseignant sénégalais doit savoir</h3>
+        <p class="pub-excerpt">Entre instruction directe et pédagogie active, quel choix pour nos classes africaines ? Une analyse ancrée dans la réalité du terrain sénégalais.</p>
+        <div class="pub-meta"><span>Pédagogie · Sénégal · 2026</span><a href="article-explicite-constructivisme-senegal.html" class="pub-read">Lire →</a></div>
+        <div class="share-row">
+          <a href="https://wa.me/?text=Enseignement%20explicite%20ou%20constructivisme%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Farticle-explicite-constructivisme-senegal.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-explicite-constructivisme-senegal.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
         </div>
       </div>
 
@@ -821,8 +813,6 @@ function inscrireNL(e){
   e.preventDefault();
   var input = e.target.querySelector('input[type="email"]');
   var ok = document.getElementById('nl-ok');
-  // Ici vous pouvez brancher un service comme Mailchimp, Brevo, etc.
-  // Pour l'instant, confirmation visuelle
   input.value = '';
   input.style.display = 'none';
   e.target.querySelector('button').style.display = 'none';
@@ -836,7 +826,6 @@ function envoyerMessage(){
   var sujet = document.querySelector('.finput[placeholder="Sujet de votre message"]').value;
   var msg = document.querySelector('.ftextarea').value;
   if(!prenom || !email || !msg){ return; }
-  // Ouvre WhatsApp avec le message pré-rempli
   var texte = encodeURIComponent('Bonjour, je vous écris depuis Le Couloir du Savoir.\n\nNom : ' + prenom + '\nEmail : ' + email + '\nSujet : ' + sujet + '\n\n' + msg);
   window.open('https://wa.me/221763615562?text=' + texte, '_blank');
   document.getElementById('form-ok').style.display = 'block';
