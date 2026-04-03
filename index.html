@@ -78,29 +78,38 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 /* ===== HERO ===== */
 .hero{min-height:100vh;margin-top:66px;background:var(--navy);display:grid;grid-template-columns:1fr 1fr;align-items:center;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%, rgba(14,107,124,0.12) 0%, transparent 70%);pointer-events:none}
-.hero-left{padding:80px 60px 80px 80px;position:relative;z-index:2}
-.hero-eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:900;color:var(--white);line-height:1.15;margin-bottom:16px}
+.hero-left{padding:48px 60px 48px 80px;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;opacity:0.85}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,4.8vw,3.6rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:10px}
 .hero h1 em{color:var(--gold);font-style:italic}
-.hero-tagline{font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:rgba(201,151,10,0.8);margin-bottom:20px}
-.hero-desc{font-size:1.05rem;color:rgba(255,255,255,0.68);line-height:1.8;margin-bottom:32px;max-width:500px}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+.hero-tagline{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:rgba(201,151,10,0.7);margin-bottom:14px}
+.hero-desc{font-size:0.95rem;color:rgba(255,255,255,0.6);line-height:1.75;margin-bottom:24px;max-width:480px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px}
 .btn-p{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--gold);color:var(--navy);padding:13px 28px;border-radius:4px;text-decoration:none;letter-spacing:0.04em;transition:opacity 0.2s}
 .btn-p:hover{opacity:0.88}
 .btn-o{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:500;color:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.25);padding:12px 26px;border-radius:4px;text-decoration:none;transition:border-color 0.2s,color 0.2s}
 .btn-o:hover{border-color:var(--gold);color:var(--gold)}
 
-/* ===== HERO ARTICLE PREVIEW (NEW) ===== */
-.hero-articles{display:flex;flex-direction:column;gap:10px}
-.hero-art-label{font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(201,151,10,0.6);margin-bottom:4px}
-.hero-art-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:14px 18px;text-decoration:none;display:flex;align-items:center;gap:14px;transition:background 0.2s,border-color 0.2s;cursor:pointer}
-.hero-art-card:hover{background:rgba(201,151,10,0.08);border-color:rgba(201,151,10,0.3)}
-.hero-art-cat{font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0}
-.cat-psych{background:rgba(107,63,110,0.25);color:#D4A0D7}
-.cat-ped{background:rgba(14,107,124,0.25);color:#7DE0EE}
-.cat-new{background:rgba(201,151,10,0.2);color:var(--gold)}
-.hero-art-title{font-family:'Playfair Display',serif;font-size:0.88rem;font-weight:700;color:rgba(255,255,255,0.88);line-height:1.3;flex:1}
-.hero-art-arrow{color:var(--gold);font-size:0.9rem;flex-shrink:0;opacity:0.7}
+/* ===== HERO ARTICLE PREVIEW ===== */
+.hero-articles{display:flex;flex-direction:column;gap:8px}
+.hero-art-label{font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.hero-art-label::before{content:'';flex:1;height:1px;background:rgba(201,151,10,0.25)}
+.hero-art-label::after{content:'';flex:1;height:1px;background:rgba(201,151,10,0.25)}
+.hero-art-card{background:linear-gradient(135deg,rgba(255,255,255,0.06) 0%,rgba(255,255,255,0.02) 100%);border:1px solid rgba(255,255,255,0.1);border-left:3px solid transparent;border-radius:8px;padding:14px 16px;text-decoration:none;display:flex;align-items:center;gap:14px;transition:all 0.25s;position:relative;overflow:hidden}
+.hero-art-card::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(201,151,10,0.06) 0%,transparent 100%);opacity:0;transition:opacity 0.25s}
+.hero-art-card:hover{border-left-color:var(--gold);border-color:rgba(201,151,10,0.35);transform:translateX(4px)}
+.hero-art-card:hover::before{opacity:1}
+.hero-art-num{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:rgba(201,151,10,0.25);flex-shrink:0;width:22px;text-align:center;line-height:1}
+.hero-art-card:hover .hero-art-num{color:rgba(201,151,10,0.6)}
+.hero-art-body{flex:1;display:flex;flex-direction:column;gap:4px}
+.hero-art-cat{font-family:'DM Sans',sans-serif;font-size:0.58rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;white-space:nowrap;width:fit-content;padding:2px 8px;border-radius:20px}
+.cat-psych{background:rgba(107,63,110,0.3);color:#D4A0D7}
+.cat-ped{background:rgba(14,107,124,0.3);color:#7DE0EE}
+.cat-new{background:rgba(201,151,10,0.25);color:#F0BE4A}
+.hero-art-title{font-family:'Playfair Display',serif;font-size:0.9rem;font-weight:700;color:rgba(255,255,255,0.9);line-height:1.3}
+.hero-art-card:hover .hero-art-title{color:#fff}
+.hero-art-arrow{color:var(--gold);font-size:1rem;flex-shrink:0;opacity:0;transform:translateX(-6px);transition:opacity 0.2s,transform 0.2s}
+.hero-art-card:hover .hero-art-arrow{opacity:1;transform:translateX(0)}
 
 /* ===== HERO RIGHT ===== */
 .hero-right{padding:60px;position:relative;z-index:2;display:flex;flex-direction:column;gap:20px}
@@ -274,23 +283,31 @@ footer{background:var(--navy);padding:56px 0 28px}
       <a href="#publications" class="btn-o">Tous les articles</a>
     </div>
 
-    <!-- ARTICLES VISIBLES DANS LE HERO -->
-                                                    <!-- ARTICLES HERO — généré automatiquement par build_hero.py -->
+    <!-- ARTICLES HERO — généré automatiquement par build_hero.py -->
     <p class="hero-art-label">Derniers articles publiés</p>
     <div class="hero-articles">
       <a href="article-constructivisme-afrique.html" class="hero-art-card">
-        <span class="hero-art-cat cat-ped">Pédagogie</span>
-        <span class="hero-art-title">Constructivisme et socioconstructivisme dans nos classes africaines</span>
+        <span class="hero-art-num">01</span>
+        <div class="hero-art-body">
+          <span class="hero-art-cat cat-new">Nouveau</span>
+          <span class="hero-art-title">Constructivisme et socioconstructivisme dans nos classes africaines</span>
+        </div>
         <span class="hero-art-arrow">→</span>
       </a>
-      <a href="article-explicite-constructivisme-senegal.html" class="hero-art-card">
-        <span class="hero-art-cat cat-ped">Pédagogie</span>
-        <span class="hero-art-title">Enseignement explicite ou constructivisme ? Ce que l</span>
+      <a href="interactions-enseignants.html" class="hero-art-card">
+        <span class="hero-art-num">02</span>
+        <div class="hero-art-body">
+          <span class="hero-art-cat cat-ped">Pédagogie</span>
+          <span class="hero-art-title">L'interaction professionnelle : figure de métier de l'enseignant</span>
+        </div>
         <span class="hero-art-arrow">→</span>
       </a>
-      <a href="article-formation-the.html" class="hero-art-card">
-        <span class="hero-art-cat cat-psych">Concept</span>
-        <span class="hero-art-title">La formation autour du thé — Le Couloir du Savoir</span>
+      <a href="article-stivation-milieu-allosterique.html" class="hero-art-card">
+        <span class="hero-art-num">03</span>
+        <div class="hero-art-body">
+          <span class="hero-art-cat cat-psych">Concept</span>
+          <span class="hero-art-title">Pourquoi les inspecteurs apprennent mieux dans les couloirs ?</span>
+        </div>
         <span class="hero-art-arrow">→</span>
       </a>
     </div>
