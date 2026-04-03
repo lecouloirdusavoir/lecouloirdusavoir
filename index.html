@@ -78,13 +78,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 /* ===== HERO ===== */
 .hero{min-height:100vh;margin-top:66px;background:var(--navy);display:grid;grid-template-columns:1fr 1fr;align-items:center;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%, rgba(14,107,124,0.12) 0%, transparent 70%);pointer-events:none}
-.hero-left{padding:36px 60px 36px 80px;position:relative;z-index:2}
-
-/* CAROUSEL DOTS */
-.hero-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.2);border:none;cursor:pointer;padding:0;transition:all 0.3s;display:inline-block;margin-right:6px}
-.hero-dot.on{background:var(--gold);width:16px;border-radius:3px}
-@keyframes fuA{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-.fu{animation:fuA 0.3s ease forwards}
+.hero-left{padding:40px 60px 40px 80px;position:relative;z-index:2}
 .hero-eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:900;color:var(--white);line-height:1.15;margin-bottom:16px}
 .hero h1 em{color:var(--gold);font-style:italic}
@@ -233,6 +227,12 @@ footer{background:var(--navy);padding:56px 0 28px}
   .hero-ctas{flex-direction:column}
   .hero-ctas .btn-p,.hero-ctas .btn-o{text-align:center}
 }
+
+/* CAROUSEL DOTS */
+.hero-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.2);border:none;cursor:pointer;padding:0;transition:all 0.3s}
+.hero-dot.on{background:var(--gold);width:16px;border-radius:3px}
+@keyframes fuA{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.fu{animation:fuA 0.32s ease forwards}
 </style>
 </head>
 <body>
@@ -280,27 +280,36 @@ footer{background:var(--navy);padding:56px 0 28px}
       <a href="#publications" class="btn-o">Tous les articles</a>
     </div>
 
-    <!-- CAROUSEL ARTICLES — rotation automatique -->
-        <!-- ARTICLES HERO — généré automatiquement par build_hero.py -->
-    <p class="hero-art-label">Derniers articles publiés</p>
-    <div class="hero-articles">
-      <a href="article-constructivisme-afrique.html" class="hero-art-card">
-        <span class="hero-art-cat cat-ped">Pédagogie</span>
-        <span class="hero-art-title">Constructivisme et socioconstructivisme dans nos classes africaines</span>
-        <span class="hero-art-arrow">→</span>
-      </a>
-      <a href="article-explicite-constructivisme-senegal.html" class="hero-art-card">
-        <span class="hero-art-cat cat-ped">Pédagogie</span>
-        <span class="hero-art-title">Enseignement explicite ou constructivisme ? Ce que l</span>
-        <span class="hero-art-arrow">→</span>
-      </a>
-      <a href="article-formation-the.html" class="hero-art-card">
-        <span class="hero-art-cat cat-psych">Concept</span>
-        <span class="hero-art-title">La formation autour du thé — Le Couloir du Savoir</span>
-        <span class="hero-art-arrow">→</span>
-      </a>
-    </div>
-    <!-- FIN ARTICLES HERO -->
+    <!-- CAROUSEL ARTICLES — rotation automatique toutes les 5s -->
+    <p class="hero-art-label">À lire sur le site</p>
+    <div class="hero-articles" id="heroArt"></div>
+    <div style="margin-top:10px;display:flex;gap:6px" id="heroDots"></div>
+  </div>
+
+  <div class="hero-right">
+    <svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:520px">
+      <rect x="20" y="20" width="480" height="380" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(201,151,10,0.2)" stroke-width="1"/>
+      <rect x="50" y="40" width="300" height="140" rx="4" fill="#0E3B5C"/>
+      <rect x="56" y="46" width="288" height="128" rx="2" fill="#0A2A40"/>
+      <text x="200" y="90" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#C9970A" font-weight="700">STIvation</text>
+      <text x="200" y="114" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">STImulation + motiVATION + interACTION</text>
+      <text x="200" y="150" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">Mbaye, 2010 — FASTEF/UCAD</text>
+      <circle cx="400" cy="70" r="18" fill="#C9970A" opacity="0.9"/>
+      <rect x="388" y="90" width="24" height="50" rx="4" fill="#1A2E4A"/>
+      <rect x="60" y="360" width="310" height="32" rx="4" fill="rgba(201,151,10,0.08)" stroke="rgba(201,151,10,0.15)" stroke-width="1"/>
+      <text x="215" y="380" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="rgba(255,255,255,0.55)" font-style="italic">« Dans les couloirs, on apprend vraiment »</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== STATS ===== -->
+<div class="stats">
+  <div class="stat reveal"><span class="stat-n">6</span><span class="stat-l">Thématiques</span></div>
+  <div class="stat reveal rd1"><span class="stat-n">3</span><span class="stat-l">Concepts originaux</span></div>
+  <div class="stat reveal rd2"><span class="stat-n">∞</span><span class="stat-l">Interactions étudiées</span></div>
+  <div class="stat reveal rd3"><span class="stat-n">15+</span><span class="stat-l">Années de terrain</span></div>
+  <div class="stat reveal rd4"><span class="stat-n">🧠</span><span class="stat-l">Psychologie appliquée</span></div>
+  <div class="stat reveal rd4"><span class="stat-n">🌍</span><span class="stat-l">Afrique subsaharienne</span></div>
 </div>
 
 <!-- ===== NEWSLETTER BANNER (PROMINENT) ===== -->
@@ -728,48 +737,7 @@ footer{background:var(--navy);padding:56px 0 28px}
 </footer>
 
 <script>
-// ===== CAROUSEL HERO =====
-var ART=[
-  {h:'article-constructivisme-afrique.html',css:'cat-new',cat:'Nouveau',t:'Constructivisme et socioconstructivisme dans nos classes africaines'},
-  {h:'interactions-enseignants.html',css:'cat-ped',cat:'Pédagogie',t:"L'interaction professionnelle : figure de métier de l'enseignant"},
-  {h:'article-stivation-milieu-allosterique.html',css:'cat-psych',cat:'Concept',t:'Pourquoi les inspecteurs apprennent mieux dans les couloirs ?'},
-  {h:'article-formation-the.html',css:'cat-new',cat:'Témoignage',t:'La formation autour du thé'},
-  {h:'article-modele-allosterique-giordan.html',css:'cat-psych',cat:'Psychologie',t:'Le modèle allostérique de Giordan'},
-  {h:'article-styles-apprentissage.html',css:'cat-psych',cat:'Psychologie',t:"Les Styles d'Apprentissage des Élèves"},
-  {h:'article-motivation-intrinseque.html',css:'cat-ped',cat:'Motivation',t:'La motivation intrinsèque'},
-  {h:'article-flow-apprentissage.html',css:'cat-ped',cat:'Motivation',t:"L'état de Flow dans l'apprentissage"},
-  {h:'article-vygotski-afrique.html',css:'cat-psych',cat:'Psychologie',t:'Vygotski en Afrique : la ZPD revisitée'},
-];
-var PP=3,pg=0,tot=Math.ceil(ART.length/PP),tmr=null;
-function renderC(p,an){
-  var b=document.getElementById('heroArt'),d=document.getElementById('heroDots');
-  if(!b)return;
-  b.innerHTML='';
-  ART.slice(p*PP,(p+1)*PP).forEach(function(a,i){
-    var el=document.createElement('a');
-    el.href=a.h;
-    el.className='hero-art-card'+(an?' fu':'');
-    el.style.animationDelay=(i*0.07)+'s';
-    el.innerHTML='<span class="hero-art-cat '+a.css+'">'+a.cat+'</span><span class="hero-art-title">'+a.t+'</span><span class="hero-art-arrow">→</span>';
-    b.appendChild(el);
-  });
-  d.innerHTML='';
-  for(var i=0;i<tot;i++){
-    var btn=document.createElement('button');
-    btn.className='hero-dot'+(i===p?' on':'');
-    (function(x){btn.onclick=function(){clearInterval(tmr);pg=x;renderC(pg,true);startC();};})(i);
-    d.appendChild(btn);
-  }
-}
-function startC(){tmr=setInterval(function(){pg=(pg+1)%tot;renderC(pg,true);},5000);}
-var ha=document.getElementById('heroArt');
-if(ha){
-  ha.addEventListener('mouseenter',function(){clearInterval(tmr);});
-  ha.addEventListener('mouseleave',function(){startC();});
-  renderC(0,false);
-  startC();
-}
-
+// ===== NAV MOBILE =====
 function toggleNav(){
   document.getElementById('mobileNav').classList.toggle('open');
 }
@@ -819,6 +787,51 @@ function envoyerMessage(){
   var texte = encodeURIComponent('Bonjour, je vous écris depuis Le Couloir du Savoir.\n\nNom : ' + prenom + '\nEmail : ' + email + '\nSujet : ' + sujet + '\n\n' + msg);
   window.open('https://wa.me/221763615562?text=' + texte, '_blank');
   document.getElementById('form-ok').style.display = 'block';
+}
+
+// ===== CAROUSEL HERO =====
+var ART=[
+  {h:'article-constructivisme-afrique.html',css:'cat-new',cat:'Nouveau',t:'Constructivisme et socioconstructivisme dans nos classes africaines'},
+  {h:'interactions-enseignants.html',css:'cat-ped',cat:'Pédagogie',t:"L'interaction professionnelle : figure de métier de l'enseignant"},
+  {h:'article-stivation-milieu-allosterique.html',css:'cat-psych',cat:'Concept',t:'Pourquoi les inspecteurs apprennent mieux dans les couloirs ?'},
+  {h:'article-formation-the.html',css:'cat-new',cat:'Témoignage',t:'La formation autour du thé'},
+  {h:'article-modele-allosterique-giordan.html',css:'cat-psych',cat:'Psychologie',t:'Le modèle allostérique de Giordan'},
+  {h:'article-styles-apprentissage.html',css:'cat-psych',cat:'Psychologie',t:"Les Styles d'Apprentissage des Élèves"},
+  {h:'article-motivation-intrinseque.html',css:'cat-ped',cat:'Motivation',t:'La motivation intrinsèque'},
+  {h:'article-flow-apprentissage.html',css:'cat-ped',cat:'Motivation',t:"L'état de Flow dans l'apprentissage"},
+  {h:'article-vygotski-afrique.html',css:'cat-psych',cat:'Psychologie',t:'Vygotski en Afrique : la ZPD revisitée'},
+];
+var PP=3,pg=0,tot=Math.ceil(ART.length/PP),tmr=null;
+function renderC(p,an){
+  var b=document.getElementById('heroArt'),d=document.getElementById('heroDots');
+  if(!b||!d)return;
+  b.innerHTML='';
+  ART.slice(p*PP,(p+1)*PP).forEach(function(a,i){
+    var el=document.createElement('a');
+    el.href=a.h;
+    el.className='hero-art-card'+(an?' fu':'');
+    el.style.animationDelay=(i*0.07)+'s';
+    el.innerHTML='<span class="hero-art-cat '+a.css+'">'+a.cat+'</span>'
+      +'<span class="hero-art-title">'+a.t+'</span>'
+      +'<span class="hero-art-arrow">→</span>';
+    b.appendChild(el);
+  });
+  d.innerHTML='';
+  for(var i=0;i<tot;i++){
+    var btn=document.createElement('button');
+    btn.className='hero-dot'+(i===p?' on':'');
+    btn.setAttribute('aria-label','Page '+(i+1));
+    (function(x){btn.onclick=function(){clearInterval(tmr);pg=x;renderC(pg,true);startC();};})(i);
+    d.appendChild(btn);
+  }
+}
+function startC(){tmr=setInterval(function(){pg=(pg+1)%tot;renderC(pg,true);},5000);}
+var ha=document.getElementById('heroArt');
+if(ha){
+  ha.addEventListener('mouseenter',function(){clearInterval(tmr);});
+  ha.addEventListener('mouseleave',function(){startC();});
+  renderC(0,false);
+  startC();
 }
 </script>
 
