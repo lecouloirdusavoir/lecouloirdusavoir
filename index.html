@@ -24,7 +24,49 @@
 <meta name="twitter:image" content="https://lecouloirdusavoir.com/og-image.jpg"/>
 
 <!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SDJVY86L2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SDJVY86L2">
+// CAROUSEL HERO
+(function(){
+  var ART=[
+    {h:'article-constructivisme-afrique.html',css:'cat-new',cat:'Nouveau',t:'Constructivisme et socioconstructivisme dans nos classes africaines'},
+    {h:'interactions-enseignants.html',css:'cat-ped',cat:'Pédagogie',t:"L'interaction professionnelle : figure de métier de l'enseignant"},
+    {h:'article-stivation-milieu-allosterique.html',css:'cat-psych',cat:'Concept',t:'Pourquoi les inspecteurs apprennent mieux dans les couloirs ?'},
+    {h:'article-formation-the.html',css:'cat-new',cat:'Témoignage',t:'La formation autour du thé'},
+    {h:'article-modele-allosterique-giordan.html',css:'cat-psych',cat:'Psychologie',t:'Le modèle allostérique de Giordan'},
+    {h:'article-styles-apprentissage.html',css:'cat-psych',cat:'Psychologie',t:"Les Styles d'Apprentissage des Élèves"},
+    {h:'article-motivation-intrinseque.html',css:'cat-ped',cat:'Motivation',t:'La motivation intrinsèque'},
+    {h:'article-flow-apprentissage.html',css:'cat-ped',cat:'Motivation',t:"L'état de Flow dans l'apprentissage"},
+    {h:'article-vygotski-afrique.html',css:'cat-psych',cat:'Psychologie',t:'Vygotski en Afrique : la ZPD revisitée'},
+  ];
+  var PP=3,pg=0,tot=Math.ceil(ART.length/PP),tmr=null;
+  function render(p){
+    var b=document.getElementById('heroArt'),d=document.getElementById('heroDots');
+    if(!b||!d)return;
+    b.innerHTML='';
+    ART.slice(p*PP,(p+1)*PP).forEach(function(a){
+      var el=document.createElement('a');
+      el.href=a.h;
+      el.className='hero-art-card';
+      el.innerHTML='<span class="hero-art-cat '+a.css+'">'+a.cat+'</span><span class="hero-art-title">'+a.t+'</span><span class="hero-art-arrow">→</span>';
+      b.appendChild(el);
+    });
+    d.innerHTML='';
+    for(var i=0;i<tot;i++){
+      var btn=document.createElement('button');
+      btn.style.cssText='width:'+(i===p?'16':'6')+'px;height:6px;border-radius:'+(i===p?'3':'50%')+'px;background:'+(i===p?'#C9970A':'rgba(255,255,255,0.25)')+';border:none;cursor:pointer;padding:0;transition:all 0.3s';
+      (function(x){btn.onclick=function(){clearInterval(tmr);pg=x;render(pg);start();};})(i);
+      d.appendChild(btn);
+    }
+  }
+  function start(){tmr=setInterval(function(){pg=(pg+1)%tot;render(pg);},5000);}
+  var box=document.getElementById('heroArt');
+  if(box){
+    box.addEventListener('mouseenter',function(){clearInterval(tmr);});
+    box.addEventListener('mouseleave',function(){start();});
+    render(0);start();
+  }
+})();
+</script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -274,27 +316,10 @@ footer{background:var(--navy);padding:56px 0 28px}
       <a href="#publications" class="btn-o">Tous les articles</a>
     </div>
 
-    <!-- ARTICLES VISIBLES DANS LE HERO -->
-        <!-- ARTICLES HERO — généré automatiquement par build_hero.py -->
-    <p class="hero-art-label">Derniers articles publiés</p>
-    <div class="hero-articles">
-      <a href="article-explicite-constructivisme-senegal.html" class="hero-art-card">
-        <span class="hero-art-cat cat-ped">Pédagogie</span>
-        <span class="hero-art-title">Enseignement explicite ou constructivisme ? Ce que l</span>
-        <span class="hero-art-arrow">→</span>
-      </a>
-      <a href="article-constructivisme-afrique.html" class="hero-art-card">
-        <span class="hero-art-cat cat-ped">Pédagogie</span>
-        <span class="hero-art-title">Constructivisme et socioconstructivisme dans nos classes africaines</span>
-        <span class="hero-art-arrow">→</span>
-      </a>
-      <a href="article-formation-the.html" class="hero-art-card">
-        <span class="hero-art-cat cat-psych">Concept</span>
-        <span class="hero-art-title">La formation autour du thé — Le Couloir du Savoir</span>
-        <span class="hero-art-arrow">→</span>
-      </a>
-    </div>
-    <!-- FIN ARTICLES HERO -->
+    <!-- ARTICLES HERO — rotation automatique -->
+    <p class="hero-art-label">À lire sur le site</p>
+    <div class="hero-articles" id="heroArt"></div>
+    <div style="display:flex;gap:6px;margin-top:10px" id="heroDots"></div>
   </div>
 
   <div class="hero-right">
