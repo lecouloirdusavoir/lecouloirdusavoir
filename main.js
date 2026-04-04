@@ -76,6 +76,68 @@ document.addEventListener('DOMContentLoaded', function () {
     m.content = SEO[page].desc;
   }
 
+  // SCHEMA TDI — injection automatique sur creaq.html et modele-stivation.html
+  const PAGES_TDI = ["creaq.html", "modele-stivation.html"];
+  if (PAGES_TDI.includes(page)) {
+    const tdi = document.createElement('section');
+    tdi.style.cssText = 'padding: 3rem 2rem; max-width: 900px; margin: 0 auto;';
+    tdi.innerHTML =
+      '<div style="text-align:center;margin-bottom:1.5rem;">' +
+        '<p style="font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#00c9a7;margin-bottom:0.5rem;">Outil conceptuel</p>' +
+        '<h2 style="font-family:\'Playfair Display\',serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:700;color:#e8eaf0;margin-bottom:0.8rem;">La Triade Dynamique <em style="color:#00c9a7;font-style:italic;">Intersubjective</em></h2>' +
+        '<p style="font-size:0.95rem;color:#8a92a8;max-width:600px;margin:0 auto;">Trois pôles en interaction permanente. Chaque acteur stimule et est stimulé par les deux autres. C\'est cette dynamique circulaire qui produit la Stivation collective.</p>' +
+      '</div>' +
+      '<div style="background:rgba(14,20,38,0.6);border:1px solid rgba(0,201,167,0.15);border-radius:16px;padding:1.5rem 1rem;">' +
+        '<svg width="100%" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg" style="font-family:\'DM Sans\',sans-serif;">' +
+          '<defs><marker id="arr-tdi" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#00c9a7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>' +
+          '<text x="340" y="20" text-anchor="middle" font-size="15" font-weight="600" fill="#e8eaf0">Triade Dynamique Intersubjective (TDI)</text>' +
+          '<text x="340" y="36" text-anchor="middle" font-size="11" fill="#8a92a8" font-style="italic">Modèle MBM . Le Couloir du Savoir . Kédougou, 2024</text>' +
+          '<rect x="255" y="50" width="170" height="58" rx="8" fill="#0C447C" stroke="#378ADD" stroke-width="0.5"/>' +
+          '<text x="340" y="74" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#E6F1FB">L\'Inspecteur</text>' +
+          '<text x="340" y="92" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#85B7EB">Garant du cadre</text>' +
+          '<rect x="28" y="342" width="196" height="58" rx="8" fill="#085041" stroke="#1D9E75" stroke-width="0.5"/>' +
+          '<text x="126" y="366" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#E1F5EE">Enseignant-Formateur</text>' +
+          '<text x="126" y="384" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#5DCAA5">Relais de proximité</text>' +
+          '<rect x="468" y="342" width="184" height="58" rx="8" fill="#3C3489" stroke="#7F77DD" stroke-width="0.5"/>' +
+          '<text x="560" y="366" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#EEEDFE">Enseignant-Pair</text>' +
+          '<text x="560" y="384" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#AFA9EC">Praticien réflexif</text>' +
+          '<circle cx="340" cy="214" r="60" fill="rgba(0,201,167,0.06)" stroke="rgba(0,201,167,0.25)" stroke-width="0.5" stroke-dasharray="4 3"/>' +
+          '<text x="340" y="206" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#00c9a7">Zone de</text>' +
+          '<text x="340" y="224" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#00c9a7">Stivation</text>' +
+          '<line x1="288" y1="108" x2="206" y2="342" stroke="#00c9a7" stroke-width="1.2" marker-end="url(#arr-tdi)"/>' +
+          '<line x1="224" y1="342" x2="304" y2="108" stroke="#00c9a7" stroke-width="1.2" marker-end="url(#arr-tdi)"/>' +
+          '<line x1="392" y1="108" x2="474" y2="342" stroke="#00c9a7" stroke-width="1.2" marker-end="url(#arr-tdi)"/>' +
+          '<line x1="490" y1="342" x2="408" y2="108" stroke="#00c9a7" stroke-width="1.2" marker-end="url(#arr-tdi)"/>' +
+          '<line x1="224" y1="376" x2="468" y2="376" stroke="#f0b429" stroke-width="1.5" marker-end="url(#arr-tdi)"/>' +
+          '<line x1="468" y1="390" x2="224" y2="390" stroke="#f0b429" stroke-width="1.5" marker-end="url(#arr-tdi)"/>' +
+          '<text x="176" y="200" text-anchor="end" font-size="11" fill="#8a92a8">Impulsion</text>' +
+          '<text x="176" y="216" text-anchor="end" font-size="11" fill="#8a92a8">Régulation</text>' +
+          '<text x="506" y="200" text-anchor="start" font-size="11" fill="#8a92a8">Encadrement</text>' +
+          '<text x="506" y="216" text-anchor="start" font-size="11" fill="#8a92a8">Qualité</text>' +
+          '<text x="346" y="368" text-anchor="middle" font-size="11" fill="#f0b429">Stivation directe</text>' +
+          '<text x="346" y="404" text-anchor="middle" font-size="11" fill="#f0b429">Double Stivation</text>' +
+        '</svg>' +
+      '</div>' +
+      '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem;margin-top:1.2rem;">' +
+        '<div style="background:rgba(14,20,38,0.5);border:1px solid rgba(0,201,167,0.15);border-radius:10px;padding:1rem;">' +
+          '<p style="font-size:0.78rem;font-weight:600;color:#00c9a7;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.4rem;">Stivation directe</p>' +
+          '<p style="font-size:0.85rem;color:#8a92a8;line-height:1.6;">Le formateur stimule son pair dans un cadre sécurisant et sans enjeu évaluatif.</p>' +
+        '</div>' +
+        '<div style="background:rgba(14,20,38,0.5);border:1px solid rgba(0,201,167,0.15);border-radius:10px;padding:1rem;">' +
+          '<p style="font-size:0.78rem;font-weight:600;color:#f0b429;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.4rem;">Double Stivation</p>' +
+          '<p style="font-size:0.85rem;color:#8a92a8;line-height:1.6;">En formant ses pairs, le formateur se forme lui-même de manière réflexive et invisible.</p>' +
+        '</div>' +
+        '<div style="background:rgba(14,20,38,0.5);border:1px solid rgba(0,201,167,0.15);border-radius:10px;padding:1rem;">' +
+          '<p style="font-size:0.78rem;font-weight:600;color:#4f8ef7;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.4rem;">Zone de Stivation</p>' +
+          '<p style="font-size:0.85rem;color:#8a92a8;line-height:1.6;">L\'espace où les trois dynamiques se rencontrent et produisent une transformation durable.</p>' +
+        '</div>' +
+      '</div>';
+
+    const footer = document.querySelector('footer');
+    if (footer) document.body.insertBefore(tdi, footer);
+    else document.body.appendChild(tdi);
+  }
+
   // À LIRE AUSSI — injection automatique en bas de chaque article
   const ARTICLES = [
     { href: "article-motivation-intrinseque.html",    label: "Motivation intrinsèque à l'école" },
@@ -101,11 +163,9 @@ document.addEventListener('DOMContentLoaded', function () {
     { href: "lu-pour-vous.html",                      label: "Lu pour vous — Synthèses de recherches" }
   ];
 
-  // Ne pas afficher le bloc sur ces pages
   const EXCLURE = ["index.html", "a-propos.html", "espace-inspecteurs.html", "témoignages.html", "lexique.html", "politique-confidentialite.html", "qr-code-couloir.html"];
   if (EXCLURE.includes(page)) return;
 
-  // Choisir 3 articles différents de la page actuelle
   const suggestions = ARTICLES.filter(a => a.href !== page);
   const choix = [];
   const indices = new Set();
@@ -129,12 +189,8 @@ document.addEventListener('DOMContentLoaded', function () {
     ).join('') +
     '</ul></div>';
 
-  // Injecter avant le footer ou à la fin du body
-  const footer = document.querySelector('footer');
-  if (footer) {
-    document.body.insertBefore(bloc, footer);
-  } else {
-    document.body.appendChild(bloc);
-  }
+  const footer2 = document.querySelector('footer');
+  if (footer2) document.body.insertBefore(bloc, footer2);
+  else document.body.appendChild(bloc);
 
 });
