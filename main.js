@@ -65,8 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
     "lu-pour-vous.html":                   { title: "Lu pour Vous | Synthèses de recherches en éducation", desc: "Synthèses accessibles de références en sciences de l'éducation pour praticiens d'Afrique francophone." },
     "témoignages.html":                    { title: "Témoignages | Effets du CREAQ et de la Stivation sur le terrain", desc: "Directeurs et enseignants témoignent des effets concrets du CREAQ et de la Stivation au Sénégal." },
     "lexique.html":                        { title: "Lexique Pédagogique | Définitions clés pour l'éducation en Afrique", desc: "Définitions pratiques en didactique, psychologie de l'apprentissage et management scolaire." },
-    "a-propos.html":                       { title: "À Propos | Le Couloir du Savoir", desc: "Plateforme créée par des inspecteurs sénégalais engagés pour la qualité des apprentissages." }
+    "a-propos.html":                          { title: "À Propos | Le Couloir du Savoir", desc: "Plateforme créée par des inspecteurs sénégalais engagés pour la qualité des apprentissages." },
+    "article-constructivisme-afrique.html":   { title: "Construire le savoir ensemble : le socioconstructivisme expliqué aux enseignants", desc: "Pourquoi apprend-on mieux à plusieurs qu'en silence ? Le socioconstructivisme de Vygotski appliqué aux classes du Sénégal." }
   };
+
+  // Unifier / et /index.html
+  if (window.location.pathname === '/') history.replaceState(null, '', '/index.html');
 
   const page = window.location.pathname.split('/').pop() || 'index.html';
   if (SEO[page]) {
