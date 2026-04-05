@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Dans les écoles de formation, qui forme vraiment qui ? | Le Couloir du Savoir</title>
+<meta name="description" content="On entre en formation pour apprendre d'un formateur. On en sort en ayant surtout appris de ses pairs. Ce n'est pas un dysfonctionnement. C'est la Stivation à l'oeuvre. Un article percutant sur l'apprentissage informel en formation professionnalisante, signé MBM."/>
+<meta name="keywords" content="Stivation, formation professionnelle, andragogie, apprentissage entre pairs, formation enseignants, formation inspecteurs, Le Couloir du Savoir, MBM"/>
+<meta property="og:title" content="Dans les écoles de formation, qui forme vraiment qui ?"/>
+<meta property="og:description" content="On entre en formation pour apprendre d'un formateur. On en sort en ayant surtout appris de ses pairs. Ce n'est pas un dysfonctionnement. C'est la Stivation."/>
+<meta property="og:type" content="article"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#003366;--gold:#CC9900;--gl:#f0d060;--cream:#fdf9f2;--text:#1a1a2e;--muted:#5a5a72;--border:#d4b84a;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);line-height:1.85;}
+.site-header{background:var(--navy);padding:.75rem 2rem;display:flex;align-items:center;justify-content:space-between;}
+.site-logo{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.15rem;text-decoration:none;}
+.site-nav a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;margin-left:1.5rem;letter-spacing:.04em;text-transform:uppercase;}
+.site-nav a:hover{color:var(--gold);}
+
+/* HERO */
+.hero{background:var(--navy);color:#fff;padding:5rem 2rem 4rem;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(204,153,0,.04) 40px,rgba(204,153,0,.04) 41px);}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.hero-rubrique{display:inline-block;background:var(--gold);color:var(--navy);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.4rem 1.2rem;margin-bottom:1.8rem;position:relative;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4.5vw,3.2rem);line-height:1.2;max-width:820px;margin:0 auto 1.5rem;position:relative;font-weight:700;}
+.hero h1 em{color:var(--gl);font-style:italic;}
+.hero-chapeau{font-size:1.12rem;color:rgba(255,255,255,.82);max-width:660px;margin:0 auto 2rem;line-height:1.8;position:relative;}
+.hero-meta{font-size:.78rem;color:rgba(255,255,255,.45);letter-spacing:.06em;text-transform:uppercase;position:relative;}
+.hero-meta span{color:var(--gold);margin:0 .4rem;}
+
+/* CORPS */
+.aw{max-width:780px;margin:0 auto;padding:4rem 1.5rem 5rem;}
+.accroche{font-family:'Playfair Display',serif;font-size:1.35rem;font-style:italic;color:var(--navy);border-left:4px solid var(--gold);padding:.9rem 1.6rem;margin-bottom:3rem;line-height:1.65;background:rgba(204,153,0,.06);}
+p{margin-bottom:1.45rem;font-size:1.02rem;}
+.sn{display:inline-block;background:var(--navy);color:var(--gold);font-size:.68rem;font-weight:700;letter-spacing:.1em;padding:.2rem .7rem;margin-bottom:.4rem;text-transform:uppercase;}
+.st{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--navy);margin:3rem 0 1.2rem;padding-bottom:.6rem;border-bottom:2px solid var(--gold);}
+
+/* CHIFFRE CHOC */
+.chiffre-choc{background:var(--navy);color:#fff;padding:2.5rem 2rem;margin:2.5rem 0;text-align:center;}
+.chiffre-choc .nb{font-family:'Playfair Display',serif;font-size:4rem;font-weight:700;color:var(--gold);line-height:1;display:block;margin-bottom:.5rem;}
+.chiffre-choc .nb-label{font-size:.88rem;color:rgba(255,255,255,.75);line-height:1.6;max-width:480px;margin:0 auto;}
+.chiffre-choc .nb-source{font-size:.7rem;color:rgba(255,255,255,.35);margin-top:.8rem;letter-spacing:.06em;text-transform:uppercase;}
+
+/* ENCADRÉS */
+.encadre{border:2px solid var(--gold);padding:1.5rem 1.8rem;margin:2.5rem 0;position:relative;}
+.enc-label{position:absolute;top:-.7rem;left:1.2rem;background:var(--cream);padding:0 .5rem;font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--navy);text-transform:uppercase;}
+.encadre.marine{background:var(--navy);color:#fff;border-color:var(--gold);}
+.encadre.marine .enc-label{background:var(--navy);color:var(--gold);}
+.encadre.marine p{color:rgba(255,255,255,.9);margin-bottom:.9rem;}
+.encadre.marine strong{color:var(--gl);}
+.encadre.focus{background:rgba(0,51,102,.04);}
+
+/* CITATION */
+blockquote{font-family:'Playfair Display',serif;font-size:1.25rem;font-style:italic;color:var(--navy);text-align:center;padding:2.2rem 2rem;margin:2.5rem 0;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);line-height:1.6;}
+blockquote small{display:block;font-family:'Source Serif 4',serif;font-size:.78rem;font-style:normal;color:var(--muted);margin-top:.8rem;letter-spacing:.04em;}
+
+/* PENSEUR */
+.penseur{background:rgba(0,51,102,.06);border-left:4px solid var(--gold);padding:1rem 1.5rem;margin:1.5rem 0;font-size:.95rem;font-style:italic;color:var(--navy);line-height:1.75;}
+.penseur strong{display:block;font-style:normal;font-size:.75rem;color:var(--muted);margin-top:.5rem;text-transform:uppercase;letter-spacing:.06em;}
+
+/* GRILLE PRINCIPES */
+.principes-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0;}
+@media(max-width:580px){.principes-grid{grid-template-columns:1fr;}}
+.principe-card{border:1px solid rgba(0,51,102,.12);padding:1.3rem 1.4rem;position:relative;}
+.principe-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:var(--gold);}
+.principe-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--gold);opacity:.4;line-height:1;margin-bottom:.4rem;}
+.principe-card h4{font-family:'Playfair Display',serif;font-size:.98rem;color:var(--navy);margin-bottom:.5rem;}
+.principe-card p{font-size:.87rem;color:var(--muted);margin-bottom:0;line-height:1.65;}
+
+/* LISTE */
+ul.lp{list-style:none;margin:1rem 0 1.5rem;padding:0;}
+ul.lp li{padding:.65rem 0 .65rem 2rem;position:relative;border-bottom:1px solid rgba(0,51,102,.08);font-size:.97rem;}
+ul.lp li::before{content:'→';position:absolute;left:0;color:var(--gold);font-weight:700;}
+
+/* CONCLUSION */
+.concl{background:var(--navy);color:#fff;padding:3rem 2.5rem;margin:3.5rem 0 2rem;}
+.concl h3{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.4rem;margin-bottom:1.2rem;}
+.concl p{color:rgba(255,255,255,.88);margin-bottom:1rem;line-height:1.85;}
+
+/* AUTEUR */
+.auteur-bloc{border-top:2px solid var(--gold);padding-top:1.5rem;margin-top:2rem;display:flex;align-items:flex-start;gap:1.2rem;}
+.auteur-ini{flex-shrink:0;width:52px;height:52px;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;}
+.auteur-info strong{display:block;color:var(--navy);font-size:.95rem;}
+.auteur-info span{font-size:.82rem;color:var(--muted);line-height:1.5;}
+
+/* PARTAGE */
+.partage{text-align:center;padding:1.5rem 0 3rem;border-top:1px solid rgba(0,51,102,.12);margin-top:2rem;}
+.partage p{font-size:.85rem;color:var(--muted);margin-bottom:.8rem;}
+.btn{display:inline-block;background:#25D366;color:#fff;text-decoration:none;padding:.65rem 1.5rem;font-size:.85rem;font-weight:600;margin:.25rem;}
+.btn.fb{background:#1877f2;}
+
+footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;font-size:.78rem;padding:1.5rem 1rem;}
+footer a{color:var(--gold);text-decoration:none;}
+strong{color:var(--navy);}
+@media(max-width:600px){.site-nav{display:none;}.hero{padding:3rem 1.2rem 2.5rem;}.chiffre-choc .nb{font-size:3rem;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="https://lecouloirdusavoir.com" class="site-logo">Le Couloir du Savoir</a>
+  <nav class="site-nav">
+    <a href="https://lecouloirdusavoir.com/index.html">Accueil</a>
+    <a href="https://lecouloirdusavoir.com/espace-inspecteurs.html">Espace Inspecteurs</a>
+    <a href="https://lecouloirdusavoir.com/creaq.html">CREAQ</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-rubrique">Stivation &amp; Formation professionnelle</div>
+  <h1>Dans les écoles de formation,<br><em>qui forme vraiment qui ?</em></h1>
+  <p class="hero-chapeau">
+    On entre en formation pour apprendre d'un formateur. On en sort en ayant surtout appris de ses pairs. Ce n'est pas un dysfonctionnement. Ce n'est pas un hasard. C'est la Stivation à l'oeuvre. Et la recherche en andragogie le confirme depuis des décennies.
+  </p>
+  <div class="hero-meta">Par <span>MBM &bull; Le Couloir du Savoir</span> &bull; Avril 2026 <span>|</span> Andragogie &amp; Formation professionnalisante</div>
+</section>
+
+<main class="aw">
+
+<p class="accroche">
+  Il y a ce que le programme prévoit. Et il y a ce qui se passe vraiment. Dans toute formation professionnalisante, les apprentissages les plus durables, les plus transformateurs, les plus réellement intégrés ne naissent pas dans la salle de cours. Ils naissent dans le couloir. Dans la chambre du soir. Autour d'un repas. Dans le débat qui s'embrase entre deux séances. C'est là que quelque chose se dépose, pour de bon.
+</p>
+
+<p>
+  Cette réalité, tout formateur la connaît. Tout stagiaire l'a vécue. Mais rares sont ceux qui ont osé la nommer, la théoriser, et en faire un levier délibéré de formation. C'est ce que le modèle Stivation propose depuis 2010. Et c'est ce que cet article entend démontrer : la formation entre pairs n'est pas un à-côté de la formation officielle. Elle en est le coeur battant.
+</p>
+
+<!-- SECTION 1 -->
+<div><div class="sn">Partie 01</div>
+<h2 class="st">Le grand malentendu de la formation professionnelle</h2></div>
+
+<p>
+  Depuis des décennies, les systèmes de formation professionnelle ont construit leur architecture sur un postulat simple : le formateur sait. Le stagiaire vient apprendre. La transmission va du haut vers le bas. Le programme définit ce qui compte. L'évaluation sanctionne ce qui a été retenu.
+</p>
+
+<p>
+  Ce modèle fonctionne. Jusqu'à un certain point. Il transfère des contenus. Il valide des compétences codifiées. Il produit des diplômes. Mais il ne produit pas, à lui seul, des professionnels transformés. Il ne produit pas le changement de posture, la reconfiguration identitaire, la profonde révision de ses représentations que réclame toute formation véritablement professionnalisante.
+</p>
+
+<div class="chiffre-choc">
+  <span class="nb">70 %</span>
+  <span class="nb-label">des apprentissages professionnels durables proviennent de l'expérience et des échanges entre pairs. Seulement 10 % viennent de la formation formelle en salle.</span>
+  <span class="nb-source">Modèle 70/20/10 — Morgan McCall, Lombardo &amp; Eichinger, Center for Creative Leadership</span>
+</div>
+
+<p>
+  Ce chiffre bouleverse. Il ne disqualifie pas la formation formelle. Il la remet à sa juste place. La salle de cours donne le cadre, la terminologie, les repères théoriques. Mais c'est l'échange informel entre pairs, la confrontation des expériences, le débat qui dure après la fin de la séance, qui construisent le professionnel.
+</p>
+
+<!-- SECTION 2 -->
+<div><div class="sn">Partie 02</div>
+<h2 class="st">L'adulte en formation n'est pas un élève agrandi</h2></div>
+
+<p>
+  Pour comprendre pourquoi l'apprentissage entre pairs est si puissant en formation professionnalisante, il faut d'abord comprendre ce qui distingue fondamentalement un adulte en formation d'un enfant à l'école.
+</p>
+
+<p>
+  Malcolm Knowles, père de l'andragogie, l'a formulé avec une clarté qui n'a pas pris une ride : l'adulte n'apprend pas comme un enfant parce qu'il n'est pas un enfant agrandi. Il a une histoire. Il a des représentations solides. Il a une identité professionnelle déjà construite, parfois rigide. Et c'est précisément cette identité qui est en jeu dans toute formation professionnalisante.
+</p>
+
+<div class="principes-grid">
+  <div class="principe-card">
+    <div class="principe-num">01</div>
+    <h4>Le besoin de savoir pourquoi</h4>
+    <p>L'adulte refuse d'apprendre ce dont il ne comprend pas l'utilité. Avant d'absorber un contenu, il pose la question du sens. Son engagement dépend de la réponse.</p>
+  </div>
+  <div class="principe-card">
+    <div class="principe-num">02</div>
+    <h4>L'expérience comme ressource</h4>
+    <p>L'adulte arrive en formation avec un capital d'expériences qui constituent à la fois une ressource et un filtre. Tout nouveau savoir passe par ce filtre avant d'être intégré ou rejeté.</p>
+  </div>
+  <div class="principe-card">
+    <div class="principe-num">03</div>
+    <h4>La résistance au jugement</h4>
+    <p>L'adulte en formation porte son orgueil et ses anxiétés. La peur d'être évalué, jugé, de paraître incompétent peut bloquer totalement l'apprentissage. L'informel lève cette peur.</p>
+  </div>
+  <div class="principe-card">
+    <div class="principe-num">04</div>
+    <h4>L'orientation vers le problème réel</h4>
+    <p>L'adulte apprend mieux à partir de situations concrètes qu'il reconnaît dans son quotidien professionnel. La théorie abstraite ne prend racine que quand elle s'accroche à du vécu.</p>
+  </div>
+</div>
+
+<p>
+  Ces quatre principes andragogiques disent tous la même chose : l'adulte en formation a besoin d'un espace où il peut confronter ce qu'il sait à ce qu'il apprend, sans la pression du jugement institutionnel. Cet espace, c'est précisément celui que le pair lui offre. Pas le formateur, dont le regard évalue. Le pair, dont le regard accompagne.
+</p>
+
+<div class="penseur">
+  L'adulte n'est à l'aise dans l'apprentissage que si le cadre dans lequel il se trouve reste confortable, malléable, sécurisant et surtout informel.
+  <strong>Malcolm Knowles — Fondateur de l'andragogie moderne</strong>
+</div>
+
+<!-- SECTION 3 -->
+<div><div class="sn">Partie 03</div>
+<h2 class="st">Ce qui se passe vraiment dans une promotion de formation</h2></div>
+
+<p>
+  Imaginez une promotion de stagiaires en formation professionnalisante. Ils viennent d'horizons différents. Certains ont dix ans de terrain. D'autres arrivent fraîchement diplômés. Ils ont en commun un objectif, une pression d'examen ou de certification, et un quotidien partagé intense pendant des semaines ou des mois.
+</p>
+
+<p>
+  Dès les premiers jours, quelque chose s'organise spontanément. Les plus expérimentés commencent à expliquer aux autres. Les moins avancés posent les questions que personne n'ose poser en cours. Un concept mal compris en salle de cours se décrypte le soir, en groupe, avec des mots plus simples, des exemples tirés du quotidien, une liberté de parole que le cadre formel n'autorise pas.
+</p>
+
+<div class="encadre focus">
+  <span class="enc-label">Témoignage de terrain</span>
+  <p>
+    Un pair l'a décrit sans connaître le concept. Dans une promotion de formation, les échanges du soir autour d'un réchaud et d'une théière produisaient des apprentissages que les séances du matin ne produisaient pas. Il ne savait pas qu'il décrivait la Stivation. Ses mots en sont pourtant la définition la plus exacte.
+  </p>
+  <p>
+    Car la Stivation n'a pas attendu 2010 pour exister. Elle existait avant d'être nommée, avant d'être théorisée. Ce témoignage en est la preuve vivante : le phénomène précède le concept. On ne l'a pas inventé. On l'a observé, reconnu, puis nommé.
+  </p>
+  <p style="margin-bottom:0">
+    <a href="https://lecouloirdusavoir.com/article-formation-the.html" style="color:var(--navy);font-weight:600;font-size:.93rem;">Lire le témoignage complet → lecouloirdusavoir.com/article-formation-the.html</a>
+  </p>
+</div>
+
+<blockquote>
+  Un stagiaire explique à un pair ce qu'il vient d'apprendre. En l'expliquant, il le comprend vraiment pour la première fois. Le pair qui écoute apprend. Et celui qui explique apprend encore plus.
+  <small>Le mécanisme fondamental de la Double Stivation</small>
+</blockquote>
+
+<p>
+  C'est exactement ce que la recherche en apprentissage informel documente depuis des décennies. <strong>L'apprentissage entre pairs est non intentionnel dans sa forme mais profondément délibéré dans ses effets.</strong> Il se déclenche spontanément parce que les conditions sont réunies : confiance, urgence commune, liberté d'expression, expériences à partager.
+</p>
+
+<p>
+  Et cela vaut pour toutes les formes de formation professionnalisante. La formation d'instituteurs. La formation de professeurs. La formation d'inspecteurs. Les formations dans les centres de formation privés. Les formations continues en entreprise. Partout où des adultes en formation partagent un espace et un objectif commun, la Stivation se produit. Qu'on la nomme ou non.
+</p>
+
+<!-- SECTION 4 -->
+<div><div class="sn">Partie 04</div>
+<h2 class="st">La Stivation : ce que la formation professionnalisante fait sans le savoir</h2></div>
+
+<p>
+  La Stivation est née de l'observation de ce phénomène dans les espaces de formation. Non pas d'une théorie élaborée en bureau, mais d'une observation patiente, répétée, de ce qui se passe dans les marges du programme officiel.
+</p>
+
+<p>
+  Elle repose sur trois forces qui se conjuguent simultanément. La <strong>STImulation</strong> : quelque chose déstabilise l'apprenant, crée une tension cognitive, une question sans réponse immédiate. La <strong>motiVATION</strong> : cette tension ne produit pas de découragement mais d'élan, parce que le groupe donne l'énergie de chercher. L'<strong>interACTION</strong> : la réponse ne vient pas d'un expert mais de l'échange lui-même, de la collision entre des expériences différentes qui produit une compréhension nouvelle.
+</p>
+
+<div class="encadre marine">
+  <span class="enc-label">La Stivation dans les trois temps de la formation</span>
+  <p><strong>Avant la séance.</strong> Les échanges préparatoires entre pairs créent une attente, une mise en tension cognitive. Le stagiaire arrive en cours avec des hypothèses déjà formulées entre pairs. Il est prêt à apprendre parce qu'il a déjà commencé.</p>
+  <p><strong>Pendant la séance.</strong> Les regards échangés, les notes partagées à voix basse, les micro-débats qui s'amorcent : autant de Stivations embryonnaires que le cadre formel contient mais ne peut pas supprimer.</p>
+  <p><strong>Après la séance.</strong> C'est ici que la Stivation s'épanouit pleinement. Libérés du regard institutionnel, les stagiaires reformulent, contestent, valident, enrichissent ce qu'ils viennent d'entendre. <strong>C'est dans cet espace que le savoir se transforme en compétence.</strong></p>
+</div>
+
+<!-- SECTION 5 -->
+<div><div class="sn">Partie 05</div>
+<h2 class="st">Ce que les formateurs et responsables de formation doivent en tirer</h2></div>
+
+<p>
+  La Stivation ne demande pas à être inventée. Elle existe déjà dans toute promotion, dans tout groupe de formation. Ce qu'elle demande, c'est d'être reconnue, valorisée, et délibérément organisée.
+</p>
+
+<p>
+  Un formateur qui comprend la Stivation ne cherche plus à remplir tous les temps de formation. Il ménage des espaces. Il pose des questions sans répondre immédiatement. Il crée des situations qui obligent les stagiaires à se tourner les uns vers les autres avant de se tourner vers lui. Il fait confiance au groupe comme instance de formation.
+</p>
+
+<ul class="lp">
+  <li>
+    <strong>Intégrer des temps de travail entre pairs dans le programme officiel.</strong> Pas comme récréation pédagogique, mais comme dispositif délibéré. Les travaux de groupe, les études de cas collectives, les ateliers de co-résolution sont des Stivations organisées. Ils produisent des apprentissages que l'exposé magistral seul ne peut pas atteindre.
+  </li>
+  <li>
+    <strong>Valoriser l'expérience des stagiaires comme ressource de formation.</strong> Dans toute promotion, il y a des années de terrain accumulées. Cette expérience est une ressource pédagogique que le formateur seul ne peut pas apporter. La mettre en circulation entre pairs, c'est multiplier la puissance formative du groupe.
+  </li>
+  <li>
+    <strong>Créer un climat de sécurité qui lève la peur du jugement.</strong> L'adulte n'apprend vraiment que quand il peut se tromper sans conséquences. Le formateur qui sanctionne l'erreur ferme l'espace de la Stivation. Celui qui traite l'erreur comme une étape normale de l'apprentissage l'ouvre.
+  </li>
+  <li>
+    <strong>Observer et capitaliser ce qui se passe dans les marges.</strong> Les discussions informelles d'une promotion sont une mine d'informations sur ce qui a été vraiment compris, ce qui résiste, ce qui a besoin d'être retravaillé. Un formateur attentif à ces signaux adapte son programme en temps réel.
+  </li>
+  <li>
+    <strong>Organiser des dispositifs d'encadrement par les pairs après la formation.</strong> La Stivation ne s'arrête pas à la fin du stage. Elle peut et doit se prolonger dans les structures d'accueil, à travers les groupes de travail, les cellules d'animation pédagogique, les cercles de qualité. La formation professionnalisante ne se termine pas à la remise du diplôme.
+  </li>
+</ul>
+
+<!-- SECTION 6 -->
+<div><div class="sn">Partie 06</div>
+<h2 class="st">Pourquoi cela vaut autant pour les formations privées que publiques</h2></div>
+
+<p>
+  La Stivation n'est pas un phénomène réservé aux formations publiques institutionnalisées. Elle se produit avec la même intensité dans les centres de formation privés, dans les formations professionnelles continues, dans les programmes de reconversion, dans les formations d'entreprise.
+</p>
+
+<p>
+  Partout où des adultes partagent un objectif de formation, une pression commune et un espace de vie partagé, la Stivation se produit. La question n'est pas de savoir si elle se produit. Elle se produit toujours. La question est de savoir si l'institution de formation en est consciente et si elle choisit de l'organiser ou de la laisser au hasard.
+</p>
+
+<p>
+  Une formation privée qui investit dans des dispositifs d'apprentissage entre pairs, qui ménage des espaces informels structurés, qui valorise l'expérience des stagiaires comme ressource pédagogique, produit des professionnels plus compétents et plus rapidement transformés que celle qui mise uniquement sur la qualité de ses formateurs et de ses contenus.
+</p>
+
+<div class="encadre focus">
+  <span class="enc-label">La question centrale pour tout responsable de formation</span>
+  <p>
+    Votre programme de formation est-il conçu pour que les stagiaires apprennent <em>du</em> formateur ? Ou pour qu'ils apprennent <em>ensemble</em>, avec le formateur comme organisateur de cette dynamique ? La réponse à cette question dit tout de la philosophie pédagogique qui sous-tend votre institution.
+  </p>
+</div>
+
+<div class="concl">
+  <h3>Ce que nous retenons</h3>
+  <p>
+    La formation professionnalisante a longtemps cru que sa valeur résidait dans la qualité de ses formateurs, de ses programmes et de ses évaluations. Ces éléments comptent. Mais ils ne suffisent pas.
+  </p>
+  <p>
+    Ce qui fait la différence entre une formation qui transforme et une formation qui informe, c'est la qualité des interactions entre pairs. C'est la densité des échanges informels. C'est la liberté de se tromper, de reformuler, de confronter, de construire ensemble. C'est, en un mot, la Stivation.
+  </p>
+  <p>
+    Malcolm Knowles l'avait pressenti : l'adulte apprend mieux dans un cadre informel, bienveillant, centré sur ses expériences et ses besoins réels. La Stivation n'est pas une théorie de plus. C'est la mise en forme de ce que chaque formateur observe sur son terrain depuis toujours. Elle lui donne un nom, un cadre conceptuel, et des outils pour en faire un levier délibéré.
+  </p>
+  <p>
+    Dans les écoles de formation, qui forme vraiment qui ? Tout le monde forme tout le monde. C'est là que réside la puissance insoupçonnée de la formation professionnalisante. Et c'est là que la Stivation prend tout son sens.
+  </p>
+</div>
+
+<div class="auteur-bloc">
+  <div class="auteur-ini">MBM</div>
+  <div class="auteur-info">
+    <strong>MBM &bull; Le Couloir du Savoir</strong>
+    <span>Plateforme de ressources pédagogiques pour les professionnels de l'éducation en Afrique subsaharienne.<br>Construite depuis le terrain, par des praticiens engagés.</span>
+  </div>
+</div>
+
+<div class="partage">
+  <p>Cet article vous a interpellé ? Partagez-le avec les formateurs, les directeurs de centre de formation et les responsables pédagogiques.</p>
+  <a class="btn" href="https://wa.me/?text=Dans%20les%20%C3%A9coles%20de%20formation%2C%20qui%20forme%20vraiment%20qui%20%3F%20%E2%80%94%20lecouloirdusavoir.com" target="_blank">&#128232; Partager sur WhatsApp</a>
+  <a class="btn fb" href="https://www.facebook.com/sharer/sharer.php?u=https://lecouloirdusavoir.com" target="_blank">Partager sur Facebook</a>
+</div>
+
+</main>
+<footer><p>&copy; 2026 <a href="https://lecouloirdusavoir.com">Le Couloir du Savoir</a> &mdash; Plateforme pédagogique pour les professionnels de l'éducation au Sénégal et en Afrique subsaharienne.</p></footer>
+</body>
+</html>
