@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>La Stivation numérique : repenser l'apprentissage informel à l'ère de la formation en ligne | Le Couloir du Savoir</title>
+<meta name="description" content="Comment le modèle de la Stivation s'applique à la formation en ligne, au distanciel et aux promotions multinationales. Un article académiquement référencé, destiné aux grandes écoles et instituts de formation, signé MBM."/>
+<meta name="keywords" content="Stivation numérique, formation en ligne, distanciel, social learning, apprentissage informel, FOAD, blended learning, andragogie, Le Couloir du Savoir"/>
+<meta property="og:title" content="La Stivation numérique : repenser l'apprentissage informel à l'ère de la formation en ligne"/>
+<meta property="og:type" content="article"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#003366;--gold:#CC9900;--gl:#f0d060;--cream:#fdf9f2;--text:#1a1a2e;--muted:#5a5a72;--border:#d4b84a;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);line-height:1.9;}
+.site-header{background:var(--navy);padding:.75rem 2rem;display:flex;align-items:center;justify-content:space-between;}
+.site-logo{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.15rem;text-decoration:none;}
+.site-nav a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;margin-left:1.5rem;letter-spacing:.04em;text-transform:uppercase;}
+.site-nav a:hover{color:var(--gold);}
+
+/* HERO */
+.hero{background:var(--navy);color:#fff;padding:5rem 2rem 4.5rem;text-align:center;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(204,153,0,.04) 40px,rgba(204,153,0,.04) 41px);}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.hero-rubrique{display:inline-block;background:var(--gold);color:var(--navy);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.4rem 1.2rem;margin-bottom:1.8rem;position:relative;}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);line-height:1.2;max-width:860px;margin:0 auto 1.5rem;position:relative;font-weight:700;}
+.hero h1 em{color:var(--gl);font-style:italic;}
+.hero-chapeau{font-size:1.08rem;color:rgba(255,255,255,.82);max-width:720px;margin:0 auto 2rem;line-height:1.8;position:relative;}
+.hero-meta{font-size:.78rem;color:rgba(255,255,255,.45);letter-spacing:.06em;text-transform:uppercase;position:relative;}
+.hero-meta span{color:var(--gold);margin:0 .4rem;}
+
+/* CORPS */
+.aw{max-width:780px;margin:0 auto;padding:4rem 1.5rem 6rem;}
+.accroche{font-family:'Playfair Display',serif;font-size:1.35rem;font-style:italic;color:var(--navy);border-left:4px solid var(--gold);padding:.9rem 1.6rem;margin-bottom:3.5rem;line-height:1.7;background:rgba(204,153,0,.06);}
+p{margin-bottom:1.55rem;font-size:1.03rem;}
+.sn{display:inline-block;background:var(--navy);color:var(--gold);font-size:.68rem;font-weight:700;letter-spacing:.1em;padding:.2rem .7rem;margin-bottom:.4rem;text-transform:uppercase;}
+.st{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--navy);margin:3.5rem 0 1.2rem;padding-bottom:.6rem;border-bottom:2px solid var(--gold);}
+
+/* CHIFFRE CHOC */
+.chiffre{background:var(--navy);color:#fff;padding:2.8rem 2rem;margin:3rem 0;text-align:center;}
+.chiffre .nb{font-family:'Playfair Display',serif;font-size:4.5rem;font-weight:700;color:var(--gold);line-height:1;display:block;margin-bottom:.6rem;}
+.chiffre .nb-label{font-size:.95rem;color:rgba(255,255,255,.8);line-height:1.7;max-width:540px;margin:0 auto;}
+.chiffre .nb-source{font-size:.68rem;color:rgba(255,255,255,.32);margin-top:.9rem;letter-spacing:.06em;text-transform:uppercase;font-style:italic;}
+
+/* ENCADRÉS */
+.encadre{border:2px solid var(--gold);padding:1.6rem 1.9rem;margin:3rem 0;position:relative;}
+.enc-label{position:absolute;top:-.75rem;left:1.2rem;background:var(--cream);padding:0 .5rem;font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--navy);text-transform:uppercase;}
+.encadre.marine{background:var(--navy);color:#fff;border-color:var(--gold);}
+.encadre.marine .enc-label{background:var(--navy);color:var(--gold);}
+.encadre.marine p{color:rgba(255,255,255,.9);margin-bottom:1rem;}
+.encadre.marine strong{color:var(--gl);}
+.encadre.focus{background:rgba(0,51,102,.04);}
+
+/* CITATION */
+blockquote{font-family:'Playfair Display',serif;font-size:1.28rem;font-style:italic;color:var(--navy);text-align:center;padding:2.2rem 2rem;margin:3rem 0;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);line-height:1.6;}
+blockquote small{display:block;font-family:'Source Serif 4',serif;font-size:.78rem;font-style:normal;color:var(--muted);margin-top:.9rem;letter-spacing:.04em;}
+
+/* PENSEUR / REF */
+.ref{background:rgba(0,51,102,.05);border-left:4px solid var(--gold);padding:1.1rem 1.6rem;margin:2rem 0;font-size:.95rem;font-style:italic;color:var(--navy);line-height:1.8;}
+.ref strong{display:block;font-style:normal;font-size:.75rem;color:var(--muted);margin-top:.5rem;text-transform:uppercase;letter-spacing:.06em;}
+
+/* MODELE STIVATION NUMÉRIQUE */
+.modele-schema{background:var(--navy);padding:2.5rem 2rem;margin:3rem 0;border:2px solid rgba(204,153,0,.3);}
+.modele-titre{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.15rem;text-align:center;margin-bottom:2rem;}
+.modele-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;}
+@media(max-width:580px){.modele-grid{grid-template-columns:1fr;}}
+.modele-item{text-align:center;padding:1rem;}
+.modele-item .mi-lettre{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--gold);opacity:.7;line-height:1;margin-bottom:.5rem;}
+.modele-item .mi-mot{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.8rem;}
+.modele-item .mi-desc{font-size:.88rem;color:rgba(255,255,255,.82);line-height:1.6;}
+.modele-arrow{display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.5rem;opacity:.5;}
+
+/* BIBLIOGRAPHIE */
+.biblio{border-top:2px solid var(--gold);padding-top:2rem;margin-top:3.5rem;}
+.biblio h3{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);margin-bottom:1.2rem;}
+.biblio p{font-size:.87rem;color:var(--muted);line-height:1.7;margin-bottom:.8rem;padding-left:1.5rem;text-indent:-1.5rem;}
+
+/* CONCLUSION */
+.concl{background:var(--navy);color:#fff;padding:3rem 2.5rem;margin:4rem 0 2rem;}
+.concl h3{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.4rem;margin-bottom:1.2rem;}
+.concl p{color:rgba(255,255,255,.88);margin-bottom:1.1rem;line-height:1.9;}
+
+/* AUTEUR & PARTAGE */
+.auteur-bloc{border-top:2px solid var(--gold);padding-top:1.5rem;margin-top:2rem;display:flex;align-items:flex-start;gap:1.2rem;}
+.auteur-ini{flex-shrink:0;width:52px;height:52px;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;}
+.auteur-info strong{display:block;color:var(--navy);font-size:.95rem;}
+.auteur-info span{font-size:.82rem;color:var(--muted);line-height:1.5;}
+.partage{text-align:center;padding:1.5rem 0 3rem;border-top:1px solid rgba(0,51,102,.12);margin-top:2rem;}
+.partage p{font-size:.85rem;color:var(--muted);margin-bottom:.8rem;}
+.btn{display:inline-block;background:#25D366;color:#fff;text-decoration:none;padding:.65rem 1.5rem;font-size:.85rem;font-weight:600;margin:.25rem;}
+.btn.fb{background:#1877f2;}
+
+footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;font-size:.78rem;padding:1.5rem 1rem;}
+footer a{color:var(--gold);text-decoration:none;}
+strong{color:var(--navy);}
+@media(max-width:600px){.site-nav{display:none;}.hero{padding:3rem 1.2rem 2.5rem;}.chiffre .nb{font-size:3rem;}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="https://lecouloirdusavoir.com" class="site-logo">Le Couloir du Savoir</a>
+  <nav class="site-nav">
+    <a href="https://lecouloirdusavoir.com/index.html">Accueil</a>
+    <a href="https://lecouloirdusavoir.com/espace-inspecteurs.html">Espace Inspecteurs</a>
+    <a href="https://lecouloirdusavoir.com/creaq.html">CREAQ</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-rubrique">Stivation &amp; Formation numérique</div>
+  <h1>La Stivation numérique :<br><em>repenser l'apprentissage informel<br>à l'ère de la formation en ligne</em></h1>
+  <p class="hero-chapeau">
+    La formation à distance a-t-elle supprimé le couloir où naît la Stivation ? Les données de la recherche répondent non. Elles montrent que l'apprentissage informel entre pairs existe en ligne, mais qu'il est invisible, non organisé et que les institutions le laissent au hasard. Cet article propose une extension théorique du modèle et des repères opérationnels pour les grandes écoles et instituts de formation qui ont basculé vers le numérique.
+  </p>
+  <div class="hero-meta">Par <span>MBM &bull; Le Couloir du Savoir</span> &bull; Avril 2026 <span>|</span> Formation numérique &amp; Andragogie</div>
+</section>
+
+<main class="aw">
+
+<p class="accroche">
+  Le modèle de la Stivation est né d'une observation de terrain : les apprentissages les plus durables se produisent dans les espaces informels que l'institution n'a pas prévus. Le couloir, la chambre du soir, la conversation autour d'un repas. La formation à distance a supprimé ces espaces physiques. Mais elle n'a pas supprimé le besoin qui les faisait exister. Et là est toute la question.
+</p>
+
+<p>
+  La formation en ligne s'est développée à une vitesse sans précédent. Accélérée par la crise sanitaire mondiale de 2020, généralisée ensuite par des raisons économiques et géographiques évidentes, elle représente aujourd'hui une part croissante de l'offre de formation des grandes écoles, des instituts privés et des organismes de formation professionnelle continue. Des promotions entières se constituent, se forment et se certifient sans que leurs membres ne se soient jamais rencontrés physiquement. Des apprenants venus de plusieurs pays, parfois de plusieurs continents, partagent les mêmes contenus, les mêmes formateurs et les mêmes objectifs de certification, séparés par des fuseaux horaires et des milliers de kilomètres.
+</p>
+
+<p>
+  Dans ce nouveau paysage, le modèle de la Stivation doit s'interroger lui-même. Non pas pour se rétracter, mais pour s'élargir. Car la question posée est fondamentale : peut-on encore parler de Stivation quand il n'y a plus de couloir ?
+</p>
+
+<div>
+  <div class="sn">Partie 01</div>
+  <h2 class="st">Le paradoxe de la formation en ligne : plus de contenu, moins d'apprentissage profond</h2>
+</div>
+
+<p>
+  La formation en ligne a résolu de nombreux problèmes logistiques. Elle a rendu l'accès au savoir géographiquement et économiquement plus équitable. Elle a permis à des professionnels en activité de se former sans interrompre leur carrière. Elle a démocratisé des certifications autrefois réservées à ceux qui pouvaient se déplacer. Ces acquis sont réels et significatifs.
+</p>
+
+<p>
+  Mais elle a introduit un paradoxe que la recherche documente avec une précision croissante. À mesure que la quantité de contenus disponibles en ligne augmentait exponentiellement, les taux d'achèvement et de rétention déclinaient. Les apprenants accèdent à plus de savoir que jamais. Ils en retiennent proportionnellement moins. Et ils abandonnent massivement.
+</p>
+
+<div class="chiffre">
+  <span class="nb">90 %</span>
+  <span class="nb-label">C'est le taux d'abandon moyen documenté dans les formations en ligne massives ouvertes. Selon une étude de l'Université de Pennsylvanie portant sur plus de 840 000 inscrits, seuls 4 % des participants vont au terme de leur parcours. Le MIT rapporte de son côté des taux de complétion oscillant entre 10 et 15 % pour ses propres formations en ligne.</span>
+  <span class="nb-source">Jordan, K. (2014). Initial trends in enrolment and completion of massive open online courses. International Review of Research in Open and Distance Learning, 15(1), 133–160.</span>
+</div>
+
+<p>
+  Ces chiffres sont éloquents. Mais leur interprétation est plus importante encore que les chiffres eux-mêmes. Pourquoi abandonne-t-on massivement une formation en ligne ? Les données de la DARES et de France Compétences, publiées en 2023, apportent une réponse nette : les formations à distance sont abandonnées neuf fois plus souvent que les formations en présentiel, avec un taux d'abandon de 18 % contre 2 % pour le présentiel. La principale cause invoquée n'est ni la difficulté du contenu ni les contraintes techniques. C'est l'isolement. L'apprenant à distance est seul. Et la solitude, en formation d'adultes, est un facteur d'abandon dont la puissance est systématiquement sous-estimée par les concepteurs de dispositifs.
+</p>
+
+<div class="ref">
+  La formation à distance induit un sentiment d'isolement qui constitue l'un des facteurs les plus déterminants de l'abandon. Ce sentiment est particulièrement prégnant chez les adultes qui n'ont pas internalisé la représentation d'eux-mêmes comme apprenants autonomes.
+  <strong>Papi, C., Sauvé, L., Desjardins, G. et Gérin-Lajoie, S. (2022). « De la multiplicité des facteurs à prendre en compte pour mieux comprendre l'abandon en formation à distance », Distances et médiations des savoirs, n° 37.</strong>
+</div>
+
+<p>
+  Ce résultat entre en résonance directe avec ce que le modèle de la Stivation affirme depuis 2010 : l'adulte apprend par et dans l'interaction. Quand l'interaction disparaît, l'apprentissage profond s'effrite. Ce n'est pas une métaphore pédagogique. C'est un fait empiriquement documenté.
+</p>
+
+<div>
+  <div class="sn">Partie 02</div>
+  <h2 class="st">Ce que la Stivation dit du numérique : le couloir n'est pas un lieu, c'est une fonction</h2>
+</div>
+
+<p>
+  La première erreur de lecture du modèle de la Stivation est de le confondre avec une théorie des couloirs physiques. Le couloir n'est pas le modèle. Il en est la métaphore fondatrice. Ce que le couloir incarne, c'est une fonction précise : l'espace informel d'interaction entre pairs, situé en dehors du cadre prescrit de la formation, où les apprenants parlent librement, confrontent leurs compréhensions, reformulent ce qu'ils n'ont pas compris, débattent de ce qui les a déstabilisés.
+</p>
+
+<p>
+  Cette fonction existe-t-elle en ligne ? La réponse est oui. Mais elle s'exerce dans des espaces que les institutions n'ont pas organisés, qu'elles ne voient pas et qu'elles ne valorisent pas. La recherche commence à les documenter avec précision. Une étude menée à l'Université virtuelle de Côte d'Ivoire, publiée dans la Revue internationale des technologies en pédagogie universitaire, révèle que 88 % des étudiants en formation entièrement en ligne utilisent WhatsApp comme support principal pour leurs travaux de groupe. La même étude confirme que les outils institutionnels fournis par l'établissement sont largement délaissés au profit de ces espaces informels auto-organisés par les apprenants.
+</p>
+
+<div class="ref">
+  Les résultats montrent que les réseaux et médias sociaux sont davantage utilisés par les étudiants pour des raisons liées aux apprentissages que pour des considérations ludiques. Le recours aux groupes de travail informels est la conséquence d'un décalage entre les attentes des étudiants et les outils fournis par les établissements.
+  <strong>Holo et al. (2019) cités dans : Revue internationale des technologies en pédagogie universitaire, Vol. 19, n° 2, 2022. Usages des réseaux et médias sociaux par les étudiants en contexte d'apprentissage à l'Université virtuelle de Côte d'Ivoire.</strong>
+</div>
+
+<p>
+  Ce que cette recherche documente, c'est exactement ce que le modèle de la Stivation prédit. Les apprenants adultes, confrontés à un dispositif formel qui ne leur offre pas suffisamment d'espace d'interaction informelle, créent eux-mêmes cet espace. Ils n'attendent pas que l'institution le leur offre. Ils construisent leur couloir numérique.
+</p>
+
+<blockquote>
+  Les apprenants ne cherchent pas à contourner la formation. Ils cherchent à la vivre pleinement. Et pour cela, ils ont besoin d'un espace que le cours ne leur donne pas : l'espace de l'échange libre entre pairs.
+  <small>Mbaye, M.B. (2010). Interactions entre élèves inspecteurs lors des activités collaboratives en formation initiale. Mémoire CAIEE, Université Cheikh Anta Diop de Dakar. Fondement du concept de Stivation.</small>
+</blockquote>
+
+<div>
+  <div class="sn">Partie 03</div>
+  <h2 class="st">Le couloir numérique : définition et caractéristiques d'un espace de Stivation en ligne</h2>
+</div>
+
+<p>
+  Le couloir numérique est l'ensemble des espaces d'interaction informelle entre pairs qui se constituent spontanément en marge d'une formation en ligne. Il prend des formes multiples selon les contextes : groupes WhatsApp de promotion, fils de discussion privés sur les plateformes de visioconférence, échanges sur les réseaux professionnels, conversations asynchrones sur des forums non institutionnels. Sa caractéristique essentielle est qu'il est auto-organisé, non prescrit et librement investi par les apprenants eux-mêmes.
+</p>
+
+<p>
+  Le couloir numérique partage avec le couloir physique ses trois caractéristiques fondamentales qui sont également les conditions d'émergence de la Stivation. Il est informel, ce qui signifie que l'apprenant y parle librement, sans la contrainte du regard évaluatif de l'institution. Il est entre pairs, ce qui signifie que la relation est horizontale, sans la hiérarchie du formateur. Et il est intense, ce qui signifie que les échanges y sont souvent plus denses et plus directs que dans l'espace formel du cours.
+</p>
+
+<p>
+  Il présente également une caractéristique nouvelle, propre au numérique, que le couloir physique n'avait pas : il est asynchrone. Les apprenants peuvent interagir sans être au même moment dans le même espace. Un apprenant de Dakar peut partager une ressource à 22h, un apprenant de Paris peut y répondre à 7h du matin, un apprenant d'Abidjan peut rebondir sur la réponse en milieu de journée. La Stivation numérique se déploie dans le temps de façon différente de la Stivation physique. Elle est plus lente, plus réflexive, parfois plus profonde.
+</p>
+
+<div class="modele-schema">
+  <div class="modele-titre">La Stivation numérique : les trois piliers reconfigurés</div>
+  <div class="modele-grid">
+    <div class="modele-item">
+      <div class="mi-lettre">STI</div>
+      <div class="mi-mot">Stimulation numérique</div>
+      <div class="mi-desc">Le contenu du cours génère une tension cognitive. L'apprenant cherche à la résoudre non pas seul, mais avec ses pairs. Il sollicite, questionne, partage son inconfort dans l'espace informel numérique. La stimulation n'est plus déclenchée par la rencontre physique mais par la réception d'un contenu qui résiste à la compréhension individuelle.</div>
+    </div>
+    <div class="modele-item">
+      <div class="mi-lettre">VATION</div>
+      <div class="mi-mot">Motivation distribuée</div>
+      <div class="mi-desc">La motivation de l'apprenant en ligne est fragilisée par l'isolement. Elle se régénère dans le groupe de pairs. Voir un pair avancer, recevoir un encouragement, partager une réussite intermédiaire : ces micro-interactions dans le couloir numérique reconstituent la motivation que le cours formel seul ne peut entretenir sur la durée.</div>
+    </div>
+    <div class="modele-item">
+      <div class="mi-lettre">ACTION</div>
+      <div class="mi-mot">Interaction asynchrone</div>
+      <div class="mi-desc">L'interaction entre pairs se produit dans des espaces décalés dans le temps et dans l'espace. Elle est textuelle, vocale, vidéo. Elle traverse les fuseaux horaires. Cette asynchronie n'est pas un défaut : elle permet une réflexivité plus grande que l'interaction spontanée du couloir physique. Le message écrit oblige à formuler, à préciser, à argumenter.</div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="sn">Partie 04</div>
+  <h2 class="st">Ce que la recherche internationale confirme : le social learning numérique est réel mais invisible</h2>
+</div>
+
+<p>
+  Le concept de social learning, développé notamment à partir des travaux d'Albert Bandura sur l'apprentissage social et l'efficacité collective, converge avec le modèle de la Stivation sur un point fondamental : l'apprentissage entre pairs produit des effets que l'apprentissage individuel ne peut pas reproduire. Les recherches récentes en formation numérique confirment et précisent cette convergence.
+</p>
+
+<p>
+  Selon le modèle 70/20/10, élaboré par Morgan McCall, Lombardo et Eichinger au Centre for Creative Leadership, 70 % des apprentissages professionnels durables proviennent de l'expérience directe, 20 % des interactions avec les pairs et les collègues, et seulement 10 % de la formation formelle structurée. Ce ratio, largement repris dans la littérature sur la formation professionnelle, implique une conclusion radicale pour les organismes de formation en ligne : si leur dispositif n'organise que la part formelle de la formation, ils abandonnent au hasard 90 % du processus d'apprentissage. La Stivation numérique, si elle n'est pas délibérément organisée, se produit quand même. Mais elle se produit de façon inégale, non équitable, bénéficiant aux apprenants les plus connectés socialement et laissant les autres dans l'isolement.
+</p>
+
+<div class="ref">
+  Le social learning sur mobile permet aux entreprises d'exploiter le potentiel de l'apprentissage informel entre pairs. Les réseaux sociaux créent des groupes de discussion informels qui génèrent des interactions d'une grande richesse pédagogique, souvent supérieure à celle des modules formels conçus par les ingénieurs pédagogiques.
+  <strong>Bandura, A. (1997). Self-efficacy: The exercise of control. New York: Freeman. Cité dans : SPARTED, « Le social learning sur mobile : favoriser la collaboration en entreprise », 2024.</strong>
+</div>
+
+<p>
+  La recherche menée à l'Université du Québec, publiée sur la plateforme Pédagogie UQ, apporte une précision complémentaire particulièrement pertinente pour les contextes africains et internationaux. Elle documente comment WhatsApp peut être utilisé comme environnement d'apprentissage formel en contexte de formation entièrement à distance. Dans l'Université virtuelle du Sénégal, WhatsApp représente 30 % des usages déclarés des étudiants pour leurs activités d'apprentissage, loin devant les plateformes institutionnelles. Ce résultat dit quelque chose de décisif : les apprenants ne cherchent pas une plateforme sophistiquée. Ils cherchent un espace où l'interaction est facile, immédiate et entre pairs.
+</p>
+
+<div>
+  <div class="sn">Partie 05</div>
+  <h2 class="st">La Stivation transnationale : quand les pairs viennent de pays différents</h2>
+</div>
+
+<p>
+  La dimension internationale des formations en ligne ajoute une complexité supplémentaire que le modèle de la Stivation doit intégrer. Quand les membres d'une promotion viennent de plusieurs pays, ils apportent avec eux des expériences professionnelles, des contextes institutionnels et des cultures d'apprentissage profondément différents. Cette diversité est une richesse pédagogique considérable. Elle est aussi une source potentielle de fragmentation.
+</p>
+
+<p>
+  Dans la Stivation physique, la promotion partage un lieu commun qui crée mécaniquement des points de contact informels. Dans la Stivation transnationale, aucun lieu commun n'existe naturellement. Les apprenants doivent créer eux-mêmes les conditions de la rencontre. Et cette création n'est pas spontanée : elle exige une intention pédagogique délibérée de la part des formateurs et des institutions.
+</p>
+
+<p>
+  Mais la diversité transnationale, quand elle est bien organisée, amplifie les trois piliers de la Stivation de façon remarquable. La STImulation est plus intense : un apprenant ivoirien et un apprenant sénégalais confrontent leurs lectures d'un même concept pédagogique à partir de réalités institutionnelles différentes. Le conflit cognitif est plus riche parce que les représentations de départ sont plus distantes. La motiVATION est renforcée : l'apprenant qui réalise que son expérience de terrain intéresse et nourrit un pair vivant à des milliers de kilomètres de lui vit une reconnaissance professionnelle que nulle note ni nul certificat ne peut reproduire. L'interACTION produit un savoir collectif que nul n'aurait pu construire seul : la somme des expériences de terrain d'une promotion internationale est une ressource encyclopédique vivante.
+</p>
+
+<div class="encadre marine">
+  <span class="enc-label">La Triade Dynamique Intersubjective (TDI) en contexte numérique transnational</span>
+  <p>
+    La TDI, troisième concept développé par le modèle de la Stivation, décrit l'architecture relationnelle à trois pôles interdépendants dans laquelle chaque acteur apprend de l'autre. En contexte transnational, cette triade prend une configuration nouvelle.
+  </p>
+  <p>
+    <strong>L'apprenant-formateur</strong> n'est plus seulement celui qui connaît le contenu. Il est aussi celui qui connaît son contexte institutionnel national, et cette connaissance est une ressource pour les autres.
+  </p>
+  <p>
+    <strong>Le pair-ressource</strong> devient un pair-monde : son expérience d'un autre système éducatif, d'une autre politique de formation, d'une autre réalité socio-économique enrichit la réflexion collective d'une façon que nul manuel ne peut reproduire.
+  </p>
+  <p>
+    <strong>Le formateur-médiateur</strong> n'est plus un transmetteur de savoir. Il est l'architecte des conditions dans lesquelles la TDI peut se déployer entre des apprenants géographiquement dispersés mais intellectuellement solidaires.
+  </p>
+</div>
+
+<div>
+  <div class="sn">Partie 06</div>
+  <h2 class="st">Ce que les grandes écoles et instituts de formation doivent changer : de la logistique à l'ingénierie de la Stivation</h2>
+</div>
+
+<p>
+  La plupart des grandes écoles et instituts de formation qui ont basculé vers le distanciel ont résolu les problèmes logistiques : plateformes LMS, outils de visioconférence, modules asynchrones, évaluations en ligne. Ces investissements étaient nécessaires. Ils ne sont pas suffisants.
+</p>
+
+<p>
+  Ce qu'ils ont rarement résolu, c'est la question de l'ingénierie de l'interaction informelle. Comment s'assurer que les apprenants d'une promotion en ligne développeront les liens de pairs qui permettent à la Stivation de se produire ? Comment organiser ce qui, en présentiel, se produisait naturellement dans les espaces non prescrits de la vie commune ? Comment ne pas laisser au hasard et à l'initiative individuelle des apprenants ce qui constitue 20 % du processus d'apprentissage selon le modèle 70/20/10 ?
+</p>
+
+<p>
+  La réponse ne consiste pas à formaliser l'informel au point de le tuer. Plusieurs études le confirment : le social learning perd sa puissance dès qu'il est trop structuré, trop prescrit, trop évalué. L'enjeu est de créer les conditions de l'informel sans prétendre le contrôler. C'est une posture pédagogique subtile, qui demande une réelle compétence en ingénierie de formation.
+</p>
+
+<div class="encadre focus">
+  <span class="enc-label">Repères opérationnels pour l'ingénierie de la Stivation numérique</span>
+  <p>
+    <strong>Constituer des groupes de pairs stables dès le début de la formation.</strong> Pas des groupes de travail ad hoc pour une tâche précise. Des groupes de vie de promotion, de taille réduite (cinq à sept personnes), aux compétences et aux contextes délibérément diversifiés, qui traversent toute la durée de la formation. Ces groupes sont les cellules de base de la Stivation numérique. Ils doivent avoir leur propre espace d'échange, distinct de la plateforme pédagogique institutionnelle, pour que l'informel puisse y circuler librement.
+  </p>
+  <p>
+    <strong>Organiser des temps synchrones à faible pression évaluative.</strong> Les séances de cours en visioconférence sont des espaces formels. Il faut des espaces synchrones informels : des débriefings courts après les séances, des cafés virtuels de promotion, des moments où la question posée n'appelle pas une bonne réponse mais une réaction authentique. C'est dans ces espaces que la motiVATION se reconstitue et que la STImulation se déploie librement.
+  </p>
+  <p>
+    <strong>Valoriser institutionnellement ce qui se produit dans le couloir numérique.</strong> Non pas en l'évaluant, ce qui le détruirait, mais en le rendant visible. Un formateur qui dit en séance plénière "je vois que vous avez beaucoup échangé sur ce point dans vos groupes" reconnaît l'existence du couloir numérique et lui donne une légitimité pédagogique. Cette reconnaissance change la posture des apprenants vis-à-vis de leurs propres interactions informelles.
+  </p>
+  <p>
+    <strong>Former les formateurs à l'animation de l'interaction en ligne.</strong> Animer un cours en ligne et animer une communauté d'apprentissage en ligne sont deux compétences distinctes. La première est centrée sur la transmission du contenu. La seconde est centrée sur la qualité des interactions entre apprenants. Les grandes écoles qui investissent dans la deuxième compétence constatent des résultats significativement différents en termes de persévérance et d'engagement des apprenants.
+  </p>
+</div>
+
+<div>
+  <div class="sn">Partie 07</div>
+  <h2 class="st">Vers un modèle hybride : la Stivation comme architecture de toutes les modalités de formation</h2>
+</div>
+
+<p>
+  La réflexion menée ici conduit à une proposition théorique centrale : la Stivation n'est pas une théorie de la formation en présentiel à laquelle on adapte difficilement les contraintes du distanciel. C'est une théorie de l'apprentissage informel entre pairs adultes qui s'applique à toutes les modalités de formation, à condition que ses conditions d'émergence soient réunies.
+</p>
+
+<p>
+  Ces conditions sont au nombre de trois et elles sont indépendantes du lieu physique ou numérique. La première est la présence d'un espace d'interaction informelle, non prescrit et libéré de la pression évaluative. La deuxième est la densité de la relation entre pairs, c'est-à-dire la qualité de la confiance mutuelle qui permet l'échange authentique. La troisième est la pression partagée d'un objectif commun, qui crée la tension cognitive dont la Stivation a besoin pour se déclencher. En présentiel, ces trois conditions sont souvent réunies naturellement. En distanciel, elles doivent être délibérément organisées.
+</p>
+
+<p>
+  Le blended learning, qui combine présentiel et distanciel dans un même parcours de formation, offre à ce titre une configuration particulièrement favorable à la Stivation. Les temps en présentiel permettent de construire la relation de confiance entre pairs qui rendra les interactions à distance plus intenses et plus profondes. Les temps en distanciel, libérés de la contrainte géographique, permettent une Stivation asynchrone qui se déploie sur des durées et des profondeurs inaccessibles au couloir physique. La complémentarité entre les deux modalités n'est pas additive. Elle est multiplicative.
+</p>
+
+<div class="ref">
+  Un programme de blended learning peut combiner en ligne et hors ligne, individuel et collaboratif, contenu formel et informel, théorie et pratique. Cette combinaison ne se contente pas d'ajouter des modalités : elle crée des synergies pédagogiques que chaque modalité seule ne peut pas produire.
+  <strong>Charlier, B. et al. (2006), cités dans : « Vers un monde digitalisé de la formation ? », Revue Projectique, n° 2, 2021.</strong>
+</div>
+
+<div class="concl">
+  <h3>Conclusion : ce que la Stivation dit aux institutions de formation numérique</h3>
+  <p>
+    Le modèle de la Stivation, né en 2010 de l'observation des interactions informelles dans les espaces de formation, n'est pas remis en cause par la révolution numérique. Il est confirmé par elle. Les données de la recherche internationale convergent vers un diagnostic que la Stivation formulait déjà : les apprentissages les plus durables se produisent dans les interactions entre pairs, et non dans la réception passive de contenus, qu'ils soient présentés en salle ou sur un écran.
+  </p>
+  <p>
+    Ce que la formation en ligne a révélé, c'est l'enjeu de l'organisation délibérée de ces interactions. En présentiel, l'institution pouvait se permettre de les ignorer : elles se produisaient de toute façon, dans les couloirs, les cafétérias, les chambres. En distanciel, l'institution n'a plus ce luxe. Si elle n'organise pas les conditions de la Stivation numérique, elle laisse 20 % du processus d'apprentissage au hasard et à l'inégalité. Et dans un contexte où les taux d'abandon de la formation à distance atteignent 18 % selon les données de la DARES (2023), ce n'est pas un détail pédagogique. C'est un enjeu de performance institutionnelle.
+  </p>
+  <p>
+    Les grandes écoles et instituts de formation qui comprendront cela et qui investiront dans l'ingénierie de la Stivation numérique ne feront pas seulement de la bonne pédagogie. Ils construiront un avantage compétitif durable dans un marché de la formation en ligne qui cherche encore, souvent à tâtons, comment faire de la qualité à distance.
+  </p>
+  <p>
+    Le couloir n'a pas disparu. Il a changé d'adresse. Il appartient aux institutions de le trouver, de le nommer et de le cultiver.
+  </p>
+</div>
+
+<!-- BIBLIOGRAPHIE -->
+<div class="biblio">
+  <h3>Références bibliographiques</h3>
+  <p>Bandura, A. (1997). <em>Self-efficacy: The exercise of control</em>. New York: Freeman.</p>
+  <p>Charlier, B. et al. (2006). Cité dans : « Vers un monde digitalisé de la formation ? », <em>Revue Projectique</em>, n° 2, 2021.</p>
+  <p>DARES et France Compétences (2023). « Quels sont les usages du compte personnel de formation ? » Paris : Ministère du Travail.</p>
+  <p>Holo et al. (2019). Cités dans : « Usages des réseaux et médias sociaux par les étudiants en contexte d'apprentissage à l'UVCI », <em>Revue internationale des technologies en pédagogie universitaire</em>, Vol. 19, n° 2, 2022.</p>
+  <p>Jordan, K. (2014). Initial trends in enrolment and completion of massive open online courses. <em>The International Review of Research in Open and Distributed Learning</em>, 15(1).</p>
+  <p>Knowles, M. S. (1980). <em>The modern practice of adult education: From pedagogy to andragogy</em>. Chicago: Association Press.</p>
+  <p>Lombardo, M. M., & Eichinger, R. W. (1996). <em>The Career Architect Development Planner</em>. Minneapolis: Lominger. [Modèle 70/20/10, Centre for Creative Leadership]</p>
+  <p>Mbaye, M. B. (2010). <em>Interactions entre élèves inspecteurs lors des activités collaboratives en formation initiale</em>. Mémoire CAIEE, UCAD, Dakar. [Texte fondateur de la Stivation]</p>
+  <p>Papi, C., Sauvé, L., Desjardins, G. et Gérin-Lajoie, S. (2022). « De la multiplicité des facteurs à prendre en compte pour mieux comprendre l'abandon en formation à distance », <em>Distances et médiations des savoirs</em>, n° 37.</p>
+  <p>Adjanohoun, J. et Agbanglanon, S. L. (2022). « Déterminants de l'acceptation des réseaux sociaux pour apprendre à l'université virtuelle du Sénégal ». <em>Revue internationale des technologies en pédagogie universitaire</em>, 19(2), 7-24. https://doi.org/10.18162/ritpu-2022-v19n2-02</p>
+  <p>Vygotski, L. S. (1978). <em>Mind in Society: The Development of Higher Psychological Processes</em>. Cambridge: Harvard University Press.</p>
+  <p>Willging, P. A., & Johnson, S. D. (2004). Factors that influence students' decision to dropout of online courses. <em>Journal of Asynchronous Learning Networks</em>, 8(4), 105-118.</p>
+</div>
+
+<div class="auteur-bloc">
+  <div class="auteur-ini">MBM</div>
+  <div class="auteur-info">
+    <strong>MBM &bull; Le Couloir du Savoir</strong>
+    <span>Concepteur du modèle de la Stivation (2010), du CREAQ (2015) et de la Triade Dynamique Intersubjective (2019).<br>Plateforme de ressources pédagogiques pour les professionnels de l'éducation en Afrique subsaharienne.</span>
+  </div>
+</div>
+
+<div class="partage">
+  <p>Cet article vous a interpellé ? Partagez-le avec les responsables de formation et les directeurs pédagogiques.</p>
+  <a class="btn" href="https://wa.me/?text=La%20Stivation%20num%C3%A9rique%20%3A%20repenser%20l%27apprentissage%20informel%20%C3%A0%20l%27%C3%A8re%20de%20la%20formation%20en%20ligne%20%E2%80%94%20lecouloirdusavoir.com" target="_blank">&#128232; Partager sur WhatsApp</a>
+  <a class="btn fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com" target="_blank">Partager sur Facebook</a>
+</div>
+
+</main>
+<footer><p>&copy; 2026 <a href="https://lecouloirdusavoir.com">Le Couloir du Savoir</a> &mdash; Plateforme pédagogique pour les professionnels de l'éducation au Sénégal et en Afrique subsaharienne.</p></footer>
+</body>
+</html>
