@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognition et conation : les deux moteurs de l'élève | Le Couloir du Savoir</title>
+  <meta name="description" content="Sans conation, la cognition tourne à vide. Découvrez ces deux piliers psychologiques et leurs implications pédagogiques dans nos classes africaines.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --vert-fonce: #1a3a2a;
+      --vert-moyen: #2d6a4f;
+      --vert-clair: #52b788;
+      --vert-pale: #d8f3dc;
+      --or: #c9a84c;
+      --or-clair: #f4e4b0;
+      --texte: #1c1c1c;
+      --texte-secondaire: #4a4a4a;
+      --fond: #faf9f6;
+      --fond-carte: #ffffff;
+      --bordure: #e0ddd5;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background-color: var(--fond);
+      color: var(--texte);
+      line-height: 1.85;
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    /* HEADER */
+    .site-header {
+      background-color: var(--vert-fonce);
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .site-header .logo {
+      color: var(--or);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+    .site-header nav a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.82rem;
+      margin-left: 1.8rem;
+      font-family: 'Source Serif 4', serif;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .site-header nav a:hover { color: var(--or); }
+
+    /* HERO */
+    .hero {
+      background-color: var(--vert-fonce);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 60% 40%, rgba(82,183,136,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-serie {
+      display: inline-block;
+      background-color: var(--or);
+      color: var(--vert-fonce);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 2px;
+      margin-bottom: 2rem;
+      font-family: 'Source Serif 4', serif;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 4vw, 2.7rem);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.25;
+      max-width: 780px;
+      margin: 0 auto 1.5rem;
+    }
+    .hero h1 em {
+      color: var(--vert-clair);
+      font-style: italic;
+    }
+    .hero-meta {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    /* ARTICLE */
+    .article-wrapper {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+
+    .article-wrapper p {
+      margin-bottom: 1.6rem;
+      color: var(--texte);
+    }
+
+    /* CHAPEAU INTRO */
+    .chapeau {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--texte-secondaire);
+      border-left: 3px solid var(--vert-clair);
+      padding-left: 1.4rem;
+      margin-bottom: 2.8rem;
+      line-height: 1.9;
+    }
+
+    /* TITRES DE SECTION */
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--vert-fonce);
+      margin: 3.5rem 0 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--vert-pale);
+      line-height: 1.3;
+    }
+
+    /* CITATION ENCADRÉE */
+    .citation-cle {
+      background-color: var(--vert-pale);
+      border-left: 4px solid var(--vert-moyen);
+      border-radius: 0 6px 6px 0;
+      padding: 1.4rem 1.8rem;
+      margin: 2.2rem 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--vert-fonce);
+      font-weight: 600;
+      line-height: 1.55;
+      position: relative;
+    }
+    .citation-cle::before {
+      content: 'À retenir';
+      display: block;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--vert-moyen);
+      margin-bottom: 0.6rem;
+    }
+
+    /* FORMULE PRINCIPALE */
+    .formule {
+      background-color: var(--vert-fonce);
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 1.8rem 2rem;
+      margin: 2.2rem 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.55;
+      text-align: center;
+    }
+    .formule span {
+      color: var(--vert-clair);
+    }
+
+    /* GESTES PÉDAGOGIQUES */
+    .geste {
+      border-left: 3px solid var(--or);
+      padding: 0.2rem 0 0.2rem 1.4rem;
+      margin: 1.8rem 0;
+    }
+    .geste strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--vert-fonce);
+      margin-bottom: 0.5rem;
+    }
+
+    /* SIGNAUX COGNITIF / CONATIF */
+    .signal-bloc {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 2rem 0;
+    }
+    .signal-card {
+      border-radius: 8px;
+      padding: 1.4rem 1.5rem;
+    }
+    .signal-card.cognitif {
+      background-color: #eff6ff;
+      border-top: 3px solid #3b82f6;
+    }
+    .signal-card.conatif {
+      background-color: var(--or-clair);
+      border-top: 3px solid var(--or);
+    }
+    .signal-card .label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.7rem;
+      font-family: 'Source Serif 4', serif;
+      display: block;
+    }
+    .signal-card.cognitif .label { color: #1e40af; }
+    .signal-card.conatif .label { color: #7c4f00; }
+    .signal-card p {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--texte-secondaire);
+      margin-bottom: 0;
+    }
+    .signal-card .action {
+      margin-top: 0.8rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--texte);
+    }
+
+    @media (max-width: 560px) {
+      .signal-bloc { grid-template-columns: 1fr; }
+    }
+
+    /* TABLEAU DIAGNOSTIC */
+    .tableau-wrapper {
+      overflow-x: auto;
+      margin: 2rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    thead tr {
+      background-color: var(--vert-fonce);
+      color: #ffffff;
+    }
+    thead th {
+      padding: 0.9rem 1.2rem;
+      text-align: left;
+      font-family: 'Source Serif 4', serif;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+    }
+    tbody tr:nth-child(even) { background-color: var(--vert-pale); }
+    tbody tr:nth-child(odd) { background-color: var(--fond-carte); }
+    tbody td {
+      padding: 0.9rem 1.2rem;
+      border-bottom: 1px solid var(--bordure);
+      color: var(--texte-secondaire);
+      vertical-align: top;
+    }
+    tbody td:first-child {
+      font-style: italic;
+      color: var(--texte);
+      font-size: 0.88rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.22rem 0.7rem;
+      border-radius: 3px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .badge-cognitif { background-color: #dbeafe; color: #1e40af; }
+    .badge-conatif  { background-color: var(--or-clair); color: #7c4f00; }
+
+    /* BLOC STIVATION */
+    .stivation-bloc {
+      background-color: var(--vert-fonce);
+      border-radius: 10px;
+      padding: 2.4rem;
+      margin: 2.5rem 0;
+      color: rgba(255,255,255,0.88);
+    }
+    .stivation-bloc h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--vert-clair);
+      margin-bottom: 1rem;
+      font-style: italic;
+      font-weight: 600;
+    }
+    .stivation-bloc p {
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 1.2rem;
+      font-size: 0.95rem;
+    }
+    .stivation-piliers {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.6rem;
+      flex-wrap: wrap;
+    }
+    .pilier {
+      flex: 1;
+      min-width: 150px;
+      background-color: rgba(255,255,255,0.07);
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      border-top: 2px solid var(--or);
+    }
+    .pilier strong {
+      display: block;
+      color: var(--or);
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+    }
+    .pilier span {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+    }
+
+    /* SÉPARATEUR SECTION */
+    .separateur {
+      border: none;
+      border-top: 1px solid var(--bordure);
+      margin: 3rem 0;
+    }
+
+    /* SIGNATURE AUTEUR */
+    .signature {
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 2px solid var(--vert-pale);
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+    }
+    .signature-initiales {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: var(--vert-fonce);
+      color: var(--or);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      letter-spacing: 0.04em;
+    }
+    .signature-texte .nom {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--vert-fonce);
+    }
+    .signature-texte .titre {
+      font-size: 0.82rem;
+      color: var(--texte-secondaire);
+      font-weight: 300;
+      margin-top: 0.2rem;
+      line-height: 1.5;
+    }
+    .signature-texte .site {
+      font-size: 0.8rem;
+      color: var(--vert-moyen);
+      font-weight: 600;
+      margin-top: 0.3rem;
+      letter-spacing: 0.02em;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background-color: var(--vert-fonce);
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 2.2rem 2rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+    }
+    .site-footer a {
+      color: var(--or);
+      text-decoration: none;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .site-header { flex-direction: column; align-items: flex-start; }
+      .site-header nav a:first-child { margin-left: 0; }
+      .hero { padding: 3.5rem 1.4rem 3rem; }
+      .article-wrapper { padding: 2.5rem 1.4rem 4rem; }
+      .stivation-piliers { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="index.html" class="logo">Le Couloir du Savoir</a>
+    <nav>
+      <a href="#">Pédagogie</a>
+      <a href="#">Psychologie</a>
+      <a href="#">Formation</a>
+      <a href="article1_stivation.html">Stivation</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-serie">Comprendre pour mieux enseigner</div>
+    <h1>Vous enseignez à des cerveaux, c'est bien.<br><em>Mais sans conation, la cognition tourne à vide.</em></h1>
+    <p class="hero-meta">Psychologie et pédagogie &nbsp;|&nbsp; MBM &nbsp;|&nbsp; lecouloirdusavoir.com</p>
+  </div>
+
+  <!-- ARTICLE -->
+  <main class="article-wrapper">
+
+    <p class="chapeau">Avant d'être des outils pédagogiques, la cognition et la conation sont des apports de la psychologie scientifique. Ils décrivent deux dimensions fondamentales de tout être humain en situation d'apprentissage, qu'il ait sept ans ou quarante. Les ignorer, c'est enseigner à moitié.</p>
+
+    <p>Il y a une scène que tout enseignant connaît. Un élève intelligent, capable, qui comprend la leçon quand on la lui explique... mais qui ne rend jamais ses travaux, abandonne au premier obstacle, regarde par la fenêtre. Frustrant ? Oui. Mystérieux ? Non, à condition de connaître deux concepts fondamentaux que la psychologie nous offre pour mieux comprendre le fonctionnement humain : la cognition et la conation.</p>
+
+    <!-- SECTION 1 -->
+    <h2>Le concept que tout le monde utilise sans toujours le nommer</h2>
+
+    <p>La <strong>cognition</strong> regroupe tout ce qui relève du percevoir, mémoriser, raisonner, analyser et résoudre. La psychologie cognitive, qui l'a formalisée et étudiée rigoureusement depuis les années 1960, a profondément reconfiguré la pédagogie mondiale, et à juste titre. Comprendre comment le cerveau humain traite l'information a permis d'améliorer considérablement les méthodes d'enseignement.</p>
+
+    <p>Aujourd'hui, la cognition est au cœur du discours pédagogique officiel. Les programmes scolaires, les formations d'enseignants, les guides pédagogiques parlent tous de "compétences", d'"objectifs cognitifs", de "niveaux de Bloom". Quand un inspecteur observe une classe, il regarde si les élèves comprennent, si le contenu est bien structuré, si la progression est logique. La cognition est devenue le référentiel dominant.</p>
+
+    <p>Mais cette domination a un angle mort.</p>
+
+    <!-- SECTION 2 -->
+    <h2>L'autre moteur : présent partout, nommé nulle part</h2>
+
+    <p>La <strong>conation</strong> est elle aussi un concept issu de la psychologie, et non des moindres. Elle désigne la dimension volitive de la vie psychique : la volonté, l'effort, la motivation, la persévérance et la décision de s'engager ou de décrocher. La psychologie de la motivation, depuis les travaux de Deci et Ryan sur l'autodétermination jusqu'aux recherches de Bandura sur le sentiment d'efficacité personnelle, en a fait un champ d'étude majeur.</p>
+
+    <div class="citation-cle">La conation n'est pas un simple accompagnement de la cognition. Elle en est la condition.</div>
+
+    <p>Et pourtant, elle est rarement citée par son nom dans les salles de classe ou les réunions pédagogiques. Ce que la psychologie a formalisé sous ce terme, les enseignants expérimentés le pratiquent instinctivement, par intuition professionnelle accumulée, sans toujours savoir qu'ils travaillent sur la vie conative de leurs élèves.</p>
+
+    <p>Quand un maître commence sa leçon par une devinette ou une histoire locale pour accrocher les élèves, c'est de la conation. Quand un enseignant félicite publiquement un élève qui a progressé, même modestement, c'est de la conation. Quand un formateur propose un défi à relever en groupe plutôt qu'un exercice individuel, c'est de la conation. Quand on dit à un élève "tu es capable, j'y crois", c'est de la conation.</p>
+
+    <p>Ces gestes existent dans toutes les classes africaines. Mais faute d'un cadre conceptuel pour les nommer, ils restent invisibles, non transmissibles, non évaluables et souvent abandonnés sous la pression du programme à terminer.</p>
+
+    <div class="citation-cle">Nommer la conation grâce à la psychologie, c'est rendre visible et légitime ce qui fonctionnait déjà.</div>
+
+    <!-- SECTION 3 -->
+    <h2>Pourquoi la distinction est cruciale dans nos contextes</h2>
+
+    <div class="formule">
+      <span>La cognition, c'est le logiciel.</span><br>
+      La conation, c'est le courant électrique.<br>
+      <span>Sans courant, le meilleur logiciel ne démarre pas.</span>
+    </div>
+
+    <p>Dans nos classes, avec des élèves qui jonglent entre école et responsabilités familiales, la conation est soumise à des pressions particulières. Un élève qui a aidé aux champs le matin, traversé plusieurs kilomètres pour rejoindre l'école, ou qui supporte la peur d'être sanctionné, arrive en classe avec une réserve d'énergie conative déjà entamée. La psychologie nous apprend que dans ces conditions, aucune stratégie purement cognitive ne suffira. Lui reprocher son manque de volonté sans comprendre ce contexte, c'est diagnostiquer une panne sans regarder le moteur.</p>
+
+    <!-- SECTION 4 -->
+    <h2>Comment reconnaître la différence dans sa classe</h2>
+
+    <p>Un enseignant attentif peut apprendre à lire ses élèves à travers ce double regard.</p>
+
+    <div class="signal-bloc">
+      <div class="signal-card cognitif">
+        <span class="label">Signal cognitif</span>
+        <p>L'élève pose des questions, hésite, se trompe dans le raisonnement, confond les étapes. Il lui manque un outil intellectuel.</p>
+        <p class="action">Action : reformuler, illustrer, simplifier.</p>
+      </div>
+      <div class="signal-card conatif">
+        <span class="label">Signal conatif</span>
+        <p>L'élève comprend quand on l'interroge directement, mais n'agit pas de lui-même. Il attend, évite, abandonne au premier obstacle.</p>
+        <p class="action">Action : redonner du sens, valoriser, encourager.</p>
+      </div>
+    </div>
+
+    <div class="citation-cle">Savoir lire cette différence entre signal cognitif et signal conatif, c'est déjà changer de posture.</div>
+
+    <!-- SECTION 5 -->
+    <h2>Les 4 gestes pédagogiques qui agissent sur les deux à la fois</h2>
+
+    <div class="geste">
+      <strong>1. Donner du sens avant de donner le contenu</strong>
+      Avant d'enseigner une notion, posez la question : à quoi ça sert dans leur vie ? Un élève qui voit l'utilité réelle d'un apprentissage active sa conation avant même d'ouvrir son cahier. La cognition qui suit est plus efficace, parce qu'elle est attendue.
+    </div>
+
+    <div class="geste">
+      <strong>2. Fragmenter les tâches pour créer des victoires intermédiaires</strong>
+      La conation s'affaiblit face aux obstacles trop grands. Décomposer une tâche complexe en étapes franchissables, c'est offrir à l'élève des expériences régulières de réussite, ce que Bandura appelle les "expériences de maîtrise", carburant principal du sentiment d'efficacité personnelle.
+    </div>
+
+    <div class="geste">
+      <strong>3. Nommer et valoriser l'effort, pas seulement le résultat</strong>
+      Dans nos classes, on célèbre souvent le premier de la classe, rarement celui qui a progressé. Or c'est l'élève qui persévère malgré la difficulté qui développe la force conative la plus durable. Un simple "j'ai vu comment tu as recommencé jusqu'à trouver" vaut plus qu'un bon point pour ancrer l'engagement dans la durée.
+    </div>
+
+    <div class="geste">
+      <strong>4. Expliciter les stratégies d'apprentissage</strong>
+      Beaucoup d'élèves échouent non par manque de volonté, mais parce qu'ils ne savent pas comment apprendre. Enseigner explicitement une méthode de révision, de prise de notes ou de résolution de problème, c'est agir sur la cognition et, en retour, rendre la conation plus efficace, parce que l'effort produit des résultats visibles.
+    </div>
+
+    <div class="citation-cle">Un élève qui ne veut pas n'entendra pas votre explication, aussi claire soit-elle. Commencez toujours par allumer le moteur.</div>
+
+    <!-- TABLEAU -->
+    <h2>Le diagnostic rapide en classe</h2>
+
+    <p>Quand un élève échoue, posez-vous ces deux questions avant d'agir :</p>
+
+    <div class="tableau-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Dimension</th>
+            <th>Action prioritaire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>L'élève comprend-il la tâche ?</td>
+            <td><span class="badge badge-cognitif">Cognition</span></td>
+            <td>Re-expliquer, reformuler, illustrer</td>
+          </tr>
+          <tr>
+            <td>L'élève veut-il s'engager ?</td>
+            <td><span class="badge badge-conatif">Conation</span></td>
+            <td>Redonner du sens, valoriser, encourager</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SECTION STIVATION -->
+    <h2>Cognition, conation et Stivation : ce que ça change pour former des adultes</h2>
+
+    <p>Le lien avec la <strong>Stivation</strong> n'est pas artificiel. Il est structurel, et il s'enracine lui aussi dans ce que la psychologie nous enseigne sur le fonctionnement humain.</p>
+
+    <p>En formation des adultes, enseignants en formation continue, directeurs d'école, inspecteurs en reconversion professionnelle, la donne conative est radicalement différente de celle de l'enfant. L'adulte apprenant n'est pas une page blanche. Il arrive avec une expérience professionnelle, des habitudes installées, parfois des résistances au changement, et surtout une question implicite permanente : en quoi ce que j'apprends ici va-t-il changer ma pratique demain ?</p>
+
+    <p>C'est précisément ce que l'andragogie a mis en évidence depuis Knowles, en s'appuyant sur les apports de la psychologie humaniste : l'adulte apprend si et seulement si il perçoit la pertinence immédiate de l'apprentissage pour sa situation réelle. Sa conation est conditionnelle. Elle ne se décrète pas, elle se construit par la pertinence des contenus, la qualité de l'interaction et la reconnaissance de son expérience comme ressource, non comme obstacle.</p>
+
+    <div class="citation-cle">Chez l'adulte en formation, la conation est conditionnelle. Elle ne se décrète pas, elle se construit.</div>
+
+    <div class="stivation-bloc">
+      <h3>La Stivation comme réponse intégrée</h3>
+      <p>En articulant ses trois piliers, la Stivation traduit en dispositif concret ce que la psychologie a démontré en théorie. Elle ne choisit pas entre enseigner le contenu et engager la personne. Elle fait les deux, simultanément, dans chaque séquence de formation.</p>
+      <div class="stivation-piliers">
+        <div class="pilier">
+          <strong>Stimulation</strong>
+          <span>Activer la cognition par des situations déclenchantes</span>
+        </div>
+        <div class="pilier">
+          <strong>Motivation</strong>
+          <span>Nourrir la conation par le sens et la valorisation</span>
+        </div>
+        <div class="pilier">
+          <strong>Interaction</strong>
+          <span>Faire de l'échange entre pairs un levier d'apprentissage</span>
+        </div>
+      </div>
+    </div>
+
+    <p>Pour un formateur d'enseignants au Sénégal ou ailleurs en Afrique subsaharienne, c'est une boussole essentielle. Une formation qui ne touche que la cognition des participants risque fort de se heurter à des conations résistantes. Une formation qui ne travaille que la motivation sans outiller cognitivement produit de l'enthousiasme sans changement durable de pratiques.</p>
+
+    <div class="citation-cle">La Stivation, c'est le pari que cognition et conation sont inséparables. Et c'est dans cette articulation, que la psychologie éclaire et que le terrain confirme, que se joue la qualité d'une formation professionnelle digne de ce nom.</div>
+
+    <hr class="separateur">
+
+    <!-- SIGNATURE -->
+    <div class="signature">
+      <div class="signature-initiales">MBM</div>
+      <div class="signature-texte">
+        <div class="nom">MBM</div>
+        <div class="titre">Pédagogue, chercheur de terrain &bull; Plus de 15 ans d'expérience en contexte africain<br>Auteur des cadres Stivation, CREAQ et TDI</div>
+        <div class="site">lecouloirdusavoir.com</div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Cet article fait partie de la série "Comprendre pour mieux enseigner" &nbsp;&bull;&nbsp; <a href="index.html">lecouloirdusavoir.com</a></p>
+    <p style="margin-top:0.6rem;">&copy; 2025 MBM &nbsp;&bull;&nbsp; Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
