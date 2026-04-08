@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Du LPT au MOHEBS : comprendre le fil conducteur des réformes de la lecture au Sénégal | Le Couloir du Savoir</title>
+  <meta name="description" content="LPT, RELIT, MOHEBS, APC : cet article aide l'enseignant à comprendre la cohérence du parcours réformateur sénégalais en matière de lecture et à s'y positionner sereinement." />
+  <meta name="keywords" content="lecture Sénégal, LPT, RELIT, MOHEBS, APC, réforme lecture, enseignement bilingue, curriculum, Le Couloir du Savoir" />
+  <link rel="canonical" href="https://lecouloirdusavoir.com/article-lpt-relit-mohebs-senegal.html"/>
+  <meta property="og:url" content="https://lecouloirdusavoir.com/article-lpt-relit-mohebs-senegal.html"/>
+  <meta property="og:title" content="Du LPT au MOHEBS : comprendre le fil conducteur des réformes de la lecture au Sénégal" />
+  <meta property="og:description" content="Un article d'accompagnement pédagogique pour aider l'enseignant à se situer avec clarté et sérénité dans les réformes de la lecture." />
+  <meta property="og:type" content="article" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy: #003366;
+      --gold: #CC9900;
+      --gold-light: #f0d060;
+      --cream: #fdf9f2;
+      --text: #1a1a2e;
+      --muted: #5a5a72;
+      --border: #d4b84a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background-color: var(--cream);
+      color: var(--text);
+      line-height: 1.85;
+    }
+
+    /* ===== HEADER ===== */
+    .site-header {
+      background: var(--navy);
+      padding: 0.75rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .site-logo {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      font-size: 1.15rem;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+    }
+    .site-nav a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.82rem;
+      margin-left: 1.5rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .site-nav a:hover { color: var(--gold); }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--navy);
+      color: #fff;
+      padding: 4rem 2rem 3.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        45deg, transparent, transparent 40px,
+        rgba(204,153,0,0.04) 40px, rgba(204,153,0,0.04) 41px
+      );
+    }
+    .hero-rubrique {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 3.8vw, 2.65rem);
+      line-height: 1.25;
+      max-width: 820px;
+      margin: 0 auto 1.2rem;
+      position: relative;
+    }
+    .hero h1 em { color: var(--gold-light); font-style: italic; }
+    .hero-chapeau {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.82);
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      line-height: 1.75;
+      position: relative;
+    }
+    .hero-meta {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      position: relative;
+    }
+    .hero-meta span { color: var(--gold); margin: 0 0.4rem; }
+
+    /* ===== CORPS ===== */
+    .article-wrapper {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 5rem;
+    }
+
+    .accroche {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.28rem;
+      font-style: italic;
+      color: var(--navy);
+      border-left: 4px solid var(--gold);
+      padding: 0.85rem 1.5rem;
+      margin-bottom: 2.5rem;
+      line-height: 1.65;
+      background: rgba(204,153,0,0.06);
+    }
+
+    p { margin-bottom: 1.4rem; font-size: 1.02rem; }
+
+    /* ===== SECTIONS ===== */
+    .section-number {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--gold);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 0.2rem 0.7rem;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      color: var(--navy);
+      margin: 3rem 0 1rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    /* ===== FRISE ===== */
+    .frise {
+      position: relative;
+      margin: 2.5rem 0;
+      padding-left: 2.5rem;
+    }
+    .frise::before {
+      content: '';
+      position: absolute;
+      left: 0.6rem;
+      top: 0.5rem;
+      bottom: 0.5rem;
+      width: 3px;
+      background: linear-gradient(to bottom, var(--gold), var(--navy));
+    }
+    .frise-item {
+      position: relative;
+      margin-bottom: 2.2rem;
+    }
+    .frise-item::before {
+      content: '';
+      position: absolute;
+      left: -2.3rem;
+      top: 0.45rem;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--gold);
+      border: 3px solid var(--navy);
+    }
+    .frise-item.etape::before { background: var(--gold); }
+    .frise-item.actif::before { background: #2a9d5c; border-color: #1a6b3c; }
+    .frise-annee {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+    .frise-titre {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--navy);
+      margin-bottom: 0.35rem;
+    }
+    .frise-titre .badge {
+      display: inline-block;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.63rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+    .badge.etape { background: var(--gold); color: var(--navy); }
+    .badge.actif { background: #2a9d5c; color: #fff; }
+    .frise-texte { font-size: 0.93rem; color: var(--text); line-height: 1.75; }
+
+    /* ===== TABLEAU ===== */
+    .tableau-wrapper {
+      overflow-x: auto;
+      margin: 2rem 0;
+      border: 1px solid var(--border);
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    thead { background: var(--navy); color: #fff; }
+    thead th {
+      padding: 0.85rem 0.9rem;
+      text-align: left;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+    thead th:first-child { color: var(--gold); }
+    tbody tr:nth-child(even) { background: rgba(0,51,102,0.04); }
+    tbody td {
+      padding: 0.7rem 0.9rem;
+      border-bottom: 1px solid rgba(0,51,102,0.1);
+      vertical-align: top;
+    }
+    tbody td:first-child { font-weight: 700; color: var(--navy); }
+
+    /* ===== ENCADRÉS ===== */
+    .encadre {
+      border: 2px solid var(--gold);
+      padding: 1.5rem 1.8rem;
+      margin: 2.5rem 0;
+      position: relative;
+    }
+    .encadre-label {
+      position: absolute;
+      top: -0.7rem;
+      left: 1.2rem;
+      background: var(--cream);
+      padding: 0 0.5rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--navy);
+      text-transform: uppercase;
+    }
+    .encadre.focus { background: rgba(0,51,102,0.04); }
+    .encadre.cle {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--gold);
+    }
+    .encadre.cle .encadre-label { background: var(--navy); color: var(--gold); }
+    .encadre.cle p { color: rgba(255,255,255,0.9); margin-bottom: 0.9rem; }
+    .encadre.cle strong { color: var(--gold-light); }
+
+    /* ===== LISTE ===== */
+    .liste-peda {
+      list-style: none;
+      margin: 1rem 0 1.5rem;
+      padding: 0;
+    }
+    .liste-peda li {
+      padding: 0.65rem 0 0.65rem 2rem;
+      position: relative;
+      border-bottom: 1px solid rgba(0,51,102,0.08);
+      font-size: 0.97rem;
+    }
+    .liste-peda li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* ===== CITATION ===== */
+    blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--navy);
+      text-align: center;
+      padding: 2rem;
+      margin: 2.5rem 0;
+      border-top: 2px solid var(--gold);
+      border-bottom: 2px solid var(--gold);
+      line-height: 1.55;
+    }
+
+    /* ===== CONCLUSION ===== */
+    .conclusion {
+      background: var(--navy);
+      color: #fff;
+      padding: 2.5rem 2rem;
+      margin: 3rem 0 2rem;
+    }
+    .conclusion h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    .conclusion p { color: rgba(255,255,255,0.88); margin-bottom: 1rem; }
+
+    /* ===== PARTAGE ===== */
+    .partage {
+      text-align: center;
+      padding: 1.5rem 0 3rem;
+      border-top: 1px solid rgba(0,51,102,0.12);
+      margin-top: 2rem;
+    }
+    .partage p { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.8rem; }
+    .btn-partage {
+      display: inline-block;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.65rem 1.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin: 0.25rem;
+    }
+    .btn-partage.fb { background: #1877f2; }
+
+    /* ===== AUTEUR ===== */
+    .auteur-bloc {
+      border-top: 2px solid var(--gold);
+      padding-top: 1.5rem;
+      margin-top: 2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+    }
+    .auteur-initiales {
+      flex-shrink: 0;
+      width: 52px; height: 52px;
+      background: var(--navy);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .auteur-info strong { display: block; color: var(--navy); font-size: 0.95rem; }
+    .auteur-info span { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      font-size: 0.78rem;
+      padding: 1.5rem 1rem;
+      letter-spacing: 0.04em;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    strong { color: var(--navy); }
+
+    @media (max-width: 600px) {
+      .site-nav { display: none; }
+      .hero { padding: 2.5rem 1.2rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <a href="https://lecouloirdusavoir.com" class="site-logo">Le Couloir du Savoir</a>
+  <nav class="site-nav">
+    <a href="https://lecouloirdusavoir.com/index.html">Accueil</a>
+    <a href="https://lecouloirdusavoir.com/espace-inspecteurs.html">Espace Inspecteurs</a>
+    <a href="https://lecouloirdusavoir.com/creaq.html">CREAQ</a>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-rubrique">Accompagnement pédagogique</div>
+  <h1>Du LPT au MOHEBS :<br><em>comprendre le fil conducteur des réformes de la lecture</em></h1>
+  <p class="hero-chapeau">
+    LPT, RELIT, MOHEBS, APC : ces sigles se succèdent dans le quotidien des enseignants. Cet article a un seul objectif. Aider chaque maître à comprendre la logique d'ensemble de ces réformes pour en devenir un acteur éclairé, et non un exécutant désorienté.
+  </p>
+  <div class="hero-meta">
+    Par <span>L'équipe du Couloir du Savoir</span> &bull; Avril 2026 <span>|</span> Didactique de la lecture
+  </div>
+</section>
+
+<!-- ===== CORPS ===== -->
+<main class="article-wrapper">
+
+  <p class="accroche">
+    Une réforme pédagogique bien comprise est une réforme bien appliquée. L'enseignant qui sait d'où vient une approche, pourquoi elle a été conçue et vers où elle mène, n'est plus dépassé par les événements. Il devient un partenaire actif du changement.
+  </p>
+
+  <p>
+    L'enseignement de la lecture au Sénégal a connu, depuis 2016, une évolution remarquable. Des réformes ambitieuses ont été conduites avec le soutien de l'État et de ses partenaires. Ces réformes ont transformé les pratiques de classe. Elles ont formé des milliers d'enseignants. Elles ont produit des résultats concrets et mesurables.
+  </p>
+
+  <p>
+    Pourtant, certains enseignants se sentent parfois déboussolés. Non pas parce que les réformes sont mauvaises. Mais parce que la succession rapide des programmes n'a pas toujours laissé le temps de comprendre comment ils s'articulent entre eux. Cet article est une réponse à ce besoin légitime de clarté.
+  </p>
+
+  <!-- ===== SECTION 1 ===== -->
+  <div>
+    <div class="section-number">Partie 01</div>
+    <h2 class="section-title">Un parcours cohérent : ce que les réformes ont construit ensemble</h2>
+  </div>
+
+  <p>
+    Il faut commencer par une conviction de fond. LPT, RELIT et MOHEBS ne sont pas trois programmes qui se contredisent. Ce sont trois étapes d'un même mouvement. Chacune a renforcé la suivante. Chacune a laissé des acquis sur lesquels la suivante s'est appuyée.
+  </p>
+
+  <p>
+    Pour comprendre ce mouvement, il est utile de le visualiser dans sa continuité chronologique.
+  </p>
+
+  <!-- FRISE -->
+  <div class="frise">
+
+    <div class="frise-item etape">
+      <div class="frise-annee">Avant 2016 — toujours en vigueur</div>
+      <div class="frise-titre">
+        Le Curriculum de l'Éducation de Base (CEB) et l'APC
+        <span class="badge etape">Socle officiel</span>
+      </div>
+      <p class="frise-texte">
+        Le Curriculum de l'Éducation de Base organise l'ensemble de l'enseignement primaire selon l'Approche Par les Compétences. Il fixe les objectifs d'apprentissage pour toutes les disciplines, y compris la lecture. Sa logique est descendante : du texte vers les sons. La compréhension globale y est centrale. Ce cadre officiel constitue la référence réglementaire de l'enseignant. Il reste en vigueur. Les réformes qui ont suivi l'ont enrichi et complété, sans le supprimer.
+      </p>
+    </div>
+
+    <div class="frise-item etape">
+      <div class="frise-annee">2016 – 2021</div>
+      <div class="frise-titre">
+        LPT : Lecture Pour Tous
+        <span class="badge etape">Première étape</span>
+      </div>
+      <p class="frise-texte">
+        Lancé en octobre 2016 par le Ministère de l'Éducation nationale avec l'appui de l'USAID, le programme LPT a représenté un investissement de 73 millions de dollars sur cinq ans. Il a ciblé les élèves de CI, CP et CE1 dans sept régions du pays. Sa contribution est majeure : il a introduit une approche phonique et syllabique dans les langues nationales, formé plus de 13 000 enseignants et directeurs d'école, et produit plus de trois millions de supports pédagogiques. A la clôture officielle du programme, en décembre 2021, près de 500 000 élèves avaient bénéficié de ses effets. LPT a montré que les élèves apprennent à lire plus vite et avec plus d'assurance quand le premier contact avec l'écrit se fait dans une langue qu'ils comprennent déjà.
+      </p>
+    </div>
+
+    <div class="frise-item etape">
+      <div class="frise-annee">2022 – 2025</div>
+      <div class="frise-titre">
+        RELIT : Renforcement de la Lecture Initiale pour Tous
+        <span class="badge etape">Deuxième étape</span>
+      </div>
+      <p class="frise-texte">
+        Lancé officiellement en avril 2022, RELIT a succédé à LPT en s'appuyant directement sur ses acquis. Son financement USAID s'élevait à 80 millions de dollars sur cinq ans. RELIT a approfondi l'approche bilingue et l'a inscrite dans une articulation plus étroite avec le MOHEBS, déployé en parallèle. Il a étendu la dynamique à de nouvelles classes et renforcé la formation des encadreurs pédagogiques. La suspension de l'aide américaine en début d'année 2025, liée à un changement de politique de l'administration américaine, a mis fin au programme avant son terme. Mais les pratiques qu'il a installées, les enseignants qu'il a formés, et les outils qu'il a produits restent pleinement utilisables.
+      </p>
+    </div>
+
+    <div class="frise-item actif">
+      <div class="frise-annee">2022 – aujourd'hui</div>
+      <div class="frise-titre">
+        MOHEBS : Modèle Harmonisé d'Enseignement Bilingue au Sénégal
+        <span class="badge actif">En vigueur et en extension</span>
+      </div>
+      <p class="frise-texte">
+        Le MOHEBS est le cadre institutionnel sénégalais qui fédère toutes les initiatives bilingues. Il a été conçu avant même la fin de LPT, comme son prolongement naturel. Porté directement par le Ministère de l'Éducation nationale, inscrit dans le PAQUET-EF et dans l'Agenda 2050 du Sénégal, le MOHEBS va au-delà de la lecture. Il concerne toutes les disciplines. Il compte dix composantes. Il est déployé dans 13 des 16 régions éducatives en six langues nationales. Pour la rentrée 2025-2026, il s'applique au minimum à la discipline Langue et Communication dans 12 régions, avec une généralisation progressive prévue. Sa mise en oeuvre est soutenue par les Inspections de l'Éducation et de la Formation sur l'ensemble du territoire.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="encadre focus">
+    <span class="encadre-label">Ce que cette continuité signifie</span>
+    <p>
+      LPT a prouvé que la méthode phonique en langue nationale fonctionne. RELIT a consolidé et étendu cette preuve. Le MOHEBS en a fait une politique nationale durable. Chaque étape a enrichi la suivante. L'enseignant qui a été formé à LPT ou à RELIT dispose déjà des bases sur lesquelles le MOHEBS est construit. Il n'est pas en retard. Il est en avance.
+    </p>
+  </div>
+
+  <!-- ===== SECTION 2 ===== -->
+  <div>
+    <div class="section-number">Partie 02</div>
+    <h2 class="section-title">Curriculum officiel et pratiques bilingues : comment les lire ensemble</h2>
+  </div>
+
+  <p>
+    La principale source d'hésitation pour l'enseignant vient de l'impression de devoir choisir entre le curriculum officiel et les pratiques bilingues introduites par les réformes. Cette impression est compréhensible. Elle mérite une réponse précise.
+  </p>
+
+  <p>
+    Le curriculum APC fixe des compétences à atteindre. Il dit ce que l'élève doit savoir faire. Il ne prescrit pas, dans le détail, le chemin pédagogique pour y parvenir. Les réformes LPT, RELIT et MOHEBS ont proposé un chemin plus efficace pour atteindre ces mêmes compétences, en particulier pour les élèves dont la langue maternelle n'est pas le français. Ce chemin passe par la langue nationale comme point d'entrée, avant le transfert progressif vers le français.
+  </p>
+
+  <div class="tableau-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Dimension</th>
+          <th>CEB / APC</th>
+          <th>LPT / RELIT</th>
+          <th>MOHEBS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ce qu'il fixe</td>
+          <td>Les compétences à atteindre</td>
+          <td>Une méthode phonique pour la lecture</td>
+          <td>Un cadre bilingue pour toutes les disciplines</td>
+        </tr>
+        <tr>
+          <td>Sens de la lecture</td>
+          <td>Descendant (texte vers sons)</td>
+          <td>Ascendant (sons vers texte)</td>
+          <td>Ascendant, avec transfert progressif</td>
+        </tr>
+        <tr>
+          <td>Langue d'enseignement</td>
+          <td>Français</td>
+          <td>Langue nationale puis français</td>
+          <td>Langue nationale et français selon les disciplines</td>
+        </tr>
+        <tr>
+          <td>Portée disciplinaire</td>
+          <td>Toutes les disciplines</td>
+          <td>Lecture uniquement</td>
+          <td>Toutes les disciplines (généralisation progressive)</td>
+        </tr>
+        <tr>
+          <td>Statut actuel</td>
+          <td>Cadre officiel en vigueur</td>
+          <td>Acquis à valoriser et à utiliser</td>
+          <td>Politique nationale en vigueur et en extension</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    Ce tableau montre que les deux logiques ne s'excluent pas. L'APC dit où aller. Le MOHEBS, comme l'ont fait LPT et RELIT avant lui, dit comment y aller plus efficacement pour tous les élèves, quelle que soit leur langue première.
+  </p>
+
+  <!-- ===== SECTION 3 ===== -->
+  <div>
+    <div class="section-number">Partie 03</div>
+    <h2 class="section-title">Ce que le MOHEBS apporte de fondamentalement nouveau</h2>
+  </div>
+
+  <p>
+    LPT et RELIT avaient un périmètre précis : améliorer la lecture dans les premières années de l'élémentaire. Leur portée était limitée à une discipline et à quelques classes. C'était déjà considérable.
+  </p>
+
+  <p>
+    Le MOHEBS franchit une étape supplémentaire. Il ne concerne plus seulement la lecture. Il ambitionne d'organiser l'ensemble du curriculum selon une cohabitation harmonieuse entre les langues nationales et le français. C'est un projet de fond, porté à l'échelle nationale.
+  </p>
+
+  <div class="encadre focus">
+    <span class="encadre-label">Les dix composantes du MOHEBS</span>
+    <p>
+      Le MOHEBS repose sur une architecture complète : le pilotage institutionnel, l'élaboration de référentiels bilingues de compétences, la formation initiale et continue des enseignants, la production de supports pédagogiques en langues nationales, le développement de l'outillage linguistique, la mobilisation communautaire, l'implication des associations de parents, la communication locale, le suivi-évaluation, et l'intégration dans les cadres stratégiques nationaux. Chaque composante est pensée pour assurer la durabilité et la cohérence de la réforme.
+    </p>
+  </div>
+
+  <p>
+    Le MOHEBS est aujourd'hui déployé dans 13 des 16 régions éducatives du pays, dans six langues nationales. Deux langues supplémentaires sont prévues pour 2026. Pour la rentrée 2025-2026, il est mis en vigueur pour la discipline Langue et Communication dans 12 régions, avec une généralisation progressive vers les autres disciplines.
+  </p>
+
+  <p>
+    Sa mise en oeuvre est accompagnée par les Inspections de l'Éducation et de la Formation. Les inspecteurs et les superviseurs pédagogiques jouent un rôle central dans cette dynamique. Ce sont eux qui forment les enseignants, qui organisent les séances d'imprégnation, qui supervisent les pratiques de classe et qui assurent le lien entre la politique nationale et la réalité du terrain.
+  </p>
+
+  <!-- ===== SECTION 4 ===== -->
+  <div>
+    <div class="section-number">Partie 04</div>
+    <h2 class="section-title">Repères concrets pour l'enseignant : se situer avec sérénité</h2>
+  </div>
+
+  <blockquote>
+    Un enseignant qui comprend pourquoi il fait ce qu'il fait enseigne mieux que celui qui exécute sans voir le sens de ce qu'on lui demande.
+  </blockquote>
+
+  <p>
+    Voici des repères simples pour que chaque maître puisse se positionner avec clarté dans ce paysage réformateur.
+  </p>
+
+  <ul class="liste-peda">
+    <li>
+      <strong>Comprendre que les cinq piliers de la lecture initiale s'articulent avec le CEB, sans le remplacer.</strong> La conscience phonologique, le principe alphabétique, la fluidité, le vocabulaire et la compréhension constituent une séquence qui prépare et consolide les compétences visées par l'APC. La compréhension globale du CEB arrive en bout de parcours, une fois que le décodage est maîtrisé. Les deux approches se complètent.
+    </li>
+    <li>
+      <strong>Valoriser ce que LPT et RELIT ont laissé.</strong> Les manuels, les livrets décodables, les guides d'enseignants produits dans le cadre de ces deux programmes restent des outils pédagogiques valides et efficaces. L'enseignant qui en dispose peut et doit les utiliser. Ils sont pleinement compatibles avec le MOHEBS.
+    </li>
+    <li>
+      <strong>Construire la lecture en deux temps, selon la logique validée par les réformes.</strong> Premier temps : décodage dans la langue que l'élève maîtrise à l'oral. Deuxième temps : transfert progressif et structuré vers le français. Ce n'est pas un abandon du français. C'est le chemin le plus sûr pour y parvenir.
+    </li>
+    <li>
+      <strong>Se référer au MOHEBS comme boussole institutionnelle du moment.</strong> Le MOHEBS est la politique éducative nationale en vigueur. L'enseignant qui organise ses séances dans son esprit est en cohérence avec les orientations nationales. Son encadreur pédagogique et l'Inspection de l'Éducation et de la Formation sont ses premiers interlocuteurs pour toute question d'application.
+    </li>
+    <li>
+      <strong>Solliciter l'accompagnement disponible.</strong> La réforme MOHEBS prévoit des dispositifs de formation continue et de supervision. L'enseignant n'est pas seul. Les Inspections de l'Éducation et de la Formation organisent des sessions d'appui. Les encadreurs pédagogiques sont là pour clarifier, guider et soutenir. Solliciter cet accompagnement n'est pas une marque de faiblesse. C'est l'expression d'un engagement professionnel sérieux.
+    </li>
+  </ul>
+
+  <div class="encadre cle">
+    <span class="encadre-label">Ce que la recherche confirme</span>
+    <p>
+      Les évaluations conduites dans le cadre de LPT et de RELIT ont montré des résultats cohérents. Les élèves qui apprennent à décoder dans leur langue première <strong>lisent plus tôt</strong>, <strong>comprennent mieux</strong> et <strong>transfèrent plus efficacement leurs compétences vers le français</strong> que les élèves instruits exclusivement dans la langue officielle dès l'entrée au CI.
+    </p>
+    <p>
+      Ces résultats ne sont pas le fruit du hasard. Ils s'expliquent par un principe fondamental de l'apprentissage : on construit mieux une compétence nouvelle dans un environnement que l'on maîtrise déjà. La langue nationale est cet environnement pour la majorité des élèves sénégalais. Le MOHEBS a fait de ce principe la base d'une politique nationale.
+    </p>
+  </div>
+
+  <!-- ===== SECTION 5 ===== -->
+  <div>
+    <div class="section-number">Partie 05</div>
+    <h2 class="section-title">Une réforme nationale qui s'enracine : les signes encourageants</h2>
+  </div>
+
+  <p>
+    Au-delà de la classe, des signaux forts témoignent de l'enracinement progressif du MOHEBS dans le paysage éducatif sénégalais. Ces signaux méritent d'être mentionnés, car ils aident l'enseignant à comprendre que son effort quotidien s'inscrit dans quelque chose de durable.
+  </p>
+
+  <p>
+    Le MOHEBS est intégré dans le PAQUET-EF, le cadre stratégique qui organise l'ensemble de la politique éducative nationale. Il bénéficie du soutien du Ministère de l'Éducation nationale, qui a publié des circulaires officielles pour encadrer sa mise en oeuvre. Il est désormais cité comme modèle de référence au-delà des frontières du Sénégal, par des organisations internationales qui le présentent comme une approche réussie d'éducation bilingue en Afrique subsaharienne.
+  </p>
+
+  <p>
+    Le fait que le MOHEBS continue d'avancer, indépendamment des aléas de la coopération internationale, montre que le Sénégal a réussi à faire sienne cette réforme. Elle n'est plus un programme externe. Elle est une politique nationale portée de l'intérieur.
+  </p>
+
+  <p>
+    Les Inspections de l'Éducation et de la Formation sont au coeur de cette dynamique. Elles organisent les formations de terrain. Elles accompagnent les enseignants dans leur appropriation des nouvelles pratiques. Elles assurent le suivi-évaluation qui permet d'ajuster et d'améliorer. Ce rôle d'encadrement de proximité est irremplaçable.
+  </p>
+
+  <!-- ===== CONCLUSION ===== -->
+  <div class="conclusion">
+    <h3>Ce que nous retenons</h3>
+    <p>
+      LPT, RELIT et MOHEBS forment un parcours cohérent. Chaque étape a préparé la suivante. Chaque étape a laissé des acquis concrets. L'enseignant qui a traversé tout ou partie de ce parcours n'a pas perdu son temps. Il a construit une expérience que le MOHEBS demande maintenant de mobiliser à une plus grande échelle et dans toutes les disciplines.
+    </p>
+    <p>
+      Le curriculum APC reste le cadre officiel. Le MOHEBS en est la déclinaison bilingue. Ces deux réalités ne se contredisent pas. Elles appellent simplement l'enseignant à comprendre comment l'une s'articule avec l'autre, pour enseigner avec davantage de cohérence et d'efficacité.
+    </p>
+    <p>
+      L'objectif final reste inchangé depuis le début : que chaque élève sénégalais apprenne à lire, à comprendre et à s'exprimer avec maîtrise. Le chemin pour y parvenir a été affiné, enrichi, documenté. Il appartient maintenant aux enseignants, accompagnés par leurs encadreurs pédagogiques et par les Inspections de l'Éducation et de la Formation, de le parcourir avec confiance.
+    </p>
+  </div>
+
+  <!-- ===== AUTEUR ===== -->
+  <div class="auteur-bloc">
+    <div class="auteur-initiales">MBM</div>
+    <div class="auteur-info">
+      <strong>MBM &bull; Le Couloir du Savoir</strong>
+      <span>
+        Plateforme de ressources pédagogiques pour les professionnels de l'éducation en Afrique subsaharienne.<br>
+        Construite depuis le terrain, par des praticiens engagés.
+      </span>
+    </div>
+  </div>
+
+  <!-- ===== PARTAGE ===== -->
+  <div class="partage">
+    <p>Cet article vous a été utile ? Partagez-le avec vos collègues enseignants et encadreurs pédagogiques.</p>
+    <a class="btn-partage"
+      href="https://wa.me/?text=Du%20LPT%20au%20MOHEBS%20%3A%20comprendre%20le%20fil%20conducteur%20des%20r%C3%A9formes%20de%20la%20lecture%20au%20S%C3%A9n%C3%A9gal%20%E2%80%94%20lecouloirdusavoir.com"
+      target="_blank">
+      &#128232; Partager sur WhatsApp
+    </a>
+    <a class="btn-partage fb"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://lecouloirdusavoir.com/article-lpt-relit-mohebs-senegal.html"
+      target="_blank">
+      Partager sur Facebook
+    </a>
+  </div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>&copy; 2026 <a href="https://lecouloirdusavoir.com">Le Couloir du Savoir</a> &mdash; Plateforme pédagogique pour les professionnels de l'éducation au Sénégal et en Afrique subsaharienne.</p>
+</footer>
+
+</body>
+</html>
