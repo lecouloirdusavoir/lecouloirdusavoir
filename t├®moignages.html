@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="témoignages enseignants CREAQ, impressions terrain, formation continue Sénégal, Stivation"/>
+<title>Recueil des Impressions – CREAQ | Le Couloir du Savoir</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #003366;
+    --gold: #CC9900;
+    --gold-light: #f0d580;
+    --navy-light: #e8eef5;
+    --white: #ffffff;
+    --text: #1a1a2e;
+    --muted: #5a6480;
+    --border: #d4e0f0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: #f4f7fc;
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* ── HERO BANNER ── */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, #001f44 60%, #0a3060 100%);
+    padding: 56px 24px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(204,153,0,0.04) 40px,
+      rgba(204,153,0,0.04) 41px
+    );
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(204,153,0,0.15);
+    border: 1px solid rgba(204,153,0,0.4);
+    color: var(--gold-light);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.7rem, 5vw, 2.8rem);
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.2;
+    max-width: 700px;
+    margin: 0 auto 14px;
+  }
+  .hero h1 span { color: var(--gold); }
+  .hero-sub {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: rgba(255,255,255,0.65);
+    font-size: 1rem;
+    max-width: 520px;
+    margin: 0 auto 28px;
+    line-height: 1.6;
+  }
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    display: block;
+  }
+  .stat-label {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  /* ── NAV BAR ── */
+  .topnav {
+    background: var(--navy);
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .topnav a.back {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+  }
+  .topnav a.back:hover { color: var(--gold); }
+  .topnav a.back svg { width: 16px; height: 16px; }
+  .topnav-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── MAIN WRAPPER ── */
+  .main { max-width: 900px; margin: 0 auto; padding: 40px 20px 80px; }
+
+  /* ── FILTER BAR ── */
+  .filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+    padding: 18px 22px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,51,102,0.08);
+    border-left: 4px solid var(--gold);
+  }
+  .filter-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-right: 4px;
+  }
+  .filter-btn {
+    padding: 7px 20px;
+    border-radius: 30px;
+    border: 2px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.22s;
+  }
+  .filter-btn:hover {
+    border-color: var(--navy);
+    color: var(--navy);
+    background: var(--navy-light);
+  }
+  .filter-btn.active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: var(--white);
+  }
+  .filter-btn.active.gold {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--white);
+  }
+
+  /* ── SECTION TITLE ── */
+  .site-section {
+    margin-bottom: 48px;
+  }
+  .site-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  .site-heading-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, var(--gold), transparent);
+  }
+  .site-heading-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--navy);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .site-heading-label .dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--gold);
+    display: inline-block;
+  }
+
+  /* ── TÉMOIGNAGE CARD ── */
+  .temoignage-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 26px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 14px rgba(0,51,102,0.07);
+    border-left: 5px solid var(--navy);
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: fadeUp 0.4s ease both;
+  }
+  .temoignage-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 28px rgba(0,51,102,0.13);
+  }
+  .temoignage-card.gold-accent { border-left-color: var(--gold); }
+  .temoignage-card.teal-accent { border-left-color: #2a7d6e; }
+
+  .quote-mark {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    line-height: 0.6;
+    color: var(--gold);
+    opacity: 0.25;
+    position: absolute;
+    top: 18px; right: 22px;
+    user-select: none;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), #1a5090);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .card-meta { flex: 1; }
+  .card-name {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .card-role {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 2px;
+    font-style: italic;
+  }
+  .card-site-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+  .badge-kedougou { background: #e8eef5; color: var(--navy); }
+  .badge-tivaouane { background: #fff3cc; color: #8a6500; }
+  .badge-saraya { background: #e6f5ef; color: #1f6b4a; }
+
+  .card-body {
+    font-family: 'Lora', serif;
+    font-size: 0.92rem;
+    line-height: 1.75;
+    color: #2c3050;
+  }
+  .card-body p { margin-bottom: 10px; }
+  .card-body p:last-child { margin-bottom: 0; }
+  .card-body ul {
+    margin: 8px 0 8px 20px;
+  }
+  .card-body ul li { margin-bottom: 4px; }
+
+  .card-footer {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .card-date {
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+
+  /* ── ARABIC BLOCK ── */
+  .arabic-block {
+    direction: rtl;
+    font-size: 0.88rem;
+    line-height: 1.9;
+    color: #2c3050;
+    font-family: 'Lora', serif;
+    background: #f8f4e8;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    border-right: 3px solid var(--gold);
+  }
+  .translation-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  /* ── PHOTO GALLERY ── */
+  .gallery-section {
+    margin: 48px 0;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 30px 28px;
+    box-shadow: 0 2px 14px rgba(0,51,102,0.07);
+  }
+  .gallery-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .gallery-subtitle {
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-style: italic;
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .gallery-img-placeholder {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, var(--navy-light), #c8d8f0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .gallery-img-placeholder svg {
+    width: 36px; height: 36px;
+    color: var(--navy);
+    opacity: 0.3;
+  }
+  .gallery-img-placeholder span {
+    font-size: 0.7rem;
+    color: var(--muted);
+    text-align: center;
+    padding: 0 8px;
+  }
+  .gallery-caption {
+    padding: 10px 12px;
+    font-size: 0.75rem;
+    color: var(--navy);
+    font-style: italic;
+    line-height: 1.4;
+    background: var(--navy-light);
+  }
+
+  /* ── WHATSAPP BUTTON ── */
+  .whatsapp-bar {
+    position: sticky;
+    bottom: 20px;
+    text-align: center;
+    pointer-events: none;
+    z-index: 100;
+  }
+  .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 50px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+    pointer-events: all;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(37,211,102,0.55);
+  }
+  .whatsapp-btn svg { width: 22px; height: 22px; }
+
+  /* ── EMPTY STATE ── */
+  .empty-site {
+    text-align: center;
+    padding: 48px 24px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── FOOTER ── */
+  .page-footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+  }
+  .page-footer a { color: var(--gold); text-decoration: none; }
+
+  @media (max-width: 600px) {
+    .hero { padding: 40px 16px 36px; }
+    .main { padding: 24px 14px 80px; }
+    .temoignage-card { padding: 20px 18px; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .hero-stats { gap: 20px; }
+  }
+</style>
+<meta name="description" content="Recueil des impressions et témoignages d'enseignants et d'inspecteurs bénéficiaires du CREAQ. Paroles du terrain éducatif sénégalais."/>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <a class="back" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    Retour à l'accueil
+  </a>
+  <span class="topnav-title">Le Couloir du Savoir</span>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-badge">IEF de Kédougou · 2024–2026</div>
+  <h1>Recueil des <span>Impressions</span><br>des membres du CREAQ</h1>
+  <p class="hero-sub">Paroles de terrain — directeurs, enseignants et encadreurs du Cadre de Réflexion pour des Enseignements-Apprentissages de Qualité</p>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-num">23</span><span class="stat-label">Témoignages</span></div>
+    <div class="stat"><span class="stat-num">3</span><span class="stat-label">Sites CREAQ</span></div>
+    <div class="stat"><span class="stat-num">189</span><span class="stat-label">Bulletins 2024–25</span></div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- FILTER -->
+  <div class="filter-bar">
+    <span class="filter-label">Filtrer par site :</span>
+    <button class="filter-btn active" onclick="filtrer('tous', this)">Tous</button>
+    <button class="filter-btn" onclick="filtrer('kedougou', this)">Kédougou</button>
+    <button class="filter-btn" onclick="filtrer('tivaouane', this)">Tivaouane</button>
+    <button class="filter-btn" onclick="filtrer('saraya', this)">Saraya</button>
+  </div>
+
+  <!-- ══ KÉDOUGOU ══ -->
+  <section class="site-section" id="section-kedougou">
+    <div class="site-heading">
+      <div class="site-heading-line"></div>
+      <div class="site-heading-label"><span class="dot"></span> Kédougou – 2024–2026</div>
+      <div class="site-heading-line" style="background:linear-gradient(to left,var(--gold),transparent)"></div>
+    </div>
+
+    <!-- 1 -->
+    <div class="temoignage-card" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">YM</div>
+        <div class="card-meta">
+          <div class="card-name">Youssouf Minthe</div>
+          <div class="card-role">Directeur – École élémentaire Ibrahima Danfakha, Kédougou</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Bonjour chers collègues, je me nomme Youssouf Minthe, Directeur de l'école élémentaire Ibrahima Danfakha de l'IEF de Kédougou, en même temps membre du CREAQ. Depuis l'année dernière, le CREAQ — Cadre de Réflexion pour des Enseignements-Apprentissages de Qualité — a été mis en place au niveau de l'IEF de Kédougou par Monsieur Mouhamadou Bamba Mbaye, Inspecteur de l'Éducation et de la Formation.</p>
+        <p>Aujourd'hui, beaucoup d'enseignants ont pu bénéficier de ces encadrements par leurs pairs. Ce qui leur a permis de surmonter les difficultés auxquelles ils font face dans leur pratique de classe.</p>
+        <p>Ces encadrements améliorent sensiblement la pratique de classe des enseignants encadrés et impactent positivement sur la qualité des enseignements-apprentissages.</p>
+        <p>Nous remercions l'inspecteur d'avoir mis en place ce cadre et souhaitons que cela soit pérennisé chaque année.</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="temoignage-card gold-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">DB</div>
+        <div class="card-meta">
+          <div class="card-name">Dembo Bayo</div>
+          <div class="card-role">Directeur – École élémentaire de Niagalancomé et CODEC</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Nous sommes très ravis de cet encadrement qui est très profitable aux nouveaux enseignants, constatant que la formation initiale est trop insuffisante pour réaliser les enseignements-apprentissages. Cependant, un problème de temps s'impose : étant Directeur titulaire de classe CODEC, nous sollicitons l'IEF pour plus d'enseignants dans ces écoles.</p>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="temoignage-card teal-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">AN</div>
+        <div class="card-meta">
+          <div class="card-name">Aminata Niang</div>
+          <div class="card-role">Directrice – École élémentaire El Hadji Omar Aidara</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Le CREAQ, cadre créé par l'inspecteur de l'éducation et de la formation pour la formation continue des enseignants, constitue un intrant positif et un plus dans la pratique de classe.</p>
+        <p>La majeure partie des enseignants qui ont reçu le CREAQ sont mieux outillés, et beaucoup d'entre eux sont passés haut la main à la pratique du CAP. De nombreux blocages et problèmes pédagogiques ont été soulevés et ont trouvé une solution pour le bien-être des élèves et de l'école en général.</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="temoignage-card" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">MD</div>
+        <div class="card-meta">
+          <div class="card-name">Mamba Diakhaby</div>
+          <div class="card-role">Directeur – École élémentaire de Diaguiri</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Sur le terrain, nous actualisons nos connaissances, nous partageons sur la pédagogie, nous découvrons les réalités du milieu et les enseignants n'ont pas le complexe car ils voient des collègues directeurs ou autres venir dans leur école. Beaucoup d'enseignants se sont améliorés suite aux remarques et recommandations des visiteurs. Le CREAQ est vraiment une bonne initiative pour accompagner les enseignants.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="temoignage-card gold-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">AD</div>
+        <div class="card-meta">
+          <div class="card-name">Abdoulaye Diallo</div>
+          <div class="card-role">Directeur – École élémentaire de Tambanoumouya et CODEC</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Avec l'encadrement dans le cadre du CREAQ, nous constatons une avancée importante des enseignants, que ce soit dans les examens professionnels et aussi dans les résultats du CFEE. Je salue cette initiative de l'IEF depuis son arrivée à Kédougou. Moi personnellement, je suis satisfait. Merci.</p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="temoignage-card teal-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">IB</div>
+        <div class="card-meta">
+          <div class="card-name">Idrissa Ba</div>
+          <div class="card-role">Directeur – École élémentaire de Nouhou Sylla ex Fadiga et COCODEC</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Je suis heureux de faire équipe avec certains de mes collègues membres du CREAQ. Cela m'a permis de mutualiser mon expérience et de partager nos pratiques de classe pour le grand bonheur de nos collègues en situation.</p>
+        <p>Un grand merci à l'IEF Mbaye pour la création de ce cadre et pour le soutien apporté aux collègues pour élever le niveau des élèves de Kédougou. Merci.</p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="temoignage-card" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">OD</div>
+        <div class="card-meta">
+          <div class="card-name">Ousmane Diallo</div>
+          <div class="card-role">Directeur – École élémentaire de Manga Dian Pathé Traoré ex Dindéfelo et CODED</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Je trouve que les activités du CREAQ sont importantes, surtout pour les enseignants débutants. Elles favorisent l'échange mutuel dans la formation continue des enseignants. C'est toujours l'amélioration de la pratique de classe.</p>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="temoignage-card gold-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">ML</div>
+        <div class="card-meta">
+          <div class="card-name">Mouhamadou Lamine Ba</div>
+          <div class="card-role">Directeur – École élémentaire de Ninefecha et CODEC</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>De ma part, je suis fier de participer à cette belle initiative de la formation entre pairs. Le CREAQ m'a permis de me capaciter et de partager mes connaissances pédagogiques aux nouveaux enseignants et de relever leur niveau vis-à-vis du déroulement de l'enseignement-apprentissage dans les classes et du bon fonctionnement de l'école. Merci.</p>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="temoignage-card teal-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">KD</div>
+        <div class="card-meta">
+          <div class="card-name">Koliba Danfakha</div>
+          <div class="card-role">Directeur – École élémentaire TMNK ex Bandafassi et CODEC</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Par rapport au CREAQ, j'affirme que c'est une excellente expérience que nous vivons. Aussi bénéfique pour nous, membres du CREAQ, que pour les enseignants encadrés.</p>
+        <p>Il y a un apprentissage mutuel et une complicité de formation continue. Les enseignants sont fiers de partager leur expérience avec leurs collègues. Le CREAQ est une initiative salutaire que l'on doit pérenniser.</p>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="temoignage-card" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">LK</div>
+        <div class="card-meta">
+          <div class="card-name">Lassana Kaba</div>
+          <div class="card-role">Directeur – École élémentaire de Bantaco et CODEC</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Je me sens doublement honoré par cette mission : d'une part pour avoir été choisi parmi tant de pairs expérimentés pour porter ce projet ; d'autre part pour l'opportunité qui m'est offerte d'apporter ma modeste contribution à la formation continue de mes collègues et jeunes enseignants.</p>
+        <p>Le travail en binôme sur le terrain m'a permis de constater que l'accompagnement pédagogique, lorsqu'il est basé sur la solidarité et le partage d'expériences vécues, est l'un des leviers les plus efficaces pour relever les défis de nos classes. Ce dispositif ne se contente pas de transmettre des méthodes ; il tisse des liens de confiance et renforce la culture de l'excellence au sein de notre circonscription.</p>
+        <p>C'est un privilège de mettre mon parcours au service de la relève. Mes respects à l'IEF et à l'ensemble de son personnel.</p>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="temoignage-card gold-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">MC</div>
+        <div class="card-meta">
+          <div class="card-name">Mamoudou Cissokho</div>
+          <div class="card-role">Directeur – École élémentaire Gadadinguessou Plateau et CODED</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Nous avons toujours fait de l'encadrement. Mais le fait de le formaliser de cette manière est une première. Nous avons salué l'initiative et sommes en train d'en voir les avantages.</p>
+        <p>L'encadrement en binôme nous permet aussi de gagner en expérience.</p>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="temoignage-card teal-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">SS</div>
+        <div class="card-meta">
+          <div class="card-name">Souleymane Sylla</div>
+          <div class="card-role">Directeur – École élémentaire de Mariama Bakary Keita ex Tomboronkoto et CODEC</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Dans le cadre de l'encadrement CREAQ, j'ai eu un changement positif dans ma façon d'encadrer. L'entretien avec le maître est riche en pédagogie et l'accueil est parfait. Le binôme fonctionne sans remarques particulières.</p>
+      </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="temoignage-card" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">AK</div>
+        <div class="card-meta">
+          <div class="card-name">Alpha Hady Kanouté</div>
+          <div class="card-role">Membre enseignant expérimenté encadreur</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Dès son arrivée à la tête de l'IEF de Kédougou, Mouhamadou Bamba Mbaye ne cesse d'apporter des innovations allant dans le sens de booster l'éducation dans la région. Il a mis sur pied le CREAQ — un cadre bien structuré qui regroupe des directeurs et directrices en binômes rompus à la tâche, pour combler le manque d'encadrement dans le cycle fondamental.</p>
+        <p>Ces membres du CREAQ interviennent également aux cellules d'animations pédagogiques, une fois dans le mois, pour apporter leur expérience aux jeunes enseignants et aux candidats aux examens professionnels. Cela s'est soldé par de très bons résultats, propulsant l'IEF de Kédougou parmi les meilleures IEF.</p>
+        <p>C'est une initiative à pérenniser, à garder jalousement vu son importance capitale. Vive l'IEF de Kédougou, vive le CREAQ.</p>
+      </div>
+    </div>
+
+    <!-- 14 : OMAR LO – arabe + traduction -->
+    <div class="temoignage-card gold-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">OL</div>
+        <div class="card-meta">
+          <div class="card-name">Omar Lo</div>
+          <div class="card-role">Enseignant en Arabe – Encadreur</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <div class="arabic-block">
+بما أن التعليم يتطور باستمرار، يحتاج المعلمون إلى تحديث مهاراتهم ومعارفهم. من ملاحظاتي أثناء ممارسة هذه المهمة: حرص المعلمين على الاطلاع بأحدث الطرق والأساليب التعليمية، وابتكارات بعض المعلمين في تجريب أساليب جديدة مناسبة. بعد المسافات يتجاوز أحيانا 40 كيلومترا.
+نشكر المفتش IEF على هذه المبادرة القيمة.
+        </div>
+        <span class="translation-label">Traduction française</span>
+        <p>L'éducation étant en constante évolution, les enseignants doivent actualiser leurs compétences et leurs connaissances pour rester efficaces en classe. Parmi mes observations lors de cette mission : les enseignants tiennent à se tenir informés des dernières méthodes pédagogiques, et certains ont innové en essayant des approches nouvelles et appropriées.</p>
+        <p>Ces référentiels contribuent à renforcer la confiance des enseignants en leurs capacités. Les enseignants ont besoin d'être suivis deux fois ou plus, en particulier les nouveaux, afin d'éviter des échecs fréquents aux examens professionnels.</p>
+        <p>Difficulté notable : la distance dépasse parfois 40 kilomètres entre les localités. En conclusion, nous remercions l'IEF Mouhamadou Bamba Mbaye pour cette précieuse initiative qui témoigne de son dévouement envers les enseignants.</p>
+        <div class="card-footer">
+          <span class="card-date">16 mars 2026 — 26 Ramadan 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 15 -->
+    <div class="temoignage-card teal-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">SN</div>
+        <div class="card-meta">
+          <div class="card-name">Seydou N'Dioum</div>
+          <div class="card-role">Directeur – École élémentaire de Samba Dagni Ba ex Ibel et COCODEC</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>À travers l'encadrement dans les différentes écoles, j'ai constaté que beaucoup d'enseignants étaient en difficulté. Malheureusement, certains hésitent à demander conseil, continuant ainsi leur mauvaise pratique.</p>
+        <p>À travers l'encadrement par les pairs (CREAQ), l'enseignant se sent à l'aise, il s'exprime sans pression — ce qui n'est pas évident devant un inspecteur. Il y a aussi le partage d'expériences sur la pratique de classe. Il arrive que certains nous demandent de revenir, ce que nous faisons avec plaisir.</p>
+        <p>L'essentiel des collègues encadrés ont réussi à leur examen pratique. Je suis convaincu que le CREAQ contribue favorablement à l'amélioration des enseignements-apprentissages.</p>
+      </div>
+    </div>
+
+    <!-- 16 -->
+    <div class="temoignage-card" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">AK</div>
+        <div class="card-meta">
+          <div class="card-name">Abdourakhmane Kaloga</div>
+          <div class="card-role">Directeur – École élémentaire de Dongol Nialby et COCODEC</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Le fonctionnement du CREAQ repose sur des bases solides :</p>
+        <ul>
+          <li>Les membres sont constitués en binômes munis de fiches de supervision pour chaque séance d'encadrement, avec un minimum de deux sorties par mois plus une CAP mensuelle.</li>
+          <li>Une liste d'enseignants à encadrer (minimum deux activités par maître) est établie par le point focal, approuvée par l'IEF avant publication.</li>
+          <li>L'enseignant déroule les disciplines qu'il a ciblées devant les membres du CREAQ. À la fin des séances, des entretiens, échanges, partages et discussions ont lieu pour apporter des améliorations dans sa pratique de classe.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 17 -->
+    <div class="temoignage-card gold-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">MD</div>
+        <div class="card-meta">
+          <div class="card-name">Oustaz Mouhamadou Diakhité</div>
+          <div class="card-role">Enseignant Arabe – Encadreur</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Je suis heureux de faire ma réaction à propos du déroulement du CREAQ. C'est une bonne initiative car les candidats et les encadreurs en bénéficient tous. C'est pourquoi on remercie profondément l'IEF et ses membres collectifs.</p>
+      </div>
+    </div>
+
+    <!-- 18 -->
+    <div class="temoignage-card teal-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">JN</div>
+        <div class="card-meta">
+          <div class="card-name">Jean Emmanuel N'Diaye</div>
+          <div class="card-role">Directeur – École élémentaire de Mariama Diaby et COCODEC</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Dans le cadre de son dispositif organisationnel, l'IEF de Kédougou, sous la direction de Monsieur Mouhamadou Bamba Mbaye, a mis en place le CREAQ, dont le but est d'améliorer la qualité des enseignements-apprentissages par le renforcement du développement professionnel continu de l'enseignant.</p>
+        <p>Le CREAQ se pose comme une alternative à ces manquements. Il est constitué de directeurs et directrices ayant plusieurs années d'expérience, organisés en binômes avec des outils, pour procéder à l'encadrement et l'accompagnement des jeunes collègues.</p>
+        <p>Mais plus qu'un encadrement, il s'agit d'un accompagnement professionnel par les pairs — plus global, supposant un cheminement pédagogique à travers des échanges téléphoniques, le partage de supports pédagogiques, des visites et un suivi parfait.</p>
+        <p>C'est le lieu pour moi de rendre un hommage appuyé à l'IEF de Kédougou pour cette noble et brillante initiative, son leadership et son management éclairé.</p>
+        <div class="card-footer">
+          <span class="card-date">Kédougou, le 16 mars 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 19 -->
+    <div class="temoignage-card" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">WK</div>
+        <div class="card-meta">
+          <div class="card-name">Wouri Kanté</div>
+          <div class="card-role">Directeur – École élémentaire de Thianghe</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Le CREAQ est un cadre d'une importance capitale. En tant que membre, il m'a permis de revoir plusieurs aspects d'ordre pédagogique pour prétendre apporter un plus aux encadrés. Son utilité se fait sentir davantage dans les écoles par la qualité de ses différentes interventions.</p>
+      </div>
+    </div>
+
+    <!-- 20 -->
+    <div class="temoignage-card gold-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">IS</div>
+        <div class="card-meta">
+          <div class="card-name">Ibra Amadou Sy</div>
+          <div class="card-role">Directeur – École élémentaire Alpha Mamadou Sadio Ba</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Le CREAQ est un dispositif mis en place par l'IEF de Kédougou depuis l'année dernière. Il vise, comme son nom l'indique, l'amélioration des enseignements-apprentissages dans les classes. Je me réjouis d'en faire partie.</p>
+        <p>Je tiens à remercier mon binôme M. Jean Emmanuel N'Diaye pour son engagement et sa disponibilité. J'ai beaucoup apprécié ses interventions dans la phase pré-entretien avec le maître : c'est l'occasion d'arrondir les angles et de cadrer les remarques et suggestions à apporter.</p>
+        <p>Après chaque visite, les collègues prennent nos contacts pour approfondir les recherches et poser des questions. C'est un sentiment de satisfaction qui nous anime lors de nos différentes sorties.</p>
+      </div>
+    </div>
+
+    <!-- 21 -->
+    <div class="temoignage-card teal-accent" data-site="kedougou">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar">EB</div>
+        <div class="card-meta">
+          <div class="card-name">Etienne Bianquinch &amp; Aliou Diallo</div>
+          <div class="card-role">Directeur – École élémentaire de Thiokethian · Binôme de Thiabédji</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Le CREAQ, initié par l'IEF de Kédougou, n'est pas simplement un outil administratif ; c'est une véritable stratégie pédagogique. En tant qu'acteurs de terrain, nous avons pu constater que ce cadre apporte une réponse concrète au défi de la qualité de l'éducation en harmonisant les pratiques de suivi. Il permet de passer d'un contrôle à un accompagnement réel et bienveillant des enseignants.</p>
+        <p>Le CREAQ est une fierté pour la circonscription de Kédougou. C'est un dispositif qui remobilise les troupes et redonne du sens à l'acte d'enseigner. C'est un modèle d'innovation locale qui mérite d'être cité en exemple partout où l'on cherche à allier efficacité et équité scolaire.</p>
+      </div>
+    </div>
+
+    <!-- 22 : AMADOU NIANG -->
+    <div class="temoignage-card" data-site="kedougou" style="border-left-color: var(--gold); background: linear-gradient(135deg, #fff 80%, #fffbec 100%);">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar" style="background:linear-gradient(135deg,var(--gold),#a87800);">AN</div>
+        <div class="card-meta">
+          <div class="card-name">Amadou Niang</div>
+          <div class="card-role">Coordonnateur des Activités du CREAQ – IEF de Kédougou</div>
+        </div>
+        <span class="card-site-badge badge-kedougou">Kédougou</span>
+      </div>
+      <div class="card-body">
+        <p>Durant l'année scolaire 2024-2025, l'IEF de Kédougou, Mouhamadou Bamba Mbaye, a mis en place le CREAQ — Cadre de Réflexion pour un Enseignement-Apprentissage de Qualité — qu'il avait mis en œuvre auparavant à Tivaouane et à Saraya.</p>
+        <p>J'ai eu l'honneur d'être choisi comme coordonnateur, chargé de planifier les activités, collecter les fiches d'encadrements, réaliser les synthèses mensuelles, transmettre les bulletins aux inspecteurs de district et produire le rapport final.</p>
+        <p>Ce cadre est salué aussi bien par les enseignants encadreurs que par les encadrés. La particularité est que les encadrés sont volontaires : personne n'est choisi contre son gré. Le nombre de demandes par mois témoigne de l'enthousiasme des uns et des autres.</p>
+        <p><strong>Les équipes comprennent 16 binômes</strong>, dont deux pour l'enseignement arabe, un pour le préscolaire et un coordonnateur. Les visites de classes et de cellules d'animation pédagogique (CAP) sont programmées chaque mois de novembre à mai.</p>
+        <p><strong>Bilan 2024-2025 : 189 bulletins d'encadrement et 69 suivis de CAP.</strong> Pour l'année en cours : au moins 224 bulletins d'encadrement et 112 suivis de cellules sont prévus.</p>
+        <p>Pour dire vrai, le CREAQ doit être approprié par le niveau central car il aide aussi bien les directeurs d'écoles que le corps de contrôle dans leurs tâches quotidiennes. L'initiative est bonne et accorde une place importante à la qualité de l'enseignement dans les établissements.</p>
+      </div>
+      <div class="card-footer">
+        <span class="card-date">Le Coordonnateur du CREAQ</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══ TIVAOUANE ══ -->
+  <section class="site-section" id="section-tivaouane">
+    <div class="site-heading">
+      <div class="site-heading-line" style="background:linear-gradient(to right,#a87800,transparent)"></div>
+      <div class="site-heading-label" style="color:#8a6500"><span class="dot" style="background:#CC9900"></span> Tivaouane – 2015–2019</div>
+      <div class="site-heading-line" style="background:linear-gradient(to left,#a87800,transparent)"></div>
+    </div>
+
+    <!-- 23 : SAKHÉWAR -->
+    <div class="temoignage-card" data-site="tivaouane" style="border-left-color: #CC9900;">
+      <div class="quote-mark">"</div>
+      <div class="card-header">
+        <div class="avatar" style="background:linear-gradient(135deg,#7a5500,#a87800);">SK</div>
+        <div class="card-meta">
+          <div class="card-name">Sakhéwar Ndiaye</div>
+          <div class="card-role">Directeur – École élémentaire Tivaouane B</div>
+        </div>
+        <span class="card-site-badge badge-tivaouane">Tivaouane</span>
+      </div>
+      <div class="card-body">
+        <p>Le CREAQ est une structure d'encadrement par les pairs qui nous permettait d'échanger et de partager nos expériences avec les autres. Il présente plusieurs avantages parmi lesquels on peut citer :</p>
+        <ul>
+          <li>Revisiter constamment des documents pour mieux appréhender le thème et les didactiques des différentes disciplines ;</li>
+          <li>La complémentarité du binôme ;</li>
+          <li>Permettre à la hiérarchie d'avoir des informations sur l'enseignant, la classe et même l'école ;</li>
+          <li>Améliorer la pratique de classe de nos enseignants et mieux affronter l'examen du CAP.</li>
+        </ul>
+        <p>Seul le problème de déplacement se posait avec acuité.</p>
+      </div>
+      <div class="card-footer">
+        <span class="card-date">Sakhéwar Ndiaye, Directeur de l'école élémentaire Tivaouane B</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SARAYA ══ -->
+  <section class="site-section" id="section-saraya">
+    <div class="site-heading">
+      <div class="site-heading-line" style="background:linear-gradient(to right,#1f6b4a,transparent)"></div>
+      <div class="site-heading-label" style="color:#1f6b4a"><span class="dot" style="background:#2a7d6e"></span> Saraya – 2021–2024</div>
+      <div class="site-heading-line" style="background:linear-gradient(to left,#1f6b4a,transparent)"></div>
+    </div>
+    <div class="empty-site">
+      <p>Les témoignages du site de Saraya seront intégrés prochainement.</p>
+    </div>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <div class="gallery-section">
+    <div class="gallery-title">LE CREAQ EN ACTION : CHRONIQUES DU TERRAIN</div>
+    <div class="gallery-subtitle">Photos documentant la Stivation et la Triade Dynamique Intersubjective (TDI) en pratique</div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <div class="gallery-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo à intégrer</span>
+        </div>
+        <div class="gallery-caption">Séance d'encadrement en binôme — Stivation en action, IEF Kédougou, 2025</div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo à intégrer</span>
+        </div>
+        <div class="gallery-caption">TDI : triade enseignant–encadreur–savoir lors d'une CAP mensuelle, Kédougou</div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo à intégrer</span>
+        </div>
+        <div class="gallery-caption">Entretien post-visite : moment de partage et de co-construction pédagogique</div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-img-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Photo à intégrer</span>
+        </div>
+        <div class="gallery-caption">Remise de fiches d'encadrement — documentation du cycle CREAQ, Tivaouane 2018</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- WHATSAPP STICKY -->
+<div class="whatsapp-bar">
+  <a class="whatsapp-btn" href="https://wa.me/?text=Recueil%20des%20impressions%20du%20CREAQ%20%E2%80%93%20Le%20Couloir%20du%20Savoir%20%3A%20https%3A%2F%2Flecouloirdusavoir.com%2Ftemoignages.html" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    Partager sur WhatsApp
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer class="page-footer">
+  &copy; 2026 · <a href="index.html">Le Couloir du Savoir</a> · IEF de Kédougou · M.B.Mbaye, Inspecteur de l'Enseignement
+</footer>
+
+<script>
+  function filtrer(site, btn) {
+    // Update buttons
+    document.querySelectorAll('.filter-btn').forEach(b => {
+      b.classList.remove('active', 'gold');
+    });
+    btn.classList.add('active');
+    if (site !== 'tous') btn.classList.add('gold');
+
+    const sections = { kedougou: 'section-kedougou', tivaouane: 'section-tivaouane', saraya: 'section-saraya' };
+
+    if (site === 'tous') {
+      document.querySelectorAll('.site-section').forEach(s => s.style.display = '');
+      document.querySelectorAll('.temoignage-card').forEach(c => {
+        c.style.display = '';
+        c.style.animationName = 'none';
+        void c.offsetWidth;
+        c.style.animationName = '';
+      });
+    } else {
+      // Show/hide sections
+      Object.entries(sections).forEach(([key, id]) => {
+        const section = document.getElementById(id);
+        if (section) section.style.display = (key === site) ? '' : 'none';
+      });
+      // Animate cards
+      document.querySelectorAll('.temoignage-card[data-site="' + site + '"]').forEach((c, i) => {
+        c.style.display = '';
+        c.style.animationDelay = (i * 0.06) + 's';
+        c.style.animationName = 'none';
+        void c.offsetWidth;
+        c.style.animationName = 'fadeUp';
+      });
+    }
+  }
+</script>
+</body>
+</html>
