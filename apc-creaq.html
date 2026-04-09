@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'APC au Sénégal et le CREAQ : Vers un nouvel encadrement pédagogique</title>
+  <meta name="description" content="L'APC au Sénégal a bénéficié de formations massives. Pourtant le relâchement est réel. Le CREAQ propose une réponse concrète, née du terrain, portée par la Stivation et la TDI." />
+  <meta name="keywords" content="APC Sénégal, CREAQ, encadrement pédagogique, Stivation, TDI, qualité des apprentissages, IEF Kédougou" />
+  <meta name="author" content="MBM · Le Couloir du Savoir" />
+  <meta property="og:title" content="L'APC au Sénégal et le CREAQ : Vers un nouvel encadrement pédagogique" />
+  <meta property="og:description" content="Dix ans d'expérimentation sur trois sites. Une réponse concrète au relâchement de l'APC. Le CREAQ, la Stivation et la TDI au service des enseignants." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://lecouloirdusavoir.com/apc-creaq.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy: #003366;
+      --gold: #CC9900;
+      --gold-light: #e6b800;
+      --cream: #faf8f4;
+      --text: #1a1a2e;
+      --text-light: #4a4a6a;
+      --border: #e0d8c8;
+      --white: #ffffff;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: var(--text);
+      background-color: var(--cream);
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background-color: var(--navy);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    }
+
+    .site-brand {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: 1.1rem;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .site-brand span {
+      color: var(--gold);
+    }
+
+    nav a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.85rem;
+      margin-left: 1.5rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background-color: var(--navy);
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(204,153,0,0.03) 0px,
+        rgba(204,153,0,0.03) 1px,
+        transparent 1px,
+        transparent 40px
+      );
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background-color: var(--gold);
+      color: var(--navy);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.3rem 1rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: var(--white);
+      line-height: 1.25;
+      max-width: 800px;
+      margin: 0 auto 1.2rem;
+      position: relative;
+    }
+
+    .hero h1 em {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .hero-sub {
+      color: rgba(255,255,255,0.65);
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      position: relative;
+    }
+
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.5);
+      position: relative;
+    }
+
+    .hero-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* ===== LAYOUT ===== */
+    .article-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    /* ===== INTRO ===== */
+    .intro-block {
+      border-left: 4px solid var(--gold);
+      padding: 1.2rem 1.5rem;
+      background-color: rgba(204,153,0,0.06);
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 3rem;
+      font-size: 1.08rem;
+      color: var(--navy);
+      font-weight: 400;
+    }
+
+    /* ===== SECTIONS ===== */
+    .article-section {
+      margin-bottom: 3.5rem;
+    }
+
+    .section-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: rgba(204,153,0,0.15);
+      line-height: 1;
+      margin-bottom: -0.5rem;
+      display: block;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.55rem;
+      color: var(--navy);
+      line-height: 1.3;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--navy);
+      margin: 1.8rem 0 0.6rem;
+    }
+
+    p {
+      margin-bottom: 1.1rem;
+      color: var(--text);
+    }
+
+    /* ===== ACRONYME ===== */
+    .acronym-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin: 1.8rem 0;
+    }
+
+    .acronym-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.2rem;
+      padding: 1rem 1.2rem;
+      background: var(--white);
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .acronym-item:hover {
+      box-shadow: 0 4px 16px rgba(0,51,102,0.1);
+      transform: translateX(4px);
+    }
+
+    .acronym-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--gold);
+      min-width: 2.5rem;
+      text-align: center;
+      line-height: 1;
+      padding-top: 0.2rem;
+    }
+
+    .acronym-content strong {
+      display: block;
+      color: var(--navy);
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .acronym-content p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    /* ===== ENCADRE ===== */
+    .highlight-box {
+      background-color: var(--navy);
+      color: var(--white);
+      padding: 1.8rem 2rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .highlight-box::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 120px; height: 120px;
+      background: radial-gradient(circle, rgba(204,153,0,0.2) 0%, transparent 70%);
+    }
+
+    .highlight-box p {
+      color: rgba(255,255,255,0.85);
+      margin: 0;
+      font-size: 1.05rem;
+      position: relative;
+    }
+
+    .highlight-box strong {
+      color: var(--gold);
+    }
+
+    /* ===== RECOMMANDATIONS ===== */
+    .reco-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+
+    .reco-list li {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1.1rem 1.3rem;
+      background: var(--white);
+      border-radius: 6px;
+      border-left: 4px solid var(--gold);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .reco-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--gold);
+      min-width: 2rem;
+      line-height: 1;
+      padding-top: 0.15rem;
+    }
+
+    .reco-text strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 0.3rem;
+      font-size: 0.98rem;
+    }
+
+    .reco-text p {
+      margin: 0;
+      font-size: 0.93rem;
+      color: var(--text-light);
+      line-height: 1.65;
+    }
+
+    /* ===== CITATION ===== */
+    .citation-block {
+      border-left: 4px solid var(--navy);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      background: rgba(0,51,102,0.04);
+      border-radius: 0 6px 6px 0;
+    }
+
+    .citation-block p {
+      font-style: italic;
+      color: var(--navy);
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .citation-source {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      margin-top: 0.5rem !important;
+      font-style: normal;
+    }
+
+    /* ===== CONCLUSION ===== */
+    .conclusion {
+      background: linear-gradient(135deg, var(--navy) 0%, #004080 100%);
+      color: var(--white);
+      padding: 2.5rem 2rem;
+      border-radius: 10px;
+      margin: 3rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .conclusion::after {
+      content: '"';
+      position: absolute;
+      bottom: -2rem;
+      right: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 12rem;
+      color: rgba(204,153,0,0.08);
+      line-height: 1;
+    }
+
+    .conclusion p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.05rem;
+      max-width: 620px;
+      margin: 0 auto 1rem;
+      position: relative;
+    }
+
+    .conclusion .slogan {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: var(--gold);
+      font-size: 1.2rem;
+      position: relative;
+    }
+
+    /* ===== PARTAGE ===== */
+    .share-section {
+      margin: 2.5rem 0;
+      padding: 1.5rem;
+      background: var(--white);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .share-section p {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-light);
+      margin-bottom: 1rem;
+    }
+
+    .share-buttons {
+      display: flex;
+      gap: 0.8rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .share-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .share-btn:hover {
+      opacity: 0.88;
+      transform: translateY(-1px);
+    }
+
+    .share-btn.whatsapp { background: #25D366; color: #fff; }
+    .share-btn.facebook { background: #1877F2; color: #fff; }
+    .share-btn.linkedin { background: #0A66C2; color: #fff; }
+
+    /* ===== SIGNATURE ===== */
+    .signature {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.5rem;
+      background: var(--white);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+
+    .signature-avatar {
+      width: 52px;
+      height: 52px;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+      font-size: 1.2rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .signature-text strong {
+      display: block;
+      color: var(--navy);
+      font-size: 0.95rem;
+    }
+
+    .signature-text span {
+      font-size: 0.82rem;
+      color: var(--text-light);
+    }
+
+    /* ===== A LIRE AUSSI ===== */
+    .a-lire-aussi {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 2px solid var(--border);
+    }
+
+    .a-lire-aussi h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-light);
+      margin-bottom: 1.2rem;
+      border-bottom: none;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background-color: var(--navy);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.82rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      .hero { padding: 3rem 1.2rem 2rem; }
+      .article-wrapper { padding: 2rem 1.2rem 3rem; }
+      nav { display: none; }
+      .conclusion { padding: 2rem 1.2rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="index.html" class="site-brand">Le Couloir <span>du Savoir</span></a>
+    <nav>
+      <a href="creaq.html">CREAQ</a>
+      <a href="lu-pour-vous.html">Lu pour vous</a>
+      <a href="a-propos.html">À propos</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-tag">Encadrement pédagogique</div>
+    <h1>L'APC au Sénégal et le CREAQ : <em>Quand l'encadrement pédagogique devient levier de qualité</em></h1>
+    <p class="hero-sub">Une réforme ambitieuse, un relâchement réel, et une réponse née du terrain après dix ans d'expérimentation.</p>
+    <div class="hero-meta">
+      <span>MBM · Le Couloir du Savoir</span>
+      <span>Lecture : 7 min</span>
+    </div>
+  </div>
+
+  <!-- ARTICLE -->
+  <div class="article-wrapper">
+
+    <!-- INTRO -->
+    <div class="intro-block">
+      L'Approche Par Compétences a bénéficié d'un investissement considérable au Sénégal. Les formations ont eu lieu. Les outils ont été produits. Pourtant, les pratiques de classe n'ont pas suivi. Le Cadre CREAQ propose de comprendre pourquoi et d'agir autrement.
+    </div>
+
+    <!-- SECTION 1 -->
+    <div class="article-section">
+      <span class="section-number">01</span>
+      <h2>Une réforme ambitieuse, une mise en oeuvre fragilisée</h2>
+
+      <p>L'Approche Par Compétences a été introduite au Sénégal dans le cadre d'une réforme curriculaire de grande envergure. Des formations massives ont été organisées à tous les niveaux du système éducatif. Les textes officiels ont été révisés. Les guides méthodologiques, produits et diffusés. L'implémentation a bénéficié d'un soutien technique et financier international notable, ce qui lui a conféré une relative stabilité par rapport à d'autres pays de la sous-région.</p>
+
+      <p>Pourtant, le bilan sur le terrain reste nuancé. Des recherches conduites dans le contexte africain ont mis en évidence des limites réelles de l'APC, posant une question fondamentale : les élèves apprennent-ils mieux depuis la réforme ? Les experts eux-mêmes penchent vers une réponse négative, et ce quel que soit le niveau d'approfondissement de la réforme dans les différents pays. Des analyses comparatives sur les expériences ivoirienne et sénégalaise révèlent même un impact négatif de l'APC sur certains indicateurs d'apprentissage, appelant une réflexion approfondie sur les modalités d'adoption et de mise en oeuvre de ce référentiel.</p>
+
+      <div class="citation-block">
+        <p>«&#160;Peut-on dire que, dans le cadre des réformes curriculaires par l'APC, les élèves apprennent mieux ? La réponse est non, quel que soit le niveau d'approfondissement de la réforme dans les différents pays, et malgré des évaluations prometteuses au moment des phases expérimentales.&#160;»</p>
+        <p class="citation-source">Cros et al. (2010), cités dans Revue des études africaines sur l'APC.</p>
+      </div>
+
+      <p>Sur le terrain sénégalais, le constat est partagé par les praticiens. Les moments d'intégration, pourtant au coeur de la logique compétence, ne sont plus systématiquement respectés. Le suivi de l'application de l'APC s'est progressivement relâché. Et paradoxalement, les évaluations certificatives continuent de se réclamer de cette approche, créant un décalage croissant entre les exigences officielles et les pratiques réelles en classe.</p>
+
+      <p>Ce n'est pas un échec de la réforme en tant que telle. C'est un échec de l'accompagnement.</p>
+
+      <p>C'est précisément ce vide que le CREAQ cherche à combler.</p>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="article-section">
+      <span class="section-number">02</span>
+      <h2>Le CREAQ : un dispositif né du terrain, pas des bureaux</h2>
+
+      <p>Le <strong>Cadre de Réflexion et d'Encadrement pour un Enseignement Apprentissage de Qualité</strong> n'est pas une construction théorique importée. Il est le produit de dix ans d'expérimentation directe sur trois sites aux réalités contrastées : Tivaouane (2015 à 2019), Saraya (2021 à 2024), et Kédougou (2024 à ce jour). Plus de mille participants, enseignants, directeurs et encadreurs, en ont constitué le laboratoire vivant.</p>
+
+      <p>Chaque mot de l'acronyme est un programme en soi.</p>
+
+      <div class="acronym-grid">
+        <div class="acronym-item">
+          <div class="acronym-letter">C</div>
+          <div class="acronym-content">
+            <strong>Cadre</strong>
+            <p>Pas un protocole rigide, mais un espace structuré qui donne sens aux interactions. C'est dans la qualité des échanges entre pairs que naît la transformation des pratiques. Le cadre sécurise sans contraindre, oriente sans imposer, et libère la parole professionnelle.</p>
+          </div>
+        </div>
+        <div class="acronym-item">
+          <div class="acronym-letter">R</div>
+          <div class="acronym-content">
+            <strong>Réflexion</strong>
+            <p>Le CREAQ consacre l'avènement d'un nouveau type d'enseignant : celui qui sait prendre de la distance par rapport à ses propres actes pédagogiques, porter un regard critique sur sa pratique de classe et identifier lui-même les leviers de son amélioration. Cette posture réflexive ne s'improvise pas. Elle se cultive, collectivement, dans un espace de confiance.</p>
+          </div>
+        </div>
+        <div class="acronym-item">
+          <div class="acronym-letter">E</div>
+          <div class="acronym-content">
+            <strong>Encadrement</strong>
+            <p>L'encadrement dans le CREAQ n'est pas confié à la hiérarchie administrative. Il est assuré par des enseignants pairs, choisis pour leur sérieux, leur expérience et leur efficacité pédagogique reconnue. Ces encadreurs accompagnent leurs collègues de l'intérieur, avec la légitimité du praticien. Le bénéfice est double : l'encadré progresse, l'encadreur consolide et approfondit sa propre maîtrise. L'inspecteur, quant à lui, endosse un rôle de régulateur. Il analyse les bulletins d'encadrement produits, identifie les zones de fragilité et décide des points d'intervention prioritaires. Il pilote le dispositif sans se substituer à ceux qui l'animent.</p>
+          </div>
+        </div>
+        <div class="acronym-item">
+          <div class="acronym-letter">A</div>
+          <div class="acronym-content">
+            <strong>Enseignement · Apprentissage</strong>
+            <p>Deux pôles indissociables. Du côté de l'enseignant : créer les conditions d'un apprentissage réussi, choisir les situations pertinentes, adapter sa posture, rendre l'élève acteur. Du côté de l'élève : sa centralité est absolue. Tout acte pédagogique se mesure à une seule aune : ce que l'élève a effectivement construit, compris et mobilisé.</p>
+          </div>
+        </div>
+        <div class="acronym-item">
+          <div class="acronym-letter">Q</div>
+          <div class="acronym-content">
+            <strong>Qualité</strong>
+            <p>La qualité n'est pas un point de départ, c'est un aboutissement. Elle est l'horizon vers lequel tendent tous les acteurs engagés dans le CREAQ. Exigence partagée et non injonction venue d'en haut, elle se construit pas à pas, dans la cohérence entre ce que l'on enseigne, ce que l'on accompagne et ce que l'élève apprend réellement.</p>
+          </div>
+        </div>
+      </div>
+
+      <p>Sa force tient à trois piliers fondamentaux. La <strong>réflexivité collective</strong> : le CREAQ ne fonctionne pas sur la dyade isolée inspecteur-enseignant. Il repose sur le groupe de pairs comme espace de co-analyse. L'<strong>encadrement de proximité</strong> : la visite de classe cesse d'être un moment de contrôle pour devenir un acte pédagogique à part entière. Et la <strong>qualité des apprentissages comme boussole unique</strong> : toute discussion, toute observation, tout retour se ramène à une question centrale. L'élève a-t-il réellement acquis la compétence visée ?</p>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="article-section">
+      <span class="section-number">03</span>
+      <h2>La Stivation : quand la motivation ne suffit plus</h2>
+
+      <p>Pour comprendre pourquoi certains enseignants s'approprient l'APC quand d'autres y résistent, il faut aller au-delà de la motivation classique.</p>
+
+      <p>La <strong>Stivation</strong>, concept issu d'un mémoire de fin de formation (CAIEE, FASTEF/UCAD, 2010) et opérationnalisé depuis à travers le CREAQ sur trois terrains, désigne la dynamique tripolaire qui articule STImulation, motiVATION et interACTION au sein d'un groupe d'adultes en situation d'apprentissage professionnel.</p>
+
+      <div class="highlight-box">
+        <p>La Stivation n'est pas un synonyme de motivation. <strong>C'est une lecture plus fine.</strong> Un enseignant peut être motivé par conviction personnelle, mais sans stimulation externe ni interaction avec ses pairs, cette motivation s'épuise. À l'inverse, un enseignant initialement réticent peut être stivé par la dynamique collective d'un groupe de pairs actifs.</p>
+      </div>
+
+      <p>Dans le contexte de l'APC, la Stivation permet de comprendre et d'activer le changement de posture. Non par injonction institutionnelle, mais par engagement progressif et consenti. Elle éclaire ce que les formations classiques n'arrivent pas à produire : une transformation durable des pratiques professionnelles.</p>
+    </div>
+
+    <!-- SECTION 4 -->
+    <div class="article-section">
+      <span class="section-number">04</span>
+      <h2>La TDI : l'architecture relationnelle du CREAQ</h2>
+
+      <p>Derrière le CREAQ se trouve une structure que l'on pourrait appeler son architecture invisible : la <strong>Triade Dynamique Intersubjective</strong>.</p>
+
+      <p>Toute situation d'encadrement met en jeu trois pôles en interaction constante : l'encadreur, l'enseignant, et l'élève, présent en filigrane dans chaque échange, même en son absence physique. La qualité de l'encadrement dépend de la qualité de ces trois relations prises ensemble, jamais isolément.</p>
+
+      <p>C'est pourquoi le CREAQ refuse la logique du face-à-face bilatéral. Il crée les conditions d'une triade vivante, où chaque acteur influence et est influencé par les deux autres. L'encadreur n'agit pas sur l'enseignant. Il agit avec lui, en gardant l'élève au centre de la réflexion.</p>
+    </div>
+
+    <!-- SECTION 5 -->
+    <div class="article-section">
+      <span class="section-number">05</span>
+      <h2>Trois recommandations concrètes pour les praticiens</h2>
+
+      <ul class="reco-list">
+        <li>
+          <div class="reco-num">1</div>
+          <div class="reco-text">
+            <strong>Recentrer l'observation sur l'activité de l'élève</strong>
+            <p>Lors d'une visite de classe, l'indicateur pertinent n'est pas ce que dit l'enseignant, mais ce que fait l'élève. Est-il en situation de recherche, de manipulation, de résolution de problème, conformément aux exigences de l'APC ?</p>
+          </div>
+        </li>
+        <li>
+          <div class="reco-num">2</div>
+          <div class="reco-text">
+            <strong>Ouvrir l'entretien post-visite par une question réflexive</strong>
+            <p>Avant tout commentaire de l'encadreur, laisser l'enseignant répondre : «&#160;Quel moment de la leçon a, selon vous, le mieux favorisé l'apprentissage ?&#160;» Cette inversion simple active l'auto-analyse et réduit la posture défensive.</p>
+          </div>
+        </li>
+        <li>
+          <div class="reco-num">3</div>
+          <div class="reco-text">
+            <strong>Ancrer chaque encadrement dans une dynamique collective</strong>
+            <p>La cellule d'animation pédagogique doit cesser d'être un moment administratif. Elle est le lieu naturel du CREAQ : un espace où les pratiques se partagent, se questionnent, s'enrichissent. Un véritable couloir du savoir.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- CONCLUSION -->
+    <div class="conclusion">
+      <p>La réforme curriculaire ne se décrète pas. Elle se construit, pas à pas, dans l'interaction entre des hommes et des femmes qui ont choisi l'éducation comme vocation.</p>
+      <p>Le CREAQ, porté par la Stivation et structuré par la Triade Dynamique Intersubjective, offre aux inspecteurs et aux directeurs d'école un levier concret pour faire de chaque acte d'encadrement un acte pédagogique. Pas une inspection. Pas un rapport. Un moment de co-construction de la qualité.</p>
+      <p class="slogan">Là où l'école apprend d'elle-même.</p>
+    </div>
+
+    <!-- TELECHARGEMENT FICHE MEMO -->
+    <div style="
+      background: linear-gradient(135deg, #003366 0%, #004080 100%);
+      border-radius: 10px;
+      padding: 2rem 2rem;
+      margin: 2.5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    ">
+      <div style="position: relative;">
+        <div style="
+          font-size: 0.7rem;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          color: #CC9900;
+          font-family: 'Source Serif 4', serif;
+          margin-bottom: 0.4rem;
+        ">Ressource gratuite</div>
+        <div style="
+          font-family: 'Playfair Display', serif;
+          font-size: 1.2rem;
+          color: #ffffff;
+          line-height: 1.3;
+          margin-bottom: 0.5rem;
+        ">Fiche Mémo CREAQ</div>
+        <div style="
+          font-size: 0.88rem;
+          color: rgba(255,255,255,0.65);
+          max-width: 380px;
+          line-height: 1.55;
+        ">Les cinq entrées du dispositif, les trois niveaux d'acteurs et les points clés pour un encadrement de qualité. Une page, directement utilisable sur le terrain.</div>
+      </div>
+      <a href="fiche-memo-creaq.pdf" download style="
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background-color: #CC9900;
+        color: #003366;
+        font-family: 'Source Serif 4', serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 0.85rem 1.6rem;
+        border-radius: 5px;
+        text-decoration: none;
+        white-space: nowrap;
+        transition: background-color 0.2s, transform 0.2s;
+        flex-shrink: 0;
+      "
+      onmouseover="this.style.backgroundColor='#e6b800'; this.style.transform='translateY(-2px)'"
+      onmouseout="this.style.backgroundColor='#CC9900'; this.style.transform='translateY(0)'"
+      >
+        &#8659; Télécharger la fiche PDF
+      </a>
+    </div>
+
+    <!-- PARTAGE -->
+    <div class="share-section">
+      <p>Partager cet article</p>
+      <div class="share-buttons">
+        <a class="share-btn whatsapp"
+           href="https://api.whatsapp.com/send?text=L'APC%20au%20Sénégal%20et%20le%20CREAQ%20%3A%20https://lecouloirdusavoir.com/apc-creaq.html"
+           target="_blank" rel="noopener">
+          &#128172; WhatsApp
+        </a>
+        <a class="share-btn facebook"
+           href="https://www.facebook.com/sharer/sharer.php?u=https://lecouloirdusavoir.com/apc-creaq.html"
+           target="_blank" rel="noopener">
+          &#x1F426; Facebook
+        </a>
+        <a class="share-btn linkedin"
+           href="https://www.linkedin.com/sharing/share-offsite/?url=https://lecouloirdusavoir.com/apc-creaq.html"
+           target="_blank" rel="noopener">
+          &#128101; LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <!-- SIGNATURE -->
+    <div class="signature">
+      <div class="signature-avatar">MBM</div>
+      <div class="signature-text">
+        <strong>MBM · Le Couloir du Savoir</strong>
+        <span>Recherche et innovation en éducation · lecouloirdusavoir.com</span>
+      </div>
+    </div>
+
+    <!-- A LIRE AUSSI -->
+    <div class="a-lire-aussi" id="a-lire-aussi">
+      <h3>À lire aussi</h3>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 <a href="index.html">Le Couloir du Savoir</a> · Tous droits réservés</p>
+    <p style="margin-top:0.4rem;">
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
