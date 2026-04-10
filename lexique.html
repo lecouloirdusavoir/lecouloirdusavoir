@@ -13,76 +13,41 @@
 <meta property="og:title" content="Lexique de la Stivation — Le Couloir du Savoir"/>
 <meta property="og:description" content="Tous les concepts clés : Stivation, CREAQ, TDI, andragogie, situation adidactique, Flow, ZPD. Définitions issues du terrain africain."/>
 <meta property="og:url" content="https://lecouloirdusavoir.com/lexique.html"/>
-
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "DefinedTermSet",
-  "name": "Lexique de la Stivation",
-  "description": "Glossaire des concepts clés du Laboratoire de la Stivation — Le Couloir du Savoir",
-  "url": "https://lecouloirdusavoir.com/lexique.html",
-  "publisher": {
-    "@type": "Person",
-    "name": "Mouhamadou Bamba Mbaye",
-    "affiliation": "FASTEF / UCAD"
-  }
-}
+{"@context":"https://schema.org","@type":"DefinedTermSet","name":"Lexique de la Stivation","description":"Glossaire des concepts clés du Laboratoire de la Stivation — Le Couloir du Savoir","url":"https://lecouloirdusavoir.com/lexique.html","publisher":{"@type":"Person","name":"Mouhamadou Bamba Mbaye","affiliation":"FASTEF / UCAD"}}
 </script>
-
-<!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SDJVY86L2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9SDJVY86L2');
-</script>
-
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9SDJVY86L2');</script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-
 <style>
 :root{--navy:#1A2E4A;--teal:#0E6B7C;--gold:#C9970A;--sand:#F5EED8;--cream:#FDFAF3;--rust:#B85533;--sage:#4A7C6F;--plum:#6B3F6E;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden;line-height:1.85}
-
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:66px;background:rgba(26,46,74,0.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,151,10,0.25)}
 .nav-brand{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--gold);text-decoration:none}
 .nav-brand span{color:var(--white);font-weight:400;font-style:italic}
 .nav-retour{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;border:1px solid rgba(255,255,255,0.2);padding:7px 18px;border-radius:4px;transition:color 0.2s,border-color 0.2s}
 .nav-retour:hover{color:var(--gold);border-color:var(--gold)}
-
-/* HERO */
 .hero{margin-top:66px;background:var(--navy);padding:72px 40px 60px;text-align:center}
 .hero .eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--white);line-height:1.2;margin-bottom:16px}
 .hero h1 em{color:var(--gold);font-style:italic}
 .hero p{font-size:1.05rem;color:rgba(255,255,255,0.65);max-width:580px;margin:0 auto 32px}
-
-/* RECHERCHE */
 .search-bloc{background:var(--gold);padding:28px 40px}
 .search-inner{max-width:680px;margin:0 auto;display:flex;gap:12px;align-items:center}
 .search-inner input{flex:1;font-family:'Source Serif 4',serif;font-size:1rem;padding:12px 18px;border:none;border-radius:4px;background:var(--white);color:var(--text);outline:none}
 .search-inner input::placeholder{color:var(--muted)}
-
-/* FILTRES */
 .filtres{background:var(--sand);padding:20px 40px;border-bottom:1px solid rgba(26,46,74,0.08)}
 .filtres-inner{max-width:1100px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .filtre-label{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-right:4px}
 .filtre-btn{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;padding:6px 16px;border-radius:20px;border:1.5px solid rgba(26,46,74,0.2);background:transparent;color:var(--navy);cursor:pointer;transition:all 0.15s}
 .filtre-btn:hover,.filtre-btn.actif{background:var(--navy);color:var(--white);border-color:var(--navy)}
 .filtre-btn.actif{background:var(--gold);border-color:var(--gold);color:var(--navy)}
-
-/* CONTENU */
 .conteneur{max-width:1100px;margin:0 auto;padding:64px 40px}
 .compteur{font-family:'DM Sans',sans-serif;font-size:0.82rem;color:var(--muted);margin-bottom:32px}
 .compteur strong{color:var(--navy)}
-
-/* GRILLE */
 .lexique-grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
-
-/* CARTE TERME */
 .terme-carte{background:var(--white);border-radius:8px;border-top:4px solid var(--navy);padding:28px 26px;display:flex;flex-direction:column;gap:14px;transition:transform 0.15s,box-shadow 0.15s;cursor:default}
 .terme-carte:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(26,46,74,0.1)}
 .terme-carte.original{border-top-color:var(--gold)}
@@ -100,63 +65,36 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .terme-ref{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(26,46,74,0.4);font-style:italic;margin-top:4px;padding-top:12px;border-top:1px solid var(--sand)}
 .terme-lien{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:4px;margin-top:4px}
 .terme-lien:hover{color:var(--navy)}
-
-/* AUCUN RÉSULTAT */
 .aucun{display:none;text-align:center;padding:60px 20px;color:var(--muted);font-style:italic}
-
-/* PARTAGE */
 .partage-bloc{background:var(--navy);padding:56px 40px;text-align:center;margin-top:0}
 .partage-bloc h3{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--white);margin-bottom:10px}
 .partage-bloc p{color:rgba(255,255,255,0.6);margin-bottom:28px;font-size:0.95rem}
 .partage-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .btn-share{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:700;padding:11px 22px;border-radius:4px;text-decoration:none}
-
-/* FOOTER */
 footer{background:var(--navy);padding:32px 40px;text-align:center;border-top:1px solid rgba(255,255,255,0.08)}
 footer p{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.35)}
 footer a{color:rgba(255,255,255,0.6);text-decoration:none}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  nav{padding:0 20px}
-  .hero{padding:56px 20px 44px}
-  .search-bloc{padding:20px}
-  .filtres{padding:16px 20px}
-  .conteneur{padding:40px 20px}
-  .lexique-grille{grid-template-columns:1fr}
-  .partage-bloc{padding:40px 20px}
-  footer{padding:24px 20px}
-}
-
-/* ANIMATION */
+@media(max-width:768px){nav{padding:0 20px}.hero{padding:56px 20px 44px}.search-bloc{padding:20px}.filtres{padding:16px 20px}.conteneur{padding:40px 20px}.lexique-grille{grid-template-columns:1fr}.partage-bloc{padding:40px 20px}footer{padding:24px 20px}}
 .terme-carte{opacity:0;transform:translateY(16px);transition:opacity 0.4s ease,transform 0.4s ease,box-shadow 0.15s,transform 0.15s}
 .terme-carte.visible{opacity:1;transform:translateY(0)}
 .terme-carte.masque{display:none}
 </style>
 </head>
 <body>
-
-<!-- NAVIGATION -->
 <nav>
   <a href="index.html" class="nav-brand">Le Couloir <span>du Savoir</span></a>
   <a href="index.html" class="nav-retour">← Retour au site</a>
 </nav>
-
-<!-- HERO -->
 <div class="hero">
   <p class="eyebrow">Laboratoire de la Stivation</p>
   <h1>Lexique de la <em>Stivation</em></h1>
   <p>Tous les concepts clés du Couloir du Savoir — des termes originaux nés du terrain africain aux références théoriques fondatrices.</p>
 </div>
-
-<!-- RECHERCHE -->
 <div class="search-bloc">
   <div class="search-inner">
     <input type="text" id="recherche" placeholder="🔍  Rechercher un terme… (ex: Stivation, Flow, ZPD)" oninput="filtrer()">
   </div>
 </div>
-
-<!-- FILTRES -->
 <div class="filtres">
   <div class="filtres-inner">
     <span class="filtre-label">Filtrer :</span>
@@ -167,11 +105,8 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
     <button class="filtre-btn" onclick="filtrerCat('pedago', this)">Pédagogie</button>
   </div>
 </div>
-
-<!-- GRILLE DES TERMES -->
 <div class="conteneur">
   <p class="compteur" id="compteur"><strong>14 termes</strong> dans le lexique</p>
-
   <div class="lexique-grille" id="grille">
 
     <!-- STIVATION -->
@@ -184,6 +119,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
       <div class="terme-def">Processus par lequel des interactions informelles entre apprenants aux profils cognitifs contrastés génèrent simultanément une déstabilisation cognitive et une dynamique collective d'apprentissage profond, hors de tout cadre institutionnel formel.</div>
       <div class="terme-ref">Mbaye, M.B. (2010). FASTEF / UCAD, Dakar.</div>
       <a href="article-stivation-milieu-allosterique.html" class="terme-lien">Lire l'article →</a>
+      <a href="maturite-professionnelle-enseignant.html" class="terme-lien">Stivation et maturité professionnelle →</a>
     </div>
 
     <!-- CREAQ -->
@@ -192,10 +128,12 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
         <div class="terme-nom">CREAQ</div>
         <span class="terme-badge badge-original">Concept original</span>
       </div>
-      <div class="terme-acronyme">Cadre de Réflexion pour des Enseignements-Apprentissages de Qualité</div>
-      <div class="terme-def">Dispositif de formation continue par les pairs permettant de démultiplier l'accompagnement pédagogique là où les ressources humaines sont limitées. Le CREAQ repose sur la co-construction de savoirs professionnels entre enseignants et inspecteurs.</div>
+      <div class="terme-acronyme">Cadre de Réflexion et d'Encadrement pour un Enseignement Apprentissage de Qualité</div>
+      <div class="terme-def">Dispositif d'encadrement pédagogique par les pairs, né du terrain sénégalais et opérationnalisé sur trois sites entre 2015 et aujourd'hui : Tivaouane, Saraya et Kédougou. Le CREAQ repose sur des enseignants pairs choisis pour leur efficacité pédagogique reconnue, qui accompagnent leurs collègues de l'intérieur. L'inspecteur y joue un rôle de régulateur : il analyse les bulletins d'encadrement et identifie les zones d'intervention prioritaires. Plus de mille participants documentés.</div>
       <div class="terme-ref">Mbaye, M.B. (2015). IEF Kédougou / Le Couloir du Savoir.</div>
       <a href="creaq.html" class="terme-lien">Voir le CREAQ en action →</a>
+      <a href="apc-creaq.html" class="terme-lien">Lire : APC et CREAQ →</a>
+      <a href="maturite-professionnelle-enseignant.html" class="terme-lien">Lire : Maturité professionnelle →</a>
     </div>
 
     <!-- TDI -->
@@ -207,6 +145,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
       <div class="terme-acronyme">Triade Dynamique Intersubjective</div>
       <div class="terme-def">Architecture relationnelle à trois pôles interdépendants dans un environnement pédago-didactique vivant. Chaque acteur apprend de l'autre dans un système auto-renforçant où la relation entre enseignant, apprenant et savoir est constamment reconfigurée par les interactions.</div>
       <div class="terme-ref">Mbaye, M.B. (2019). Le Couloir du Savoir.</div>
+      <a href="apc-creaq.html" class="terme-lien">La TDI dans le CREAQ →</a>
     </div>
 
     <!-- STIVATEUR -->
@@ -240,7 +179,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
       <div class="terme-ref">Brousseau, G. (1986). Théorie des situations didactiques.</div>
     </div>
 
-    <!-- ZONE PROXIMALE */-->
+    <!-- ZONE PROXIMALE -->
     <div class="terme-carte psycho" data-cat="psycho" data-nom="zone proximale développement zpd vygotski vygotsky">
       <div class="terme-entete">
         <div class="terme-nom">Zone proximale de développement</div>
@@ -249,6 +188,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
       <div class="terme-acronyme">ZPD — Vygotski, 1978</div>
       <div class="terme-def">Distance entre ce qu'un apprenant peut faire seul et ce qu'il peut accomplir avec l'aide d'un pair plus compétent. La Stivation opère précisément dans cet espace : l'interaction informelle entre pairs crée une dynamique d'échafaudage mutuel qui fait progresser chacun au-delà de ses capacités individuelles.</div>
       <div class="terme-ref">Vygotski, L.S. (1978). Mind in society. Harvard University Press.</div>
+      <a href="article-explicite-constructivisme-senegal.html" class="terme-lien">ZPD et enseignement explicite →</a>
     </div>
 
     <!-- MOTIVATION INTRINSÈQUE -->
@@ -258,8 +198,9 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
         <span class="terme-badge badge-psycho">Psychologie</span>
       </div>
       <div class="terme-def">Motivation qui naît de l'intérieur de l'individu, sans récompense externe. Selon Deci et Ryan (2000), elle repose sur trois besoins fondamentaux : l'autonomie (se sentir à l'origine de ses actions), la compétence (se sentir efficace) et l'appartenance (se sentir relié aux autres). La Stivation active ces trois besoins simultanément.</div>
-      <div class="terme-ref">Deci, E.L. & Ryan, R.M. (2000). Self-determination theory.</div>
+      <div class="terme-ref">Deci, E.L. &amp; Ryan, R.M. (2000). Self-determination theory.</div>
       <a href="article-motivation-intrinseque.html" class="terme-lien">Lire l'article →</a>
+      <a href="maturite-professionnelle-enseignant.html" class="terme-lien">Motivation et maturité professionnelle →</a>
     </div>
 
     <!-- STYLES COGNITIFS -->
@@ -292,6 +233,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
       </div>
       <div class="terme-def">Art et science d'aider les adultes à apprendre, par opposition à la pédagogie centrée sur l'enfant. Knowles (1970) en pose les principes : l'adulte apprend mieux quand il comprend pourquoi il doit apprendre, quand il s'appuie sur son expérience, et quand l'apprentissage est orienté vers la résolution de problèmes réels. La Stivation est un modèle andragogique par essence.</div>
       <div class="terme-ref">Knowles, M.S. (1970). The Modern Practice of Adult Education.</div>
+      <a href="maturite-professionnelle-enseignant.html" class="terme-lien">Andragogie et maturité professionnelle →</a>
     </div>
 
     <!-- DIMENSION INTERSUBJECTIVE -->
@@ -320,16 +262,15 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
         <div class="terme-nom">Déstabilisation cognitive</div>
         <span class="terme-badge badge-psycho">Psychologie</span>
       </div>
-      <div class="terme-def">Rupture d'équilibre intellectuel provoquée par la rencontre d'une information, d'un point de vue ou d'une pratique qui contredit les conceptions préalables de l'apprenant. Loin d'être un obstacle, cette déstabilisation est, dans le modèle de la Stivation, le point de départ indispensable de tout apprentissage profond. Elle correspond au "conflit socio-cognitif" de Piaget relu dans un contexte informel et non évaluatif.</div>
+      <div class="terme-def">Rupture d'équilibre intellectuel provoquée par la rencontre d'une information, d'un point de vue ou d'une pratique qui contredit les conceptions préalables de l'apprenant. Loin d'être un obstacle, cette déstabilisation est, dans le modèle de la Stivation, le point de départ indispensable de tout apprentissage profond. Elle correspond au conflit socio-cognitif de Piaget relu dans un contexte informel et non évaluatif.</div>
       <div class="terme-ref">Piaget, J. (1975). L'équilibration des structures cognitives. / Giordan, A. (1995).</div>
+      <a href="article-constructivisme-afrique.html" class="terme-lien">Constructivisme en Afrique →</a>
     </div>
 
   </div>
-
   <div class="aucun" id="aucun">Aucun terme ne correspond à votre recherche.</div>
 </div>
 
-<!-- PARTAGE -->
 <div class="partage-bloc">
   <h3>Partagez ce lexique</h3>
   <p>Une ressource utile pour vos collègues enseignants, directeurs et inspecteurs.</p>
@@ -340,49 +281,35 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <p>© 2026 <strong style="color:var(--gold)">Le Couloir du Savoir</strong> · Laboratoire de la Stivation · <a href="index.html">Retour à l'accueil</a></p>
 </footer>
 
 <script>
-// Animation au chargement
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
-}, { threshold: 0.05 });
-document.querySelectorAll('.terme-carte').forEach(el => obs.observe(el));
-
-let catActive = 'tous';
-
-function filtrer() {
-  const q = document.getElementById('recherche').value.toLowerCase().trim();
-  const cartes = document.querySelectorAll('.terme-carte');
-  let visibles = 0;
-  cartes.forEach(c => {
-    const nom = c.dataset.nom || '';
-    const def = c.querySelector('.terme-def')?.textContent.toLowerCase() || '';
-    const matchRecherche = !q || nom.includes(q) || def.includes(q);
-    const matchCat = catActive === 'tous' || c.dataset.cat === catActive;
-    if (matchRecherche && matchCat) {
-      c.classList.remove('masque');
-      setTimeout(() => c.classList.add('visible'), 50);
-      visibles++;
-    } else {
-      c.classList.add('masque');
-      c.classList.remove('visible');
-    }
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});},{threshold:0.05});
+document.querySelectorAll('.terme-carte').forEach(el=>obs.observe(el));
+let catActive='tous';
+function filtrer(){
+  const q=document.getElementById('recherche').value.toLowerCase().trim();
+  const cartes=document.querySelectorAll('.terme-carte');
+  let visibles=0;
+  cartes.forEach(c=>{
+    const nom=c.dataset.nom||'';
+    const def=c.querySelector('.terme-def')?.textContent.toLowerCase()||'';
+    const matchRecherche=!q||nom.includes(q)||def.includes(q);
+    const matchCat=catActive==='tous'||c.dataset.cat===catActive;
+    if(matchRecherche&&matchCat){c.classList.remove('masque');setTimeout(()=>c.classList.add('visible'),50);visibles++;}
+    else{c.classList.add('masque');c.classList.remove('visible');}
   });
-  document.getElementById('compteur').innerHTML = '<strong>' + visibles + ' terme' + (visibles > 1 ? 's' : '') + '</strong> affiché' + (visibles > 1 ? 's' : '');
-  document.getElementById('aucun').style.display = visibles === 0 ? 'block' : 'none';
+  document.getElementById('compteur').innerHTML='<strong>'+visibles+' terme'+(visibles>1?'s':'')+'</strong> affiché'+(visibles>1?'s':'');
+  document.getElementById('aucun').style.display=visibles===0?'block':'none';
 }
-
-function filtrerCat(cat, btn) {
-  catActive = cat;
-  document.querySelectorAll('.filtre-btn').forEach(b => b.classList.remove('actif'));
+function filtrerCat(cat,btn){
+  catActive=cat;
+  document.querySelectorAll('.filtre-btn').forEach(b=>b.classList.remove('actif'));
   btn.classList.add('actif');
   filtrer();
 }
 </script>
-
 </body>
 </html>
