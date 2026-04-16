@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ressources educatives - Decrets, guides et textes officiels - Le Couloir du Savoir</title>
+<meta name="description" content="Bibliotheque de ressources educatives pour enseignants, directeurs et inspecteurs du Senegal et d'Afrique francophone. Decrets officiels, guides pedagogiques, textes reglementaires telechargeables."/>
+<meta name="keywords" content="decrets education Senegal, textes officiels enseignement Senegal, guides pedagogiques, formation enseignants Senegal, IEF, IA, inspection education, curriculum education de base, ressources educatives Afrique"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://lecouloirdusavoir.com/ressources.html"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SDJVY86L2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9SDJVY86L2');
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#1A2E4A;--teal:#0E6B7C;--gold:#C9970A;--cream:#FDFAF3;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,serif;background:var(--cream);color:var(--text);line-height:1.8}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:66px;background:rgba(26,46,74,0.97);border-bottom:1px solid rgba(201,151,10,0.25)}
+.nav-brand{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--gold);text-decoration:none}
+.nav-brand span{color:#fff;font-weight:400;font-style:italic}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:500;color:rgba(255,255,255,0.72);text-decoration:none;letter-spacing:0.09em;text-transform:uppercase}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-toggle span{width:22px;height:2px;background:var(--gold);border-radius:2px}
+.mobile-nav{display:none;position:fixed;top:66px;left:0;right:0;background:rgba(26,46,74,0.98);z-index:99;padding:24px;flex-direction:column;gap:4px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.75);text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.container{max-width:1100px;margin:0 auto;padding:0 40px}
+
+/* Hero */
+.hero{background:var(--navy);padding:100px 0 60px;border-bottom:2px solid rgba(201,151,10,0.3)}
+.hero h1{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:900;color:#fff;margin-bottom:16px;line-height:1.2}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{font-size:1rem;color:rgba(255,255,255,0.6);max-width:620px;margin-bottom:28px}
+.hero-stats{display:flex;gap:40px}
+.hero-stat strong{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--gold);display:block}
+.hero-stat span{font-family:'DM Sans',sans-serif;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4)}
+.eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+
+/* Nav categories */
+.cat-nav{background:#fff;border-bottom:1px solid rgba(26,46,74,0.1);padding:0;position:sticky;top:66px;z-index:50;overflow-x:auto}
+.cat-nav-inner{display:flex;white-space:nowrap}
+.cat-btn{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);padding:16px 20px;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;text-decoration:none;display:inline-block}
+.cat-btn:hover{color:var(--navy);border-bottom-color:var(--gold)}
+
+/* Sections */
+.res-section{padding:60px 0;border-bottom:1px solid rgba(26,46,74,0.08)}
+.sec-label{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.sec-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+.sec-desc{font-size:0.92rem;color:var(--muted);max-width:640px;margin-bottom:32px}
+
+/* Document cards */
+.doc-list{display:flex;flex-direction:column;gap:10px}
+.doc-grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.doc-card{background:#fff;border:1px solid rgba(26,46,74,0.1);border-radius:6px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.doc-card:hover{border-color:rgba(201,151,10,0.4)}
+.doc-info{flex:1;min-width:200px}
+.doc-tag{font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(201,151,10,0.8);margin-bottom:6px}
+.doc-title{font-size:0.92rem;font-weight:600;color:var(--navy);margin-bottom:4px;line-height:1.4}
+.doc-sub{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--muted)}
+.doc-btn{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--navy);color:#fff;padding:10px 18px;border-radius:4px;text-decoration:none;white-space:nowrap;flex-shrink:0}
+.doc-btn:hover{background:var(--teal)}
+
+/* WhatsApp */
+.wa-block{background:#054a1e;border-radius:8px;padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:48px}
+.wa-block p{font-size:0.95rem;color:rgba(255,255,255,0.9)}
+.wa-block strong{color:#fff}
+.wa-btn{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:700;background:#25D366;color:#fff;padding:12px 24px;border-radius:4px;text-decoration:none;white-space:nowrap}
+
+/* Footer */
+footer{background:var(--navy);padding:48px 0 24px}
+.footer-grid{max-width:1100px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:32px}
+.fbrand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:12px}
+.fdesc{font-size:0.85rem;color:rgba(255,255,255,0.45);line-height:1.6}
+.fhead{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(201,151,10,0.7);margin-bottom:14px}
+.flinks{list-style:none}
+.flinks li{margin-bottom:8px}
+.flinks a{font-size:0.83rem;color:rgba(255,255,255,0.45);text-decoration:none}
+.flinks a:hover{color:var(--gold)}
+.footer-bottom{max-width:1100px;margin:0 auto;padding:20px 40px 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom span{font-family:'DM Sans',sans-serif;font-size:0.7rem;color:rgba(255,255,255,0.3)}
+
+@media(max-width:900px){
+  nav{padding:0 20px}
+  .nav-links{display:none}
+  .nav-toggle{display:flex}
+  .container{padding:0 20px}
+  .doc-grid2{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .hero h1{font-size:1.8rem}
+  .hero-stats{gap:24px}
+}
+@media(max-width:600px){
+  .doc-card{flex-direction:column;align-items:flex-start}
+  .doc-btn{width:100%;text-align:center}
+  .wa-block{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Le Couloir <span>du Savoir</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">Le Site</a></li>
+    <li><a href="index.html#concepts">Concepts</a></li>
+    <li><a href="index.html#publications">Articles</a></li>
+    <li><a href="creaq.html">CREAQ</a></li>
+    <li><a href="lu-pour-vous.html">Lu pour Vous</a></li>
+    <li><a href="ressources.html" class="active">Ressources</a></li>
+    <li><a href="espace-inspecteurs.html">Inspecteurs</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="a-propos.html">A propos</a></li>
+  </ul>
+  <div class="nav-toggle" onclick="document.getElementById('mn').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-nav" id="mn">
+  <a href="index.html">Accueil</a>
+  <a href="index.html#publications">Articles</a>
+  <a href="creaq.html">CREAQ</a>
+  <a href="ressources.html">Ressources</a>
+  <a href="espace-inspecteurs.html">Inspecteurs</a>
+  <a href="a-propos.html">A propos</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <p class="eyebrow">Le Couloir du Savoir</p>
+    <h1>Bibliotheque educative<br/><em>Senegal &amp; Afrique francophone</em></h1>
+    <p>Decrets officiels, guides pedagogiques, textes reglementaires et outils de formation - une ressource documentaire organisee et telechargeable pour les praticiens de l'education.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>40+</strong><span>Documents disponibles</span></div>
+      <div class="hero-stat"><strong>7</strong><span>Categories</span></div>
+      <div class="hero-stat"><strong>Gratuit</strong><span>Acces libre</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- NAV CATEGORIES -->
+<div class="cat-nav">
+  <div class="cat-nav-inner">
+    <a href="#textes-officiels" class="cat-btn">Textes officiels &amp; Decrets</a>
+    <a href="#pedagogie" class="cat-btn">Didactique &amp; Pedagogie</a>
+    <a href="#prescolaire" class="cat-btn">Prescolaire &amp; Elementaire</a>
+    <a href="#formation" class="cat-btn">Formation des enseignants</a>
+    <a href="#livrets" class="cat-btn">Livrets d'encadrement</a>
+    <a href="#outils" class="cat-btn">Outils de gestion</a>
+    <a href="#contributions" class="cat-btn">Contributions d'inspecteurs</a>
+  </div>
+</div>
+
+<div style="background:var(--cream);padding-bottom:80px">
+
+<!-- SECTION 1 : TEXTES OFFICIELS -->
+<div class="res-section" id="textes-officiels">
+  <div class="container">
+    <p class="sec-label">Reglementation senegalaise</p>
+    <h2 class="sec-title">Textes officiels &amp; Decrets</h2>
+    <p class="sec-desc">Textes legislatifs et reglementaires relatifs a l'organisation du systeme educatif senegalais, aux inspections et a la fonction publique.</p>
+
+    <div class="doc-grid2">
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">IA &amp; IEF - Organisation</p>
+          <p class="doc-title">Arrete n 010656 du 08 juillet 2013 relatif a l'organisation des IEF</p>
+          <p class="doc-sub">Ministere de l'Education nationale - Texte officiel</p>
+        </div>
+        <a href="Arr%C3%AAt%C3%A9%20n%C2%B0010656%20du%2008%20juillet%202013%20relatif%20%C3%A0%20l'org.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">IA &amp; IEF - Organisation</p>
+          <p class="doc-title">Decret 2017-604 du 24 avril - Organisation des IA et IEF</p>
+          <p class="doc-sub">Texte officiel de reference sur l'organisation des inspections</p>
+        </div>
+        <a href="decret%202017-604%20du%2024%20avril%20IA-IEF%20(1).pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">IA &amp; IEF - Version officielle</p>
+          <p class="doc-title">Decret IA et IEF - Version signee</p>
+          <p class="doc-sub">Version officielle signee - Organisation des Inspections</p>
+        </div>
+        <a href="decret_ia-et-ief-signe1.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Inspection - Reforme</p>
+          <p class="doc-title">Decret reformant les inspections - 2017</p>
+          <p class="doc-sub">Reforme du corps des inspecteurs de l'education</p>
+        </div>
+        <a href="106%20Decret%20r%C3%A9formant%20les%20inspections%202017.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Organisation de l'enseignement</p>
+          <p class="doc-title">Decret N 79-1165 portant organisation de l'enseignement</p>
+          <p class="doc-sub">Texte fondateur de l'organisation de l'enseignement au Senegal</p>
+        </div>
+        <a href="DECRET%20N%C2%B0%2079-1165%20portant%20organisation%20de%20l'en.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Morale - Reglementation</p>
+          <p class="doc-title">Decret 80-387 du 14 mai 1980 - Morale</p>
+          <p class="doc-sub">Reglementation de l'enseignement de la morale</p>
+        </div>
+        <a href="7_20Morale_Decret%2080-387%20du%2014%20mai%201980.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Formation - Decret</p>
+          <p class="doc-title">Decret N 2013-738 portant creation du CF</p>
+          <p class="doc-sub">Creation du Centre de Formation</p>
+        </div>
+        <a href="70%20Decret%20N%C2%B0%202013%20-%20738%20portant%20cr%C3%A9ation%20du%20CF.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Reglementation</p>
+          <p class="doc-title">Decret n 2008-695 du 30 juin 2008</p>
+          <p class="doc-sub">Texte officiel - Reglementation</p>
+        </div>
+        <a href="Decret%20n%C2%B0%202008%20695%20du%2030%20juin%202008%20reglementa.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Reglementation</p>
+          <p class="doc-title">Decret n 2011-625 du 11 mai 2011</p>
+          <p class="doc-sub">Texte officiel - Reglementation senegalaise</p>
+        </div>
+        <a href="D%C3%A9cret%20n%C2%B0%202011-625%20du%2011%20mai%202011.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Reglementation</p>
+          <p class="doc-title">Decret 2020-1429</p>
+          <p class="doc-sub">Texte officiel - Reglementation recente</p>
+        </div>
+        <a href="D%C3%A9cret%202020-1429.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">CGE</p>
+          <p class="doc-title">Decret CGE et UCGE</p>
+          <p class="doc-sub">Organisation du Controle general de l'Etat</p>
+        </div>
+        <a href="DECRET%20CGE%20ET%20UCGE.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">CGE</p>
+          <p class="doc-title">Decret 2014-964 CGE</p>
+          <p class="doc-sub">Organisation du Controle general</p>
+        </div>
+        <a href="940723_Decret_2014_964_CGE.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">CGE</p>
+          <p class="doc-title">Decret CGE 2002-652</p>
+          <p class="doc-sub">Texte officiel - Controle general de l'Etat</p>
+        </div>
+        <a href="decret%20CGE%202002%20652.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">IGE</p>
+          <p class="doc-title">Decret IGE</p>
+          <p class="doc-sub">Organisation de l'Inspection generale de l'Etat</p>
+        </div>
+        <a href="DECRET%20IGE.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">GPCEPE</p>
+          <p class="doc-title">Decret portant creation du GPCEPE</p>
+          <p class="doc-sub">Texte officiel - Creation du GPCEPE</p>
+        </div>
+        <a href="DECRET%20PORTANT%20CR%C3%89ATION%20DU%20GPCEPE.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Langue nationale - Pulaar</p>
+          <p class="doc-title">Decret Pulaar CfD</p>
+          <p class="doc-sub">Texte officiel sur la langue Pulaar</p>
+        </div>
+        <a href="DECRET%20Pulaar%20CfD.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Langue nationale - Seereer</p>
+          <p class="doc-title">Decret Seereer avec implosives correctes</p>
+          <p class="doc-sub">Codification de la langue Seereer</p>
+        </div>
+        <a href="Decret%20Seereer%20avec%20implosives%20correctes.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Sante mentale</p>
+          <p class="doc-title">Plan strategique Sante Mentale Senegal 2024</p>
+          <p class="doc-sub">Document strategique national</p>
+        </div>
+        <a href="Plan%20strat%C3%A9gique%20Sant%C3%A9%20Mentale%20Senegal%202024-2.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 2 : DIDACTIQUE -->
+<div class="res-section" id="pedagogie" style="background:#fff">
+  <div class="container">
+    <p class="sec-label">Formation professionnelle</p>
+    <h2 class="sec-title">Didactique &amp; Pedagogie generale</h2>
+    <p class="sec-desc">References theoriques et pratiques sur les disciplines, les theories de l'apprentissage et les methodes pedagogiques.</p>
+    <div class="doc-list">
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Didactique disciplinaire - Partie 1</p>
+          <p class="doc-title">Didactiques des disciplines - Partie 1</p>
+          <p class="doc-sub">Formation des enseignants - Reference en didactique</p>
+        </div>
+        <a href="Didactiques-des-disciplines-Partie-1-1.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Didactique disciplinaire - Partie 2</p>
+          <p class="doc-title">Didactiques des disciplines - Partie 2</p>
+          <p class="doc-sub">Formation des enseignants - Suite de la reference</p>
+        </div>
+        <a href="Didactiques-des-disciplines-Partie-2-1.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Pedagogie generale</p>
+          <p class="doc-title">Pedagogie generale</p>
+          <p class="doc-sub">Reference fondamentale - Formation initiale et continue</p>
+        </div>
+        <a href="Pedagogie-generale.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Theories de l'apprentissage</p>
+          <p class="doc-title">Pedagogie generale et theories de l'apprentissage</p>
+          <p class="doc-sub">Fondements theoriques - Constructivisme, behaviorisme, cognitivisme</p>
+        </div>
+        <a href="Pedagogie-Gnle-et-Theories-de-lApprentissag.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Concepts fondamentaux</p>
+          <p class="doc-title">Pedagogie generale - Elucidations conceptuelles</p>
+          <p class="doc-sub">Clarification des concepts cles - Module de formation</p>
+        </div>
+        <a href="pedagogie_gen_U1_elucidations_conceptuelles.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">GAR - Gestion axee sur les resultats</p>
+          <p class="doc-title">GAR - Concepts et principes</p>
+          <p class="doc-sub">Referentiel methodologique</p>
+        </div>
+        <a href="GAR_CONCEPTS_ET_PRINCIPES.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Evaluation - Terminologie</p>
+          <p class="doc-title">Glossaire des termes usuels de mesure de performance</p>
+          <p class="doc-sub">Referentiel terminologique - Evaluation et pilotage</p>
+        </div>
+        <a href="glossaire_termes_usuels%20mesure%20de%20performance.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Life Skills - UNICEF 2019</p>
+          <p class="doc-title">Life Skills - Note technique 2019</p>
+          <p class="doc-sub">Competences de vie - Note technique UNICEF</p>
+        </div>
+        <a href="Life-skills-technical-note-2019-French.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Education environnementale</p>
+          <p class="doc-title">Eduquer au developpement durable - Livret 2</p>
+          <p class="doc-sub">Education environnementale - Senegal</p>
+        </div>
+        <a href="senegal-livret2-eduquer-developpement-durable.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Curriculum - Langue et Communication</p>
+          <p class="doc-title">Curriculum de l'Education de Base - Langue et Communication, Etape 3</p>
+          <p class="doc-sub">Ministere de l'Education nationale, Avril 2014</p>
+        </div>
+        <a href="curriculum-education-base-langue-communication.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3 : PRESCOLAIRE -->
+<div class="res-section" id="prescolaire">
+  <div class="container">
+    <p class="sec-label">Petite enfance &amp; Elementaire</p>
+    <h2 class="sec-title">Prescolaire &amp; Elementaire</h2>
+    <p class="sec-desc">Guides pedagogiques et documents d'appui pour l'enseignement prescolaire et elementaire au Senegal.</p>
+    <div class="doc-grid2">
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Prescolaire - Vol.1</p>
+          <p class="doc-title">Document d'appui pour le prescolaire et l'elementaire - Volume 1</p>
+          <p class="doc-sub">Ressource pedagogique officielle</p>
+        </div>
+        <a href="Document%20d'Appui%20pour%20le%20prescolaire%20et%20l'I_1.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Prescolaire - Vol.2</p>
+          <p class="doc-title">Document d'appui pour le prescolaire et l'elementaire - Volume 2</p>
+          <p class="doc-sub">Ressource pedagogique officielle - Suite</p>
+        </div>
+        <a href="Document%20d'Appui%20pour%20le%20prescolaire%20et%20l'I_2.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Maternelle - Petite section</p>
+          <p class="doc-title">Guide Petite Section - Corrige 2024</p>
+          <p class="doc-sub">Guide pedagogique officiel - Edition 2024</p>
+        </div>
+        <a href="GUIDE%20PETITE%20SECTION%20CORRIGE%202024.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Maternelle - Moyenne section</p>
+          <p class="doc-title">Guide Moyenne Section - Corrige 2024</p>
+          <p class="doc-sub">Guide pedagogique officiel - Edition 2024</p>
+        </div>
+        <a href="GUIDE%20MOYENNE%20SECTION%20CORRIGE%202024.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Maternelle - Grande section</p>
+          <p class="doc-title">Guide Grande Section - Corrige 2024</p>
+          <p class="doc-sub">Guide pedagogique officiel - Edition 2024</p>
+        </div>
+        <a href="GUIDE%20GRANDE%20SECTION%20CORRIGE%202024.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Curriculum - Etape 1</p>
+          <p class="doc-title">Guide pedagogique - Etape 1</p>
+          <p class="doc-sub">Curriculum de l'education de base</p>
+        </div>
+        <a href="Guide%20p%C3%A9dagogique_%C3%A9tape%201.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Curriculum - Etape 2</p>
+          <p class="doc-title">Guide pedagogique - Etape 2</p>
+          <p class="doc-sub">Curriculum de l'education de base</p>
+        </div>
+        <a href="Guide%20p%C3%A9dagogique_%C3%A9tape%202.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Curriculum - Etape 3</p>
+          <p class="doc-title">Guide pedagogique - Etape 3</p>
+          <p class="doc-sub">Curriculum de l'education de base</p>
+        </div>
+        <a href="Guide%20p%C3%A9dagogique_%C3%A9tape%203.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Classes multigrades</p>
+          <p class="doc-title">Guide du Maitre des Classes Multigrades - Senegal</p>
+          <p class="doc-sub">Ministere de l'Education, 2009 - Milieu rural et enclave</p>
+        </div>
+        <a href="guide-maitre-classes-multigrades-senegal.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Education a la citoyennete</p>
+          <p class="doc-title">Education a la Citoyennete, aux Droits et a la Paix a l'Elementaire</p>
+          <p class="doc-sub">Guide methodologique - Groupe AGORA</p>
+        </div>
+        <a href="guide-education-citoyennete-droits-paix-elementaire.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4 : FORMATION -->
+<div class="res-section" id="formation" style="background:#fff">
+  <div class="container">
+    <p class="sec-label">ENI &amp; ENEP</p>
+    <h2 class="sec-title">Formation des enseignants</h2>
+    <p class="sec-desc">Modules et guides pour la formation initiale et continue des enseignants dans les ecoles normales du Senegal.</p>
+    <div class="doc-list">
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">ENEP - Formation initiale</p>
+          <p class="doc-title">Outils pedagogiques et didactiques pour la formation des eleves-professeurs</p>
+          <p class="doc-sub">Fiches ENEP - Organisation de l'ecole, gestion de classe - Decembre 2020</p>
+        </div>
+        <a href="fiches-outils-pedagogiques-formation-enseignants.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">ENI - Module</p>
+          <p class="doc-title">Module d'accompagnement ENI</p>
+          <p class="doc-sub">Formation initiale - Ecoles normales d'instituteurs</p>
+        </div>
+        <a href="Module-accopagnement-ENI-Enregistr%C3%A9-autom.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 5 : LIVRETS -->
+<div class="res-section" id="livrets">
+  <div class="container">
+    <p class="sec-label">Encadrement pedagogique</p>
+    <h2 class="sec-title">Livrets de formation &amp; encadrement</h2>
+    <p class="sec-desc">Serie de livrets pour les directeurs d'ecole, conseillers pedagogiques et encadreurs.</p>
+    <div class="doc-grid2">
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Direction d'ecole</p>
+          <p class="doc-title">Livret n1 - Outiller le chef d'etablissement</p>
+          <p class="doc-sub">Competences manageriales et pedagogiques pour les directeurs</p>
+        </div>
+        <a href="livret-no-1-outiller-le-chef-detablissement.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Gestion pedagogique</p>
+          <p class="doc-title">Livret n4 - Gerer les activites d'apprentissage</p>
+          <p class="doc-sub">Organisation et conduite des activites en classe</p>
+        </div>
+        <a href="livret_no_4_gerer_les_activites_dapprentissage_J.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Mathematiques</p>
+          <p class="doc-title">Livret n4 - Mathematiques</p>
+          <p class="doc-sub">Didactique des mathematiques a l'elementaire</p>
+        </div>
+        <a href="livret_no_4_mathematiques_web_0.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Formation continue</p>
+          <p class="doc-title">Livret n5</p>
+          <p class="doc-sub">Encadrement pedagogique - Formation continue</p>
+        </div>
+        <a href="livret_no_5_v230320_web.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Formation continue</p>
+          <p class="doc-title">Livret n6</p>
+          <p class="doc-sub">Encadrement pedagogique - Suite de la serie</p>
+        </div>
+        <a href="livret_no_6_v230320_web-1.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 6 : OUTILS -->
+<div class="res-section" id="outils" style="background:#fff">
+  <div class="container">
+    <p class="sec-label">Administration &amp; gestion scolaire</p>
+    <h2 class="sec-title">Outils de gestion pedagogique</h2>
+    <p class="sec-desc">Guides pratiques et outils operationnels pour la gestion administrative et pedagogique des etablissements.</p>
+    <div class="doc-list">
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Administration scolaire</p>
+          <p class="doc-title">Tome 1 - Gestion administrative et des ressources</p>
+          <p class="doc-sub">Guide complet pour la gestion administrative de l'ecole</p>
+        </div>
+        <a href="Tome%201%20Gestion%20administrative%20et%20des%20ressources.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Gestion pedagogique</p>
+          <p class="doc-title">Trousse d'outils de gestion pedagogique</p>
+          <p class="doc-sub">Outils pratiques pour le pilotage pedagogique</p>
+        </div>
+        <a href="Trousse%20d'outils%20de%20gestion%20p%C3%A9dagogique.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Soutien scolaire</p>
+          <p class="doc-title">Boite a outils - Soutien scolaire</p>
+          <p class="doc-sub">Ressources pour les dispositifs de soutien scolaire</p>
+        </div>
+        <a href="BOITE%20A%20OUTILS%20SOUTIEN%20SCOLAIRE-le%2025-08.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Methodologie</p>
+          <p class="doc-title">SSI - Comment construire</p>
+          <p class="doc-sub">Guide methodologique pour la construction des SSI</p>
+        </div>
+        <a href="SSI_Comment%20construire.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Protection - Genre</p>
+          <p class="doc-title">Violence basee sur le genre en milieu scolaire</p>
+          <p class="doc-sub">Guide de prevention des violences basees sur le genre</p>
+        </div>
+        <a href="violence%20bas%C3%A9e%20sur%20le%20genre.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Philosophie</p>
+          <p class="doc-title">Philofolie - Philosophie</p>
+          <p class="doc-sub">Ressource pour l'eveil philosophique a l'ecole</p>
+        </div>
+        <a href="philofolie-philosophie.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 7 : CONTRIBUTIONS -->
+<div class="res-section" id="contributions">
+  <div class="container">
+    <p class="sec-label">Savoir de terrain</p>
+    <h2 class="sec-title">Contributions d'inspecteurs</h2>
+    <p class="sec-desc">Travaux originaux produits par des inspecteurs et praticiens de l'education au Senegal.</p>
+    <div class="doc-list">
+      <div class="doc-card">
+        <div class="doc-info">
+          <p class="doc-tag">Linguistique - IEF Mbour 2</p>
+          <p class="doc-title">Cours de relevement linguistique - Notions de base en linguistique</p>
+          <p class="doc-sub">Mohamadou Soumare - Inspecteur, IEF Mbour 2. De Saussure aux dichotomies fondamentales.</p>
+        </div>
+        <a href="soumare-linguistique.pdf" target="_blank" rel="noopener" class="doc-btn">Telecharger</a>
+      </div>
+    </div>
+    <p style="font-size:0.88rem;color:var(--muted);margin-top:28px">
+      Vous etes inspecteur ou directeur et souhaitez partager un document ?
+      <a href="index.html#contact" style="color:var(--gold);font-weight:600;text-decoration:none"> Contactez-nous</a>
+    </p>
+  </div>
+</div>
+
+<!-- CTA WHATSAPP -->
+<div style="padding:40px 0;background:var(--cream)">
+  <div class="container">
+    <div class="wa-block">
+      <p><strong>Restez informe des nouvelles ressources</strong><br/>Rejoignez notre liste de diffusion WhatsApp pour recevoir chaque nouveau document des sa mise en ligne.</p>
+      <a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20souhaite%20recevoir%20les%20nouvelles%20ressources%20du%20Couloir%20du%20Savoir." target="_blank" rel="noopener" class="wa-btn">Rejoindre sur WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <p class="fbrand">Le Couloir du Savoir</p>
+      <p class="fdesc">Bibliotheque educative pour les praticiens de l'education en Afrique francophone.</p>
+    </div>
+    <div>
+      <p class="fhead">Navigation</p>
+      <ul class="flinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#publications">Articles</a></li>
+        <li><a href="creaq.html">CREAQ</a></li>
+        <li><a href="espace-inspecteurs.html">Espace Inspecteurs</a></li>
+        <li><a href="a-propos.html">A propos</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="fhead">Ressources</p>
+      <ul class="flinks">
+        <li><a href="#textes-officiels">Textes officiels</a></li>
+        <li><a href="#pedagogie">Pedagogie generale</a></li>
+        <li><a href="#prescolaire">Prescolaire</a></li>
+        <li><a href="#livrets">Livrets</a></li>
+        <li><a href="#contributions">Contributions</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>2026 Le Couloir du Savoir - MBM</span>
+    <span>Bibliotheque educative francophone - Senegal</span>
+  </div>
+</footer>
+
+<script>
+function toggleNav(){document.getElementById('mn').classList.toggle('open')}
+document.querySelectorAll('a[href$=".pdf"]').forEach(function(link){
+  link.addEventListener('click',function(){
+    if(typeof gtag!=='undefined'){
+      gtag('event','file_download',{file_name:this.getAttribute('href')});
+    }
+  });
+});
+</script>
+</body>
+</html>
