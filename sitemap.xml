@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-  <!-- PAGES PRINCIPALES -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lecouloirdusavoir.com/</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/a-propos.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/creaq.html</loc>
@@ -24,19 +13,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://lecouloirdusavoir.com/espace-inspecteurs.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://lecouloirdusavoir.com/lu-pour-vous.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/ressources.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/espace-inspecteurs.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -45,21 +34,37 @@
     <loc>https://lecouloirdusavoir.com/partenariats.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.7</priority>
   </url>
-
-  <!-- STIVATION - ARTICLES FONDATEURS -->
+  <url>
+    <loc>https://lecouloirdusavoir.com/a-propos.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/lexique.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/politique-confidentialite.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
   <url>
     <loc>https://lecouloirdusavoir.com/stivation-motivation-andragogique.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/stivation-ecoles-formation.html</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/stivation-regard-evaluatif.html</loc>
@@ -74,45 +79,55 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://lecouloirdusavoir.com/stivation-classe-ordinaire.html</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/article-stivation-milieu-allosterique.html</loc>
-    <lastmod>2025-12-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://lecouloirdusavoir.com/article-stivation-binomage-creaq.html</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/article-stivation-formation-professionnalisante.html</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ARTICLES PEDAGOGIE & PRATIQUES DE CLASSE -->
-  <url>
-    <loc>https://lecouloirdusavoir.com/conation-enaction-classe.html</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://lecouloirdusavoir.com/article-effet-halo-pygmalion.html</loc>
+    <loc>https://lecouloirdusavoir.com/article-stivation-milieu-allosterique.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-stivation-numerique-formation-ligne.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lecouloirdusavoir.com/article-parole-silence-maitre.html</loc>
+    <loc>https://lecouloirdusavoir.com/pilotage-district-pedagogique-icd.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/bilinguisme-scolaire-afrique.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-motivation-enseignant.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/conation-enaction-classe.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-effet-halo-pygmalion.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -124,49 +139,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lecouloirdusavoir.com/connaitre-son-eleve.html</loc>
+    <loc>https://lecouloirdusavoir.com/article-parole-silence-maitre.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/article-constructivisme-afrique.html</loc>
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/article-explicite-constructivisme-senegal.html</loc>
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/article-interdisciplinarite-transdisciplinarite.html</loc>
-    <lastmod>2026-02-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/maturite-pedagogique.html</loc>
-    <lastmod>2026-02-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/chatiment-corporel-ecole.html</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/article-motivation-intrinseque.html</loc>
-    <lastmod>2026-04-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ARTICLES MANAGEMENT & GOUVERNANCE -->
   <url>
     <loc>https://lecouloirdusavoir.com/management-principal-CEM-senegal.html</loc>
     <lastmod>2026-05-01</lastmod>
@@ -174,58 +151,123 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lecouloirdusavoir.com/pilotage-district-pedagogique-icd.html</loc>
+    <loc>https://lecouloirdusavoir.com/connaitre-son-eleve.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-didactique-disciplines.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-explicite-constructivisme-senegal.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-constructivisme-afrique.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/apc-creaq.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-lpt-relit-mohebs-senegal.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/remediation-scolaire-diakhate.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/gouvernance-directions-ia-ief.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.75</priority>
   </url>
-
-  <!-- ARTICLES EVALUATIONS & EXAMENS -->
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-planification-hanne.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-motivation-intrinseque.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-flow-apprentissage.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-vygotski-afrique.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-styles-apprentissage.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-memoire-apprentissage.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-modele-allosterique-giordan.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-briseurs-de-chaines.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/interactions-enseignants.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-formation-the.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://lecouloirdusavoir.com/cfee-blanc-2026-kaba-diakhate.html</loc>
     <lastmod>2026-05-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://lecouloirdusavoir.com/cfee-blanc-2026-resultats-causes.html</loc>
+    <loc>https://lecouloirdusavoir.com/jexiis.html</loc>
     <lastmod>2026-05-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/article-pcme-ecole-elementaire.html</loc>
-    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- ARTICLES LANGUE & CURRICULUM -->
-  <url>
-    <loc>https://lecouloirdusavoir.com/bilinguisme-scolaire-afrique.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ARTICLES ESPACE INSPECTEURS -->
-  <url>
-    <loc>https://lecouloirdusavoir.com/pilotage-district-pedagogique-icd.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/article-inspection-pedagogique.html</loc>
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
 </urlset>
