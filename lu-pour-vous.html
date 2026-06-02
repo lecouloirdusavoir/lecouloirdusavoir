@@ -204,6 +204,17 @@ nav a.back { color: rgba(255,255,255,0.7); font-size: 0.85rem; text-decoration: 
 .archive-card .arc-summary { font-size: 0.83rem; line-height: 1.7; color: #3a4a5a; margin-bottom: 14px; }
 .archive-card a { font-family: sans-serif; font-size: 0.75rem; font-weight: 600; color: #CC9900; text-decoration: none; }
 
+/* Hub de rétention */
+.hub-section { margin-bottom: 48px; }
+.hub-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+@media(max-width:600px){ .hub-grid { grid-template-columns: 1fr; } }
+.hub-card { display: flex; flex-direction: column; background: #fff; border-radius: 8px; padding: 24px; border-top: 3px solid #0E6B7C; box-shadow: 0 2px 10px rgba(0,51,102,0.06); text-decoration: none; color: inherit; transition: box-shadow 0.2s, transform 0.2s; }
+.hub-card:hover { box-shadow: 0 6px 24px rgba(0,51,102,0.13); transform: translateY(-2px); }
+.hub-tag { font-family: sans-serif; font-size: 0.63rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #0E6B7C; background: rgba(14,107,124,0.08); padding: 3px 10px; border-radius: 20px; display: inline-block; margin-bottom: 12px; }
+.hub-card h3 { font-family: Georgia, serif; font-size: 0.93rem; color: #003366; line-height: 1.45; margin-bottom: 10px; }
+.hub-card p { font-size: 0.81rem; line-height: 1.7; color: #3a4a5a; flex-grow: 1; margin-bottom: 14px; }
+.hub-link { font-family: sans-serif; font-size: 0.75rem; font-weight: 700; color: #CC9900; }
+
 /* Suggestion */
 .suggest { background: #003366; border-radius: 8px; padding: 32px; text-align: center; }
 .suggest h3 { font-family: Georgia, serif; font-size: 1.1rem; color: #fff; margin-bottom: 10px; }
@@ -213,6 +224,8 @@ nav a.back { color: rgba(255,255,255,0.7); font-size: 0.85rem; text-decoration: 
 footer { background: #003366; padding: 22px; text-align: center; margin-top: 0; }
 footer p { color: rgba(255,255,255,0.6); font-size: 0.8rem; font-style: italic; }
 footer strong { color: #CC9900; }
+
+.hub-loading { font-family: sans-serif; font-size: 0.85rem; color: #666; font-style: italic; padding: 20px 0; }
 </style>
 
 </head>
@@ -340,6 +353,14 @@ footer strong { color: #CC9900; }
 
   </div>
 
+  <!-- HUB DE RÉTENTION : articles récents via sitemap -->
+  <div class="hub-section">
+    <p class="archive-title">&#128270; &Agrave; lire aussi sur Le Couloir du Savoir</p>
+    <div class="hub-grid" id="hub-grid">
+      <div class="hub-loading">Chargement des articles r&#233;cents&#8230;</div>
+    </div>
+  </div>
+
   <!-- SUGGESTION -->
   <div class="suggest">
     <h3>Vous avez lu quelque chose d&#8217;int&#233;ressant ?</h3>
@@ -358,6 +379,110 @@ footer strong { color: #CC9900; }
     </a>
   </div>
 </footer>
+
+
+<script>
+(function () {
+  var SITEMAP_URL = 'https://lecouloirdusavoir.com/sitemap.xml';
+  var NB_ARTICLES  = 4;
+
+  var EXCLUSIONS = [
+    'lu-pour-vous', 'index', 'espace-inspecteurs', 'creaq',
+    'lu-pour-vous-dweck', 'article-modele-allosterique-giordan',
+    'contact', '404', 'sitemap', 'robots'
+  ];
+
+  function getTag(el, name) {
+    var node = el.getElementsByTagName(name)[0];
+    return node ? node.textContent.trim() : '';
+  }
+
+  function slugify(url) {
+    return url.replace(/^https?:\/\/[^/]+\//, '').replace(/\.html$/, '');
+  }
+
+  async function fetchMeta(url) {
+    try {
+      var res  = await fetch(url, { cache: 'force-cache' });
+      var html = await res.text();
+      var doc  = new DOMParser().parseFromString(html, 'text/html');
+
+      var ogTitle = doc.querySelector('meta[property="og:title"]');
+      var titleEl = doc.querySelector('title');
+      var title = (ogTitle ? ogTitle.getAttribute('content') : (titleEl ? titleEl.textContent : ''))
+        .replace(/\s*[|\-\u2013\u2014]\s*Le Couloir du Savoir.*/i, '').trim();
+
+      var ogDesc = doc.querySelector('meta[property="og:description"]');
+      var metaDesc = doc.querySelector('meta[name="description"]');
+      var desc = (ogDesc ? ogDesc.getAttribute('content') : (metaDesc ? metaDesc.getAttribute('content') : '')).trim();
+
+      var catEl = doc.querySelector('.article-tag, .discipline, .badge-cat, .tag');
+      var cat = catEl ? catEl.textContent.trim() : 'Article';
+
+      return { title: title, desc: desc, cat: cat };
+    } catch (e) {
+      return { title: '', desc: '', cat: 'Article' };
+    }
+  }
+
+  function buildCard(url, title, desc, cat) {
+    var href = url.replace('https://lecouloirdusavoir.com/', '');
+    var safeTitle = title || href;
+    var safeDesc  = desc  || 'Lire cet article sur Le Couloir du Savoir.';
+    var safeCat   = cat   || 'Article';
+    if (safeDesc.length > 140) safeDesc = safeDesc.slice(0, 137) + '...';
+    return '<a class="hub-card" href="' + href + '">'
+      + '<span class="hub-tag">' + safeCat + '</span>'
+      + '<h3>' + safeTitle + '</h3>'
+      + '<p>' + safeDesc + '</p>'
+      + '<span class="hub-link">Lire l\'article &rarr;</span>'
+      + '</a>';
+  }
+
+  async function init() {
+    var grid = document.getElementById('hub-grid');
+    if (!grid) return;
+
+    try {
+      var res  = await fetch(SITEMAP_URL, { cache: 'no-cache' });
+      var text = await res.text();
+      var xml  = new DOMParser().parseFromString(text, 'application/xml');
+      var urlEls = Array.from(xml.getElementsByTagName('url'));
+
+      var candidats = urlEls.map(function(u) {
+        return { loc: getTag(u, 'loc'), lastmod: getTag(u, 'lastmod') || '1970-01-01' };
+      }).filter(function(u) {
+        var s = slugify(u.loc);
+        if (s === 'lu-pour-vous') return false;
+        return !EXCLUSIONS.some(function(ex) { return s === ex || s.startsWith(ex + '-'); });
+      }).sort(function(a, b) {
+        return b.lastmod.localeCompare(a.lastmod);
+      }).slice(0, NB_ARTICLES);
+
+      if (candidats.length === 0) {
+        grid.innerHTML = '<p style="color:#666;font-size:0.85rem">Aucun article trouvé.</p>';
+        return;
+      }
+
+      var metas = await Promise.all(candidats.map(function(c) { return fetchMeta(c.loc); }));
+
+      grid.innerHTML = candidats.map(function(c, i) {
+        return buildCard(c.loc, metas[i].title, metas[i].desc, metas[i].cat);
+      }).join('');
+
+    } catch (err) {
+      console.warn('Hub dynamique : erreur sitemap', err);
+      grid.innerHTML = '<p style="color:#666;font-size:0.85rem">Impossible de charger les articles.</p>';
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
 
 </body>
 </html>
