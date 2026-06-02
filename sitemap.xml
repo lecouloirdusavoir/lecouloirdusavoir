@@ -14,13 +14,13 @@
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/espace-inspecteurs.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/lu-pour-vous.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -270,4 +270,33 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- ARTICLES CONTRIBUTIONS DIONGUE - ajoutés 2026-06-02 -->
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-problematique-francais-elementaire.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-problematique-evaluation-apprentissages.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- FICHES LU POUR VOUS - ajoutées 2026-06-02 -->
+  <url>
+    <loc>https://lecouloirdusavoir.com/lu-pour-vous-houde.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/lu-pour-vous-bressoux.html</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
 </urlset>
