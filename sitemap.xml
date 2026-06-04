@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lecouloirdusavoir.com/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/espace-inspecteurs.html</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/ressources.html</loc>
-    <lastmod>2026-05-01</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -297,6 +297,21 @@
     <lastmod>2026-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
+  </url>
+
+
+  <!-- ARTICLES JUIN 2026 - ajoutés 2026-06-04 -->
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-andragogie-ali-ba.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/article-former-encadrer-enseignants-creaq.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
 </urlset>
