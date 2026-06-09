@@ -400,6 +400,48 @@
       font-weight: 500;
       color: var(--navy);
     }
+    .article-signature .sig-links {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+    .article-signature .sig-links a {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.3rem 0.75rem;
+      border-radius: 3px;
+      text-decoration: none;
+      border: 1px solid;
+      transition: all 0.18s;
+    }
+    .article-signature .sig-links a.sig-site {
+      color: var(--navy);
+      border-color: var(--navy);
+    }
+    .article-signature .sig-links a.sig-site:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .article-signature .sig-links a.sig-fb {
+      color: #1877F2;
+      border-color: #1877F2;
+    }
+    .article-signature .sig-links a.sig-fb:hover {
+      background: #1877F2;
+      color: var(--white);
+    }
+    .article-signature .sig-links a.sig-li {
+      color: #0A66C2;
+      border-color: #0A66C2;
+    }
+    .article-signature .sig-links a.sig-li:hover {
+      background: #0A66C2;
+      color: var(--white);
+    }
 
     /* ---- PARTAGE ---- */
     .share-bar {
@@ -536,7 +578,7 @@
     <p>Les données existent, elles ont été publiées, et leur convergence est difficile à ignorer.</p>
 
     <div class="data-block">
-      <div class="data-label">Baromètre Jàngandoo 2019 — LARTES-IFAN</div>
+      <div class="data-label">Baromètre Jàngandoo 2019 - LARTES-IFAN</div>
       <p>Sur près de <strong>21 500 enfants sénégalais évalués</strong> entre 9 et 16 ans, seuls <strong>22,3 %</strong> valident un test de mathématiques de niveau CE1. En décomposant par compétence : <strong>54,5 %</strong> maîtrisent la connaissance des nombres, <strong>44,1 %</strong> réussissent des exercices de pratiques opératoires, mais seuls <strong>35,9 %</strong> parviennent à résoudre des problèmes mathématiques.</p>
     </div>
 
@@ -545,7 +587,7 @@
     <p>Ce signal trouve son explication du côté des enseignants. Le PASEC 2019 met en évidence non seulement les faibles niveaux des acquis des élèves du primaire en Afrique subsaharienne francophone, mais également la fragilité des connaissances de contenus et didactiques des enseignants en mathématiques. Plus significatif encore, les données montrent que dans plusieurs pays, le niveau mathématique élevé des enseignants correspond à un niveau de performance également important des élèves dans la discipline. Le lien est établi, quantifié, publié : quand le maître maîtrise les mathématiques, les élèves progressent.</p>
 
     <div class="data-block">
-      <div class="data-label">PASEC 2019 — CONFEMEN — Sénégal</div>
+      <div class="data-label">PASEC 2019 - CONFEMEN - Sénégal</div>
       <p>Taux de maîtrise des compétences des enseignants sénégalais : <strong>84 %</strong> en langue, <strong>65 %</strong> en mathématiques. Soit un écart de <strong>vingt points</strong> entre les deux disciplines chez les maîtres en poste.</p>
     </div>
 
@@ -608,6 +650,11 @@
       <span class="sig-name">Mouhamadou Bamba MBAYE</span>
       <span>|</span>
       <span>Inspecteur de l'Enseignement</span>
+      <div class="sig-links">
+        <a class="sig-site" href="https://www.lecouloirdusavoir.com" target="_blank" rel="noopener">Le Couloir du Savoir</a>
+        <a class="sig-fb" href="https://www.facebook.com/lecouloirdusavoir" target="_blank" rel="noopener">Facebook</a>
+        <a class="sig-li" href="https://www.linkedin.com/in/mouhamadou-bamba-mbaye" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
 
     <!-- Barre de partage -->
