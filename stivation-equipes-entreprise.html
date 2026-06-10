@@ -131,6 +131,344 @@
 
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --vert-fonce: #1a3a2a;
+      --vert-moyen: #2d6a4f;
+      --vert-clair: #52b788;
+      --vert-pale: #d8f3dc;
+      --or: #c9a84c;
+      --or-clair: #f4e4b0;
+      --texte: #1c1c1c;
+      --texte-secondaire: #4a4a4a;
+      --fond: #faf9f6;
+      --fond-carte: #ffffff;
+      --bordure: #e0ddd5;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background-color: var(--fond);
+      color: var(--texte);
+      line-height: 1.85;
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .site-header {
+      background-color: var(--vert-fonce);
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .site-header .logo {
+      color: var(--or);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+    .site-header nav a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 0.82rem;
+      margin-left: 1.8rem;
+      font-family: 'Source Serif 4', serif;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .site-header nav a:hover { color: var(--or); }
+
+    .hero {
+      background-color: var(--vert-fonce);
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 60% 40%, rgba(82,183,136,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-serie {
+      display: inline-block;
+      background-color: var(--or);
+      color: var(--vert-fonce);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 2px;
+      margin-bottom: 2rem;
+      font-family: 'Source Serif 4', serif;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 4vw, 2.7rem);
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.25;
+      max-width: 780px;
+      margin: 0 auto 1.5rem;
+    }
+    .hero h1 em { color: var(--vert-clair); font-style: italic; }
+    .hero-meta {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    .article-wrapper {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+    .article-wrapper p {
+      margin-bottom: 1.6rem;
+      color: var(--texte);
+    }
+
+    .chapeau {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--texte-secondaire);
+      border-left: 3px solid var(--vert-clair);
+      padding-left: 1.4rem;
+      margin-bottom: 2.8rem;
+      line-height: 1.9;
+    }
+
+    .article-wrapper h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--vert-fonce);
+      margin: 3.5rem 0 1.2rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 2px solid var(--vert-pale);
+      line-height: 1.3;
+    }
+
+    .citation-cle {
+      background-color: var(--vert-pale);
+      border-left: 4px solid var(--vert-moyen);
+      border-radius: 0 6px 6px 0;
+      padding: 1.4rem 1.8rem;
+      margin: 2.2rem 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--vert-fonce);
+      font-weight: 600;
+      line-height: 1.55;
+      position: relative;
+    }
+    .citation-cle::before {
+      content: 'À retenir';
+      display: block;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--vert-moyen);
+      margin-bottom: 0.6rem;
+    }
+
+    .formule {
+      background-color: var(--vert-fonce);
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 1.8rem 2rem;
+      margin: 2.2rem 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.55;
+      text-align: center;
+    }
+    .formule span { color: var(--vert-clair); }
+
+    .geste {
+      border-left: 3px solid var(--or);
+      padding: 0.2rem 0 0.2rem 1.4rem;
+      margin: 1.8rem 0;
+    }
+    .geste strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--vert-fonce);
+      margin-bottom: 0.5rem;
+    }
+
+    .signal-bloc {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 2rem 0;
+    }
+    .signal-card {
+      border-radius: 8px;
+      padding: 1.4rem 1.5rem;
+    }
+    .signal-card.positif {
+      background-color: var(--vert-pale);
+      border-top: 3px solid var(--vert-moyen);
+    }
+    .signal-card.negatif {
+      background-color: #fdecea;
+      border-top: 3px solid #b03020;
+    }
+    .signal-card .label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.7rem;
+      font-family: 'Source Serif 4', serif;
+      display: block;
+    }
+    .signal-card.positif .label { color: var(--vert-moyen); }
+    .signal-card.negatif .label { color: #b03020; }
+    .signal-card p {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--texte-secondaire);
+      margin-bottom: 0;
+    }
+    @media (max-width: 560px) { .signal-bloc { grid-template-columns: 1fr; } }
+
+    .stivation-bloc {
+      background-color: var(--vert-fonce);
+      border-radius: 10px;
+      padding: 2.4rem;
+      margin: 2.5rem 0;
+      color: rgba(255,255,255,0.88);
+    }
+    .stivation-bloc h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--vert-clair);
+      margin-bottom: 1rem;
+      font-style: italic;
+      font-weight: 600;
+    }
+    .stivation-bloc p {
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 1.2rem;
+      font-size: 0.95rem;
+    }
+    .stivation-piliers {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.6rem;
+      flex-wrap: wrap;
+    }
+    .pilier {
+      flex: 1;
+      min-width: 150px;
+      background-color: rgba(255,255,255,0.07);
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      border-top: 2px solid var(--or);
+    }
+    .pilier strong {
+      display: block;
+      color: var(--or);
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+    }
+    .pilier span {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+    }
+
+    .separateur {
+      border: none;
+      border-top: 1px solid var(--bordure);
+      margin: 3rem 0;
+    }
+
+    .signature {
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 2px solid var(--vert-pale);
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+    }
+    .signature-initiales {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: var(--vert-fonce);
+      color: var(--or);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      letter-spacing: 0.04em;
+    }
+    .signature-texte .nom {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--vert-fonce);
+    }
+    .signature-texte .site {
+      font-size: 0.8rem;
+      color: var(--vert-moyen);
+      font-weight: 600;
+      margin-top: 0.3rem;
+      letter-spacing: 0.02em;
+    }
+
+    .site-footer {
+      background-color: var(--vert-fonce);
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 2.2rem 2rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+    }
+    .site-footer a { color: var(--or); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .site-header { flex-direction: column; align-items: flex-start; }
+      .site-header nav a:first-child { margin-left: 0; }
+      .hero { padding: 3.5rem 1.4rem 3rem; }
+      .article-wrapper { padding: 2.5rem 1.4rem 4rem; }
+      .stivation-piliers { flex-direction: column; }
+    }
+  </style>
+
 </head>
 <body>
 
@@ -283,9 +621,8 @@
     <div class="signature">
       <div class="signature-initiales">MBM</div>
       <div class="signature-texte">
-        <div class="nom">Mouhamadou Bamba MBAYE</div>
-        <div class="titre">Inspecteur de l'Éducation et de la Formation · IEF Kédougou, Sénégal<br>Chevalier de l'Ordre National du Lion<br>Créateur des modèles Stivation (2010), CREAQ (2015) et TDI (2019)</div>
-        <div class="site">lecouloirdusavoir.com</div>
+        <div class="nom">MBM</div>
+        <div class="site">Le Couloir du Savoir</div>
       </div>
     </div>
 
