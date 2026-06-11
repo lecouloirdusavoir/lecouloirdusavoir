@@ -322,29 +322,38 @@
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
+
   <url>
-    <loc>https://lecouloirdusavoir.com/stivation-manager-stivateur.html</loc>
+    <loc>https://lecouloirdusavoir.com/espace-rh-management.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- SERIE STIVATION & MANAGEMENT - articles publiés -->
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-management-agile-scrum.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-communautes-pratique-wenger.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-evaluation-collaborateurs.html</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://lecouloirdusavoir.com/stivation-profils-stivateurs-talent.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://lecouloirdusavoir.com/stivation-diagnostic-climat-equipe.html</loc>
+    <lastmod>2026-05-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/stivation-onboarding-stivationnel.html</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/espace-rh-management.html</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.90</priority>
   </url>
 
 </urlset>
