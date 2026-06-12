@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lecouloirdusavoir.com/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -29,12 +29,6 @@
     <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/partenariats.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/a-propos.html</loc>
@@ -181,12 +175,6 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://lecouloirdusavoir.com/article-lpt-relit-mohebs-senegal.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
     <loc>https://lecouloirdusavoir.com/remediation-scolaire-diakhate.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
@@ -253,22 +241,10 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lecouloirdusavoir.com/article-formation-the.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://lecouloirdusavoir.com/cfee-blanc-2026-kaba-diakhate.html</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/jexiis.html</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 
   <!-- ARTICLES CONTRIBUTIONS DIONGUE - ajoutés 2026-06-02 -->
@@ -322,38 +298,83 @@
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
-
   <url>
-    <loc>https://lecouloirdusavoir.com/espace-rh-management.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- SERIE STIVATION & MANAGEMENT - articles publiés -->
-  <url>
-    <loc>https://lecouloirdusavoir.com/stivation-management-agile-scrum.html</loc>
-    <lastmod>2026-02-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/stivation-communautes-pratique-wenger.html</loc>
-    <lastmod>2026-03-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://lecouloirdusavoir.com/stivation-evaluation-collaborateurs.html</loc>
+    <loc>https://lecouloirdusavoir.com/stivation-manager-stivateur.html</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://lecouloirdusavoir.com/stivation-profils-stivateurs-talent.html</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-onboarding-stivationnel.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/espace-rh-management.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+
+  <!-- SERIE STIVATION & MANAGEMENT RH - nouveaux articles ajoutés 2026-06-11 -->
+  <url>
     <loc>https://lecouloirdusavoir.com/stivation-diagnostic-climat-equipe.html</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-evaluation-collaborateurs.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-management-agile-scrum.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-communautes-pratique-wenger.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+
+  <!-- Série Stivation & Management - ajouts 2026-06-11 -->
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-apprentissage-organisationnel-informel.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-chambre44-openspace-universalite.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-creaq-tdi-triptyque-theorique.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/stivation-tdi-entreprise-performance-collective.html</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
 
 </urlset>
