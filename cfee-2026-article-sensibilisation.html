@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CFEE 2026 au Sénégal : guide pour les chefs de centre, correcteurs, parents et candidats | Le Couloir du Savoir</title>
+<meta name="description" content="CFEE 2026 au Sénégal : tout ce que les chefs de centre, correcteurs, parents, CGE, APE et candidats doivent savoir pour une session réussie, à l'heure de la réforme et de la digitalisation via Anadole.">
+<meta property="og:title" content="CFEE 2026 au Sénégal : guide complet pour une session réussie">
+<meta property="og:description" content="CFEE 2026 : chefs de centre, correcteurs, parents, CGE, APE et candidats, découvrez ce que la réforme change et comment contribuer ensemble à une session de qualité.">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================
+   TOKENS
+   ============================================ */
+:root {
+  --navy:       #003366;
+  --navy-light: #0a4a8a;
+  --gold:       #CC9900;
+  --gold-pale:  #f5e9b8;
+  --gold-bg:    #fffdf0;
+  --white:      #ffffff;
+  --ink:        #1a1a2e;
+  --ink-soft:   #3a3a50;
+  --muted:      #6b6b80;
+  --bg:         #f8f7f2;
+  --bg-section: #f2f1ec;
+  --alert-bg:   #fff5f5;
+  --alert-border: #c0392b;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Source Serif 4', Georgia, serif;
+  --font-ui:      'DM Sans', system-ui, sans-serif;
+
+  --radius: 4px;
+  --max-w:  780px;
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 18px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.75;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* ============================================
+   BANDEAU INSTITUTIONNEL
+   ============================================ */
+.institutional-bar {
+  background: var(--navy);
+  color: #c8d8f0;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center !important;
+  padding: 8px 1rem;
+}
+.institutional-bar strong { color: #fff; }
+
+/* ============================================
+   NAVIGATION SITE (simplifiée)
+   ============================================ */
+.site-nav {
+  background: var(--white);
+  border-bottom: 2px solid var(--gold);
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.site-nav .logo {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--navy);
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1.2;
+}
+.site-nav .logo span { color: var(--gold); }
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.nav-links a { color: var(--navy); text-decoration: none; }
+.nav-links a:hover { color: var(--gold); }
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero, .hero * { text-align: center; }
+
+.hero {
+  background: var(--navy);
+  color: var(--white);
+  padding: 4.5rem 1.5rem 3.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 110%, rgba(204,153,0,0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 80% 10%, rgba(204,153,0,0.10) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-inner { position: relative; max-width: var(--max-w); margin: 0 auto; }
+
+.hero-rubrique {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1px solid rgba(204,153,0,0.5);
+  border-radius: 2px;
+  padding: 4px 12px;
+  margin-bottom: 1.6rem;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.hero-soustitre {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: rgba(255,255,255,0.78);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.hero-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+  flex-wrap: wrap;
+}
+.hero-meta .sep { color: var(--gold); }
+
+.hero-ligne {
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin: 1.8rem auto 0;
+  border-radius: 2px;
+}
+
+/* ============================================
+   CONTENEUR ARTICLE
+   ============================================ */
+.article-wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ============================================
+   CHAPEAU
+   ============================================ */
+.chapeau {
+  background: var(--white);
+  border-left: 5px solid var(--navy);
+  padding: 1.6rem 1.8rem;
+  margin: 2.8rem 0 2.4rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  box-shadow: 0 2px 12px rgba(0,51,102,0.07);
+}
+.chapeau p {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+
+/* ============================================
+   SECTIONS
+   ============================================ */
+.section { margin: 3rem 0; }
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--gold-pale);
+}
+.section-num {
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--navy);
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+.section-title-block {}
+.section-label {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 3px;
+  text-align: left;
+}
+.section-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  text-align: left;
+}
+
+/* ============================================
+   CORPS DE TEXTE
+   ============================================ */
+.section p { margin-bottom: 1rem; font-size: 1rem; line-height: 1.8; }
+
+h3.sous-titre {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--navy);
+  margin: 1.6rem 0 0.6rem;
+  padding-left: 0.8rem;
+  border-left: 3px solid var(--gold);
+  text-align: left;
+}
+
+/* ============================================
+   BLOCS ENCADRES
+   ============================================ */
+.bloc {
+  background: var(--white);
+  border: 1px solid var(--gold-pale);
+  border-left: 4px solid var(--navy);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1.3rem 1.5rem;
+  margin: 1.4rem 0;
+}
+.bloc-titre {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 0.9rem;
+  text-align: left;
+}
+.bloc ul { list-style: none; padding: 0; }
+.bloc ul li {
+  font-size: 0.97rem;
+  line-height: 1.65;
+  padding: 0.3rem 0 0.3rem 1.3rem;
+  position: relative;
+  border-bottom: 1px solid var(--bg-section);
+  color: var(--ink-soft);
+}
+.bloc ul li:last-child { border-bottom: none; }
+.bloc ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+
+/* Bloc alerte rouge */
+.bloc-alerte {
+  background: var(--alert-bg);
+  border: 1px solid #f5c6c6;
+  border-left: 4px solid var(--alert-border);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1.3rem 1.5rem;
+  margin: 1.4rem 0;
+}
+.bloc-alerte .bloc-titre { color: var(--alert-border); }
+.bloc-alerte ul li::before { background: var(--alert-border); }
+.bloc-alerte ul li { color: #4a1a1a; border-bottom-color: #f5d5d5; }
+
+/* Bloc fond creme */
+.bloc-creme {
+  background: var(--gold-bg);
+  border: 1px solid var(--gold-pale);
+  border-left: 4px solid var(--gold);
+}
+.bloc-creme ul li::before { background: var(--navy); }
+
+/* ============================================
+   TABLEAU CHRONOGRAMME
+   ============================================ */
+.chrono-wrap {
+  overflow-x: auto;
+  margin: 1.4rem 0;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 10px rgba(0,51,102,0.08);
+}
+table.chrono {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: 0.87rem;
+  min-width: 560px;
+}
+table.chrono thead tr {
+  background: var(--navy);
+  color: var(--white);
+}
+table.chrono thead th {
+  padding: 0.7rem 1rem;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+table.chrono tbody tr { border-bottom: 1px solid #e0ddd5; }
+table.chrono tbody tr:nth-child(even) { background: var(--gold-bg); }
+table.chrono tbody tr:hover { background: #eef2fa; }
+table.chrono td { padding: 0.7rem 1rem; vertical-align: top; line-height: 1.55; }
+table.chrono td:first-child {
+  font-weight: 600;
+  color: var(--navy);
+  white-space: nowrap;
+}
+table.chrono td:nth-child(2) { font-weight: 500; color: var(--ink); }
+table.chrono td:nth-child(3) { color: var(--ink-soft); font-style: italic; }
+
+/* ============================================
+   BLOC FINAL RECAPITULATIF
+   ============================================ */
+.recap {
+  background: var(--navy);
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.8rem;
+  margin: 1.4rem 0;
+}
+.recap .bloc-titre { color: var(--gold); }
+.recap ul li { color: rgba(255,255,255,0.88); border-bottom-color: rgba(255,255,255,0.1); }
+.recap ul li::before { background: var(--gold); }
+
+/* ============================================
+   ENCADRE CANDIDATS (ton direct)
+   ============================================ */
+.encadre-candidat {
+  background: linear-gradient(135deg, #003366 0%, #0a4a8a 100%);
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem 1.8rem;
+  margin: 1.4rem 0;
+}
+.encadre-candidat .accroche {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+.encadre-candidat .accroche strong { color: var(--gold); font-style: normal; }
+.encadre-candidat p { font-size: 0.97rem; color: rgba(255,255,255,0.82); margin-bottom: 0.8rem; }
+.encadre-candidat ul { list-style: none; padding: 0; margin-top: 0.8rem; }
+.encadre-candidat ul li {
+  font-size: 0.95rem;
+  padding: 0.4rem 0 0.4rem 1.4rem;
+  position: relative;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
+}
+.encadre-candidat ul li:last-child { border-bottom: none; }
+.encadre-candidat ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+.encadre-candidat ul li strong { color: var(--gold); }
+
+/* ============================================
+   SEPARATEUR
+   ============================================ */
+.sep-ligne {
+  border: none;
+  border-top: 2px solid var(--gold-pale);
+  margin: 2.5rem 0;
+}
+.sep-ligne-navy {
+  border: none;
+  border-top: 2px solid var(--navy);
+  margin: 2.5rem 0;
+}
+
+/* ============================================
+   CONCLUSION
+   ============================================ */
+.conclusion {
+  text-align: center !important;
+  padding: 2.5rem 1rem;
+  margin: 2rem 0;
+}
+.conclusion .maxime {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 1.2rem;
+  line-height: 1.3;
+}
+.conclusion p {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  max-width: 640px;
+  margin: 0 auto 1rem;
+  line-height: 1.8;
+}
+.conclusion .mot-fin {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* ============================================
+   SIGNATURE
+   ============================================ */
+.signature {
+  background: var(--navy);
+  color: rgba(255,255,255,0.75);
+  text-align: center !important;
+  padding: 2rem 1.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  line-height: 1.9;
+  margin-top: 3rem;
+}
+.signature strong { color: var(--white); }
+.signature a { color: var(--gold); text-decoration: none; }
+.signature a:hover { text-decoration: underline; }
+.signature .logo-sign {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.signature .logo-sign span { color: var(--gold); }
+
+/* ============================================
+   PARTAGE
+   ============================================ */
+.partage {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin: 2.5rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gold-pale);
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.partage-label { font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+.partage-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 14px;
+  border-radius: 2px;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.15s;
+}
+.partage-btn:hover { opacity: 0.8; }
+.btn-wa  { background: #25D366; color: #fff; }
+.btn-fb  { background: #1877F2; color: #fff; }
+.btn-li  { background: #0A66C2; color: #fff; }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  .hero { padding: 3rem 1rem 2.5rem; }
+  .section-header h2 { font-size: 1.15rem; }
+  .nav-links { display: none; }
+  .chapeau { padding: 1.2rem 1.2rem; }
+}
+
+/* ============================================
+   ACCESSIBILITE
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; }
+}
+a:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+</style>
+</head>
+<body>
+
+<!-- BANDEAU INSTITUTIONNEL -->
+<div class="institutional-bar">
+  <strong>République du Sénégal</strong> &nbsp;|&nbsp; Ministère de l'Éducation Nationale &nbsp;|&nbsp; Inspection de l'Éducation et de la Formation
+</div>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+  <a class="logo" href="/">Le Couloir <span>du Savoir</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/espace-inspecteurs.html">Espace Inspecteurs</a></li>
+    <li><a href="/ressources.html">Ressources</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <span class="hero-rubrique">Examen &amp; Réforme &middot; Juin 2026</span>
+    <h1>CFEE 2026 au Sénégal.<br><em>Ensemble, faisons de cet examen un succès collectif.</em></h1>
+    <p class="hero-soustitre">Un examen rénové, une communauté mobilisée, une génération à certifier.</p>
+    <div class="hero-meta">
+      <span>L'équipe du Couloir du Savoir</span>
+      <span class="sep">|</span>
+      <span>17 juin 2026</span>
+      <span class="sep">|</span>
+      <span>Lecture : 8 min</span>
+    </div>
+    <div class="hero-ligne"></div>
+  </div>
+</header>
+
+<!-- CORPS DE L'ARTICLE -->
+<main>
+<div class="article-wrap">
+
+  <!-- CHAPEAU -->
+  <div class="chapeau">
+    <p>Le Certificat de Fin d'Études de l'Enseignement Élémentaire (CFEE) n'est plus le même. Par le décret n°&thinsp;2026-1112 du 21&nbsp;mai&nbsp;2026, le président de la République a officiellement créé le CFEE comme diplôme unique sanctionnant la fin du cycle élémentaire et supprimé le concours d'entrée en classe de Sixième. Désormais, tout élève ayant réussi le CFEE accède directement au collège. Et même un élève qui n'obtient pas le diplôme peut poursuivre en Sixième, dès lors que sa moyenne annuelle, calculée à partir de ses compositions et évaluations dans son école, est supérieure ou égale à 4 sur 10. L'enjeu n'est plus de filtrer, il est d'accompagner. La gestion de l'examen est entièrement dématérialisée via la plateforme Anadole, et les résultats doivent être disponibles dans un délai maximal de dix jours. Demain, cet examen rénové nous appartient collectivement. Voici ce que chacun doit savoir, faire et incarner.</p>
+  </div>
+
+  <!-- ======= SECTION I : CHEFS DE CENTRE ======= -->
+  <section class="section" id="chefs-de-centre">
+    <div class="section-header">
+      <div class="section-num">I</div>
+      <div class="section-title-block">
+        <div class="section-label">Pilotage et engagement</div>
+        <h2>Aux chefs de centre : vous êtes la pierre angulaire</h2>
+      </div>
+    </div>
+
+    <p>Le chef de centre n'est pas un simple gardien de la logistique. Il est le garant de l'équité, de la sérénité et de la régularité de l'examen. Il s'appuie sur une commission composée de secrétaires, dont un agent de saisie dédié aux opérations numériques sur Anadole, de surveillants et de correcteurs. Chacun a un rôle précis. C'est le chef de centre qui en assure la cohérence.</p>
+
+    <p>Sa responsabilité couvre toute la chaîne : de l'ouverture des portes à la signature du procès-verbal de délibération. La préparation matérielle est connue de tous. Ce qui est attendu aujourd'hui, c'est la rigueur dans l'exécution, la maîtrise des outils numériques et la capacité à décider avec calme face à tout incident. La fiche du superviseur CFEE évalue chaque étape avec précision.</p>
+  </section>
+
+  <hr class="sep-ligne">
+
+  <!-- ======= SECTION II : CORRECTEURS ======= -->
+  <section class="section" id="correcteurs">
+    <div class="section-header">
+      <div class="section-num">II</div>
+      <div class="section-title-block">
+        <div class="section-label">Engagement et professionnalisme</div>
+        <h2>Aux correcteurs : votre stylo tient l'avenir d'un enfant</h2>
+      </div>
+    </div>
+
+    <p>Corriger une copie d'examen du CFEE n'est pas seulement un exercice technique : c'est un acte de justice. Chaque copie porte le nom d'un enfant qui a travaillé, qui a attendu, qui espère, et cette réalité doit habiter le correcteur du début à la fin de sa tâche. La méthode, la rigueur et la conscience professionnelle ne sont pas des exigences abstraites : elles sont le respect dû à chaque candidat.</p>
+
+    <p>Le chronogramme officiel prévoit la correction du samedi 20 au lundi 22 juin 2026, et la délibération les 23 et 24 juin. Avec la dématérialisation via Anadole, les résultats doivent être disponibles dans un délai maximal de dix jours. Dix jours, c'est le temps qu'il faut pour corriger avec soin et conscience. Chaque copie mérite une lecture attentive : c'est ainsi que la correction devient un acte de confiance envers l'élève et envers l'institution.</p>
+
+    <h3 class="sous-titre">1. Nous sommes dans une évaluation critériée</h3>
+
+    <p>Le CFEE s'inscrit dans le cadre de l'approche par compétences (APC), adoptée par le Sénégal avec le Curriculum de l'Éducation de Base. Dans ce cadre, l'évaluation n'est plus normative : elle ne classe pas les élèves les uns par rapport aux autres. Elle est critériée : elle détermine les acquis de chaque apprenant par référence à des critères définis, indépendamment des performances des autres candidats.</p>
+
+    <p>Ce n'est pas une formule creuse : c'est un changement de posture qui concerne aussi bien l'enseignant que le correcteur. Comme le rappellent les travaux sur l'évaluation certificative en APC, les critères doivent être appréciés de façon indépendante les uns des autres, car chacun éclaire une dimension spécifique de la compétence de l'élève. Respecter cette indépendance, c'est donner à chaque élève la chance d'être reconnu pour ce qu'il maîtrise réellement, même là où il n'est pas encore au niveau attendu sur tous les plans.</p>
+
+    <h3 class="sous-titre">2. L'indépendance des critères : la règle fondamentale</h3>
+
+    <p>En évaluation critériée, les critères sont indépendants. Un élève peut être performant sur un critère et moins performant sur un autre, sans que l'un écrase l'autre. Cette indépendance est une garantie de justice et de fiabilité de la mesure.</p>
+
+    <p>Prenons l'exemple de la discipline Langue et Communication, l'une des plus sensibles du CFEE. Elle articule plusieurs critères : la pertinence de la production (l'élève répond-il bien à la consigne&nbsp;?), la correction linguistique (orthographe, syntaxe, conjugaison), la cohérence du texte (organisation, progression des idées) et la richesse de l'expression. Ces critères se jugent séparément, ce qui permet de reconnaître les forces de l'élève là où elles se trouvent : un raisonnement solide mérite d'être valorisé, même si la forme linguistique reste à consolider.</p>
+
+    <div class="bloc">
+      <div class="bloc-titre">Quatre repères pour une correction équitable</div>
+      <ul>
+        <li><strong>L'effet de halo :</strong> veiller à ce que la présentation d'une copie, belle ou moins soignée, n'influe pas sur l'appréciation du fond.</li>
+        <li><strong>La contamination des critères :</strong> évaluer chaque critère pour lui-même, sans laisser une difficulté orthographique peser sur l'appréciation de la pertinence ou de la cohérence du texte.</li>
+        <li><strong>L'effet de contraste :</strong> chaque copie se juge par rapport aux critères du barème, non par rapport à la copie précédente.</li>
+        <li><strong>L'effet de stéréotype :</strong> l'école d'origine, la localité ou le sexe de l'élève ne doivent jamais influer sur la correction.</li>
+      </ul>
+    </div>
+
+    <h3 class="sous-titre">3. La correction dans le centre : un espace de justice et de rigueur</h3>
+
+    <p>La présence de toute la commission durant la session de correction est la condition première d'un travail bien fait. Chaque note reportée sur les fiches de moyenne doit correspondre exactement à celle de la fiche de correction, et tout litige doit être résolu avant la saisie pour garantir la fiabilité des résultats.</p>
+
+    <p>Les séances d'harmonisation du Guide du correcteur, organisées par l'IEF, ont précisément pour objet d'aligner les pratiques de tous les correcteurs sur les mêmes références. Tout correcteur souhaitant clarifier les références communes est invité à se rapprocher du président du jury avant de commencer.</p>
+
+    <div class="bloc bloc-creme">
+      <div class="bloc-titre">La liste de vérification du correcteur</div>
+      <ul>
+        <li>J'ai participé aux séances d'harmonisation du Guide du correcteur organisées par l'IEF.</li>
+        <li>Je connais les critères minimaux et les critères de perfectionnement pour chaque discipline.</li>
+        <li>Je juge chaque critère indépendamment : je ne laisse pas l'un contaminer l'autre.</li>
+        <li>Je me réfère au barème officiel pour chaque copie, sans exception.</li>
+        <li>Je lis chaque copie en entier avant de noter.</li>
+        <li>Je reporte les notes sur les fiches de moyenne avec la même exactitude qu'en fiche de correction.</li>
+        <li>Je signale tout litige ou anomalie au président du jury avant de poursuivre.</li>
+        <li>Je garde confidentielle toute note jusqu'à la délibération officielle.</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="sep-ligne">
+
+  <!-- ======= SECTION III : PARENTS ET APE ======= -->
+  <section class="section" id="parents-cge-ape">
+    <div class="section-header">
+      <div class="section-num">III</div>
+      <div class="section-title-block">
+        <div class="section-label">Soutien et mobilisation</div>
+        <h2>Aux parents, aux CGE et aux APE : vous êtes les premiers éducateurs</h2>
+      </div>
+    </div>
+
+    <p>L'école instruit, la famille forme et l'examen évalue ce que les deux ont construit ensemble. Ce soir, chaque parent d'un candidat au CFEE a un rôle déterminant à jouer, aussi discret soit-il.</p>
+
+    <p>Ce soir, assurez-vous que votre enfant se couche de bonne heure : un élève reposé mémorise mieux, gère mieux le stress et produit un meilleur écrit. Après 21&thinsp;h&thinsp;00, le programme est terminé.</p>
+
+    <p>Ce matin, levez-le à temps, donnez-lui un repas léger mais nourrissant et accompagnez-le jusqu'à l'entrée du centre avec un mot d'encouragement. La pression et les menaces ne servent à rien à cette étape : un regard confiant et une parole bienveillante suffisent à lui donner l'élan dont il a besoin.</p>
+
+
+    <p>Il faut savoir aussi que cette année, le CFEE change profondément de statut. Avec la suppression du concours d'entrée en Sixième, votre enfant n'est plus en compétition avec ses camarades : il est évalué sur ses propres compétences, selon des critères définis. Et si, malgré tout, il n'obtenait pas le CFEE, sachez qu'une moyenne annuelle supérieure ou égale à 4 sur 10, tirée de ses compositions et évaluations tout au long de l'année dans son école, lui ouvre quand même les portes du collège. Cette année, aucun enfant ayant fourni un effort réel n'est laissé au bord du chemin. L'encouragement doit primer sur la pression.</p>
+
+    <p>Les Comités de Gestion des Écoles (CGE) et les Associations de Parents d'Élèves (APE) ont, en ce moment, une mission décisive. Ensemble, ils incarnent le lien entre l'école et la communauté. Ils peuvent organiser des veillées de soutien émotionnel la veille, sécuriser les abords des centres le jour J, relayer les informations officielles et témoigner que la communauté fait corps avec ses enfants.</p>
+
+    <div class="bloc">
+      <div class="bloc-titre">Ce que les CGE et les APE peuvent faire concrètement</div>
+      <ul>
+        <li>Informer les parents des horaires et de l'organisation des centres afin que chaque candidat arrive serein et à temps</li>
+        <li>Faciliter la communication entre la communauté et les chefs de centre pour un déroulement apaisé</li>
+        <li>Organiser un dispositif d'accompagnement émotionnel avant et après les épreuves</li>
+        <li>Relayer uniquement les informations officielles et accompagner les familles dans l'attente sereine des résultats</li>
+        <li>Valoriser chaque candidat, quel que soit le résultat</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="sep-ligne">
+
+  <!-- ======= SECTION IV : CANDIDATS ======= -->
+  <section class="section" id="candidats">
+    <div class="section-header">
+      <div class="section-num">IV</div>
+      <div class="section-title-block">
+        <div class="section-label">Encouragement direct</div>
+        <h2>Aux candidats : vous êtes prêts. Vous le valez.</h2>
+      </div>
+    </div>
+
+    <div class="encadre-candidat">
+      <p class="accroche">Toi qui lis ces lignes ce soir ou qui entends ces mots ce matin&nbsp;: <strong>tu as travaillé. Tu as appris. Tu es prêt.</strong></p>
+      <p>Cette année, le CFEE ne t'oppose plus à tes camarades : il t'invite à montrer ce que toi, tu sais faire. L'évaluation ne sert pas à être meilleur que les autres, elle sert à devenir meilleur que soi-même. Alors concentre-toi sur tes propres réponses, sur ta propre démarche, et fais confiance à ce que tu as appris.</p>
+      <ul>
+        <li><strong>Ce soir :</strong> couche-toi tôt. Prépare ton matériel (stylos, carte d'identité scolaire, règle). Ne refais pas tout ton programme.</li>
+        <li><strong>Ce matin :</strong> mange avant de partir. Arrive 30 minutes avant l'heure indiquée. Respire calmement.</li>
+        <li><strong>En salle :</strong> lis chaque consigne deux fois avant de répondre. Commence par ce que tu maîtrises. Ne laisse aucune question sans réponse.</li>
+        <li><strong>Si tu bloques :</strong> passe à la suite. La réponse peut revenir en cours d'épreuve.</li>
+        <li><strong>Quoi qu'il arrive :</strong> tu es plus grand que cet examen. Mais il peut t'ouvrir de grandes portes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="sep-ligne">
+
+  <!-- ======= SECTION V : CHRONOGRAMME ======= -->
+  <section class="section" id="chronogramme">
+    <div class="section-header">
+      <div class="section-num">V</div>
+      <div class="section-title-block">
+        <div class="section-label">Organisation officielle</div>
+        <h2>Le chronogramme officiel de la session 2026</h2>
+      </div>
+    </div>
+
+    <p>La session CFEE 2026 s'organise selon un planning rigoureux, supervisé étape par étape. L'objectif est la publication des résultats dans un délai maximal de dix jours grâce à la dématérialisation via Anadole. Chaque acteur doit connaître sa place dans cette chaîne.</p>
+
+    <div class="chrono-wrap">
+      <table class="chrono">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Opération</th>
+            <th>Ce qui est contrôlé</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>17&ndash;18 juin</td>
+            <td>Administration des épreuves</td>
+            <td>Respect des instructions, gestion des absences dans Anadole, anonymat et mise en paquets des copies</td>
+          </tr>
+          <tr>
+            <td>19 juin</td>
+            <td>Saisie des notes EPS et harmonisation</td>
+            <td>Saisies S1 et S2 exhaustives, correction des incohérences, partage du Guide du correcteur entre tous les correcteurs</td>
+          </tr>
+          <tr>
+            <td>20&ndash;22 juin</td>
+            <td>Correction des copies</td>
+            <td>Présence de toute la commission, indépendance des critères, conformité entre fiches de correction et fiches de moyenne, traitement des litiges</td>
+          </tr>
+          <tr>
+            <td>23&ndash;24 juin</td>
+            <td>Saisie, délibération, publication</td>
+            <td>Contrôle-qualité avant délibération, présence de la commission, signature du PV, publication officielle dans les 10 jours</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="sep-ligne">
+
+  <!-- ======= SECTION VI : REFORME ======= -->
+  <section class="section" id="reforme">
+    <div class="section-header">
+      <div class="section-num">VI</div>
+      <div class="section-title-block">
+        <div class="section-label">Contexte et réforme</div>
+        <h2>Ce qui change avec le CFEE 2026 : les faits</h2>
+      </div>
+    </div>
+
+    <p>La session 2026 marque un tournant dans l'histoire du CFEE au Sénégal. Trois changements majeurs méritent d'être compris par tous les acteurs.</p>
+
+    <h3 class="sous-titre">La suppression du concours d'entrée en Sixième</h3>
+    <p>Par le décret n°&thinsp;2026-1112 du 21&nbsp;mai&nbsp;2026, le concours d'entrée en Sixième est officiellement supprimé. Tout élève réussissant le CFEE accède directement au collège. Par ailleurs, même un élève qui échoue au CFEE peut poursuivre en Sixième, à condition que sa moyenne annuelle, issue de ses compositions et évaluations réalisées dans son école au cours de l'année, soit supérieure ou égale à 4 sur 10. C'est le parcours scolaire de l'élève, et non le seul résultat du jour, qui est pris en compte. Cette disposition renforce l'ambition d'un système plus équitable, plus inclusif et conforme à l'obligation scolaire, en veillant à ce qu'aucun effort ne reste sans reconnaissance.</p>
+
+    <h3 class="sous-titre">La gestion digitalisée via Anadole</h3>
+    <p>De l'enrôlement des candidats à la publication des résultats, tout le processus est désormais centralisé dans le centre d'examen grâce à la plateforme Anadole. L'objectif est de fiabiliser les données, de gagner du temps et de sécuriser le processus. Les résultats doivent être disponibles dans un délai maximal de dix jours.</p>
+
+    <h3 class="sous-titre">L'évaluation par compétences</h3>
+    <p>Le CFEE évalue désormais des compétences et non plus seulement des contenus mémorisés. Les sujets proposent des situations de vie réelles et significatives, dans lesquelles la capacité à raisonner et à mobiliser ses acquis compte autant que la restitution. La maîtrise du français écrit reste fondamentale dans toutes les disciplines, tandis que l'éducation à la citoyenneté et les compétences transversales, comme l'autonomie, la rigueur et la méthode, sont pleinement intégrées à l'évaluation.</p>
+
+    <div class="recap">
+      <div class="bloc-titre">En résumé : ce que le CFEE 2026 change réellement</div>
+      <ul>
+        <li>Le CFEE est désormais le seul diplôme sanctionnant la fin du cycle élémentaire (décret n°&thinsp;2026-1112)</li>
+        <li>Le concours d'entrée en Sixième est supprimé : tout élève admis au CFEE va au collège ; un élève non admis peut aussi accéder à la Sixième si sa moyenne annuelle, issue des compositions et évaluations dans son école, est supérieure ou égale à 4/10</li>
+        <li>La gestion est entièrement digitalisée via la plateforme Anadole dans le centre d'examen</li>
+        <li>Les résultats sont disponibles dans un délai maximal de dix jours</li>
+        <li>L'évaluation est critériée : elle mesure ce que l'élève sait faire, pas ce qu'il vaut par rapport aux autres</li>
+        <li>Chaque centre ne doit pas dépasser 250 candidats (ratio : 1 correcteur pour 80 copies)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONCLUSION -->
+  <hr class="sep-ligne-navy">
+  <div class="conclusion">
+    <p class="maxime">Un examen réussi est un bien commun.</p>
+    <p>Le CFEE 2026 sera ce que nous en ferons collectivement. Les chefs de centre qui veilleront avec rigueur et maîtriseront les outils numériques. Les correcteurs qui évalueront avec justice et méthode, critère par critère, au service de chaque élève. Les parents qui soutiendront sans pression, en comprenant que cette année, leur enfant n'est plus en compétition : il est en certification. Les CGE et les APE qui mobiliseront la communauté. Et les élèves qui, demain matin, pousseront cette porte avec courage et confiance.</p>
+    <span class="mot-fin">À tous : bon courage. Et bon CFEE 2026.</span>
+  </div>
+
+  <!-- PARTAGE -->
+  <div class="partage">
+    <span class="partage-label">Partager</span>
+    <a class="partage-btn btn-wa" href="https://wa.me/?text=Demain%2C%20c%E2%80%99est%20le%20CFEE%20%E2%80%94%20Lire%20l%E2%80%99article%20sur%20lecouloirdusavoir.com" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="partage-btn btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://lecouloirdusavoir.com" target="_blank" rel="noopener">Facebook</a>
+    <a class="partage-btn btn-li" href="https://www.linkedin.com/sharing/share-offsite/?url=https://lecouloirdusavoir.com" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+
+</div><!-- /.article-wrap -->
+</main>
+
+<!-- SIGNATURE / PIED DE PAGE -->
+<footer class="signature">
+  <div class="logo-sign">Le Couloir <span>du Savoir</span></div>
+  <div>MBM &mdash; L'équipe du Couloir du Savoir</div>
+  <div><a href="https://www.lecouloirdusavoir.com">www.lecouloirdusavoir.com</a></div>
+  <div style="margin-top:0.4rem;font-size:0.75rem;color:rgba(255,255,255,0.4);">
+    &copy; 2026 Le Couloir du Savoir &mdash; Plateforme de réflexion pédagogique pour l'éducation francophone en Afrique
+  </div>
+</footer>
+
+</body>
+</html>
