@@ -429,4 +429,36 @@
     <priority>0.80</priority>
   </url>
 
+  <!-- Ajouts 2026-06-19 -->
+  <url>
+    <loc>https://lecouloirdusavoir.com/cfee-2026-article-sensibilisation.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/reformer-ecole-universite-benin.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/philosophie-enfant-contexte-senegalais.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/cfee-2026-epreuve-mathematiques.html</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/afrique-ia-education-metiers-demain.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
 </urlset>
