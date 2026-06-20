@@ -1,0 +1,48 @@
+CORRECTIF SEO À APPLIQUER DANS cfee-blanc-2026-resultats-causes.html
+=====================================================================
+
+PROBLÈME DIAGNOSTIQUÉ
+----------------------
+Requête "cfee blanc 2026" : 563 impressions, 6 clics seulement (CTR ~1%)
+Le titre/méta actuel ne capte pas assez l'intention de recherche.
+Les internautes qui tapent "cfee blanc 2026" cherchent en priorité :
+  - les résultats (à savoir s'ils sont publiés)
+  - une date ou un calendrier
+  - une vérification rapide ("est-ce que c'est sorti ?")
+
+CE QU'IL FAUT REMPLACER DANS LE <head>
+----------------------------------------
+
+ANCIEN (probable) :
+<title>CFEE Blanc 2026 : résultats, causes et responsabilités | Le Couloir du Savoir</title>
+
+NOUVEAU :
+<title>CFEE Blanc 2026 : résultats publiés, analyse complète | Le Couloir du Savoir</title>
+
+ANCIENNE meta description (à remplacer) :
+<meta name="description" content="[ancienne description]">
+
+NOUVELLE meta description :
+<meta name="description" content="CFEE Blanc 2026 : les résultats sont disponibles. Taux de réussite, analyse des causes d'échec et responsabilités partagées entre élèves, enseignants et institution.">
+
+POURQUOI CE CHANGEMENT FONCTIONNE
+-----------------------------------
+1. "résultats publiés" répond directement à l'urgence de la recherche :
+   l'internaute veut savoir si c'est disponible MAINTENANT.
+2. Le mot "complète" en title rassure sur l'exhaustivité du contenu.
+3. La meta description confirme dès les premiers mots que les résultats
+   SONT là, ce qui lève l'incertitude qui freine le clic.
+4. Le format reste sous 60 caractères (title) et 155 caractères (description).
+
+À FAIRE AUSSI SUR LA PAGE ELLE-MÊME
+--------------------------------------
+Si ce n'est pas déjà fait, ajouter dans les 100 premiers mots visibles
+de la page une phrase explicite : "Les résultats du CFEE Blanc 2026
+sont disponibles depuis le [date]." Cela renforce la cohérence
+entre la promesse du snippet Google et le contenu réel,
+ce qui améliore aussi le classement à moyen terme.
+
+OPEN GRAPH (si présent, à harmoniser)
+----------------------------------------
+<meta property="og:title" content="CFEE Blanc 2026 : résultats publiés, analyse complète">
+<meta property="og:description" content="CFEE Blanc 2026 : les résultats sont disponibles. Taux de réussite, analyse des causes d'échec et responsabilités partagées entre élèves, enseignants et institution.">
