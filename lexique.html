@@ -20,11 +20,11 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-9SDJVY86L2');</script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-:root{--navy:#1A2E4A;--teal:#0E6B7C;--gold:#C9970A;--sand:#F5EED8;--cream:#FDFAF3;--rust:#B85533;--sage:#4A7C6F;--plum:#6B3F6E;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF}
+:root{--navy:#0F4C3A;--teal:#0E6B7C;--gold:#D4A017;--sand:#F5EED8;--cream:#FDFAF3;--rust:#B85533;--sage:#4A7C6F;--plum:#6B3F6E;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden;line-height:1.85}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:66px;background:rgba(26,46,74,0.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,151,10,0.25)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:66px;background:rgba(15,76,58,0.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,160,23,0.25)}
 .nav-brand{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--gold);text-decoration:none}
 .nav-brand span{color:var(--white);font-weight:400;font-style:italic}
 .nav-retour{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;border:1px solid rgba(255,255,255,0.2);padding:7px 18px;border-radius:4px;transition:color 0.2s,border-color 0.2s}
@@ -38,10 +38,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .search-inner{max-width:680px;margin:0 auto;display:flex;gap:12px;align-items:center}
 .search-inner input{flex:1;font-family:'Source Serif 4',serif;font-size:1rem;padding:12px 18px;border:none;border-radius:4px;background:var(--white);color:var(--text);outline:none}
 .search-inner input::placeholder{color:var(--muted)}
-.filtres{background:var(--sand);padding:20px 40px;border-bottom:1px solid rgba(26,46,74,0.08)}
+.filtres{background:var(--sand);padding:20px 40px;border-bottom:1px solid rgba(15,76,58,0.08)}
 .filtres-inner{max-width:1100px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .filtre-label{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-right:4px}
-.filtre-btn{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;padding:6px 16px;border-radius:20px;border:1.5px solid rgba(26,46,74,0.2);background:transparent;color:var(--navy);cursor:pointer;transition:all 0.15s}
+.filtre-btn{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;padding:6px 16px;border-radius:20px;border:1.5px solid rgba(15,76,58,0.2);background:transparent;color:var(--navy);cursor:pointer;transition:all 0.15s}
 .filtre-btn:hover,.filtre-btn.actif{background:var(--navy);color:var(--white);border-color:var(--navy)}
 .filtre-btn.actif{background:var(--gold);border-color:var(--gold);color:var(--navy)}
 .conteneur{max-width:1100px;margin:0 auto;padding:64px 40px}
@@ -49,20 +49,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .compteur strong{color:var(--navy)}
 .lexique-grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
 .terme-carte{background:var(--white);border-radius:8px;border-top:4px solid var(--navy);padding:28px 26px;display:flex;flex-direction:column;gap:14px;transition:transform 0.15s,box-shadow 0.15s;cursor:default}
-.terme-carte:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(26,46,74,0.1)}
+.terme-carte:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(15,76,58,0.1)}
 .terme-carte.original{border-top-color:var(--gold)}
 .terme-carte.psycho{border-top-color:var(--teal)}
 .terme-carte.didactique{border-top-color:var(--plum)}
 .terme-entete{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
 .terme-nom{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--navy);line-height:1.3}
 .terme-badge{font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0}
-.badge-original{background:rgba(201,151,10,0.12);color:#8a6200}
+.badge-original{background:rgba(212,160,23,0.12);color:#8a6200}
 .badge-psycho{background:rgba(14,107,124,0.1);color:var(--teal)}
 .badge-didactique{background:rgba(107,63,110,0.1);color:var(--plum)}
 .badge-pedago{background:rgba(74,124,111,0.1);color:var(--sage)}
 .terme-acronyme{font-family:'DM Sans',sans-serif;font-size:0.78rem;color:var(--gold);font-weight:600;font-style:italic}
 .terme-def{font-size:0.92rem;color:var(--muted);line-height:1.75}
-.terme-ref{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(26,46,74,0.4);font-style:italic;margin-top:4px;padding-top:12px;border-top:1px solid var(--sand)}
+.terme-ref{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(15,76,58,0.4);font-style:italic;margin-top:4px;padding-top:12px;border-top:1px solid var(--sand)}
 .terme-lien{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;color:var(--gold);text-decoration:none;display:inline-flex;align-items:center;gap:4px;margin-top:4px}
 .terme-lien:hover{color:var(--navy)}
 .aucun{display:none;text-align:center;padding:60px 20px;color:var(--muted);font-style:italic}

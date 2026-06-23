@@ -39,9 +39,9 @@
 
   <style>
     :root {
-      --navy:  #1A2E4A;
+      --navy:  #0F4C3A;
       --teal:  #0E6B7C;
-      --gold:  #C9970A;
+      --gold:  #D4A017;
       --sand:  #F5EED8;
       --cream: #FDFAF3;
       --rust:  #B85533;
@@ -54,7 +54,7 @@
     body { font-family: 'Source Serif 4', Georgia, serif; color: var(--text); background: var(--cream); line-height: 1.85; font-size: 1.05rem; }
 
     /* HEADER */
-    header { background: rgba(26,46,74,0.97); color: var(--white); padding: 0 40px; height: 66px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(201,151,10,0.25); position: sticky; top: 0; z-index: 100; }
+    header { background: rgba(15,76,58,0.97); color: var(--white); padding: 0 40px; height: 66px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(212,160,23,0.25); position: sticky; top: 0; z-index: 100; }
     header .site-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--gold); text-decoration: none; }
     header .site-name span { color: var(--white); font-weight: 400; font-style: italic; }
     header nav a { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 500; color: rgba(255,255,255,0.72); text-decoration: none; letter-spacing: 0.09em; text-transform: uppercase; margin-left: 1.5rem; }
@@ -63,7 +63,7 @@
     /* HERO */
     .hero { background: var(--navy); color: var(--white); padding: 5rem 1.5rem 4rem; text-align: center; position: relative; overflow: hidden; }
     .hero::before { content:''; position:absolute; inset:0; background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(14,107,124,0.15) 0%, transparent 70%); pointer-events:none; }
-    .hero .tag { font-family: 'DM Sans', sans-serif; display: inline-block; background: transparent; border: 1px solid rgba(201,151,10,0.5); color: var(--gold); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 1rem; border-radius: 20px; margin-bottom: 1.4rem; }
+    .hero .tag { font-family: 'DM Sans', sans-serif; display: inline-block; background: transparent; border: 1px solid rgba(212,160,23,0.5); color: var(--gold); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 0.3rem 1rem; border-radius: 20px; margin-bottom: 1.4rem; }
     .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 5vw, 3rem); line-height: 1.2; margin-bottom: 1.1rem; font-weight: 900; color: var(--white); }
     .hero h1 em { color: var(--gold); font-style: italic; }
     .hero .sous-titre { font-family: 'DM Sans', sans-serif; font-size: 0.92rem; color: rgba(255,255,255,0.65); max-width: 620px; margin: 0 auto 1.4rem; line-height: 1.75; }
@@ -86,8 +86,8 @@
     .acteur-card p  { font-family: 'DM Sans', sans-serif; font-size: 0.85rem; margin: 0; line-height: 1.6; color: var(--muted); }
     .acteur-badge { font-family: 'DM Sans', sans-serif; display: inline-block; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.6rem; }
     .ief  .acteur-badge { background: rgba(14,107,124,0.12); color: var(--teal); }
-    .disc .acteur-badge { background: rgba(26,46,74,0.1);  color: var(--navy); }
-    .vs   .acteur-badge { background: rgba(201,151,10,0.12); color: var(--gold); }
+    .disc .acteur-badge { background: rgba(15,76,58,0.1);  color: var(--navy); }
+    .vs   .acteur-badge { background: rgba(212,160,23,0.12); color: var(--gold); }
 
     /* ENCADRE DISCIPLINAIRE */
     .acteur-card.icd  { border-color: var(--rust); }
@@ -102,7 +102,7 @@
     .chiffre { display: inline-block; background: var(--navy); color: #fff; font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 0.78rem; padding: 0.15rem 0.5rem; border-radius: 3px; margin-right: 0.3rem; }
 
     /* ENCADRE VIE SCOLAIRE */
-    .encadre-vs { background: var(--white); border: 1px solid rgba(201,151,10,0.25); border-left: 4px solid var(--gold); border-radius: 0 4px 4px 0; padding: 1.4rem 1.5rem; margin: 1.6rem 0; }
+    .encadre-vs { background: var(--white); border: 1px solid rgba(212,160,23,0.25); border-left: 4px solid var(--gold); border-radius: 0 4px 4px 0; padding: 1.4rem 1.5rem; margin: 1.6rem 0; }
     .encadre-vs h4 { font-family: 'DM Sans', sans-serif; color: var(--gold); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; margin-bottom: 0.9rem; }
     .encadre-vs ul { padding-left: 1.2rem; margin: 0; }
     .encadre-vs ul li { margin-bottom: 0.55rem; font-size: 0.95rem; line-height: 1.65; }
@@ -113,27 +113,27 @@
     thead tr { background: var(--navy); color: #fff; }
     thead th { font-family: 'DM Sans', sans-serif; padding: 0.75rem 0.9rem; text-align: left; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.04em; }
     tbody tr:nth-child(even) { background: var(--sand); }
-    tbody tr:hover { background: rgba(201,151,10,0.06); }
-    tbody td { padding: 0.7rem 0.9rem; vertical-align: top; border-bottom: 1px solid rgba(26,46,74,0.08); }
+    tbody tr:hover { background: rgba(212,160,23,0.06); }
+    tbody td { padding: 0.7rem 0.9rem; vertical-align: top; border-bottom: 1px solid rgba(15,76,58,0.08); }
     tbody td:first-child { font-weight: 600; color: var(--navy); }
 
     /* ALERTE */
-    .alerte { background: rgba(201,151,10,0.08); border: 1px solid rgba(201,151,10,0.3); border-left: 4px solid var(--gold); border-radius: 0 4px 4px 0; padding: 1.2rem 1.5rem; margin: 1.8rem 0; font-size: 0.96rem; }
+    .alerte { background: rgba(212,160,23,0.08); border: 1px solid rgba(212,160,23,0.3); border-left: 4px solid var(--gold); border-radius: 0 4px 4px 0; padding: 1.2rem 1.5rem; margin: 1.8rem 0; font-size: 0.96rem; }
     .alerte strong { color: var(--navy); }
 
     /* OUTILS */
     .outils-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0.8rem; margin: 1.2rem 0 1.8rem; }
-    .outil-card { background: var(--white); border: 1px solid rgba(26,46,74,0.12); border-top: 3px solid var(--teal); border-radius: 4px; padding: 1rem; font-size: 0.88rem; line-height: 1.55; }
+    .outil-card { background: var(--white); border: 1px solid rgba(15,76,58,0.12); border-top: 3px solid var(--teal); border-radius: 4px; padding: 1rem; font-size: 0.88rem; line-height: 1.55; }
     .outil-card .outil-titre { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--navy); display: block; margin-bottom: 0.35rem; font-size: 0.92rem; }
 
     /* SOURCES */
-    .sources { background: var(--white); border: 1px solid rgba(26,46,74,0.1); border-radius: 4px; padding: 1.5rem 1.7rem; margin: 2.5rem 0 1.5rem; }
+    .sources { background: var(--white); border: 1px solid rgba(15,76,58,0.1); border-radius: 4px; padding: 1.5rem 1.7rem; margin: 2.5rem 0 1.5rem; }
     .sources h3 { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; color: var(--muted); margin-bottom: 0.9rem; font-style: normal; }
     .sources ul { padding-left: 1.2rem; }
     .sources ul li { font-size: 0.88rem; margin-bottom: 0.5rem; line-height: 1.6; color: var(--muted); }
 
     /* SIGNATURE */
-    .signature { text-align: center; padding: 1.8rem; border-top: 1px solid rgba(201,151,10,0.4); margin-top: 2.5rem; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: var(--muted); line-height: 1.8; }
+    .signature { text-align: center; padding: 1.8rem; border-top: 1px solid rgba(212,160,23,0.4); margin-top: 2.5rem; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; color: var(--muted); line-height: 1.8; }
     .signature strong { font-family: 'Playfair Display', serif; color: var(--navy); font-size: 1rem; display: block; margin-bottom: 0.3rem; }
 
     /* FOOTER */

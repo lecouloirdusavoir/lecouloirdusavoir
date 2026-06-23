@@ -55,11 +55,11 @@ gtag('config', 'G-9SDJVY86L2');
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-:root{--navy:#1A2E4A;--teal:#0E6B7C;--gold:#C9970A;--sand:#F5EED8;--cream:#FDFAF3;--rust:#B85533;--sage:#4A7C6F;--plum:#6B3F6E;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF;}
+:root{--navy:#0F4C3A;--teal:#0E6B7C;--gold:#D4A017;--sand:#F5EED8;--cream:#FDFAF3;--rust:#B85533;--sage:#4A7C6F;--plum:#6B3F6E;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden;line-height:1.85}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:66px;background:rgba(26,46,74,0.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,151,10,0.25)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:66px;background:rgba(15,76,58,0.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,160,23,0.25)}
 .nav-brand{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--gold);text-decoration:none}
 .nav-brand span{color:var(--white);font-weight:400;font-style:italic}
 .nav-links{display:flex;align-items:center;gap:17px;list-style:none}
@@ -67,7 +67,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-links a:hover{color:var(--gold)}
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .nav-toggle span{width:22px;height:2px;background:var(--gold);border-radius:2px}
-.mobile-nav{display:none;position:fixed;top:66px;left:0;right:0;background:rgba(26,46,74,0.98);z-index:99;padding:24px 24px 32px;flex-direction:column;gap:4px;border-bottom:1px solid rgba(201,151,10,0.2)}
+.mobile-nav{display:none;position:fixed;top:66px;left:0;right:0;background:rgba(15,76,58,0.98);z-index:99;padding:24px 24px 32px;flex-direction:column;gap:4px;border-bottom:1px solid rgba(212,160,23,0.2)}
 .mobile-nav.open{display:flex}
 .mobile-nav a{font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.75);text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);letter-spacing:0.04em}
 .mobile-nav a:hover{color:var(--gold)}
@@ -77,7 +77,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .hero-eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:900;color:var(--white);line-height:1.15;margin-bottom:16px}
 .hero h1 em{color:var(--gold);font-style:italic}
-.hero-tagline{font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:rgba(201,151,10,0.8);margin-bottom:20px}
+.hero-tagline{font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:rgba(212,160,23,0.8);margin-bottom:20px}
 .hero-desc{font-size:1.05rem;color:rgba(255,255,255,0.68);line-height:1.8;margin-bottom:32px;max-width:500px}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
 .btn-p{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--gold);color:var(--navy);padding:13px 28px;border-radius:4px;text-decoration:none;letter-spacing:0.04em;transition:opacity 0.2s}
@@ -85,29 +85,29 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .btn-o{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:500;color:rgba(255,255,255,0.8);border:1px solid rgba(255,255,255,0.25);padding:12px 26px;border-radius:4px;text-decoration:none;transition:border-color 0.2s,color 0.2s}
 .btn-o:hover{border-color:var(--gold);color:var(--gold)}
 .hero-articles{display:flex;flex-direction:column;gap:10px}
-.hero-art-label{font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(201,151,10,0.6);margin-bottom:4px}
+.hero-art-label{font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(212,160,23,0.6);margin-bottom:4px}
 .hero-art-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:14px 18px;text-decoration:none;display:flex;align-items:center;gap:14px;transition:background 0.2s,border-color 0.2s;cursor:pointer}
-.hero-art-card:hover{background:rgba(201,151,10,0.08);border-color:rgba(201,151,10,0.3)}
+.hero-art-card:hover{background:rgba(212,160,23,0.08);border-color:rgba(212,160,23,0.3)}
 .hero-art-cat{font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0}
 .cat-psych{background:rgba(107,63,110,0.25);color:#D4A0D7}
 .cat-ped{background:rgba(14,107,124,0.25);color:#7DE0EE}
-.cat-new{background:rgba(201,151,10,0.2);color:var(--gold)}
+.cat-new{background:rgba(212,160,23,0.2);color:var(--gold)}
 .hero-art-title{font-family:'Playfair Display',serif;font-size:0.88rem;font-weight:700;color:rgba(255,255,255,0.88);line-height:1.3;flex:1}
 .hero-art-arrow{color:var(--gold);font-size:0.9rem;flex-shrink:0;opacity:0.7}
 .hero-right{padding:60px;position:relative;z-index:2;display:flex;flex-direction:column;gap:20px}
 .stats{background:var(--gold);display:grid;grid-template-columns:repeat(6,1fr)}
-.stat{padding:28px 20px;text-align:center;border-right:1px solid rgba(26,46,74,0.15)}
+.stat{padding:28px 20px;text-align:center;border-right:1px solid rgba(15,76,58,0.15)}
 .stat:last-child{border-right:none}
 .stat-n{display:block;font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--navy);line-height:1}
-.stat-l{display:block;font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(26,46,74,0.7);margin-top:4px}
-.acces-rapide{background:var(--cream);border-bottom:1px solid rgba(26,46,74,0.1);padding:18px 0}
+.stat-l{display:block;font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(15,76,58,0.7);margin-top:4px}
+.acces-rapide{background:var(--cream);border-bottom:1px solid rgba(15,76,58,0.1);padding:18px 0}
 .acces-rapide-inner{max-width:1180px;margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .acces-label{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);flex-shrink:0;margin-right:6px}
-.acces-btn{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;color:var(--navy);background:var(--white);border:1px solid rgba(26,46,74,0.18);border-radius:20px;padding:7px 16px;text-decoration:none;transition:background 0.2s,border-color 0.2s,color 0.2s;white-space:nowrap}
+.acces-btn{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:500;color:var(--navy);background:var(--white);border:1px solid rgba(15,76,58,0.18);border-radius:20px;padding:7px 16px;text-decoration:none;transition:background 0.2s,border-color 0.2s,color 0.2s;white-space:nowrap}
 .acces-btn:hover{background:var(--navy);color:var(--white);border-color:var(--navy)}
 .acces-btn.hot{background:var(--navy);color:var(--white);border-color:var(--navy)}
 .acces-btn.hot:hover{background:var(--gold);color:var(--navy);border-color:var(--gold)}
-.nl-banner{background:linear-gradient(135deg,#0b1f33 0%,#0e3b5c 60%,#0a4a3a 100%);padding:48px 0;border-top:2px solid rgba(201,151,10,0.4);border-bottom:2px solid rgba(201,151,10,0.4)}
+.nl-banner{background:linear-gradient(135deg,#0b1f33 0%,#0e3b5c 60%,#0a4a3a 100%);padding:48px 0;border-top:2px solid rgba(212,160,23,0.4);border-bottom:2px solid rgba(212,160,23,0.4)}
 .nl-inner{max-width:720px;margin:0 auto;padding:0 40px;display:flex;align-items:center;gap:40px;flex-wrap:wrap}
 .nl-text{flex:1;min-width:240px}
 .nl-text h2{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--white);margin-bottom:8px}
@@ -132,14 +132,14 @@ section{padding:88px 0}
 .concept-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--gold);opacity:0.5;line-height:1;margin-bottom:16px}
 .concept-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:14px}
 .concept-def{font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:20px}
-.concept-pill{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,151,10,0.4);padding:4px 12px;border-radius:20px}
+.concept-pill{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(212,160,23,0.4);padding:4px 12px;border-radius:20px}
 .pub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .pub-card{background:var(--white);padding:28px 24px;border-radius:4px;display:flex;flex-direction:column;gap:12px;border-top:3px solid transparent;transition:border-color 0.2s,transform 0.2s}
 .pub-card:hover{border-top-color:var(--gold);transform:translateY(-2px)}
 .pub-card.feat{grid-column:span 3;flex-direction:row;border-top:none;border-left:4px solid var(--gold);padding:0}
 .pub-card.feat>div:last-child{padding:32px 28px;flex:1;display:flex;flex-direction:column;gap:12px}
 .pub-cat{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:20px;width:fit-content}
-.cat-r{background:rgba(201,151,10,0.12);color:var(--gold)}
+.cat-r{background:rgba(212,160,23,0.12);color:var(--gold)}
 .cat-mo{background:rgba(14,107,124,0.1);color:var(--teal)}
 .cat-ps{background:rgba(107,63,110,0.1);color:var(--plum)}
 .pub-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--navy);line-height:1.4}
@@ -159,9 +159,9 @@ section{padding:88px 0}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .fg{display:flex;flex-direction:column;gap:6px}
 .flbl{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)}
-.finput{font-family:'Source Serif 4',serif;font-size:0.95rem;padding:11px 14px;border:1px solid rgba(26,46,74,0.18);border-radius:3px;background:var(--white);color:var(--text);outline:none;transition:border-color 0.2s}
+.finput{font-family:'Source Serif 4',serif;font-size:0.95rem;padding:11px 14px;border:1px solid rgba(15,76,58,0.18);border-radius:3px;background:var(--white);color:var(--text);outline:none;transition:border-color 0.2s}
 .finput:focus{border-color:var(--gold)}
-.ftextarea{font-family:'Source Serif 4',serif;font-size:0.95rem;padding:11px 14px;border:1px solid rgba(26,46,74,0.18);border-radius:3px;background:var(--white);color:var(--text);outline:none;resize:vertical;min-height:130px;transition:border-color 0.2s}
+.ftextarea{font-family:'Source Serif 4',serif;font-size:0.95rem;padding:11px 14px;border:1px solid rgba(15,76,58,0.18);border-radius:3px;background:var(--white);color:var(--text);outline:none;resize:vertical;min-height:130px;transition:border-color 0.2s}
 .ftextarea:focus{border-color:var(--gold)}
 .fsubmit{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--navy);color:var(--white);border:none;padding:13px 28px;border-radius:3px;cursor:pointer;align-self:flex-start;transition:background 0.2s}
 .fsubmit:hover{background:var(--teal)}
@@ -212,14 +212,14 @@ footer{background:var(--navy);padding:56px 0 28px}
         <span class="hero-art-arrow">→</span>
       </a>
 
-      <a href="cfee-2026-epreuve-mathematiques.html" class="hero-art-card" style="border-color:rgba(204,153,0,0.8);background:rgba(204,153,0,0.16)">
-        <span class="hero-art-cat cat-new" style="background:rgba(204,153,0,0.4);color:#1A2E4A">Nouveau · Évaluation &amp; Docimologie</span>
+      <a href="cfee-2026-epreuve-mathematiques.html" class="hero-art-card" style="border-color:rgba(212,160,23,0.8);background:rgba(212,160,23,0.16)">
+        <span class="hero-art-cat cat-new" style="background:rgba(212,160,23,0.4);color:#0F4C3A">Nouveau · Évaluation &amp; Docimologie</span>
         <span class="hero-art-title">CFEE 2026 : le sujet de maths après le tollé du CFEE Blanc</span>
         <span class="hero-art-arrow">→</span>
       </a>
 
-      <a href="cfee-2026-article-sensibilisation.html" class="hero-art-card" style="border-color:rgba(0,51,102,0.7);background:rgba(0,51,102,0.18)">
-        <span class="hero-art-cat cat-new" style="background:rgba(0,51,102,0.35);color:#CC9900">Nouveau · Examen &amp; Réforme</span>
+      <a href="cfee-2026-article-sensibilisation.html" class="hero-art-card" style="border-color:rgba(15,76,58,0.7);background:rgba(15,76,58,0.18)">
+        <span class="hero-art-cat cat-new" style="background:rgba(15,76,58,0.35);color:#D4A017">Nouveau · Examen &amp; Réforme</span>
         <span class="hero-art-title">CFEE 2026 au Sénégal : guide pour les chefs de centre, correcteurs, parents, CGE, APE et candidats</span>
         <span class="hero-art-arrow">→</span>
       </a>
@@ -240,13 +240,13 @@ footer{background:var(--navy);padding:56px 0 28px}
         <span class="hero-art-title">L&rsquo;andragogie&nbsp;: outil ou strat&eacute;gie de d&eacute;veloppement RH&nbsp;?</span>
         <span class="hero-art-arrow">&rarr;</span>
       </a>
-      <a href="stivation-ecoles-formation.html" class="hero-art-card" style="border-color:rgba(201,151,10,0.7);background:rgba(201,151,10,0.15)">
-        <span class="hero-art-cat" style="background:rgba(201,151,10,0.4);color:#C9970A">Nouveau · Stivation</span>
+      <a href="stivation-ecoles-formation.html" class="hero-art-card" style="border-color:rgba(212,160,23,0.7);background:rgba(212,160,23,0.15)">
+        <span class="hero-art-cat" style="background:rgba(212,160,23,0.4);color:#D4A017">Nouveau · Stivation</span>
         <span class="hero-art-title">Et si vos meilleurs cours n'avaient jamais eu lieu en salle ?</span>
         <span class="hero-art-arrow">→</span>
       </a>
-      <a href="pilotage-district-pedagogique-icd.html" class="hero-art-card" style="border-color:rgba(201,151,10,0.35);background:rgba(201,151,10,0.06)">
-        <span class="hero-art-cat cat-new" style="background:rgba(201,151,10,0.2);color:#C9970A">Référence</span>
+      <a href="pilotage-district-pedagogique-icd.html" class="hero-art-card" style="border-color:rgba(212,160,23,0.35);background:rgba(212,160,23,0.06)">
+        <span class="hero-art-cat cat-new" style="background:rgba(212,160,23,0.2);color:#D4A017">Référence</span>
         <span class="hero-art-title">Piloter un district pédagogique : ce que tout ICD doit savoir et faire</span>
         <span class="hero-art-arrow">→</span>
       </a>
@@ -278,15 +278,15 @@ footer{background:var(--navy);padding:56px 0 28px}
   </div>
   <div class="hero-right">
     <svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:520px">
-      <rect x="20" y="20" width="480" height="380" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(201,151,10,0.2)" stroke-width="1"/>
+      <rect x="20" y="20" width="480" height="380" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(212,160,23,0.2)" stroke-width="1"/>
       <rect x="50" y="40" width="300" height="140" rx="4" fill="#0E3B5C"/>
       <rect x="56" y="46" width="288" height="128" rx="2" fill="#0A2A40"/>
-      <text x="200" y="90" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#C9970A" font-weight="700">STIvation</text>
+      <text x="200" y="90" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#D4A017" font-weight="700">STIvation</text>
       <text x="200" y="114" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.6)">STImulation + motiVATION + interACTION</text>
       <text x="200" y="150" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.4)">Mbaye, 2010. Concept fondateur</text>
-      <circle cx="400" cy="70" r="18" fill="#C9970A" opacity="0.9"/>
-      <rect x="388" y="90" width="24" height="50" rx="4" fill="#1A2E4A"/>
-      <rect x="60" y="360" width="310" height="32" rx="4" fill="rgba(201,151,10,0.08)" stroke="rgba(201,151,10,0.15)" stroke-width="1"/>
+      <circle cx="400" cy="70" r="18" fill="#D4A017" opacity="0.9"/>
+      <rect x="388" y="90" width="24" height="50" rx="4" fill="#0F4C3A"/>
+      <rect x="60" y="360" width="310" height="32" rx="4" fill="rgba(212,160,23,0.08)" stroke="rgba(212,160,23,0.15)" stroke-width="1"/>
       <text x="215" y="380" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="rgba(255,255,255,0.55)" font-style="italic">« Dans les couloirs, on apprend vraiment »</text>
     </svg>
   </div>
@@ -361,7 +361,7 @@ footer{background:var(--navy);padding:56px 0 28px}
 </div>
 <section style="background:var(--navy)" id="concepts">
   <div class="container">
-    <p class="eyebrow reveal" style="color:rgba(201,151,10,0.9)">Concepts originaux</p>
+    <p class="eyebrow reveal" style="color:rgba(212,160,23,0.9)">Concepts originaux</p>
     <h2 class="sec-title reveal" style="color:var(--white)">Trois outils <em style="color:#7DE0EE">pour penser l'apprentissage et l'organisation</em></h2>
     <div class="concepts-grid reveal">
       <div class="concept-card" style="border-color:rgba(201,168,76,0.4)"><div class="concept-num">01</div><div class="concept-name">La Stivation</div><p class="concept-def">Néologisme construit sur stimulation et motivation. Processus par lequel des interactions informelles entre pairs génèrent une dynamique collective d'apprentissage profond. Né de la recherche de terrain en contexte éducatif africain (FASTEF/UCAD, 2010), ses dynamiques suggèrent des applications dans les équipes et les organisations.</p><span class="concept-pill">Concept original · 2010</span></div>
@@ -431,10 +431,10 @@ footer{background:var(--navy);padding:56px 0 28px}
       </div>
 
       <!-- Article CFEE 2026 - épreuve de mathématiques -->
-      <div class="pub-card feat reveal" style="border-left-color:#CC9900">
-        <div style="width:4px;background:#CC9900;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+      <div class="pub-card feat reveal" style="border-left-color:#D4A017">
+        <div style="width:4px;background:#D4A017;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Évaluation &amp; Docimologie · CFEE · <span style="background:#CC9900;color:#1A2E4A;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Évaluation &amp; Docimologie · CFEE · <span style="background:#D4A017;color:#0F4C3A;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">CFEE 2026 : le sujet de maths après le tollé du CFEE Blanc</h3>
           <p class="pub-excerpt">Le sujet réel du CFEE 2026 est désormais public. Placement bancaire, devis de construction, emprunt et intérêt : une lecture à la lumière du PAAME, avec des pistes concrètes pour préparer les élèves à ce type d'épreuve dès l'année prochaine.</p>
           <div class="pub-meta"><span>MBM &middot; L'équipe du Couloir du Savoir &middot; Juin 2026</span><a href="cfee-2026-epreuve-mathematiques.html" class="pub-read">Lire &rarr;</a></div>
@@ -447,10 +447,10 @@ footer{background:var(--navy);padding:56px 0 28px}
       </div>
 
       <!-- Article CFEE 2026 - sensibilisation -->
-      <div class="pub-card feat reveal" style="border-left-color:#003366">
-        <div style="width:4px;background:#003366;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+      <div class="pub-card feat reveal" style="border-left-color:#0F4C3A">
+        <div style="width:4px;background:#0F4C3A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Examen &amp; Réforme · CFEE · <span style="background:#003366;color:#CC9900;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Examen &amp; Réforme · CFEE · <span style="background:#0F4C3A;color:#D4A017;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">CFEE 2026 au Sénégal : guide complet pour une session réussie</h3>
           <p class="pub-excerpt">Décret n°&thinsp;2026-1112, suppression du concours d'entrée en Sixième, digitalisation via Anadole, résultats en dix jours : ce que les chefs de centre, correcteurs, parents, CGE, APE et candidats doivent savoir et faire pour que la session 2026 soit un succès collectif. Un article de l'IEF, publié par Le Couloir du Savoir.</p>
           <div class="pub-meta"><span>MBM &middot; L'équipe du Couloir du Savoir &middot; Juin 2026</span><a href="cfee-2026-article-sensibilisation.html" class="pub-read">Lire &rarr;</a></div>
@@ -465,10 +465,10 @@ footer{background:var(--navy);padding:56px 0 28px}
 
 
       <!-- Article Psychologie de l'enseignant -->
-      <div class="pub-card feat reveal" style="border-left-color:#003366">
-        <div style="width:4px;background:#003366;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+      <div class="pub-card feat reveal" style="border-left-color:#0F4C3A">
+        <div style="width:4px;background:#0F4C3A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Psychologie de l'éducation &middot; Bien-être enseignant &middot; <span style="background:#003366;color:#CC9900;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Psychologie de l'éducation &middot; Bien-être enseignant &middot; <span style="background:#0F4C3A;color:#D4A017;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">Psychologie de l'enseignant : motivation, bien-être et engagement professionnel</h3>
           <p class="pub-excerpt">Maslow, Herzberg, Deci et Ryan, Bandura, Maslach : les grands modèles de la psychologie appliqués à l'enseignant. Motivation intrinsèque, sentiment d'efficacité personnelle, épuisement professionnel et pistes concrètes pour les encadreurs pédagogiques et directeurs d'école.</p>
           <div class="pub-meta"><span>MBM - L'équipe du Couloir du Savoir &middot; Janvier 2026</span><a href="psychologie-enseignant-motivation-bien-etre.html" class="pub-read">Lire &rarr;</a></div>
@@ -497,10 +497,10 @@ footer{background:var(--navy);padding:56px 0 28px}
       </div>
 
       <!-- Article Dialogue Ali Ba & MBM -->
-      <div class="pub-card feat reveal" style="border-left-color:#C9970A">
-        <div style="width:4px;background:#C9970A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+      <div class="pub-card feat reveal" style="border-left-color:#D4A017">
+        <div style="width:4px;background:#D4A017;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Andragogie &middot; Stivation &middot; <span style="background:#C9970A;color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Andragogie &middot; Stivation &middot; <span style="background:#D4A017;color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">Ali Ba &amp; Mouhamadou Bamba Mbaye : un dialogue entre andragogie et Stivation</h3>
           <p class="pub-excerpt">Une promotion de MBA2 en Management des Ressources Humaines réunit un consultant en gestion des talents et un inspecteur de l'éducation. De leurs échanges naît un dialogue entre deux textes : l'un sur l'andragogie en entreprise, l'autre sur la Stivation en milieu scolaire. Deux terrains, le même principe sur la façon dont un adulte apprend.</p>
           <div class="pub-meta"><span>MBM &middot; Le Couloir du Savoir &middot; Juin 2026</span><a href="andragogie-stivation-deux-savoirs-apprentissage-adulte.html" class="pub-read">Lire &rarr;</a></div>
@@ -558,10 +558,10 @@ footer{background:var(--navy);padding:56px 0 28px}
         </div>
       </div>
 
-<div class="pub-card feat reveal" style="border-left-color:#1A2E4A">
-        <div style="width:4px;background:#1A2E4A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+<div class="pub-card feat reveal" style="border-left-color:#0F4C3A">
+        <div style="width:4px;background:#0F4C3A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Management &middot; Leadership &middot; <span style="background:#1A2E4A;color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Management &middot; Leadership &middot; <span style="background:#0F4C3A;color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">Le manager stivateur : un nouveau profil de leadership</h3>
           <p class="pub-excerpt">Les organisations ont formé des générations de managers à agir sur les individus. Ce qu'elles n'ont pas appris, c'est à cultiver ce qui se passe entre eux. Le manager stivateur est celui qui a compris que son rôle premier est de faire de chaque membre une ressource pour les autres. <a href="espace-rh-management.html" style="color:var(--teal);font-weight:600;text-decoration:underline">Voir toute la rubrique RH &amp; Management &rarr;</a></p>
           <div class="pub-meta"><span>MBM &middot; Avril 2026</span><a href="stivation-manager-stivateur.html" class="pub-read">Lire &rarr;</a></div>
@@ -606,10 +606,10 @@ footer{background:var(--navy);padding:56px 0 28px}
       </div>
 
       <!-- Article 01 : Apprentissage organisationnel -->
-      <div class="pub-card feat reveal" style="border-left-color:#1A2E4A">
-        <div style="width:4px;background:#1A2E4A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+      <div class="pub-card feat reveal" style="border-left-color:#0F4C3A">
+        <div style="width:4px;background:#0F4C3A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Organisations &middot; Knowledge Management &middot; <span style="background:#1A2E4A;color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Organisations &middot; Knowledge Management &middot; <span style="background:#0F4C3A;color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">La Stivation comme modèle d'apprentissage organisationnel informel</h3>
           <p class="pub-excerpt">Argyris, Schön, Senge, Nonaka ont bâti la théorie de l'organisation apprenante. Aucun n'a nommé le moteur interactionnel qui fait apprendre les organisations de l'intérieur. La Stivation comble ce manque. <a href="espace-rh-management.html" style="color:var(--teal);font-weight:600;text-decoration:underline">Voir toute la rubrique RH &amp; Management &rarr;</a></p>
           <div class="pub-meta"><span>MBM &middot; Juin 2026</span><a href="stivation-apprentissage-organisationnel-informel.html" class="pub-read">Lire &rarr;</a></div>
@@ -701,10 +701,10 @@ footer{background:var(--navy);padding:56px 0 28px}
         </div>
       </div>
 
-      <div class="pub-card feat reveal" style="border-left-color:#C9970A">
-        <div style="width:4px;background:#C9970A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+      <div class="pub-card feat reveal" style="border-left-color:#D4A017">
+        <div style="width:4px;background:#D4A017;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Évaluation certificative · Contribution externe · <span style="background:#C9970A;color:#1A2E4A;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Évaluation certificative · Contribution externe · <span style="background:#D4A017;color:#0F4C3A;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">CFEE Blanc 2026 : quand l'expertise prend la parole</h3>
           <p class="pub-excerpt">Un texte anonyme, largement diffusé sur les réseaux sociaux, accuse l'épreuve de mathématiques du CFEE Blanc 2026 d'être déconnectée et de trahir le PAAME. Kaba Diakhaté, Inspecteur de l'Enseignement à la retraite, rétablit les faits avec rigueur docimologique : hiérarchie curriculum/PAAME, types de connaissances mobilisées, authenticité de la situation d'intégration.</p>
           <div class="pub-meta"><span>Kaba Diakhaté · DEXCO · APC · CFEE · Mai 2026</span><a href="cfee-blanc-2026-kaba-diakhate.html" class="pub-read">Lire →</a></div>
@@ -716,10 +716,10 @@ footer{background:var(--navy);padding:56px 0 28px}
         </div>
       </div>
 
-      <div class="pub-card feat reveal" style="border-left-color:#1A2E4A">
-        <div style="width:4px;background:#1A2E4A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+      <div class="pub-card feat reveal" style="border-left-color:#0F4C3A">
+        <div style="width:4px;background:#0F4C3A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Gouvernance éducative &middot; <span style="background:#1A2E4A;color:#C9970A;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Gouvernance éducative &middot; <span style="background:#0F4C3A;color:#D4A017;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">Directions nationales, IA et IEF : qui commande quoi, et comment ?</h3>
           <p class="pub-excerpt">Trois sollicitations, une seule valeur d'instruction hiérarchique. Organigramme officiel, décrets en vigueur, circuit du courrier et déférence institutionnelle : une clarification fondée sur les textes pour que chaque acteur du système éducatif sénégalais connaisse et respecte ses prérogatives.</p>
           <div class="pub-meta"><span>Décret 2012-1276 &middot; Arrêté 010656 &middot; IA &middot; IEF &middot; 2026</span><a href="gouvernance-directions-ia-ief.html" class="pub-read">Lire &rarr;</a></div>
@@ -732,10 +732,10 @@ footer{background:var(--navy);padding:56px 0 28px}
       </div>
 
 
-      <div class="pub-card feat reveal" style="border-left-color:#003366">
-        <div style="width:4px;background:#003366;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+      <div class="pub-card feat reveal" style="border-left-color:#0F4C3A">
+        <div style="width:4px;background:#0F4C3A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Pédagogie · Pratiques de classe · <span style="background:#003366;color:#CC9900;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Pédagogie · Pratiques de classe · <span style="background:#0F4C3A;color:#D4A017;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">Connaître et comprendre son élève : les stratégies de l'enseignant en classe</h3>
           <p class="pub-excerpt">Observation active, évaluation diagnostique, questionnement heuristique : six stratégies concrètes pour que tout enseignant, quelle que soit sa zone d'exercice, cesse d'enseigner à une classe et commence à enseigner à des élèves. Une réflexion née du terrain de Kédougou, au Sénégal.</p>
           <div class="pub-meta"><span>Perrenoud · Develay · CREAQ · Stivation · TDI · 2026</span><a href="connaitre-son-eleve.html" class="pub-read">Lire →</a></div>
@@ -807,10 +807,10 @@ footer{background:var(--navy);padding:56px 0 28px}
         </div>
       </div>
 
-      <div class="pub-card feat reveal" style="border-left-color:#C9970A">
-        <div style="width:4px;background:#C9970A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+      <div class="pub-card feat reveal" style="border-left-color:#D4A017">
+        <div style="width:4px;background:#D4A017;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Stivation &amp; Formation · <span style="background:#C9970A;color:#1A2E4A;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Stivation &amp; Formation · <span style="background:#D4A017;color:#0F4C3A;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">Et si vos meilleurs cours n'avaient jamais eu lieu en salle ?</h3>
           <p class="pub-excerpt">Ce phénomène que des milliers d'étudiants de FASTEF, ISM, ENA, CRFPE vivent sans le savoir a un nom : la Stivation. Documenté et mesuré , plus de 95 % des stagiaires interrogés confirment que les interactions informelles entre pairs sont les plus formatrices. Un article pour ouvrir les yeux sur la ressource la plus puissante de votre formation, et la plus ignorée.</p>
           <div class="pub-meta"><span>Stivation · Écoles de formation · Andragogie · 2026</span><a href="stivation-ecoles-formation.html" class="pub-read">Lire →</a></div>
@@ -822,10 +822,10 @@ footer{background:var(--navy);padding:56px 0 28px}
         </div>
       </div>
 
-      <div class="pub-card feat reveal" style="border-left-color:#003366">
-        <div style="width:4px;background:#003366;border-radius:2px 0 0 2px;flex-shrink:0"></div>
+      <div class="pub-card feat reveal" style="border-left-color:#0F4C3A">
+        <div style="width:4px;background:#0F4C3A;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
-          <span class="pub-cat cat-mo">Espace Inspecteurs &amp; Contribution universitaire · <span style="background:#003366;color:#CC9900;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <span class="pub-cat cat-mo">Espace Inspecteurs &amp; Contribution universitaire · <span style="background:#0F4C3A;color:#D4A017;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
           <h3 class="pub-title">Possibilité d'une philosophie pour enfant en contexte sénégalais : le sentiment d'appartenance au CM1</h3>
           <p class="pub-excerpt">Un enfant peut-il philosopher ? Guène Faye et El Hadji Mouhamadou Dieye, enseignants-chercheurs à l'Université Cheikh Anta Diop de Dakar, ont observé de vraies classes de CM1 confrontées à des questions de castes et de divisions politiques. Leur constat : loin de répéter des leçons apprises par cœur, les élèves construisent de véritables raisonnements et finissent par affirmer que « nous sommes tous égaux ».</p>
           <div class="pub-meta"><span>UCAD · Liens, revue N°9 · 2025</span><a href="philosophie-enfant-contexte-senegalais.html" class="pub-read">Lire →</a></div>
@@ -963,7 +963,7 @@ footer{background:var(--navy);padding:56px 0 28px}
       <div class="pub-card reveal" style="border-top-color:var(--teal)"><span class="pub-cat cat-mo">Formation en ligne</span><h3 class="pub-title">La Stivation numérique : apprentissage informel à l'ère du distanciel</h3><p class="pub-excerpt">Comment le modèle de la Stivation s'applique à la formation en ligne et aux promotions multinationales. Un article académiquement référencé, signé MBM. <a href="stivation-motivation-andragogique.html" style="color:var(--teal);font-weight:600;text-decoration:underline">Lire la théorie fondatrice →</a></p><div class="pub-meta"><span>Stivation · Distanciel · Formation</span><a href="article-stivation-numerique-formation-ligne.html" class="pub-read">Lire →</a></div><div class="share-row"><a href="https://wa.me/?text=La%20Stivation%20num%C3%A9rique%20%E2%80%94%20lecouloirdusavoir.com%2Farticle-stivation-numerique-formation-ligne.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a></div></div>
 
       <div class="pub-card reveal" style="border-top-color:var(--gold)">
-        <span class="pub-cat" style="background:rgba(204,153,0,.12);color:#7a5c00">Didactique · <span style="background:var(--gold);color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+        <span class="pub-cat" style="background:rgba(212,160,23,.12);color:#7a5c00">Didactique · <span style="background:var(--gold);color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
         <h3 class="pub-title">La planification pédagogique, un intrant de qualité pour les enseignements et apprentissages</h3>
         <p class="pub-excerpt">Trente enseignants interrogés se limitent tous à la répartition mensuelle. Un directeur d'école, ancien membre du CREAQ de Tivaouane, restitue ce geste professionnel dans toute sa profondeur : du niveau annuel à la fiche de préparation.</p>
         <div class="pub-meta"><span>Mamadou S. S. Hanne · Contribution externe</span><a href="article-planification-hanne.html" class="pub-read">Lire →</a></div>
@@ -1017,11 +1017,11 @@ footer{background:var(--navy);padding:56px 0 28px}
 </section>
 <section style="background:var(--navy);padding:80px 0" id="ressources">
   <div class="container">
-    <p class="eyebrow reveal" style="color:rgba(201,151,10,0.9)">Ressources Éducatives</p>
+    <p class="eyebrow reveal" style="color:rgba(212,160,23,0.9)">Ressources Éducatives</p>
     <h2 class="sec-title reveal" style="color:var(--white)">Ressources Éducatives, <em style="color:#7DE0EE">réformes, documents et actualités</em></h2>
     <p class="sec-intro reveal" style="color:rgba(255,255,255,0.5);margin-bottom:32px">Documents utiles, textes officiels, rapports et actualités sur l'éducation en Afrique et dans le monde.</p>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px" class="reveal">
-      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.25);border-radius:8px;padding:28px">
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.25);border-radius:8px;padding:28px">
         <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Sénégal</p>
         <div style="display:flex;flex-direction:column;gap:16px">
           <div style="border-bottom:1px solid rgba(255,255,255,0.08);padding-bottom:16px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:6px">Programme d'Amélioration de la Qualité de l'Équité et de la Transparence</p><p style="font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:10px">PAQUET-EF : Document de référence du système éducatif sénégalais</p><a href="https://www.education.gouv.sn" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;color:var(--gold);text-decoration:none">Ministère de l'Éducation →</a></div>
@@ -1038,9 +1038,9 @@ footer{background:var(--navy);padding:56px 0 28px}
     </div>
     <div style="margin-top:20px" class="reveal">
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Contributions d'inspecteurs</p>
-      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.25);border-radius:8px;padding:24px 28px;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:20px">
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.25);border-radius:8px;padding:24px 28px;display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:20px">
         <div style="flex:1;min-width:220px">
-          <p style="font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(201,151,10,0.7);margin-bottom:10px">Linguistique · IEF Mbour 2</p>
+          <p style="font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(212,160,23,0.7);margin-bottom:10px">Linguistique · IEF Mbour 2</p>
           <p style="font-size:0.95rem;font-weight:600;color:var(--white);margin-bottom:6px;line-height:1.4">Cours de relèvement linguistique : Notions de base en linguistique</p>
           <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.65;margin-bottom:0">Mohamadou Soumaré · Inspecteur, IEF Mbour 2. De Saussure aux dichotomies fondamentales : un cours de formation destiné aux enseignants.</p>
         </div>
@@ -1052,36 +1052,36 @@ footer{background:var(--navy);padding:56px 0 28px}
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Documents pédagogiques</p>
       <div style="display:flex;flex-direction:column;gap:12px">
 
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
           <div style="flex:1;min-width:220px">
-            <p style="font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(201,151,10,0.7);margin-bottom:6px">Formation des enseignants · ENEP</p>
+            <p style="font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(212,160,23,0.7);margin-bottom:6px">Formation des enseignants · ENEP</p>
             <p style="font-size:0.9rem;font-weight:600;color:var(--white);margin-bottom:4px;line-height:1.4">Outils pédagogiques et didactiques pour la formation des élèves-professeurs</p>
             <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.5">Fiches ENEP : Organisation de l'école, gestion de classe, pratiques pédagogiques. Décembre 2020.</p>
           </div>
           <a href="fiches-outils-pedagogiques-formation-enseignants.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;background:var(--gold);color:var(--navy);padding:10px 18px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
 
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
           <div style="flex:1;min-width:220px">
-            <p style="font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(201,151,10,0.7);margin-bottom:6px">Éducation à la citoyenneté · Sénégal</p>
+            <p style="font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(212,160,23,0.7);margin-bottom:6px">Éducation à la citoyenneté · Sénégal</p>
             <p style="font-size:0.9rem;font-weight:600;color:var(--white);margin-bottom:4px;line-height:1.4">Éducation à la Citoyenneté, aux Droits et à la Paix à l'Élémentaire, Guide méthodologique</p>
             <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.5">Groupe AGORA · Ministère de l'Éducation. Guide pratique à l'intention des enseignants.</p>
           </div>
           <a href="guide-education-citoyennete-droits-paix-elementaire.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;background:var(--gold);color:var(--navy);padding:10px 18px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
 
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
           <div style="flex:1;min-width:220px">
-            <p style="font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(201,151,10,0.7);margin-bottom:6px">Classes multigrades · Sénégal</p>
+            <p style="font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(212,160,23,0.7);margin-bottom:6px">Classes multigrades · Sénégal</p>
             <p style="font-size:0.9rem;font-weight:600;color:var(--white);margin-bottom:4px;line-height:1.4">Guide du Maître des Classes Multigrades, Sénégal</p>
             <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.5">Ministère de l'Éducation, 2009. Référence pour l'enseignement en milieu rural et enclavé.</p>
           </div>
           <a href="guide-maitre-classes-multigrades-senegal.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;background:var(--gold);color:var(--navy);padding:10px 18px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
 
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px">
           <div style="flex:1;min-width:220px">
-            <p style="font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(201,151,10,0.7);margin-bottom:6px">Curriculum · Langue et Communication</p>
+            <p style="font-family:'DM Sans',sans-serif;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(212,160,23,0.7);margin-bottom:6px">Curriculum · Langue et Communication</p>
             <p style="font-size:0.9rem;font-weight:600;color:var(--white);margin-bottom:4px;line-height:1.4">Curriculum de l'Éducation de Base, Langue et Communication, Étape 3</p>
             <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);line-height:1.5">Ministère de l'Éducation nationale, Avril 2014. Guide pédagogique incluant les écoles franco-arabes.</p>
           </div>
@@ -1094,19 +1094,19 @@ footer{background:var(--navy);padding:56px 0 28px}
     <div style="margin-top:20px" class="reveal">
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Textes officiels &amp; réglementaires</p>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Arrêté n°010656 du 08 juillet 2013 relatif à l'organisation des IEF</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Ministère de l'Éducation nationale</p></div>
           <a href="Arr%C3%AAt%C3%A9%20n%C2%B0010656%20du%2008%20juillet%202013%20relatif%20%C3%A0%20l%27org.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret 2017-604 du 24 avril : IA et IEF</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Organisation des IA et IEF</p></div>
           <a href="decret%202017-604%20du%2024%20avril%20IA-IEF%20%281%29.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret IA et IEF, version signée</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Version officielle signée</p></div>
           <a href="decret_ia-et-ief-signe1.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Plan stratégique Santé Mentale Sénégal 2024</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Document stratégique national</p></div>
           <a href="Plan%20strat%C3%A9gique%20Sant%C3%A9%20Mentale%20Senegal%202024-2.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
@@ -1116,43 +1116,43 @@ footer{background:var(--navy);padding:56px 0 28px}
     <div style="margin-top:20px" class="reveal">
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Didactique &amp; Pédagogie générale</p>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Didactiques des disciplines, Partie 1</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Formation des enseignants · Didactique disciplinaire</p></div>
           <a href="Didactiques-des-disciplines-Partie-1-1.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Didactiques des disciplines, Partie 2</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Formation des enseignants · Didactique disciplinaire</p></div>
           <a href="Didactiques-des-disciplines-Partie-2-1.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Pédagogie générale</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Référence · Formation des enseignants</p></div>
           <a href="Pedagogie-generale.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Pédagogie générale et théories de l'apprentissage</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Théories · Apprentissage · Formation</p></div>
           <a href="Pedagogie-Gnle-et-Theories-de-lApprentissag.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Pédagogie générale : Élucidations conceptuelles</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Concepts fondamentaux · Unité 1</p></div>
           <a href="pedagogie_gen_U1_elucidations_conceptuelles.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">GAR : Concepts et principes</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Gestion axée sur les résultats · Référentiel</p></div>
           <a href="GAR_CONCEPTS_ET_PRINCIPES.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Glossaire des termes usuels de mesure de performance</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Terminologie · Évaluation · Pilotage</p></div>
           <a href="glossaire_termes_usuels%20mesure%20de%20performance.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Life Skills, Note technique 2019</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Compétences de vie · UNICEF · 2019</p></div>
           <a href="Life-skills-technical-note-2019-French.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Module d'accompagnement ENI</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Formation initiale · Écoles normales d'instituteurs</p></div>
           <a href="Module-accopagnement-ENI-Enregistré-autom.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Éduquer au développement durable, Livret 2</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Éducation environnementale · Sénégal</p></div>
           <a href="senegal-livret2-eduquer-developpement-durable.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
@@ -1162,35 +1162,35 @@ footer{background:var(--navy);padding:56px 0 28px}
     <div style="margin-top:20px" class="reveal">
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Préscolaire &amp; Élémentaire</p>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Document d'appui pour le préscolaire et l'élémentaire, Vol. 1</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Appui pédagogique · Préscolaire</p></div>
           <a href="Document%20d%27Appui%20pour%20le%20prescolaire%20et%20l%27I_1.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Document d'appui pour le préscolaire et l'élémentaire, Vol. 2</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Appui pédagogique · Préscolaire</p></div>
           <a href="Document%20d%27Appui%20pour%20le%20prescolaire%20et%20l%27I_2.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Guide Petite Section, Corrigé 2024</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Préscolaire · Petite section maternelle</p></div>
           <a href="GUIDE%20PETITE%20SECTION%20CORRIGE%202024.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Guide Moyenne Section, Corrigé 2024</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Préscolaire · Moyenne section maternelle</p></div>
           <a href="GUIDE%20MOYENNE%20SECTION%20CORRIGE%202024.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Guide Grande Section, Corrigé 2024</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Préscolaire · Grande section maternelle</p></div>
           <a href="GUIDE%20GRANDE%20SECTION%20CORRIGE%202024.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Guide pédagogique, Étape 1</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Curriculum de l'éducation de base · Étape 1</p></div>
           <a href="Guide%20p%C3%A9dagogique_%C3%A9tape%201.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Guide pédagogique, Étape 2</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Curriculum de l'éducation de base · Étape 2</p></div>
           <a href="Guide%20p%C3%A9dagogique_%C3%A9tape%202.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Guide pédagogique, Étape 3</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Curriculum de l'éducation de base · Étape 3</p></div>
           <a href="Guide%20p%C3%A9dagogique_%C3%A9tape%203.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
@@ -1200,23 +1200,23 @@ footer{background:var(--navy);padding:56px 0 28px}
     <div style="margin-top:20px" class="reveal">
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Livrets de formation &amp; encadrement</p>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Livret n°1 : Outiller le chef d'établissement</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Direction d'école · Leadership pédagogique</p></div>
           <a href="livret-no-1-outiller-le-chef-detablissement.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Livret n°4 : Gérer les activités d'apprentissage</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Gestion pédagogique · Activités de classe</p></div>
           <a href="livret_no_4_gerer_les_activites_dapprentissage_J.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Livret n°4 : Mathématiques</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Didactique des mathématiques · Élémentaire</p></div>
           <a href="livret_no_4_mathematiques_web_0.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Livret n°5</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Formation continue · Encadrement pédagogique</p></div>
           <a href="livret_no_5_v230320_web.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Livret n°6</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Formation continue · Encadrement pédagogique</p></div>
           <a href="livret_no_6_v230320_web-1.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
@@ -1226,71 +1226,71 @@ footer{background:var(--navy);padding:56px 0 28px}
     <div style="margin-top:20px" class="reveal">
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Textes officiels &amp; décrets, corpus complémentaire</p>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret 80-387 du 14 mai 1980 : Morale</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Réglementation</p></div>
           <a href="7_20Morale_Decret%2080-387%20du%2014%20mai%201980.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret N° 2013-738 portant création du CF</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Formation</p></div>
           <a href="70%20Decret%20N%C2%B0%202013%20-%20738%20portant%20cr%C3%A9ation%20du%20CF.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret réformant les inspections, 2017</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Inspection</p></div>
           <a href="106%20Decret%20r%C3%A9formant%20les%20inspections%202017.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret 7964</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Réglementation</p></div>
           <a href="7964.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret 2014-964 CGE</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Contrôle général de l'État</p></div>
           <a href="940723_Decret_2014_964_CGE.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret N° 2007-1433</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Réglementation</p></div>
           <a href="decret%20N%C2%B0%202007%201433.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret 2020-1429</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Réglementation</p></div>
           <a href="D%C3%A9cret%202020-1429.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret CGE 2002-652</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Contrôle général de l'État</p></div>
           <a href="decret%20CGE%202002%20652.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret CGE et UCGE</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Organisation CGE et UCGE</p></div>
           <a href="DECRET%20CGE%20ET%20UCGE.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret IGE</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Inspection générale de l'État</p></div>
           <a href="DECRET%20IGE.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret n° 77-080 du 28-01-1980 modifié</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Réglementation</p></div>
           <a href="D%C3%A9cret%20n%C2%B0%2077-080%20du%2028-01-1980%20modifi%C3%A9.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret N° 79-1165 portant organisation de l'enseignement</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Organisation de l'enseignement</p></div>
           <a href="DECRET%20N%C2%B0%2079-1165%20portant%20organisation%20de%20l%27en.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret n° 2008-695 du 30 juin 2008 : Réglementation</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Réglementation</p></div>
           <a href="Decret%20n%C2%B0%202008%20695%20du%2030%20juin%202008%20reglementa.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret n° 2011-625 du 11 mai 2011</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Réglementation</p></div>
           <a href="D%C3%A9cret%20n%C2%B0%202011-625%20du%2011%20mai%202011.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret portant création du GPCEPE</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · GPCEPE</p></div>
           <a href="DECRET%20PORTANT%20CR%C3%89ATION%20DU%20GPCEPE.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret Pulaar CfD</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Langue Pulaar</p></div>
           <a href="DECRET%20Pulaar%20CfD.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret Seereer avec implosives correctes</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Langue Seereer</p></div>
           <a href="Decret%20Seereer%20avec%20implosives%20correctes.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
@@ -1300,27 +1300,27 @@ footer{background:var(--navy);padding:56px 0 28px}
     <div style="margin-top:20px" class="reveal">
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Outils &amp; gestion pédagogique</p>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Boîte à outils : Soutien scolaire</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Outil · Soutien scolaire</p></div>
           <a href="BOITE%20A%20OUTILS%20SOUTIEN%20SCOLAIRE-le%2025-08.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">SSI : Comment construire</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Guide méthodologique · SSI</p></div>
           <a href="SSI_Comment%20construire.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Tome 1 : Gestion administrative et des ressources</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Gestion · Administration scolaire</p></div>
           <a href="Tome%201%20Gestion%20administrative%20et%20des%20ressources.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Trousse d'outils de gestion pédagogique</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Gestion · Pédagogie</p></div>
           <a href="Trousse%20d%27outils%20de%20gestion%20p%C3%A9dagogique.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Violence basée sur le genre</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Protection · Genre · Milieu scolaire</p></div>
           <a href="violence%20bas%C3%A9e%20sur%20le%20genre.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Philofolie : Philosophie</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Philosophie · Éducation</p></div>
           <a href="philofolie-philosophie.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
@@ -1330,35 +1330,35 @@ footer{background:var(--navy);padding:56px 0 28px}
     <div style="margin-top:20px" class="reveal">
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Modules de formation, Cœur de métier &amp; Didactique</p>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">1. Module Cœur de métier, Palier 1 · Psychologie</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Formation des enseignants · Palier 1</p></div>
           <a href="1.Module%20Coeur%20de%20m%C3%A9tier_Palier%201_%20Psychologie.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">3. Module Cœur de métier, Palier 3 · Didactique LC</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Formation des enseignants · Palier 3</p></div>
           <a href="3.%20Module%20Coeur%20de%20m%C3%A9tier_Palier%203_Didac%20LC_23.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">4. Module Cœur de métier, Palier 4 · Didactique Mathématiques</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Formation des enseignants · Palier 4</p></div>
           <a href="4.%20Module%20Coeur%20de%20m%C3%A9tier_Palier%204%20_%20Didac%20Mat.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">5. Module Cœur de métier, Palier 5 · Didactique ESV</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Formation des enseignants · Palier 5</p></div>
           <a href="5.%20Module%20Coeur%20de%20m%C3%A9tier_%20Palier%205%20_%20Didac%20ESV.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Module sur la gestion organisationnelle, administrative et financière</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Gestion · Administration scolaire</p></div>
           <a href="Module%20sur%20la%20gestion%20org.%20adm.fin.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Gérer un établissement sur ses différents plans</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Direction d'école · Gestion</p></div>
           <a href="Gerer-un-etablissement-sur-ses-differents-plan.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Législation scolaire : Morale professionnelle</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Législation · Déontologie</p></div>
           <a href="Legislation-scolaire_Morale-professionnelle_De.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Évaluation : Remédiation</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Évaluation · Pédagogie</p></div>
           <a href="EVALUATION-REMEDIATION.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
@@ -1368,23 +1368,23 @@ footer{background:var(--navy);padding:56px 0 28px}
     <div style="margin-top:20px" class="reveal">
       <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px">Textes officiels, corpus complémentaire</p>
       <div style="display:flex;flex-direction:column;gap:10px">
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Décret CRFPE 2020</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · CRFPE</p></div>
           <a href="Decret%20CRFPE%202020.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Extrait du Décret N°96-346 du 8 mai 1996</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Texte officiel · Réglementation</p></div>
           <a href="EXTRAIT%20DU%20DECRET%20N%C2%B096-346%20DU%208%20MAI%2019.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Recueil de textes 2005</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Textes officiels · Éducation nationale</p></div>
           <a href="Recueil%20de%20textes%202005.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Recueil de textes sur les organes internes</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">Textes officiels · Organisation interne</p></div>
           <a href="RECUEIL%20DE%20TEXTES%20SUR%20LES%20ORGANES%20INTERN.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
-        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px">
           <div style="flex:1;min-width:200px"><p style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:3px">Note IEF Kédougou : Réforme CFEE 6ème</p><p style="font-size:0.75rem;color:rgba(255,255,255,0.4)">IEF Kédougou · Réforme · CFEE</p></div>
           <a href="Note%20IEF%20Kedougou%20Reforme%20CFEE%206eme.pdf" target="_blank" rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--gold);color:var(--navy);padding:9px 16px;border-radius:4px;text-decoration:none;white-space:nowrap">📄 Télécharger →</a>
         </div>
@@ -1399,11 +1399,11 @@ footer{background:var(--navy);padding:56px 0 28px}
 </section>
 <section style="background:var(--navy);padding:80px 0" id="recherche">
   <div class="container">
-    <p class="eyebrow reveal" style="color:rgba(201,151,10,0.9)">Recherche</p>
+    <p class="eyebrow reveal" style="color:rgba(212,160,23,0.9)">Recherche</p>
     <h2 class="sec-title reveal" style="color:var(--white)">La Stivation sous <em style="color:#7DE0EE">le regard scientifique</em></h2>
     <p class="sec-intro reveal" style="color:rgba(255,255,255,0.5);margin-bottom:44px">Du mémoire fondateur de 2010 à l'article soumis en revue internationale, un parcours de recherche de 15 ans ancré dans le terrain africain.</p>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px" class="reveal">
-      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(201,151,10,0.3);border-radius:8px;padding:32px 28px">
+      <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(212,160,23,0.3);border-radius:8px;padding:32px 28px">
         <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Mémoire fondateur · 2010</p>
         <h3 style="font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--white);line-height:1.4;margin-bottom:16px">Interactions entre élèves inspecteurs lors des activités collaboratives en formation initiale</h3>
         <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);line-height:1.75;margin-bottom:20px">Mémoire CAIEE, 2010. Texte fondateur du concept de Stivation. Publié sur Mémoire Online et indexé par Google Scholar.</p>
