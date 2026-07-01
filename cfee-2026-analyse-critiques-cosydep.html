@@ -41,6 +41,7 @@ gtag('config', 'G-9SDJVY86L2');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden;line-height:1.85}
+em{font-style:italic;color:var(--gold)}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:66px;background:rgba(15,76,58,0.97);backdrop-filter:blur(14px);border-bottom:1px solid rgba(212,160,23,0.25)}
 .nav-brand{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--gold);text-decoration:none}
 .nav-brand span{color:var(--white);font-weight:400;font-style:italic}
@@ -53,30 +54,55 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .mobile-nav.open{display:flex}
 .mobile-nav a{font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.75);text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);letter-spacing:0.04em}
 .mobile-nav a:hover{color:var(--gold)}
-.container{max-width:1180px;margin:0 auto;padding:0 40px}
-.article-wrap{max-width:760px;margin:0 auto;padding:130px 40px 40px}
-.breadcrumb{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--muted);margin-bottom:24px}
+
+.article-wrap{max-width:760px;margin:0 auto;padding:130px 40px 0}
+.breadcrumb{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--muted);margin-bottom:22px}
 .breadcrumb a{color:var(--teal);text-decoration:none}
 .breadcrumb a:hover{color:var(--gold)}
 .article-tags{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
-h1.article-title{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4vw,2.7rem);font-weight:900;color:var(--navy);line-height:1.2;margin-bottom:20px}
-.article-byline{font-family:'DM Sans',sans-serif;font-size:0.82rem;color:var(--muted);padding-bottom:24px;margin-bottom:28px;border-bottom:1px solid var(--sand)}
-.article-byline strong{color:var(--navy)}
+h1.article-title{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4vw,2.7rem);font-weight:900;color:var(--navy);line-height:1.22;margin-bottom:20px}
+p.article-dek{font-family:'Source Serif 4',serif;font-style:italic;font-size:1.12rem;color:var(--muted);line-height:1.7;margin-bottom:28px}
+
+.byline-row{display:flex;align-items:center;gap:14px;padding-bottom:24px;margin-bottom:32px;border-bottom:1px solid var(--sand)}
+.avatar-circle{width:46px;height:46px;border-radius:50%;background:rgba(212,160,23,0.18);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:700;font-size:1rem;flex-shrink:0}
+.byline-name{font-family:'DM Sans',sans-serif;font-weight:600;color:var(--navy);font-size:0.95rem}
+.byline-role{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:var(--muted)}
+
 .share-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px}
 .sh-btn{display:inline-flex;align-items:center;gap:6px;font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;padding:8px 16px;border-radius:4px;text-decoration:none;color:var(--white)}
 .sh-wa{background:#25D366}
 .sh-fb{background:#1877F2}
 .sh-li{background:#0A66C2}
-.sommaire-box{background:var(--white);border-left:4px solid var(--gold);border-radius:4px;padding:20px 26px;margin-bottom:40px}
-.sommaire-box p{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--navy);margin-bottom:12px}
+
+.sommaire-box{background:var(--white);border-left:4px solid var(--gold);border-radius:4px;padding:20px 26px;margin-bottom:28px}
+.sommaire-box p.label{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--navy);margin-bottom:12px}
 .sommaire-box ol{padding-left:20px}
 .sommaire-box li{font-size:0.92rem;margin-bottom:6px}
 .sommaire-box a{color:var(--teal);text-decoration:none}
 .sommaire-box a:hover{color:var(--gold)}
+
+.abstract-box{background:var(--navy);border-radius:6px;padding:32px 36px;margin-bottom:44px}
+.abstract-box p.label{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.abstract-box p.text{font-size:1.02rem;line-height:1.85;color:rgba(255,255,255,0.88)}
+
 .article-body p{text-align:justify;font-size:1.08rem;line-height:1.9;margin-bottom:22px;color:var(--text)}
-.article-body h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--navy);margin:44px 0 18px;padding-top:10px;border-top:1px solid var(--sand)}
+.article-body h2{font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;color:var(--navy);margin:48px 0 18px;padding-top:12px;border-top:1px solid var(--sand)}
 .article-body strong{color:var(--navy)}
+
+.pull-quote{background:var(--sand);border-left:4px solid var(--gold);border-radius:4px;padding:24px 30px;margin:28px 0;font-family:'Playfair Display',serif;font-style:italic;font-size:1.15rem;color:var(--navy);line-height:1.6}
+.pull-quote .attr{display:block;margin-top:12px;font-family:'DM Sans',sans-serif;font-style:normal;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted)}
+
 .sources-note{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-style:italic;color:var(--muted);margin-top:36px;padding-top:20px;border-top:1px solid var(--sand)}
+
+.author-bio-box{display:flex;gap:18px;align-items:flex-start;background:var(--white);border-radius:6px;padding:28px 30px;margin:44px 0 32px}
+.author-bio-box .avatar-circle{width:54px;height:54px;font-size:1.1rem}
+.author-bio-box .name{font-family:'Playfair Display',serif;font-weight:700;color:var(--navy);font-size:1.05rem;margin-bottom:6px}
+.author-bio-box .role{font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--muted);line-height:1.6}
+
+.bottom-nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;padding-bottom:50px}
+.back-link{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;color:var(--teal);text-decoration:none}
+.back-link:hover{color:var(--gold)}
+
 footer{background:var(--navy);padding:56px 0 28px;margin-top:20px}
 .footer-inner{max-width:1180px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:40px}
 .fbrand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:12px}
@@ -86,7 +112,8 @@ footer{background:var(--navy);padding:56px 0 28px;margin-top:20px}
 .flinks a:hover{color:var(--gold)}
 .footer-bottom{max-width:1180px;margin:0 auto;padding:24px 40px 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .footer-bottom span{font-family:'DM Sans',sans-serif;font-size:0.72rem;color:rgba(255,255,255,0.3)}
-@media(max-width:900px){nav{padding:0 20px}.nav-links{display:none}.nav-toggle{display:flex}.article-wrap{padding:110px 20px 30px}.footer-inner{grid-template-columns:1fr;gap:32px}.footer-bottom{padding:24px 20px 0}}
+
+@media(max-width:900px){nav{padding:0 20px}.nav-links{display:none}.nav-toggle{display:flex}.article-wrap{padding:110px 20px 0}.abstract-box{padding:24px}.author-bio-box{flex-direction:column;align-items:flex-start}.footer-inner{grid-template-columns:1fr;gap:32px}.footer-bottom{padding:24px 20px 0}}
 </style>
 </head>
 <body>
@@ -102,20 +129,29 @@ footer{background:var(--navy);padding:56px 0 28px;margin-top:20px}
 </div>
 
 <main class="article-wrap">
-  <div class="breadcrumb"><a href="index.html">Accueil</a> › <a href="espace-inspecteurs.html">Espace Inspecteurs</a> › CFEE 2026 : ce que les critiques ne démontrent pas</div>
+  <div class="breadcrumb"><a href="index.html">Accueil</a> › <a href="espace-inspecteurs.html">Espace Inspecteurs</a> › <a href="espace-inspecteurs.html#productions">Articles · Analyses</a> › CFEE 2026 : ce que les critiques ne démontrent pas</div>
   <p class="article-tags">Examens &amp; Résultats · CFEE 2026 · COSYDEP</p>
-  <h1 class="article-title">23,76 points de hausse. Le vrai débat n'est pas là où on le cherche.</h1>
-  <p class="article-byline">Par <strong>MBM · Le Couloir du Savoir</strong> · 1 juillet 2026 · Source : ANADOLE.NET / DEXCO, COSYDEP</p>
+  <h1 class="article-title">23,76 points de hausse. <em>Le vrai débat n'est pas là où on le cherche.</em></h1>
+  <p class="article-dek">La COSYDEP s'interroge sur l'ampleur du bond du CFEE 2026. Des enseignants de terrain opposent le CFEE blanc aux résultats finaux. Trois ruptures documentées, une réussite large sur les 16 académies, et un appel à accompagner une réforme qui vient à peine de démarrer.</p>
+
+  <div class="byline-row">
+    <div class="avatar-circle">M</div>
+    <div>
+      <div class="byline-name">Mouhamadou Bamba Mbaye</div>
+      <div class="byline-role">Inspecteur de l'Éducation et de la Formation · Le Couloir du Savoir · 1<sup>er</sup> juillet 2026</div>
+    </div>
+  </div>
 
   <div class="share-row">
-    <a class="sh-btn sh-wa" href="https://wa.me/?text=CFEE%202026%20%3A%2023%2C76%20points%20de%20hausse.%20Le%20vrai%20d%C3%A9bat%20n%27est%20pas%20l%C3%A0%20o%C3%B9%20on%20le%20cherche%20%E2%80%94%20https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">📱 WhatsApp</a>
-    <a class="sh-btn sh-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">Facebook</a>
-    <a class="sh-btn sh-li" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="sh-btn sh-wa" href="https://wa.me/?text=CFEE%202026%20%3A%2023%2C76%20points%20de%20hausse.%20Le%20vrai%20d%C3%A9bat%20n%27est%20pas%20l%C3%A0%20o%C3%B9%20on%20le%20cherche%20%E2%80%94%20https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">📲 WhatsApp</a>
+    <a class="sh-btn sh-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">👤 Facebook</a>
+    <a class="sh-btn sh-li" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">💼 LinkedIn</a>
   </div>
 
   <nav class="sommaire-box" aria-label="Sommaire de l'article">
-    <p>Sommaire</p>
+    <p class="label">Sommaire</p>
     <ol>
+      <li><a href="#abstract">Résumé de l'article</a></li>
       <li><a href="#serieux">Ce qu'il faut prendre au sérieux</a></li>
       <li><a href="#ruptures">Trois ruptures, pas une seule</a></li>
       <li><a href="#pourquoi">Pourquoi le taux grimpe</a></li>
@@ -127,6 +163,11 @@ footer{background:var(--navy);padding:56px 0 28px;margin-top:20px}
     </ol>
   </nav>
 
+  <div class="abstract-box" id="abstract">
+    <p class="label">Résumé de l'article</p>
+    <p class="text">Le CFEE 2026 affiche 94,49% de réussite, soit 23,76 points de plus qu'en 2025. La COSYDEP a raison de s'interroger sur l'ampleur du saut : trois ruptures documentées l'expliquent, un décret qui sépare certification et sélection, une note DEXCO exceptionnelle sur le seuil de repêchage, une digitalisation complète du dispositif ANADOLE. L'argument du CFEE blanc, lui, ne résiste pas à l'examen : les deux sessions ne jouaient pas selon le même barème, ni dans les mêmes conditions. L'article se termine par un appel aux acteurs du système à accompagner cette réforme naissante plutôt qu'à la fragiliser par des comparaisons biaisées.</p>
+  </div>
+
   <div class="article-body">
     <p>Le CFEE 2026 affiche un taux d'admission national de 94,49%, sur 302 809 candidats présents. Vingt-trois virgule soixante-seize points de plus qu'en 2025, où le taux national s'établissait à 70,73%. Un bond sans précédent dans l'histoire récente de l'examen. Ce chiffre dérange. Il a raison de déranger. Mais il dérange pour de mauvaises raisons dans la plupart des critiques qui circulent, et pour une bonne raison qu'il faut isoler et traiter avec les faits, pas avec l'intuition.</p>
 
@@ -134,52 +175,69 @@ footer{background:var(--navy);padding:56px 0 28px;margin-top:20px}
 
     <p>La première mérite une réponse construite, avec des chiffres vérifiables. La seconde ne résiste pas à l'examen des faits. Traitons les deux, dans l'ordre.</p>
 
-    <h2 id="serieux">Ce qu'il faut prendre au sérieux : l'ampleur du saut</h2>
+    <h2 id="serieux">Ce qu'il faut prendre au sérieux : <em>l'ampleur du saut</em></h2>
     <p>La COSYDEP a raison sur un point factuel. Un saut de 23,76 points, quand l'historique du CFEE montre des variations généralement contenues sous la barre des dix points, n'est pas un mouvement ordinaire. Une telle rupture appelle une explication, pas une célébration silencieuse. Sur ce terrain-là, la coalition pose la bonne question et demande, à juste titre, une analyse objective des facteurs explicatifs plutôt qu'une lecture univoque.</p>
+
+    <div class="pull-quote">« Les fluctuations des résultats au CFEE restent généralement inférieures à dix points. »<span class="attr">COSYDEP, communiqué du 1er juillet 2026</span></div>
+
     <p>Cette question a une réponse. Elle tient en trois éléments distincts, documentés, publics, et il faut se garder de les confondre entre eux.</p>
 
-    <h2 id="ruptures">Trois ruptures, pas une seule, et aucune ne relève du mystère</h2>
+    <h2 id="ruptures">Trois ruptures, pas une seule, <em>et aucune ne relève du mystère</em></h2>
     <p><strong>La première rupture concerne l'architecture du diplôme.</strong> Le décret n° 2026-1112 du 21 mai 2026 a supprimé le concours d'entrée en sixième, qui était jusqu'ici accolé au CFEE. Il n'a pas touché au barème de l'examen lui-même. Il a séparé deux fonctions qui étaient mélangées depuis des années : la certification, qui vérifie qu'un niveau attendu est atteint, et la sélection, qui classait les candidats pour répartir un nombre limité de places au collège. Le CFEE a cessé d'être un double examen anxiogène pour redevenir ce qu'il doit être, un simple bilan de fin de cycle.</p>
     <p><strong>La deuxième rupture est technique et strictement limitée à cette session.</strong> Une note de service de la Direction des Examens et Concours (DEXCO), distincte du décret, a autorisé à titre exceptionnel, pour la seule session 2026, le repêchage de tout candidat ayant obtenu au moins 4 sur 10 de moyenne générale, sans exiger par ailleurs la moyenne en Langue et Communication ou en Mathématiques. Le seuil habituel de repêchage se situe à 5 sur 10, avec ce critère de domaine. C'est un ajustement réglementaire ponctuel, documenté noir sur blanc, pas une dérive silencieuse du niveau d'exigence. Il explique une part de la hausse. Il ne l'explique pas à lui seul, et les chiffres académie par académie le montrent.</p>
     <p><strong>La troisième rupture est organisationnelle.</strong> La session 2026 a généralisé le dispositif "CFEE dans le centre", porté par la plateforme numérique ANADOLE : administration des épreuves, correction, saisie des notes, délibération et proclamation se font désormais directement dans chacun des 2 081 centres d'examen, avec authentification des candidats par QR Code. Résultat, l'ensemble du processus tient en moins de dix jours, contre près d'un mois auparavant. Ce changement modifie l'endroit où l'on corrige et la vitesse à laquelle on délibère. Il ne modifie ni les sujets ni le barème. Une correction plus proche du terrain réduit les pertes et les erreurs de transmission propres aux corrections centralisées. C'est un renforcement de la traçabilité, pas un relâchement de la rigueur.</p>
     <p>Trois ruptures, trois natures différentes, trois documents qui les attestent. Aucune n'est un mystère statistique à élucider après coup.</p>
 
-    <h2 id="pourquoi">Pourquoi le taux grimpe sans que l'examen se soit dissous</h2>
+    <h2 id="pourquoi">Pourquoi le taux grimpe <em>sans que l'examen se soit dissous</em></h2>
     <p>Ces trois ruptures expliquent le mécanisme. Elles n'expliquent pas, à elles seules, pourquoi le niveau réel suit. Le taux de réussite élevé n'est pas le produit d'un examen devenu complaisant. Il est le résultat visible d'un travail de détection mené tout au long de l'année, à plusieurs échelons du système : les conseils pédagogiques identifient les élèves fragiles école par école, les compositions de district déclenchent une remédiation collective entre enseignants d'un même territoire, les compositions départementales donnent aux IEF une vision d'ensemble, et le CFEE blanc simule les conditions réelles de l'examen pour déclencher, si besoin, un rattrapage final avant la session officielle. Un candidat qui réussit en juin n'a pas traversé un examen affaibli. Il a traversé, en amont, un dispositif de filets successifs conçu pour rattraper ce que le précédent n'a pas retenu.</p>
     <p>Reste à vérifier que ce mécanisme est propre au CFEE, et non le symptôme d'un gonflage général des examens nationaux cette année. Le test le plus honnête n'est pas une comparaison année contre année : le Bac 2026 (30 juin) et le BFEM 2026 (21 juillet) ne sont pas encore proclamés au moment où ces lignes sont écrites, la comparaison directe est donc impossible. Le test disponible est celui de la trajectoire récente. Le baccalauréat a plutôt reculé sur les dernières sessions connues. Le BFEM a progressé de 73,94% en 2024 à 78,59% en 2025, une hausse réelle mais de 4,65 points sur un an, sans rien de comparable au bond de 23,76 points du CFEE. Aucun des deux autres diplômes n'a connu, sur son historique récent, une variation approchant celle du CFEE 2026. Aucun des deux n'a non plus fait l'objet, à notre connaissance, d'un décret modifiant son architecture, d'une note technique exceptionnelle sur son seuil de repêchage, ou d'une réorganisation complète de sa logistique de correction, la même année. Le CFEE, lui, a cumulé les trois. Un bond hors norme qui coïncide avec trois interventions documentées et propres à ce seul examen n'a pas besoin d'une explication supplémentaire.</p>
 
-    <h2 id="partout">Des résultats bons partout, pas seulement au-dessus du seuil</h2>
+    <h2 id="partout">Des résultats bons partout, <em>pas seulement au-dessus du seuil</em></h2>
     <p>Reste une objection possible : et si la hausse ne tenait qu'à l'assouplissement exceptionnel du seuil de repêchage ? Les chiffres académie par académie répondent à cette question, et la réponse dépasse ce simple mécanisme.</p>
     <p>L'académie la plus faible cette année, Sédhiou, affiche tout de même 89,55%. Matam, la meilleure, atteint 98,56%. L'écart entre les deux est de 9 points, pas de 50. Si la hausse tenait uniquement à un effet de seuil mécanique concentrant des candidats juste au-dessus de la barre de repêchage, on observerait une masse de résultats resserrés, avec des académies entières tirées artificiellement vers le haut par ce seul repêchage. Ce n'est pas le profil des chiffres publiés par ANADOLE le 26 juin 2026. La réussite est large, répartie sur les 16 académies, et largement au-dessus de tout effet de bord autour du seuil.</p>
     <p>Cette largeur de la réussite, y compris dans les académies historiquement les plus fragiles, dit autre chose qu'un artefact de barème. Elle dit des épreuves globalement abordables pour la majorité des candidats, cohérentes avec le niveau réellement exigible en fin de cycle élémentaire, et un dispositif de remédiation qui a fonctionné en amont sur l'essentiel du territoire. Les disparités entre académies restent réelles, mais elles s'inscrivent dans une bande resserrée, entre 89,55% et 98,56%, pas dans un écart qui opposerait une majorité d'échecs à quelques îlots de réussite.</p>
 
-    <h2 id="blanc">L'argument du CFEE blanc : une comparaison entre deux règles différentes</h2>
+    <h2 id="blanc">L'argument du CFEE blanc : <em>une comparaison entre deux règles différentes</em></h2>
     <p>Reste l'argument le plus répété sur le terrain : le CFEE blanc aurait révélé le "vrai niveau", et le CFEE final l'aurait maquillé. Cet argument confond deux dispositifs qui ne jouaient pas selon les mêmes règles.</p>
     <p>Le CFEE blanc exigeait une moyenne de 5 sur 10. Le CFEE final, cette année, a admis le repêchage dès 4 sur 10, à titre exceptionnel. Un point d'écart sur dix, ce n'est pas un détail de calcul. Une part des élèves situés entre 4 et 4,99 de moyenne ont basculé du côté des admis parce que la règle a changé de place entre les deux sessions, pas parce que leur niveau a changé de nature en quelques semaines.</p>
     <p>À cela s'ajoute une réalité déjà documentée ici même au moment de la publication des résultats du CFEE blanc : cette session d'essai a été passée dans des conditions dégradées. L'année scolaire 2025-2026 a connu plus de 150 heures de grève. Le calendrier du troisième trimestre a été comprimé par une succession de fêtes religieuses et de vacances rapprochées. L'essai national s'est tenu les 11 et 12 mai, laissant aux candidats une fenêtre de préparation réelle particulièrement étroite. Le format même des épreuves du blanc, inédit, a surpris jusqu'aux enseignants chargés de préparer les élèves.</p>
     <p>Un examen blanc passé dans ces conditions, avec un format nouveau et un calendrier chahuté, ne mesure pas un niveau stable. Il mesure un niveau au pire moment de l'année, sous un format que personne n'a encore digéré. C'est précisément la fonction d'un CFEE blanc : détecter les failles pendant qu'il est encore temps d'agir. Entre le blanc et le final, les enseignants ont eu le temps de corriger le tir sur les points faibles révélés. Que les résultats progressent ensuite n'est pas un signe de complaisance. C'est le signe que la remédiation a fonctionné. Un CFEE blanc suivi d'aucune amélioration aurait été, lui, le vrai signal d'alarme.</p>
     <p>Comparer un taux obtenu sous un seuil de 5, dans des conditions de passation dégradées et sur un format non stabilisé, à un taux obtenu après repêchage exceptionnel à 4 et remédiation ciblée, ce n'est pas comparer deux mesures du même objet. C'est comparer deux règles du jeu différentes et s'étonner qu'elles produisent des résultats différents.</p>
 
-    <h2 id="chantier">Ce qui reste un vrai chantier</h2>
+    <h2 id="chantier">Ce qui reste <em>un vrai chantier</em></h2>
     <p>Tout n'est pas à balayer d'un revers de main pour autant. L'écart de 9 points entre Sédhiou et Matam reste un signal réel. Il documente des disparités territoriales connues du système éducatif sénégalais, pas une fraude, mais une inégalité persistante qui mérite un travail de fond, académie par académie, sur les déterminants de la qualité. Les 16 678 candidats présents qui n'ont pas obtenu leur certificat cette année, souvent concentrés dans les zones où les taux sont les plus bas, méritent aussi qu'on parle d'eux.</p>
     <p>C'est là, précisément, que la demande de la COSYDEP retrouve toute sa pertinence : non pas suspecter le chiffre national, mais consolider le cycle fondamental et objectiver les facteurs de réussite comme d'échec, territoire par territoire.</p>
 
-    <h2 id="exigence">Une seule exigence, appliquée à tous les camps</h2>
+    <h2 id="exigence">Une seule exigence, <em>appliquée à tous les camps</em></h2>
     <p>La qualité d'un système éducatif ne se réduit pas à un taux d'admission. Personne ne le conteste sérieusement. Mais l'exigence de rigueur scientifique qu'on réclame pour interpréter un taux de réussite doit s'appliquer aussi à l'interprétation d'un CFEE blanc passé sous un barème différent, dans des conditions dégradées, sur un format inédit. On ne peut pas exiger l'objectivité d'un côté et s'appuyer sur une comparaison biaisée de l'autre. Ce que 2026 a changé n'est pas un mystère. Ce sont trois décisions distinctes, chacune documentée, chacune datée, chacune vérifiable. Reste à savoir ce que le système en fait maintenant.</p>
 
-    <h2 id="acteurs">Ce que les acteurs du système devraient en faire</h2>
+    <h2 id="acteurs">Ce que les acteurs du système <em>devraient en faire</em></h2>
     <p>Une réforme qui vient à peine de démarrer ne se juge pas sur sa première session. Elle se pilote, elle s'ajuste, elle se documente d'année en année. Chercher à la discréditer avant même qu'elle ait produit deux sessions complètes de recul n'a pas de sens, et ce constat vaut d'autant plus venant d'acteurs du système eux-mêmes, ceux qui sont le mieux placés pour l'accompagner plutôt que pour la torpiller de l'intérieur.</p>
     <p>Douter d'une réforme en cours fait partie du travail normal de veille pédagogique. La saper avant qu'elle ait eu le temps de s'installer, sur la base d'une comparaison de barèmes non homogènes, n'en fait pas partie. Les enseignants, les inspecteurs, les organisations de la société civile ont un rôle de vigilance légitime. Ce rôle s'exerce en objectivant les faits, académie par académie, pas en opposant deux dispositifs qui ne mesuraient pas la même chose.</p>
+
+    <div class="pull-quote">« Une réforme récente a besoin d'alliés qui la font vivre sur le terrain, pas de procès d'intention qui la fragilisent. »</div>
+
     <p>Ce que ce débat devrait produire, ce n'est pas une suspicion générale sur un taux national. C'est un accord, entre tous les acteurs, sur où placer le curseur maintenant que l'architecture est clarifiée. La certification est réglée. La sélection a été retirée du CFEE, à raison. Reste la vraie question, celle que la réforme ne résout pas à elle seule : la qualité des enseignements-apprentissages, la qualité de la formation des enseignants, la constance de leur encadrement pédagogique sur le terrain.</p>
     <p>C'est là que doit porter l'énergie collective dans les mois qui viennent. Pas sur la remise en cause d'un taux déjà documenté et déjà expliqué. Sur le renforcement des conseils pédagogiques, sur l'accompagnement des enseignants les moins expérimentés, sur la formation continue dans les académies où l'écart reste le plus marqué, sur un encadrement de proximité qui ne relâche rien une fois la session terminée. Une réforme récente a besoin d'alliés qui la font vivre sur le terrain, pas de procès d'intention qui la fragilisent avant même qu'elle ait pu démontrer ce qu'elle vaut dans la durée.</p>
 
-    <p class="sources-note">Sources : ANADOLE.NET / DEXCO (résultats CFEE 2026, imprimés le 26 juin 2026), décret n° 2026-1112 du 21 mai 2026, COSYDEP.</p>
+    <p class="sources-note">Sources : ANADOLE.NET / DEXCO (résultats CFEE 2026, imprimés le 26 juin 2026), décret n° 2026-1112 du 21 mai 2026, COSYDEP (communiqué du 1er juillet 2026).</p>
   </div>
 
-  <div class="share-row">
-    <a class="sh-btn sh-wa" href="https://wa.me/?text=CFEE%202026%20%3A%2023%2C76%20points%20de%20hausse.%20Le%20vrai%20d%C3%A9bat%20n%27est%20pas%20l%C3%A0%20o%C3%B9%20on%20le%20cherche%20%E2%80%94%20https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">📱 WhatsApp</a>
-    <a class="sh-btn sh-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">Facebook</a>
-    <a class="sh-btn sh-li" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">LinkedIn</a>
+  <div class="author-bio-box">
+    <div class="avatar-circle">M</div>
+    <div>
+      <div class="name">Mouhamadou Bamba Mbaye</div>
+      <div class="role">Inspecteur de l'Éducation et de la Formation, Chef de la Circonscription du département de Kédougou. Cette analyse s'inscrit dans l'Espace Inspecteurs du Couloir du Savoir, dédié aux productions, tribunes et contributions des inspecteurs de l'éducation au Sénégal.</div>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <a class="back-link" href="espace-inspecteurs.html#productions">← Espace Inspecteurs</a>
+    <div class="share-row" style="margin-bottom:0">
+      <a class="sh-btn sh-wa" href="https://wa.me/?text=CFEE%202026%20%3A%2023%2C76%20points%20de%20hausse.%20Le%20vrai%20d%C3%A9bat%20n%27est%20pas%20l%C3%A0%20o%C3%B9%20on%20le%20cherche%20%E2%80%94%20https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">📲 WhatsApp</a>
+      <a class="sh-btn sh-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">👤 Facebook</a>
+      <a class="sh-btn sh-li" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2Fcfee-2026-analyse-critiques-cosydep.html" target="_blank" rel="noopener">💼 LinkedIn</a>
+    </div>
   </div>
 </main>
 
@@ -197,14 +255,14 @@ footer{background:var(--navy);padding:56px 0 28px;margin-top:20px}
       </ul>
     </div>
     <div>
-      <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Concepts clés</p>
+      <p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">À lire aussi</p>
       <ul class="flinks">
-        <li><a href="stivation-motivation-andragogique.html">La Stivation · Théorie fondatrice</a></li><li><a href="index.html#concepts">Le CREAQ</a></li><li><a href="index.html#concepts">La TDI</a></li><li><a href="article-stivation-formation-professionnalisante.html">Qui forme vraiment qui ?</a></li><li><a href="article-lpt-relit-mohebs-senegal.html">LPT · RELIT · MOHEBS</a></li><li><a href="index.html#publications">Zone proximale (ZPD)</a></li><li><a href="index.html#publications">Le Flow</a></li><li><a href="article-constructivisme-afrique.html">Constructivisme</a></li><li><a href="interactions-enseignants.html">Interactions professionnelles</a></li>
+        <li><a href="faut-il-supprimer-le-cfee.html">Faut-il supprimer le CFEE ?</a></li><li><a href="anadole-2026-resultats-cfee-senegal.html">Résultats CFEE 2026 (ANADOLE)</a></li><li><a href="anadole-2026-senegal-examens.html">ANADOLE 2026 au Sénégal</a></li><li><a href="stivation-motivation-andragogique.html">La Stivation · Théorie fondatrice</a></li><li><a href="index.html#concepts">Le CREAQ</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2026 <strong style="color:var(--gold)">Le Couloir du Savoir</strong> · Laboratoire de la Stivation · Afrique subsaharienne</span>
+    <span>© 2026 <strong style="color:var(--gold)">Le Couloir du Savoir</strong> · MBM · Laboratoire de la Stivation · Sénégal Espace Inspecteurs · CFEE 2026 · IEF Kédougou</span>
     <div style="display:flex;gap:0;height:16px;border-radius:2px;overflow:hidden"><span style="width:16px;height:16px;background:#00853F"></span><span style="width:16px;height:16px;background:#FDEF42"></span><span style="width:16px;height:16px;background:#E31B23"></span></div>
   </div>
 </footer>
