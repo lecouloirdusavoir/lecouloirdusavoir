@@ -84,7 +84,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:900;color:var(--white);line-height:1.15;margin-bottom:16px}
 .hero h1 em{color:var(--gold);font-style:italic}
 .hero-tagline{font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:rgba(212,160,23,0.8);margin-bottom:20px}
-.hero-desc{font-size:1.05rem;color:rgba(255,255,255,0.68);line-height:1.8;margin-bottom:32px;max-width:500px}
+.hero-desc{font-size:1.05rem;color:rgba(255,255,255,0.68);line-height:1.8;margin-bottom:32px;max-width:500px;text-align:justify}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
 .btn-p{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;background:var(--gold);color:var(--emerald);padding:13px 28px;border-radius:4px;text-decoration:none;letter-spacing:0.04em;transition:opacity 0.2s}
 .btn-p:hover{opacity:0.88}
@@ -132,12 +132,12 @@ section{padding:88px 0}
 .eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
 .sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;color:var(--emerald);line-height:1.25;margin-bottom:16px}
 .sec-title em{color:var(--teal);font-style:italic}
-.sec-intro{font-size:1.05rem;color:var(--muted);line-height:1.85;max-width:640px;margin-bottom:56px}
+.sec-intro{font-size:1.05rem;color:var(--muted);line-height:1.85;max-width:640px;margin-bottom:56px;text-align:justify}
 .concepts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
 .concept-card{background:rgba(255,255,255,0.04);padding:40px 32px}
 .concept-num{font-family:'Playfair Display',serif;font-size:3rem;font-weight:900;color:var(--gold);opacity:0.5;line-height:1;margin-bottom:16px}
 .concept-name{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;color:var(--white);margin-bottom:14px}
-.concept-def{font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:20px}
+.concept-def{font-size:0.9rem;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:20px;text-align:justify}
 .concept-pill{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(212,160,23,0.4);padding:4px 12px;border-radius:20px}
 .pub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .pub-card{background:var(--white);padding:28px 24px;border-radius:4px;display:flex;flex-direction:column;gap:12px;border-top:3px solid transparent;transition:border-color 0.2s,transform 0.2s}
@@ -149,7 +149,7 @@ section{padding:88px 0}
 .cat-mo{background:rgba(14,107,124,0.1);color:var(--teal)}
 .cat-ps{background:rgba(107,63,110,0.1);color:var(--plum)}
 .pub-title{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--emerald);line-height:1.4}
-.pub-excerpt{font-size:0.88rem;color:var(--muted);line-height:1.65;flex:1}
+.pub-excerpt{font-size:0.88rem;color:var(--muted);line-height:1.65;flex:1;text-align:justify}
 .pub-meta{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:12px;border-top:1px solid var(--sand)}
 .pub-meta span{font-family:'DM Sans',sans-serif;font-size:0.72rem;color:var(--muted)}
 .pub-read{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;color:var(--gold);text-decoration:none}
@@ -439,6 +439,22 @@ footer{background:var(--emerald);padding:56px 0 28px}
     <p class="eyebrow reveal">Écrits &amp; Publications</p>
     <h2 class="sec-title reveal">La pensée mise <em>en mots</em></h2>
     <div class="pub-grid">
+      <!-- Article Chant et récitation CEB -->
+      <div class="pub-card feat reveal" style="border-left-color:var(--teal)">
+        <div style="width:4px;background:var(--teal);border-radius:2px 0 0 2px;flex-shrink:0"></div>
+        <div>
+          <span class="pub-cat cat-ps">Didactique &middot; CEB Sénégal &middot; <span style="background:var(--teal);color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
+          <h3 class="pub-title">Chant et récitation : prescrits par le programme, désertés par la classe</h3>
+          <p class="pub-excerpt">Le CEB planifie chant et récitation palier par palier, avec la consigne explicite de ne pas les reporter en fin de cycle. Pourtant la classe les a largement abandonnés, quand bien même le journal de classe, la planification mensuelle et le tableau de récitation et chant restent, eux, scrupuleusement renseignés. Analyse et recommandations aux enseignants, directeurs et inspecteurs.</p>
+          <div class="pub-meta"><span>MBM &middot; L'équipe du Couloir du Savoir &middot; Juillet 2026</span><a href="article-chant-recitation-ceb-senegal.html" class="pub-read">Lire &rarr;</a></div>
+          <div class="share-row">
+            <a href="https://wa.me/?text=Chant%20et%20r%C3%A9citation%20%3A%20prescrits%20par%20le%20programme%2C%20d%C3%A9sert%C3%A9s%20par%20la%20classe%20%E2%80%94%20lecouloirdusavoir.com%2Farticle-chant-recitation-ceb-senegal.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">&#128242; WhatsApp</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-chant-recitation-ceb-senegal.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">&#128100; Facebook</a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-chant-recitation-ceb-senegal.html" target="_blank" rel="noopener" class="sh-btn" style="background:#0A66C2;color:#fff">&#128188; LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
       <!-- Article IA et éducation en Afrique - Tobias Kinha -->
       <div class="pub-card feat reveal" style="border-left-color:var(--violet)">
         <div style="width:4px;background:var(--violet);border-radius:2px 0 0 2px;flex-shrink:0"></div>
