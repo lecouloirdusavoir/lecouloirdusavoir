@@ -144,6 +144,16 @@ section{padding:88px 0}
 .concept-pill{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(212,160,23,0.4);padding:4px 12px;border-radius:20px}
 .pub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .pub-card{background:var(--white);padding:28px 24px;border-radius:4px;display:flex;flex-direction:column;gap:12px;border-top:3px solid transparent;transition:border-color 0.2s,transform 0.2s}
+.hero-feature{background:linear-gradient(135deg,var(--emerald) 0%,#1a3a2a 100%);border-radius:8px;border-left:5px solid var(--gold);padding:40px 44px;margin-bottom:40px}
+.hero-feature-eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);background:rgba(212,160,23,0.15);border:1px solid rgba(212,160,23,0.35);padding:6px 14px;border-radius:20px;margin-bottom:20px}
+.hero-feature h3{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3vw,1.9rem);font-weight:700;color:#fff;line-height:1.3;margin-bottom:16px}
+.hero-feature p.hf-excerpt{font-family:'DM Sans',sans-serif;font-size:0.96rem;color:rgba(255,255,255,0.75);line-height:1.8;text-align:justify;max-width:820px;margin-bottom:22px}
+.hero-feature-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.55);margin-bottom:22px}
+.hero-feature-meta strong{color:var(--gold);font-weight:600}
+.hero-feature-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.hero-feature-cta{font-family:'DM Sans',sans-serif;font-size:0.84rem;font-weight:700;background:var(--gold);color:var(--emerald);padding:12px 22px;border-radius:4px;text-decoration:none}
+.hero-feature-cta:hover{opacity:0.88}
+@media(max-width:600px){.hero-feature{padding:26px 22px}}
 .pub-card:hover{border-top-color:var(--gold);transform:translateY(-2px)}
 .pub-card.feat{grid-column:span 3;flex-direction:row;border-top:none;border-left:4px solid var(--gold);padding:0}
 .pub-card.feat>div:last-child{padding:32px 28px;flex:1;display:flex;flex-direction:column;gap:12px}
@@ -447,23 +457,24 @@ footer{background:var(--emerald);padding:56px 0 28px}
   <div class="container">
     <p class="eyebrow reveal">Écrits &amp; Publications</p>
     <h2 class="sec-title reveal">La pensée mise <em>en mots</em></h2>
-    <div class="pub-grid">
-      <!-- Article Ben Dia : Politisation de l'administration sénégalaise -->
-      <div class="pub-card feat reveal" style="border-left-color:#6B3F6E">
-        <div style="width:4px;background:#6B3F6E;border-radius:2px 0 0 2px;flex-shrink:0"></div>
-        <div>
-          <span class="pub-cat cat-mo">Gouvernance publique &middot; Fonction publique &middot; <span style="background:#6B3F6E;color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
-          <h3 class="pub-title">Politisation de l'administration sénégalaise : neutralité, dérives et retour à l'orthodoxie</h3>
-          <p class="pub-excerpt">Un bracelet aux couleurs d'un parti porté dans un bureau de l'État n'est pas un détail vestimentaire. Ben Dia décortique le vide juridique derrière l'obligation de réserve, l'escalade documentée en cinq échelons, les expériences comparées du Burkina Faso, du Canada et du Royaume-Uni, et un chemin de retour à l'orthodoxie en trois phases. <a href="espace-rh-management.html" style="color:var(--teal);font-weight:600;text-decoration:underline">Voir toute la rubrique RH &amp; Management &rarr;</a></p>
-          <div class="pub-meta"><span>Ben Dia &middot; Analyste en politiques publiques &middot; Juillet 2026</span><a href="politisation-administration-senegalaise.html" class="pub-read">Lire &rarr;</a></div>
-          <div class="share-row">
-            <a href="https://wa.me/?text=Politisation%20de%20l%27administration%20s%C3%A9n%C3%A9galaise%20%E2%80%94%20Ben%20Dia%20%E2%80%94%20https%3A%2F%2Flecouloirdusavoir.com%2Fpolitisation-administration-senegalaise.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">&#128242; WhatsApp</a>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Fpolitisation-administration-senegalaise.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">&#128100; Facebook</a>
-            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2Fpolitisation-administration-senegalaise.html" target="_blank" rel="noopener" class="sh-btn" style="background:#0A66C2;color:#fff">&#128188; LinkedIn</a>
-          </div>
-        </div>
+    <div class="hero-feature reveal">
+      <span class="hero-feature-eyebrow">📌 À la une</span>
+      <h3>Politisation de l'administration sénégalaise : neutralité, dérives et retour à l'orthodoxie</h3>
+      <p class="hf-excerpt">Un bracelet aux couleurs d'un parti porté dans un bureau de l'État n'est pas un détail vestimentaire. Ben Dia décortique le vide juridique derrière l'obligation de réserve, l'escalade documentée en cinq échelons, les expériences comparées du Burkina Faso, du Canada et du Royaume-Uni, et un chemin de retour à l'orthodoxie en trois phases, avec obligation de motivation à l'appui de chaque décision.</p>
+      <div class="hero-feature-meta">
+        <span><strong>Ben Dia</strong> &middot; Analyste en politiques publiques</span>
+        <span>&middot;</span>
+        <span>Contribution externe &middot; Juillet 2026</span>
       </div>
+      <div class="hero-feature-actions">
+        <a href="politisation-administration-senegalaise.html" class="hero-feature-cta">Lire l'article complet &rarr;</a>
+        <a href="https://wa.me/?text=Politisation%20de%20l%27administration%20s%C3%A9n%C3%A9galaise%20%E2%80%94%20Ben%20Dia%20%E2%80%94%20https%3A%2F%2Flecouloirdusavoir.com%2Fpolitisation-administration-senegalaise.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff;padding:10px 16px;border-radius:4px">&#128242; WhatsApp</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Fpolitisation-administration-senegalaise.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff;padding:10px 16px;border-radius:4px">&#128100; Facebook</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2Fpolitisation-administration-senegalaise.html" target="_blank" rel="noopener" class="sh-btn" style="background:#0A66C2;color:#fff;padding:10px 16px;border-radius:4px">&#128188; LinkedIn</a>
+      </div>
+    </div>
 
+    <div class="pub-grid">
       <!-- Article Ali Ba : La fuite des talents -->
       <div class="pub-card feat reveal" style="border-left-color:#6B3F6E">
         <div style="width:4px;background:#6B3F6E;border-radius:2px 0 0 2px;flex-shrink:0"></div>
@@ -1051,23 +1062,6 @@ footer{background:var(--emerald);padding:56px 0 28px}
         <div class="share-row">
           <a href="https://wa.me/?text=La%20didactique%20des%20disciplines%20%E2%80%94%20lecouloirdusavoir.com%2Farticle-didactique-disciplines.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-didactique-disciplines.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
-        </div>
-      </div>
-
-      <div class="pub-card reveal rd1" style="border-top-color:var(--teal)"><span class="pub-cat cat-ps">Psychologie cognitive</span><h3 class="pub-title">Mémoire et apprentissage : ce que l'enseignant doit savoir</h3><p class="pub-excerpt">Encodage, stockage, récupération : les mécanismes de la mémoire expliqués à l'enseignant praticien, avec des stratégies concrètes pour améliorer la rétention des élèves.</p><div class="pub-meta"><span>Mémoire · Rétention · Cognition</span><a href="article-memoire-apprentissage.html" class="pub-read">Lire →</a></div><div class="share-row"><a href="https://wa.me/?text=M%C3%A9moire%20et%20apprentissage%20%E2%80%94%20lecouloirdusavoir.com%2Farticle-memoire-apprentissage.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a></div></div>
-
-      <div class="pub-card reveal rd2" style="border-top-color:var(--teal)"><span class="pub-cat cat-ps">Psycholinguistique</span><h3 class="pub-title">Les Briseurs de Chaînes : analyse psycholinguistique</h3><p class="pub-excerpt">De nouvelles structures narratives dans le discours oral : analyse du phénomène des briseurs de chaîne et ses implications pour la compréhension en classe.</p><div class="pub-meta"><span>Psycholinguistique · Discours oral</span><a href="article-briseurs-de-chaines.html" class="pub-read">Lire →</a></div><div class="share-row"><a href="https://wa.me/?text=Les%20briseurs%20de%20cha%C3%AEnes%20%E2%80%94%20lecouloirdusavoir.com%2Farticle-briseurs-de-chaines.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a></div></div>
-
-      <div class="pub-card reveal" style="border-top-color:var(--teal)"><span class="pub-cat cat-mo">Formation en ligne</span><h3 class="pub-title">La Stivation numérique : apprentissage informel à l'ère du distanciel</h3><p class="pub-excerpt">Comment le modèle de la Stivation s'applique à la formation en ligne et aux promotions multinationales. Un article académiquement référencé, signé MBM. <a href="stivation-motivation-andragogique.html" style="color:var(--teal);font-weight:600;text-decoration:underline">Lire la théorie fondatrice →</a></p><div class="pub-meta"><span>Stivation · Distanciel · Formation</span><a href="article-stivation-numerique-formation-ligne.html" class="pub-read">Lire →</a></div><div class="share-row"><a href="https://wa.me/?text=La%20Stivation%20num%C3%A9rique%20%E2%80%94%20lecouloirdusavoir.com%2Farticle-stivation-numerique-formation-ligne.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a></div></div>
-
-      <div class="pub-card reveal" style="border-top-color:var(--gold)">
-        <span class="pub-cat" style="background:rgba(212,160,23,.12);color:var(--gold-dark)">Didactique · <span style="background:var(--gold);color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
-        <h3 class="pub-title">La planification pédagogique, un intrant de qualité pour les enseignements et apprentissages</h3>
-        <p class="pub-excerpt">Trente enseignants interrogés se limitent tous à la répartition mensuelle. Un directeur d'école, ancien membre du CREAQ de Tivaouane, restitue ce geste professionnel dans toute sa profondeur : du niveau annuel à la fiche de préparation.</p>
-        <div class="pub-meta"><span>Mamadou S. S. Hanne · Contribution externe</span><a href="article-planification-hanne.html" class="pub-read">Lire →</a></div>
-        <div class="share-row">
-          <a href="https://wa.me/?text=La%20planification%20p%C3%A9dagogique%2C%20un%20intrant%20de%20qualit%C3%A9%20%E2%80%94%20lecouloirdusavoir.com%2Farticle-planification-hanne.html" target="_blank" rel="noopener" class="sh-btn" style="background:#25D366;color:#fff">📲 WhatsApp</a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-planification-hanne.html" target="_blank" rel="noopener" class="sh-btn" style="background:#1877F2;color:#fff">👤 Facebook</a>
         </div>
       </div>
 
