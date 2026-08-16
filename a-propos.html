@@ -45,14 +45,14 @@
   <style>
     /* ── Palette ── */
     :root {
-      --navy:  #1a2744;
-      --teal:  #2a7c8a;
-      --gold:  #c9a84c;
-      --cream: #f5f0e8;
+      --navy:  #0F4C3A;
+      --teal:  #0E6B7C;
+      --gold:  #D4A017;
+      --cream: #FDFAF3;
       --white: #ffffff;
-      --text:  #2d2d2d;
-      --muted: #6b7280;
-      --border: rgba(201,168,76,0.25);
+      --text:  #2A2A2A;
+      --muted: #6B7280;
+      --border: rgba(212,160,23,0.25);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -109,8 +109,8 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 60% 0%, rgba(42,124,138,0.18) 0%, transparent 65%),
-                  radial-gradient(ellipse at 20% 100%, rgba(201,168,76,0.10) 0%, transparent 60%);
+      background: radial-gradient(ellipse at 60% 0%, rgba(14,107,124,0.18) 0%, transparent 65%),
+                  radial-gradient(ellipse at 20% 100%, rgba(212,160,23,0.10) 0%, transparent 60%);
       pointer-events: none;
     }
     .hero-label {
@@ -168,7 +168,7 @@
       opacity: 0;
       animation: fadeUp 0.6s ease 0.55s forwards;
     }
-    .hero-cta:hover { background: #b8943e; transform: translateY(-1px); }
+    .hero-cta:hover { background: #B8890F; transform: translateY(-1px); }
 
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(16px); }
@@ -214,11 +214,11 @@
       border-radius: 4px;
       transition: box-shadow 0.2s, transform 0.2s;
     }
-    .offer-card:hover { box-shadow: 0 8px 28px rgba(26,39,68,0.10); transform: translateY(-2px); }
+    .offer-card:hover { box-shadow: 0 8px 28px rgba(15,76,58,0.10); transform: translateY(-2px); }
     .offer-icon {
       width: 44px;
       height: 44px;
-      background: rgba(42,124,138,0.10);
+      background: rgba(14,107,124,0.10);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -253,7 +253,7 @@
     }
     .badge {
       background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(201,168,76,0.35);
+      border: 1px solid rgba(212,160,23,0.35);
       color: rgba(255,255,255,0.88);
       font-size: 0.8rem;
       font-weight: 500;
@@ -262,7 +262,7 @@
       border-radius: 2px;
     }
     .badge.highlight {
-      background: rgba(201,168,76,0.15);
+      background: rgba(212,160,23,0.15);
       border-color: var(--gold);
       color: var(--gold);
     }
@@ -355,7 +355,7 @@
     .form-group select:focus,
     .form-group textarea:focus {
       border-color: var(--teal);
-      box-shadow: 0 0 0 3px rgba(42,124,138,0.12);
+      box-shadow: 0 0 0 3px rgba(14,107,124,0.12);
     }
     .form-group textarea { resize: vertical; min-height: 120px; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -386,8 +386,8 @@
 
     /* ── ENGLISH BLOCK ── */
     .english-block {
-      background: rgba(42,124,138,0.06);
-      border: 1px dashed rgba(42,124,138,0.4);
+      background: rgba(14,107,124,0.06);
+      border: 1px dashed rgba(14,107,124,0.4);
       border-radius: 4px;
       padding: 1.75rem;
       margin-top: 2rem;
