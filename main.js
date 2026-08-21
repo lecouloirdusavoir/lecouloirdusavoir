@@ -258,3 +258,64 @@ document.addEventListener('DOMContentLoaded', function () {
   document.body.appendChild(wrapper);
 
 });
+/* ============================================================
+   FORMULAIRE D'ABONNEMENT - Le Couloir du Savoir
+   À COLLER À LA TOUTE FIN DU FICHIER main.js
+   (ne touche à rien d'existant, s'ajoute simplement en bas)
+   ============================================================ */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Évite d'injecter le formulaire deux fois si le script tourne plusieurs fois
+  if (document.getElementById('newsletter-box-cds')) return;
+
+  var wrapper = document.createElement('div');
+  wrapper.innerHTML = `
+    <div id="newsletter-box-cds" style="
+        background-color:#ffffff;
+        border:1px solid #0F4C3A;
+        border-left:5px solid #0F4C3A;
+        border-radius:6px;
+        padding:28px 32px;
+        max-width:540px;
+        margin:40px auto;
+        font-family:Georgia,'Times New Roman',serif;
+        text-align:left;">
+
+      <h3 style="color:#0F4C3A;font-size:1.3rem;font-weight:700;margin:0 0 10px 0;">
+        Restez informé
+      </h3>
+
+      <p style="color:#333333;font-size:0.95rem;line-height:1.5;margin:0 0 20px 0;">
+        Recevez les nouveaux articles du Couloir du Savoir directement par email :
+        analyses pédagogiques, tribunes, actualités de l'éducation.
+      </p>
+
+      <form action="https://buttondown.email/api/emails/embed-subscribe/lecouloirdusavoir"
+            method="post" target="popupwindow"
+            onsubmit="window.open('https://buttondown.email/lecouloirdusavoir','popupwindow')"
+            style="display:flex;gap:10px;flex-wrap:wrap;">
+
+        <input type="email" name="email" placeholder="Votre adresse email" required
+               style="flex:1;min-width:200px;padding:12px 14px;border:1px solid #cccccc;
+                      border-radius:4px;font-size:0.95rem;font-family:inherit;" />
+
+        <input type="hidden" value="1" name="embed" />
+
+        <button type="submit" style="
+            background-color:#0F4C3A;color:#ffffff;border:none;padding:12px 24px;
+            border-radius:4px;font-size:0.95rem;font-weight:600;cursor:pointer;
+            font-family:inherit;">
+          S'abonner
+        </button>
+      </form>
+
+      <p style="color:#777777;font-size:0.8rem;margin:14px 0 0 0;">
+        Un email par nouvel article. Désabonnement en un clic, à tout moment.
+      </p>
+    </div>
+  `;
+
+  document.body.appendChild(wrapper);
+
+});
