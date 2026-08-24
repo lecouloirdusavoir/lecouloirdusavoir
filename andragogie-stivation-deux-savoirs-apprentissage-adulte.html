@@ -146,6 +146,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .chapeau{font-size:1.15rem;color:var(--navy);line-height:1.78;border-left:3px solid var(--gold);padding-left:22px;margin-bottom:52px;font-style:italic;text-align:justify}
 .art-body h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--navy);margin:56px 0 22px;padding-bottom:12px;border-bottom:1px solid rgba(15,76,58,0.11)}
 .art-body p{margin-bottom:24px;font-size:1.02rem;line-height:1.9;text-align:justify}
+.art-body p a, .voix-card p a, .miroir-col p a, .conclusion p a{color:var(--teal);text-decoration:underline;text-decoration-color:rgba(14,107,124,0.35);text-underline-offset:2px}
+.art-body p a:hover, .voix-card p a:hover, .miroir-col p a:hover{color:var(--rust)}
+.conclusion p a{color:#7DE0EE}
 
 .voix-card{border-radius:8px;padding:26px 30px;margin:32px 0;border-left:4px solid}
 .voix-card.ali{background:rgba(14,107,124,0.05);border-left-color:var(--teal)}
@@ -168,6 +171,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .synthese-table{width:100%;border-collapse:collapse;margin:36px 0;font-family:'DM Sans',sans-serif;font-size:0.88rem}
 .synthese-table th{background:var(--navy);color:var(--gold);padding:12px 16px;text-align:left;font-weight:600;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em}
 .synthese-table td{padding:12px 16px;border-bottom:1px solid rgba(15,76,58,0.1);line-height:1.6}
+.synthese-table td a{color:var(--navy);text-decoration:none;font-weight:600}
+.synthese-table td a:hover{color:var(--rust)}
 .synthese-table tr:nth-child(even) td{background:rgba(15,76,58,0.02)}
 
 .sources-block{background:rgba(212,160,23,0.06);border:1px solid rgba(212,160,23,0.2);border-radius:8px;padding:26px 30px;margin:44px 0}
@@ -260,72 +265,72 @@ footer{background:var(--navy);color:rgba(255,255,255,0.6);padding:56px 40px 0}
 <main class="art-body" itemscope itemtype="https://schema.org/Article">
 
   <p class="chapeau">
-    Une promotion de MBA2 en Management des Ressources Humaines réunit, le temps d'une formation, des parcours qui n'auraient sans doute jamais eu d'autre occasion de se croiser : celui d'un consultant en gestion des talents et celui d'un inspecteur de l'éducation. Ali Ba et Mouhamadou Bamba Mbaye partagent ces bancs, ces échanges entre séances, ces discussions qui se prolongent au-delà du programme officiel, ce que la Stivation appellerait précisément un espace périphérique où la motivation à comprendre se construit entre pairs. De cette rencontre naît un dialogue entre deux textes : l'un sur l'andragogie en entreprise, l'autre sur la Stivation en milieu scolaire. Tous deux disent, depuis des terrains différents, la même chose sur la façon dont un adulte apprend.
+    Une promotion de MBA2 en Management des Ressources Humaines réunit, le temps d'une formation, des parcours qui n'auraient sans doute jamais eu d'autre occasion de se croiser : celui d'un consultant en gestion des talents et celui d'un inspecteur de l'éducation. Ali Ba et Mouhamadou Bamba Mbaye partagent les mêmes bancs, les mêmes échanges entre deux séances, ces discussions qui débordent le programme officiel. La <a href="stivation-motivation-andragogique.html">Stivation</a> appellerait cela un espace périphérique, celui où la motivation à comprendre se construit entre pairs. De cette rencontre naît un dialogue entre deux textes : l'un sur l'andragogie en entreprise, l'autre sur la Stivation en milieu scolaire. Deux terrains différents disent, chacun à sa façon, la même chose sur l'apprentissage adulte.
   </p>
 
-  <h2 id="ce-que-dit-andragogie">Ce que dit l'andragogie</h2>
+  <h2 id="regard-ali-ba">Le regard d'Ali Ba sur l'andragogie</h2>
 
   <p>
-    Dans son texte sur l'andragogie dans les organisations, le consultant Ali Ba pose une question simple en apparence : la formation des adultes en entreprise est-elle un simple outil pour transmettre des compétences, ou une véritable stratégie de développement humain ? Sa réponse est nette. L'andragogie, fondée sur le principe que l'adulte apprend différemment de l'enfant, place l'expérience, l'autonomie et la motivation personnelle au centre du processus.
+    Dans son texte sur l'andragogie dans les organisations, le consultant Ali Ba pose une question simple en apparence : la formation des adultes en entreprise est-elle un outil de transmission de compétences, ou une véritable stratégie de développement humain ? Sa réponse est nette. Fondée sur le principe que l'adulte apprend différemment de l'enfant, l'andragogie place l'expérience, l'autonomie et la motivation personnelle au centre du processus.
   </p>
 
   <div class="voix-card ali">
-    <p class="voix-label">Ce que dit Ali Ba</p>
+    <p class="voix-label">Le point clé</p>
     <p>
-      L'apprenant adulte n'est pas un récepteur passif de connaissances ; il est un acteur de son propre développement. Son vécu professionnel devient une ressource pédagogique, tandis que ses besoins concrets orientent son processus d'apprentissage. Cette conception transforme les pratiques RH, qui cherchent désormais à favoriser l'implication plutôt qu'à transmettre mécaniquement des savoirs.
+      L'apprenant adulte n'est pas un récepteur passif de connaissances. Il est un acteur de son propre développement : son vécu professionnel devient une ressource pédagogique, ses besoins concrets orientent son parcours. Cette conception déplace les pratiques RH, qui cherchent désormais à favoriser l'implication plutôt qu'à transmettre mécaniquement des savoirs.
     </p>
   </div>
 
   <p>
-    Ali Ba va plus loin encore : il refuse de réduire l'andragogie à un simple outil pédagogique. Pour lui, lorsqu'elle est intégrée à la politique de gestion des ressources humaines, elle devient une stratégie de développement du capital humain, capable de soutenir l'innovation et la performance durable de l'entreprise. L'enjeu n'est donc pas seulement de former, mais de créer les conditions d'un apprentissage continu, ancré dans l'engagement et la fidélisation des talents.
+    Ali Ba va plus loin : il refuse de réduire l'andragogie à un simple outil pédagogique. Intégrée à la politique de <a href="espace-rh-management.html">gestion des ressources humaines</a>, elle devient selon lui une stratégie de développement du capital humain, capable de soutenir l'innovation et la performance durable de l'entreprise. L'enjeu dépasse la formation : il s'agit de créer les conditions d'un apprentissage continu, ancré dans l'engagement et la fidélisation des talents.
   </p>
 
-  <h2 id="ce-que-montre-stivation">Ce que montre la Stivation</h2>
+  <h2 id="terrain-stivation">Le terrain d'origine de la Stivation</h2>
 
   <p>
-    À des kilomètres de là, conceptuellement parlant, le modèle de la Stivation est né en 2010 d'une observation conduite non pas en entreprise mais dans un cadre précis : la formation initiale des élèves-inspecteurs à la FASTEF/UCAD, documentée dans un mémoire de CAIEE. Le constat de départ était presque dérangeant pour les ingénieurs de formation de l'époque : les apprentissages les plus durables ne se produisaient pas pendant les sessions formelles, mais dans les marges, les espaces informels qui précèdent ou prolongent les moments structurés, entre élèves-inspecteurs eux-mêmes.
+    Le modèle de la Stivation est né d'un terrain très différent : celui de la formation initiale des élèves-inspecteurs à la FASTEF/UCAD, documenté en 2010 dans un mémoire de CAIEE. Le constat de départ dérangeait les ingénieurs de formation de l'époque : les apprentissages les plus durables ne se produisaient pas pendant les sessions formelles, mais dans les marges, ces espaces informels qui précèdent ou prolongent les moments structurés, entre élèves-inspecteurs eux-mêmes.
   </p>
 
   <div class="voix-card stiv">
-    <p class="voix-label">Ce que montre la Stivation</p>
+    <p class="voix-label">Le constat</p>
     <p>
-      L'engagement collectif n'est vraisemblablement pas la somme des engagements individuels. Il serait plutôt une propriété émergente qui naît de la qualité des interactions au sein d'une équipe, et qui s'érode dès que ces interactions se tarissent ou s'appauvrissent.
+      L'engagement collectif n'est pas la somme des engagements individuels. Il serait plutôt une propriété émergente, née de la qualité des échanges au sein d'une équipe, qui s'érode dès que ces échanges se tarissent.
     </p>
   </div>
 
   <p>
-    L'article qui transpose ce modèle au monde de l'entreprise pose une question presque identique à celle d'Ali Ba, mais formulée depuis l'autre bout du terrain : pourquoi des équipes dotées des mêmes ressources, des mêmes outils, des mêmes profils, finissent-elles par produire des résultats radicalement différents ? La réponse ne se trouve ni dans les organigrammes ni dans les tableaux de bord de performance individuelle, mais dans ce qui circule entre les personnes.
+    L'article qui transpose ce modèle à l'entreprise pose une question presque identique à celle d'Ali Ba, formulée depuis l'autre bout du terrain : pourquoi des équipes dotées des mêmes ressources, des mêmes outils, des mêmes profils, finissent-elles par produire des résultats radicalement différents ? La réponse ne tient ni aux organigrammes ni aux tableaux de bord de performance individuelle. Elle se loge dans ce qui circule entre les personnes.
   </p>
 
-  <h2 id="rencontre-des-voix">Le moment où les deux voix se rejoignent</h2>
+  <h2 id="convergence">Convergence entre les deux voix</h2>
 
   <p>
-    Posons les deux textes côte à côte. Ali Ba écrit que l'adulte n'est pas un récepteur passif mais un acteur de son propre développement. La Stivation observe que les apprentissages les plus significatifs se produisent dans les espaces informels entre pairs, là où aucun dispositif officiel ne les avait prévus. Ce sont deux formulations du même principe, l'une normative et stratégique, l'autre empirique et descriptive.
+    Posons les deux textes côte à côte. Ali Ba écrit que l'adulte n'est pas un récepteur passif mais un acteur de son propre développement. La Stivation observe, de son côté, que les apprentissages les plus significatifs naissent dans les espaces informels entre pairs, là où aucun dispositif officiel ne les avait prévus. Deux formulations, donc, d'un même principe : l'une normative et stratégique, l'autre empirique et descriptive.
   </p>
 
   <div class="miroir">
     <div class="miroir-col">
       <p class="miroir-label">L'andragogie (Ali Ba)</p>
-      <p>Pose le principe au niveau de l'individu apprenant : l'adulte a besoin d'autonomie, d'expérience et de sens pour apprendre durablement. C'est une orientation pour concevoir des dispositifs de formation.</p>
+      <p>Pose le principe au niveau de l'individu apprenant : l'adulte a besoin d'autonomie, d'expérience et de sens pour apprendre durablement. Une orientation pour concevoir des dispositifs de formation.</p>
     </div>
     <div class="miroir-col">
       <p class="miroir-label">La Stivation (Mouhamadou Bamba Mbaye)</p>
-      <p>Observe le phénomène au niveau du collectif : ce sont les interactions entre pairs, et non la compétence individuelle accumulée, qui déterminent si un groupe apprend ensemble ou s'éteint.</p>
+      <p>Observe le phénomène au niveau du collectif : ce sont les interactions entre pairs, non la compétence individuelle accumulée, qui déterminent si un groupe apprend ensemble ou s'éteint.</p>
     </div>
   </div>
 
   <p>
-    L'andragogie explique pourquoi un adulte se mobilise. La Stivation montre où, concrètement, cette mobilisation se construit le plus souvent : non pas dans la salle de formation officielle, mais dans l'interstice, l'échange spontané, le débrief informel entre deux collègues. Ce que l'une nomme comme principe, l'autre le documente comme mécanisme observable.
+    L'andragogie explique pourquoi un adulte se mobilise. La Stivation montre où cette mobilisation se construit le plus souvent : non dans la salle de formation officielle, mais dans l'interstice, l'échange spontané, le débrief informel entre deux collègues. Ce que l'une pose en principe, l'autre le documente comme mécanisme observable.
   </p>
 
   <h2 id="deux-prolongements">Deux prolongements, un même fil</h2>
 
   <p>
-    Ce dialogue ne s'arrête pas à deux textes. Sur le terrain spécifiquement scolaire, deux autres articles du Couloir du Savoir prolongent chacun une des deux voix. L'article consacré au directeur d'école face à un enseignant démotivé applique très concrètement le principe andragogique : plutôt que d'imposer une remise en ordre disciplinaire, le directeur est invité à mobiliser des leviers qui responsabilisent l'enseignant et le replacent en position d'acteur, exactement ce que décrit Ali Ba pour le salarié en entreprise.
+    Ce dialogue ne s'arrête pas à deux textes. Sur le terrain scolaire, deux autres articles du Couloir du Savoir prolongent chacune des deux voix. L'article consacré au <a href="directeur-enseignant-demotive-stivation.html">directeur d'école face à un enseignant démotivé</a> applique très concrètement le principe andragogique : plutôt que d'imposer une remise en ordre disciplinaire, le directeur est invité à mobiliser des leviers qui responsabilisent l'enseignant et le replacent en position d'acteur, exactement ce que décrit Ali Ba pour le salarié en entreprise.
   </p>
 
   <p>
-    La page théorique de la Stivation, de son côté, pose le cadre conceptuel complet dont l'article sur les équipes en entreprise n'est qu'une transposition. Elle documente, à partir du terrain originel de la formation initiale des élèves-inspecteurs, les trois dynamiques qui composent le modèle : la stimulation, la motivation comme processus relationnel, et l'interaction comme medium de l'apprentissage. L'article sur les équipes en entreprise, comme celui sur le directeur d'école, sont des transpositions explicites de ce cadre vers d'autres terrains professionnels, et non des résultats directement observés dans ces contextes.
+    La <a href="stivation-motivation-andragogique.html">page théorique de la Stivation</a> pose, elle, le cadre conceptuel complet dont l'article sur les équipes en entreprise n'est qu'une transposition. Elle documente, à partir du terrain originel de la formation initiale des élèves-inspecteurs, les trois dynamiques qui composent le modèle : la stimulation, la motivation comme processus relationnel, et l'interaction comme médium de l'apprentissage. Les deux transpositions, celle vers l'entreprise et celle vers l'école, restent des applications explicites de ce cadre, non des résultats observés directement sur ces terrains.
   </p>
 
   <table class="synthese-table">
@@ -335,35 +340,35 @@ footer{background:var(--navy);color:rgba(255,255,255,0.6);padding:56px 40px 0}
       <th>Ce qu'il apporte au dialogue</th>
     </tr>
     <tr>
-      <td>L'andragogie dans les organisations (Ali Ba)</td>
+      <td><a href="article-andragogie-ali-ba.html">L'andragogie dans les organisations</a> (Ali Ba)</td>
       <td>Entreprise, RH</td>
       <td>Pose le principe : l'adulte apprend par l'expérience et l'autonomie, pas par réception passive</td>
     </tr>
     <tr>
-      <td>La Stivation, théorie fondatrice</td>
+      <td><a href="stivation-motivation-andragogique.html">La Stivation, théorie fondatrice</a></td>
       <td>Formation initiale des élèves-inspecteurs</td>
-      <td>Documente le mécanisme : ce sont les interactions entre pairs qui activent cet apprentissage</td>
+      <td>Documente le mécanisme : ce sont les interactions entre pairs qui l'activent</td>
     </tr>
     <tr>
-      <td>Pourquoi certaines équipes apprennent ensemble</td>
+      <td><a href="stivation-equipes-entreprise.html">Pourquoi certaines équipes apprennent ensemble</a></td>
       <td>Entreprise, management d'équipe</td>
-      <td>Transpose le mécanisme stivationnel au collectif de travail en organisation</td>
+      <td>Transpose le mécanisme stivationnel au collectif de travail</td>
     </tr>
     <tr>
-      <td>Le directeur face à un enseignant démotivé</td>
+      <td><a href="directeur-enseignant-demotive-stivation.html">Le directeur face à un enseignant démotivé</a></td>
       <td>École, direction d'établissement</td>
       <td>Applique le principe andragogique à la remobilisation d'un adulte en contexte scolaire</td>
     </tr>
   </table>
 
-  <h2>Ce que cette rencontre doit à une promotion de MBA2</h2>
+  <h2>Une promotion de MBA2 comme matrice commune</h2>
 
   <p>
-    Ali Ba et l'auteur de cet article sont issus de la même promotion de MBA2 Management des Ressources Humaines, l'un orienté vers le conseil en gestion des talents, l'autre vers l'inspection de l'éducation. Leurs échanges réguliers sur l'apprentissage adulte et la dynamique des collectifs nourrissent, chacun de leur côté, les deux textes mis en regard ici.
+    Ali Ba et l'auteur de cet article sont issus de la même promotion de <a href="espace-rh-management.html">MBA2 Management des Ressources Humaines</a>, l'un tourné vers le conseil en gestion des talents, l'autre vers l'inspection de l'éducation. Leurs échanges réguliers sur l'apprentissage adulte et la dynamique des collectifs nourrissent, chacun de son côté, les deux textes mis en regard ici.
   </p>
 
   <p>
-    Ce mode de fonctionnement, l'échange informel entre pairs comme matrice de la réflexion, est précisément ce que le modèle de la Stivation cherche à formaliser : un espace non cadré par un dispositif officiel, où la pensée circule et se transforme au contact d'un autre point de vue. Pour le praticien RH qui découvre la Stivation par ce texte, le modèle offre un terrain d'observation documenté depuis 2010. Pour l'inspecteur ou le directeur d'école qui pratique la Stivation sans toujours la nommer, l'andragogie offre un langage théorique plus large, qui resitue cette pratique dans le champ des sciences de la formation des adultes.
+    Cet échange informel entre pairs comme matrice de la réflexion est précisément ce que le modèle de la Stivation cherche à formaliser : un espace non cadré par un dispositif officiel, où la pensée circule et se transforme au contact d'un autre point de vue. Pour le praticien RH qui découvre la Stivation par ce texte, le modèle offre un terrain d'observation documenté depuis 2010. Pour l'<a href="espace-inspecteurs.html">inspecteur ou le directeur d'école</a> qui pratique la Stivation sans toujours la nommer, l'andragogie offre un langage théorique plus large, qui resitue cette pratique dans le champ des sciences de la formation des adultes.
   </p>
 
   <div class="sources-block">
@@ -389,12 +394,12 @@ footer{background:var(--navy);color:rgba(255,255,255,0.6);padding:56px 40px 0}
   </div>
 
   <div class="conclusion">
-    <h2>Ce que ce dialogue retient</h2>
+    <h2>Deux terrains, une même conclusion</h2>
     <p>
-      L'andragogie et la Stivation ne se sont jamais rencontrées dans la littérature académique. L'une vient des sciences de la gestion, l'autre du terrain de la formation initiale des élèves-inspecteurs en Afrique subsaharienne. Leur point de départ commun est moins théorique que relationnel : un échange régulier entre deux praticiens de la même promotion de MBA2, l'un en entreprise, l'autre en milieu scolaire. Lue côte à côte, leur conclusion converge : l'adulte n'apprend pas en recevant un savoir, il apprend en étant placé en situation d'acteur, au contact d'autres adultes, dans des conditions où l'expérience peut circuler.
+      L'andragogie et la Stivation ne se sont jamais rencontrées dans la littérature académique. L'une vient des sciences de la gestion, l'autre du terrain de la formation initiale des élèves-inspecteurs en Afrique subsaharienne. Leur point de départ commun tient moins à la théorie qu'à la relation : un échange régulier entre deux praticiens d'une même promotion de MBA2, l'un en entreprise, l'autre en milieu scolaire. Lues côte à côte, leurs conclusions convergent : l'adulte n'apprend pas en recevant un savoir, il apprend en étant placé en situation d'acteur, au contact d'autres adultes, dans des conditions où l'expérience peut circuler.
     </p>
     <p>
-      Que l'on dirige une équipe commerciale ou une école élémentaire, la question à se poser reste identique : qu'est-ce qui, dans l'organisation pilotée, crée réellement les conditions de cette circulation, et qu'est-ce qui, au contraire, l'empêche silencieusement ?
+      Une question demeure, commune aux deux terrains : qu'est-ce qui, dans l'organisation pilotée, crée réellement les conditions de cette circulation, et qu'est-ce qui l'empêche silencieusement ?
     </p>
   </div>
 
