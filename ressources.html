@@ -16,54 +16,58 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-9SDJVY86L2');
 </script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Literata:ital,opsz,wght@0,18..144,400;0,18..144,500;0,18..144,600;1,18..144,400&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
-:root{--navy:#0F4C3A;--teal:#0E6B7C;--gold:#D4A017;--cream:#FDFAF3;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF;}
+:root{--navy:#0F4C3A;--emerald:#0F4C3A;--teal:#0E6B7C;--gold:#E0996B;--laterite:#A8461D;--sand:#F5EED8;--cream:#FDFAF3;--rust:#B85533;--sage:#4A7C6F;--plum:#6B3F6E;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF;--violet:#534AB7;--gold-dark:#7A5910;--emerald-light:#52b788;--forest:#2d6a4f;--emerald-dark:#37493F;}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Georgia,serif;background:var(--cream);color:var(--text);line-height:1.8}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:66px;background:rgba(15,76,58,0.97);border-bottom:1px solid rgba(212,160,23,0.25)}
-.nav-brand{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--gold);text-decoration:none}
+body{font-family:'Literata',Georgia,serif;background:var(--cream);color:var(--text);line-height:1.85}
+.masthead{background:rgba(15,76,58,1);padding:0.7rem 40px 0}
+.masthead-row1{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace,'DM Sans',sans-serif;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.55);padding-bottom:0.6rem;border-bottom:1px solid rgba(224,153,107,0.2)}
+.masthead-row2{display:flex;align-items:baseline;justify-content:space-between;padding:0.85rem 0 0.8rem;flex-wrap:wrap;gap:0.6rem}
+.nav-brand{font-family:'Zilla Slab',serif;font-size:1.05rem;font-weight:700;color:var(--gold);text-decoration:none}
 .nav-brand span{color:#fff;font-weight:400;font-style:italic}
-.nav-links{display:flex;gap:22px;list-style:none}
-.nav-links a{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:500;color:rgba(255,255,255,0.72);text-decoration:none;letter-spacing:0.09em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:17px;list-style:none;flex-wrap:wrap}
+.nav-links a{font-family:'DM Sans',sans-serif;font-size:0.67rem;font-weight:500;color:rgba(255,255,255,0.72);text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;transition:color 0.2s;white-space:nowrap}
 .nav-links a:hover,.nav-links a.active{color:var(--gold)}
 .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .nav-toggle span{width:22px;height:2px;background:var(--gold);border-radius:2px}
-.mobile-nav{display:none;position:fixed;top:66px;left:0;right:0;background:rgba(15,76,58,0.98);z-index:99;padding:24px;flex-direction:column;gap:4px}
+.mobile-nav{display:none;background:rgba(15,76,58,0.98);padding:24px 24px 32px;flex-direction:column;gap:4px;border-bottom:1px solid rgba(224,153,107,0.2)}
 .mobile-nav.open{display:flex}
-.mobile-nav a{font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.75);text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.mobile-nav a{font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.75);text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);letter-spacing:0.04em}
+.mobile-nav a:hover{color:var(--gold)}
 .container{max-width:1100px;margin:0 auto;padding:0 40px}
 
 /* Hero */
-.hero{background:var(--navy);padding:100px 0 60px;border-bottom:2px solid rgba(212,160,23,0.3)}
-.hero h1{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:900;color:#fff;margin-bottom:16px;line-height:1.2}
+.hero{background:var(--emerald);padding:64px 0 60px;border-bottom:2px solid rgba(224,153,107,0.3);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:400px;height:400px;background:radial-gradient(circle,rgba(224,153,107,0.12) 0%,transparent 70%);pointer-events:none}
+.hero h1{font-family:'Zilla Slab',serif;font-size:2.4rem;font-weight:900;color:#fff;margin-bottom:16px;line-height:1.2;position:relative;z-index:2}
 .hero h1 em{color:var(--gold);font-style:italic}
-.hero p{font-size:1rem;color:rgba(255,255,255,0.6);max-width:620px;margin-bottom:28px}
-.hero-stats{display:flex;gap:40px}
-.hero-stat strong{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--gold);display:block}
+.hero p{font-size:1rem;color:rgba(255,255,255,0.68);max-width:620px;margin-bottom:28px;position:relative;z-index:2}
+.hero-stats{display:flex;gap:40px;position:relative;z-index:2}
+.hero-stat strong{font-family:'Zilla Slab',serif;font-size:1.8rem;color:var(--gold);display:block}
 .hero-stat span{font-family:'DM Sans',sans-serif;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,255,255,0.4)}
-.eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;position:relative;z-index:2}
 
 /* Nav categories */
-.cat-nav{background:#fff;border-bottom:1px solid rgba(15,76,58,0.1);padding:0;position:sticky;top:66px;z-index:50;overflow-x:auto}
+.cat-nav{background:#fff;border-bottom:1px solid rgba(15,76,58,0.1);padding:0;position:sticky;top:0;z-index:50;overflow-x:auto}
 .cat-nav-inner{display:flex;white-space:nowrap}
 .cat-btn{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);padding:16px 20px;border:none;background:none;cursor:pointer;border-bottom:2px solid transparent;text-decoration:none;display:inline-block}
-.cat-btn:hover{color:var(--navy);border-bottom-color:var(--gold)}
+.cat-btn:hover{color:var(--emerald);border-bottom-color:var(--gold)}
 
 /* Sections */
 .res-section{padding:60px 0;border-bottom:1px solid rgba(15,76,58,0.08)}
 .sec-label{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
-.sec-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+.sec-title{font-family:'Zilla Slab',serif;font-size:1.6rem;font-weight:700;color:var(--navy);margin-bottom:8px}
 .sec-desc{font-size:0.92rem;color:var(--muted);max-width:640px;margin-bottom:32px}
 
 /* Document cards */
 .doc-list{display:flex;flex-direction:column;gap:10px}
 .doc-grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.doc-card{background:#fff;border:1px solid rgba(15,76,58,0.1);border-radius:6px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.doc-actions{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
-.doc-card:hover{border-color:rgba(212,160,23,0.4)}
+.doc-card{background:#fff;border:1px solid rgba(15,76,58,0.1);border-top:3px solid transparent;border-radius:6px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;transition:border-color 0.2s,transform 0.2s}.doc-actions{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
+.doc-card:hover{border-color:rgba(224,153,107,0.4);border-top-color:var(--laterite);transform:translateY(-2px)}
 .doc-info{flex:1;min-width:200px}
-.doc-tag{font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(212,160,23,0.8);margin-bottom:6px}
+.doc-tag{font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(224,153,107,0.9);margin-bottom:6px}
 .doc-title{font-size:0.92rem;font-weight:600;color:var(--navy);margin-bottom:4px;line-height:1.4}
 .doc-sub{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--muted)}
 .doc-btn{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;background:var(--navy);color:#fff;padding:10px 18px;border-radius:4px;text-decoration:none;white-space:nowrap;flex-shrink:0}
@@ -76,17 +80,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .wa-btn{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:700;background:#25D366;color:#fff;padding:12px 24px;border-radius:4px;text-decoration:none;white-space:nowrap}
 
 /* Footer */
-footer{background:var(--navy);padding:48px 0 24px}
-.footer-grid{max-width:1100px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:32px}
-.fbrand{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:12px}
-.fdesc{font-size:0.85rem;color:rgba(255,255,255,0.45);line-height:1.6}
-.fhead{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(212,160,23,0.7);margin-bottom:14px}
+footer{background:var(--emerald);padding:56px 0 28px}
+.footer-inner{max-width:1180px;margin:0 auto;padding:0 40px;display:grid;gap:60px;margin-bottom:40px}
+.fbrand{font-family:'Zilla Slab',serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:12px}
 .flinks{list-style:none}
 .flinks li{margin-bottom:8px}
-.flinks a{font-size:0.83rem;color:rgba(255,255,255,0.45);text-decoration:none}
+.flinks a{font-size:0.85rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
 .flinks a:hover{color:var(--gold)}
-.footer-bottom{max-width:1100px;margin:0 auto;padding:20px 40px 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-.footer-bottom span{font-family:'DM Sans',sans-serif;font-size:0.7rem;color:rgba(255,255,255,0.3)}
+.footer-bottom{max-width:1180px;margin:0 auto;padding:24px 40px 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom span{font-family:'DM Sans',sans-serif;font-size:0.72rem;color:rgba(255,255,255,0.3)}
 
 @media(max-width:900px){
   nav{padding:0 20px}
@@ -94,7 +96,7 @@ footer{background:var(--navy);padding:48px 0 24px}
   .nav-toggle{display:flex}
   .container{padding:0 20px}
   .doc-grid2{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .footer-inner{grid-template-columns:1fr !important;gap:28px}
   .hero h1{font-size:1.8rem}
   .hero-stats{gap:24px}
 }
@@ -106,30 +108,41 @@ footer{background:var(--navy);padding:48px 0 24px}
 </style>
 </head>
 <body>
-<nav>
-<a class="nav-brand" href="/">Le Couloir <span>du Savoir</span></a>
+<div class="masthead">
+<div class="masthead-row1">
+<span>Cadre de réflexion &amp; d'encadrement · depuis 2010</span>
+<span>lecouloirdusavoir.com</span>
+</div>
+<div class="masthead-row2">
+<a class="nav-brand" href="index.html">Le Couloir <span>du Savoir</span></a>
 <ul class="nav-links">
 <li><a href="index.html#about">Le Site</a></li>
 <li><a href="index.html#concepts">Concepts</a></li>
-<li><a href="index.html#publications">Articles</a></li>
+<li><a href="index.html#publications">Articles &amp; Contributions</a></li>
 <li><a href="creaq.html">CREAQ</a></li>
 <li><a href="lu-pour-vous.html">Lu pour Vous</a></li>
-<li><a class="active" href="ressources.html">Ressources</a></li>
+<li><a href="ressources.html" style="color:var(--gold)">Ressources</a></li>
 <li><a href="espace-inspecteurs.html">Inspecteurs</a></li>
+<li><a href="espace-rh-management.html">RH &amp; Management</a></li>
+<li><a href="partenariats.html">Partenariats</a></li>
 <li><a href="index.html#contact">Contact</a></li>
-<li><a href="a-propos.html">A propos</a></li>
+<li><a href="a-propos.html">À propos</a></li>
 </ul>
 <div class="nav-toggle" onclick="document.getElementById('mn').classList.toggle('open')">
 <span></span><span></span><span></span>
 </div>
-</nav>
+</div>
+</div>
 <div class="mobile-nav" id="mn">
-<a href="/">Accueil</a>
-<a href="index.html#publications">Articles</a>
+<a href="index.html">Accueil</a>
+<a href="index.html#publications">Articles &amp; Contributions</a>
 <a href="creaq.html">CREAQ</a>
+<a href="lu-pour-vous.html">Lu pour Vous</a>
 <a href="ressources.html">Ressources</a>
 <a href="espace-inspecteurs.html">Inspecteurs</a>
-<a href="a-propos.html">A propos</a>
+<a href="espace-rh-management.html">RH &amp; Management</a>
+<a href="partenariats.html">Partenariats</a>
+<a href="a-propos.html">À propos</a>
 </div>
 <!-- HERO -->
 <div class="hero">
@@ -1065,6 +1078,15 @@ footer{background:var(--navy);padding:48px 0 24px}
 <a class="doc-btn" href="soumare-linguistique.pdf" rel="noopener" target="_blank">Télécharger</a>
 <a href="https://wa.me/221763615562?text=Bonjour%2C%20j%27ai%20telecharge%20un%20document%20sur%20Le%20Couloir%20du%20Savoir.%20Je%20souhaite%20recevoir%20les%20prochains%20documents." rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.7rem;color:#25D366;text-decoration:none;white-space:nowrap;flex-shrink:0" target="_blank">📲 Recevoir les prochains</a>
 </div>
+<div class="doc-card">
+<div class="doc-info">
+<p class="doc-tag">Gestion pédagogique - Classe multigrade</p>
+<p class="doc-title">La gestion des classes spéciales : la classe multigrade</p>
+<p class="doc-sub">Mbeugou Diongue - Inspecteur de l'Éducation à la retraite, ex Formateur au CRFPE de Kaolack. Techniques de décrochage, alternance et intégration totale, instruments de gestion et 8 annexes pratiques (emplois du temps, journal de classe, fiches pédagogiques).</p>
+</div>
+<a class="doc-btn" href="diongue-classe-multigrade.pdf" rel="noopener" target="_blank">Télécharger</a>
+<a href="https://wa.me/221763615562?text=Bonjour%2C%20j%27ai%20telecharge%20un%20document%20sur%20Le%20Couloir%20du%20Savoir.%20Je%20souhaite%20recevoir%20les%20prochains%20documents." rel="noopener" style="font-family:'DM Sans',sans-serif;font-size:0.7rem;color:#25D366;text-decoration:none;white-space:nowrap;flex-shrink:0" target="_blank">📲 Recevoir les prochains</a>
+</div>
 </div>
 <p style="font-size:0.88rem;color:var(--muted);margin-top:28px">
       Vous êtes inspecteur ou directeur et souhaitez partager un document ?
@@ -1240,23 +1262,26 @@ footer{background:var(--navy);padding:48px 0 24px}
 <div class="doc-card"><div class="doc-info"><p class="doc-tag">Eaux et Forêts - Sciences naturelles</p><p class="doc-title">Eaux et Forêts - Sciences naturelles et culture environnementale</p><p class="doc-sub">L'équipe du Couloir du Savoir. Écosystèmes du Sénégal, biodiversité, parcs nationaux, sujets de dissertation avec plans.</p></div><a class="doc-btn" href="concours_12_eaux_forets_culture.pdf" rel="noopener" target="_blank">↓ Télécharger</a></div>
 </div>
 <footer>
-<div class="footer-grid">
+<div class="footer-inner" style="grid-template-columns:2fr 1fr 1fr">
 <div>
-<p class="fbrand">Le Couloir du Savoir</p>
-<p class="fdesc">Bibliothèque éducative pour les praticiens de l'éducation en Afrique francophone.</p>
+<div class="fbrand">Le Couloir du Savoir <span style="color:rgba(255,255,255,0.4);font-style:italic;font-weight:400">· Bibliothèque éducative</span></div>
+<p style="font-size:0.85rem;color:rgba(255,255,255,0.4);line-height:1.7;margin-bottom:16px">Décrets officiels, guides pédagogiques, textes réglementaires et outils de formation pour les praticiens de l'éducation en Afrique francophone.</p>
+<a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20Le%20Couloir%20du%20Savoir." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-family:sans-serif;font-size:0.78rem;font-weight:600;padding:10px 18px;border-radius:4px;text-decoration:none">📱 WhatsApp</a>
 </div>
 <div>
-<p class="fhead">Navigation</p>
+<p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Navigation</p>
 <ul class="flinks">
-<li><a href="/">Accueil</a></li>
-<li><a href="index.html#publications">Articles</a></li>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="index.html#publications">Articles &amp; Contributions</a></li>
 <li><a href="creaq.html">CREAQ</a></li>
+<li><a href="lu-pour-vous.html">Lu pour Vous</a></li>
 <li><a href="espace-inspecteurs.html">Espace Inspecteurs</a></li>
-<li><a href="a-propos.html">A propos</a></li>
+<li><a href="espace-rh-management.html">RH &amp; Management</a></li>
+<li><a href="a-propos.html">À propos</a></li>
 </ul>
 </div>
 <div>
-<p class="fhead">Ressources</p>
+<p style="font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Ressources</p>
 <ul class="flinks">
 <li><a href="#textes-officiels">Textes officiels</a></li>
 <li><a href="#pedagogie">Pédagogie générale</a></li>
@@ -1269,8 +1294,8 @@ footer{background:var(--navy);padding:48px 0 24px}
 </div>
 </div>
 <div class="footer-bottom">
-<span>2026 Le Couloir du Savoir - MBM</span>
-<span>Bibliothèque éducative francophone - Senegal</span>
+<span>© 2026 <strong style="color:var(--gold)">Le Couloir du Savoir</strong> · Bibliothèque éducative francophone · Sénégal</span>
+<div style="display:flex;gap:0;height:16px;border-radius:2px;overflow:hidden"><span style="width:16px;height:16px;background:#00853F"></span><span style="width:16px;height:16px;background:#FDEF42"></span><span style="width:16px;height:16px;background:#E31B23"></span></div>
 </div>
 </footer>
 <script>
