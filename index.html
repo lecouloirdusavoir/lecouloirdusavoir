@@ -92,6 +92,8 @@ body{font-family:'Literata',Georgia,serif;background:var(--cream);color:var(--te
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(14,107,124,0.12) 0%,transparent 70%);pointer-events:none}
 .hero-left{padding:80px 60px 80px 80px;position:relative;z-index:2}
 .hero-eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.hero-logo{width:72px;height:72px;border-radius:14px;margin-bottom:24px;box-shadow:0 6px 20px rgba(0,0,0,0.25);flex-shrink:0}
+.hero-logo svg{display:block;width:100%;height:100%;border-radius:14px}
 .hero h1{font-family:'Zilla Slab',serif;font-size:clamp(2.2rem,4.5vw,3.4rem);font-weight:900;color:var(--white);line-height:1.15;margin-bottom:16px}
 .hero h1 em{color:var(--gold);font-style:italic}
 .hero-tagline{font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:rgba(224,153,107,0.8);margin-bottom:20px}
@@ -210,7 +212,7 @@ footer{background:var(--emerald);padding:56px 0 28px}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity 0.65s ease,transform 0.65s ease}
 .reveal.visible{opacity:1;transform:none}
 .rd1{transition-delay:0.1s}.rd2{transition-delay:0.2s}.rd3{transition-delay:0.3s}.rd4{transition-delay:0.4s}
-@media(max-width:900px){.masthead{padding:0.7rem 20px 0}.nav-links{display:none}.nav-toggle{display:flex}.hero{grid-template-columns:1fr;min-height:auto;padding-bottom:40px}.hero-left{padding:50px 24px 24px}.hero-right{padding:0 24px 40px;gap:12px}.stats{grid-template-columns:repeat(3,1fr)}.stat{padding:18px 10px}.stat-n{font-size:1.4rem}.acces-rapide-inner{padding:0 20px}.nl-inner{flex-direction:column;gap:24px;padding:0 24px}.nl-text{min-width:auto}.nl-form-wrap{min-width:auto;width:100%}.concepts-grid{grid-template-columns:1fr}.pub-grid{grid-template-columns:1fr}.pub-card.feat{grid-column:span 1;flex-direction:column}.contact-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}.container{padding:0 20px}.form-row{grid-template-columns:1fr}}
+@media(max-width:900px){.masthead{padding:0.7rem 20px 0}.nav-links{display:none}.nav-toggle{display:flex}.hero{grid-template-columns:1fr;min-height:auto;padding-bottom:40px}.hero-left{padding:50px 24px 24px}.hero-logo{width:56px;height:56px;margin-bottom:18px}.hero-right{padding:0 24px 40px;gap:12px}.stats{grid-template-columns:repeat(3,1fr)}.stat{padding:18px 10px}.stat-n{font-size:1.4rem}.acces-rapide-inner{padding:0 20px}.nl-inner{flex-direction:column;gap:24px;padding:0 24px}.nl-text{min-width:auto}.nl-form-wrap{min-width:auto;width:100%}.concepts-grid{grid-template-columns:1fr}.pub-grid{grid-template-columns:1fr}.pub-card.feat{grid-column:span 1;flex-direction:column}.contact-grid{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}.container{padding:0 20px}.form-row{grid-template-columns:1fr}}
 @media(max-width:480px){.stats{grid-template-columns:repeat(2,1fr)}.hero-ctas{flex-direction:column}.hero-ctas .btn-p,.hero-ctas .btn-o{text-align:center}.acces-rapide{display:none}}
 </style>
 </head>
@@ -233,6 +235,34 @@ footer{background:var(--emerald);padding:56px 0 28px}
 </div>
 <section class="hero" id="top">
   <div class="hero-left">
+    <div class="hero-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+        <defs>
+          <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#E85D04"/>
+            <stop offset="100%" stop-color="#FFB627"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="200" height="200" rx="24" fill="#ffffff"/>
+        <g transform="translate(30,18)">
+          <rect x="0" y="34" width="140" height="86" fill="#0F4C3A"/>
+          <path d="M-8 34 L70 -6 L148 34 Z" fill="#0F4C3A"/>
+          <rect x="12" y="50" width="10" height="70" fill="#ffffff"/>
+          <rect x="30" y="50" width="10" height="70" fill="#ffffff"/>
+          <rect x="100" y="50" width="10" height="70" fill="#ffffff"/>
+          <rect x="118" y="50" width="10" height="70" fill="#ffffff"/>
+          <rect x="-8" y="120" width="156" height="10" fill="#0F4C3A"/>
+          <path d="M48 120 L48 64 Q70 42 92 64 L92 120 Z" fill="#ffffff"/>
+          <g transform="translate(10,58)">
+            <path d="M60 4 C48 18 42 30 42 40 C42 52 50 60 60 60 C70 60 78 52 78 40 C78 30 72 18 60 4 Z" fill="url(#flameGrad)"/>
+            <path d="M60 20 C54 28 51 34 51 40 C51 47 55 51 60 51 C65 51 69 47 69 40 C69 34 66 28 60 20 Z" fill="#FFD166" opacity="0.85"/>
+          </g>
+        </g>
+        <text x="100" y="178" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="11" font-weight="700">
+          <tspan fill="#0F4C3A">Le Couloir du </tspan><tspan fill="#D4A017">Savoir</tspan>
+        </text>
+      </svg>
+    </div>
     <p class="hero-eyebrow">Laboratoire de la Stivation · Afrique subsaharienne</p>
     <h1>Le Couloir<br/><em>du Savoir</em></h1>
     <p class="hero-tagline">Laboratoire de la Stivation</p>
