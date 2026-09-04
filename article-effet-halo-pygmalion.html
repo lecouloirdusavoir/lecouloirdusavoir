@@ -263,13 +263,13 @@
 <!-- ═══ PRÉCHARGEMENT POLICES ═══ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 :root {
   --navy: #0F4C3A;
-  --gold: #D4A017;
+  --gold: #E0996B;
   --cream: #FDFAF3;
   --text: #2A2A2A;
   --muted: #6B7280;
@@ -278,14 +278,14 @@
   --danger: #9B1C1C;
   --danger-light: #FEF2F2;
   --rule: #e8e0d5;
-  --accent: #b8420a;
+  --accent: #A8461D;
   --accent-light: #fdf0e8;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Literata', Georgia, 'Times New Roman', serif;
   background: var(--cream);
   color: var(--text);
   line-height: 1.8;
@@ -324,9 +324,9 @@ nav {
   display: flex; align-items: center; justify-content: space-between;
   padding: 0 40px; height: 66px;
   background: rgba(15,76,58,0.97);
-  border-bottom: 1px solid rgba(212,160,23,0.25);
+  border-bottom: 1px solid rgba(224,153,107,0.25);
 }
-.nav-brand { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--gold); text-decoration: none; }
+.nav-brand { font-family:'Zilla Slab', serif; font-size: 1.05rem; font-weight: 700; color: var(--gold); text-decoration: none; }
 .nav-brand span { color: #fff; font-weight: 400; font-style: italic; }
 .nav-links { display: flex; gap: 22px; list-style: none; }
 .nav-links a { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 500; color: rgba(255,255,255,0.72); text-decoration: none; letter-spacing: 0.09em; text-transform: uppercase; }
@@ -348,7 +348,7 @@ nav {
   content: '';
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(212,160,23,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(224,153,107,0.12) 0%, transparent 60%),
     radial-gradient(ellipse 40% 60% at 10% 80%, rgba(14,107,124,0.08) 0%, transparent 60%);
   pointer-events: none;
 }
@@ -365,7 +365,7 @@ nav {
 
 /* ── LA QUESTION QUI ACCROCHE ── */
 .hero-question {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: clamp(13px, 1.8vw, 17px);
   font-weight: 400; font-style: italic;
   color: rgba(255,255,255,0.55);
@@ -376,7 +376,7 @@ nav {
 }
 
 .hero h1 {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: clamp(28px, 5vw, 54px);
   font-weight: 900; line-height: 1.08;
   color: #fff; margin-bottom: 10px;
@@ -407,7 +407,7 @@ nav {
   flex-wrap: wrap;
 }
 .rosenthal-num {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 56px; font-weight: 900;
   color: var(--navy); line-height: 1; flex-shrink: 0;
 }
@@ -435,7 +435,7 @@ article { padding: 56px 0 0; }
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 28px; font-weight: 700;
   color: var(--navy); margin: 56px 0 16px;
   line-height: 1.25;
@@ -443,7 +443,7 @@ h2 {
 h2 em { color: var(--gold); font-style: italic; }
 
 h3 {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 19px; font-weight: 400; font-style: italic;
   color: var(--accent); margin: 32px 0 10px;
 }
@@ -469,9 +469,9 @@ article a:hover { border-bottom-color: var(--accent); }
 .interpel::before {
   content: '?';
   position: absolute; right: 24px; top: -10px;
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 140px; font-style: italic; font-weight: 900;
-  color: rgba(212,160,23,0.07); line-height: 1;
+  color: rgba(224,153,107,0.07); line-height: 1;
   pointer-events: none;
 }
 .interpel-label {
@@ -481,7 +481,7 @@ article a:hover { border-bottom-color: var(--accent); }
   color: var(--gold); margin-bottom: 14px;
 }
 .interpel p {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 19px; font-style: italic;
   color: #fff; line-height: 1.6;
   margin-bottom: 0;
@@ -498,7 +498,7 @@ blockquote {
   border-left: 4px solid var(--gold);
 }
 blockquote p {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 19px; font-style: italic;
   line-height: 1.55; color: var(--navy); margin: 0;
 }
@@ -536,7 +536,7 @@ blockquote cite {
 .effet-card.halo .effet-card-label { color: var(--gold); }
 .effet-card.pygmalion .effet-card-label { color: rgba(14,107,124,0.9); }
 .effet-card h3 {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 20px; font-weight: 700; font-style: normal;
   margin: 0 0 12px; line-height: 1.2;
 }
@@ -615,7 +615,7 @@ blockquote cite {
   color: var(--accent); margin-bottom: 12px;
 }
 .scene p {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 17px; font-style: italic;
   line-height: 1.65; color: var(--text);
   margin-bottom: 10px;
@@ -665,7 +665,7 @@ blockquote cite {
   color: var(--gold); margin-bottom: 12px;
 }
 .stiv-link h3 {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 18px; font-weight: 700; color: var(--navy);
   margin-bottom: 12px; font-style: normal;
 }
@@ -688,7 +688,7 @@ blockquote cite {
   display: flex; gap: 16px; align-items: flex-start;
 }
 .phrase-quote {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 16px; font-style: italic;
   color: var(--danger); line-height: 1.4;
   flex: 1;
@@ -711,7 +711,7 @@ blockquote cite {
   display: flex; gap: 16px; align-items: flex-start;
 }
 .contre-quote {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 16px; font-style: italic;
   color: var(--teal); line-height: 1.4;
   flex: 1;
@@ -736,7 +736,7 @@ blockquote cite {
 .implication-disc {
   width: 40px; height: 40px; border-radius: 50%;
   background: var(--navy); color: var(--gold);
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 18px; font-weight: 700;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0; margin-top: 2px;
@@ -757,8 +757,8 @@ blockquote cite {
   display: inline-block; margin-top: 8px;
   font-size: 11px; font-weight: 700;
   letter-spacing: 0.1em; text-transform: uppercase;
-  background: rgba(212,160,23,0.1); color: var(--gold);
-  border: 1px solid rgba(212,160,23,0.25);
+  background: rgba(224,153,107,0.1); color: var(--gold);
+  border: 1px solid rgba(224,153,107,0.25);
   padding: 2px 10px; border-radius: 2px;
 }
 
@@ -788,7 +788,7 @@ blockquote cite {
 .reco-card.collective .reco-niveau { color: var(--gold); }
 .reco-card.institutionnelle .reco-niveau { color: var(--navy); }
 .reco-card h4 {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 15px; font-weight: 700; color: var(--navy);
   margin-bottom: 8px; line-height: 1.3;
 }
@@ -810,7 +810,7 @@ blockquote cite {
   color: var(--gold); margin-bottom: 20px;
 }
 .autocritique h3 {
-  font-family: 'Playfair Display', serif;
+  font-family:'Zilla Slab', serif;
   font-size: 20px; font-weight: 700; color: #fff;
   margin-bottom: 20px; font-style: normal;
   border-bottom: 1px solid rgba(255,255,255,0.1);

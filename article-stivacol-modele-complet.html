@@ -8,22 +8,22 @@
 <meta name="description" content="Modèle de développement professionnel intégré pour les équipes pédagogiques en Afrique subsaharienne. Théorisation, cadre conceptuel, dispositifs opérationnels et évidence d'impact sur les performances scolaires."/>
 <meta name="keywords" content="STIVACOL, Stivation, CREAQ, TDI, développement professionnel, équipes pédagogiques, Afrique subsaharienne, Sénégal, efficacité collective, leadership scolaire"/>
 <meta name="author" content="MBM"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Literata:ital,opsz,wght@0,18..144,400;0,18..144,500;1,18..144,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-:root{--navy:#0F4C3A;--teal:#0E6B7C;--gold:#D4A017;--sand:#F5EED8;--cream:#FDFAF3;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF;--rust:#B85533}
+:root{--navy:#0F4C3A;--teal:#0E6B7C;--gold:#E0996B;--sand:#F5EED8;--cream:#FDFAF3;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF;--rust:#B85533}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+body{font-family:'Literata',Georgia,serif;background:var(--cream);color:var(--text);overflow-x:hidden}
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--sand)}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
 
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:62px;background:rgba(15,76,58,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,160,23,0.22)}
-.nav-brand{font-family:'Playfair Display',serif;font-size:1rem;font-weight:700;color:var(--gold);text-decoration:none}.nav-brand span{color:var(--white);font-weight:400;font-style:italic}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:62px;background:rgba(15,76,58,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(224,153,107,0.22)}
+.nav-brand{font-family:'Zilla Slab',serif;font-size:1rem;font-weight:700;color:var(--gold);text-decoration:none}.nav-brand span{color:var(--white);font-weight:400;font-style:italic}
 .nav-back{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}.nav-back:hover{color:var(--gold)}
 
 .article-hero{margin-top:62px;background:var(--navy);padding:70px 40px 50px;text-align:center}
-.article-category{display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(212,160,23,0.4);padding:4px 14px;border-radius:20px;margin-bottom:24px}
-.article-hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3.2rem);font-weight:700;color:var(--white);line-height:1.2;max-width:860px;margin:0 auto 16px}
-.sous-titre{font-family:'Source Serif 4',serif;font-size:1rem;font-style:italic;color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 24px;line-height:1.65}
+.article-category{display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(224,153,107,0.4);padding:4px 14px;border-radius:20px;margin-bottom:24px}
+.article-hero h1{font-family:'Zilla Slab',serif;font-size:clamp(1.8rem,4vw,3.2rem);font-weight:700;color:var(--white);line-height:1.2;max-width:860px;margin:0 auto 16px}
+.sous-titre{font-family:'Literata',serif;font-size:1rem;font-style:italic;color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 24px;line-height:1.65}
 .article-meta{font-family:'DM Sans',sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
 
 /* TOC */
@@ -37,8 +37,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 
 .article-intro{font-size:1.05rem;font-style:italic;color:var(--navy);line-height:1.9;margin-bottom:44px;padding:28px 32px;background:var(--sand);border-left:4px solid var(--gold);border-radius:0 8px 8px 0}
 
-.article-body h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--navy);margin:56px 0 18px;padding-bottom:12px;border-bottom:2px solid var(--sand)}
-.article-body h3{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:600;color:var(--teal);margin:36px 0 14px}
+.article-body h2{font-family:'Zilla Slab',serif;font-size:1.5rem;font-weight:700;color:var(--navy);margin:56px 0 18px;padding-bottom:12px;border-bottom:2px solid var(--sand)}
+.article-body h3{font-family:'Zilla Slab',serif;font-size:1.15rem;font-weight:600;color:var(--teal);margin:36px 0 14px}
 .article-body h4{font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy);margin:28px 0 10px}
 .article-body p{font-size:1rem;line-height:1.9;color:var(--text);margin-bottom:20px}
 .article-body strong{color:var(--navy);font-weight:600}
@@ -47,7 +47,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .partie-label{display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--white);background:var(--navy);padding:3px 12px;border-radius:3px;margin-bottom:12px}
 
 .citation-bloc{background:rgba(14,107,124,0.07);border-left:4px solid var(--teal);padding:24px 28px;margin:36px 0;border-radius:0 8px 8px 0}
-.citation-bloc p{font-family:'Playfair Display',serif;font-size:1.02rem;font-style:italic;color:var(--navy);line-height:1.75;margin:0 0 10px}
+.citation-bloc p{font-family:'Zilla Slab',serif;font-size:1.02rem;font-style:italic;color:var(--navy);line-height:1.75;margin:0 0 10px}
 .citation-bloc cite{font-family:'DM Sans',sans-serif;font-size:0.78rem;color:var(--muted);font-style:normal}
 
 .encadre{background:rgba(15,76,58,0.04);border:1px solid rgba(15,76,58,0.12);border-radius:10px;padding:24px 28px;margin:32px 0}
@@ -57,22 +57,22 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 
 .dimensions-grille{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:32px 0}
 .dim-carte{background:var(--sand);border-radius:10px;padding:18px 20px;border-top:3px solid var(--gold)}
-.dim-carte .dim-num{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--gold);margin-bottom:4px}
+.dim-carte .dim-num{font-family:'Zilla Slab',serif;font-size:1.4rem;font-weight:700;color:var(--gold);margin-bottom:4px}
 .dim-carte .dim-titre{font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:600;color:var(--navy);margin-bottom:6px}
 .dim-carte .dim-desc{font-size:0.85rem;line-height:1.65;color:var(--muted)}
 
 .terrains-grille{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:32px 0}
 .terrain{background:var(--navy);border-radius:10px;padding:22px 20px;text-align:center}
 .terrain .lieu{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.12em;color:var(--gold);margin-bottom:8px}
-.terrain .chiffre{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--white);margin-bottom:4px}
+.terrain .chiffre{font-family:'Zilla Slab',serif;font-size:1.8rem;font-weight:700;color:var(--white);margin-bottom:4px}
 .terrain .detail{font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(255,255,255,0.55);line-height:1.5}
 
 .effet{display:flex;align-items:flex-start;gap:16px;padding:18px 20px;background:var(--sand);border-radius:10px;margin-bottom:12px}
-.effet-chiffre{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;color:var(--gold);min-width:60px;text-align:center}
+.effet-chiffre{font-family:'Zilla Slab',serif;font-size:1.5rem;font-weight:700;color:var(--gold);min-width:60px;text-align:center}
 .effet-desc{font-size:0.9rem;line-height:1.65;color:var(--text)}
 
 .bibliographie{background:var(--sand);border-radius:10px;padding:36px 40px;margin-top:60px}
-.bibliographie h2{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--navy);margin-bottom:24px;border-bottom:1px solid rgba(212,160,23,0.3);padding-bottom:14px}
+.bibliographie h2{font-family:'Zilla Slab',serif;font-size:1.2rem;color:var(--navy);margin-bottom:24px;border-bottom:1px solid rgba(224,153,107,0.3);padding-bottom:14px}
 .bibliographie ul{list-style:none;padding:0}
 .bibliographie li{font-size:0.88rem;line-height:1.75;color:var(--text);margin-bottom:10px;padding-left:16px;border-left:2px solid var(--gold)}
 

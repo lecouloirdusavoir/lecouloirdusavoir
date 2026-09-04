@@ -189,13 +189,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Literata:ital,opsz,wght@0,18..144,400;0,18..144,500;1,18..144,400&display=swap');
 
   :root {
     --ink: #1a1714;
     --ink-muted: #5a534e;
     --ink-light: #9a918a;
-    --accent: #b8420a;
+    --accent: #A8461D;
     --accent-light: #f5ece6;
     --rule: #ddd6ce;
     --bg: #faf8f5;
@@ -207,7 +207,7 @@
   body {
     background: var(--bg);
     color: var(--ink);
-    font-family: 'Source Serif 4', Georgia, serif;
+    font-family:'Literata', Georgia, serif;
     font-size: 18px;
     line-height: 1.8;
   }
@@ -235,7 +235,7 @@
     pointer-events: none;
   }
   .hero-kicker {
-    font-family: 'Source Serif 4', serif;
+    font-family:'Literata', serif;
     font-size: 11px;
     font-weight: 300;
     letter-spacing: 0.2em;
@@ -245,7 +245,7 @@
     display: block;
   }
   .hero h1 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family:'Zilla Slab', Georgia, serif;
     font-size: clamp(28px, 5vw, 52px);
     font-weight: 700;
     line-height: 1.15;
@@ -294,7 +294,7 @@
 
   /* ── BODY ── */
   h2 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family:'Zilla Slab', Georgia, serif;
     font-size: 26px;
     font-weight: 700;
     color: var(--ink);
@@ -302,7 +302,7 @@
     line-height: 1.3;
   }
   h3 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family:'Zilla Slab', Georgia, serif;
     font-size: 19px;
     font-weight: 400;
     font-style: italic;
@@ -320,7 +320,7 @@
     border-radius: 0 4px 4px 0;
   }
   blockquote p {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family:'Zilla Slab', Georgia, serif;
     font-size: 20px;
     font-style: italic;
     line-height: 1.5;
@@ -353,7 +353,7 @@
     border-radius: 0 0 4px 4px;
   }
   .actor-card h4 {
-    font-family: 'Source Serif 4', serif;
+    font-family:'Literata', serif;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.1em;
@@ -402,7 +402,7 @@
     min-width: 56px;
     background: var(--ink);
     color: var(--white);
-    font-family: 'Playfair Display', serif;
+    font-family:'Zilla Slab', serif;
     font-size: 22px;
     font-style: italic;
     text-align: center;
@@ -492,7 +492,7 @@
     text-transform: uppercase; padding: 5px 14px; border-radius: 2px; margin-bottom: 20px;
   }
   .showcase-title {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family:'Zilla Slab', Georgia, serif;
     font-size: 24px; font-weight: 700; line-height: 1.25; color: var(--ink); margin-bottom: 16px;
   }
   .ceremony {
@@ -505,7 +505,7 @@
     border-radius: 50%; transform: translate(40%,-40%);
   }
   .ceremony-header { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
-  .ceremony-title { font-family: 'Playfair Display', serif; font-size: 19px; font-style: italic; color: var(--white); margin-bottom: 24px; line-height: 1.4; }
+  .ceremony-title { font-family:'Zilla Slab', serif; font-size: 19px; font-style: italic; color: var(--white); margin-bottom: 24px; line-height: 1.4; }
   .ceremony-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
   @media (max-width: 600px) { .ceremony-grid { grid-template-columns: 1fr; } }
   .ceremony-block { border-top: 1px solid rgba(255,255,255,0.12); padding-top: 14px; }
@@ -521,12 +521,12 @@
     border: 1px solid var(--rule); border-left: 4px solid var(--accent);
     background: var(--white); padding: 22px 26px; margin: 28px 0; border-radius: 0 4px 4px 0;
   }
-  .field-quote p { font-family: 'Playfair Display', serif; font-size: 18px; font-style: italic; line-height: 1.55; color: var(--ink); margin: 0 0 10px; }
+  .field-quote p { font-family:'Zilla Slab', serif; font-size: 18px; font-style: italic; line-height: 1.55; color: var(--ink); margin: 0 0 10px; }
   .field-quote cite { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-light); font-style: normal; }
   .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0 32px; }
   @media (max-width: 600px) { .why-grid { grid-template-columns: 1fr; } }
   .why-item { display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; background: var(--white); border: 0.5px solid var(--rule); border-radius: 4px; }
-  .why-num { font-family: 'Playfair Display', serif; font-size: 28px; font-style: italic; color: var(--accent); line-height: 1; flex-shrink: 0; opacity: 0.45; }
+  .why-num { font-family:'Zilla Slab', serif; font-size: 28px; font-style: italic; color: var(--accent); line-height: 1; flex-shrink: 0; opacity: 0.45; }
   .why-text { font-size: 13px; line-height: 1.6; color: var(--ink-muted); padding-top: 4px; }
   .why-text strong { color: var(--ink); font-weight: 400; }
 
@@ -569,7 +569,7 @@
   }
   .crisis-inner { padding: 24px 26px; }
   .crisis-title {
-    font-family: 'Playfair Display', serif;
+    font-family:'Zilla Slab', serif;
     font-size: 15px;
     font-style: italic;
     color: #7b1a1a;
@@ -609,7 +609,7 @@
     justify-content: center; flex-shrink: 0; font-size: 20px;
   }
   .teacher-header-text h4 {
-    font-family: 'Playfair Display', serif;
+    font-family:'Zilla Slab', serif;
     font-size: 17px; font-weight: 700; color: var(--white); margin-bottom: 2px;
   }
   .teacher-header-text span {
@@ -656,7 +656,7 @@
     color: var(--accent); margin-bottom: 14px;
   }
   .ministry-salute-title {
-    font-family: 'Playfair Display', serif;
+    font-family:'Zilla Slab', serif;
     font-size: 22px; font-style: italic; color: var(--white);
     line-height: 1.4; max-width: 540px; margin: 0 auto 18px;
   }
