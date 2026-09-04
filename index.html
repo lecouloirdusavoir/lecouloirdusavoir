@@ -412,14 +412,10 @@ footer{background:var(--emerald);padding:56px 0 28px}
   <div class="nl-inner">
     <div class="nl-text">
       <h2>📬 Restez connecté au Couloir du Savoir</h2>
-      <p>Nouveaux articles, chroniques CREAQ et ressources éducatives directement dans votre boîte mail. Gratuit, sans spam.</p>
+      <p>Nouveaux articles, chroniques CREAQ et ressources éducatives, directement sur WhatsApp. Gratuit, sans spam.</p>
     </div>
     <div class="nl-form-wrap">
-      <form class="nl-form" onsubmit="inscrireNL(event)">
-        <input type="email" placeholder="votre@email.com" required aria-label="Votre adresse e-mail"/>
-        <button type="submit">S'inscrire</button>
-      </form>
-      <div class="nl-ok" id="nl-ok">✅ Merci ! Vous recevrez nos prochains articles.</div>
+      <a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20souhaite%20recevoir%20les%20nouveaux%20articles%20du%20Couloir%20du%20Savoir." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-family:'DM Sans',sans-serif;font-size:0.85rem;font-weight:700;padding:12px 24px;border-radius:4px;text-decoration:none;white-space:nowrap">📲 Rejoindre sur WhatsApp</a>
       <p class="nl-mention">Désinscription possible à tout moment.</p>
     </div>
   </div>
@@ -845,9 +841,7 @@ footer{background:var(--emerald);padding:56px 0 28px}
         </div>
       </div>
 
-
-
-
+      <div class="pub-card feat reveal" style="border-left-color:#4A7C6F">
         <div style="width:4px;background:#4A7C6F;border-radius:2px 0 0 2px;flex-shrink:0"></div>
         <div>
           <span class="pub-cat cat-mo">Bilinguisme scolaire &middot; Langues nationales &middot; <span style="background:#4A7C6F;color:#fff;padding:1px 7px;border-radius:10px;font-size:0.6rem;font-weight:700">Nouveau</span></span>
@@ -1631,7 +1625,6 @@ document.addEventListener('click',function(e){var nav=document.getElementById('m
 var reveals=document.querySelectorAll('.reveal');
 var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('visible');}});},{threshold:0.1});
 reveals.forEach(function(el){observer.observe(el);});
-function inscrireNL(e){e.preventDefault();var input=e.target.querySelector('input[type="email"]');var ok=document.getElementById('nl-ok');input.value='';input.style.display='none';e.target.querySelector('button').style.display='none';ok.style.display='block';}
 function envoyerMessage(){var prenom=document.querySelector('.finput[placeholder="Prénom"]').value;var email=document.querySelector('.finput[placeholder="votre@email.com"]').value;var sujet=document.querySelector('.finput[placeholder="Sujet de votre message"]').value;var msg=document.querySelector('.ftextarea').value;if(!prenom||!email||!msg){return;}var texte=encodeURIComponent('Bonjour, je vous écris depuis Le Couloir du Savoir.\n\nNom : '+prenom+'\nEmail : '+email+'\nSujet : '+sujet+'\n\n'+msg);window.open('https://wa.me/221763615562?text='+texte,'_blank');document.getElementById('form-ok').style.display='block';}
 </script>
 </body>
