@@ -2,10 +2,64 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="keywords" content="Stivation, milieu allostérique, Giordan, styles cognitifs, apprentissage profond Afrique"/>
-  <title>La Stivation comme milieu allostérique · Le Couloir du Savoir</title>
-  <link rel="stylesheet" href="../css/style.css">
-<meta name="description" content="Quand la Stivation rencontre le modèle allostérique de Giordan : comment les styles cognitifs des pairs deviennent des leviers d'apprentissage profond."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Stivation comme milieu allostérique : quand les styles cognitifs des pairs deviennent des leviers d'apprentissage informel · Le Couloir du Savoir</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Literata:ital,opsz,wght@0,18..144,400;0,18..144,500;1,18..144,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+:root{--emerald:#0F4C3A;--teal:#0E6B7C;--gold:#E0996B;--laterite:#A8461D;--cream:#FDFAF3;--text:#2A2A2A;--muted:#6B7280;--white:#FFFFFF;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Literata',Georgia,serif;background:var(--cream);color:var(--text);line-height:1.8}
+
+nav{background:rgba(15,76,58,1);padding:0.85rem 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.6rem;border-bottom:1px solid rgba(224,153,107,0.2)}
+.nav-logo{font-family:'Zilla Slab',serif;font-size:1.05rem;font-weight:700}
+.nav-logo a{color:var(--gold);text-decoration:none}
+.nav-logo span{color:#fff;font-weight:400;font-style:italic}
+.nav-links{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
+.nav-links a{font-family:'DM Sans',sans-serif;font-size:0.72rem;font-weight:500;color:rgba(255,255,255,0.72);text-decoration:none;letter-spacing:0.09em;text-transform:uppercase}
+.nav-links a:hover{color:var(--gold)}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.nav-toggle span{width:22px;height:2px;background:var(--gold);border-radius:2px;display:block}
+
+.article-page{max-width:760px;margin:0 auto;padding:0 24px 80px}
+.back-link{display:inline-block;margin:28px 0 0;font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;color:var(--teal);text-decoration:none;letter-spacing:0.03em}
+.back-link:hover{color:var(--laterite)}
+
+header{background:linear-gradient(135deg,var(--emerald) 0%,#145c46 100%);color:#fff;border-radius:8px;padding:44px 40px 40px;margin:24px 0 40px;text-align:center}
+.article-badge{display:inline-block;font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:20px}
+.badge-stivation{background:var(--gold);color:var(--emerald)}
+.badge-motivation{background:var(--teal);color:#fff}
+header h1{font-family:'Zilla Slab',serif;font-weight:700;font-size:clamp(1.5rem,3.4vw,2.1rem);line-height:1.3;margin-bottom:18px}
+header .chapeau{font-family:'Literata',Georgia,serif;font-style:italic;font-size:1.02rem;color:rgba(255,255,255,0.78);line-height:1.7;max-width:620px;margin:0 auto 20px}
+header .author{font-family:'DM Sans',sans-serif;font-size:0.82rem;color:rgba(255,255,255,0.6);margin-bottom:4px}
+header p.meta{font-family:'DM Sans',sans-serif;font-size:0.76rem;color:rgba(255,255,255,0.5)}
+header p.meta strong{color:var(--gold)}
+
+.article-content{font-family:'DM Sans',sans-serif;font-size:0.98rem;color:var(--text);line-height:1.85}
+.article-content p{margin-bottom:1.2em;text-align:justify;hyphens:auto}
+.article-content h2{font-family:'Zilla Slab',serif;color:var(--emerald);font-size:1.35rem;font-weight:700;margin:2em 0 0.8em;padding-bottom:0.5rem;border-bottom:2px solid rgba(15,76,58,0.12)}
+.article-content h3{font-family:'Zilla Slab',serif;color:var(--teal);font-size:1.05rem;font-weight:700;margin:1.6em 0 0.6em}
+.article-content em{color:var(--laterite);font-style:italic}
+.article-content blockquote{background:#fff;border-left:4px solid var(--gold);border-radius:0 8px 8px 0;padding:1.3rem 1.6rem;margin:1.8em 0;font-family:'Zilla Slab',serif;font-style:italic;color:var(--emerald);font-size:1rem;line-height:1.65;box-shadow:0 2px 8px rgba(15,76,58,0.05)}
+.article-content blockquote cite{display:block;margin-top:0.7rem;font-family:'DM Sans',sans-serif;font-style:normal;font-size:0.75rem;color:var(--muted)}
+
+.keywords{margin-top:2.5rem;padding-top:1.4rem;border-top:1px solid rgba(15,76,58,0.1);font-family:'DM Sans',sans-serif;font-size:0.78rem;color:var(--muted);line-height:1.7}
+.keywords strong{color:var(--emerald)}
+
+footer{background:var(--emerald);padding:30px 24px;margin-top:40px}
+.footer-inner{max-width:760px;margin:0 auto}
+.footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:'DM Sans',sans-serif;font-size:0.78rem;color:rgba(255,255,255,0.5)}
+.footer-bottom a{text-decoration:none}
+
+@media(max-width:640px){
+  nav{padding:0.7rem 20px}
+  .nav-links{display:none}
+  .nav-toggle{display:flex}
+  header{padding:32px 24px 28px}
+  .article-page{padding:0 18px 60px}
+}
+</style>
 </head>
 <body>
 <nav>
@@ -23,7 +77,7 @@
   <header>
     <div class="meta"><span class="article-badge badge-stivation">Stivation · Analyse comparée</span></div>
     <h1>La Stivation comme milieu allostérique : quand les styles cognitifs des pairs deviennent des leviers d'apprentissage informel</h1>
-    <p class="chapeau">Trois modèles mis en dialogue : le modèle allostérique de Giordan, les styles cognitifs de Perraudeau, et le concept de la Stivation. Ce que chacun apporte à l'autre, et ce que leur rencontre produit de nouveau.</p>
+    <p class="chapeau">Trois modèles mis en dialogue : le modèle allostérique de Giordan, les styles cognitifs de Perraudeau, et le concept de la Stivation. L'apport de chacun aux deux autres, et la découverte inédite que fait naître leur rencontre.</p>
     <p class="author">Mouhamadou Bamba MBAYE, Inspecteur de l'Enseignement Élémentaire, Ministère de l'Éducation Nationale, Sénégal</p>
   </header>
   <div class="article-content">
@@ -56,7 +110,7 @@
 
     <p>La contribution théorique centrale de cet article peut se formuler ainsi : dans un espace de stivation, le groupe lui-même fonctionne comme milieu allostérique au sens de Giordan. Ce ne sont pas les dispositifs institutionnels qui provoquent la transformation des conceptions préalables. C'est la rencontre entre styles cognitifs contrastés, dans un espace libéré de la contrainte évaluative.</p>
 
-    <p>Cette reformulation a des implications pratiques considérables. Elle justifie la constitution délibérément hétérogène des groupes de formation : non par souci d'équité formelle, mais parce que cette hétérogénéité est le carburant de la stivation. Elle légitime le retrait bienveillant du formateur : non par démission pédagogique, mais parce que sa présence risque de neutraliser le mécanisme allostérique peer-to-peer. Elle confirme l'efficacité du CREAQ, dont les groupes réunissent systématiquement des profils pédagogiques différents.</p>
+    <p>Cette reformulation a des implications pratiques considérables. La constitution délibérément hétérogène des groupes de formation s'en trouve justifiée : non par souci d'équité formelle, mais parce que cette hétérogénéité est le carburant de la stivation. Le retrait bienveillant du formateur se légitime dans le même mouvement, non comme démission pédagogique mais parce que sa présence risque de neutraliser le mécanisme allostérique peer-to-peer. Et l'efficacité du CREAQ s'en trouve confirmée, puisque ses groupes réunissent systématiquement des profils pédagogiques différents.</p>
 
     <h2>Conclusion</h2>
 
@@ -69,7 +123,7 @@
   <div class="footer-inner">
     <div class="footer-bottom">
       <span>© Le Couloir du Savoir · Éducation &amp; Psychologie · Afrique</span>
-      <a href="../index.html" style="color:#B0C4D8;">Retour à l'accueil</a>
+      <a href="../index.html" style="color:var(--gold);">Retour à l'accueil</a>
     </div>
   </div>
 </footer>
