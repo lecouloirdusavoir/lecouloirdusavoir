@@ -319,13 +319,10 @@ blockquote cite,
 }
 
 /* ── NAV ── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 40px; height: 66px;
-  background: rgba(15,76,58,0.97);
-  border-bottom: 1px solid rgba(224,153,107,0.25);
-}
+.masthead{background:rgba(15,76,58,1);padding:0.7rem 40px 0}
+.masthead-row1{display:flex;justify-content:space-between;font-family:'DM Sans',sans-serif;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.55);padding-bottom:0.6rem;border-bottom:1px solid rgba(224,153,107,0.2)}
+.masthead-row2{display:flex;align-items:baseline;justify-content:space-between;padding:0.85rem 0 0.8rem;flex-wrap:wrap;gap:0.6rem}
+
 .nav-brand { font-family:'Zilla Slab', serif; font-size: 1.05rem; font-weight: 700; color: var(--gold); text-decoration: none; }
 .nav-brand span { color: #fff; font-weight: 400; font-style: italic; }
 .nav-links { display: flex; gap: 22px; list-style: none; }
@@ -333,7 +330,7 @@ nav {
 .nav-links a:hover { color: var(--gold); }
 .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
 .nav-toggle span { width: 22px; height: 2px; background: var(--gold); border-radius: 2px; }
-.mobile-nav { display: none; position: fixed; top: 66px; left: 0; right: 0; background: rgba(15,76,58,0.98); z-index: 99; padding: 24px; flex-direction: column; gap: 4px; }
+.mobile-nav { display: none; left: 0; right: 0; background: rgba(15,76,58,0.98); z-index: 99; padding: 24px; flex-direction: column; gap: 4px; }
 .mobile-nav.open { display: flex; }
 .mobile-nav a { font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: rgba(255,255,255,0.75); text-decoration: none; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
 
@@ -506,7 +503,7 @@ blockquote cite {
   display: block; font-family: 'DM Sans', sans-serif;
   font-size: 11px; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--gold);
-  margin-top: 12px; font-style: normal; font-weight: 600;
+  font-style: normal; font-weight: 600;
 }
 
 /* ── DEUX EFFETS CÔTE À CÔTE ── */
@@ -549,7 +546,7 @@ blockquote cite {
 .effet-card.halo p { color: var(--muted); }
 .effet-card.pygmalion p { color: rgba(255,255,255,0.75); }
 .effet-card-exemple {
-  margin-top: 14px; padding-top: 14px;
+  padding-top: 14px;
   border-top: 1px solid;
   font-family: 'DM Sans', sans-serif;
   font-size: 13px; font-style: italic; line-height: 1.6;
@@ -831,7 +828,7 @@ blockquote cite {
 /* ── CONCLUSION FORTE ── */
 .conclusion {
   border-top: 2px solid var(--gold);
-  padding-top: 32px; margin-top: 48px; margin-bottom: 48px;
+  padding-top: 32px; margin-bottom: 48px;
 }
 .conclusion p {
   font-size: 18px; line-height: 1.85; margin-bottom: 20px;
@@ -839,7 +836,7 @@ blockquote cite {
 .conclusion p strong { color: var(--navy); }
 .conclusion-links {
   border-top: 1px solid var(--rule);
-  margin-top: 20px; padding-top: 16px;
+  padding-top: 16px;
   font-family: 'DM Sans', sans-serif;
   font-size: 14px; color: var(--muted); font-style: italic;
 }
@@ -853,7 +850,7 @@ blockquote cite {
 .btn-li { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 600; background: #0A66C2; color: #fff; padding: 10px 20px; border-radius: 4px; text-decoration: none; }
 
 /* ── FOOTER ── */
-footer { background: var(--navy); padding: 32px 40px 20px; margin-top: 60px; }
+footer { background: var(--navy); padding: 32px 40px 20px; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 16px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
 .footer-bottom span { font-family: 'DM Sans', sans-serif; font-size: 0.7rem; color: rgba(255,255,255,0.3); }
 
@@ -875,7 +872,13 @@ footer { background: var(--navy); padding: 32px 40px 20px; margin-top: 60px; }
 </head>
 <body>
 
-<nav>
+<div class="masthead">
+  <div class="masthead-row1">
+    <span>Cadre de réflexion &amp; d'encadrement · depuis 2010</span>
+    <span>lecouloirdusavoir.com</span>
+  </div>
+  <div class="masthead-row2">
+
   <a href="index.html" class="nav-brand">Le Couloir <span>du Savoir</span></a>
   <ul class="nav-links">
     <li><a href="index.html#about">Le Site</a></li>
@@ -891,7 +894,9 @@ footer { background: var(--navy); padding: 32px 40px 20px; margin-top: 60px; }
   <div class="nav-toggle" onclick="document.getElementById('mn').classList.toggle('open')">
     <span></span><span></span><span></span>
   </div>
-</nav>
+
+  </div>
+</div>
 <div class="mobile-nav" id="mn">
   <a href="index.html">Accueil</a>
   <a href="index.html#publications">Articles</a>
@@ -909,7 +914,7 @@ footer { background: var(--navy); padding: 32px 40px 20px; margin-top: 60px; }
       Ce matin, avant même que Khadim n'ouvre la bouche, tu avais déjà une idée de ce qu'il valait. Tu ne t'en es pas rendu compte : c'est arrivé en quelques secondes, sans décision consciente, sans mauvaise intention. Et pendant ce temps, à la maison, son père portait depuis des années une conviction du même ordre : que Khadim n'était pas fait pour réussir, que c'était ainsi, que certains enfants ont la tête et d'autres non. Deux adultes, deux certitudes forgées séparément, qui convergent vers le même enfant. Et cet enfant, sans qu'on lui ait rien dit explicitement, va passer l'année entière à les confirmer toutes les deux.
     </div>
 
-    <h1>Tu crois observer.<br/><em>Tu fabriques.</em></h1>
+    <h1>Tu crois observer, <em>tu fabriques</em></h1>
 
     <p class="hero-sub">L'effet halo et l'effet Pygmalion ne sont pas des théories lointaines. Ils opèrent dans ta classe, maintenant, sur des élèves réels. Ce que Rosenthal a prouvé en 1968 est encore plus vrai dans nos salles de classe sénégalaises : le regard d'un adulte sur un enfant n'est pas neutre. Il est prédictif. Il est formateur. Il est, parfois, dévastateur.</p>
 
