@@ -1,0 +1,14 @@
+DEPOT SUR GITHUB PAGES (racine du dépôt) : 4 fichiers à déposer ensemble
+
+1. guide-pedagogique-etape-2-revise.pdf   NOUVEAU (419 pages, 3,2 Mo, avec signets)
+2. guide-pedagogique-etape-2.html         NOUVEAU
+3. ressources.html                        REMPLACE l'existant
+4. sitemap.xml                            REMPLACE l'existant (109 -> 120 adresses)
+
+sitemap.xml : ajout de la page du guide, lastmod de ressources.html mis à jour, et 10 pages
+liées sur le site mais absentes du sitemap (ajoutées sans lastmod). Retirer celles qui ne
+doivent pas être indexées.
+
+Après mise en ligne : Search Console > Sitemaps (statut "Réussite"), puis Inspection de l'URL
+> guide-pedagogique-etape-2.html > Demander une indexation.
+GA4 : Admin > Événements > marquer file_download comme événement clé.
