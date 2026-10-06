@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://lecouloirdusavoir.com/ressources.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -714,11 +714,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lecouloirdusavoir.com/article-planification-apprentissages-senegal.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://lecouloirdusavoir.com/concours-ena-tests-psychotechniques.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -753,5 +748,11 @@
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://lecouloirdusavoir.com/mentions-legales.html</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
