@@ -1,425 +1,680 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>La Stivation numérique : repenser l'apprentissage informel à l'ère de la formation en ligne | Le Couloir du Savoir</title>
-<meta name="description" content="Comment le modèle de la Stivation s'applique à la formation en ligne, au distanciel et aux promotions multinationales. Un article académiquement référencé, destiné aux grandes écoles et instituts de formation, signé MBM."/>
-<meta name="keywords" content="Stivation numérique, formation en ligne, distanciel, social learning, apprentissage informel, FOAD, blended learning, andragogie, Le Couloir du Savoir"/>
-<meta property="og:title" content="La Stivation numérique : repenser l'apprentissage informel à l'ère de la formation en ligne"/>
-<meta property="og:type" content="article"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet"/>
-<style>
-:root{--navy:#0F4C3A;--gold:#D4A017;--gl:#f0d060;--cream:#fdf9f2;--text:#1a1a2e;--muted:#5a5a72;--border:#d4b84a;}
-*{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'Source Serif 4',Georgia,serif;background:var(--cream);color:var(--text);line-height:1.9;}
-.site-header{background:var(--navy);padding:.75rem 2rem;display:flex;align-items:center;justify-content:space-between;}
-.site-logo{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.15rem;text-decoration:none;}
-.site-nav a{color:rgba(255,255,255,.75);text-decoration:none;font-size:.82rem;margin-left:1.5rem;letter-spacing:.04em;text-transform:uppercase;}
-.site-nav a:hover{color:var(--gold);}
-
-/* HERO */
-.hero{background:var(--navy);color:#fff;padding:5rem 2rem 4.5rem;text-align:center;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 40px,rgba(212,160,23,.04) 40px,rgba(212,160,23,.04) 41px);}
-.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
-.hero-rubrique{display:inline-block;background:var(--gold);color:var(--navy);font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.4rem 1.2rem;margin-bottom:1.8rem;position:relative;}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);line-height:1.2;max-width:860px;margin:0 auto 1.5rem;position:relative;font-weight:700;}
-.hero h1 em{color:var(--gl);font-style:italic;}
-.hero-chapeau{font-size:1.08rem;color:rgba(255,255,255,.82);max-width:720px;margin:0 auto 2rem;line-height:1.8;position:relative;}
-.hero-meta{font-size:.78rem;color:rgba(255,255,255,.45);letter-spacing:.06em;text-transform:uppercase;position:relative;}
-.hero-meta span{color:var(--gold);margin:0 .4rem;}
-
-/* CORPS */
-.aw{max-width:780px;margin:0 auto;padding:4rem 1.5rem 6rem;}
-.accroche{font-family:'Playfair Display',serif;font-size:1.35rem;font-style:italic;color:var(--navy);border-left:4px solid var(--gold);padding:.9rem 1.6rem;margin-bottom:3.5rem;line-height:1.7;background:rgba(212,160,23,.06);}
-p{margin-bottom:1.55rem;font-size:1.03rem;}
-.sn{display:inline-block;background:var(--navy);color:var(--gold);font-size:.68rem;font-weight:700;letter-spacing:.1em;padding:.2rem .7rem;margin-bottom:.4rem;text-transform:uppercase;}
-.st{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--navy);margin:3.5rem 0 1.2rem;padding-bottom:.6rem;border-bottom:2px solid var(--gold);}
-
-/* CHIFFRE CHOC */
-.chiffre{background:var(--navy);color:#fff;padding:2.8rem 2rem;margin:3rem 0;text-align:center;}
-.chiffre .nb{font-family:'Playfair Display',serif;font-size:4.5rem;font-weight:700;color:var(--gold);line-height:1;display:block;margin-bottom:.6rem;}
-.chiffre .nb-label{font-size:.95rem;color:rgba(255,255,255,.8);line-height:1.7;max-width:540px;margin:0 auto;}
-.chiffre .nb-source{font-size:.68rem;color:rgba(255,255,255,.32);margin-top:.9rem;letter-spacing:.06em;text-transform:uppercase;font-style:italic;}
-
-/* ENCADRÉS */
-.encadre{border:2px solid var(--gold);padding:1.6rem 1.9rem;margin:3rem 0;position:relative;}
-.enc-label{position:absolute;top:-.75rem;left:1.2rem;background:var(--cream);padding:0 .5rem;font-size:.7rem;font-weight:700;letter-spacing:.1em;color:var(--navy);text-transform:uppercase;}
-.encadre.marine{background:var(--navy);color:#fff;border-color:var(--gold);}
-.encadre.marine .enc-label{background:var(--navy);color:var(--gold);}
-.encadre.marine p{color:rgba(255,255,255,.9);margin-bottom:1rem;}
-.encadre.marine strong{color:var(--gl);}
-.encadre.focus{background:rgba(15,76,58,.04);}
-
-/* CITATION */
-blockquote{font-family:'Playfair Display',serif;font-size:1.28rem;font-style:italic;color:var(--navy);text-align:center;padding:2.2rem 2rem;margin:3rem 0;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);line-height:1.6;}
-blockquote small{display:block;font-family:'Source Serif 4',serif;font-size:.78rem;font-style:normal;color:var(--muted);margin-top:.9rem;letter-spacing:.04em;}
-
-/* PENSEUR / REF */
-.ref{background:rgba(15,76,58,.05);border-left:4px solid var(--gold);padding:1.1rem 1.6rem;margin:2rem 0;font-size:.95rem;font-style:italic;color:var(--navy);line-height:1.8;}
-.ref strong{display:block;font-style:normal;font-size:.75rem;color:var(--muted);margin-top:.5rem;text-transform:uppercase;letter-spacing:.06em;}
-
-/* MODELE STIVATION NUMÉRIQUE */
-.modele-schema{background:var(--navy);padding:2.5rem 2rem;margin:3rem 0;border:2px solid rgba(212,160,23,.3);}
-.modele-titre{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.15rem;text-align:center;margin-bottom:2rem;}
-.modele-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;}
-@media(max-width:580px){.modele-grid{grid-template-columns:1fr;}}
-.modele-item{text-align:center;padding:1rem;}
-.modele-item .mi-lettre{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--gold);opacity:.7;line-height:1;margin-bottom:.5rem;}
-.modele-item .mi-mot{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.8rem;}
-.modele-item .mi-desc{font-size:.88rem;color:rgba(255,255,255,.82);line-height:1.6;}
-.modele-arrow{display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.5rem;opacity:.5;}
-
-/* BIBLIOGRAPHIE */
-.biblio{border-top:2px solid var(--gold);padding-top:2rem;margin-top:3.5rem;}
-.biblio h3{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--navy);margin-bottom:1.2rem;}
-.biblio p{font-size:.87rem;color:var(--muted);line-height:1.7;margin-bottom:.8rem;padding-left:1.5rem;text-indent:-1.5rem;}
-
-/* CONCLUSION */
-.concl{background:var(--navy);color:#fff;padding:3rem 2.5rem;margin:4rem 0 2rem;}
-.concl h3{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.4rem;margin-bottom:1.2rem;}
-.concl p{color:rgba(255,255,255,.88);margin-bottom:1.1rem;line-height:1.9;}
-
-/* AUTEUR & PARTAGE */
-.auteur-bloc{border-top:2px solid var(--gold);padding-top:1.5rem;margin-top:2rem;display:flex;align-items:flex-start;gap:1.2rem;}
-.auteur-ini{flex-shrink:0;width:52px;height:52px;background:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:700;}
-.auteur-info strong{display:block;color:var(--navy);font-size:.95rem;}
-.auteur-info span{font-size:.82rem;color:var(--muted);line-height:1.5;}
-.partage{text-align:center;padding:1.5rem 0 3rem;border-top:1px solid rgba(15,76,58,.12);margin-top:2rem;}
-.partage p{font-size:.85rem;color:var(--muted);margin-bottom:.8rem;}
-.btn{display:inline-block;background:#25D366;color:#fff;text-decoration:none;padding:.65rem 1.5rem;font-size:.85rem;font-weight:600;margin:.25rem;}
-.btn.fb{background:#1877f2;}
-
-footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;font-size:.78rem;padding:1.5rem 1rem;}
-footer a{color:var(--gold);text-decoration:none;}
-strong{color:var(--navy);}
-@media(max-width:600px){.site-nav{display:none;}.hero{padding:3rem 1.2rem 2.5rem;}.chiffre .nb{font-size:3rem;}}
-</style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>La Stivation numérique et la formation en ligne | Le Couloir du Savoir</title>
+<meta name="description" content="Abandon en formation à distance, groupes WhatsApp, modèle 70/20/10 : ce que la Stivation apprend aux instituts qui forment en ligne."/>
+<meta name="keywords" content="Stivation numérique, formation en ligne, formation à distance, apprentissage informel, apprentissage entre pairs, social learning, blended learning, andragogie"/>
+<meta name="author" content="MBM"/>
+<meta name="robots" content="index, follow, max-image-preview:large"/>
 <link rel="canonical" href="https://lecouloirdusavoir.com/article-stivation-numerique-formation-ligne.html"/>
-<meta property="og:url" content="https://lecouloirdusavoir.com/article-stivation-numerique-formation-ligne.html"/>
+<meta property="og:type" content="article"/>
 <meta property="og:site_name" content="Le Couloir du Savoir"/>
-<meta property="og:locale" content="fr_SN"/>
-<meta property="article:author" content="MBM · Le Couloir du Savoir"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:title" content="La Stivation numérique : repenser l'apprentissage informel à l'ère de la formation en ligne"/>
+<meta property="og:description" content="Abandon en formation à distance, groupes WhatsApp, modèle 70/20/10 : ce que la Stivation apprend aux instituts qui forment en ligne."/>
+<meta property="og:url" content="https://lecouloirdusavoir.com/article-stivation-numerique-formation-ligne.html"/>
+<meta property="og:image" content="https://lecouloirdusavoir.com/og-image.jpg"/>
 <meta property="article:published_time" content="2026-04-21"/>
-<meta property="article:section" content="Formation en ligne"/>
-<meta name="robots" content="index, follow"/>
+<meta property="article:section" content="Formation numérique"/>
+<meta property="article:tag" content="Stivation numérique"/>
+<meta property="article:tag" content="formation en ligne"/>
+<meta property="article:tag" content="formation à distance"/>
+<meta property="article:tag" content="apprentissage informel"/>
+<meta property="article:tag" content="apprentissage entre pairs"/>
+<meta property="article:tag" content="social learning"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="La Stivation numérique : repenser l'apprentissage informel à l'ère de la formation en ligne"/>
+<meta name="twitter:description" content="Abandon en formation à distance, groupes WhatsApp, modèle 70/20/10 : ce que la Stivation apprend aux instituts qui forment en ligne."/>
+<meta name="twitter:image" content="https://lecouloirdusavoir.com/og-image.jpg"/>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "La Stivation numérique : apprentissage informel en ligne",
-  "description": "Comment le modèle de la Stivation s'applique à la formation en ligne et au distanciel. Un article académiquement référencé, signé MBM.",
-  "author": {
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "@id": "https://lecouloirdusavoir.com/article-stivation-numerique-formation-ligne.html#article",
+   "headline": "La Stivation numérique : repenser l'apprentissage informel à l'ère de la formation en ligne",
+   "description": "Abandon en formation à distance, groupes WhatsApp, modèle 70/20/10 : ce que la Stivation apprend aux instituts qui forment en ligne.",
+   "image": "https://lecouloirdusavoir.com/og-image.jpg",
+   "author": {
     "@type": "Person",
-    "name": "Mouhamadou Bamba Mbaye",
-    "url": "https://lecouloirdusavoir.com"
-  },
-  "publisher": {
+    "name": "MBM",
+    "url": "https://lecouloirdusavoir.com/a-propos.html"
+   },
+   "publisher": {
     "@type": "Organization",
     "name": "Le Couloir du Savoir",
-    "url": "https://lecouloirdusavoir.com"
+    "url": "https://lecouloirdusavoir.com/"
+   },
+   "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://lecouloirdusavoir.com/article-stivation-numerique-formation-ligne.html"
+   },
+   "inLanguage": "fr",
+   "isAccessibleForFree": true,
+   "articleSection": "Formation numérique",
+   "keywords": "Stivation numérique, formation en ligne, formation à distance, apprentissage informel, apprentissage entre pairs, social learning, blended learning, andragogie",
+   "datePublished": "2026-04-21",
+   "dateModified": "2026-04-21"
   },
-  "datePublished": "2026-04-21",
-  "dateModified": "2026-04-21",
-  "url": "https://lecouloirdusavoir.com/article-stivation-numerique-formation-ligne.html",
-  "inLanguage": "fr",
-  "keywords": "Stivation numérique, formation en ligne, distanciel, apprentissage informel, Le Couloir du Savoir",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "Le Couloir du Savoir",
-    "url": "https://lecouloirdusavoir.com"
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Accueil",
+     "item": "https://lecouloirdusavoir.com/index.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Articles & Contributions",
+     "item": "https://lecouloirdusavoir.com/index.html#publications"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "La Stivation numérique",
+     "item": "https://lecouloirdusavoir.com/article-stivation-numerique-formation-ligne.html"
+    }
+   ]
   }
+ ]
 }
 </script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9SDJVY86L2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9SDJVY86L2');
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&amp;family=Literata:ital,opsz,wght@0,18..144,400;0,18..144,500;0,18..144,600;1,18..144,400&amp;family=DM+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+
+:root{--sand:#F5EED8;--rust:#B85533;--sage:#4A7C6F;--plum:#6B3F6E;--white:#FFFFFF;--emerald:#0F4C3A;--teal:#0E6B7C;--gold:#E0996B;--laterite:#A8461D;--cream:#FDFAF3;--text:#2A2A2A;--muted:#6B7280;--navy:#0F4C3A}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Literata',Georgia,serif;background:var(--cream);color:var(--text);line-height:1.85}
+.masthead{background:var(--emerald);padding:0.7rem 40px 0}
+.masthead-row1{display:flex;justify-content:space-between;font-family:'DM Sans',sans-serif;font-size:0.66rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.55);padding-bottom:0.6rem;border-bottom:1px solid rgba(224,153,107,0.2)}
+.masthead-row2{display:flex;align-items:baseline;justify-content:space-between;padding:0.85rem 0 0.8rem;flex-wrap:wrap;gap:0.6rem}
+.nav-brand{font-family:'Zilla Slab',serif;font-size:1.05rem;font-weight:700;color:var(--gold);text-decoration:none}
+.nav-brand span{color:#fff;font-weight:400;font-style:italic}
+.nav-links{display:flex;align-items:center;gap:17px;list-style:none;flex-wrap:wrap}
+.nav-links a{font-family:'DM Sans',sans-serif;font-size:0.67rem;font-weight:500;color:rgba(255,255,255,0.72);text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+button.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.nav-toggle span{width:22px;height:2px;background:var(--gold);border-radius:2px}
+.mobile-nav{display:none;background:rgba(15,76,58,0.98);padding:24px 24px 32px;flex-direction:column;gap:4px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(255,255,255,0.75);text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.container{max-width:1100px;margin:0 auto;padding:0 40px}
+
+.hero{background:var(--emerald);padding:56px 0 52px;border-bottom:2px solid rgba(224,153,107,0.3);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-60px;right:-60px;width:400px;height:400px;background:radial-gradient(circle,rgba(224,153,107,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:820px;position:relative;z-index:2}
+.eyebrow{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.eyebrow ol{list-style:none;display:flex;flex-wrap:wrap;gap:0 8px}
+.eyebrow li+li::before{content:'·';margin-right:8px}
+.eyebrow a{color:var(--gold);text-decoration:none}
+.eyebrow a:hover{text-decoration:underline}
+.hero h1{font-family:'Zilla Slab',serif;font-size:2.3rem;font-weight:900;color:#fff;margin-bottom:18px;line-height:1.2}
+.hero h1 em{color:var(--gold);font-style:italic}
+.art-meta{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.art-meta-item{font-family:'DM Sans',sans-serif;font-size:0.74rem;color:rgba(255,255,255,0.6)}
+.art-meta-item strong{color:rgba(255,255,255,0.88)}
+
+.art-body{max-width:800px;margin:0 auto;padding:56px 24px 88px}
+.chapeau{font-size:1.1rem;color:var(--navy);line-height:1.8;border-left:3px solid var(--gold);padding-left:22px;margin-bottom:44px;font-style:italic;text-align:justify}
+.art-body h2{font-family:'Zilla Slab',serif;font-size:1.6rem;font-weight:700;color:var(--navy);margin:54px 0 18px;line-height:1.3}
+.art-body h3{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--laterite);margin:32px 0 12px}
+.art-body p{margin-bottom:22px;font-size:1rem;text-align:justify}
+.art-body a{color:var(--teal)}
+.art-body ul.liste{margin:0 0 22px 22px}.art-body ul.liste li{margin-bottom:10px;line-height:1.75;text-align:justify}
+.note-source{font-family:'DM Sans',sans-serif;font-size:0.8rem !important;color:var(--muted);margin-top:-14px;text-align:left !important}
+
+.sommaire,.reglementaire,.lire-aussi,.faq-item{background:#fff;border:1px solid rgba(15,76,58,0.1);border-top:3px solid var(--laterite);border-radius:6px}
+.sommaire{padding:22px 26px;margin:0 0 40px}
+.som-label,.reg-label,.evo-label,.def-label,.biblio-label,.lire-label{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:12px}
+.som-label,.lire-label,.biblio-label,.def-label{color:var(--gold)}
+.reg-label,.evo-label{color:var(--laterite)}
+.sommaire ol{padding-left:20px;columns:2;column-gap:32px}
+.sommaire li{font-family:'DM Sans',sans-serif;font-size:0.84rem;line-height:1.55;margin-bottom:6px;break-inside:avoid}
+.sommaire a{color:var(--navy);text-decoration:none}
+.sommaire a:hover{color:var(--laterite)}
+
+.definition-box{background:var(--emerald);border-radius:8px;padding:28px 32px;margin:34px 0;border-bottom:2px solid rgba(224,153,107,0.3)}
+.definition-box p{color:rgba(255,255,255,0.88);margin-bottom:0}
+.definition-box p.def-label{color:var(--gold);margin-bottom:12px}
+.definition-box strong{color:var(--gold)}
+.reglementaire{padding:22px 26px;margin:32px 0}
+.reglementaire p{font-size:0.95rem;margin-bottom:0}
+.evolution-box{background:rgba(224,153,107,0.09);border-left:3px solid var(--gold);border-radius:4px;padding:22px 26px;margin:32px 0}
+.evolution-box p{font-size:0.95rem;margin-bottom:0}
+.evolution-box p.evo-label{margin-bottom:10px}
+
+/* Schéma de la triade */
+.schema{background:#fff;border:1px solid rgba(15,76,58,0.1);border-radius:8px;padding:20px 12px 14px;margin:34px 0}
+.schema svg{display:block;width:100%;height:auto;max-width:640px;margin:0 auto}
+.schema figcaption{font-family:'DM Sans',sans-serif;font-size:0.78rem;color:var(--muted);text-align:center;margin-top:8px;padding:0 16px}
+.sv-t{font-family:"Zilla Slab",serif;font-weight:700;font-size:16px}
+.sv-s{font-family:"DM Sans",sans-serif;font-size:12px;fill:#5b6470}
+.sv-c{font-family:"DM Sans",sans-serif;font-size:11px;font-weight:700;letter-spacing:.08em;fill:#A8461D}
+
+/* Tableaux */
+.table-wrap{overflow-x:auto;margin:30px 0}
+.miroir-table{width:100%;border-collapse:collapse;font-size:0.9rem;background:#fff}
+.miroir-table th{font-family:'DM Sans',sans-serif;font-size:0.66rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:12px 16px;text-align:left;background:var(--emerald);color:#fff}
+.miroir-table th.th-lat{background:var(--laterite)}
+.miroir-table td{padding:13px 16px;border-bottom:1px solid rgba(15,76,58,0.1);vertical-align:top;line-height:1.6}
+.miroir-table td.td-lat{background:rgba(168,70,29,0.04)}
+.miroir-table tr:last-child td{border-bottom:none}
+
+/* Trio */
+.trio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:32px 0}
+.trio-card{background:#fff;border:1px solid rgba(15,76,58,0.1);border-top:3px solid var(--emerald);border-radius:6px;padding:20px 22px}
+.trio-card.p2{border-top-color:var(--teal)}
+.trio-card.p3{border-top-color:var(--laterite)}
+.trio-card h3{font-family:'Zilla Slab',serif !important;font-size:1.2rem !important;text-transform:none !important;letter-spacing:0 !important;color:var(--navy) !important;margin:0 0 10px !important}
+.trio-card p{font-size:0.88rem !important;line-height:1.6 !important;margin-bottom:8px !important;text-align:left !important}
+.trio-card p.trio-tag{font-family:'DM Sans',sans-serif;font-size:0.68rem !important;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px !important}
+
+.faq-block{margin:40px 0}
+.faq-item{border-top-color:transparent;padding:20px 24px;margin-bottom:12px}
+.faq-item:hover{border-top-color:var(--laterite)}
+.faq-q{font-family:'Zilla Slab',serif;font-size:1.05rem;font-weight:600;color:var(--navy);margin-bottom:8px !important;text-align:left !important}
+.faq-a{font-size:0.93rem !important;margin-bottom:0 !important}
+
+.biblio{background:rgba(15,76,58,0.03);border:1px solid rgba(15,76,58,0.1);border-radius:6px;padding:22px 26px;margin:36px 0}
+.biblio p{font-size:0.86rem;line-height:1.7;color:var(--muted);margin-bottom:10px;text-align:left}
+.biblio p:last-child{margin-bottom:0}
+.lire-aussi{padding:22px 26px;margin:40px 0;border-top-color:var(--gold)}
+.lire-aussi ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.lire-aussi ul li a{font-family:'DM Sans',sans-serif;font-size:0.88rem;color:var(--navy);text-decoration:none;font-weight:500}
+.lire-aussi ul li a:hover{color:var(--laterite)}
+
+.conclusion{background:var(--emerald);border-radius:8px;padding:36px 40px;margin-top:52px;border-bottom:2px solid rgba(224,153,107,0.3)}
+.art-body .conclusion h2{color:var(--gold);font-size:1.35rem;margin:0 0 16px}
+.conclusion p{color:rgba(255,255,255,0.8);margin-bottom:18px}
+.conclusion p:last-child{margin-bottom:0}
+
+.share-block{margin-top:44px;padding-top:28px;border-top:1px solid rgba(15,76,58,0.1);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.share-label{font-family:'DM Sans',sans-serif;font-size:0.68rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted)}
+.sh-btn{font-family:'DM Sans',sans-serif;font-size:0.78rem;font-weight:600;padding:9px 18px;border-radius:4px;text-decoration:none;color:#fff}
+.art-body .sh-btn{color:#fff}
+
+footer{background:var(--emerald);padding:56px 0 28px}
+.footer-inner{max-width:1180px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:40px}
+.fbrand{font-family:'Zilla Slab',serif;font-size:1.1rem;font-weight:700;color:var(--gold);margin-bottom:12px}
+.fhead{font-family:'DM Sans',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.fdesc{font-size:0.85rem;color:rgba(255,255,255,0.45);line-height:1.7;margin-bottom:16px}
+.flinks{list-style:none}.flinks li{margin-bottom:8px}
+.flinks a{font-size:0.85rem;color:rgba(255,255,255,0.45);text-decoration:none}.flinks a:hover{color:var(--gold)}
+.footer-bottom{max-width:1180px;margin:0 auto;padding:24px 40px 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.footer-bottom span{font-family:'DM Sans',sans-serif;font-size:0.72rem;color:rgba(255,255,255,0.3)}
+
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@media(max-width:900px){
+  .masthead{padding:0.7rem 20px 0}.nav-links{display:none}button.nav-toggle{display:flex}
+  .container{padding:0 20px}.hero h1{font-size:1.75rem}
+  .art-body{padding:44px 20px 64px}.conclusion{padding:28px 24px}
+  .footer-inner{grid-template-columns:1fr;gap:28px;padding:0 20px}.footer-bottom{padding:24px 20px 0}
+  .miroir-table{font-size:0.8rem}.miroir-table th,.miroir-table td{padding:9px 10px}
+}
+@media(max-width:820px){.trio-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.sommaire ol{columns:1}.masthead-row1 span:last-child{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:var(--emerald);padding:8px 14px;font-family:"DM Sans",sans-serif;font-size:.8rem;z-index:10}.skip:focus{left:8px;top:8px}
+.tagrow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tag{font-family:'DM Sans',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:rgba(224,153,107,.14);color:var(--gold);border:1px solid rgba(224,153,107,.35);padding:4px 12px;border-radius:2px}
+.hero-sub{font-family:'DM Sans',sans-serif;font-size:1.02rem;color:rgba(255,255,255,.78);margin:-4px 0 18px;max-width:760px;line-height:1.6}
+.art-body h2 .section-num{color:var(--gold);margin-right:.35em}
+.art-body hr.section-divider{border:0;border-top:1px solid rgba(15,76,58,.15);margin:48px 0 0}
+.art-body strong{color:var(--navy)}
+.art-body blockquote{border-left:3px solid var(--gold);background:rgba(224,153,107,.07);padding:18px 24px;margin:30px 0;border-radius:0 4px 4px 0;font-style:italic}
+.art-body blockquote p{margin-bottom:10px}
+.art-body blockquote cite{display:block;font-family:'DM Sans',sans-serif;font-style:normal;font-size:.8rem;color:var(--muted)}
+.art-body .exergue{font-family:'Zilla Slab',serif;font-size:1.3rem;line-height:1.5;color:var(--navy);border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);padding:22px 8px;margin:36px 0;text-align:center;font-style:italic}
+/* encadrés historiques, harmonisés */
+.encadre,.encadre-vert,.encadre-navy,.encadre-ref,.encadre-protocole,.encadre-alerte,.resonances,.chapeau-redaction,.a-lire-aussi{background:#fff;border:1px solid rgba(15,76,58,.1);border-left:4px solid var(--gold);border-radius:6px;padding:22px 26px;margin:30px 0}
+.encadre-vert{border-left-color:var(--emerald);background:rgba(15,76,58,.04)}
+.encadre-navy{background:var(--emerald);border-color:var(--emerald);border-left-color:var(--gold)}
+.encadre-navy p{color:rgba(255,255,255,.88)}
+.encadre-navy .encadre-titre{color:var(--gold)}
+.encadre-ref{border-left-color:var(--teal);background:rgba(14,107,124,.04)}
+.encadre-ref p{font-style:italic}
+.encadre-protocole{border-left-color:var(--teal)}
+.encadre-alerte{border-left-color:var(--laterite);background:rgba(168,70,29,.04)}
+.resonances{border-left-color:var(--teal);background:rgba(14,107,124,.05)}
+.chapeau-redaction{border-left-color:var(--gold);background:rgba(224,153,107,.09)}
+.encadre-titre,.proto-titre,.alerte-titre,.ref-source,.label,.res-label,.concl-titre{display:block;font-family:'DM Sans',sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--laterite);margin-bottom:10px}
+.proto-titre{color:var(--teal)}
+.ref-source{color:var(--muted);font-style:normal;letter-spacing:.06em;text-transform:none;font-size:.78rem;margin:8px 0 0}
+.art-body :is(.encadre,.encadre-vert,.encadre-navy,.encadre-ref,.encadre-protocole,.encadre-alerte,.resonances,.chapeau-redaction,.a-lire-aussi) p:last-child{margin-bottom:0}
+.art-body :is(.encadre,.encadre-vert,.encadre-navy,.encadre-ref,.encadre-protocole,.encadre-alerte,.resonances,.chapeau-redaction) p{font-size:.95rem;margin-bottom:12px}
+.resonances ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.resonances ul a{font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:500;text-decoration:none}
+.a-lire-aussi{border-left-color:var(--gold)}
+.a-lire-aussi a.lien-interne{font-family:'DM Sans',sans-serif;font-weight:600;color:var(--navy);text-decoration:none}
+.a-lire-aussi a.lien-interne:hover{color:var(--laterite)}
+.art-body .a-lire-aussi .description-lien{font-size:.88rem;color:var(--muted);margin:6px 0 0;text-align:left}
+.chiffre-cle{display:flex;gap:22px;align-items:center;background:#fff;border:1px solid rgba(15,76,58,.1);border-top:3px solid var(--laterite);border-radius:6px;padding:20px 26px;margin:28px 0}
+.chiffre-valeur{font-family:'Zilla Slab',serif;font-weight:900;font-size:2.6rem;line-height:1;color:var(--laterite);flex:0 0 auto}
+.chiffre-desc{font-family:'DM Sans',sans-serif;font-size:.9rem;line-height:1.6}
+.prealables-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
+.prealable-bloc{background:#fff;border:1px solid rgba(15,76,58,.1);border-top:3px solid var(--emerald);border-radius:6px;padding:18px 20px}
+.prealable-bloc:nth-child(2){border-top-color:var(--teal)}.prealable-bloc:nth-child(3){border-top-color:var(--laterite)}
+.prealable-titre{font-family:'DM Sans',sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy);margin-bottom:10px}
+.prealable-bloc ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.prealable-bloc li{font-family:'DM Sans',sans-serif;font-size:.84rem;line-height:1.55;padding-left:14px;position:relative}
+.prealable-bloc li::before{content:'';position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.tableau-wrap{overflow-x:auto;margin:30px 0}
+.tableau-wrap table{width:100%;border-collapse:collapse;font-size:.9rem;background:#fff}
+.tableau-wrap caption{font-family:'DM Sans',sans-serif;font-size:.8rem;color:var(--muted);text-align:left;padding:0 0 8px}
+.tableau-wrap th{font-family:'DM Sans',sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:12px 16px;text-align:left;background:var(--emerald);color:#fff}
+.tableau-wrap td{padding:13px 16px;border-bottom:1px solid rgba(15,76,58,.1);vertical-align:top;line-height:1.6}
+.tableau-wrap tr:last-child td{border-bottom:none}
+.articles-lies{margin-top:48px}
+.articles-lies h2{margin-top:0}
+.grille-articles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.carte-article{display:block;background:#fff;border:1px solid rgba(15,76,58,.1);border-top:3px solid var(--laterite);border-radius:6px;padding:14px 18px;text-decoration:none}
+.carte-article:hover{border-top-color:var(--gold)}
+.art-body .carte-article p{margin:0 0 4px;text-align:left;line-height:1.45}
+.carte-article .cat{font-family:'DM Sans',sans-serif;font-size:.62rem !important;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.carte-article .titre{font-family:'Zilla Slab',serif;font-size:1.02rem !important;font-weight:600;color:var(--navy)}
+.article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:36px 0 8px}
+.article-tags a{font-family:'DM Sans',sans-serif;font-size:.74rem;font-weight:600;text-decoration:none;color:var(--navy);background:rgba(15,76,58,.06);border:1px solid rgba(15,76,58,.12);padding:5px 12px;border-radius:2px}
+.article-tags a:hover{color:var(--laterite)}
+.signature{display:flex;align-items:center;gap:16px;margin:44px 0 0;padding-top:24px;border-top:1px solid rgba(15,76,58,.12);font-style:normal}
+.signature .sig-avatar{width:46px;height:46px;border-radius:50%;background:var(--emerald);color:var(--gold);font-family:'Zilla Slab',serif;font-weight:700;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.signature .sig-bar{width:4px;align-self:stretch;background:var(--gold);border-radius:2px;flex:0 0 auto}
+.signature strong{display:block;font-family:'Zilla Slab',serif;font-size:1.05rem;color:var(--navy)}
+.signature span,.signature a{font-family:'DM Sans',sans-serif;font-size:.82rem;color:var(--muted)}
+.author-bio{background:rgba(15,76,58,.03);border:1px solid rgba(15,76,58,.1);border-radius:6px;padding:22px 26px;margin:36px 0 0}
+.author-bio .bio-label{font-family:'DM Sans',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.art-body .author-bio p{font-size:.92rem;text-align:left;margin-bottom:10px}
+.art-body .author-bio p:last-child{margin-bottom:0}
+.art-body .conclusion h2,.art-body .conclusion .concl-titre{font-family:'Zilla Slab',serif;font-size:1.35rem;color:var(--gold);margin:0 0 16px;text-transform:none;letter-spacing:0}
+.art-body .conclusion p{color:rgba(255,255,255,.82)}
+.share-block{margin-top:40px}
+@media(max-width:820px){.prealables-grid,.grille-articles{grid-template-columns:1fr}.chiffre-cle{flex-direction:column;align-items:flex-start;gap:10px}}
+
+/* Composants des articles alignés sur le gabarit */
+.hero-sub{font-family:'DM Sans',sans-serif;font-size:.92rem;color:rgba(255,255,255,.72);margin:-6px 0 18px}
+.note-red{background:#fff;border:1px solid rgba(15,76,58,.1);border-top:3px solid var(--gold);border-radius:6px;padding:22px 26px;margin:0 0 40px}
+.note-red .note-label{font-family:'DM Sans',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--laterite);margin-bottom:12px;text-align:left}
+.art-body .note-red p{font-size:.95rem;margin-bottom:12px}
+.art-body .note-red p:last-child{margin-bottom:0}
+.contrib-label{font-family:'DM Sans',sans-serif;font-size:.65rem !important;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 18px !important;text-align:left !important}
+.article-tags span{font-family:'DM Sans',sans-serif;font-size:.74rem;font-weight:600;color:var(--navy);background:rgba(15,76,58,.06);border:1px solid rgba(15,76,58,.12);padding:5px 12px;border-radius:2px}
+.causes-bloc{margin:36px 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cause-item{background:#fff;border:1px solid rgba(15,76,58,.1);border-top:3px solid var(--teal);border-radius:6px;padding:18px 20px}
+.cause-item strong{font-family:'Zilla Slab',serif;font-size:1.05rem;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;line-height:1.3}
+.art-body .cause-item p{font-size:.9rem;line-height:1.7;margin-bottom:0}
+.data-strip{background:var(--emerald);border-radius:8px;padding:30px;margin:40px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:24px;border-bottom:2px solid rgba(224,153,107,.3)}
+.data-item{text-align:center}
+.data-val{font-family:'Zilla Slab',serif;font-size:2rem;font-weight:700;color:var(--gold);display:block}
+.data-label{font-family:'DM Sans',sans-serif;font-size:.72rem;color:rgba(255,255,255,.62);line-height:1.45;display:block;margin-top:6px}
+.tension-box{display:grid;grid-template-columns:1fr 1fr;margin:36px 0;background:#fff;border:1px solid rgba(15,76,58,.12);border-radius:6px;overflow:hidden}
+.tension-col{padding:24px 26px}
+.tension-col:first-child{border-top:3px solid var(--laterite);border-right:1px solid rgba(15,76,58,.1)}
+.tension-col:last-child{border-top:3px solid var(--teal)}
+.art-body .tension-label{font-family:'DM Sans',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px;text-align:left}
+.tension-col:first-child .tension-label{color:var(--laterite)}
+.tension-col:last-child .tension-label{color:var(--teal)}
+.tension-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.tension-col li{font-family:'DM Sans',sans-serif;font-size:.88rem;line-height:1.5;padding-left:16px;position:relative}
+.tension-col li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.45}
+.leviers-liste{margin:32px 0}
+.levier{display:grid;grid-template-columns:44px 1fr;gap:18px;margin-bottom:26px;align-items:start}
+.levier-num{font-family:'Zilla Slab',serif;font-size:1.7rem;font-weight:700;color:var(--laterite);line-height:1;padding-top:2px}
+.levier-content strong{font-family:'Zilla Slab',serif;font-size:1.1rem;font-weight:600;color:var(--navy);display:block;margin-bottom:6px}
+.art-body .levier-content p{font-size:.96rem;margin-bottom:0}
+.alerte{background:rgba(168,70,29,.05);border-left:4px solid var(--laterite);border-radius:6px;padding:20px 24px;margin:32px 0}
+.art-body .alerte p{font-size:.95rem;margin-bottom:0}
+.alerte strong{color:var(--laterite)}
+.voix-card{background:#fff;border:1px solid rgba(15,76,58,.1);border-left:4px solid var(--teal);border-radius:6px;padding:22px 26px;margin:30px 0}
+.voix-card.stiv{border-left-color:var(--laterite)}
+.art-body .voix-label{font-family:'DM Sans',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:10px;text-align:left}
+.voix-card.stiv .voix-label{color:var(--laterite)}
+.art-body .voix-card p:last-child{margin-bottom:0}
+.miroir{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:32px 0}
+.miroir-col{background:#fff;border:1px solid rgba(15,76,58,.1);border-top:3px solid var(--teal);border-radius:6px;padding:20px 22px}
+.miroir-col+.miroir-col{border-top-color:var(--laterite)}
+.art-body .miroir-label{font-family:'Zilla Slab',serif;font-size:1.1rem;font-weight:600;color:var(--navy);margin-bottom:8px;text-align:left}
+.art-body .miroir-col p{font-size:.92rem;line-height:1.65;margin-bottom:0}
+.art-body .miroir-col p.miroir-label{margin-bottom:8px}
+.sources-block{background:rgba(15,76,58,.03);border:1px solid rgba(15,76,58,.1);border-radius:6px;padding:22px 26px;margin:36px 0}
+.art-body .src-label{font-family:'DM Sans',sans-serif;font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;text-align:left}
+.sources-block ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.sources-block a{font-family:'Zilla Slab',serif;font-size:1rem;font-weight:600;color:var(--navy);text-decoration:none;display:block}
+.sources-block a:hover{color:var(--laterite)}
+.sources-block span{font-family:'DM Sans',sans-serif;font-size:.8rem;color:var(--muted)}
+.sn{font-family:'DM Sans',sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--laterite);margin:54px 0 6px}
+.art-body .sn+h2{margin-top:0}
+.art-body ul.lp{list-style:none;margin:24px 0;display:flex;flex-direction:column;gap:14px}
+.art-body ul.lp li{background:#fff;border:1px solid rgba(15,76,58,.1);border-left:3px solid var(--teal);border-radius:6px;padding:16px 20px;line-height:1.75;text-align:justify}
+.art-body ul.lp li strong{display:block;font-family:'Zilla Slab',serif;font-size:1.05rem;font-weight:600;color:var(--navy);margin-bottom:4px;text-align:left}
+.definition-box p+p{margin-top:14px}
+.art-body .definition-box strong,.art-body .conclusion strong{color:var(--gold)}
+.signature-wrap{display:flex;align-items:center;gap:16px}
+.retour{font-family:'DM Sans',sans-serif;font-size:.85rem;margin-top:28px}
+.retour a{color:var(--teal);text-decoration:none}
+@media(max-width:700px){.causes-bloc,.tension-box,.miroir{grid-template-columns:1fr}.tension-col:first-child{border-right:none}}
+
+/* Composants complémentaires (gabarit ressources) */
+.art-body h4{font-family:'Zilla Slab',serif;font-size:1.08rem;font-weight:600;color:var(--navy);margin:0 0 8px}
+.art-body table{width:100%}
+.art-body ul:not([class]),.art-body ol:not([class]){margin:0 0 22px 22px}
+.art-body ul:not([class]) li,.art-body ol:not([class]) li{margin-bottom:8px;line-height:1.75;text-align:justify}
+.encadre .encadre-titre+p,.encadre .encadre-titre+ul{margin-top:0}
+.art-body .encadre ul{margin:0 0 0 20px}
+.art-body .encadre li{margin-bottom:8px;font-size:.95rem;line-height:1.7;text-align:justify}
+.art-body .definition-box ul{margin:10px 0 0 20px;color:rgba(255,255,255,.85)}
+.art-body .definition-box li{margin-bottom:6px;text-align:justify}
+.art-body .definition-box p+p{margin-top:12px}
+.stat-box{display:grid;grid-template-columns:auto 1fr;gap:6px 24px;align-items:center;background:var(--emerald);border-radius:8px;padding:26px 30px;margin:36px 0;border-bottom:2px solid rgba(224,153,107,.3)}
+.stat-box .nb{font-family:'Zilla Slab',serif;font-size:2.4rem;font-weight:700;color:var(--gold);line-height:1;grid-row:span 2}
+.art-body .stat-box .nb-label{font-size:.95rem;color:rgba(255,255,255,.88);line-height:1.6;text-align:justify}
+.art-body .stat-box .nb-source{font-family:'DM Sans',sans-serif;font-size:.74rem;color:rgba(255,255,255,.55);line-height:1.5}
+.ref{font-family:'DM Sans',sans-serif;font-size:.8rem;color:var(--muted);border-left:2px solid var(--gold);padding:4px 0 4px 14px;margin:-8px 0 26px;line-height:1.55}
+.ref strong{font-weight:500;color:var(--muted)}
+.art-body blockquote p{margin-bottom:8px}
+.art-body blockquote p:last-child{margin-bottom:0}
+.pilier-grid,.modele-grid,.principes-grid,.roles-grid,.signal-bloc,.dimensions-grille,.terrains-grille,.resultats,.concept-grid{display:grid;gap:12px;margin:30px 0}
+.pilier-grid,.modele-grid,.roles-grid,.terrains-grille,.resultats{grid-template-columns:repeat(3,1fr)}
+.principes-grid,.signal-bloc{grid-template-columns:1fr 1fr}
+.dimensions-grille{grid-template-columns:repeat(2,1fr)}
+.carte{background:#fff;border:1px solid rgba(15,76,58,.1);border-top:3px solid var(--teal);border-radius:6px;padding:20px 22px}
+.carte:nth-child(3n+2){border-top-color:var(--laterite)}
+.carte:nth-child(3n){border-top-color:var(--gold)}
+.art-body .carte-num{font-family:'Zilla Slab',serif;font-size:1.4rem;font-weight:700;color:var(--laterite);line-height:1;margin-bottom:8px}
+.art-body .carte-titre{font-family:'Zilla Slab',serif;font-size:1.08rem;font-weight:600;color:var(--navy);margin-bottom:6px;line-height:1.3}
+.art-body .carte-sous{font-family:'DM Sans',sans-serif;font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--laterite);margin-bottom:6px}
+.art-body .carte p:not([class]),.carte-desc{font-size:.9rem;line-height:1.65;margin-bottom:6px;text-align:left}
+.art-body .carte p:last-child{margin-bottom:0}
+.art-body .carte-action{font-family:'DM Sans',sans-serif;font-size:.82rem !important;font-weight:600;color:var(--teal)}
+.chiffres-terrain{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:30px 0}
+.chiffre-terrain{background:var(--emerald);border-radius:8px;padding:22px 20px;text-align:center;border-bottom:2px solid rgba(224,153,107,.3)}
+.chiffre-terrain .lieu{font-family:'DM Sans',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.chiffre-terrain .chiffre{font-family:'Zilla Slab',serif;font-size:1.8rem;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.1}
+.chiffre-terrain .detail{font-family:'DM Sans',sans-serif;font-size:.76rem;color:rgba(255,255,255,.62);line-height:1.5}
+.repere-chiffre{display:flex;align-items:center;gap:20px;background:rgba(224,153,107,.09);border-left:3px solid var(--gold);border-radius:4px;padding:18px 22px;margin:24px 0}
+.repere-chiffre .val{font-family:'Zilla Slab',serif;font-size:1.6rem;font-weight:700;color:var(--laterite);white-space:nowrap}
+.repere-chiffre .txt{font-size:.92rem;line-height:1.6}
+.geste{background:#fff;border:1px solid rgba(15,76,58,.1);border-left:3px solid var(--teal);border-radius:6px;padding:18px 22px;margin:14px 0;line-height:1.75;text-align:justify}
+.geste strong{display:block;font-family:'Zilla Slab',serif;font-size:1.05rem;font-weight:600;color:var(--navy);margin-bottom:4px;text-align:left}
+.formule{font-family:'Zilla Slab',serif;font-size:1.15rem;line-height:1.7;color:var(--navy);text-align:center;background:rgba(224,153,107,.09);border-radius:6px;padding:24px;margin:30px 0}
+.formule span{color:var(--laterite)}
+.badge{font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:2px;color:#fff;background:var(--teal)}
+.badge-conatif{background:var(--laterite)}
+.rituel-card{background:#fff;border:1px solid rgba(15,76,58,.1);border-top:3px solid var(--teal);border-radius:6px;padding:22px 26px;margin:26px 0}
+.art-body .rituel-titre{font-family:'Zilla Slab',serif;font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+.art-body .rituel-tag{display:block;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--laterite);margin-bottom:12px}
+.art-body .rituel-desc{font-size:.95rem;line-height:1.75;margin-bottom:12px;text-align:justify}
+.art-body .rituel-analyse{font-size:.93rem;line-height:1.75;background:rgba(15,76,58,.04);border-left:3px solid var(--gold);padding:14px 18px;border-radius:0 4px 4px 0;text-align:justify}
+.schema-wrap{background:#fff;border:1px solid rgba(15,76,58,.1);border-radius:8px;padding:20px 14px 14px;margin:30px 0}
+.schema-wrap svg{display:block;width:100%;height:auto;max-width:680px;margin:0 auto}
+.art-body .schema-caption{font-family:'DM Sans',sans-serif;font-size:.78rem;color:var(--muted);text-align:center;margin:10px 0 0}
+.declaration{background:rgba(15,76,58,.03);border:1px solid rgba(15,76,58,.1);border-radius:6px;padding:20px 24px;margin:36px 0}
+.art-body .declaration p{font-size:.9rem;margin-bottom:10px}
+.art-body .declaration p:last-child{margin-bottom:0}
+.biblio .biblio-label{display:block}
+.art-body .biblio p{text-align:left}
+.retour{font-family:'DM Sans',sans-serif;font-size:.85rem;margin-top:28px}
+.retour a{color:var(--teal);text-decoration:none}
+@media(max-width:820px){.pilier-grid,.modele-grid,.roles-grid,.terrains-grille,.resultats,.chiffres-terrain,.principes-grid,.signal-bloc,.dimensions-grille{grid-template-columns:1fr}.stat-box{grid-template-columns:1fr}.stat-box .nb{grid-row:auto}.repere-chiffre{flex-direction:column;align-items:flex-start}}
+</style>
 </head>
 <body>
-
-<header class="site-header">
-  <a href="https://lecouloirdusavoir.com" class="site-logo">Le Couloir du Savoir</a>
-  <nav class="site-nav">
-    <a href="https://lecouloirdusavoir.com/index.html">Accueil</a>
-    <a href="https://lecouloirdusavoir.com/espace-inspecteurs.html">Espace Inspecteurs</a>
-    <a href="https://lecouloirdusavoir.com/creaq.html">CREAQ</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="hero-rubrique">Stivation &amp; Formation numérique</div>
-  <h1>La Stivation numérique :<br><em>repenser l'apprentissage informel<br>à l'ère de la formation en ligne</em></h1>
-  <p class="hero-chapeau">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="masthead">
+<div class="masthead-row1"><span>Cadre de réflexion &amp; d'encadrement · depuis 2010</span><span>lecouloirdusavoir.com</span></div>
+<div class="masthead-row2">
+<a class="nav-brand" href="index.html">Le Couloir <span>du Savoir</span></a>
+<ul class="nav-links"><li><a href="index.html#about">Le Site</a></li><li><a href="index.html#concepts">Concepts</a></li><li><a href="index.html#publications" class="active">Articles &amp; Contributions</a></li><li><a href="creaq.html">CREAQ</a></li><li><a href="lu-pour-vous.html">Lu pour Vous</a></li><li><a href="ressources.html">Ressources</a></li><li><a href="espace-inspecteurs.html">Inspecteurs</a></li><li><a href="espace-rh-management.html">RH &amp; Management</a></li><li><a href="partenariats.html">Partenariats</a></li><li><a href="index.html#contact">Contact</a></li><li><a href="a-propos.html">À propos</a></li></ul>
+<button type="button" class="nav-toggle" onclick="toggleNav()" aria-label="Ouvrir le menu" aria-controls="mn"><span></span><span></span><span></span></button>
+</div></div>
+<div class="mobile-nav" id="mn"><a href="index.html">Accueil</a><a href="index.html#publications">Articles &amp; Contributions</a><a href="creaq.html">CREAQ</a><a href="lu-pour-vous.html">Lu pour Vous</a><a href="ressources.html">Ressources</a><a href="espace-inspecteurs.html">Inspecteurs</a><a href="espace-rh-management.html">RH &amp; Management</a><a href="partenariats.html">Partenariats</a><a href="a-propos.html">À propos</a></div>
+<header class="hero"><div class="container"><div class="hero-inner">
+<nav class="eyebrow" aria-label="Fil d'Ariane"><ol><li><a href="index.html">Accueil</a></li><li><a href="index.html#publications">Articles &amp; Contributions</a></li><li>La Stivation numérique</li></ol></nav>
+<h1>La Stivation numérique :<br><em>repenser l'apprentissage informel à l'ère de la formation en ligne</em></h1>
+<div class="art-meta"><span class="art-meta-item"><strong>MBM</strong> · Le Couloir du Savoir</span><span class="art-meta-item">Avril 2026</span><span class="art-meta-item">Lecture : 16 min</span></div>
+</div></div></header>
+<main class="art-body" id="contenu">
+<p class="chapeau">
     La formation à distance a-t-elle supprimé le couloir où naît la Stivation ? Les données de la recherche répondent non. Elles montrent que l'apprentissage informel entre pairs existe en ligne, mais qu'il est invisible, non organisé et que les institutions le laissent au hasard. Cet article propose une extension théorique du modèle et des repères opérationnels pour les grandes écoles et instituts de formation qui ont basculé vers le numérique.
   </p>
-  <div class="hero-meta">Par <span>MBM &bull; Le Couloir du Savoir</span> &bull; Avril 2026 <span>|</span> Formation numérique &amp; Andragogie</div>
-</section>
 
-<main class="aw">
-
-<p class="accroche">
-  Le modèle de la Stivation est né d'une observation de terrain : les apprentissages les plus durables se produisent dans les espaces informels que l'institution n'a pas prévus. Le couloir, la chambre du soir, la conversation autour d'un repas. La formation à distance a supprimé ces espaces physiques. Mais elle n'a pas supprimé le besoin qui les faisait exister. Et là est toute la question.
+<p>
+  Le modèle de la Stivation est né d'une observation de terrain : les apprentissages les plus durables se produisent dans les espaces informels que l'institution n'a pas prévus. Le couloir, la chambre du soir, la conversation autour d'un repas. La formation à distance a supprimé ces espaces physiques. Mais elle n'a pas supprimé le besoin qui les faisait exister.
 </p>
-
 <p>
   La formation en ligne s'est développée à une vitesse sans précédent. Accélérée par la crise sanitaire mondiale de 2020, généralisée ensuite par des raisons économiques et géographiques évidentes, elle représente aujourd'hui une part croissante de l'offre de formation des grandes écoles, des instituts privés et des organismes de formation professionnelle continue. Des promotions entières se constituent, se forment et se certifient sans que leurs membres ne se soient jamais rencontrés physiquement. Des apprenants venus de plusieurs pays, parfois de plusieurs continents, partagent les mêmes contenus, les mêmes formateurs et les mêmes objectifs de certification, séparés par des fuseaux horaires et des milliers de kilomètres.
 </p>
-
 <p>
   Dans ce nouveau paysage, le modèle de la Stivation doit s'interroger lui-même. Non pas pour se rétracter, mais pour s'élargir. Car la question posée est fondamentale : peut-on encore parler de Stivation quand il n'y a plus de couloir ?
 </p>
 
-<div>
-  <div class="sn">Partie 01</div>
-  <h2 class="st">Le paradoxe de la formation en ligne : plus de contenu, moins d'apprentissage profond</h2>
-</div>
+<p class="sn">Partie 01</p>
+<h2>Le paradoxe de la formation en ligne : plus de contenu, moins d'apprentissage profond</h2>
 
 <p>
   La formation en ligne a résolu de nombreux problèmes logistiques. Elle a rendu l'accès au savoir géographiquement et économiquement plus équitable. Elle a permis à des professionnels en activité de se former sans interrompre leur carrière. Elle a démocratisé des certifications autrefois réservées à ceux qui pouvaient se déplacer. Ces acquis sont réels et significatifs.
 </p>
-
 <p>
   Mais elle a introduit un paradoxe que la recherche documente avec une précision croissante. À mesure que la quantité de contenus disponibles en ligne augmentait exponentiellement, les taux d'achèvement et de rétention déclinaient. Les apprenants accèdent à plus de savoir que jamais. Ils en retiennent proportionnellement moins. Et ils abandonnent massivement.
 </p>
-
-<div class="chiffre">
-  <span class="nb">90 %</span>
-  <span class="nb-label">C'est le taux d'abandon moyen documenté dans les formations en ligne massives ouvertes. Selon une étude de l'Université de Pennsylvanie portant sur plus de 840 000 inscrits, seuls 4 % des participants vont au terme de leur parcours. Le MIT rapporte de son côté des taux de complétion oscillant entre 10 et 15 % pour ses propres formations en ligne.</span>
-  <span class="nb-source">Jordan, K. (2014). Initial trends in enrolment and completion of massive open online courses. International Review of Research in Open and Distance Learning, 15(1), 133–160.</span>
+<div class="stat-box">
+<span class="nb">90 %</span>
+<span class="nb-label">Ordre de grandeur couramment rapporté pour l'abandon dans les formations en ligne ouvertes et massives (MOOC). Une étude de l'Université de Pennsylvanie portant sur un million d'inscrits à seize cours Coursera (2012-2013) relève un taux d'achèvement moyen de 4 %, compris entre 2 et 14 % selon les cours.</span>
+<span class="nb-source">Perna, L. et al. (2013). The life cycle of a million MOOC users. University of Pennsylvania. Voir aussi Jordan, K. (2014).</span>
 </div>
-
 <p>
-  Ces chiffres sont éloquents. Mais leur interprétation est plus importante encore que les chiffres eux-mêmes. Pourquoi abandonne-t-on massivement une formation en ligne ? Les données de la DARES et de France Compétences, publiées en 2023, apportent une réponse nette : les formations à distance sont abandonnées neuf fois plus souvent que les formations en présentiel, avec un taux d'abandon de 18 % contre 2 % pour le présentiel. La principale cause invoquée n'est ni la difficulté du contenu ni les contraintes techniques. C'est l'isolement. L'apprenant à distance est seul. Et la solitude, en formation d'adultes, est un facteur d'abandon dont la puissance est systématiquement sous-estimée par les concepteurs de dispositifs.
+  Leur interprétation compte davantage que les chiffres eux-mêmes. Pourquoi abandonne-t-on massivement une formation en ligne ? L'étude de la DARES et de France compétences sur les usages du compte personnel de formation, publiée en 2023, apporte un repère : 18 % des formations entièrement suivies à distance sont abandonnées, contre 2 % des formations uniquement en présentiel. Les personnes concernées invoquent surtout le manque de temps ou un imprévu. La recherche sur la formation à distance met toutefois en avant un facteur plus diffus : l'isolement. L'apprenant à distance est seul. Et la solitude, en formation d'adultes, est un facteur d'abandon dont la puissance est systématiquement sous-estimée par les concepteurs de dispositifs.
+</p>
+<blockquote><p>La formation à distance induit un sentiment d'isolement qui constitue l'un des facteurs les plus déterminants de l'abandon. Ce sentiment est particulièrement prégnant chez les adultes qui n'ont pas internalisé la représentation d'eux-mêmes comme apprenants autonomes.</p><cite>D'après Papi, C., Sauvé, L., Desjardins, G. et Gérin-Lajoie, S. (2022). « De la multiplicité des facteurs à prendre en compte pour mieux comprendre l'abandon en formation à distance », Distances et médiations des savoirs, n° 37.</cite></blockquote>
+<p>
+  Ce résultat entre en résonance directe avec ce que le modèle de la Stivation affirme depuis 2010 : l'adulte apprend par et dans l'interaction. Quand l'interaction disparaît, l'apprentissage profond s'effrite. Les travaux sur l'abandon en formation à distance vont dans ce sens.
 </p>
 
-<div class="ref">
-  La formation à distance induit un sentiment d'isolement qui constitue l'un des facteurs les plus déterminants de l'abandon. Ce sentiment est particulièrement prégnant chez les adultes qui n'ont pas internalisé la représentation d'eux-mêmes comme apprenants autonomes.
-  <strong>Papi, C., Sauvé, L., Desjardins, G. et Gérin-Lajoie, S. (2022). « De la multiplicité des facteurs à prendre en compte pour mieux comprendre l'abandon en formation à distance », Distances et médiations des savoirs, n° 37.</strong>
-</div>
+<p class="sn">Partie 02</p>
+<h2>Le couloir, une fonction plutôt qu'un lieu</h2>
 
 <p>
-  Ce résultat entre en résonance directe avec ce que le modèle de la Stivation affirme depuis 2010 : l'adulte apprend par et dans l'interaction. Quand l'interaction disparaît, l'apprentissage profond s'effrite. Ce n'est pas une métaphore pédagogique. C'est un fait empiriquement documenté.
+  La première erreur de lecture du modèle de la Stivation est de le confondre avec une théorie des couloirs physiques. Le couloir n'est pas le modèle. Il en est la métaphore fondatrice. Le couloir incarne une fonction précise : l'espace informel d'interaction entre pairs, situé en dehors du cadre prescrit de la formation, où les apprenants parlent librement, confrontent leurs compréhensions, reformulent ce qu'ils n'ont pas compris, débattent de ce qui les a déstabilisés.
 </p>
-
-<div>
-  <div class="sn">Partie 02</div>
-  <h2 class="st">Ce que la Stivation dit du numérique : le couloir n'est pas un lieu, c'est une fonction</h2>
-</div>
-
 <p>
-  La première erreur de lecture du modèle de la Stivation est de le confondre avec une théorie des couloirs physiques. Le couloir n'est pas le modèle. Il en est la métaphore fondatrice. Ce que le couloir incarne, c'est une fonction précise : l'espace informel d'interaction entre pairs, situé en dehors du cadre prescrit de la formation, où les apprenants parlent librement, confrontent leurs compréhensions, reformulent ce qu'ils n'ont pas compris, débattent de ce qui les a déstabilisés.
+  Cette fonction existe-t-elle en ligne ? La réponse est oui. Mais elle s'exerce dans des espaces que les institutions n'ont pas organisés, qu'elles ne voient pas et qu'elles ne valorisent pas. La recherche commence à les documenter avec précision. Une enquête menée auprès de 603 étudiants de l'Université virtuelle de Côte d'Ivoire (Holo et Koné, 2022) montre que les réseaux et médias sociaux, WhatsApp en tête, occupent une place importante dans leurs pratiques d'apprentissage, à côté des outils fournis par l'établissement.
 </p>
-
+<blockquote><p>Les résultats montrent que les réseaux et médias sociaux sont davantage utilisés par les étudiants pour des raisons liées aux apprentissages que pour des considérations ludiques. Le recours aux groupes de travail informels est la conséquence d'un décalage entre les attentes des étudiants et les outils fournis par les établissements.</p><cite>D'après Holo, A. K. et Koné, T. (2022). Revue internationale des technologies en pédagogie universitaire, 19(2), 148-159.</cite></blockquote>
 <p>
-  Cette fonction existe-t-elle en ligne ? La réponse est oui. Mais elle s'exerce dans des espaces que les institutions n'ont pas organisés, qu'elles ne voient pas et qu'elles ne valorisent pas. La recherche commence à les documenter avec précision. Une étude menée à l'Université virtuelle de Côte d'Ivoire, publiée dans la Revue internationale des technologies en pédagogie universitaire, révèle que 88 % des étudiants en formation entièrement en ligne utilisent WhatsApp comme support principal pour leurs travaux de groupe. La même étude confirme que les outils institutionnels fournis par l'établissement sont largement délaissés au profit de ces espaces informels auto-organisés par les apprenants.
+  Cette recherche documente ce que le modèle de la Stivation laisse prévoir. Les apprenants adultes, confrontés à un dispositif formel qui ne leur offre pas suffisamment d'espace d'interaction informelle, créent eux-mêmes cet espace. Ils n'attendent pas que l'institution le leur offre. Ils construisent leur couloir numérique.
 </p>
+<blockquote><p>Il y a « stivation » quand les interactions « adidactiques » stimulent et motivent les stagiaires, influençant la qualité de leurs productions individuelles et groupales, ainsi que la qualité de leurs apprentissages.</p><cite>Mbaye, M. B. (2011). Interactions entre élèves inspecteurs lors des activités collaboratives et coopératives en formation initiale. Mémoire de CAIEE, FASTEF/UCAD.</cite></blockquote>
 
-<div class="ref">
-  Les résultats montrent que les réseaux et médias sociaux sont davantage utilisés par les étudiants pour des raisons liées aux apprentissages que pour des considérations ludiques. Le recours aux groupes de travail informels est la conséquence d'un décalage entre les attentes des étudiants et les outils fournis par les établissements.
-  <strong>Holo et al. (2019) cités dans : Revue internationale des technologies en pédagogie universitaire, Vol. 19, n° 2, 2022. Usages des réseaux et médias sociaux par les étudiants en contexte d'apprentissage à l'Université virtuelle de Côte d'Ivoire.</strong>
-</div>
-
-<p>
-  Ce que cette recherche documente, c'est exactement ce que le modèle de la Stivation prédit. Les apprenants adultes, confrontés à un dispositif formel qui ne leur offre pas suffisamment d'espace d'interaction informelle, créent eux-mêmes cet espace. Ils n'attendent pas que l'institution le leur offre. Ils construisent leur couloir numérique.
-</p>
-
-<blockquote>
-  Les apprenants ne cherchent pas à contourner la formation. Ils cherchent à la vivre pleinement. Et pour cela, ils ont besoin d'un espace que le cours ne leur donne pas : l'espace de l'échange libre entre pairs.
-  <small>Mbaye, M.B. (2010). Interactions entre élèves inspecteurs lors des activités collaboratives en formation initiale. Mémoire CAIEE, Université Cheikh Anta Diop de Dakar. Fondement du concept de Stivation.</small>
-</blockquote>
-
-<div>
-  <div class="sn">Partie 03</div>
-  <h2 class="st">Le couloir numérique : définition et caractéristiques d'un espace de Stivation en ligne</h2>
-</div>
+<p class="sn">Partie 03</p>
+<h2>Le couloir numérique : définition et caractéristiques d'un espace de Stivation en ligne</h2>
 
 <p>
   Le couloir numérique est l'ensemble des espaces d'interaction informelle entre pairs qui se constituent spontanément en marge d'une formation en ligne. Il prend des formes multiples selon les contextes : groupes WhatsApp de promotion, fils de discussion privés sur les plateformes de visioconférence, échanges sur les réseaux professionnels, conversations asynchrones sur des forums non institutionnels. Sa caractéristique essentielle est qu'il est auto-organisé, non prescrit et librement investi par les apprenants eux-mêmes.
 </p>
-
 <p>
   Le couloir numérique partage avec le couloir physique ses trois caractéristiques fondamentales qui sont également les conditions d'émergence de la Stivation. Il est informel, ce qui signifie que l'apprenant y parle librement, sans la contrainte du regard évaluatif de l'institution. Il est entre pairs, ce qui signifie que la relation est horizontale, sans la hiérarchie du formateur. Et il est intense, ce qui signifie que les échanges y sont souvent plus denses et plus directs que dans l'espace formel du cours.
 </p>
-
 <p>
   Il présente également une caractéristique nouvelle, propre au numérique, que le couloir physique n'avait pas : il est asynchrone. Les apprenants peuvent interagir sans être au même moment dans le même espace. Un apprenant de Dakar peut partager une ressource à 22h, un apprenant de Paris peut y répondre à 7h du matin, un apprenant d'Abidjan peut rebondir sur la réponse en milieu de journée. La Stivation numérique se déploie dans le temps de façon différente de la Stivation physique. Elle est plus lente, plus réflexive, parfois plus profonde.
 </p>
-
-<div class="modele-schema">
-  <div class="modele-titre">La Stivation numérique : les trois piliers reconfigurés</div>
-  <div class="modele-grid">
-    <div class="modele-item">
-      <div class="mi-lettre">STI</div>
-      <div class="mi-mot">Stimulation numérique</div>
-      <div class="mi-desc">Le contenu du cours génère une tension cognitive. L'apprenant cherche à la résoudre non pas seul, mais avec ses pairs. Il sollicite, questionne, partage son inconfort dans l'espace informel numérique. La stimulation n'est plus déclenchée par la rencontre physique mais par la réception d'un contenu qui résiste à la compréhension individuelle.</div>
-    </div>
-    <div class="modele-item">
-      <div class="mi-lettre">VATION</div>
-      <div class="mi-mot">Motivation distribuée</div>
-      <div class="mi-desc">La motivation de l'apprenant en ligne est fragilisée par l'isolement. Elle se régénère dans le groupe de pairs. Voir un pair avancer, recevoir un encouragement, partager une réussite intermédiaire : ces micro-interactions dans le couloir numérique reconstituent la motivation que le cours formel seul ne peut entretenir sur la durée.</div>
-    </div>
-    <div class="modele-item">
-      <div class="mi-lettre">ACTION</div>
-      <div class="mi-mot">Interaction asynchrone</div>
-      <div class="mi-desc">L'interaction entre pairs se produit dans des espaces décalés dans le temps et dans l'espace. Elle est textuelle, vocale, vidéo. Elle traverse les fuseaux horaires. Cette asynchronie n'est pas un défaut : elle permet une réflexivité plus grande que l'interaction spontanée du couloir physique. Le message écrit oblige à formuler, à préciser, à argumenter.</div>
-    </div>
-  </div>
+<div class="encadre">
+<p class="encadre-titre">La Stivation numérique : les trois piliers reconfigurés</p>
+<div class="pilier-grid">
+<div class="carte">
+<p class="carte-num">STI</p>
+<p class="carte-titre">Stimulation numérique</p>
+<p>Le contenu du cours génère une tension cognitive. L'apprenant cherche à la résoudre non pas seul, mais avec ses pairs. Il sollicite, questionne, partage son inconfort dans l'espace informel numérique. La stimulation n'est plus déclenchée par la rencontre physique mais par la réception d'un contenu qui résiste à la compréhension individuelle.</p>
+</div>
+<div class="carte">
+<p class="carte-num">VATION</p>
+<p class="carte-titre">Motivation distribuée</p>
+<p>La motivation de l'apprenant en ligne est fragilisée par l'isolement. Elle se régénère dans le groupe de pairs. Voir un pair avancer, recevoir un encouragement, partager une réussite intermédiaire : ces micro-interactions dans le couloir numérique reconstituent la motivation que le cours formel seul ne peut entretenir sur la durée.</p>
+</div>
+<div class="carte">
+<p class="carte-num">ACTION</p>
+<p class="carte-titre">Interaction asynchrone</p>
+<p>L'interaction entre pairs se produit dans des espaces décalés dans le temps et dans l'espace. Elle est textuelle, vocale, vidéo. Elle traverse les fuseaux horaires. Cette asynchronie n'est pas un défaut : elle permet une réflexivité plus grande que l'interaction spontanée du couloir physique. Le message écrit oblige à formuler, à préciser, à argumenter.</p>
+</div>
+</div>
 </div>
 
-<div>
-  <div class="sn">Partie 04</div>
-  <h2 class="st">Ce que la recherche internationale confirme : le social learning numérique est réel mais invisible</h2>
-</div>
+<p class="sn">Partie 04</p>
+<h2>Le social learning numérique, réel mais invisible</h2>
 
 <p>
   Le concept de social learning, développé notamment à partir des travaux d'Albert Bandura sur l'apprentissage social et l'efficacité collective, converge avec le modèle de la Stivation sur un point fondamental : l'apprentissage entre pairs produit des effets que l'apprentissage individuel ne peut pas reproduire. Les recherches récentes en formation numérique confirment et précisent cette convergence.
 </p>
-
 <p>
   Selon le modèle 70/20/10, élaboré par Morgan McCall, Lombardo et Eichinger au Centre for Creative Leadership, 70 % des apprentissages professionnels durables proviennent de l'expérience directe, 20 % des interactions avec les pairs et les collègues, et seulement 10 % de la formation formelle structurée. Ce ratio, largement repris dans la littérature sur la formation professionnelle, implique une conclusion radicale pour les organismes de formation en ligne : si leur dispositif n'organise que la part formelle de la formation, ils abandonnent au hasard 90 % du processus d'apprentissage. La Stivation numérique, si elle n'est pas délibérément organisée, se produit quand même. Mais elle se produit de façon inégale, non équitable, bénéficiant aux apprenants les plus connectés socialement et laissant les autres dans l'isolement.
 </p>
-
-<div class="ref">
-  Le social learning sur mobile permet aux entreprises d'exploiter le potentiel de l'apprentissage informel entre pairs. Les réseaux sociaux créent des groupes de discussion informels qui génèrent des interactions d'une grande richesse pédagogique, souvent supérieure à celle des modules formels conçus par les ingénieurs pédagogiques.
-  <strong>Bandura, A. (1997). Self-efficacy: The exercise of control. New York: Freeman. Cité dans : SPARTED, « Le social learning sur mobile : favoriser la collaboration en entreprise », 2024.</strong>
-</div>
-
+<blockquote><p>Le social learning sur mobile permet aux entreprises d'exploiter le potentiel de l'apprentissage informel entre pairs. Les réseaux sociaux créent des groupes de discussion informels qui génèrent des interactions d'une grande richesse pédagogique, souvent supérieure à celle des modules formels conçus par les ingénieurs pédagogiques.</p><cite>D'après SPARTED, « Le social learning sur mobile : favoriser la collaboration en entreprise », 2024.</cite></blockquote>
 <p>
-  La recherche menée à l'Université du Québec, publiée sur la plateforme Pédagogie UQ, apporte une précision complémentaire particulièrement pertinente pour les contextes africains et internationaux. Elle documente comment WhatsApp peut être utilisé comme environnement d'apprentissage formel en contexte de formation entièrement à distance. Dans l'Université virtuelle du Sénégal, WhatsApp représente 30 % des usages déclarés des étudiants pour leurs activités d'apprentissage, loin devant les plateformes institutionnelles. Ce résultat dit quelque chose de décisif : les apprenants ne cherchent pas une plateforme sophistiquée. Ils cherchent un espace où l'interaction est facile, immédiate et entre pairs.
+  Une réflexion publiée en 2022 par Valéry Psyché et Valérie Payen Jean Baptiste (TÉLUQ) apporte une précision utile aux contextes africains et internationaux. Elle examine comment WhatsApp peut servir d'environnement d'apprentissage formel en formation entièrement à distance et rapporte une étude conduite à l'Université virtuelle du Sénégal (Adjanohoun et Agbanglanon, 2022) : parmi les réseaux sociaux utilisés par les étudiants, WhatsApp (30 %) est le plus mobilisé pour les activités d'apprentissage. Le résultat est parlant : les apprenants ne cherchent pas une plateforme sophistiquée. Ils cherchent un espace où l'interaction est facile, immédiate et entre pairs.
 </p>
 
-<div>
-  <div class="sn">Partie 05</div>
-  <h2 class="st">La Stivation transnationale : quand les pairs viennent de pays différents</h2>
-</div>
+<p class="sn">Partie 05</p>
+<h2>La Stivation transnationale : quand les pairs viennent de pays différents</h2>
 
 <p>
   La dimension internationale des formations en ligne ajoute une complexité supplémentaire que le modèle de la Stivation doit intégrer. Quand les membres d'une promotion viennent de plusieurs pays, ils apportent avec eux des expériences professionnelles, des contextes institutionnels et des cultures d'apprentissage profondément différents. Cette diversité est une richesse pédagogique considérable. Elle est aussi une source potentielle de fragmentation.
 </p>
-
 <p>
   Dans la Stivation physique, la promotion partage un lieu commun qui crée mécaniquement des points de contact informels. Dans la Stivation transnationale, aucun lieu commun n'existe naturellement. Les apprenants doivent créer eux-mêmes les conditions de la rencontre. Et cette création n'est pas spontanée : elle exige une intention pédagogique délibérée de la part des formateurs et des institutions.
 </p>
-
 <p>
   Mais la diversité transnationale, quand elle est bien organisée, amplifie les trois piliers de la Stivation de façon remarquable. La STImulation est plus intense : un apprenant ivoirien et un apprenant sénégalais confrontent leurs lectures d'un même concept pédagogique à partir de réalités institutionnelles différentes. Le conflit cognitif est plus riche parce que les représentations de départ sont plus distantes. La motiVATION est renforcée : l'apprenant qui réalise que son expérience de terrain intéresse et nourrit un pair vivant à des milliers de kilomètres de lui vit une reconnaissance professionnelle que nulle note ni nul certificat ne peut reproduire. L'interACTION produit un savoir collectif que nul n'aurait pu construire seul : la somme des expériences de terrain d'une promotion internationale est une ressource encyclopédique vivante.
 </p>
-
-<div class="encadre marine">
-  <span class="enc-label">La Triade Dynamique Intersubjective (TDI) en contexte numérique transnational</span>
-  <p>
+<div class="definition-box">
+<p class="def-label">La Triade Dynamique Intersubjective (TDI) en contexte numérique transnational</p>
+<p>
     La TDI, troisième concept développé par le modèle de la Stivation, décrit l'architecture relationnelle à trois pôles interdépendants dans laquelle chaque acteur apprend de l'autre. En contexte transnational, cette triade prend une configuration nouvelle.
   </p>
-  <p>
-    <strong>L'apprenant-formateur</strong> n'est plus seulement celui qui connaît le contenu. Il est aussi celui qui connaît son contexte institutionnel national, et cette connaissance est une ressource pour les autres.
+<p>
+<strong>L'apprenant-formateur</strong> n'est plus seulement celui qui connaît le contenu. Il est aussi celui qui connaît son contexte institutionnel national, et cette connaissance est une ressource pour les autres.
   </p>
-  <p>
-    <strong>Le pair-ressource</strong> devient un pair-monde : son expérience d'un autre système éducatif, d'une autre politique de formation, d'une autre réalité socio-économique enrichit la réflexion collective d'une façon que nul manuel ne peut reproduire.
+<p>
+<strong>Le pair-ressource</strong> devient un pair-monde : son expérience d'un autre système éducatif, d'une autre politique de formation, d'une autre réalité socio-économique enrichit la réflexion collective d'une façon que nul manuel ne peut reproduire.
   </p>
-  <p>
-    <strong>Le formateur-médiateur</strong> n'est plus un transmetteur de savoir. Il est l'architecte des conditions dans lesquelles la TDI peut se déployer entre des apprenants géographiquement dispersés mais intellectuellement solidaires.
+<p>
+<strong>Le formateur-médiateur</strong> n'est plus un transmetteur de savoir. Il est l'architecte des conditions dans lesquelles la TDI peut se déployer entre des apprenants géographiquement dispersés mais intellectuellement solidaires.
   </p>
 </div>
 
-<div>
-  <div class="sn">Partie 06</div>
-  <h2 class="st">Ce que les grandes écoles et instituts de formation doivent changer : de la logistique à l'ingénierie de la Stivation</h2>
-</div>
+<p class="sn">Partie 06</p>
+<h2>De la logistique à l'ingénierie de la Stivation</h2>
 
 <p>
   La plupart des grandes écoles et instituts de formation qui ont basculé vers le distanciel ont résolu les problèmes logistiques : plateformes LMS, outils de visioconférence, modules asynchrones, évaluations en ligne. Ces investissements étaient nécessaires. Ils ne sont pas suffisants.
 </p>
-
 <p>
-  Ce qu'ils ont rarement résolu, c'est la question de l'ingénierie de l'interaction informelle. Comment s'assurer que les apprenants d'une promotion en ligne développeront les liens de pairs qui permettent à la Stivation de se produire ? Comment organiser ce qui, en présentiel, se produisait naturellement dans les espaces non prescrits de la vie commune ? Comment ne pas laisser au hasard et à l'initiative individuelle des apprenants ce qui constitue 20 % du processus d'apprentissage selon le modèle 70/20/10 ?
+  Ils ont rarement résolu la question de l'ingénierie de l'interaction informelle. Comment s'assurer que les apprenants d'une promotion en ligne développeront les liens de pairs qui permettent à la Stivation de se produire ? Comment organiser ce qui, en présentiel, se produisait naturellement dans les espaces non prescrits de la vie commune ? Comment ne pas laisser au hasard et à l'initiative individuelle des apprenants ce qui constitue 20 % du processus d'apprentissage selon le modèle 70/20/10 ?
 </p>
-
 <p>
-  La réponse ne consiste pas à formaliser l'informel au point de le tuer. Plusieurs études le confirment : le social learning perd sa puissance dès qu'il est trop structuré, trop prescrit, trop évalué. L'enjeu est de créer les conditions de l'informel sans prétendre le contrôler. C'est une posture pédagogique subtile, qui demande une réelle compétence en ingénierie de formation.
+  La réponse ne consiste pas à formaliser l'informel au point de le tuer. Le social learning perd sa force dès qu'il est trop structuré, trop prescrit, trop évalué. L'enjeu est de créer les conditions de l'informel sans prétendre le contrôler. C'est une posture pédagogique subtile, qui demande une réelle compétence en ingénierie de formation.
 </p>
-
-<div class="encadre focus">
-  <span class="enc-label">Repères opérationnels pour l'ingénierie de la Stivation numérique</span>
-  <p>
-    <strong>Constituer des groupes de pairs stables dès le début de la formation.</strong> Pas des groupes de travail ad hoc pour une tâche précise. Des groupes de vie de promotion, de taille réduite (cinq à sept personnes), aux compétences et aux contextes délibérément diversifiés, qui traversent toute la durée de la formation. Ces groupes sont les cellules de base de la Stivation numérique. Ils doivent avoir leur propre espace d'échange, distinct de la plateforme pédagogique institutionnelle, pour que l'informel puisse y circuler librement.
+<div class="encadre-ref">
+<p class="encadre-titre">Repères opérationnels pour l'ingénierie de la Stivation numérique</p>
+<p>
+<strong>Constituer des groupes de pairs stables dès le début de la formation.</strong> Pas des groupes de travail ad hoc pour une tâche précise. Des groupes de vie de promotion, de taille réduite (cinq à sept personnes), aux compétences et aux contextes délibérément diversifiés, qui traversent toute la durée de la formation. Ces groupes sont les cellules de base de la Stivation numérique. Ils doivent avoir leur propre espace d'échange, distinct de la plateforme pédagogique institutionnelle, pour que l'informel puisse y circuler librement.
   </p>
-  <p>
-    <strong>Organiser des temps synchrones à faible pression évaluative.</strong> Les séances de cours en visioconférence sont des espaces formels. Il faut des espaces synchrones informels : des débriefings courts après les séances, des cafés virtuels de promotion, des moments où la question posée n'appelle pas une bonne réponse mais une réaction authentique. C'est dans ces espaces que la motiVATION se reconstitue et que la STImulation se déploie librement.
+<p>
+<strong>Organiser des temps synchrones à faible pression évaluative.</strong> Les séances de cours en visioconférence sont des espaces formels. Il faut des espaces synchrones informels : des débriefings courts après les séances, des cafés virtuels de promotion, des moments où la question posée n'appelle pas une bonne réponse mais une réaction authentique. C'est dans ces espaces que la motiVATION se reconstitue et que la STImulation se déploie librement.
   </p>
-  <p>
-    <strong>Valoriser institutionnellement ce qui se produit dans le couloir numérique.</strong> Non pas en l'évaluant, ce qui le détruirait, mais en le rendant visible. Un formateur qui dit en séance plénière "je vois que vous avez beaucoup échangé sur ce point dans vos groupes" reconnaît l'existence du couloir numérique et lui donne une légitimité pédagogique. Cette reconnaissance change la posture des apprenants vis-à-vis de leurs propres interactions informelles.
+<p>
+<strong>Valoriser institutionnellement ce qui se produit dans le couloir numérique.</strong> Non pas en l'évaluant, ce qui le détruirait, mais en le rendant visible. Un formateur qui dit en séance plénière « je vois que vous avez beaucoup échangé sur ce point dans vos groupes » reconnaît l'existence du couloir numérique et lui donne une légitimité pédagogique. Cette reconnaissance change la posture des apprenants vis-à-vis de leurs propres interactions informelles.
   </p>
-  <p>
-    <strong>Former les formateurs à l'animation de l'interaction en ligne.</strong> Animer un cours en ligne et animer une communauté d'apprentissage en ligne sont deux compétences distinctes. La première est centrée sur la transmission du contenu. La seconde est centrée sur la qualité des interactions entre apprenants. Les grandes écoles qui investissent dans la deuxième compétence constatent des résultats significativement différents en termes de persévérance et d'engagement des apprenants.
+<p>
+<strong>Former les formateurs à l'animation de l'interaction en ligne.</strong> Animer un cours en ligne et animer une communauté d'apprentissage en ligne sont deux compétences distinctes. La première est centrée sur la transmission du contenu. La seconde est centrée sur la qualité des interactions entre apprenants. C'est sur la seconde que se jouent la persévérance et l'engagement des apprenants.
   </p>
 </div>
 
-<div>
-  <div class="sn">Partie 07</div>
-  <h2 class="st">Vers un modèle hybride : la Stivation comme architecture de toutes les modalités de formation</h2>
-</div>
+<p class="sn">Partie 07</p>
+<h2>Vers un modèle hybride : la Stivation comme architecture de toutes les modalités de formation</h2>
 
 <p>
   La réflexion menée ici conduit à une proposition théorique centrale : la Stivation n'est pas une théorie de la formation en présentiel à laquelle on adapte difficilement les contraintes du distanciel. C'est une théorie de l'apprentissage informel entre pairs adultes qui s'applique à toutes les modalités de formation, à condition que ses conditions d'émergence soient réunies.
 </p>
-
 <p>
   Ces conditions sont au nombre de trois et elles sont indépendantes du lieu physique ou numérique. La première est la présence d'un espace d'interaction informelle, non prescrit et libéré de la pression évaluative. La deuxième est la densité de la relation entre pairs, c'est-à-dire la qualité de la confiance mutuelle qui permet l'échange authentique. La troisième est la pression partagée d'un objectif commun, qui crée la tension cognitive dont la Stivation a besoin pour se déclencher. En présentiel, ces trois conditions sont souvent réunies naturellement. En distanciel, elles doivent être délibérément organisées.
 </p>
-
 <p>
   Le blended learning, qui combine présentiel et distanciel dans un même parcours de formation, offre à ce titre une configuration particulièrement favorable à la Stivation. Les temps en présentiel permettent de construire la relation de confiance entre pairs qui rendra les interactions à distance plus intenses et plus profondes. Les temps en distanciel, libérés de la contrainte géographique, permettent une Stivation asynchrone qui se déploie sur des durées et des profondeurs inaccessibles au couloir physique. La complémentarité entre les deux modalités n'est pas additive. Elle est multiplicative.
 </p>
-
-<div class="ref">
-  Un programme de blended learning peut combiner en ligne et hors ligne, individuel et collaboratif, contenu formel et informel, théorie et pratique. Cette combinaison ne se contente pas d'ajouter des modalités : elle crée des synergies pédagogiques que chaque modalité seule ne peut pas produire.
-  <strong>Charlier, B. et al. (2006), cités dans : « Vers un monde digitalisé de la formation ? », Revue Projectique, n° 2, 2021.</strong>
-</div>
-
-<div class="concl">
-  <h3>Conclusion : ce que la Stivation dit aux institutions de formation numérique</h3>
-  <p>
+<blockquote><p>Un programme de blended learning peut combiner en ligne et hors ligne, individuel et collaboratif, contenu formel et informel, théorie et pratique. Cette combinaison ne se contente pas d'ajouter des modalités : elle crée des synergies pédagogiques que chaque modalité seule ne peut pas produire.</p><cite>D'après Charlier, B. et al. (2006), cités dans : « Vers un monde digitalisé de la formation ? », Revue Projectique, n° 2, 2021.</cite></blockquote>
+<div class="conclusion">
+<h2>Le couloir a changé d'adresse</h2>
+<p>
     Le modèle de la Stivation, né en 2010 de l'observation des interactions informelles dans les espaces de formation, n'est pas remis en cause par la révolution numérique. Il est confirmé par elle. Les données de la recherche internationale convergent vers un diagnostic que la Stivation formulait déjà : les apprentissages les plus durables se produisent dans les interactions entre pairs, et non dans la réception passive de contenus, qu'ils soient présentés en salle ou sur un écran.
   </p>
-  <p>
-    Ce que la formation en ligne a révélé, c'est l'enjeu de l'organisation délibérée de ces interactions. En présentiel, l'institution pouvait se permettre de les ignorer : elles se produisaient de toute façon, dans les couloirs, les cafétérias, les chambres. En distanciel, l'institution n'a plus ce luxe. Si elle n'organise pas les conditions de la Stivation numérique, elle laisse 20 % du processus d'apprentissage au hasard et à l'inégalité. Et dans un contexte où les taux d'abandon de la formation à distance atteignent 18 % selon les données de la DARES (2023), ce n'est pas un détail pédagogique. C'est un enjeu de performance institutionnelle.
+<p>
+    La formation en ligne a révélé l'enjeu de l'organisation délibérée de ces interactions. En présentiel, l'institution pouvait se permettre de les ignorer : elles se produisaient de toute façon, dans les couloirs, les cafétérias, les chambres. En distanciel, l'institution n'a plus ce luxe. Si elle n'organise pas les conditions de la Stivation numérique, elle laisse 20 % du processus d'apprentissage au hasard et à l'inégalité. Quand 18 % des formations suivies entièrement à distance sont abandonnées (DARES et France compétences, 2023), l'enjeu dépasse la pédagogie : il touche à la performance des institutions.
   </p>
-  <p>
+<p>
     Les grandes écoles et instituts de formation qui comprendront cela et qui investiront dans l'ingénierie de la Stivation numérique ne feront pas seulement de la bonne pédagogie. Ils construiront un avantage compétitif durable dans un marché de la formation en ligne qui cherche encore, souvent à tâtons, comment faire de la qualité à distance.
   </p>
-  <p>
+<p>
     Le couloir n'a pas disparu. Il a changé d'adresse. Il appartient aux institutions de le trouver, de le nommer et de le cultiver.
   </p>
 </div>
 
-<!-- BIBLIOGRAPHIE -->
 <div class="biblio">
-  <h3>Références bibliographiques</h3>
-  <p>Bandura, A. (1997). <em>Self-efficacy: The exercise of control</em>. New York: Freeman.</p>
-  <p>Charlier, B. et al. (2006). Cité dans : « Vers un monde digitalisé de la formation ? », <em>Revue Projectique</em>, n° 2, 2021.</p>
-  <p>DARES et France Compétences (2023). « Quels sont les usages du compte personnel de formation ? » Paris : Ministère du Travail.</p>
-  <p>Holo et al. (2019). Cités dans : « Usages des réseaux et médias sociaux par les étudiants en contexte d'apprentissage à l'UVCI », <em>Revue internationale des technologies en pédagogie universitaire</em>, Vol. 19, n° 2, 2022.</p>
-  <p>Jordan, K. (2014). Initial trends in enrolment and completion of massive open online courses. <em>The International Review of Research in Open and Distributed Learning</em>, 15(1).</p>
-  <p>Knowles, M. S. (1980). <em>The modern practice of adult education: From pedagogy to andragogy</em>. Chicago: Association Press.</p>
-  <p>Lombardo, M. M., & Eichinger, R. W. (1996). <em>The Career Architect Development Planner</em>. Minneapolis: Lominger. [Modèle 70/20/10, Centre for Creative Leadership]</p>
-  <p>Mbaye, M. B. (2010). <em>Interactions entre élèves inspecteurs lors des activités collaboratives en formation initiale</em>. Mémoire CAIEE, UCAD, Dakar. [Texte fondateur de la Stivation]</p>
-  <p>Papi, C., Sauvé, L., Desjardins, G. et Gérin-Lajoie, S. (2022). « De la multiplicité des facteurs à prendre en compte pour mieux comprendre l'abandon en formation à distance », <em>Distances et médiations des savoirs</em>, n° 37.</p>
-  <p>Adjanohoun, J. et Agbanglanon, S. L. (2022). « Déterminants de l'acceptation des réseaux sociaux pour apprendre à l'université virtuelle du Sénégal ». <em>Revue internationale des technologies en pédagogie universitaire</em>, 19(2), 7-24. https://doi.org/10.18162/ritpu-2022-v19n2-02</p>
-  <p>Vygotski, L. S. (1978). <em>Mind in Society: The Development of Higher Psychological Processes</em>. Cambridge: Harvard University Press.</p>
-  <p>Willging, P. A., & Johnson, S. D. (2004). Factors that influence students' decision to dropout of online courses. <em>Journal of Asynchronous Learning Networks</em>, 8(4), 105-118.</p>
+<p class="biblio-label">Références bibliographiques</p>
+<p>Bandura, A. (1997). <em>Self-efficacy: The exercise of control</em>. New York: Freeman.</p>
+<p>Charlier, B. et al. (2006). Cité dans : « Vers un monde digitalisé de la formation ? », <em>Revue Projectique</em>, n° 2, 2021.</p>
+<p>DARES et France compétences (2023). Étude sur les usages du compte personnel de formation, publiée le 17 février 2023. Paris : ministère du Travail.</p>
+<p>Holo, A. K. et Koné, T. (2022). Usages des réseaux et médias sociaux par les étudiants en contexte d'apprentissage à l'Université virtuelle de Côte d'Ivoire (UVCI). <em>Revue internationale des technologies en pédagogie universitaire</em>, 19(2), 148-159.</p>
+<p>Jordan, K. (2014). Initial trends in enrolment and completion of massive open online courses. <em>The International Review of Research in Open and Distributed Learning</em>, 15(1), 133-160.</p>
+<p>Knowles, M. S. (1980). <em>The modern practice of adult education: From pedagogy to andragogy</em>. Chicago: Association Press.</p>
+<p>Lombardo, M. M., &amp; Eichinger, R. W. (1996). <em>The Career Architect Development Planner</em>. Minneapolis: Lominger. [Modèle 70/20/10, Centre for Creative Leadership]</p>
+<p>Mbaye, M. B. (2011). <em>Interactions entre élèves inspecteurs lors des activités collaboratives et coopératives en formation initiale</em>. Mémoire de CAIEE, FASTEF/UCAD, Dakar. [Texte fondateur de la Stivation]</p>
+<p>Papi, C., Sauvé, L., Desjardins, G. et Gérin-Lajoie, S. (2022). « De la multiplicité des facteurs à prendre en compte pour mieux comprendre l'abandon en formation à distance », <em>Distances et médiations des savoirs</em>, n° 37.</p>
+<p>Perna, L., Ruby, A., Boruch, R., Wang, N., Scull, J., Evans, C. et Ahmad, S. (2013). <em>The life cycle of a million MOOC users</em>. Communication à la MOOC Research Initiative Conference, Arlington (Texas). Philadelphie : University of Pennsylvania.</p>
+<p>Adjanohoun, J. et Agbanglanon, S. L. (2022). « Déterminants de l'acceptation des réseaux sociaux pour apprendre à l'université virtuelle du Sénégal ». <em>Revue internationale des technologies en pédagogie universitaire</em>, 19(2), 7-24. https://doi.org/10.18162/ritpu-2022-v19n2-02</p>
+<p>Psyché, V. et Payen Jean Baptiste, V. (2022). « Utiliser WhatsApp comme environnement d'apprentissage formel ». <em>Le Tableau</em>, 11(3). Québec : TÉLUQ.</p>
+<p>Vygotski, L. S. (1978). <em>Mind in Society: The Development of Higher Psychological Processes</em>. Cambridge: Harvard University Press.</p>
+<p>Willging, P. A., &amp; Johnson, S. D. (2004). Factors that influence students' decision to dropout of online courses. <em>Journal of Asynchronous Learning Networks</em>, 8(4), 105-118.</p>
 </div>
 
-<div class="auteur-bloc">
-  <div class="auteur-ini">MBM</div>
-  <div class="auteur-info">
-    <strong>MBM &bull; Le Couloir du Savoir</strong>
-    <span>Concepteur du modèle de la Stivation (2010), du CREAQ (2015) et de la Triade Dynamique Intersubjective (2019).<br>Plateforme de ressources pédagogiques pour les professionnels de l'éducation en Afrique subsaharienne.</span>
-  </div>
-</div>
 
-<div class="partage">
-  <p>Cet article vous a interpellé ? Partagez-le avec les responsables de formation et les directeurs pédagogiques.</p>
-  <a class="btn" href="https://wa.me/?text=La%20Stivation%20num%C3%A9rique%20%3A%20repenser%20l%27apprentissage%20informel%20%C3%A0%20l%27%C3%A8re%20de%20la%20formation%20en%20ligne%20%E2%80%94%20lecouloirdusavoir.com" target="_blank">&#128232; Partager sur WhatsApp</a>
-  <a class="btn fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com" target="_blank">Partager sur Facebook</a>
-</div>
-
+<div class="article-tags"><span>Stivation</span><span>Formation en ligne</span><span>Apprentissage informel</span><span>Andragogie</span><span>TDI</span></div>
+<div class="signature"><span class="sig-avatar">MBM</span><div><strong>MBM · Le Couloir du Savoir</strong><span>Concepteur du modèle de la Stivation (2010), du CREAQ (2015) et de la Triade Dynamique Intersubjective (2019)</span></div></div>
+<div class="share-block"><span class="share-label">Partager</span>
+<a href="https://wa.me/?text=La%20Stivation%20num%C3%A9rique%20%3A%20repenser%20l%27apprentissage%20informel%20%C3%A0%20l%27%C3%A8re%20de%20la%20formation%20en%20ligne%20%C2%B7%20https%3A%2F%2Flecouloirdusavoir.com%2Farticle-stivation-numerique-formation-ligne.html" target="_blank" rel="noopener noreferrer" class="sh-btn" style="background:#25D366">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-stivation-numerique-formation-ligne.html" target="_blank" rel="noopener noreferrer" class="sh-btn" style="background:#1877F2">Facebook</a>
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flecouloirdusavoir.com%2Farticle-stivation-numerique-formation-ligne.html" target="_blank" rel="noopener noreferrer" class="sh-btn" style="background:#0A66C2">LinkedIn</a></div>
 </main>
-<footer><p>&copy; 2026 <a href="https://lecouloirdusavoir.com">Le Couloir du Savoir</a> &mdash; Plateforme pédagogique pour les professionnels de l'éducation au Sénégal et en Afrique subsaharienne.</p></footer>
+<footer>
+<div class="footer-inner">
+<div>
+<div class="fbrand">Le Couloir du Savoir <span style="color:rgba(255,255,255,0.4);font-style:italic;font-weight:400">· Laboratoire de la Stivation</span></div>
+<p class="fdesc">Un laboratoire ouvert dédié à l'éducation et à la formation en Afrique subsaharienne. Trois concepts originaux : Stivation, CREAQ, TDI.</p>
+<a href="https://wa.me/221763615562?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20Le%20Couloir%20du%20Savoir." target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-family:sans-serif;font-size:0.78rem;font-weight:600;padding:10px 18px;border-radius:4px;text-decoration:none">WhatsApp</a>
+</div>
+<div><p class="fhead">Navigation</p><ul class="flinks">
+<li><a href="index.html">Accueil</a></li><li><a href="index.html#publications">Articles &amp; Contributions</a></li><li><a href="creaq.html">CREAQ</a></li><li><a href="lu-pour-vous.html">Lu pour Vous</a></li><li><a href="ressources.html">Ressources</a></li><li><a href="espace-inspecteurs.html">Espace Inspecteurs</a></li><li><a href="espace-rh-management.html">RH &amp; Management</a></li><li><a href="a-propos.html">À propos</a></li></ul></div>
+<div><p class="fhead">Articles récents</p><ul class="flinks">
+<li><a href="bilinguisme-scolaire-afrique.html">Le bilinguisme scolaire en Afrique</a></li>
+<li><a href="gouvernance-directions-ia-ief.html">Directions nationales, IA et IEF</a></li>
+<li><a href="cfee-blanc-2026-kaba-diakhate.html">CFEE Blanc 2026</a></li>
+<li><a href="stivation-motivation-andragogique.html">La Stivation · Théorie fondatrice</a></li>
+<li><a href="stivation-creaq-tdi-triptyque-theorique.html">Stivation, CREAQ et TDI</a></li></ul></div>
+</div>
+<div class="footer-bottom"><span>© 2026 <strong style="color:var(--gold)">Le Couloir du Savoir</strong> · Laboratoire de la Stivation · Afrique subsaharienne</span>
+<div style="display:flex;gap:0;height:16px;border-radius:2px;overflow:hidden"><span style="width:16px;height:16px;background:#00853F"></span><span style="width:16px;height:16px;background:#FDEF42"></span><span style="width:16px;height:16px;background:#E31B23"></span></div></div>
+</footer>
+<script>function toggleNav(){document.getElementById('mn').classList.toggle('open')}</script>
 </body>
 </html>
